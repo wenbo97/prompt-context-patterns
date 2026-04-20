@@ -1,4 +1,9 @@
-# Prompt Engineering for Claude Code Skills & Plugins
+---
+layout: post
+title: "Prompt Engineering Patterns for Claude Code Skills"
+date: 2026-04-19
+categories: [prompt-engineering, patterns]
+---
 
 A practical guide to writing stable, predictable skill prompts — grounded in how LLMs actually process tokens.
 
@@ -461,9 +466,9 @@ how attention is distributed across tokens at generation time.
 
 ## References
 
-- Anthropic Prompting Best Practices: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices
-- Anthropic Context Engineering: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-- XML Tags Guide: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags
-- Claude Code Skills Docs: https://code.claude.com/docs/en/skills
-- Claude Code System Prompts (community): https://github.com/Piebald-AI/claude-code-system-prompts
-- Awesome Claude Skills: https://github.com/travisvn/awesome-claude-skills
+- [Anthropic Prompting Best Practices](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
+- [Anthropic Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [XML Tags Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags)
+- [Claude Code Skills Docs](https://code.claude.com/docs/en/skills)
+- [Claude Code System Prompts (community)](https://github.com/Piebald-AI/claude-code-system-prompts)
+- [Awesome Claude Skills](https://github.com/travisvn/awesome-claude-skills)

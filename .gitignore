@@ -1,2 +1,13 @@
 .claude/
 .mcp.json
+
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
+Gemfile.lock
+
+# Local only
+media/
+eval/decision-tree-ab/results/
