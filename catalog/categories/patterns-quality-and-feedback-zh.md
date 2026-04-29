@@ -2,7 +2,7 @@
 
 确保输出质量的方法 — 评分标准、自我审查、反馈循环和版本管理。
 
-**相关基础技术：** Schema Priming, Negative Space, Cognitive Offloading（见 [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md)）
+**相关基础技术：** Schema Priming, Negative Space, Cognitive Offloading（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
 
 ---
 

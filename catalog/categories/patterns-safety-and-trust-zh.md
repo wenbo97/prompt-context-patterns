@@ -2,7 +2,7 @@
 
 防止 agent 造成损害的护栏 — 注入防御、数据脱敏、操作边界和激活范围。
 
-**相关基础技术：** Negative Space, Attention Locality（见 [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md)）
+**相关基础技术：** Negative Space, Attention Locality（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
 
 ---
 

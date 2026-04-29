@@ -2,7 +2,7 @@
 
 How multiple agents coordinate — topologies, skill composition, intent routing, tool mapping, and consensus.
 
-**Related foundational techniques:** Cognitive Offloading, Token-Action Binding (see [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md))
+**Related foundational techniques:** Cognitive Offloading, Token-Action Binding (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
 
 ---
 

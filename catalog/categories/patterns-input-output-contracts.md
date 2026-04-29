@@ -2,7 +2,7 @@
 
 How data flows in and out — output templates, error handling, configuration, and platform adaptation.
 
-**Related foundational techniques:** Schema Priming, Grounding/Anchoring, Cognitive Offloading (see [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md))
+**Related foundational techniques:** Schema Priming, Grounding/Anchoring, Cognitive Offloading (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
 
 ---
 

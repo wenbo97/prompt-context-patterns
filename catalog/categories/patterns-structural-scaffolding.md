@@ -2,7 +2,7 @@
 
 How a skill prompt is organized — the skeleton that holds everything together.
 
-**Related foundational techniques:** Schema Priming, XML Tags for Semantic Boundaries (see [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md))
+**Related foundational techniques:** Schema Priming, XML Tags for Semantic Boundaries (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
 
 ---
 

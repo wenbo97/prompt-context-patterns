@@ -2,7 +2,7 @@
 
 Guardrails that prevent the agent from causing harm — injection defense, data redaction, operational boundaries, and activation scope.
 
-**Related foundational techniques:** Negative Space, Attention Locality (see [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md))
+**Related foundational techniques:** Negative Space, Attention Locality (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
 
 ---
 

@@ -2,7 +2,7 @@
 
 信息管理方式 — 参考文件、领域知识、示例和证据要求。
 
-**相关基础技术：** Grounding/Anchoring, Few-Shot with Embedded Reasoning, Attention Locality（见 [prompt-engineering-for-skills.md](prompt-engineering-for-skills.md)）
+**相关基础技术：** Grounding/Anchoring, Few-Shot with Embedded Reasoning, Attention Locality（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
 
 ---
 

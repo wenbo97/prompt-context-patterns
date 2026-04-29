@@ -466,4 +466,4 @@ how attention is distributed across tokens at generation time.
 - XML Tags Guide: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags
 - Claude Code Skills Docs: https://code.claude.com/docs/en/skills
 - Claude Code System Prompts (community): https://github.com/Piebald-AI/claude-code-system-prompts
-- Awesome Claude Skills: https://github.com/travisvn/awesome-claude-skills
+- Awesome Claude Skills: https://github.com/travisvn/awesome-claude-skills
