@@ -2,7 +2,7 @@
 
 技能提示词的组织方式 — 支撑整体的骨架。
 
-**相关基础技术：** Schema Priming, XML Tags for Semantic Boundaries（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
+**相关基础技术：** Schema Priming, XML Tags for Semantic Boundaries（见 [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques)）
 
 ---
 

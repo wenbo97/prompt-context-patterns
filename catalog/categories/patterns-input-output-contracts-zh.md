@@ -2,7 +2,7 @@
 
 数据的流入和流出方式 — 输出模板、错误处理、配置和平台适配。
 
-**相关基础技术：** Schema Priming, Grounding/Anchoring, Cognitive Offloading（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
+**相关基础技术：** Schema Priming, Grounding/Anchoring, Cognitive Offloading（见 [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques)）
 
 ---
 

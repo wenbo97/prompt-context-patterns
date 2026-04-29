@@ -2,7 +2,7 @@
 
 如何引导 agent 行为 — 角色设定、约束条件、交互模式和检查点。
 
-**相关基础技术：** Negative Space, Token-Action Binding, Cognitive Offloading（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
+**相关基础技术：** Negative Space, Token-Action Binding, Cognitive Offloading（见 [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques)）
 
 ---
 

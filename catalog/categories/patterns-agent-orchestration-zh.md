@@ -2,7 +2,7 @@
 
 多个 agent 如何协调 — 拓扑结构、技能组合、意图路由、工具映射和共识机制。
 
-**相关基础技术：** Cognitive Offloading, Token-Action Binding（见 [prompt-engineering-for-skills.md](../techniques/token-level-techniques)）
+**相关基础技术：** Cognitive Offloading, Token-Action Binding（见 [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques)）
 
 ---
 

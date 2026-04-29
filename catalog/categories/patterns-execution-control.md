@@ -2,7 +2,7 @@
 
 How to guide agent behavior — personas, constraints, interaction patterns, and checkpoints.
 
-**Related foundational techniques:** Negative Space, Token-Action Binding, Cognitive Offloading (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
+**Related foundational techniques:** Negative Space, Token-Action Binding, Cognitive Offloading (see [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques))
 
 ---
 

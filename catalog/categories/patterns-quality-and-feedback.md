@@ -2,7 +2,7 @@
 
 How to ensure output quality — scoring rubrics, self-critique, feedback loops, and version management.
 
-**Related foundational techniques:** Schema Priming, Negative Space, Cognitive Offloading (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
+**Related foundational techniques:** Schema Priming, Negative Space, Cognitive Offloading (see [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques))
 
 ---
 

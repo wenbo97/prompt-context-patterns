@@ -2,7 +2,7 @@
 
 How information is managed — reference files, domain knowledge, examples, and evidence requirements.
 
-**Related foundational techniques:** Grounding/Anchoring, Few-Shot with Embedded Reasoning, Attention Locality (see [prompt-engineering-for-skills.md](../techniques/token-level-techniques))
+**Related foundational techniques:** Grounding/Anchoring, Few-Shot with Embedded Reasoning, Attention Locality (see [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques))
 
 ---
 
