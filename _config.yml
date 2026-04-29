@@ -7,6 +7,12 @@ theme: minima
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+defaults:
+  - scope:
+      path: "catalog"
+    values:
+      layout: page
+
 exclude:
   - eval
   - docs

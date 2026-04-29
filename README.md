@@ -8,6 +8,10 @@ Practical patterns for writing stable AI prompts, engineering context, and orche
 
 ```
 _posts/          Blog articles (EN + ZH)
+catalog/         142 prompt patterns for AI agent development
+  categories/    Patterns grouped by function (18 files)
+  techniques/    Deep-dive guides (6 files)
+  standards/     Review frameworks (2 files)
 eval/            A/B test scripts and results
   decision-tree-ab/
     prompt-prose*.md     Prose-style prompts (control group)
@@ -22,6 +26,7 @@ eval/            A/B test scripts and results
 |---------|-----------|-----------|----------|
 | Decision Tree | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/decision-tree-pattern/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/decision-tree-pattern-zh/) | `eval/decision-tree-ab/` |
 | Prompt Engineering (overview) | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/prompt-engineering-patterns/) | — | — |
+| **Pattern Catalog (142)** | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/29/prompt-pattern-catalog/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/04/29/prompt-pattern-catalog-zh/) | — |
 
 ## Run the A/B Tests Yourself
 
