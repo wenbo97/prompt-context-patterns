@@ -1,6 +1,5 @@
 ---
-layout: page
-title: "Pattern Catalog"
+layout: default
 ---
 
 # 142 Prompt Patterns for AI Agent Development

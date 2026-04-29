@@ -7,10 +7,6 @@ theme: minima
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
-minima:
-  nav_pages:
-    - catalog/index.md
-
 defaults:
   - scope:
       path: "catalog"
