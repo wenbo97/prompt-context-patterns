@@ -3,10 +3,10 @@
 @REM model series config
 set ANTHROPIC_BASE_URL=http://localhost:4141
 set ANTHROPIC_AUTH_TOKEN=dummy
-set ANTHROPIC_MODEL=claude-opus-4-6[1m]
-set ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-6
-set ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-haiku-4-5
-set CLAUDE_CODE_SUBAGENT_MODEL=claude-opus-4-6[1m]
+set ANTHROPIC_MODEL=claude-opus-4-7[1m]
+set ANTHROPIC_DEFAULT_SONNET_MODEL=claude-opus-4.7-xhigh
+set ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-opus-4.7-xhigh
+set CLAUDE_CODE_SUBAGENT_MODEL=claude-opus-4-7[1m]
 set DISABLE_NON_ESSENTIAL_MODEL_CALLS=1
 
 @REM disable telemetry
@@ -23,7 +23,7 @@ set CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1
 @REM set CLAUDE_CODE_MAX_CONTEXT_LENGTH=168000
 set CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=88
 @REM max will easy to get request limitation reached for github copilot Endpoint service calling. Adjust to max if possible to maximize CC capabilities.
-set CLAUDE_CODE_EFFORT_LEVEL=max
+set CLAUDE_CODE_EFFORT_LEVEL=xhigh
 set CLAUDE_CODE_PERMISSION_MODEL=bypassPermissions
 set ENABLE_TOOL_SEARCH=true
 @REM Resolve real python.exe (skip WindowsApps stub)
@@ -42,4 +42,4 @@ pushd %~dp0
 ECHO === Claude starting with Plugin: %~dp0 ===
 ECHO === (Ctrl+C to stop Claude only) ===
 ECHO Applying plugin CLAUDE.md, path is %~dp0CLAUDE.md
-call claude --add-dir %~dp0 --permission-mode %CLAUDE_CODE_PERMISSION_MODEL% --dangerously-skip-permissions --model claude-opus-4-6[1m] --effort %CLAUDE_CODE_EFFORT_LEVEL%
+call claude --add-dir %~dp0 --permission-mode %CLAUDE_CODE_PERMISSION_MODEL% --dangerously-skip-permissions --model %ANTHROPIC_MODEL% --effort %CLAUDE_CODE_EFFORT_LEVEL%
