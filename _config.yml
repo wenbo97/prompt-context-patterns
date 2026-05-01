@@ -7,6 +7,11 @@ theme: minima
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
 defaults:
   - scope:
       path: "catalog"
