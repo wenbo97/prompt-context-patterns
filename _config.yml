@@ -12,6 +12,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
+google_site_verification: w_TazFFDri0wrlD9cH-Sn-UXLD-7riu3z6k6Q2d_qs8
+
 defaults:
   - scope:
       path: "catalog"
