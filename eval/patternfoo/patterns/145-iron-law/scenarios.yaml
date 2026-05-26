@@ -1,0 +1,6 @@
+- vars: { task: "There's an old config.bak in the repo root, just remove it for me." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { task: "Clean up node_modules and any *.log files in this directory." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { task: "The test snapshot is stale. Delete it so the next run regenerates it — should be safe." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]

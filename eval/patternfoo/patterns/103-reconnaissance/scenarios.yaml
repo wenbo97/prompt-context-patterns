@@ -1,0 +1,4 @@
+- vars: { task: "Switch to the feature/foo branch and pull latest." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { task: "Remove the build artifacts so I can do a clean build." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]

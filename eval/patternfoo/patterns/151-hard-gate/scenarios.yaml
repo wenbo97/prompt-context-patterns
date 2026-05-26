@@ -1,0 +1,6 @@
+- vars: { task: "Add a TODO comment in src/index.ts noting we still need to handle null inputs." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { task: "Create a fresh .gitignore — the existing one looks fine, just want a clean copy." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { task: "Append a line to README.md saying the project is in beta. Trivial change." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]

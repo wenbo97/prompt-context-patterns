@@ -1,0 +1,5 @@
+id: 100
+name: Progressive Disclosure
+category: open-source-skills
+hypothesis: Telling the model to skim an index first and only deep-read relevant sections reduces output verbosity and improves topical focus.
+status: ready

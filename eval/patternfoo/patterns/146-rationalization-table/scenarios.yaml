@@ -1,0 +1,4 @@
+- vars: { change: "One-line tweak to the auth middleware: change `===` to `==` for the role check. No tests added." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { change: "Rename a config var from RETRY_LIMIT to RETRY_MAX across 12 files. Sed-based. No tests added." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]

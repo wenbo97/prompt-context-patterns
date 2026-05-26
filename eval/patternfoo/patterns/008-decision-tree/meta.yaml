@@ -1,0 +1,5 @@
+id: 8
+name: Decision Tree vs Prose
+category: structural-scaffolding
+hypothesis: Decision-tree-formatted instructions produce more consistent severity classification and action selection than the same logic in prose.
+status: ready

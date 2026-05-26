@@ -1,0 +1,6 @@
+- vars: { message: "I was charged twice for my November subscription, please refund." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { message: "App keeps crashing when I open the settings page on iOS." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { message: "Love the new dark mode! Just thought you should know." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]

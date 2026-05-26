@@ -1,0 +1,5 @@
+id: 103
+name: Reconnaissance-Then-Action
+category: open-source-skills
+hypothesis: Requiring a state-read step before any action reduces blind-action errors when the environment has hidden state.
+status: ready

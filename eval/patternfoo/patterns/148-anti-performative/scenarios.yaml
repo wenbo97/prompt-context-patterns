@@ -1,0 +1,4 @@
+- vars: { message: "I think we should rewrite the whole queue system in Rust — would be much faster." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { message: "We don't need integration tests if the unit tests pass, right?" }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
