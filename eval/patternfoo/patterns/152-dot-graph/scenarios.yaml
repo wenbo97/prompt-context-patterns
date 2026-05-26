@@ -1,0 +1,8 @@
+- vars: { issue: "Checkout button returns 500 for every user. Started 5 min ago." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { issue: "Can someone add dark mode to the settings page?" }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { issue: "How do I rotate my API key?" }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars: { issue: "It's slow sometimes." }
+  assert: [{ type: llm-rubric, value: file://rubric.md }]

@@ -1,0 +1,5 @@
+id: 152
+name: DOT-Graph Decision Flow
+category: structural-scaffolding
+hypothesis: A DOT-syntax state machine produces more consistent routing decisions than the same logic written as a bulleted list.
+status: ready

@@ -1,0 +1,32 @@
+{
+  "name": "patternfoo",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "bin": {
+    "patternfoo": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli.tsx",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "ink": "^5.0.0",
+    "ink-select-input": "^6.0.0",
+    "ink-text-input": "^6.0.0",
+    "js-yaml": "^4.1.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "promptfoo": "^0.121.0"
+  }
+}

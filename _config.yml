@@ -1,0 +1,28 @@
+title: Prompt, Context & Agent Orchestration
+description: Practical patterns for writing stable prompts, engineering context, and orchestrating AI agents.
+baseurl: /prompt-context-patterns
+url: https://wenbo97.github.io
+
+theme: minima
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+google_site_verification: w_TazFFDri0wrlD9cH-Sn-UXLD-7riu3z6k6Q2d_qs8
+
+defaults:
+  - scope:
+      path: "catalog"
+    values:
+      layout: default
+
+exclude:
+  - eval
+  - docs
+  - media
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {%- if page.categories.size > 0 -%} · {{ page.categories | join: ' / ' }}{%- endif -%}
+
+      {%- comment -%} EN ↔ ZH switch via slug suffix {%- endcomment -%}
+      {%- if page.lang == 'zh' -%}
+        {%- assign target = page.slug | remove_first: '-zh' -%}
+      {%- else -%}
+        {%- assign target = page.slug | append: '-zh' -%}
+      {%- endif -%}
+      {%- assign alt_post = nil -%}
+      {%- for p in site.posts -%}
+        {%- if p.slug == target -%}{%- assign alt_post = p -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if alt_post -%}
+        <span class="lang-switch">·
+          {%- if page.lang == 'zh' -%}
+            <a href="{{ alt_post.url | relative_url }}">Read in English →</a>
+          {%- else -%}
+            <a href="{{ alt_post.url | relative_url }}">阅读中文版 →</a>
+          {%- endif -%}
+        </span>
+      {%- endif -%}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

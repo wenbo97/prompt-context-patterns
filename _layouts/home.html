@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="home">
+  <section class="home-hero">
+    <h1>{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+  </section>
+
+  {{ content }}
+
+  <h2 class="post-list-heading">Latest Posts / 最新文章</h2>
+  <ul class="post-list">
+    {%- assign posts = site.posts -%}
+    {%- for post in posts -%}
+      {%- assign slug = post.url | split: '/' | last -%}
+      {%- assign is_zh = post.lang -%}
+      {%- if is_zh == 'zh' -%}{%- continue -%}{%- endif -%}
+
+      {%- assign zh_url = post.url | replace_first: post.slug, post.slug | append: '' -%}
+      {%- assign zh_slug = post.slug | append: '-zh' -%}
+      {%- assign zh_post = nil -%}
+      {%- for p in site.posts -%}
+        {%- if p.slug == zh_slug -%}{%- assign zh_post = p -%}{%- endif -%}
+      {%- endfor -%}
+
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }} · {{ post.categories | join: ' / ' }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {%- if post.excerpt -%}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {%- endif -%}
+        {%- if zh_post -%}
+          <div class="post-lang-switch">中文版 → <a href="{{ zh_post.url | relative_url }}">{{ zh_post.title | escape }}</a></div>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

@@ -1,0 +1,15 @@
+- vars:
+    scenario: "Production API returning 503 to 30% of users for 12 minutes. Memory usage on 2 of 6 app pods near limit. Last deploy 90 minutes ago changed payment retry logic."
+  assert:
+    - type: llm-rubric
+      value: file://rubric.md
+- vars:
+    scenario: "Login pipeline shows 1.5x slower p95 latency over last hour. No errors. Background batch job started 65 minutes ago."
+  assert:
+    - type: llm-rubric
+      value: file://rubric.md
+- vars:
+    scenario: "Single noisy alert: disk usage on monitoring-only host hit 85%. No customer impact reported."
+  assert:
+    - type: llm-rubric
+      value: file://rubric.md

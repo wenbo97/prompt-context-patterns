@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wenbo97.github.io/prompt-context-patterns/sitemap.xml

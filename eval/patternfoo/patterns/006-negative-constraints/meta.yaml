@@ -1,0 +1,5 @@
+id: 6
+name: Negative Constraints / Prohibited Actions
+category: execution-control
+hypothesis: Explicit prohibited-actions list reduces accidental policy violations vs an unbounded permissive instruction.
+status: ready

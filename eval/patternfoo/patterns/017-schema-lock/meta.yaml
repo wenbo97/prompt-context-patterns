@@ -1,0 +1,5 @@
+id: 17
+name: Schema Lock (JSON output contract)
+category: input-output-contracts
+hypothesis: A required JSON schema with example reduces output-format variance compared to a freeform request.
+status: ready

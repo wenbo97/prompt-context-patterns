@@ -1,0 +1,30 @@
+- vars:
+    doc: |
+      # API Overview
+      Summary: Basics of the public API surface.
+      # Authentication
+      Summary: OAuth2 flow with token refresh.
+      Detail: The flow uses PKCE with S256. Tokens refresh every 30 minutes via /oauth/refresh. Errors return 401 with `code` field. Rate limit 60/min.
+      # Rate Limiting
+      Summary: Per-endpoint budgets.
+      Detail: Most endpoints allow 100 RPM. /search is 20 RPM. 429 includes Retry-After header.
+      # Webhooks
+      Summary: Outgoing event delivery.
+      Detail: Signed with HMAC-SHA256. Retries 5x with exponential backoff.
+    question: "How do I refresh an OAuth token?"
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
+- vars:
+    doc: |
+      # Overview
+      Summary: System overview.
+      # Storage
+      Summary: How data is stored.
+      Detail: We use S3 with KMS encryption. Objects keyed by tenant/year/uuid.
+      # Compute
+      Summary: How workloads run.
+      Detail: Lambda for API, ECS for batch. Cold start ~400ms on Lambda.
+      # Networking
+      Summary: VPC layout.
+      Detail: Three AZ, NAT per AZ, private subnets only.
+    question: "Where do uploaded files go?"
+  assert: [{ type: llm-rubric, value: file://rubric.md }]
