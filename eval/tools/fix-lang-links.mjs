@@ -37,6 +37,10 @@ for (const f of walk(join(ROOT, 'catalog')).concat(walk(join(ROOT, '_posts')))) 
     const [path, anchor] = url.split('#');
     const clean = path.replace(/\/$/, '');
     if (isNeutral(clean)) return m;
+    // a link to this file's own counterpart (X <-> X-zh) is a deliberate language switcher — leave it
+    const fileBase = rel.split('/').pop().replace(/\.md$/, '');
+    const counterpart = /-zh$/.test(fileBase) ? fileBase.replace(/-zh$/, '') : fileBase + '-zh';
+    if (clean.split('/').pop() === counterpart) return m;
     if (tLang(clean) === fileLang) return m;
     const newPath = fileLang === 'zh' ? clean + '-zh' : clean.replace(/-zh$/, '');
     if (!pageExists(newPath)) { skippedDead.push(`${rel}: ${newPath} (missing)`); return m; }

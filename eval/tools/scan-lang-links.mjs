@@ -41,6 +41,10 @@ for (const f of files) {
     if (!url.includes('/catalog/')) continue;         // only internal catalog links
     const path = url.split('#')[0].replace(/\/$/, ''); // strip anchor + trailing slash
     if (isNeutral(path)) continue;
+    // a link to this page's own counterpart (X <-> X-zh) is a deliberate language switcher — allowed
+    const fileBase = f.split(/[\\/]/).pop().replace(/\.md$/, '');
+    const counterpart = /-zh$/.test(fileBase) ? fileBase.replace(/-zh$/, '') : fileBase + '-zh';
+    if (path.split('/').pop() === counterpart) continue;
     const tl = targetLang(path);
     if (tl !== fileLang) {
       total++;

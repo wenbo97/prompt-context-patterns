@@ -1,6 +1,6 @@
 # 提示词模式目录 — 索引
 
-从 500+ 生产级 AI Agent 插件（2,293 个 SKILL.md 文件）、开源技能仓库和 Claude Code 系统提示词架构中提取的 **206 个提示词工程模式**目录（模式 1–155 在下方有完整写法；模式 156–206 来自 2026-07 收割，可在 **[模式浏览器]({{ site.baseurl }}/catalog/browse/)** 浏览，完整写法进行中）。原始 30 个模式（1-30）包含正面/反面示例。高级 61 个模式（31-91）通过对完整插件集合的深度研究发现。8 个补充模式（92-99）来自针对覆盖不足类别的定向扫描。21 个开源模式（100-120）提取自 Anthropic 官方技能仓库和 ComposioHQ 的 awesome-claude-skills 仓库。模式 121-142 涵盖 Claude Code 可组合系统提示词的平台级关注点。模式 143-155 来自 2026-05 跨 awesome-claude-skills + superpowers + claude-plugins-official + 内部实验 的收割。模式 156-206 来自 2026-07 跨 superpowers、claude-plugins-official、mattpocock/skills 的收割（新增了**技能创作**分类）。
+从 500+ 生产级 AI Agent 插件（2,293 个 SKILL.md 文件）、开源技能仓库和 Claude Code 系统提示词架构中提取的 **206 个提示词工程模式**目录（模式 1–155 在下方有完整写法；模式 156–206 来自 2026-07 收割，可在 **[模式浏览器]({{ site.baseurl }}/catalog/browse/)** 或静态 **[156–206 列表]({{ site.baseurl }}/catalog/patterns-156-206-zh)** 浏览，完整写法进行中）。原始 30 个模式（1-30）包含正面/反面示例。高级 61 个模式（31-91）通过对完整插件集合的深度研究发现。8 个补充模式（92-99）来自针对覆盖不足类别的定向扫描。21 个开源模式（100-120）提取自 Anthropic 官方技能仓库和 ComposioHQ 的 awesome-claude-skills 仓库。模式 121-142 涵盖 Claude Code 可组合系统提示词的平台级关注点。模式 143-155 来自 2026-05 跨 awesome-claude-skills + superpowers + claude-plugins-official + 内部实验 的收割。模式 156-206 来自 2026-07 跨 superpowers、claude-plugins-official、mattpocock/skills 的收割（新增了**技能创作**分类）。
 
 **数据来源：**
 提取自对 500+ 生产级 AI Agent 插件的分析，覆盖 DevOps、安全、迁移和事件响应领域。
