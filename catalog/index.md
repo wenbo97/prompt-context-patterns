@@ -21,6 +21,7 @@ Extracted from 500+ production AI agent plugins, plus the superpowers, claude-pl
 |-|----|------|
 | **🔍 Browse all 206** | [Pattern browser]({{ site.baseurl }}/catalog/browse/) | EN & 中文 in one page |
 | **Detailed index (1–155)** | [catalog-index]({{ site.baseurl }}/catalog/catalog-index) | [catalog-index-zh]({{ site.baseurl }}/catalog/catalog-index-zh) |
+| **Harvest 156–206 (static)** | [Patterns 156–206]({{ site.baseurl }}/catalog/patterns-156-206) | [模式 156–206]({{ site.baseurl }}/catalog/patterns-156-206-zh) |
 
 ---
 
