@@ -34,6 +34,29 @@ python3 eval/decision-tree-ab/analyze.py        # parse results
 
 Prompt files follow naming: `prompt-{prose|tree}[-variant].md`. Results are saved to `eval/decision-tree-ab/results/` (gitignored — local only).
 
+## Pattern Browser & Data Pipeline (catalog/browse)
+
+The interactive browser (`catalog/browse.md` + `assets/catalog.js` + vendored `assets/fuse.min.js`) reads `assets/patterns.json` — the committed, pre-built data for all 206 patterns. GitHub Pages runs no Node build, so the JSON **must be committed**.
+
+Regenerate the data with the Node 18+ tools in `eval/tools/` (no deps):
+
+```bash
+node eval/tools/build-patterns.mjs   # parses catalog-index (1–155) + merges harvest (156–206)
+                                     #   -> _data/patterns.json + assets/patterns.json
+```
+
+**Rebuild ordering matters** — the 156–206 detail links point at real kramdown anchors on the static list pages, so if harvest names change, run the full pass:
+
+```bash
+bundle exec jekyll build                  # 1. render static pages so <h2 id> anchors exist
+node eval/tools/wire-harvest-detail.mjs   # 2. extract real anchors -> patterns-harvest.json
+node eval/tools/build-patterns.mjs        # 3. rebuild patterns.json WITH detail links
+bundle exec jekyll build                  # 4. ship updated JSON
+node eval/tools/to-crlf.mjs               # 5. normalize generated files to CRLF before commit
+```
+
+Sources of truth: `eval/tools/patterns-harvest.json` (156–206 metadata) + `eval/tools/names-zh.json` (Chinese names for 1–155). Link-integrity helpers: `scan-lang-links.mjs` (must report 0), `fix-related-links.mjs`, `fix-lang-links.mjs`.
+
 ## Conventions
 
 - All text files use CRLF line endings (enforced via `.gitattributes`)

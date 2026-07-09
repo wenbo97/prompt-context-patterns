@@ -23,6 +23,6 @@ permalink: /catalog/browse/
   </noscript>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script src="{{ '/assets/fuse.min.js' | relative_url }}"></script>
 <script>window.PB_BASEURL = "{{ site.baseurl }}";</script>
 <script src="{{ '/assets/catalog.js' | relative_url }}"></script>

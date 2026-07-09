@@ -66,16 +66,21 @@
     .then(function (r) { return r.json(); })
     .then(function (rows) {
       data = rows;
-      fuse = new Fuse(rows, {
-        keys: [
-          { name: 'name_en', weight: 2 }, { name: 'name_zh', weight: 2 },
-          'problem_en', 'problem_zh'
-        ],
-        threshold: 0.35, ignoreLocation: true, minMatchCharLength: 2
-      });
+      // Fuzzy search is progressive enhancement: if the Fuse library failed to
+      // load, filters + list still work; only the search box gets disabled.
+      try {
+        fuse = new Fuse(rows, {
+          keys: [
+            { name: 'name_en', weight: 2 }, { name: 'name_zh', weight: 2 },
+            'problem_en', 'problem_zh'
+          ],
+          threshold: 0.35, ignoreLocation: true, minMatchCharLength: 2
+        });
+      } catch (e) { fuse = null; }
       applyStaticText();
       renderFacets();
       render();
+      if (!fuse) { $search.disabled = true; $search.placeholder = 'search unavailable'; }
     })
     .catch(function () { $empty.hidden = false; $empty.textContent = 'Failed to load patterns.json'; });
 
@@ -92,9 +97,11 @@
 
   function renderFacets() {
     $facets.innerHTML = '';
-    groupEl('category', CAT, orderedKeys(CAT, counts('category')), counts('category'));
-    groupEl('source', SRC, orderedKeys(SRC, counts('source')), counts('source'));
-    groupEl('confidence', CONF, ['high', 'medium'], counts('confidence'));
+    var cCat = counts('category'), cSrc = counts('source'), cConf = counts('confidence');
+    groupEl('category', CAT, orderedKeys(CAT, cCat), cCat);
+    groupEl('source', SRC, orderedKeys(SRC, cSrc), cSrc);
+    // confidence keys derived from data so a future 'low' pattern still gets a chip
+    groupEl('confidence', CONF, ['high', 'medium', 'low'].filter(function (k) { return cConf[k]; }), cConf);
   }
 
   function groupEl(field, labelMap, keys, cnt) {
