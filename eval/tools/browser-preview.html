@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+  Standalone preview of the /catalog/browse pattern browser — NO Ruby/Jekyll needed.
+  Uses the REAL assets/catalog.js + assets/patterns.json; only the CSS is inlined
+  here (normally compiled from assets/main.scss).
+
+  Run from the repo root:
+      python -m http.server 8000
+  then open:
+      http://localhost:8000/eval/tools/browser-preview.html
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern Browser — preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Noto+Serif+SC:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand:#B7410E; --brand-light:#E8DCC9; --text:#2D2A26; --muted:#6B655C;
+    --bg:#FAF8F5; --surface:#F2EEE7; --border:#E0D9CC;
+    --serif:"Source Serif 4","Noto Serif SC",Georgia,serif;
+    --mono:"JetBrains Mono","SF Mono",Consolas,monospace;
+  }
+  body { font-family:var(--serif); color:var(--text); background:var(--bg); margin:0; }
+  .wrapper { max-width:960px; margin:0 auto; padding:32px 24px; }
+  h1 { font-size:1.6rem; letter-spacing:-0.02em; margin:0 0 4px; }
+  .note { color:var(--muted); font-size:0.85rem; margin:0 0 24px; }
+
+  .pb { margin:8px 0 48px; }
+  .pb-topbar { display:flex; gap:12px; align-items:stretch; margin-bottom:18px; }
+  .pb-search { flex:1; font-family:var(--serif); font-size:1rem; color:var(--text);
+    background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:10px 14px; }
+  .pb-search:focus { outline:none; border-color:var(--brand); }
+  .pb-search::placeholder { color:var(--muted); }
+  .pb-lang { display:flex; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+  .pb-lang button { font-family:var(--mono); font-size:0.82rem; padding:0 14px; background:var(--surface);
+    color:var(--muted); border:none; cursor:pointer; }
+  .pb-lang button.is-active { background:var(--brand); color:#fff; }
+  .pb-lang button + button { border-left:1px solid var(--border); }
+
+  .pb-facets { display:flex; flex-direction:column; gap:10px; margin-bottom:16px; }
+  .pb-facet-group { display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+  .pb-facet-label { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em;
+    color:var(--muted); font-weight:600; min-width:88px; }
+  .pb-chip { display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:0.78rem;
+    color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:20px;
+    padding:3px 10px; cursor:pointer; transition:all .12s ease; }
+  .pb-chip i { font-style:normal; font-size:0.7rem; opacity:.6; }
+  .pb-chip:hover { border-color:var(--brand); color:var(--text); }
+  .pb-chip.is-on { background:var(--brand); border-color:var(--brand); color:#fff; }
+  .pb-chip.is-on i { opacity:.85; }
+
+  .pb-count { font-family:var(--mono); font-size:0.8rem; color:var(--muted); margin:4px 0 16px; }
+  .pb-list { list-style:none; margin:0; padding:0; display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
+  .pb-card { border:1px solid var(--border); border-radius:8px; background:var(--bg);
+    padding:14px 16px; display:flex; flex-direction:column; }
+  .pb-card:hover { border-color:var(--brand); }
+  .pb-card--link { cursor:pointer; }
+  .pb-card--link:hover { background:rgba(232,220,201,.14); }
+  .pb-card-head { display:flex; align-items:baseline; gap:8px; }
+  .pb-id { font-family:var(--mono); font-size:0.75rem; color:var(--brand); font-weight:500; }
+  .pb-name { font-weight:600; font-size:1.02rem; line-height:1.3; }
+  .pb-meta { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+  .pb-tag { font-family:var(--mono); font-size:0.68rem; padding:2px 7px; border-radius:3px;
+    background:var(--surface); color:var(--muted); border:1px solid var(--border); }
+  .pb-cat { color:var(--text); }
+  .pb-conf-high { background:rgba(183,65,14,.12); color:var(--brand); border-color:rgba(183,65,14,.3); }
+  .pb-conf-medium { background:rgba(107,101,92,.12); }
+  .pb-problem { font-size:0.9rem; line-height:1.5; color:var(--muted); margin:0 0 10px; flex:1; }
+  .pb-detail { align-self:flex-start; font-family:var(--mono); font-size:0.78rem; color:var(--brand); text-decoration:none; }
+  .pb-detail:hover { text-decoration:underline; }
+  .pb-detail.pb-pending { color:var(--muted); opacity:.7; }
+  .pb-empty { color:var(--muted); padding:24px 0; }
+  @media (max-width:600px){ .pb-facet-label{min-width:100%;} .pb-list{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <h1>🔍 Pattern Browser <span style="font-size:1rem;color:var(--muted)">— local preview</span></h1>
+  <p class="note">Standalone preview (no Jekyll). Real <code>catalog.js</code> + <code>patterns.json</code>. Detail links won't resolve here — that needs the built site.</p>
+
+  <div class="pb" id="pattern-browser" aria-live="polite">
+    <div class="pb-topbar">
+      <input type="search" id="pb-search" class="pb-search" autocomplete="off" spellcheck="false">
+      <div class="pb-lang" id="pb-lang" role="group" aria-label="language">
+        <button type="button" data-lang="en" class="is-active">EN</button>
+        <button type="button" data-lang="zh">中文</button>
+      </div>
+    </div>
+    <div class="pb-facets" id="pb-facets"></div>
+    <div class="pb-count" id="pb-count"></div>
+    <ul class="pb-list" id="pb-list"></ul>
+    <p class="pb-empty" id="pb-empty" hidden></p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script>window.PB_BASEURL = "";</script>
+<script src="/assets/catalog.js"></script>
+</body>
+</html>

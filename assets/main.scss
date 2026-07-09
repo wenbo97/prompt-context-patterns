@@ -256,3 +256,167 @@ body {
   padding: 32px 0;
   margin-top: 64px;
 }
+
+// =============================================================
+// Pattern Browser (/catalog/browse)
+// =============================================================
+.pb {
+  margin: 24px 0 48px;
+
+  .pb-topbar {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+    margin-bottom: 18px;
+  }
+
+  .pb-search {
+    flex: 1;
+    font-family: $base-font-family;
+    font-size: 1rem;
+    color: $text-color;
+    background: $surface-color;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 10px 14px;
+
+    &:focus { outline: none; border-color: $brand-color; }
+    &::placeholder { color: $muted-color; }
+  }
+
+  .pb-lang {
+    display: flex;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    overflow: hidden;
+
+    button {
+      font-family: $mono-font-family;
+      font-size: 0.82rem;
+      padding: 0 14px;
+      background: $surface-color;
+      color: $muted-color;
+      border: none;
+      cursor: pointer;
+
+      &.is-active { background: $brand-color; color: #fff; }
+      & + button { border-left: 1px solid $border-color; }
+    }
+  }
+
+  // Facets
+  .pb-facets { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+
+  .pb-facet-group { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+
+  .pb-facet-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $muted-color;
+    font-weight: 600;
+    min-width: 88px;
+  }
+
+  .pb-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: $mono-font-family;
+    font-size: 0.78rem;
+    color: $muted-color;
+    background: $surface-color;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    padding: 3px 10px;
+    cursor: pointer;
+    transition: all 0.12s ease;
+
+    i { font-style: normal; font-size: 0.7rem; opacity: 0.6; }
+
+    &:hover { border-color: $brand-color; color: $text-color; }
+    &.is-on { background: $brand-color; border-color: $brand-color; color: #fff; i { opacity: 0.85; } }
+  }
+
+  .pb-count {
+    font-family: $mono-font-family;
+    font-size: 0.8rem;
+    color: $muted-color;
+    margin: 4px 0 16px;
+  }
+
+  // Cards
+  .pb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+  }
+
+  .pb-card {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    background: $background-color;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover { border-color: $brand-color; }
+    &.pb-card--link { cursor: pointer; }
+    &.pb-card--link:hover { background: rgba(232, 220, 201, 0.14); }
+  }
+
+  .pb-card-head { display: flex; align-items: baseline; gap: 8px; }
+
+  .pb-id {
+    font-family: $mono-font-family;
+    font-size: 0.75rem;
+    color: $brand-color;
+    font-weight: 500;
+  }
+
+  .pb-name { font-weight: 600; font-size: 1.02rem; line-height: 1.3; color: $text-color; }
+
+  .pb-meta { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+
+  .pb-tag {
+    font-family: $mono-font-family;
+    font-size: 0.68rem;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background: $surface-color;
+    color: $muted-color;
+    border: 1px solid $border-color;
+  }
+  .pb-cat { color: $text-color; }
+  .pb-conf-high   { background: rgba(183, 65, 14, 0.12);  color: $brand-color; border-color: rgba(183, 65, 14, 0.3); }
+  .pb-conf-medium { background: rgba(107, 101, 92, 0.12); }
+
+  .pb-problem {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: $muted-color;
+    margin: 0 0 10px;
+    flex: 1;
+  }
+
+  .pb-detail {
+    align-self: flex-start;
+    font-family: $mono-font-family;
+    font-size: 0.78rem;
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+    &.pb-pending { color: $muted-color; opacity: 0.7; }
+  }
+
+  .pb-empty { color: $muted-color; padding: 24px 0; }
+}
+
+@media (max-width: 600px) {
+  .pb .pb-facet-label { min-width: 100%; }
+  .pb .pb-list { grid-template-columns: 1fr; }
+}

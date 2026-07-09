@@ -12,4 +12,7 @@ Gemfile.lock
 media/
 eval/decision-tree-ab/results/
 eval/harvest-2026-05/
+eval/harvest-2026-07/
 superpowers/
+
+.playwright-mcp/

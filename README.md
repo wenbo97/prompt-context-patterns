@@ -14,7 +14,7 @@ _layouts/              Custom Jekyll layouts (default, home, post)
 assets/main.scss       Warm-gray theme (Source Serif 4 + Noto Serif SC)
 _includes/header.html  Site nav
 
-catalog/               155 prompt patterns for AI agent development
+catalog/               206 prompt patterns for AI agent development
   categories/          Patterns grouped by function
   techniques/          Deep-dive technique guides
   standards/           Review frameworks
@@ -36,6 +36,7 @@ eval/                  A/B test scripts and results
 | Decision Tree pattern | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/decision-tree-pattern/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/decision-tree-pattern-zh/) | `eval/decision-tree-ab/` |
 | Prompt engineering patterns | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/prompt-engineering-patterns/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/prompt-engineering-patterns-zh/) | — |
 | **155-pattern catalog** | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/05/26/prompt-pattern-catalog/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/05/26/prompt-pattern-catalog-zh/) | — |
+| **2026-07 harvest (+51 → 206)** | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/07/08/harvest-2026-07/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/07/08/harvest-2026-07-zh/) | — |
 
 ## Local Preview
 
