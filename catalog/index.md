@@ -2,13 +2,16 @@
 layout: default
 ---
 
-# 142 Prompt Patterns for AI Agent Development
+# 206 Prompt Patterns for AI Agent Development
 
-# 142 个 AI Agent 提示词模式
+# 206 个 AI Agent 提示词模式
 
-Extracted from 500+ production AI agent plugins. Browse by category, technique, or standard.
+Extracted from 500+ production AI agent plugins, plus the superpowers, claude-plugins-official, and mattpocock/skills repositories. Browse by category, technique, or standard.
 
-从 500+ 个生产 AI agent 插件中提炼。按分类、技巧或标准浏览。
+从 500+ 生产 AI agent 插件，以及 superpowers、claude-plugins-official、mattpocock/skills 仓库中提炼。按分类、技巧或标准浏览。
+
+> **🔍 [Interactive pattern browser →]({{ site.baseurl }}/catalog/browse/)** — search + filter all 206 by category / source / confidence, EN & 中文.
+> Patterns 156–206 are the 2026-07 harvest; full write-ups in progress.
 
 ---
 
@@ -16,7 +19,8 @@ Extracted from 500+ production AI agent plugins. Browse by category, technique, 
 
 | | EN | 中文 |
 |-|----|------|
-| **All 142 Patterns** | [catalog-index]({{ site.baseurl }}/catalog/catalog-index) | [catalog-index-zh]({{ site.baseurl }}/catalog/catalog-index-zh) |
+| **🔍 Browse all 206** | [Pattern browser]({{ site.baseurl }}/catalog/browse/) | EN & 中文 in one page |
+| **Detailed index (1–155)** | [catalog-index]({{ site.baseurl }}/catalog/catalog-index) | [catalog-index-zh]({{ site.baseurl }}/catalog/catalog-index-zh) |
 
 ---
 
