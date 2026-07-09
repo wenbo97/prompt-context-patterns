@@ -9,7 +9,7 @@ Deep patterns for multi-agent coordination, routing, consensus, and delegation �
 ## Pattern 31: Adversarial Persona Framing
 
 **Prevalence:** ~3% of orchestration plugins
-**Related patterns:** [Persona/Role Assignment](#pattern-5), [Multi-Agent Orchestration](#pattern-18), [Self-Critique](#pattern-28)
+**Related patterns:** [Persona/Role Assignment](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-5-personarole-assignment), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check)
 
 **What it is:** Assigning agents explicitly adversarial mindsets with attack/defense stances, rather than neutral analysis roles. The agent is told to assume problems exist and to actively try to break things.
 
@@ -56,7 +56,7 @@ Review the code carefully and look for any issues. Be thorough.
 ## Pattern 32: Hub-and-Spoke SDLC State Machine
 
 **Prevalence:** ~1% of plugins (but highly impactful)
-**Related patterns:** [Phased Execution](#pattern-2), [Multi-Agent Orchestration](#pattern-18)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** A central orchestrator agent that owns a state machine representing the software development lifecycle. Specialist agents are stateless workers that complete one state transition and return control to the hub via a structured Completion Report.
 
@@ -106,7 +106,7 @@ Each agent should report back what they did when finished.
 ## Pattern 33: M x N Cross-Model Consensus Grid
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Deduplication/Consensus](#pattern-22), [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-22-deduplication--consensus-algorithms), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** For each review dimension (M lenses), launch N different AI models in parallel. Then consolidate per-lens (N→1), then meta-consolidate across lenses (M→1). Creates a 3-tier pipeline that uses cross-model diversity to catch hallucinations and increase confidence.
 
@@ -155,7 +155,7 @@ If models disagree, use your best judgment to pick the right answer.
 ## Pattern 34: Dual-Model Adversarial Planning
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Self-Critique](#pattern-28), [Confirmation Gates](#pattern-8)
+**Related patterns:** [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** Two AI models independently create plans for the same task, self-harden their plans, then cross-review each other's plans. A human picks the winner, and improvements from the losing plan are merged in.
 
@@ -201,7 +201,7 @@ discuss ideas back and forth until they converge on the best approach.
 ## Pattern 35: Cost-Optimized Model Routing
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Intent Classification](#pattern-20), [Tool Routing Tables](#pattern-21)
+**Related patterns:** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables)
 
 **What it is:** Decomposing tasks into subtasks, classifying each on multiple dimensions, and routing to the cheapest model that meets quality requirements. Includes cost reporting with savings comparison.
 
@@ -249,7 +249,7 @@ We can optimize costs later if needed.
 ## Pattern 36: Handoff Context Protocol
 
 **Prevalence:** ~2% of orchestration plugins
-**Related patterns:** [Phased Execution](#pattern-2), [Reference File Injection](#pattern-23)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection)
 
 **What it is:** A standardized context block that the orchestrator prepares before every agent handoff, ensuring the receiving agent has all necessary context without reading unnecessary data.
 
@@ -281,7 +281,7 @@ all the context it needs to continue the work.
 ## Pattern 37: Context Efficiency Rule (Orchestrator Reads Nothing)
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Multi-Agent Orchestration](#pattern-18), [Handoff Context Protocol](#pattern-36)
+**Related patterns:** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Handoff Context Protocol](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-36-handoff-context-protocol)
 
 **What it is:** The orchestrator passes file paths to sub-agents and consolidators but never reads file contents itself. Only reads the final consolidated report. This preserves the orchestrator's context window for coordination logic.
 
@@ -323,7 +323,7 @@ This converts the orchestrator's job from "delegate work" to "author a minimal b
 ## Pattern 38: Complexity-Tiered Dispatch
 
 **Prevalence:** ~2% of orchestration plugins
-**Related patterns:** [Intent Classification](#pattern-20), [Workflow Mode Branching](#pattern-3)
+**Related patterns:** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-3-workflow-mode-branching)
 
 **What it is:** Classifying incoming tasks by complexity tier, then adjusting the model selection, planning phases, and agent pipeline based on the tier.
 
@@ -353,7 +353,7 @@ For harder tasks, think more carefully before coding.
 ## Pattern 39: Persistent Team with Message Board
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Multi-Agent Orchestration](#pattern-18)
+**Related patterns:** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** Agents created as a persistent team that communicate via a shared message board and individual state files. The orchestrator facilitates cross-agent discussion rather than commanding agents.
 
@@ -387,7 +387,7 @@ through the orchestrator, which relays them back and forth.
 ## Pattern 40: Delegation to Cloud Agent via Work Item
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Skill Composition](#pattern-19)
+**Related patterns:** [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-19-skill-composition--cross-skill-invocation)
 
 **What it is:** Delegating tasks to a cloud-hosted coding agent by creating a work item (e.g., ADO) assigned to the agent, tagged with the target repository.
 
@@ -416,7 +416,7 @@ and wait for it to return the result.
 ## Pattern 41: Loop Prevention with Max Iterations
 
 **Prevalence:** ~3% of plugins
-**Related patterns:** [Error Handling](#pattern-15), [Confirmation Gates](#pattern-8)
+**Related patterns:** [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** Hard limits on retry/feedback loops to prevent infinite cycling between agents. Different thresholds for different loop types, with structured reporting when limits are hit.
 
@@ -448,7 +448,7 @@ try a different approach and retry again.
 ## Pattern 42: Agent Memory Isolation
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Prompt Injection Defense](#pattern-10), [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** Each agent in a team has isolated memory/state directories. Cross-agent communication happens only through designated artifact directories, never by reading another agent's internal state.
 
@@ -483,7 +483,7 @@ other team members are thinking and coordinate accordingly.
 ## Pattern 43: Sparse Git Worktree for Isolated Review
 
 **Prevalence:** ~2% of review-related plugins
-**Related patterns:** [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** Creating a sparse git worktree containing only PR-changed files for review, avoiding materializing the full repository in large monorepos.
 
@@ -510,7 +510,7 @@ the changed files.
 ## Pattern 44: Severity Promotion/Demotion by Area
 
 **Prevalence:** ~2% of review plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27), [Deduplication/Consensus](#pattern-22)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-22-deduplication--consensus-algorithms)
 
 **What it is:** Automatically adjusting finding severity based on the review area, encoding organizational risk appetite directly into the prompt.
 

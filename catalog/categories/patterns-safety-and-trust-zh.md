@@ -9,7 +9,7 @@
 ## Pattern 10: Prompt Injection Defense
 
 **出现频率：** <1% 的技能（17 个文件显式声明），但至关重要
-**相关模式：** [Sensitive Data Redaction](#pattern-11), [Read-Only Boundary](#pattern-12), [Negative Constraints](#pattern-6)
+**相关模式：** [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-11-sensitive-data-redaction), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists)
 
 **定义：** 显式警告 agent 将外部内容（获取的网页、API 响应、用户上传文件、数据库结果）视为不可信数据，且绝不执行嵌入在该内容中的指令。
 
@@ -50,7 +50,7 @@ Use your best judgment about what to follow and what to ignore.
 ## Pattern 11: Sensitive Data Redaction
 
 **出现频率：** ~2% 的技能（30-50 文件）
-**相关模式：** [Prompt Injection Defense](#pattern-10), [Read-Only Boundary](#pattern-12)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义：** 指示 agent 避免在输出中暴露密钥、PII、token 或内部元数据，带有具体的脱敏替换模式。
 
@@ -100,7 +100,7 @@ like it should be private. Be careful about what you share.
 ## Pattern 12: Read-Only / Safety Boundary Declaration
 
 **出现频率：** ~4% 的技能（80-100 文件）
-**相关模式：** [Negative Constraints](#pattern-6), [Confirmation Gates](#pattern-8), [Activation Scope](#pattern-13)
+**相关模式：** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-13-activation-scope-when-to-use--when-not-to-use)
 
 **定义：** 显式声明技能的操作范围 — 能做和不能做的操作 — 防止意外副作用。
 
@@ -136,7 +136,7 @@ This is a read-only skill. Don't change anything.
 ## Pattern 13: Activation Scope (When to Use / When NOT to Use)
 
 **出现频率：** ~7% 的技能（169 文件）
-**相关模式：** [Intent Classification](#pattern-20), [Skill Composition](#pattern-19), [YAML Frontmatter](#pattern-1)
+**相关模式：** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing), [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-19-skill-composition--cross-skill-invocation), [YAML Frontmatter](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-1-yaml-frontmatter-metadata-block)
 
 **定义：** 显式定义技能适用性的边界 — 何时应被调用以及何时应使用不同技能或方法。
 

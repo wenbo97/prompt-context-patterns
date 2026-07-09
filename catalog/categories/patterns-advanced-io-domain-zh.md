@@ -9,7 +9,7 @@
 ## Pattern 81: Natural Language to Relational Schema Decomposition
 
 **出现频率：** <1% 的插件
-**相关模式：** [Domain Knowledge Embedding](#pattern-24), [Phased Execution](#pattern-2)
+**相关模式：** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow)
 
 **定义：** 一个强制性的中间推理步骤，迫使模型在任何代码生成之前将自然语言主题分解为正式的关系结构。五步流程（识别实体、分类、定义关系、确定生成顺序、约束复杂度）作为结构化推理支架。
 
@@ -52,7 +52,7 @@ Make sure to include primary keys and foreign keys.
 ## Pattern 82: Chart Decision Tree with Anti-Pattern Guards
 
 **出现频率：** <1% 的插件
-**相关模式：** [Tool Routing Tables](#pattern-21), [Negative Constraints](#pattern-6)
+**相关模式：** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists)
 
 **定义：** 一个多分支决策树，将*数据形态*映射到*可视化类型*，带有基数守卫（cardinality guards）和内联反模式防护。
 
@@ -101,7 +101,7 @@ Pick whichever seems most appropriate for the user's data.
 ## Pattern 83: Audience-Purpose-Driven Content Calibration
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Workflow Mode Branching](#pattern-3), [Structured Output Templates](#pattern-14)
+**相关模式：** [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-3-workflow-mode-branching), [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates)
 
 **定义：** 将受众和目的作为一等输入，决定所有下游关于输出格式、详细程度和展示风格的决策。
 
@@ -140,7 +140,7 @@ Use a professional tone suitable for business stakeholders.
 ## Pattern 84: Socratic Investigation Loop with Active Research
 
 **出现频率：** <1% 的插件
-**相关模式：** [Interactive Flow Control](#pattern-7), [Evidence Chain](#pattern-26)
+**相关模式：** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-7-interactive--conversational-flow-control), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work)
 
 **定义：** 模型在*主动工具研究*（读代码、搜索模式）和*苏格拉底式提问*之间交替，使用研究发现来提出越来越精确的问题。故意不直接给出解决方案，帮助用户自己发现洞察。
 
@@ -184,7 +184,7 @@ Use available tools to read code when needed.
 ## Pattern 85: Knowledge Base Index with Intent-to-Source Routing
 
 **出现频率：** 约 2% 的插件
-**相关模式：** [Reference File Injection](#pattern-23), [Intent Classification](#pattern-20)
+**相关模式：** [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing)
 
 **定义：** 两层检索系统：每次调用时读取轻量级索引文件（低 token 成本），然后仅选择性深度读取匹配的知识库文件。每个数据源有消歧表处理重叠领域。
 
@@ -225,7 +225,7 @@ If multiple files match, combine their guidance into a single answer.
 ## Pattern 86: Heuristic Scoring with Signal Detection
 
 **出现频率：** <1% 的插件
-**相关模式：** [Scoring Rubrics](#pattern-27)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 评分标准中每个分值级别指定*机器可检测信号* — 字数、正则模式、结构标记 — 而非主观描述词。
 
@@ -269,7 +269,7 @@ Scoring philosophy:
 ## Pattern 87: Eager Incremental Materialization
 
 **出现频率：** <1% 的插件
-**相关模式：** [Interactive Flow Control](#pattern-7), [Confirmation Gates](#pattern-8)
+**相关模式：** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-7-interactive--conversational-flow-control), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义：** 指示模型在对话*过程中*（而非之后）创建制品，使用工具调用作为实时反馈通道。
 
@@ -305,7 +305,7 @@ Make sure everything is finalized before making any tool calls.
 ## Pattern 88: Data Shape to Query Pattern Detection
 
 **出现频率：** <1% 的插件
-**相关模式：** [Intent Classification](#pattern-20), [Domain Knowledge Embedding](#pattern-24)
+**相关模式：** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding)
 
 **定义：** 从数据制品推断可视化意图 — 检查 DataFrame 列名和原始查询文本，检测映射到特定图表类型的模式并附带置信度分数。
 
@@ -343,7 +343,7 @@ whether a bar chart, line chart, or scatter plot is appropriate.
 ## Pattern 89: Writability Rules and Linguistic Substitution Tables
 
 **出现频率：** <1% 的插件
-**相关模式：** [Negative Constraints](#pattern-6), [Self-Critique](#pattern-28)
+**相关模式：** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check)
 
 **定义：** 完整的文体转换引擎：替换表（术语→简单词）、检测启发式（被动语态"by zombies"测试）、量化目标（15-20 词平均句长、80% 主动动词）和自验证清单。
 
@@ -389,7 +389,7 @@ Keep the tone professional but accessible.
 ## Pattern 90: Cross-Platform Surface Compatibility Matrix
 
 **出现频率：** <1% 的插件
-**相关模式：** [Cross-Platform Handling](#pattern-17), [Error Handling](#pattern-15)
+**相关模式：** [Cross-Platform Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-17-cross-platform-handling), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义：** 兼容性降级矩阵，将源/目标平台对映射到具体的功能损失和自动化解决路径，结合有界重试语义。
 
@@ -423,7 +423,7 @@ If the MCP server is unavailable, generate the card JSON directly.
 ## Pattern 91: Hub-Spoke Domain Router with Overlap Resolution
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Intent Classification](#pattern-20), [Skill Composition](#pattern-19)
+**相关模式：** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing), [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-19-skill-composition--cross-skill-invocation)
 
 **定义：** 多级特异性级联，用于消歧关键词空间重叠的专业插件。上下文相关的路由规则，同一关键词根据共现词不同路由到不同目标。
 
@@ -465,7 +465,7 @@ If unclear, ask the user which plugin they want.
 ## Pattern 144: Agent-Centric Tool Design Principles (面向 Agent 的工具设计原则)
 
 **出现频率：** 在 Anthropic 的 `mcp-builder` skill 中被编纂；agent 工具编写中反复出现的评审表
-**相关模式：** [Tool Routing Tables](#pattern-21), [Helper Script as Black Box](#pattern-104), [Output Format with Populated Example](#pattern-112)
+**相关模式：** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables), [Helper Script as Black Box](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-104-helper-script-as-black-box), [Output Format with Populated Example](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-112-output-format-with-populated-example)
 
 **定义：** 一份精炼的清单，用于设计消费者是 LLM 而非人类开发者的工具。编码了几个反复出现的非对称性：LLM 的上下文预算有限、无法在运行时翻阅 API 参考文档、需要可执行的错误消息来建议下一次调用 —— 而不是堆栈跟踪。
 

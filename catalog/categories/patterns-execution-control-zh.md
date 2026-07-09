@@ -9,7 +9,7 @@
 ## Pattern 5: Persona/Role Assignment
 
 **出现频率：** ~9% 的技能（205 文件）
-**相关模式：** [Domain Knowledge Embedding](#pattern-24), [Evidence Chain](#pattern-26)
+**相关模式：** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work)
 
 **定义：** 在技能正文开头确立 agent 的身份、专业水平和行为倾向。这为后续所有推理设定框架 — "侦探"心态产生的分析与"文档撰写者"心态截然不同。
 
@@ -50,7 +50,7 @@ Be thorough in your analysis.
 ## Pattern 6: Negative Constraints / Prohibition Lists
 
 **出现频率：** ~18% 的技能（410 文件）
-**相关模式：** [Prompt Injection Defense](#pattern-10), [Read-Only Boundary](#pattern-12), [Evidence Chain](#pattern-26)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work)
 
 **定义：** 以结构化、可扫描的格式显式枚举禁止行为。通常格式化为带强调（粗体、大写、表格）的编号规则，确保 agent 将其视为硬约束。
 
@@ -93,7 +93,7 @@ and doesn't contain any errors. Don't do anything wrong with the tools.
 ## Pattern 7: Interactive / Conversational Flow Control
 
 **出现频率：** ~2% 的技能（50 文件）
-**相关模式：** [Confirmation Gates](#pattern-8), [Configuration Persistence](#pattern-16)
+**相关模式：** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup)
 
 **定义：** 强制 agent 逐一与用户交互而非一次性倾倒所有问题。使用 "STOP and WAIT" 指令防止模型跳过问题继续执行。
 
@@ -142,7 +142,7 @@ and any configuration. Then create everything.
 ## Pattern 8: Confirmation Gates / Human-in-the-Loop
 
 **出现频率：** ~4% 的技能（80-100 文件）
-**相关模式：** [Interactive Flow Control](#pattern-7), [Phased Execution](#pattern-2), [Read-Only Boundary](#pattern-12)
+**相关模式：** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-7-interactive--conversational-flow-control), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义：** 建立显式暂停点，agent 必须在执行潜在高影响操作前获得人工批准。每个门控有命名的触发条件并描述用户在批准什么。
 
@@ -177,7 +177,7 @@ Make sure they're okay with the changes before proceeding.
 ## Pattern 9: Progress Feedback / Status Reporting
 
 **出现频率：** ~2% 的技能（40-60 文件）
-**相关模式：** [Phased Execution](#pattern-2), [Structured Output Templates](#pattern-14)
+**相关模式：** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates)
 
 **定义：** 指示 agent 在多步操作中显示进度指示器，带有定义好的格式和退出状态约定。
 
@@ -220,7 +220,7 @@ When done, tell them the result.
 ## Pattern 145: Iron-Law 不可违背规则框架
 
 **出现频率：** 多源（3 个 skills）：superpowers/test-driven-development、systematic-debugging、verification-before-completion
-**相关模式：** [Negative Constraints](#pattern-6)、[Confirmation Gates](#pattern-8)
+**相关模式：** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists)、[Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义：** 通过显式的 "Iron Law" 框架，把少量规则提升到普通指令之上 — 命名该规则、声明不可跳过，并加上反漏洞条款：*违反字面就是违反精神*。区别于 Pattern 6（Negative Constraints）— 那是 "不要做 X"；此模式是 "这一条规则压过你为跳过它产生的任何理由化解释"。
 
@@ -262,7 +262,7 @@ Try to write tests first when you can. Test-driven development is best practice.
 ## Pattern 148: 反表演性同意词汇禁令
 
 **出现频率：** 多源（2 个）：superpowers/receiving-code-review、brainstorming
-**相关模式：** [Negative Constraints](#pattern-6)、[Iron-Law Framing](#pattern-145)
+**相关模式：** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists)、[Iron-Law Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-145-iron-law-inviolable-rule-framing)
 
 **定义：** 一份具体的、模型被禁止发出的奉承短语清单，加上每条对应的正面替代行为。针对 agent 经训练形成的表演性同意倾向 — 用同意掩盖缺乏理解（"You're absolutely right!"、"Great point!"、"Let me fix that immediately"）。
 

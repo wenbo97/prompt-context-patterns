@@ -9,7 +9,7 @@ How information is managed — reference files, domain knowledge, examples, and 
 ## Pattern 23: Reference File / Knowledge Base Injection
 
 **Prevalence:** ~17% of skills (390 files)
-**Related patterns:** [Domain Knowledge Embedding](#pattern-24), [Few-Shot Examples](#pattern-25), [Tool Routing Tables](#pattern-21)
+**Related patterns:** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding), [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-25-few-shot-examples), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables)
 
 **What it is:** Pointing the agent to external reference files (JSON, markdown, KQL templates, lookup tables) that contain domain knowledge the skill needs at runtime. Rather than embedding all knowledge inline, the skill instructs the agent to read specific files before proceeding.
 
@@ -75,7 +75,7 @@ data available somewhere in the project. Check if there are any tables you can u
 ## Pattern 24: Domain Knowledge Embedding
 
 **Prevalence:** ~22% of skills (500+ files)
-**Related patterns:** [Reference File Injection](#pattern-23), [Few-Shot Examples](#pattern-25), [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection), [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-25-few-shot-examples), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** Embedding detailed domain-specific knowledge directly in the prompt — schema definitions, API field mappings, query syntax, classification rules, or command references. Unlike Pattern 23, the knowledge is inline rather than in external files.
 
@@ -140,7 +140,7 @@ Use appropriate filters to find what you need.
 ## Pattern 25: Few-Shot Examples
 
 **Prevalence:** ~21% of skills (482 files)
-**Related patterns:** [Structured Output Templates](#pattern-14), [Scoring Rubrics](#pattern-27), [Domain Knowledge Embedding](#pattern-24)
+**Related patterns:** [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding)
 
 **What it is:** Including complete input/output examples within the skill to demonstrate expected behavior. The best examples include both a happy path and a failure path, with complete output showing the exact format.
 
@@ -211,7 +211,7 @@ review it and give it a score. Make sure to provide helpful feedback.
 ## Pattern 26: Evidence Chain / Proof-of-Work
 
 **Prevalence:** ~5% of skills (100-150 files)
-**Related patterns:** [Persona/Role Assignment](#pattern-5), [Negative Constraints](#pattern-6), [Self-Critique](#pattern-28)
+**Related patterns:** [Persona/Role Assignment](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-5-personarole-assignment), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check)
 
 **What it is:** Requiring the agent to show its work — cite sources, provide evidence for conclusions, and maintain audit trails. Prevents the model from generating plausible-sounding conclusions without having actually investigated.
 

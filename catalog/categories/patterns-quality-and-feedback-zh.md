@@ -9,7 +9,7 @@
 ## Pattern 27: Scoring Rubrics / Quantitative Assessment
 
 **出现频率：** 约 4% 的 skills（80-100 个文件）
-**相关模式：** [Structured Output Templates](#pattern-14), [Few-Shot Examples](#pattern-25), [Self-Critique](#pattern-28)
+**相关模式：** [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates), [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-25-few-shot-examples), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check)
 
 **定义：** 提供带有明确标准、分数范围、每档描述词和阈值映射的数字化评分框架，将总分转化为分类结果。
 
@@ -59,7 +59,7 @@ Give an overall assessment.
 ## Pattern 28: Self-Critique / Quality Self-Check
 
 **出现频率：** 约 2% 的 skills（30-50 个文件）
-**相关模式：** [Evidence Chain](#pattern-26), [Negative Constraints](#pattern-6), [Scoring Rubrics](#pattern-27)
+**相关模式：** [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 要求 agent 在交付前审查自己的输出 — 识别弱点、标记低置信度区域、验证是否符合规则。
 
@@ -105,7 +105,7 @@ Review your output and make sure it's good. Fix any issues you find.
 ## Pattern 29: Feedback Solicitation
 
 **出现频率：** <1% 的 skills（10-20 个文件）
-**相关模式：** [Progress Feedback](#pattern-9), [Configuration Persistence](#pattern-16)
+**相关模式：** [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-9-progress-feedback--status-reporting), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup)
 
 **定义：** 指示 agent 在自然停顿点呈现反馈调查或请求，带有优先级层级和会话级去重。
 
@@ -148,7 +148,7 @@ Ask the user for feedback when you're done. Include a link to our survey.
 ## Pattern 30: Version Check / Update Notification
 
 **出现频率：** <1% 的 skills（10-20 个文件）
-**相关模式：** [Configuration Persistence](#pattern-16), [Error Handling](#pattern-15)
+**相关模式：** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义：** 检查已安装插件版本是否与最新可用版本一致并通知用户更新，检查失败时优雅降级。
 
@@ -210,7 +210,7 @@ Check if there's a newer version available. If so, tell the user to update.
 ## Pattern 146: Rationalization-Prevention Table（合理化预防表）
 
 **出现率:** 多源（3）：superpowers/test-driven-development、verification-before-completion、systematic-debugging
-**相关模式:** [Self-Critique](#pattern-28)、[Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-145-iron-law-inviolable-rule-framing)
+**相关模式:** [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check)、[Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-145-iron-law-inviolable-rule-framing)
 
 **它是什么:** 一个两列表，预先列举模型在快要跳过关键步骤时可能产出的合理化借口，每条配上揭示该借口为何站不住的*现实*。区别于自我批评（Pattern 28）—— 后者要求模型*去找*弱点，本模式*提前命名*它们，使模型能在合理化形成时认出它。
 

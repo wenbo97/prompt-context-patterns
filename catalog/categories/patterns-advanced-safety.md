@@ -9,7 +9,7 @@ Deep patterns for guardrails, permissions, compliance, threat modeling, and audi
 ## Pattern 56: MCP-Response-as-Data Guardrail
 
 **Prevalence:** ~2% of plugins
-**Related patterns:** [Prompt Injection Defense](#pattern-10), [Sensitive Data Redaction](#pattern-11)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense), [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-11-sensitive-data-redaction)
 
 **What it is:** Treating MCP tool responses as potentially sensitive data that should not be echoed verbatim. The agent must summarize security context, not reproduce it.
 
@@ -38,7 +38,7 @@ all the details. Transparency is important.
 ## Pattern 57: Prompt-Injection-as-Security-Finding
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Prompt Injection Defense](#pattern-10)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense)
 
 **What it is:** When injection attempts are detected in reviewed content, flag them as security findings rather than executing them or silently ignoring them.
 
@@ -71,7 +71,7 @@ ignore them and continue with your normal review process.
 ## Pattern 58: Prosecutor-Defender-Judge Architecture
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Adversarial Triad](#pattern-50), [Multi-Agent Orchestration](#pattern-18)
+**Related patterns:** [Adversarial Triad](/prompt-context-patterns/catalog/categories/patterns-advanced-quality#pattern-50-adversarial-triad-with-counterargument-phase), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** A three-role adversarial system inspired by legal proceedings. The Prosecutor finds every flaw (cannot suggest fixes), the Defender rebuts findings (must provide evidence), and the Judge renders binding verdicts (verifies all citations independently). Agents communicate through files, never through injected context.
 
@@ -113,7 +113,7 @@ Pass the full review output to the next agent for validation.
 ## Pattern 59: Rescue-Tag-Before-Destructive-Operation
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Confirmation Gates](#pattern-8), [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** All destructive git operations automatically create a rescue tag (an undo point) before executing. The tag naming convention includes the operation and timestamp for recovery.
 
@@ -156,7 +156,7 @@ operation cannot be undone. If they confirm, proceed.
 ## Pattern 60: Tiered Permission Model (RED / DEFER / GREEN)
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Confirmation Gates](#pattern-8), [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** Actions classified into three tiers — RED (blocked entirely), DEFER (prompt once for approval, then auto-approved), GREEN (always auto-approved). Implemented via PreToolUse hooks.
 
@@ -189,7 +189,7 @@ before execution. Always prompt the user before proceeding.
 ## Pattern 61: Data Classification Matrix (4-Level)
 
 **Prevalence:** ~1% of compliance-focused plugins
-**Related patterns:** [Sensitive Data Redaction](#pattern-11)
+**Related patterns:** [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-11-sensitive-data-redaction)
 
 **What it is:** A four-level data sensitivity taxonomy (PUBLIC, INTERNAL, CONFIDENTIAL, RESTRICTED) with explicit handling rules per level, including which AI backends can process each level.
 
@@ -228,7 +228,7 @@ constitutes sensitive data in each context.
 ## Pattern 62: XPIA Defense Model (Cross-Plugin Injection Attack)
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Prompt Injection Defense](#pattern-10)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense)
 
 **What it is:** A four-layer defense-in-depth model specifically designed for multi-tool AI systems where one tool's output could inject malicious instructions into another tool's input.
 
@@ -261,7 +261,7 @@ user-provided data to prevent injection attacks.
 ## Pattern 63: Severity Rubric with Litmus Tests
 
 **Prevalence:** ~2% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** Severity levels defined with concrete litmus-test questions that prevent calibration drift across agents and runs.
 
@@ -290,7 +290,7 @@ potential impact and likelihood of exploitation.
 ## Pattern 64: Security Posture Delta Analysis
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27), [Domain Knowledge Embedding](#pattern-24)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding)
 
 **What it is:** Correlating code-level findings against live infrastructure signals to determine whether changes IMPROVE, DEGRADE, or leave the security posture UNCHANGED.
 
@@ -320,7 +320,7 @@ endpoints without authentication as High findings.
 ## Pattern 65: Confidence-Gated Reporting
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27), [Evidence Chain](#pattern-26)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work)
 
 **What it is:** Findings require minimum confidence thresholds before reporting, with lower thresholds for security (asymmetric cost of false negatives vs false positives).
 
@@ -366,7 +366,7 @@ The `pr-review-toolkit` plugin codifies a more granular 5-tier rubric with named
 ## Pattern 66: System-Prompt Non-Disclosure
 
 **Prevalence:** ~2% of plugins
-**Related patterns:** [Prompt Injection Defense](#pattern-10)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense)
 
 **What it is:** Explicitly prohibiting the agent from revealing internal agent configuration regardless of the request source.
 
@@ -392,7 +392,7 @@ at a high level without going into implementation details.
 ## Pattern 67: 40-Point Security Skill Review Checklist
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Activation Scope](#pattern-13), [Negative Constraints](#pattern-6)
+**Related patterns:** [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-13-activation-scope-when-to-use--when-not-to-use), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists)
 
 **What it is:** A comprehensive security checklist specifically for reviewing AI skills/plugins before installation, covering prompt injection, credential harvesting, data exfiltration, supply chain attacks, and obfuscated code.
 
@@ -429,7 +429,7 @@ is trustworthy.
 ## Pattern 68: Orchestrator-Only Pattern (No Direct Data Processing)
 
 **Prevalence:** ~1% of compliance-focused plugins
-**Related patterns:** [Context Efficiency Rule](#pattern-37)
+**Related patterns:** [Context Efficiency Rule](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-37-context-efficiency-rule-orchestrator-reads-nothing)
 
 **What it is:** The AI agent is strictly an orchestrator — all data handling is delegated to tools. The LLM never directly processes raw incident data, customer PII, or critical incident content.
 
@@ -463,7 +463,7 @@ your analysis with the user.
 ## Pattern 69: Policy-as-Data (Declarative YAML Configs)
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Rule-Catalog Review](#pattern-48), [Configuration Persistence](#pattern-16)
+**Related patterns:** [Rule-Catalog Review](/prompt-context-patterns/catalog/categories/patterns-advanced-quality#pattern-48-rule-catalog-review-hierarchical-yaml), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup)
 
 **What it is:** Compliance rules stored in versioned YAML files, decoupled from agent code. When external policies change, update the YAML — no prompt changes needed.
 
@@ -496,7 +496,7 @@ Implement compliance rules directly in your prompt. For example:
 ## Pattern 153: Marketplace Source-Type Polymorphism (SHA-Pinned)
 
 **Prevalence:** Multi-source: 100+ entries in `/tmp/cpo/.claude-plugin/marketplace.json` and similar registries
-**Related patterns:** [40-Point Skill Security Checklist](#pattern-67), [Policy-as-Data](#pattern-69)
+**Related patterns:** [40-Point Skill Security Checklist](/prompt-context-patterns/catalog/categories/patterns-advanced-safety#pattern-67-40-point-security-skill-review-checklist), [Policy-as-Data](/prompt-context-patterns/catalog/categories/patterns-advanced-safety#pattern-69-policy-as-data-declarative-yaml-configs)
 
 **What it is:** Plugin/skill marketplaces accept multiple source types (git, github, http, local) with the type-specific fields required to make each install *reproducible and verifiable* — most importantly, a SHA pin for any git/github source. Supply-chain anchor at the registry layer.
 

@@ -11,7 +11,7 @@
 ## Pattern 121: Typed Memory Taxonomy
 
 **出现率:** Claude Code 平台独有（插件 skill 中未观察到）
-**相关模式:** [Configuration Persistence (16)](#pattern-16), [State File Continuity (70)](#pattern-70), [Reference File Injection (23)](#pattern-23)
+**相关模式:** [Configuration Persistence (16)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup), [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-70-state-file-as-sole-continuity-mechanism), [Reference File Injection (23)](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection)
 
 **定义:** 基于文件的持久记忆系统，具有四种离散记忆类型 -- `user`, `feedback`, `project`, `reference` -- 各有不同的写入触发条件、使用规则和过期特征。始终加载的索引文件（MEMORY.md）指向带有 frontmatter 元数据的单独记忆文件。
 
@@ -61,7 +61,7 @@ Read the memory file at the start of each conversation.
 ## Pattern 122: Bidirectional Feedback Capture
 
 **出现率:** Claude Code 平台独有
-**相关模式:** [Feedback Solicitation (29)](#pattern-29), [Mandatory Self-Learning After Failure (95)](#pattern-95)
+**相关模式:** [Feedback Solicitation (29)](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-29-feedback-solicitation), [Mandatory Self-Learning After Failure (95)](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-95-mandatory-self-learning-after-failure-resolution)
 
 **定义:** 同时记录纠正（"don't do X"）和确认（"yes, exactly like that"）作为反馈记忆。纠正容易注意到；确认更安静 -- 系统显式监听它们。
 
@@ -109,8 +109,8 @@ When the user corrects you, save what they said to avoid repeating the mistake.
 
 ## Pattern 123: Reversibility x Blast-Radius Permission Model
 
-**出现率:** Claude Code 核心模式；约 4% 的插件通过 [Confirmation Gates (8)](#pattern-8) 有类似概念
-**相关模式:** [Confirmation Gates (8)](#pattern-8), [Read-Only Boundary (12)](#pattern-12), [Tiered Permissions (60)](#pattern-60)
+**出现率:** Claude Code 核心模式；约 4% 的插件通过 [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop) 有类似概念
+**相关模式:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration), [Tiered Permissions (60)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-60-tiered-permission-model-red--defer--green)
 
 **定义:** 二维权限评估：操作可逆性有多高，影响范围有多大？本地+可逆=自由执行。远程+不可逆=始终确认。关键点：**授权是非粘性的** -- 一次批准 push 不代表授权所有未来的 push。
 
@@ -155,8 +155,8 @@ Always ask before running dangerous commands like `rm -rf` or `git push --force`
 
 ## Pattern 124: Tool Preference Hierarchy with Hard Routing
 
-**出现率:** Claude Code 核心模式；类似于 [Tool Routing Tables (21)](#pattern-21) 但增加了**禁止层**
-**相关模式:** [Tool Routing Tables (21)](#pattern-21), [Intent Classification (20)](#pattern-20)
+**出现率:** Claude Code 核心模式；类似于 [Tool Routing Tables (21)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables) 但增加了**禁止层**
+**相关模式:** [Tool Routing Tables (21)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables), [Intent Classification (20)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing)
 
 **定义:** 将操作类别映射到首选工具，然后禁止通用替代方案（shell 命令）。这比"prefer X over Y"更强 -- 是"NEVER use Y for this task."
 
@@ -196,7 +196,7 @@ Use the right tool for the job. Prefer built-in tools when available.
 ## Pattern 125: Cache-Aware Scheduling
 
 **出现率:** Claude Code 平台独有（调度基础设施）
-**相关模式:** [State File Continuity (70)](#pattern-70), [Time-Boxed Investigation (77)](#pattern-77)
+**相关模式:** [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-70-state-file-as-sole-continuity-mechanism), [Time-Boxed Investigation (77)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-77-time-boxed-investigation-with-partial-results)
 
 **定义:** 基于 LLM prompt cache TTL 选择轮询/循环任务的延迟间隔。缓存有 5 分钟窗口 -- 超过它意味着下次唤醒读取完整上下文（更慢更贵）。系统明确识别了一个"死区"（恰好 300s），永远不应选择。
 
@@ -242,8 +242,8 @@ Wait an appropriate amount of time between checks. Don't check too frequently.
 
 ## Pattern 126: Agent Briefing Protocol
 
-**出现率:** Claude Code 的 Agent 工具核心模式；[Handoff Context Protocol (36)](#pattern-36) 中有回响
-**相关模式:** [Handoff Context Protocol (36)](#pattern-36), [Hub-and-Spoke (32)](#pattern-32), [Multi-Agent Orchestration (18)](#pattern-18)
+**出现率:** Claude Code 的 Agent 工具核心模式；[Handoff Context Protocol (36)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-36-handoff-context-protocol) 中有回响
+**相关模式:** [Handoff Context Protocol (36)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-36-handoff-context-protocol), [Hub-and-Spoke (32)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-32-hub-and-spoke-sdlc-state-machine), [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **定义:** 编排器如何为子 Agent 编写提示的规则集。核心原则："brief the agent like a smart colleague who just walked into the room." 子 Agent 从父对话中获得零上下文。关键反模式："Never delegate understanding" -- 永远不要写"based on your findings, fix the bug."
 
@@ -293,8 +293,8 @@ Send clear instructions to the agent. Include relevant context.
 
 ## Pattern 127: Parallel-Safe Step Identification
 
-**出现率:** Claude Code 的 git/PR 协议核心；类似 [Phased Execution (2)](#pattern-2) 但增加了并行标注
-**相关模式:** [Phased Execution (2)](#pattern-2), [Multi-Agent Orchestration (18)](#pattern-18)
+**出现率:** Claude Code 的 git/PR 协议核心；类似 [Phased Execution (2)](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow) 但增加了并行标注
+**相关模式:** [Phased Execution (2)](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **定义:** 为多步工作流标注显式的并行标记 -- 哪些步骤可以同时运行，哪些必须等待前序。用于 Claude Code 的 git commit 协议、PR 创建协议和通用工具调用指导。
 
@@ -338,8 +338,8 @@ Run git status, git diff, and git log. Then analyze changes and commit.
 
 ## Pattern 128: Context Compaction Survival Protocol
 
-**出现率:** Claude Code 平台独有；扩展 [State File Continuity (70)](#pattern-70)
-**相关模式:** [State File Continuity (70)](#pattern-70), [Phase Data Contract (SSG P14)](#pattern-14)
+**出现率:** Claude Code 平台独有；扩展 [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-70-state-file-as-sole-continuity-mechanism)
+**相关模式:** [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-70-state-file-as-sole-continuity-mechanism), [Phase Data Contract (SSG P14)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates)
 
 **定义:** 当系统在对话接近上下文限制时自动压缩先前消息时，关于什么状态必须存活的显式指令。Agent 被告知哪些字段必须保留（按名称），以及对话不受上下文窗口限制 -- 消息被压缩，不是丢失。
 
@@ -382,8 +382,8 @@ Try to remember important information from earlier in the conversation.
 
 ## Pattern 129: Non-Sticky Authorization Scope
 
-**出现率:** Claude Code 独有；为 [Confirmation Gates (8)](#pattern-8) 增加时间维度
-**相关模式:** [Confirmation Gates (8)](#pattern-8), [Tiered Permissions (60)](#pattern-60)
+**出现率:** Claude Code 独有；为 [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop) 增加时间维度
+**相关模式:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Tiered Permissions (60)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-60-tiered-permission-model-red--defer--green)
 
 **定义:** 明确规则：用户在一个上下文中批准某操作，不会创建常设授权。每次批准的范围仅限于特定请求，而非操作类别。防止 Agent 在长会话中通过隐式批准积累的"权限蠕变"。
 
@@ -408,8 +408,8 @@ Authorization stands for the scope specified, not beyond.
 
 ## Pattern 130: Investigate Before Destroying
 
-**出现率:** Claude Code 独有；为 [Read-Only Boundary (12)](#pattern-12) 增加调查要求
-**相关模式:** [Read-Only Boundary (12)](#pattern-12), [Confirmation Gates (8)](#pattern-8)
+**出现率:** Claude Code 独有；为 [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration) 增加调查要求
+**相关模式:** [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration), [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义:** 遇到意外状态（陌生文件、分支、配置、锁文件）时，Agent 必须先调查根因再采取破坏性操作。防止 Agent 用破坏作为消除障碍的捷径。
 
@@ -471,7 +471,7 @@ target is in a git repo, `mv` otherwise. NEVER move outside the plan file.
 ## Pattern 131: Output Visibility Awareness
 
 **出现率:** Claude Code 平台独有
-**相关模式:** [Progress Feedback (9)](#pattern-9), [Structured Output Templates (14)](#pattern-14)
+**相关模式:** [Progress Feedback (9)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-9-progress-feedback--status-reporting), [Structured Output Templates (14)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates)
 
 **定义:** 明确告知 Agent 用户看不到大多数工具调用或内部思考 -- 只有文本输出可见。这创建了沟通义务：在第一次工具调用前说明要做什么，在关键时刻给更新，在回合结束时总结。
 
@@ -511,7 +511,7 @@ Keep the user informed about what you're doing.
 ## Pattern 132: Hook-Driven Automation Awareness
 
 **出现率:** Claude Code 平台独有
-**相关模式:** [Confirmation Gates (8)](#pattern-8), [Configuration Persistence (16)](#pattern-16)
+**相关模式:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Configuration Persistence (16)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup)
 
 **定义:** 系统声明用户可以配置 shell 命令（"hooks"），在工具调用或事件响应中自动执行。Agent 必须将 hook 反馈视为来自用户，如果被 hook 阻止则适配而非重试。
 

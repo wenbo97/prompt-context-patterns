@@ -9,7 +9,7 @@ Guardrails that prevent the agent from causing harm — injection defense, data 
 ## Pattern 10: Prompt Injection Defense
 
 **Prevalence:** <1% of skills (17 files explicitly), but critically important
-**Related patterns:** [Sensitive Data Redaction](#pattern-11), [Read-Only Boundary](#pattern-12), [Negative Constraints](#pattern-6)
+**Related patterns:** [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-11-sensitive-data-redaction), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists)
 
 **What it is:** Explicitly warning the agent to treat external content (fetched web pages, API responses, user-uploaded files, database results) as untrusted data and to never follow instructions embedded in that content.
 
@@ -50,7 +50,7 @@ Use your best judgment about what to follow and what to ignore.
 ## Pattern 11: Sensitive Data Redaction
 
 **Prevalence:** ~2% of skills (30-50 files)
-**Related patterns:** [Prompt Injection Defense](#pattern-10), [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** Instructions for the agent to avoid exposing secrets, PII, tokens, or internal metadata in its outputs, with specific redaction replacement patterns.
 
@@ -100,7 +100,7 @@ like it should be private. Be careful about what you share.
 ## Pattern 12: Read-Only / Safety Boundary Declaration
 
 **Prevalence:** ~4% of skills (80-100 files)
-**Related patterns:** [Negative Constraints](#pattern-6), [Confirmation Gates](#pattern-8), [Activation Scope](#pattern-13)
+**Related patterns:** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-13-activation-scope-when-to-use--when-not-to-use)
 
 **What it is:** Explicitly declaring the skill's operational scope — what actions it can and cannot take — to prevent unintended side effects.
 
@@ -136,7 +136,7 @@ This is a read-only skill. Don't change anything.
 ## Pattern 13: Activation Scope (When to Use / When NOT to Use)
 
 **Prevalence:** ~7% of skills (169 files)
-**Related patterns:** [Intent Classification](#pattern-20), [Skill Composition](#pattern-19), [YAML Frontmatter](#pattern-1)
+**Related patterns:** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-19-skill-composition--cross-skill-invocation), [YAML Frontmatter](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-1-yaml-frontmatter-metadata-block)
 
 **What it is:** Explicitly defining the boundaries of the skill's applicability — both when it should be invoked and when a different skill or approach should be used instead.
 
