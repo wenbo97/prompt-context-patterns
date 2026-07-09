@@ -5,17 +5,17 @@ date: 2026-04-19
 categories: [patterns, decision-tree]
 ---
 
-When you tell an AI what to do using natural language paragraphs, it works — most of the time. But when the logic has branches ("if X then Y, otherwise Z"), prose prompts produce **inconsistent outputs across runs** — even when the input is identical.
+Tell an AI what to do in plain paragraphs and it usually gets it right. But the moment the logic branches — "if X then Y, otherwise Z" — those prose prompts start giving you **different outputs on every run**, even when you feed in exactly the same input.
 
-**Decision trees fix this.** Replace prose branching logic with a visual tree structure, and the model follows it deterministically.
+**Decision trees fix this.** Swap the prose branching for a visual tree, and the model follows it the same way every time.
 
 ---
 
 ## The Problem
 
-Consider an incident response system. The AI must triage incidents, assign responders, choose mitigation actions, and produce a structured plan. The rules are complex: 4 severity levels, 6 root cause categories, tier-based responder assignment, escalation conditions, communication deadlines.
+Take an incident response system. The AI has to triage incidents, assign responders, choose mitigation actions, and hand back a structured plan. The rules get complicated fast: 4 severity levels, 6 root cause categories, tier-based responder assignment, escalation conditions, and communication deadlines.
 
-We wrote two prompts for the same task — one as prose paragraphs (~140 lines), one as decision trees (~260 lines) — and ran each **20 times** with identical input using `claude -p`.
+We wrote two prompts for the same job — one as prose paragraphs (~140 lines), one as decision trees (~260 lines) — and ran each one **20 times** on identical input with `claude -p`.
 
 ## Results (20 Runs Each)
 
@@ -25,7 +25,7 @@ We wrote two prompts for the same task — one as prose paragraphs (~140 lines),
 |-------|--------------|
 | **15 unique phrasings** out of 20 runs | **1 phrasing** out of 20 runs |
 
-Prose outputs looked like this — every run different:
+Here's what the prose produced — a different answer every time:
 
 ```
 Run 1:  "Enable graceful degradation on Cosmos DB (cached responses, reduced functionality) while investigating root cause"
@@ -35,7 +35,7 @@ Run 4:  "Enable graceful degradation on Cosmos DB East US 2 to serve cached/redu
 ...15 unique variants total
 ```
 
-Decision tree — every run identical:
+And the decision tree — the same answer, all 20 times:
 
 ```
 Run 1-20:  "enable_graceful_degradation"
@@ -47,7 +47,7 @@ Run 1-20:  "enable_graceful_degradation"
 |-------|--------------|
 | **20 unique phrasings** (zero repeats) | **2 variants** (19× `hotfix`, 1× `failover_to_secondary`) |
 
-Prose achieved **0% reproducibility** on secondary actions. Every single run produced a unique sentence.
+Prose managed **0% reproducibility** on secondary actions. Every single run came back with a unique sentence.
 
 ### Full Comparison Table
 
@@ -62,23 +62,23 @@ Prose achieved **0% reproducibility** on secondary actions. Every single run pro
 
 ## What This Means in Practice
 
-Both approaches made the **same correct decisions** — SEV2, enable graceful degradation, assign 4 responders. The difference is **output determinism**.
+Both approaches actually made the **same correct decisions** — SEV2, enable graceful degradation, assign 4 responders. What sets them apart is **output determinism**.
 
-If your downstream code does:
+Say your downstream code does this:
 
 ```python
 if response["mitigation_plan"]["primary_action"]["action"] == "enable_graceful_degradation":
     execute_graceful_degradation()
 ```
 
-- **Decision tree prompt**: works 20/20 times
-- **Prose prompt**: works **0/20 times** (action is a free-form sentence, never matches)
+- **Decision tree prompt**: works all 20 times
+- **Prose prompt**: works **0 times out of 20** — the action is a free-form sentence, so it never matches
 
-This isn't a theoretical problem. Any system that parses AI output — automation pipelines, agent orchestration, tool calling — breaks when the output format is unpredictable.
+And this isn't some theoretical worry. Any system that parses AI output — automation pipelines, agent orchestration, tool calling — breaks the moment the output format stops being predictable.
 
 ## The Pattern
 
-Here's the core idea. Replace this:
+Here's the core idea. Take something like this:
 
 ```
 If the root cause is a bad deployment and the service supports instant 
@@ -89,7 +89,7 @@ disablement if the change is behind a feature flag. If no feature flag
 exists, proceed with hotfix.
 ```
 
-With this:
+And turn it into this:
 
 ```
 Root cause category?
@@ -102,26 +102,26 @@ Root cause category?
 │               └─ NO  → action: "hotfix"
 ```
 
-Same logic. The tree version gives the model an **exact string to output** at each leaf node, and the indentation encodes the decision path spatially.
+Same logic, either way. But the tree hands the model an **exact string to output** at each leaf, and the indentation lays out the decision path visually.
 
 ## Why It Works
 
-1. **Narrows attention at each step.** The model evaluates one condition at a time instead of holding all rules in attention simultaneously.
-2. **Provides exact output text.** Leaf nodes contain the literal action string — the model copies it rather than composing a new sentence.
-3. **Encodes hierarchy spatially.** Indentation tokens (whitespace) encode parent-child relationships. LLMs learned this pattern from millions of code files, YAML configs, and directory trees during training.
+1. **It narrows attention at each step.** The model works through one condition at a time instead of juggling every rule at once.
+2. **It hands over the exact output text.** Each leaf holds the literal action string, so the model just copies it rather than writing a fresh sentence.
+3. **It encodes the hierarchy spatially.** The whitespace indentation carries the parent-child relationships — a pattern LLMs picked up from millions of code files, YAML configs, and directory trees while training.
 
 ## When to Use / When Not To
 
-**Use decision trees when:**
+**Reach for decision trees when:**
 - Your prompt has branching logic (if/else, switch/case)
-- Output is parsed by code (JSON fields, action names, status values)
-- You need consistency across multiple runs
+- Code parses the output (JSON fields, action names, status values)
+- You need the same result across multiple runs
 - You're building agent orchestration or automation pipelines
 
-**Skip decision trees when:**
-- The task is open-ended creative work (variation is desirable)
-- There's no branching logic
-- Output is read by humans only (phrasing variation doesn't matter)
+**Skip them when:**
+- The task is open-ended creative work, where variety is the point
+- There's no branching logic to begin with
+- Only humans read the output, so different phrasing doesn't matter
 
 ## Try It Yourself
 
@@ -134,7 +134,7 @@ bash run.sh 10 haiku     # 10 runs, haiku model
 python3 analyze.py       # analyze results
 ```
 
-Three scenarios are included: simple (deployment controller), ambiguous (unknown server status), and complex (incident response with 200+ line prompts).
+It comes with three scenarios: simple (deployment controller), ambiguous (unknown server status), and complex (incident response with 200+ line prompts).
 
 ## Further Reading
 

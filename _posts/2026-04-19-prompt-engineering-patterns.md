@@ -5,28 +5,28 @@ date: 2026-04-19
 categories: [prompt-engineering, patterns]
 ---
 
-A practical guide to writing stable, predictable skill prompts — grounded in how LLMs actually process tokens.
+A hands-on guide to writing skill prompts that behave predictably — grounded in how LLMs actually process tokens.
 
 ---
 
 ## Core Principle: Reduce Conditional Entropy
 
-Every token an LLM generates is a probability distribution over candidates. **Your prompt's structure directly controls how sharp or diffuse that distribution is at each decision point.**
+Every token an LLM generates is really a probability distribution over candidates. **The structure of your prompt directly controls how sharp or diffuse that distribution is at each decision point.**
 
 - Sharp distribution (low entropy) → deterministic behavior
 - Diffuse distribution (high entropy) → unstable, unpredictable behavior
 
-**Everything below is a technique for sharpening the distribution at the moments that matter.**
+**Everything below is a way to sharpen the distribution at the moments that matter.**
 
 ### What "conditional entropy" actually means
 
-Every time the model generates a token, it faces a set of candidates, each with a probability. If probabilities are spread evenly (e.g., 10 candidates at 10% each), the model is "hesitating" — that's high entropy. If one candidate sits at 90% and the rest are negligible, the model is "certain" — that's low entropy.
+Every time the model generates a token, it's choosing among candidates, each with its own probability. If those probabilities are spread evenly — say, 10 candidates at 10% each — the model is "hesitating," and that's high entropy. If one candidate sits at 90% and the rest barely register, the model is "certain," and that's low entropy.
 
-**The way you write your prompt directly determines whether the model hesitates or commits at critical decision points.**
+**The way you write your prompt is what decides whether the model hesitates or commits at the critical decision points.**
 
 ### Concrete example
 
-Suppose your skill needs to decide whether to ask the user for input, based on the environment.
+Say your skill has to decide whether to ask the user for input, depending on the environment.
 
 **Prose version:**
 
@@ -36,7 +36,7 @@ If interactive with arguments, run directly.
 If interactive without arguments, ask the user.
 ```
 
-After reading this, the model needs to generate its next action. Here's what's happening inside attention:
+Once it's read this, the model has to generate its next action. Here's what's going on inside attention:
 
 ```
 "CI"              → line 1, beginning     ← attention must look back
@@ -48,7 +48,7 @@ After reading this, the model needs to generate its next action. Here's what's h
 5 conditions scattered across 3 lines — which should I attend to?
 ```
 
-Attention is spread across multiple positions → no single condition gets enough weight → the model is uncertain about which path to take → **high entropy → unstable behavior**.
+Attention is spread across several positions, so no single condition gets enough weight, and the model isn't sure which path to take → **high entropy → unstable behavior**.
 
 **Tree version:**
 
@@ -64,7 +64,7 @@ Attention is spread across multiple positions → no single condition gets enoug
       └─ NO  → ask user
 ```
 
-After the model determines "CI = YES" and "arguments = NO", its attention is here:
+Once the model has worked out "CI = YES" and "arguments = NO," its attention lands right here:
 
 ```
 │     └─ NO  → use defaults, execute
@@ -72,11 +72,11 @@ After the model determines "CI = YES" and "arguments = NO", its attention is her
               attention is concentrated on this line
 ```
 
-The tokens "use defaults, execute" are **right next to the cursor**. No need to look back anywhere. The model is nearly 100% certain what to do next → **very low entropy → deterministic behavior**.
+The tokens "use defaults, execute" are **right next to the cursor** — there's nothing to look back for. The model is almost 100% sure what comes next → **very low entropy → deterministic behavior**.
 
 ### Feel it in numbers
 
-Prose version — probability distribution at the decision point:
+Prose version — the probability distribution at the decision point:
 
 ```
 use arguments, execute:  35%
@@ -85,7 +85,7 @@ ask user:                25%
 other:                   10%
 ```
 
-Three options are close in probability. Run 10 times, roughly 3 may go wrong.
+Three options are close in probability. Run it 10 times, and roughly 3 may go wrong.
 
 Tree version — at the correct branch leaf:
 
@@ -95,7 +95,7 @@ use arguments, execute:   5%
 other:                    3%
 ```
 
-One option dominates. Run 10 times, 0–1 deviations.
+One option dominates. Run it 10 times, and you'll see 0–1 deviations.
 
 ### Why indentation is information
 
@@ -105,23 +105,23 @@ One option dominates. Run 10 times, 0–1 deviations.
       └─ NO  → ask user
 ```
 
-The indentation (0 spaces, 3 spaces, 6 spaces) becomes whitespace tokens after tokenization. These whitespace tokens encode **hierarchy** — the model has seen massive amounts of indented structures (source code, YAML, directory trees) during training and has learned: deeper indent = child of parent condition.
+After tokenization, the indentation (0 spaces, 3 spaces, 6 spaces) turns into whitespace tokens, and those tokens carry **hierarchy**. The model has seen huge amounts of indented structure during training — source code, YAML, directory trees — and it has learned that a deeper indent means a child of the condition above it.
 
-Prose has no such spatial encoding. In "If interactive but arguments provided" — the subordination between "interactive" and "arguments provided" must be inferred from natural language grammar alone. That inference itself costs attention and introduces uncertainty.
+Prose gives it none of that spatial encoding. In "If interactive but arguments provided," the model has to work out how "interactive" and "arguments provided" relate using grammar alone — and that inference itself costs attention and adds uncertainty.
 
 ### One-line summary
 
-> A tree lets the model look at a few nearby tokens to know what to do. Prose forces it to scan an entire paragraph to piece together the answer. The smaller the search radius, the more certain the outcome.
+> A tree lets the model glance at a few nearby tokens to know what to do. Prose makes it scan a whole paragraph and piece the answer together. The smaller the search radius, the more certain the outcome.
 
 ---
 
 ## 1. Visual Decision Trees over Prose
 
-Claude follows visual tree structures more reliably than prose descriptions of the same logic, because each branch terminates with an explicit action.
+Claude follows a visual tree far more reliably than the same logic written as prose — because every branch ends with a clear, explicit action.
 
 ### Why it works
 
-Prose scatters conditions across a sentence. The model must attend to multiple distant tokens simultaneously, diluting attention. A tree places the relevant condition and its action adjacent in the token sequence — the model only needs to look at nearby tokens to know what to do.
+Prose spreads the conditions out across a sentence, so the model has to hold several far-apart tokens in mind at once, and its attention gets diluted. A tree keeps each condition right next to its action, so the model only has to glance at nearby tokens to know what to do.
 
 ### Bad: prose
 
@@ -143,13 +143,13 @@ run directly. If interactive without arguments, ask the user.
 
 ### Why indentation matters
 
-Indentation tokens encode hierarchy. Models have seen massive amounts of indented structures (code, YAML, directory trees) during training and have learned that deeper indent = child of parent condition. Prose has no such spatial encoding — the model must infer nesting from natural language grammar, which costs attention and introduces uncertainty.
+Those indentation tokens carry hierarchy. Models have seen enormous amounts of indented structure during training — code, YAML, directory trees — and learned that a deeper indent means a child of the parent condition. Prose gives them nothing like that, so the model has to infer the nesting from grammar alone, which costs attention and introduces uncertainty.
 
 ---
 
 ## 2. Grounding (Anchoring)
 
-Give the model a concrete starting point instead of letting it sample from an infinite space.
+Give the model a concrete starting point instead of leaving it to sample from an infinite space.
 
 ### Bad: unanchored
 
@@ -169,13 +169,13 @@ ENV="${1:?Usage: deploy.sh <env>}"
 </template>
 ```
 
-**Why:** Template tokens directly participate in attention — the model's output is "pulled toward" the template's distribution rather than sampling from the generic concept of "deployment script."
+**Why:** The template's tokens sit right in the attention window, so the output gets pulled toward the template's distribution instead of the generic idea of a "deployment script."
 
 ---
 
 ## 3. Cognitive Offloading
 
-Externalize reasoning steps that the model would otherwise have to perform implicitly.
+Move the reasoning steps out into the open, instead of leaving the model to work them out implicitly.
 
 ### Bad: implicit reasoning required
 
@@ -195,7 +195,7 @@ Analyze this code's performance issues and fix them.
 Execute these steps in order.
 ```
 
-**Why:** LLMs have no true working memory. Each reasoning step consumes attention resources from the context window. Writing out intermediate steps provides "external memory" — each step only needs to attend to the previous step's output, not derive everything from scratch.
+**Why:** LLMs have no real working memory, and every reasoning step eats into the attention available in the context window. Spelling the steps out gives the model "external memory" — each step only has to look at the output of the one before it, instead of deriving everything from scratch.
 
 Decision trees = cognitive offloading for branching logic.
 Chain-of-thought = cognitive offloading for reasoning.
@@ -205,7 +205,7 @@ Same principle, different applications.
 
 ## 4. Attention Locality
 
-Related information should be close together in the token sequence. Closer tokens get higher attention weights in practice.
+Keep related information close together in the token sequence — in practice, tokens that sit nearer each other get more attention.
 
 ### Bad: rule far from its target
 
@@ -224,13 +224,13 @@ Clean up expired data
 </task>
 ```
 
-**Why:** Transformer attention is theoretically global but has positional bias — nearby tokens receive stronger attention scores. Place constraints next to the actions they constrain, not in a distant "general rules" section.
+**Why:** Transformer attention is global in theory, but it leans on position — nearby tokens score higher. So put each constraint right next to the action it governs, not off in some distant "general rules" section.
 
 ---
 
 ## 5. Token-Action Binding
 
-Each instruction should map as directly as possible to one executable action.
+Each instruction should point as directly as it can to one executable action.
 
 ### Bad: multiple implicit actions in one sentence
 
@@ -246,13 +246,13 @@ Check code style issues and fix them then run tests and make sure they pass.
 3. If tests fail → read error output, fix the issue, go to step 2
 ```
 
-**Why:** The model maps a single clear instruction sequence to a single tool call far more reliably than extracting multiple implied actions from a run-on sentence.
+**Why:** The model turns one clear instruction into one tool call far more reliably than it pulls several implied actions out of a run-on sentence.
 
 ---
 
 ## 6. Schema Priming
 
-Give the model an output "shape" and it fills in the content.
+Hand the model an output "shape" and let it fill in the content.
 
 ### Bad: open-ended
 
@@ -271,13 +271,13 @@ Analyze this PR's risk.
 </output_schema>
 ```
 
-**Why:** Schema tokens act as "rails" during decoding. When generating each field value, the model's attention is strongly guided by the schema key names, drastically reducing drift.
+**Why:** The schema tokens work like rails during decoding. As the model fills in each field, the key names keep its attention on track, cutting drift sharply.
 
 ---
 
 ## 7. Negative Space (Explicit Alternatives)
 
-When telling the model what NOT to do, always provide what TO DO instead.
+Whenever you tell the model what NOT to do, always give it something TO DO instead.
 
 ### Bad: negation only
 
@@ -297,13 +297,13 @@ Don't use sudo.
 </boundaries>
 ```
 
-**Why:** "Don't do X" only suppresses certain token sequences but doesn't boost any alternative. The model knows where not to go but not where to go → unstable. Providing the alternative simultaneously suppresses the wrong path and boosts the right one.
+**Why:** "Don't do X" only holds down certain token sequences without lifting any alternative. The model learns where not to go, but not where to go — so it stays unstable. Give it the alternative and you suppress the wrong path and boost the right one at the same time.
 
 ---
 
 ## 8. XML Tags for Semantic Boundaries
 
-Claude was trained with XML tags in its training data. Use them to delineate prompt sections.
+Claude's training data was full of XML tags, so use them to mark off the sections of your prompt.
 
 ### Recommended structure for skill prompts
 
@@ -337,13 +337,13 @@ Expected output shape.
 </output_schema>
 ```
 
-**Why:** XML tags create hard semantic boundaries. The model treats content inside different tags as distinct sections, reducing cross-contamination between instructions, examples, and constraints.
+**Why:** XML tags draw firm boundaries. The model reads content in different tags as separate sections, which keeps instructions, examples, and constraints from bleeding into each other.
 
 ---
 
 ## 9. Few-Shot with Embedded Reasoning
 
-Show the model HOW to think, not just WHAT to output.
+Show the model how to think, not just what to output.
 
 ### Bad: input/output pairs only
 
@@ -369,7 +369,7 @@ Show the model HOW to think, not just WHAT to output.
 </example>
 ```
 
-**Why:** The `<thinking>` pattern inside few-shot examples gets generalized into the model's own extended thinking blocks. It learns the reasoning pattern, not just the output pattern.
+**Why:** The `<thinking>` block in your examples carries over into the model's own extended thinking. It picks up the reasoning pattern, not just the output pattern.
 
 ---
 
