@@ -6,17 +6,17 @@ categories: [patterns, catalog]
 lang: zh
 ---
 
-从 500+ 个真实 AI agent 插件、开源 skill 仓库和 Claude Code 系统提示中提炼的 155 个提示词工程模式。不是理论，每个模式都有名字、解决的问题、和可直接使用的 prompt 片段。
+这 155 个提示词工程模式，是从 500+ 个真实 AI agent 插件、开源 skill 仓库和 Claude Code 系统提示里一点点提炼出来的。它们不讲空理论——每个模式都有自己的名字、要解决的具体问题，还有一段拿来就能用的 prompt 片段。
 
-> **2026-05-26 更新**：从 `awesome-claude-skills`、`superpowers`、`andrej-karpathy-skills`、`claude-plugins-official` 收割了 13 个新模式（143–155），并就地优化了 14 个已有模式。完整列表见[目录索引](/prompt-context-patterns/catalog/catalog-index-zh)。
+> **2026-05-26 更新**：从 `awesome-claude-skills`、`superpowers`、`andrej-karpathy-skills`、`claude-plugins-official` 这几个来源又收割了 13 个新模式（143–155），顺手就地优化了 14 个已有模式。完整列表见[目录索引](/prompt-context-patterns/catalog/catalog-index-zh)。
 
 ---
 
 ## 为什么做这个
 
-市面上的"awesome prompts"集合大多面向 ChatGPT 用户的一次性问答。**这个目录面向构建 AI agent 和多步骤插件的开发者** — prompt 稳定性、技能间协调、防御性模式才是关键。
+网上的"awesome prompts"集合，大多是给 ChatGPT 用户准备的一次性问答。**而这个目录，是给那些在构建 AI agent 和多步骤插件的开发者看的**——对他们来说，真正要紧的是 prompt 够不够稳、技能之间能不能协调、有没有足够的防御性设计。
 
-这些模式来自对 500+ 个生产插件的分析，涵盖：DevOps 自动化、安全分析、代码迁移、事件响应、部署编排等。每个模式至少在 3 个独立插件中出现才被收录。
+这些模式来自对 500+ 个生产插件的梳理，横跨 DevOps 自动化、安全分析、代码迁移、事件响应、部署编排等场景。一个模式只有在至少 3 个独立插件里都出现过，才会被收进来。
 
 ---
 
@@ -65,13 +65,13 @@ catalog/
 | 11 | 高级安全 | 8 | 数据分类、审计追踪、合规 |
 | 12 | 高级工作流 | 10 | 部署门控、回滚、状态机 |
 
-还有补充分类：Karpathy 行为模式、Claude Code 平台模式（121–142）、开源技能模式、Gap-fill 模式，以及 **2026-05 收割（143–155）** —— 覆盖 Iron-Law 规则框架、HARD-GATE 阻断标签、DOT 图决策流、市场源类型多态、插件生命周期状态机等。
+除此之外还有几组补充分类：Karpathy 行为模式、Claude Code 平台模式（121–142）、开源技能模式、Gap-fill 模式，以及 **2026-05 收割（143–155）** —— 覆盖 Iron-Law 规则框架、HARD-GATE 阻断标签、DOT 图决策流、市场源类型多态、插件生命周期状态机等。
 
 ---
 
 ## 举例：模式 23 — 带上限的修复循环
 
-**问题：** AI agent 修复构建错误时可能无限循环，或者太早放弃。
+**问题：** AI agent 在修复构建错误时，要么陷进无限循环，要么太早就放弃了。
 
 **模式：**
 
@@ -90,13 +90,13 @@ catalog/
 "超出范围"不行，"无法修复"也不行。
 ```
 
-**为什么有效：** 消除了 agent 合理化提前退出的倾向。穷举表格不留歧义 — agent 无法发明第 4 个停止条件。
+**为什么有效：** 它掐掉了 agent 为提前退出找借口的空间。穷举式的表格没留任何模糊地带 — agent 没法再凭空造出第 4 个停止条件。
 
 ---
 
 ## 举例：模式 45 — 指令式写前审查
 
-**问题：** Agent 写入错误的配置变更，破坏生产行为。
+**问题：** Agent 写入了错误的配置变更，把生产行为搞坏了。
 
 **模式：**
 
@@ -112,7 +112,7 @@ catalog/
 任何护栏返回"失败" → 不写入。先修正。
 ```
 
-**为什么有效：** 在"决定做什么"和"执行"之间强制暂停。表格格式让每项检查独立可评估 — agent 无法在连续叙述中跳过某一项。
+**为什么有效：** 它在"决定做什么"和"真正动手"之间硬塞进一个暂停。表格这种格式让每一项检查都能单独过一遍 — agent 没办法在一大段连续叙述里悄悄漏掉某一条。
 
 ---
 
@@ -120,27 +120,27 @@ catalog/
 
 ### Token 级技巧（9 个）
 
-基于 LLM 实际处理 token 的方式 — 不是直觉。例如：**决策树在分支逻辑上优于自然语言**，因为树结构把注意力集中在一条路径上，而自然语言同时分散注意力到所有条件。
+这些技巧建立在 LLM 真正处理 token 的方式上，而不是凭直觉。举个例子：**在分支逻辑上，决策树比自然语言更好用**——因为树结构会把注意力收拢到一条路径上，而自然语言会同时把注意力摊到所有条件上。
 
 ### 防偷懒策略（8 种）
 
-Agent 会跳过引用文件的阅读、把多步流程压缩成捷径、"记住"而不是重新读取。防偷懒指南记录了 8 种系统性防御，从强制读取门控到渐进式披露。
+Agent 会耍各种小聪明：跳过该读的引用文件、把多步流程偷偷压成捷径、凭"记忆"作答而不去重新读取。防偷懒指南把 8 种系统性的应对办法都记了下来，从强制读取门控一直讲到渐进式披露。
 
 ### Prompt 评审框架
 
-9 个维度（清晰度、确定性、安全性、可测试性……）的结构化评审流程，配合 P0/P1/P2 严重度分级。设计用于 agent prompt 的同行评审。
+围绕 9 个维度（清晰度、确定性、安全性、可测试性……）的一套结构化评审流程，再配上 P0/P1/P2 的严重度分级，专门用来给 agent prompt 做同行评审。
 
 ---
 
 ## 如何使用
 
-1. **构建新技能？** 浏览[目录索引](/prompt-context-patterns/catalog/)找到匹配的模式
-2. **调试不稳定行为？** 查看[执行控制](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh)和[防偷懒](/prompt-context-patterns/catalog/techniques/anti-laziness-zh)
-3. **评审别人的 prompt？** 使用[评审清单](/prompt-context-patterns/catalog/standards/review-checklist-zh)
-4. **学习 prompt 工程？** 从 [Token 级技巧](/prompt-context-patterns/catalog/techniques/token-level-techniques-zh)开始
+1. **要构建新技能？** 到[目录索引](/prompt-context-patterns/catalog/)里翻一翻，找到对得上的模式
+2. **在调试不稳定的行为？** 看看[执行控制](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh)和[防偷懒](/prompt-context-patterns/catalog/techniques/anti-laziness-zh)
+3. **要评审别人写的 prompt？** 用这份[评审清单](/prompt-context-patterns/catalog/standards/review-checklist-zh)
+4. **想学 prompt 工程？** 从 [Token 级技巧](/prompt-context-patterns/catalog/techniques/token-level-techniques-zh)入手
 
 ---
 
 ## 许可
 
-MIT。可自由用于你的 agent、插件和项目。
+MIT。随便用，你的 agent、插件、项目都行。

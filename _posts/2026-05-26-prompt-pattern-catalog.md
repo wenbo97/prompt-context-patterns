@@ -5,17 +5,17 @@ date: 2026-05-26
 categories: [patterns, catalog]
 ---
 
-A categorized catalog of 155 prompt engineering patterns — extracted from 500+ real-world AI agent plugins, open-source skill repositories, and the Claude Code system prompt. Not theory. Every pattern has a name, a problem it solves, and a concrete prompt snippet.
+This is a categorized catalog of 155 prompt engineering patterns, pulled from 500+ real-world AI agent plugins, open-source skill repositories, and the Claude Code system prompt. It's not theory — every pattern comes with a name, the problem it solves, and a concrete prompt snippet.
 
-> **Updated 2026-05-26**: harvested 13 new patterns (143–155) from `awesome-claude-skills`, `superpowers`, `andrej-karpathy-skills`, and `claude-plugins-official`. 14 existing patterns refined in place. See the [catalog index](/prompt-context-patterns/catalog/catalog-index) for the full list.
+> **Updated 2026-05-26**: we harvested 13 new patterns (143–155) from `awesome-claude-skills`, `superpowers`, `andrej-karpathy-skills`, and `claude-plugins-official`, and refined 14 existing ones in place. See the [catalog index](/prompt-context-patterns/catalog/catalog-index) for the full list.
 
 ---
 
 ## Why This Exists
 
-Most "awesome prompt" collections target ChatGPT users writing one-off queries. **This catalog targets developers building AI agents and multi-step plugins** — where prompt stability, inter-skill coordination, and defensive patterns matter.
+Most "awesome prompt" collections are aimed at ChatGPT users writing one-off queries. **This one is for developers building AI agents and multi-step plugins** — the setting where prompt stability, inter-skill coordination, and defensive patterns really matter.
 
-The patterns were extracted by analyzing 500+ production plugins across categories: DevOps automation, security analysis, code migration, incident response, deployment orchestration, and more. Each pattern appeared in at least 3 independent plugins before inclusion.
+To build it, we analyzed 500+ production plugins across DevOps automation, security analysis, code migration, incident response, deployment orchestration, and more. A pattern only made the cut if it showed up in at least 3 independent plugins.
 
 ---
 
@@ -64,13 +64,13 @@ catalog/
 | 11 | Advanced Safety | 8 | Data classification, audit trails, compliance |
 | 12 | Advanced Workflow | 10 | Deployment gates, rollback, state machines |
 
-Plus supplementary categories: Karpathy behavioral patterns, Claude Code platform patterns (121–142), open-source skill patterns, gap-fill patterns, and the **2026-05 harvest (143–155)** — covering Iron-Law rule framing, HARD-GATE block tags, DOT-graph decision flows, marketplace polymorphism, plugin lifecycle state machines, and more.
+There are also supplementary categories: Karpathy behavioral patterns, Claude Code platform patterns (121–142), open-source skill patterns, gap-fill patterns, and the **2026-05 harvest (143–155)** — which covers Iron-Law rule framing, HARD-GATE block tags, DOT-graph decision flows, marketplace polymorphism, plugin lifecycle state machines, and more.
 
 ---
 
 ## Example: Pattern 23 — Attempt-Capped Repair Loop
 
-**Problem:** An AI agent fixing build errors might loop forever or give up too early.
+**Problem:** An AI agent fixing build errors can loop forever or give up too soon.
 
 **Pattern:**
 
@@ -89,13 +89,13 @@ No other condition justifies stopping. Not "too many errors",
 not "beyond scope", not "unfixable."
 ```
 
-**Why it works:** Eliminates the agent's natural tendency to rationalize early exit. The exhaustive table leaves no ambiguity — the agent cannot invent a 4th stop condition.
+**Why it works:** It takes away the agent's urge to talk itself into quitting early. The exhaustive table leaves no room for ambiguity, so the agent can't invent a 4th stop condition.
 
 ---
 
 ## Example: Pattern 45 — Directive-Based Pre-Write Review
 
-**Problem:** Agent writes incorrect config changes that break production behavior.
+**Problem:** An agent writes incorrect config changes that break production behavior.
 
 **Pattern:**
 
@@ -111,7 +111,7 @@ Before EVERY edit, evaluate each guardrail:
 If ANY guardrail returns FAIL → do NOT write. Revise first.
 ```
 
-**Why it works:** Forces a mandatory pause between "decide what to do" and "do it." The table format means each check is independently evaluable — the agent can't skip one by flowing past it in prose.
+**Why it works:** It forces a real pause between deciding what to do and actually doing it. Because each check sits in its own table row, the agent has to evaluate them one by one — it can't just skip one by gliding past it in prose.
 
 ---
 
@@ -119,15 +119,15 @@ If ANY guardrail returns FAIL → do NOT write. Revise first.
 
 ### Token-Level Techniques (9 techniques)
 
-Grounded in how LLMs actually process tokens — not intuition. Example: **Decision trees beat prose for branching logic** because tree structure concentrates attention on one path, while prose spreads attention across all conditions simultaneously.
+These are grounded in how LLMs actually process tokens, not in intuition. For instance, **decision trees beat prose for branching logic**: a tree focuses the model's attention on a single path, while prose spreads that attention across every condition at once.
 
 ### Anti-Laziness Strategies (8 strategies)
 
-Agents skip reference reads, collapse multi-step procedures into shortcuts, and "remember" instead of re-reading. The anti-laziness guide documents 8 systematic defenses, from mandatory read gates to progressive disclosure.
+Agents skip reference reads, shrink multi-step procedures down to shortcuts, and "remember" instead of re-reading. The anti-laziness guide walks through 8 systematic defenses, from mandatory read gates to progressive disclosure.
 
 ### Prompt Review Framework
 
-A structured review process with 9 dimensions (clarity, determinism, safety, testability...) and P0/P1/P2 severity grading. Designed for peer review of agent prompts — not just self-review.
+A structured review process built around 9 dimensions (clarity, determinism, safety, testability...) and P0/P1/P2 severity grading. It's meant for peer review of agent prompts, not just checking your own work.
 
 ---
 
