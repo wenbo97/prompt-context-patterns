@@ -15,7 +15,7 @@
 
 ### 模式目录（155 个模式）
 
-从 [pattern-catalog-index.md](/prompt-context-patterns/catalog/catalog-index) 的快速参考表开始查找所有模式。
+从 [pattern-catalog-index.md](/prompt-context-patterns/catalog/catalog-index-zh) 的快速参考表开始查找所有模式。
 
 #### 基础模式（1-30）
 
@@ -65,7 +65,7 @@
 
 ## 使用方法
 
-1. **构建新技能？** 扫描[快速参考表](/prompt-context-patterns/catalog/catalog-index#quick-reference-table)，找到与你的场景相关的模式。
+1. **构建新技能？** 扫描[快速参考表](/prompt-context-patterns/catalog/catalog-index-zh#快速参考表)，找到与你的场景相关的模式。
 2. **评审现有技能？** 检查它使用了哪些模式，遗漏了哪些。
 3. **学习提示词工程？** 从[理论](/prompt-context-patterns/catalog/techniques/token-level-techniques-zh)开始，然后按顺序阅读基础分类文件。
 
