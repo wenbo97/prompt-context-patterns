@@ -11,7 +11,7 @@ Patterns extracted from the **Claude Code system prompt** (Anthropic's official 
 ## Pattern 121: Typed Memory Taxonomy
 
 **Prevalence:** Unique to Claude Code platform (not observed in plugin skills)
-**Related patterns:** [Configuration Persistence (16)](#pattern-16), [State File Continuity (70)](#pattern-70), [Reference File Injection (23)](#pattern-23)
+**Related patterns:** [Configuration Persistence (16)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup), [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism), [Reference File Injection (23)](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection)
 
 **What it is:** A file-based persistent memory system with four discrete memory types — `user`, `feedback`, `project`, `reference` — each with distinct write triggers, usage rules, and staleness profiles. An always-loaded index file (MEMORY.md) points to individual memory files with frontmatter metadata.
 
@@ -61,7 +61,7 @@ Read the memory file at the start of each conversation.
 ## Pattern 122: Bidirectional Feedback Capture
 
 **Prevalence:** Unique to Claude Code platform
-**Related patterns:** [Feedback Solicitation (29)](#pattern-29), [Mandatory Self-Learning After Failure (95)](#pattern-95)
+**Related patterns:** [Feedback Solicitation (29)](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-29-feedback-solicitation), [Mandatory Self-Learning After Failure (95)](/prompt-context-patterns/catalog/categories/patterns-gap-fills#pattern-95-mandatory-self-learning-after-failure-resolution)
 
 **What it is:** Recording both corrections ("don't do X") AND confirmations ("yes, exactly like that") as feedback memories. Corrections are easy to notice; confirmations are quieter — the system explicitly watches for them.
 
@@ -109,8 +109,8 @@ When the user corrects you, save what they said to avoid repeating the mistake.
 
 ## Pattern 123: Reversibility × Blast-Radius Permission Model
 
-**Prevalence:** Core to Claude Code; echoed in ~4% of plugins via [Confirmation Gates (8)](#pattern-8)
-**Related patterns:** [Confirmation Gates (8)](#pattern-8), [Read-Only Boundary (12)](#pattern-12), [Tiered Permissions (60)](#pattern-60)
+**Prevalence:** Core to Claude Code; echoed in ~4% of plugins via [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
+**Related patterns:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration), [Tiered Permissions (60)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety#pattern-60-tiered-permission-model-red--defer--green)
 
 **What it is:** A two-dimensional permission assessment: how reversible is the action, and how far does its effect reach? Local + reversible = proceed freely. Remote + irreversible = always confirm. Critically, **approval is non-sticky** — approving a push once does NOT authorize all future pushes.
 
@@ -155,8 +155,8 @@ Always ask before running dangerous commands like `rm -rf` or `git push --force`
 
 ## Pattern 124: Tool Preference Hierarchy with Hard Routing
 
-**Prevalence:** Core to Claude Code; similar concept in [Tool Routing Tables (21)](#pattern-21) but this adds a **ban layer**
-**Related patterns:** [Tool Routing Tables (21)](#pattern-21), [Intent Classification (20)](#pattern-20)
+**Prevalence:** Core to Claude Code; similar concept in [Tool Routing Tables (21)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables) but this adds a **ban layer**
+**Related patterns:** [Tool Routing Tables (21)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables), [Intent Classification (20)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing)
 
 **What it is:** Mapping categories of operations to preferred tools, then BANNING the generic alternative (shell commands) when a dedicated tool exists. This is stronger than "prefer X over Y" — it's "NEVER use Y for this task."
 
@@ -196,7 +196,7 @@ Use the right tool for the job. Prefer built-in tools when available.
 ## Pattern 125: Cache-Aware Scheduling
 
 **Prevalence:** Unique to Claude Code platform (scheduling infrastructure)
-**Related patterns:** [State File Continuity (70)](#pattern-70), [Time-Boxed Investigation (77)](#pattern-77)
+**Related patterns:** [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism), [Time-Boxed Investigation (77)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-77-time-boxed-investigation-with-partial-results)
 
 **What it is:** Selecting delay intervals for recurring/polling tasks based on the LLM prompt cache TTL. The cache has a 5-minute window — sleeping past it means the next wake-up reads the full context uncached (slower, more expensive). The system explicitly identifies a "dead zone" (exactly 300s) that should never be chosen.
 
@@ -242,8 +242,8 @@ Wait an appropriate amount of time between checks. Don't check too frequently.
 
 ## Pattern 126: Agent Briefing Protocol
 
-**Prevalence:** Core to Claude Code's Agent tool; echoed in [Handoff Context Protocol (36)](#pattern-36)
-**Related patterns:** [Handoff Context Protocol (36)](#pattern-36), [Hub-and-Spoke (32)](#pattern-32), [Multi-Agent Orchestration (18)](#pattern-18)
+**Prevalence:** Core to Claude Code's Agent tool; echoed in [Handoff Context Protocol (36)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-36-handoff-context-protocol)
+**Related patterns:** [Handoff Context Protocol (36)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-36-handoff-context-protocol), [Hub-and-Spoke (32)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-32-hub-and-spoke-sdlc-state-machine), [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** A set of rules for how an orchestrator writes prompts to sub-agents. The core principle: "brief the agent like a smart colleague who just walked into the room." Sub-agents have zero context from the parent conversation. The critical anti-pattern: "Never delegate understanding" — never write "based on your findings, fix the bug."
 
@@ -293,8 +293,8 @@ Send clear instructions to the agent. Include relevant context.
 
 ## Pattern 127: Parallel-Safe Step Identification
 
-**Prevalence:** Core to Claude Code's git/PR protocols; similar to [Phased Execution (2)](#pattern-2) but adds parallelism annotations
-**Related patterns:** [Phased Execution (2)](#pattern-2), [Multi-Agent Orchestration (18)](#pattern-18)
+**Prevalence:** Core to Claude Code's git/PR protocols; similar to [Phased Execution (2)](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow) but adds parallelism annotations
+**Related patterns:** [Phased Execution (2)](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** Annotating multi-step workflows with explicit parallelism markers — which steps can run simultaneously and which must wait for predecessors. Used in Claude Code's git commit protocol, PR creation protocol, and general tool calling guidance.
 
@@ -338,8 +338,8 @@ Run git status, git diff, and git log. Then analyze changes and commit.
 
 ## Pattern 128: Context Compaction Survival Protocol
 
-**Prevalence:** Unique to Claude Code platform; extends [State File Continuity (70)](#pattern-70)
-**Related patterns:** [State File Continuity (70)](#pattern-70), [Phase Data Contract (SSG P14)](#pattern-14)
+**Prevalence:** Unique to Claude Code platform; extends [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism)
+**Related patterns:** [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism), [Phase Data Contract (SSG P14)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates)
 
 **What it is:** Explicit instructions for what state must survive when the system automatically compresses prior messages as the conversation approaches context limits. The agent is told which fields to preserve (by name) and that the conversation is NOT limited by the context window — messages are compressed, not lost.
 
@@ -382,8 +382,8 @@ Try to remember important information from earlier in the conversation.
 
 ## Pattern 129: Non-Sticky Authorization Scope
 
-**Prevalence:** Unique to Claude Code; extends [Confirmation Gates (8)](#pattern-8) with a temporal dimension
-**Related patterns:** [Confirmation Gates (8)](#pattern-8), [Tiered Permissions (60)](#pattern-60)
+**Prevalence:** Unique to Claude Code; extends [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop) with a temporal dimension
+**Related patterns:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Tiered Permissions (60)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety#pattern-60-tiered-permission-model-red--defer--green)
 
 **What it is:** The explicit rule that user approval of an action in one context does NOT create a standing authorization. Each approval is scoped to the specific request, not the action category. This prevents "permission creep" where an agent accumulates implicit approvals over a long session.
 
@@ -409,8 +409,8 @@ Match the scope of your actions to what was actually requested.
 
 ## Pattern 130: Investigate Before Destroying
 
-**Prevalence:** Unique to Claude Code; extends [Read-Only Boundary (12)](#pattern-12) with an investigation mandate
-**Related patterns:** [Read-Only Boundary (12)](#pattern-12), [Confirmation Gates (8)](#pattern-8)
+**Prevalence:** Unique to Claude Code; extends [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration) with an investigation mandate
+**Related patterns:** [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration), [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** When encountering unexpected state (unfamiliar files, branches, configurations, lock files), the agent must investigate the root cause before taking destructive action. This prevents the agent from using destruction as a shortcut to remove obstacles.
 
@@ -472,7 +472,7 @@ This converts an irreversible bulk operation into an approve-the-diff gate. The 
 ## Pattern 131: Output Visibility Awareness
 
 **Prevalence:** Unique to Claude Code platform
-**Related patterns:** [Progress Feedback (9)](#pattern-9), [Structured Output Templates (14)](#pattern-14)
+**Related patterns:** [Progress Feedback (9)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-9-progress-feedback--status-reporting), [Structured Output Templates (14)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates)
 
 **What it is:** The agent is explicitly told that users can't see most tool calls or internal thinking — only text output is visible. This creates a communication obligation: state what you're about to do before the first tool call, give updates at key moments, and summarize at end of turn.
 
@@ -512,7 +512,7 @@ Keep the user informed about what you're doing.
 ## Pattern 132: Hook-Driven Automation Awareness
 
 **Prevalence:** Unique to Claude Code platform
-**Related patterns:** [Confirmation Gates (8)](#pattern-8), [Configuration Persistence (16)](#pattern-16)
+**Related patterns:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Configuration Persistence (16)](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup)
 
 **What it is:** The system declares that users can configure shell commands ("hooks") that execute automatically in response to tool calls or events. The agent must treat hook feedback as coming from the user, and if blocked by a hook, adapt rather than retry.
 

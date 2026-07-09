@@ -9,7 +9,7 @@ Deep patterns for workflow orchestration, state machines, incident response, dep
 ## Pattern 70: State File as Sole Continuity Mechanism
 
 **Prevalence:** ~2% of plugins
-**Related patterns:** [Configuration Persistence](#pattern-16), [Persistent Team with Message Board](#pattern-39)
+**Related patterns:** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup), [Persistent Team with Message Board](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-39-persistent-team-with-message-board)
 
 **What it is:** Each phase of a multi-agent pipeline reads and writes a shared markdown/JSON state file, since agents run in isolated context windows with no shared memory. The state file is the ONLY way information flows between phases.
 
@@ -45,7 +45,7 @@ If a phase fails, restart the entire pipeline from the beginning.
 ## Pattern 71: Zero-Questions Triage (Maximum Autonomy)
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Interactive Flow Control](#pattern-7), [Confirmation Gates](#pattern-8)
+**Related patterns:** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-7-interactive--conversational-flow-control), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** A fixed protocol with zero user interaction, hard time budgets, and staggered burst queries respecting external rate limits. The agent must complete its entire analysis autonomously within strict time constraints.
 
@@ -80,7 +80,7 @@ Query all data sources in parallel for maximum speed.
 ## Pattern 72: Pull-Based Kanban Orchestration
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Multi-Agent Orchestration](#pattern-18), [Complexity-Tiered Dispatch](#pattern-38)
+**Related patterns:** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Complexity-Tiered Dispatch](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-38-complexity-tiered-dispatch)
 
 **What it is:** A Kanban-style work system where agents pull tasks based on affinity (matching their specialization) rather than being pushed tasks by an orchestrator. Includes a two-tier Ready Gate, fork protocol for dynamic scaling, and scope escalation rules.
 
@@ -129,7 +129,7 @@ Agents can pick up as many tasks as needed to stay busy.
 ## Pattern 73: Deployment State Machine (Stateless/Re-entrant/Idempotent)
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Hub-and-Spoke State Machine](#pattern-32), [Error Handling](#pattern-15)
+**Related patterns:** [Hub-and-Spoke State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-32-hub-and-spoke-sdlc-state-machine), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** A detailed state machine for deployment workflows where handlers run concurrently and the system is designed to be stateless, re-entrant, and idempotent — any handler can crash and restart without corrupting state.
 
@@ -168,7 +168,7 @@ If a handler fails, an operator manually restarts the deployment.
 ## Pattern 74: Autonomous PR Feedback Resolution
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Self-Critique](#pattern-28), [Confirmation Gates](#pattern-8)
+**Related patterns:** [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** The agent autonomously reads PR review comments and decides whether to implement the feedback or push back with a reasoned response — without human intervention for each comment.
 
@@ -207,7 +207,7 @@ For each PR review comment:
 ## Pattern 75: 11-Phase Autonomous Development Flow
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Phased Execution](#pattern-2), [Skill Composition](#pattern-19)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-19-skill-composition--cross-skill-invocation)
 
 **What it is:** A complete autonomous development workflow chaining 11 phases from task understanding through deployment, including adversarial code review and CI monitoring.
 
@@ -249,7 +249,7 @@ Phases:
 ## Pattern 76: Staggered Burst Query with Rate Limit Respect
 
 **Prevalence:** ~2% of plugins
-**Related patterns:** [Tool Routing Tables](#pattern-21), [Error Handling](#pattern-15)
+**Related patterns:** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** When making multiple MCP/API calls, stagger them with controlled concurrency and explicit rate limit awareness rather than firing all in parallel.
 
@@ -284,7 +284,7 @@ Mix Kusto, ADO, and Graph queries in the same parallel batch.
 ## Pattern 77: Time-Boxed Investigation with Partial Results
 
 **Prevalence:** ~2% of incident-response plugins
-**Related patterns:** [Error Handling](#pattern-15), [Progress Feedback](#pattern-9)
+**Related patterns:** [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation), [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-9-progress-feedback--status-reporting)
 
 **What it is:** Hard time budgets per investigation phase, with mandatory partial-result reporting when time expires rather than continuing indefinitely.
 
@@ -321,7 +321,7 @@ Only report confirmed findings — do not include inconclusive results.
 ## Pattern 78: Deployment Override Knowledge Encoding
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Domain Knowledge Embedding](#pattern-24)
+**Related patterns:** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding)
 
 **What it is:** Encoding the complete taxonomy of deployment override types, their effects, and common KQL filter patterns directly in the prompt to enable precise deployment status queries.
 
@@ -357,7 +357,7 @@ Summarize the results for the user.
 ## Pattern 79: Incident Escalation Decision Matrix
 
 **Prevalence:** ~2% of incident-response plugins
-**Related patterns:** [Confirmation Gates](#pattern-8), [Blast Radius Formula](#pattern-49)
+**Related patterns:** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Blast Radius Formula](/prompt-context-patterns/catalog/categories/patterns-advanced-quality#pattern-49-blast-radius--on-call-impact-formulas)
 
 **What it is:** A decision matrix that determines escalation path based on quantified impact dimensions, with explicit thresholds for when to page, bridge, or escalate to management.
 
@@ -390,7 +390,7 @@ Page the oncall team if needed.
 ## Pattern 80: Scope Estimation and Re-estimation Checkpoints
 
 **Prevalence:** ~2% of planning plugins
-**Related patterns:** [Complexity-Tiered Dispatch](#pattern-38), [Phased Execution](#pattern-2)
+**Related patterns:** [Complexity-Tiered Dispatch](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-38-complexity-tiered-dispatch), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow)
 
 **What it is:** Requiring the agent to estimate task scope before starting, then re-estimate at defined checkpoints during execution. Significant scope increases trigger escalation.
 
@@ -423,7 +423,7 @@ If it takes longer than expected, let the user know when you're done.
 ## Pattern 150: Continuous Execution Mandate
 
 **Prevalence:** Single source (superpowers/subagent-driven-development) but high novelty
-**Related patterns:** [Zero-Questions Triage](#pattern-71), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
+**Related patterns:** [Zero-Questions Triage](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-71-zero-questions-triage-maximum-autonomy), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
 
 **What it is:** An explicit prohibition on inter-task check-ins. Once a plan is approved, the agent executes every task in the plan back-to-back without asking the user "should I continue?" between tasks. Distinct from Pattern 71 (Zero-Questions Triage covers a single autonomous analysis) — this governs *multi-task plan execution*.
 

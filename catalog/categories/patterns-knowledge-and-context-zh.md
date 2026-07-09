@@ -9,7 +9,7 @@
 ## Pattern 23: Reference File / Knowledge Base Injection
 
 **出现频率：** ~17% 的技能（390 文件）
-**相关模式：** [Domain Knowledge Embedding](#pattern-24), [Few-Shot Examples](#pattern-25), [Tool Routing Tables](#pattern-21)
+**相关模式：** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding), [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-25-few-shot-examples), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables)
 
 **定义：** 指向外部参考文件（JSON、markdown、KQL 模板、查找表），这些文件包含技能在运行时需要的领域知识。技能指示 agent 在继续之前读取特定文件，而非将所有知识内联嵌入。
 
@@ -75,7 +75,7 @@ data available somewhere in the project. Check if there are any tables you can u
 ## Pattern 24: Domain Knowledge Embedding
 
 **出现频率：** ~22% 的技能（500+ 文件）
-**相关模式：** [Reference File Injection](#pattern-23), [Few-Shot Examples](#pattern-25), [Scoring Rubrics](#pattern-27)
+**相关模式：** [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection), [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-25-few-shot-examples), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 将详细的领域特定知识直接嵌入提示词 — schema 定义、API 字段映射、查询语法、分类规则或命令参考。与 Pattern 23 不同，知识是内联的而非外部文件。
 
@@ -140,7 +140,7 @@ Use appropriate filters to find what you need.
 ## Pattern 25: Few-Shot Examples
 
 **出现频率：** ~21% 的技能（482 文件）
-**相关模式：** [Structured Output Templates](#pattern-14), [Scoring Rubrics](#pattern-27), [Domain Knowledge Embedding](#pattern-24)
+**相关模式：** [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding)
 
 **定义：** 在技能中包含完整的输入/输出示例来演示预期行为。最佳示例同时包含正常路径和失败路径，完整输出展示精确格式。
 
@@ -211,7 +211,7 @@ review it and give it a score. Make sure to provide helpful feedback.
 ## Pattern 26: Evidence Chain / Proof-of-Work
 
 **出现频率：** ~5% 的技能（100-150 文件）
-**相关模式：** [Persona/Role Assignment](#pattern-5), [Negative Constraints](#pattern-6), [Self-Critique](#pattern-28)
+**相关模式：** [Persona/Role Assignment](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-5-personarole-assignment), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check)
 
 **定义：** 要求 agent 展示推理过程 — 引用来源、为结论提供证据、维护审计轨迹。防止模型在未实际调查的情况下生成貌似合理的结论。
 

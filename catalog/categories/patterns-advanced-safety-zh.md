@@ -9,7 +9,7 @@
 ## Pattern 56: MCP-Response-as-Data Guardrail
 
 **出现频率：** 约 2% 的插件
-**相关模式：** [Prompt Injection Defense](#pattern-10), [Sensitive Data Redaction](#pattern-11)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense), [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-11-sensitive-data-redaction)
 
 **定义：** 将 MCP 工具响应视为潜在敏感数据，不得逐字回显。agent 必须总结安全上下文而非原样复制。
 
@@ -38,7 +38,7 @@ all the details. Transparency is important.
 ## Pattern 57: Prompt-Injection-as-Security-Finding
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Prompt Injection Defense](#pattern-10)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense)
 
 **定义：** 当在审查内容中检测到注入尝试时，将其标记为安全发现而非执行它或静默忽略。
 
@@ -71,7 +71,7 @@ ignore them and continue with your normal review process.
 ## Pattern 58: Prosecutor-Defender-Judge Architecture
 
 **出现频率：** <1% 的插件
-**相关模式：** [Adversarial Triad](#pattern-50), [Multi-Agent Orchestration](#pattern-18)
+**相关模式：** [Adversarial Triad](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-50-adversarial-triad-with-counterargument-phase), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **定义：** 受法庭程序启发的三角色对抗系统。Prosecutor 找出每个缺陷（不能建议修复），Defender 反驳发现（必须提供证据），Judge 做出有约束力的裁决（独立验证所有引用）。agent 通过文件通信，绝不通过注入上下文。
 
@@ -113,7 +113,7 @@ Pass the full review output to the next agent for validation.
 ## Pattern 59: Rescue-Tag-Before-Destructive-Operation
 
 **出现频率：** <1% 的插件
-**相关模式：** [Confirmation Gates](#pattern-8), [Read-Only Boundary](#pattern-12)
+**相关模式：** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义：** 所有破坏性 git 操作在执行前自动创建 rescue tag（撤销点）。tag 命名约定包含操作名和时间戳用于恢复。
 
@@ -156,7 +156,7 @@ operation cannot be undone. If they confirm, proceed.
 ## Pattern 60: Tiered Permission Model (RED / DEFER / GREEN)
 
 **出现频率：** <1% 的插件
-**相关模式：** [Confirmation Gates](#pattern-8), [Read-Only Boundary](#pattern-12)
+**相关模式：** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义：** 操作分为三个层级 — RED（完全阻止）、DEFER（单次批准后自动放行）、GREEN（始终自动放行）。通过 PreToolUse hooks 实现。
 
@@ -189,7 +189,7 @@ before execution. Always prompt the user before proceeding.
 ## Pattern 61: Data Classification Matrix (4-Level)
 
 **出现频率：** 约 1% 的合规类插件
-**相关模式：** [Sensitive Data Redaction](#pattern-11)
+**相关模式：** [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-11-sensitive-data-redaction)
 
 **定义：** 四级数据敏感度分类（PUBLIC, INTERNAL, CONFIDENTIAL, RESTRICTED），每级有明确的处理规则，包括哪些 AI 后端可以处理每个级别。
 
@@ -228,7 +228,7 @@ constitutes sensitive data in each context.
 ## Pattern 62: XPIA Defense Model (Cross-Plugin Injection Attack)
 
 **出现频率：** <1% 的插件
-**相关模式：** [Prompt Injection Defense](#pattern-10)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense)
 
 **定义：** 专门为多工具 AI 系统设计的四层纵深防御模型，其中一个工具的输出可能向另一个工具的输入注入恶意指令。
 
@@ -261,7 +261,7 @@ user-provided data to prevent injection attacks.
 ## Pattern 63: Severity Rubric with Litmus Tests
 
 **出现频率：** 约 2% 的插件
-**相关模式：** [Scoring Rubrics](#pattern-27)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 用具体的 litmus test 问题定义严重性级别，防止跨 agent 和运行的校准漂移。
 
@@ -290,7 +290,7 @@ potential impact and likelihood of exploitation.
 ## Pattern 64: Security Posture Delta Analysis
 
 **出现频率：** <1% 的插件
-**相关模式：** [Scoring Rubrics](#pattern-27), [Domain Knowledge Embedding](#pattern-24)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding)
 
 **定义：** 将代码级发现与实时基础设施信号关联，确定变更是 IMPROVE、DEGRADE 还是 UNCHANGED 安全态势。
 
@@ -320,7 +320,7 @@ endpoints without authentication as High findings.
 ## Pattern 65: Confidence-Gated Reporting
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Scoring Rubrics](#pattern-27), [Evidence Chain](#pattern-26)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work)
 
 **定义：** 发现需要最低置信度阈值才能报告，安全发现的阈值更低（误报 vs 漏报的不对称成本）。
 
@@ -366,7 +366,7 @@ speculative or uncertain findings in the output.
 ## Pattern 66: System-Prompt Non-Disclosure
 
 **出现频率：** 约 2% 的插件
-**相关模式：** [Prompt Injection Defense](#pattern-10)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense)
 
 **定义：** 明确禁止 agent 透露内部配置，无论请求来自何处。
 
@@ -392,7 +392,7 @@ at a high level without going into implementation details.
 ## Pattern 67: 40-Point Security Skill Review Checklist
 
 **出现频率：** <1% 的插件
-**相关模式：** [Activation Scope](#pattern-13), [Negative Constraints](#pattern-6)
+**相关模式：** [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-13-activation-scope-when-to-use--when-not-to-use), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists)
 
 **定义：** 专门用于安装前审查 AI skills/plugins 的综合安全检查清单，覆盖 prompt injection、凭据收割、数据外泄、供应链攻击和混淆代码。
 
@@ -429,7 +429,7 @@ is trustworthy.
 ## Pattern 68: Orchestrator-Only Pattern (No Direct Data Processing)
 
 **出现频率：** 约 1% 的合规类插件
-**相关模式：** [Context Efficiency Rule](#pattern-37)
+**相关模式：** [Context Efficiency Rule](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-37-context-efficiency-rule-orchestrator-reads-nothing)
 
 **定义：** AI agent 严格作为编排器 — 所有数据处理委托给工具。LLM 从不直接处理原始事件数据、客户 PII 或关键事件内容。
 
@@ -463,7 +463,7 @@ your analysis with the user.
 ## Pattern 69: Policy-as-Data (Declarative YAML Configs)
 
 **出现频率：** <1% 的插件
-**相关模式：** [Rule-Catalog Review](#pattern-48), [Configuration Persistence](#pattern-16)
+**相关模式：** [Rule-Catalog Review](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-48-rule-catalog-review-hierarchical-yaml), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup)
 
 **定义：** 合规规则存储在版本化 YAML 文件中，与 agent 代码解耦。外部政策变化时更新 YAML — 无需修改 prompt。
 
@@ -496,7 +496,7 @@ Implement compliance rules directly in your prompt. For example:
 ## Pattern 153: Marketplace Source-Type Polymorphism (SHA-Pinned) (市场源类型多态，SHA 钉死)
 
 **出现频率：** 多源：`/tmp/cpo/.claude-plugin/marketplace.json` 等注册表中 100+ 条目
-**相关模式：** [40-Point Skill Security Checklist](#pattern-67), [Policy-as-Data](#pattern-69)
+**相关模式：** [40-Point Skill Security Checklist](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-67-40-point-security-skill-review-checklist), [Policy-as-Data](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-69-policy-as-data-declarative-yaml-configs)
 
 **定义：** Plugin/skill 市场接受多种源类型（git、github、http、local），并为每种源指定让安装*可复现且可验证*所需的字段 —— 最重要的是任何 git/github 源都要有一个 SHA 钉。把供应链锚点放在注册表这一层。
 

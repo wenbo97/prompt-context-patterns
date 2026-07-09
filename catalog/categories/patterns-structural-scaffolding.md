@@ -9,7 +9,7 @@ How a skill prompt is organized — the skeleton that holds everything together.
 ## Pattern 1: YAML Frontmatter Metadata Block
 
 **Prevalence:** ~100% of skills (2,290+ files)
-**Related patterns:** [Activation Scope](#pattern-13), [Tool Routing Tables](#pattern-21)
+**Related patterns:** [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-13-activation-scope-when-to-use--when-not-to-use), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables)
 
 **What it is:** A structured YAML block at the top of every SKILL.md that declares the skill's identity, trigger conditions, tool permissions, arguments, and (in advanced cases) input/output schemas. The frontmatter is parsed by the platform, not by the LLM — it controls what the skill CAN do before the model even sees the body.
 
@@ -72,7 +72,7 @@ Write a specification for whatever the user asks about. Make it detailed and com
 ## Pattern 2: Phased/Stepped Execution Flow
 
 **Prevalence:** ~54% of skills (1,245 files)
-**Related patterns:** [Confirmation Gates](#pattern-8), [Progress Feedback](#pattern-9), [Workflow Mode Branching](#pattern-3)
+**Related patterns:** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-9-progress-feedback--status-reporting), [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-3-workflow-mode-branching)
 
 **What it is:** Breaking the skill into numbered, sequential phases or steps that must be executed in order. Each phase has a clear goal, specific actions, and defined outputs. This is the most dominant structural pattern for anything beyond trivial skills.
 
@@ -169,7 +169,7 @@ The "no code yet" prohibition and the closing loop ("return to Phase 1") are loa
 ## Pattern 3: Workflow Mode Branching
 
 **Prevalence:** ~5% of skills (100-150 files)
-**Related patterns:** [Phased Execution](#pattern-2), [Intent Classification](#pattern-20), [$ARGUMENTS Pattern](#pattern-4)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [$ARGUMENTS Pattern](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-4-arguments-variable-pattern)
 
 **What it is:** Defining multiple execution modes within a single skill, each with different phase flows, guardrails, and output depth. The mode is selected based on the user's role, arguments, or context.
 
@@ -212,7 +212,7 @@ to include based on who you think the user is.
 ## Pattern 4: $ARGUMENTS Variable Pattern
 
 **Prevalence:** ~7% of skills (169 files)
-**Related patterns:** [Configuration Persistence](#pattern-16), [Intent Classification](#pattern-20)
+**Related patterns:** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing)
 
 **What it is:** Using the platform-injected `$ARGUMENTS` placeholder to receive user input at invocation time, then parsing it for structured data, flags, and options.
 
@@ -248,7 +248,7 @@ Handle any options they might pass.
 ## Pattern 151: HARD-GATE Block Tag
 
 **Prevalence:** Multi-source (3+ uses across superpowers): brainstorming, using-superpowers, executing-plans (varying tag names: HARD-GATE, SUBAGENT-STOP, BLOCKING)
-**Related patterns:** [Negative Constraints](#pattern-6), [Confirmation Gates](#pattern-8), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
+**Related patterns:** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
 
 **What it is:** A visually distinct, all-caps tag (`HARD-GATE`, `SUBAGENT-STOP`, `BLOCKING`) wrapping a rule that the agent must not pass without satisfying. Distinct from Pattern 6 (which is about *what* to negate) — this is the *visual marker* that elevates a single rule above ordinary prose.
 
@@ -284,7 +284,7 @@ without checking first.
 ## Pattern 152: DOT-Graph Decision Flow Embedded in Prompt
 
 **Prevalence:** Multi-source (5+ skills): triage, code-review, verify, finishing-a-development-branch, and others
-**Related patterns:** [Workflow Mode Branching](#pattern-3), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Chart Decision Tree with Anti-Pattern Guards](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain#pattern-82-chart-decision-tree-with-anti-pattern-guards)
+**Related patterns:** [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-3-workflow-mode-branching), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Chart Decision Tree with Anti-Pattern Guards](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain#pattern-82-chart-decision-tree-with-anti-pattern-guards)
 
 **What it is:** A small Graphviz/DOT-syntax graph embedded directly in the skill body that encodes the decision flow as labeled edges between named states. Distinct from a Markdown decision tree (ASCII branches) — the DOT format is more compact, supports cycles, and the model parses it reliably as a state machine.
 

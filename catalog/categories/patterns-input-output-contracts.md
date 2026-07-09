@@ -9,7 +9,7 @@ How data flows in and out — output templates, error handling, configuration, a
 ## Pattern 14: Structured Output Templates
 
 **Prevalence:** ~26% of skills (590 files)
-**Related patterns:** [Few-Shot Examples](#pattern-25), [Scoring Rubrics](#pattern-27), [Progress Feedback](#pattern-9)
+**Related patterns:** [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-25-few-shot-examples), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-9-progress-feedback--status-reporting)
 
 **What it is:** Prescribing the exact format, structure, or template that the agent's output must follow — from table schemas and report sections to complete markdown documents with placeholder variables.
 
@@ -65,7 +65,7 @@ Make it clear and easy to understand. Use a table if appropriate.
 ## Pattern 15: Error Handling / Graceful Degradation
 
 **Prevalence:** ~10% of skills (222 files)
-**Related patterns:** [Phased Execution](#pattern-2), [Tool Routing Tables](#pattern-21), [Configuration Persistence](#pattern-16)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup)
 
 **What it is:** Prescribing what the agent should do when things go wrong — tool failures, missing data, timeouts, malformed inputs — with phase-specific degradation strategies.
 
@@ -119,7 +119,7 @@ If a tool fails, try an alternative approach.
 ## Pattern 16: Configuration Persistence / First-Time Setup
 
 **Prevalence:** ~4% of skills (80-100 files)
-**Related patterns:** [Interactive Flow Control](#pattern-7), [Cross-Platform Handling](#pattern-17), [$ARGUMENTS Pattern](#pattern-4)
+**Related patterns:** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-7-interactive--conversational-flow-control), [Cross-Platform Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-17-cross-platform-handling), [$ARGUMENTS Pattern](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-4-arguments-variable-pattern)
 
 **What it is:** A "check for config, create if missing" pattern for skills that need user-specific settings across sessions. The config is saved to a well-known path and loaded on subsequent invocations.
 
@@ -192,7 +192,7 @@ Save the settings somewhere for next time.
 ## Pattern 17: Cross-Platform Handling
 
 **Prevalence:** ~3% of skills (60-80 files)
-**Related patterns:** [Configuration Persistence](#pattern-16), [Error Handling](#pattern-15)
+**Related patterns:** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** Providing different instructions for Windows, macOS, and Linux environments — different commands, paths, tools, and fallback chains.
 

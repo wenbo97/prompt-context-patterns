@@ -9,7 +9,7 @@
 ## Pattern 70: State File as Sole Continuity Mechanism
 
 **出现频率：** 约 2% 的插件
-**相关模式：** [Configuration Persistence](#pattern-16), [Persistent Team with Message Board](#pattern-39)
+**相关模式：** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup), [Persistent Team with Message Board](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-39-persistent-team-with-message-board)
 
 **定义：** 多 agent 管线的每个阶段读写一个共享 markdown/JSON 状态文件，因为 agent 运行在隔离的上下文窗口中没有共享内存。状态文件是阶段之间信息流动的唯一方式。
 
@@ -45,7 +45,7 @@ If a phase fails, restart the entire pipeline from the beginning.
 ## Pattern 71: Zero-Questions Triage (Maximum Autonomy)
 
 **出现频率：** <1% 的插件
-**相关模式：** [Interactive Flow Control](#pattern-7), [Confirmation Gates](#pattern-8)
+**相关模式：** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-7-interactive--conversational-flow-control), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义：** 零用户交互的固定协议，带硬时间预算和尊重外部速率限制的交错突发查询。agent 必须在严格时间约束内自主完成全部分析。
 
@@ -80,7 +80,7 @@ Query all data sources in parallel for maximum speed.
 ## Pattern 72: Pull-Based Kanban Orchestration
 
 **出现频率：** <1% 的插件
-**相关模式：** [Multi-Agent Orchestration](#pattern-18), [Complexity-Tiered Dispatch](#pattern-38)
+**相关模式：** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies), [Complexity-Tiered Dispatch](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-38-complexity-tiered-dispatch)
 
 **定义：** Kanban 式工作系统，agent 基于亲和性（匹配其专长）拉取任务而非由编排器推送。包含两层 Ready Gate、动态扩展的 fork 协议和范围升级规则。
 
@@ -129,7 +129,7 @@ Agents can pick up as many tasks as needed to stay busy.
 ## Pattern 73: Deployment State Machine (Stateless/Re-entrant/Idempotent)
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Hub-and-Spoke State Machine](#pattern-32), [Error Handling](#pattern-15)
+**相关模式：** [Hub-and-Spoke State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-32-hub-and-spoke-sdlc-state-machine), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义：** 部署工作流的详细状态机，其中处理器并发运行，系统被设计为无状态、可重入和幂等 — 任何处理器可以崩溃和重启而不损坏状态。
 
@@ -168,7 +168,7 @@ If a handler fails, an operator manually restarts the deployment.
 ## Pattern 74: Autonomous PR Feedback Resolution
 
 **出现频率：** <1% 的插件
-**相关模式：** [Self-Critique](#pattern-28), [Confirmation Gates](#pattern-8)
+**相关模式：** [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义：** Agent 自主读取 PR 审查评论并决定是实施反馈还是以理由反驳 — 每个评论无需人工干预。
 
@@ -207,7 +207,7 @@ For each PR review comment:
 ## Pattern 75: 11-Phase Autonomous Development Flow
 
 **出现频率：** <1% 的插件
-**相关模式：** [Phased Execution](#pattern-2), [Skill Composition](#pattern-19)
+**相关模式：** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-19-skill-composition--cross-skill-invocation)
 
 **定义：** 完整的自主开发工作流，从任务理解到部署，串联11个阶段，包括对抗性代码审查和 CI 监控。
 
@@ -249,7 +249,7 @@ Phases:
 ## Pattern 76: Staggered Burst Query with Rate Limit Respect
 
 **出现频率：** 约 2% 的插件
-**相关模式：** [Tool Routing Tables](#pattern-21), [Error Handling](#pattern-15)
+**相关模式：** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义：** 发起多个 MCP/API 调用时，用受控并发和明确速率限制意识交错发送，而非全部并行发射。
 
@@ -284,7 +284,7 @@ Mix Kusto, ADO, and Graph queries in the same parallel batch.
 ## Pattern 77: Time-Boxed Investigation with Partial Results
 
 **出现频率：** 约 2% 的事件响应插件
-**相关模式：** [Error Handling](#pattern-15), [Progress Feedback](#pattern-9)
+**相关模式：** [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation), [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-9-progress-feedback--status-reporting)
 
 **定义：** 每个调查阶段的硬时间预算，时间到期时强制报告部分结果而非无限继续。
 
@@ -321,7 +321,7 @@ Only report confirmed findings — do not include inconclusive results.
 ## Pattern 78: Deployment Override Knowledge Encoding
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Domain Knowledge Embedding](#pattern-24)
+**相关模式：** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding)
 
 **定义：** 将部署覆盖类型的完整分类、效果和常用 KQL 过滤模式直接编码到 prompt 中，支持精确的部署状态查询。
 
@@ -357,7 +357,7 @@ Summarize the results for the user.
 ## Pattern 79: Incident Escalation Decision Matrix
 
 **出现频率：** 约 2% 的事件响应插件
-**相关模式：** [Confirmation Gates](#pattern-8), [Blast Radius Formula](#pattern-49)
+**相关模式：** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop), [Blast Radius Formula](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-49-blast-radius--on-call-impact-formulas)
 
 **定义：** 基于量化影响维度确定升级路径的决策矩阵，带有明确阈值决定何时呼叫、开桥接会议或升级到管理层。
 
@@ -390,7 +390,7 @@ Page the oncall team if needed.
 ## Pattern 80: Scope Estimation and Re-estimation Checkpoints
 
 **出现频率：** 约 2% 的规划插件
-**相关模式：** [Complexity-Tiered Dispatch](#pattern-38), [Phased Execution](#pattern-2)
+**相关模式：** [Complexity-Tiered Dispatch](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-38-complexity-tiered-dispatch), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow)
 
 **定义：** 要求 agent 在开始前估算任务范围，然后在执行期间的定义检查点重新估算。范围显著增加时触发升级。
 
@@ -423,7 +423,7 @@ If it takes longer than expected, let the user know when you're done.
 ## Pattern 150: Continuous Execution Mandate (持续执行强制令)
 
 **出现频率：** 单一来源（superpowers/subagent-driven-development），但新颖性高
-**相关模式：** [Zero-Questions Triage](#pattern-71), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-145-iron-law-inviolable-rule-framing)
+**相关模式：** [Zero-Questions Triage](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-71-zero-questions-triage-maximum-autonomy), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-145-iron-law-inviolable-rule-framing)
 
 **定义：** 一项明确的"任务之间不准核对"的禁令。计划一旦获批，agent 就连续完成计划中的所有任务，不再在任务之间问用户"我该继续吗？"。和 Pattern 71 不同（Zero-Questions Triage 覆盖单次自主分析）—— 这条管的是*多任务计划执行*。
 

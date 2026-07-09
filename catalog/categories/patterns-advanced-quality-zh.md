@@ -9,7 +9,7 @@
 ## Pattern 45: Directive-Based Review with on_fail Classification
 
 **出现频率：** 约 2% 的审查插件
-**相关模式：** [Scoring Rubrics](#pattern-27), [Negative Constraints](#pattern-6)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists)
 
 **定义：** 通过 YAML "directives" 参数化审查，每个标准带有 `on_fail` 字段（`fail` 或 `review`），决定"Not Met"判定是阻塞性还是建议性的。
 
@@ -50,7 +50,7 @@ Decision: If any criterion is Not Met → Fail. Otherwise → Pass.
 ## Pattern 46: Multi-Stage Repo Discovery Before Review
 
 **出现频率：** 约 2% 的审查插件
-**相关模式：** [Reference File Injection](#pattern-23), [Domain Knowledge Embedding](#pattern-24)
+**相关模式：** [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding)
 
 **定义：** 在审查任何代码之前，agent 执行多个发现阶段以学习仓库的约定、架构和模式 — 然后应用校准到所学内容的审查标准。
 
@@ -98,7 +98,7 @@ Decision: If any criterion is Not Met → Fail. Otherwise → Pass.
 ## Pattern 47: Evidence-First Review ("Demonstrate, Don't Cite Rules")
 
 **出现频率：** 约 2% 的审查插件
-**相关模式：** [Evidence Chain](#pattern-26), [Adversarial Persona Framing](#pattern-31)
+**相关模式：** [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work), [Adversarial Persona Framing](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-31-adversarial-persona-framing)
 
 **定义：** 审查者不引用抽象规则（"missing null check"），而必须用具体代码引用展示实际失败路径。
 
@@ -139,7 +139,7 @@ Recommendation: Add input validation per secure coding guidelines.
 ## Pattern 48: Rule-Catalog Review (Hierarchical YAML)
 
 **出现频率：** 约 1% 的审查插件
-**相关模式：** [Tool Routing Tables](#pattern-21), [Domain Knowledge Embedding](#pattern-24)
+**相关模式：** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding)
 
 **定义：** 由分层 YAML 规则文件目录驱动的审查，每个规则带有评估类型（regex, metric, semantic）和规则 ID。包含从历史 PR 评论分析中生成的"trained rules"。
 
@@ -180,7 +180,7 @@ Review rules (embedded in prompt):
 ## Pattern 49: Blast Radius & On-Call Impact Formulas
 
 **出现频率：** <1% 的插件
-**相关模式：** [Scoring Rubrics](#pattern-27)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 用于评估代码变更运营影响的量化公式，产出映射到风险级别的数值分数。
 
@@ -221,7 +221,7 @@ Rate as: Low / Medium / High / Critical
 ## Pattern 50: Adversarial Triad with Counterargument Phase
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Adversarial Persona Framing](#pattern-31), [Multi-Agent Orchestration](#pattern-18)
+**相关模式：** [Adversarial Persona Framing](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-31-adversarial-persona-framing), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **定义：** 三个持有对立思维的 agent（Advocate/Skeptic/Architect）并行运行，然后第二轮三个反驳 agent 挑战每个原始视角。有争议的点升级到对等协商。
 
@@ -288,7 +288,7 @@ For each, report PASS/FAIL with a one-line justification.
 ## Pattern 51: Schema Validation Gate
 
 **出现频率：** 约 2% 的审查插件
-**相关模式：** [Structured Output Templates](#pattern-14), [Error Handling](#pattern-15)
+**相关模式：** [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义：** 每个 agent 对其输出 JSON 运行 schema 验证器。验证失败时 agent 必须修复违规并重新运行直到通过。编排器在接受输出前检查验证成功。
 
@@ -317,7 +317,7 @@ Make sure the JSON is valid.
 ## Pattern 52: LLM-as-Judge Evaluation Scenarios (8 Types)
 
 **出现频率：** <1% 的插件
-**相关模式：** [Scoring Rubrics](#pattern-27), [Self-Critique](#pattern-28)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check)
 
 **定义：** 八种不同评估场景的综合工具箱，用于使用 LLM 评判 AI 输出，每种都有特定的输入/输出合约。
 
@@ -352,7 +352,7 @@ Provide reasoning for your score.
 ## Pattern 53: Retrospective Quality Rubric (Incident Postmortem)
 
 **出现频率：** <1% 的插件
-**相关模式：** [Evidence Chain](#pattern-26), [Scoring Rubrics](#pattern-27)
+**相关模式：** [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 评估事件复盘质量的综合检查清单，带有捕获模糊或归咎性文字的反模式。
 
@@ -390,7 +390,7 @@ Review the postmortem for completeness:
 ## Pattern 54: Test Scaffolding with Convention Enforcement
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Domain Knowledge Embedding](#pattern-24), [Phased Execution](#pattern-2)
+**相关模式：** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow)
 
 **定义：** 带有强制约定、反模式表、确定性测试规则和并行生成 fleet mode 的综合测试生成。
 
@@ -439,7 +439,7 @@ Follow the existing test style.
 ## Pattern 55: Smart Triage-Skip with Model Tracking
 
 **出现频率：** <1% 的插件
-**相关模式：** [Deduplication/Consensus](#pattern-22), [Configuration Persistence](#pattern-16)
+**相关模式：** [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-22-deduplication--consensus-algorithms), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup)
 
 **定义：** 在分诊 bug 前检查是否已被分诊过，查找元数据签名。如果由同一模型分诊则跳过，如果由不同模型分诊则重新分诊（允许模型升级增加价值）。
 

@@ -9,7 +9,7 @@ How multiple agents coordinate — topologies, skill composition, intent routing
 ## Pattern 18: Multi-Agent Orchestration / Agent Topologies
 
 **Prevalence:** ~2% of skills (30-50 true orchestrations out of 857 agent-referencing files)
-**Related patterns:** [Skill Composition](#pattern-19), [Deduplication/Consensus](#pattern-22), [Tool Routing Tables](#pattern-21)
+**Related patterns:** [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-19-skill-composition--cross-skill-invocation), [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-22-deduplication--consensus-algorithms), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables)
 
 **What it is:** Defining how multiple AI agents coordinate — spawning subagents, routing between agents, establishing communication protocols, and merging results. The topology defines the shape of the agent graph.
 
@@ -75,7 +75,7 @@ combine the results. Make sure they don't duplicate findings.
 ## Pattern 19: Skill Composition / Cross-Skill Invocation
 
 **Prevalence:** ~4% of skills (100+ files)
-**Related patterns:** [Multi-Agent Orchestration](#pattern-18), [Intent Classification](#pattern-20), [Activation Scope](#pattern-13)
+**Related patterns:** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-13-activation-scope-when-to-use--when-not-to-use)
 
 **What it is:** One skill explicitly invoking or delegating to another skill, creating a workflow pipeline where each skill handles a specific phase of a larger task.
 
@@ -128,7 +128,7 @@ existing tools for the threat modeling part.
 ## Pattern 20: Intent Classification / Smart Routing
 
 **Prevalence:** ~6% of skills (100-150 files)
-**Related patterns:** [Workflow Mode Branching](#pattern-3), [Activation Scope](#pattern-13), [$ARGUMENTS Pattern](#pattern-4)
+**Related patterns:** [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-3-workflow-mode-branching), [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-13-activation-scope-when-to-use--when-not-to-use), [$ARGUMENTS Pattern](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-4-arguments-variable-pattern)
 
 **What it is:** Analyzing the user's input and routing to the appropriate sub-skill, workflow mode, or pipeline based on keyword matching, URL parsing, content analysis, or language detection.
 
@@ -176,7 +176,7 @@ Use the right tools for the language.
 ## Pattern 21: Tool Routing Tables
 
 **Prevalence:** ~16% of skills (358 files reference `allowed-tools`; 200+ have internal routing)
-**Related patterns:** [Negative Constraints](#pattern-6), [YAML Frontmatter](#pattern-1), [Multi-Agent Orchestration](#pattern-18)
+**Related patterns:** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [YAML Frontmatter](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-1-yaml-frontmatter-metadata-block), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** A lookup table mapping tasks to specific tools, with an explicit "NOT these" column listing prohibited alternatives. Prevents the agent from using the wrong tool for a given operation.
 
@@ -245,7 +245,7 @@ Profiles are additive — when an agent is spawned with `role: reviewer`, the lo
 ## Pattern 22: Deduplication / Consensus Algorithms
 
 **Prevalence:** ~1% of skills (20-30 files)
-**Related patterns:** [Multi-Agent Orchestration](#pattern-18), [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** Defining explicit algorithms for deduplicating findings across multiple agents or analysis passes, typically using weighted similarity scoring with defined thresholds.
 

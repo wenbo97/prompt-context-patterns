@@ -9,7 +9,7 @@
 ## Pattern 14: Structured Output Templates
 
 **出现频率：** ~26% 的技能（590 文件）
-**相关模式：** [Few-Shot Examples](#pattern-25), [Scoring Rubrics](#pattern-27), [Progress Feedback](#pattern-9)
+**相关模式：** [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-25-few-shot-examples), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-9-progress-feedback--status-reporting)
 
 **定义：** 规定 agent 输出必须遵循的确切格式、结构或模板 — 从表格 schema 和报告章节到带占位变量的完整 markdown 文档。
 
@@ -65,7 +65,7 @@ Make it clear and easy to understand. Use a table if appropriate.
 ## Pattern 15: Error Handling / Graceful Degradation
 
 **出现频率：** ~10% 的技能（222 文件）
-**相关模式：** [Phased Execution](#pattern-2), [Tool Routing Tables](#pattern-21), [Configuration Persistence](#pattern-16)
+**相关模式：** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup)
 
 **定义：** 规定 agent 在出错时的行为 — 工具失败、数据缺失、超时、输入格式错误 — 带有按阶段区分的降级策略。
 
@@ -119,7 +119,7 @@ If a tool fails, try an alternative approach.
 ## Pattern 16: Configuration Persistence / First-Time Setup
 
 **出现频率：** ~4% 的技能（80-100 文件）
-**相关模式：** [Interactive Flow Control](#pattern-7), [Cross-Platform Handling](#pattern-17), [$ARGUMENTS Pattern](#pattern-4)
+**相关模式：** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-7-interactive--conversational-flow-control), [Cross-Platform Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-17-cross-platform-handling), [$ARGUMENTS Pattern](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-4-arguments-variable-pattern)
 
 **定义：** "检查配置、缺失则创建" 模式，用于需要跨会话保持用户特定设置的技能。配置保存到已知路径并在后续调用时加载。
 
@@ -192,7 +192,7 @@ Save the settings somewhere for next time.
 ## Pattern 17: Cross-Platform Handling
 
 **出现频率：** ~3% 的技能（60-80 文件）
-**相关模式：** [Configuration Persistence](#pattern-16), [Error Handling](#pattern-15)
+**相关模式：** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义：** 为 Windows、macOS 和 Linux 环境提供不同指令 — 不同的命令、路径、工具和回退链。
 

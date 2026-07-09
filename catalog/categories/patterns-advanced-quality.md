@@ -9,7 +9,7 @@ Deep patterns for code review, bug analysis, test generation, and LLM-as-judge e
 ## Pattern 45: Directive-Based Review with on_fail Classification
 
 **Prevalence:** ~2% of review plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27), [Negative Constraints](#pattern-6)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists)
 
 **What it is:** Parameterizing reviews via YAML "directives" where each criterion carries an `on_fail` field (`fail` or `review`) that determines whether a "Not Met" verdict is blocking or advisory.
 
@@ -50,7 +50,7 @@ Decision: If any criterion is Not Met → Fail. Otherwise → Pass.
 ## Pattern 46: Multi-Stage Repo Discovery Before Review
 
 **Prevalence:** ~2% of review plugins
-**Related patterns:** [Reference File Injection](#pattern-23), [Domain Knowledge Embedding](#pattern-24)
+**Related patterns:** [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding)
 
 **What it is:** Before reviewing any code, the agent performs multiple discovery stages to learn the repo's conventions, architecture, and patterns — then applies review criteria calibrated to what it learned.
 
@@ -98,7 +98,7 @@ Includes a 29-point **Coding Conventions Checklist** (A1-A29) with language-spec
 ## Pattern 47: Evidence-First Review ("Demonstrate, Don't Cite Rules")
 
 **Prevalence:** ~2% of review plugins
-**Related patterns:** [Evidence Chain](#pattern-26), [Adversarial Persona Framing](#pattern-31)
+**Related patterns:** [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work), [Adversarial Persona Framing](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-31-adversarial-persona-framing)
 
 **What it is:** Instead of citing abstract rules ("missing null check"), the reviewer must demonstrate the concrete failure path with specific code references.
 
@@ -139,7 +139,7 @@ Recommendation: Add input validation per secure coding guidelines.
 ## Pattern 48: Rule-Catalog Review (Hierarchical YAML)
 
 **Prevalence:** ~1% of review plugins
-**Related patterns:** [Tool Routing Tables](#pattern-21), [Domain Knowledge Embedding](#pattern-24)
+**Related patterns:** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding)
 
 **What it is:** Reviews driven by a hierarchical catalog of YAML rule files, each with evaluation type (regex, metric, semantic) and rule IDs. Includes "trained rules" generated from historical PR comment analysis.
 
@@ -180,7 +180,7 @@ Review rules (embedded in prompt):
 ## Pattern 49: Blast Radius & On-Call Impact Formulas
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** Quantified formulas for assessing the operational impact of code changes, producing numeric scores that map to risk levels.
 
@@ -221,7 +221,7 @@ Rate as: Low / Medium / High / Critical
 ## Pattern 50: Adversarial Triad with Counterargument Phase
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Adversarial Persona Framing](#pattern-31), [Multi-Agent Orchestration](#pattern-18)
+**Related patterns:** [Adversarial Persona Framing](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-31-adversarial-persona-framing), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** Three agents with opposing mindsets (Advocate/Skeptic/Architect) run in parallel, then a second round of three counterargument agents challenge each original perspective. Disputed points escalate to peer consultation.
 
@@ -288,7 +288,7 @@ Stripping the reasoning prevents the verifier from inheriting the solver's confi
 ## Pattern 51: Schema Validation Gate
 
 **Prevalence:** ~2% of review plugins
-**Related patterns:** [Structured Output Templates](#pattern-14), [Error Handling](#pattern-15)
+**Related patterns:** [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** Every agent runs a schema validator on its output JSON. If validation fails, the agent must fix violations and re-run until it passes. The orchestrator checks for validation success before accepting output.
 
@@ -317,7 +317,7 @@ Make sure the JSON is valid.
 ## Pattern 52: LLM-as-Judge Evaluation Scenarios (8 Types)
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27), [Self-Critique](#pattern-28)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check)
 
 **What it is:** A comprehensive toolkit of eight distinct evaluation scenarios for using LLMs to judge AI outputs, each with specific input/output contracts.
 
@@ -352,7 +352,7 @@ Provide reasoning for your score.
 ## Pattern 53: Retrospective Quality Rubric (Incident Postmortem)
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Evidence Chain](#pattern-26), [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** A comprehensive checklist for evaluating incident postmortem quality, with anti-patterns that catch vague or blameful writing.
 
@@ -390,7 +390,7 @@ Review the postmortem for completeness:
 ## Pattern 54: Test Scaffolding with Convention Enforcement
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Domain Knowledge Embedding](#pattern-24), [Phased Execution](#pattern-2)
+**Related patterns:** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow)
 
 **What it is:** Comprehensive test generation with enforced conventions, anti-pattern tables, deterministic test rules, and fleet mode for parallel generation.
 
@@ -439,7 +439,7 @@ Follow the existing test style.
 ## Pattern 55: Smart Triage-Skip with Model Tracking
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Deduplication/Consensus](#pattern-22), [Configuration Persistence](#pattern-16)
+**Related patterns:** [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-22-deduplication--consensus-algorithms), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup)
 
 **What it is:** Before triaging a bug, check if it was already triaged by looking for metadata signatures. If triaged by the same model, skip. If by a different model, re-triage (allowing model upgrades to add value).
 

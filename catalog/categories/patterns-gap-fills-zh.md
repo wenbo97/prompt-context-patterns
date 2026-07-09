@@ -9,7 +9,7 @@
 ## Pattern 92: DAG Journey with Typed Gates
 
 **出现频率:** <1% 的插件
-**相关模式:** [Phased Execution](#pattern-2), [Deployment State Machine](#pattern-73), [State File Continuity](#pattern-70)
+**相关模式:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Deployment State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-73-deployment-state-machine-statelessre-entrantidempotent), [State File Continuity](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-70-state-file-as-sole-continuity-mechanism)
 
 **定义:** 基于 DAG（而非线性）的入职/迁移流程。每个步骤有前置依赖、自动化级别标注（auto/approval/manual/decision），Agent 可在数天后从持久化状态恢复。与线性阶段执行或状态机不同，这是一个完整的依赖图，支持并行路径、可选步骤和回填逻辑。
 
@@ -67,7 +67,7 @@ Complete steps in order. If a step fails, retry until it succeeds.
 ## Pattern 93: Multi-Source Evidence Harvest with Goal-Aligned Synthesis
 
 **出现频率:** <1% 的插件
-**相关模式:** [Audience-Purpose Calibration](#pattern-83), [Reference File Injection](#pattern-23)
+**相关模式:** [Audience-Purpose Calibration](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-83-audience-purpose-driven-content-calibration), [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection)
 
 **定义:** 从 6+ 异构数据源并行采集证据（GitHub PR、ADO 工作项、Claude 会话、邮件、Teams、日历），将每个证据项映射到用户定义的目标/OKR，然后从同一证据生成面向不同受众的报告。
 
@@ -111,7 +111,7 @@ If the manager wants more detail, they can ask.
 ## Pattern 94: Promise Detection and Knowledge Base Sync
 
 **出现频率:** <1% 的插件
-**相关模式:** [Configuration Persistence](#pattern-16), [Intent Classification](#pattern-20)
+**相关模式:** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing)
 
 **定义:** 扫描自然语言对话（Teams 聊天、邮件）中的隐含承诺（"I'll follow up"、"let me check"、"will do"），提取为结构化承诺，与现有个人知识库去重，并提议写回新承诺。
 
@@ -152,7 +152,7 @@ Add all matches to a TODO list.
 ## Pattern 95: Mandatory Self-Learning After Failure Resolution
 
 **出现频率:** <1% 的插件
-**相关模式:** [Rule-Catalog Review](#pattern-48), [Error Handling](#pattern-15)
+**相关模式:** [Rule-Catalog Review](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-48-rule-catalog-review-hierarchical-yaml), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation)
 
 **定义:** 诊断并修复构建失败后，Agent 必须用新的错误模式、根因和修复方案更新知识库文件 -- 使知识库随每次执行增长。未来运行会查阅扩展后的 KB。
 
@@ -193,7 +193,7 @@ After a build failure:
 ## Pattern 96: Risk-Ordered Batch Migration with Build-Verify Loops
 
 **出现频率:** <1% 的插件
-**相关模式:** [Deployment State Machine](#pattern-73), [Loop Prevention](#pattern-41)
+**相关模式:** [Deployment State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-73-deployment-state-machine-statelessre-entrantidempotent), [Loop Prevention](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-41-loop-prevention-with-max-iterations)
 
 **定义:** 将大型迁移拆分为按风险排序的批次，每批经历：迁移 -> 提交 -> 远程构建 -> 自动监控 -> 自动诊断 -> 自动修复 -> 重新提交。仅在构建通过后进入下一批。相同错误签名检测触发回滚。
 
@@ -238,7 +238,7 @@ If the same error signature appears 2x after fix attempts:
 ## Pattern 97: PII-Motivated Delivery Restriction
 
 **出现频率:** <1% 的插件
-**相关模式:** [Sensitive Data Redaction](#pattern-11), [Read-Only Boundary](#pattern-12)
+**相关模式:** [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-11-sensitive-data-redaction), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义:** 输出包含从多个来源聚合的个人数据。投递仅限用户自己的账户（Outlook/Teams）。即使用户明确要求发送给他人，Agent 也拒绝。PII 保护优先于用户同意。
 
@@ -273,7 +273,7 @@ If user asks to forward it to someone, confirm before sending.
 ## Pattern 98: Audience-Register Translation Review with Matched Frameworks
 
 **出现频率:** <1% 的插件
-**相关模式:** [Scoring Rubrics](#pattern-27), [Audience-Purpose Calibration](#pattern-83)
+**相关模式:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Audience-Purpose Calibration](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-83-audience-purpose-driven-content-calibration)
 
 **定义:** 围绕"翻译问题"构建的审查方法论 -- 技术作者为高管受众写作。包含文档类型分类、每种类型的匹配内容框架，以及工程师-to-高管沟通的反模式目录。
 
@@ -323,7 +323,7 @@ Rate overall quality: 1-5
 ## Pattern 99: Automated Accessibility Post-Processing Pipeline
 
 **出现频率:** <1% 的插件
-**相关模式:** [Schema Validation Gate](#pattern-51), [Test Scaffolding](#pattern-54)
+**相关模式:** [Schema Validation Gate](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-51-schema-validation-gate), [Test Scaffolding](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-54-test-scaffolding-with-convention-enforcement)
 
 **定义:** 生成输出（如 PPTX 演示文稿）后，专门的无障碍后处理器自动运行以符合无障碍标准。独立的评估脚本运行断言检查。
 

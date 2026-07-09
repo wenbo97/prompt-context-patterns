@@ -9,7 +9,7 @@
 ## Pattern 31: Adversarial Persona Framing
 
 **出现频率：** 约 3% 的编排插件
-**相关模式：** [Persona/Role Assignment](#pattern-5), [Multi-Agent Orchestration](#pattern-18), [Self-Critique](#pattern-28)
+**相关模式：** [Persona/Role Assignment](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-5-personarole-assignment), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check)
 
 **定义：** 显式赋予 agent 对抗性思维和攻防立场，而非中立分析角色。告诉 agent 假设问题存在并主动尝试破坏。
 
@@ -56,7 +56,7 @@ Review the code carefully and look for any issues. Be thorough.
 ## Pattern 32: Hub-and-Spoke SDLC State Machine
 
 **出现频率：** 约 1% 的插件（但影响力大）
-**相关模式：** [Phased Execution](#pattern-2), [Multi-Agent Orchestration](#pattern-18)
+**相关模式：** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **定义：** 一个中央编排 agent 拥有代表软件开发生命周期的状态机。专家 agent 是无状态工作者，完成一个状态转换后通过结构化 Completion Report 将控制权返回给 hub。
 
@@ -106,7 +106,7 @@ Each agent should report back what they did when finished.
 ## Pattern 33: M x N Cross-Model Consensus Grid
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Deduplication/Consensus](#pattern-22), [Scoring Rubrics](#pattern-27)
+**相关模式：** [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-22-deduplication--consensus-algorithms), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **定义：** 对每个审查维度（M 个镜头），并行启动 N 个不同 AI 模型。然后按镜头合并（N→1），再跨镜头元合并（M→1）。创建三层管线，利用跨模型多样性捕获幻觉并提高置信度。
 
@@ -155,7 +155,7 @@ If models disagree, use your best judgment to pick the right answer.
 ## Pattern 34: Dual-Model Adversarial Planning
 
 **出现频率：** <1% 的插件
-**相关模式：** [Self-Critique](#pattern-28), [Confirmation Gates](#pattern-8)
+**相关模式：** [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义：** 两个 AI 模型独立为同一任务创建计划，自我加固各自的计划，然后交叉评审对方的计划。人类选择获胜者，失败计划的改进被合并进来。
 
@@ -201,7 +201,7 @@ discuss ideas back and forth until they converge on the best approach.
 ## Pattern 35: Cost-Optimized Model Routing
 
 **出现频率：** <1% 的插件
-**相关模式：** [Intent Classification](#pattern-20), [Tool Routing Tables](#pattern-21)
+**相关模式：** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing), [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables)
 
 **定义：** 将任务分解为子任务，按多维度分类每个子任务，并路由到满足质量要求的最便宜模型。包含成本报告和节省对比。
 
@@ -249,7 +249,7 @@ We can optimize costs later if needed.
 ## Pattern 36: Handoff Context Protocol
 
 **出现频率：** 约 2% 的编排插件
-**相关模式：** [Phased Execution](#pattern-2), [Reference File Injection](#pattern-23)
+**相关模式：** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow), [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection)
 
 **定义：** 编排器在每次 agent 交接前准备的标准化上下文块，确保接收 agent 拥有所有必要上下文而不读取不必要数据。
 
@@ -281,7 +281,7 @@ all the context it needs to continue the work.
 ## Pattern 37: Context Efficiency Rule (Orchestrator Reads Nothing)
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Multi-Agent Orchestration](#pattern-18), [Handoff Context Protocol](#pattern-36)
+**相关模式：** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies), [Handoff Context Protocol](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-36-handoff-context-protocol)
 
 **定义：** 编排器将文件路径传给 sub-agent 和合并器，但从不读取文件内容本身。仅读取最终合并报告。这保留了编排器的上下文窗口用于协调逻辑。
 
@@ -323,7 +323,7 @@ superpowers 中的三个 skill（`subagent-driven-development`、`dispatching-pa
 ## Pattern 38: Complexity-Tiered Dispatch
 
 **出现频率：** 约 2% 的编排插件
-**相关模式：** [Intent Classification](#pattern-20), [Workflow Mode Branching](#pattern-3)
+**相关模式：** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing), [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-3-workflow-mode-branching)
 
 **定义：** 按复杂度层级分类传入任务，然后根据层级调整模型选择、规划阶段和 agent 管线。
 
@@ -353,7 +353,7 @@ For harder tasks, think more carefully before coding.
 ## Pattern 39: Persistent Team with Message Board
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Multi-Agent Orchestration](#pattern-18)
+**相关模式：** [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **定义：** Agent 被创建为持久团队，通过共享留言板和独立状态文件通信。编排器促进跨 agent 讨论而非命令 agent。
 
@@ -387,7 +387,7 @@ through the orchestrator, which relays them back and forth.
 ## Pattern 40: Delegation to Cloud Agent via Work Item
 
 **出现频率：** <1% 的插件
-**相关模式：** [Skill Composition](#pattern-19)
+**相关模式：** [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-19-skill-composition--cross-skill-invocation)
 
 **定义：** 通过创建分配给 agent 的工作项（如 ADO），将任务委托给云托管的编码 agent，标记目标仓库。
 
@@ -416,7 +416,7 @@ and wait for it to return the result.
 ## Pattern 41: Loop Prevention with Max Iterations
 
 **出现频率：** 约 3% 的插件
-**相关模式：** [Error Handling](#pattern-15), [Confirmation Gates](#pattern-8)
+**相关模式：** [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop)
 
 **定义：** agent 之间重试/反馈循环的硬限制。不同循环类型不同阈值，达到限制时结构化报告。
 
@@ -448,7 +448,7 @@ try a different approach and retry again.
 ## Pattern 42: Agent Memory Isolation
 
 **出现频率：** 约 1% 的插件
-**相关模式：** [Prompt Injection Defense](#pattern-10), [Read-Only Boundary](#pattern-12)
+**相关模式：** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义：** 团队中每个 agent 有隔离的内存/状态目录。跨 agent 通信仅通过指定的制品目录，绝不读取另一个 agent 的内部状态。
 
@@ -483,7 +483,7 @@ other team members are thinking and coordinate accordingly.
 ## Pattern 43: Sparse Git Worktree for Isolated Review
 
 **出现频率：** 约 2% 的审查相关插件
-**相关模式：** [Read-Only Boundary](#pattern-12)
+**相关模式：** [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration)
 
 **定义：** 创建仅包含 PR 变更文件的 sparse git worktree 进行审查，避免在大型 monorepo 中物化完整仓库。
 
@@ -510,7 +510,7 @@ the changed files.
 ## Pattern 44: Severity Promotion/Demotion by Area
 
 **出现频率：** 约 2% 的审查插件
-**相关模式：** [Scoring Rubrics](#pattern-27), [Deduplication/Consensus](#pattern-22)
+**相关模式：** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment), [Deduplication/Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-22-deduplication--consensus-algorithms)
 
 **定义：** 根据审查领域自动调整发现的严重性级别，将组织风险偏好直接编码到 prompt 中。
 

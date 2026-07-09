@@ -9,7 +9,7 @@ Eight patterns missed by the initial research sweep — covering DAG-based onboa
 ## Pattern 92: DAG Journey with Typed Gates
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Phased Execution](#pattern-2), [Deployment State Machine](#pattern-73), [State File Continuity](#pattern-70)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Deployment State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-73-deployment-state-machine-statelessre-entrantidempotent), [State File Continuity](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism)
 
 **What it is:** A DAG-based (not linear) onboarding/migration journey where steps have prerequisite dependencies, each step has an automation-level annotation (auto/approval/manual/decision), and the agent can resume days later from a persisted journey state. Unlike phased execution (linear) or state machines (transitions), this is a full dependency graph with parallel paths, optional steps, and backfill logic.
 
@@ -69,7 +69,7 @@ Complete steps in order. If a step fails, retry until it succeeds.
 ## Pattern 93: Multi-Source Evidence Harvest with Goal-Aligned Synthesis
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Audience-Purpose Calibration](#pattern-83), [Reference File Injection](#pattern-23)
+**Related patterns:** [Audience-Purpose Calibration](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain#pattern-83-audience-purpose-driven-content-calibration), [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection)
 
 **What it is:** Harvesting evidence from 6+ heterogeneous sources in parallel (GitHub PRs, ADO work items, Claude sessions, emails, Teams, calendar), mapping each evidence item to a user-defined goal/OKR, then generating audience-stratified reports from the same evidence.
 
@@ -113,7 +113,7 @@ If the manager wants more detail, they can ask.
 ## Pattern 94: Promise Detection and Knowledge Base Sync
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Configuration Persistence](#pattern-16), [Intent Classification](#pattern-20)
+**Related patterns:** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing)
 
 **What it is:** Scanning natural language conversations (Teams chats, emails) for implicit commitments ("I'll follow up", "let me check", "will do"), extracting them as structured promises, deduplicating against an existing personal knowledge base, and proposing write-back of new commitments.
 
@@ -154,7 +154,7 @@ Add all matches to a TODO list.
 ## Pattern 95: Mandatory Self-Learning After Failure Resolution
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Rule-Catalog Review](#pattern-48), [Error Handling](#pattern-15)
+**Related patterns:** [Rule-Catalog Review](/prompt-context-patterns/catalog/categories/patterns-advanced-quality#pattern-48-rule-catalog-review-hierarchical-yaml), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** After diagnosing and fixing a build failure, the agent MUST update its knowledge base file with the new error pattern, root cause, and fix — making the knowledge base grow with every execution. Future runs consult the expanded KB.
 
@@ -195,7 +195,7 @@ After a build failure:
 ## Pattern 96: Risk-Ordered Batch Migration with Build-Verify Loops
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Deployment State Machine](#pattern-73), [Loop Prevention](#pattern-41)
+**Related patterns:** [Deployment State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-73-deployment-state-machine-statelessre-entrantidempotent), [Loop Prevention](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-41-loop-prevention-with-max-iterations)
 
 **What it is:** Splitting a large migration into risk-ordered batches, where each batch goes through: migrate → commit → remote build → auto-monitor → auto-diagnose → auto-fix → resubmit. Only proceed to next batch after green build. Same-error-signature detection triggers revert.
 
@@ -240,7 +240,7 @@ If the same error signature appears 2x after fix attempts:
 ## Pattern 97: PII-Motivated Delivery Restriction
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Sensitive Data Redaction](#pattern-11), [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-11-sensitive-data-redaction), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** The output contains personal data aggregated from multiple sources. Delivery is restricted to ONLY the user's own accounts (Outlook/Teams). Even if the user explicitly asks to send it to someone else, the agent refuses. PII protection overrides user consent.
 
@@ -275,7 +275,7 @@ If user asks to forward it to someone, confirm before sending.
 ## Pattern 98: Audience-Register Translation Review with Matched Frameworks
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27), [Audience-Purpose Calibration](#pattern-83)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment), [Audience-Purpose Calibration](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain#pattern-83-audience-purpose-driven-content-calibration)
 
 **What it is:** A review methodology structured around the *translation problem* — technical authors writing for executive audiences. Includes document-type classification, matched content frameworks per type, and an anti-pattern catalog specific to engineer-to-executive communication.
 
@@ -325,7 +325,7 @@ Rate overall quality: 1-5
 ## Pattern 99: Automated Accessibility Post-Processing Pipeline
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Schema Validation Gate](#pattern-51), [Test Scaffolding](#pattern-54)
+**Related patterns:** [Schema Validation Gate](/prompt-context-patterns/catalog/categories/patterns-advanced-quality#pattern-51-schema-validation-gate), [Test Scaffolding](/prompt-context-patterns/catalog/categories/patterns-advanced-quality#pattern-54-test-scaffolding-with-convention-enforcement)
 
 **What it is:** After generating output (e.g., a PPTX presentation), a dedicated accessibility post-processor runs automatically to transform the output for compliance with accessibility standards. A separate eval script runs assertions.
 

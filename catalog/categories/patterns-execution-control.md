@@ -9,7 +9,7 @@ How to guide agent behavior — personas, constraints, interaction patterns, and
 ## Pattern 5: Persona/Role Assignment
 
 **Prevalence:** ~9% of skills (205 files)
-**Related patterns:** [Domain Knowledge Embedding](#pattern-24), [Evidence Chain](#pattern-26)
+**Related patterns:** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work)
 
 **What it is:** Establishing the agent's identity, expertise level, and behavioral disposition at the start of the skill body. This frames all subsequent reasoning — a "detective" mindset produces different analysis than a "documentation writer" mindset.
 
@@ -50,7 +50,7 @@ Be thorough in your analysis.
 ## Pattern 6: Negative Constraints / Prohibition Lists
 
 **Prevalence:** ~18% of skills (410 files)
-**Related patterns:** [Prompt Injection Defense](#pattern-10), [Read-Only Boundary](#pattern-12), [Evidence Chain](#pattern-26)
+**Related patterns:** [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work)
 
 **What it is:** Explicitly enumerating prohibited behaviors in a structured, scannable format. Typically formatted as numbered rules with strong emphasis (bold, caps, table format) to ensure the agent treats them as hard constraints.
 
@@ -93,7 +93,7 @@ and doesn't contain any errors. Don't do anything wrong with the tools.
 ## Pattern 7: Interactive / Conversational Flow Control
 
 **Prevalence:** ~2% of skills (50 files)
-**Related patterns:** [Confirmation Gates](#pattern-8), [Configuration Persistence](#pattern-16)
+**Related patterns:** [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup)
 
 **What it is:** Forcing the agent to interact with the user one question at a time rather than dumping all questions at once. Marked with "STOP and WAIT" directives to prevent the model from continuing past a question.
 
@@ -142,7 +142,7 @@ and any configuration. Then create everything.
 ## Pattern 8: Confirmation Gates / Human-in-the-Loop
 
 **Prevalence:** ~4% of skills (80-100 files)
-**Related patterns:** [Interactive Flow Control](#pattern-7), [Phased Execution](#pattern-2), [Read-Only Boundary](#pattern-12)
+**Related patterns:** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-7-interactive--conversational-flow-control), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration)
 
 **What it is:** Establishing explicit points where the agent must pause and get human approval before proceeding with potentially impactful actions. Each gate has a named trigger condition and describes what the user is approving.
 
@@ -177,7 +177,7 @@ Make sure they're okay with the changes before proceeding.
 ## Pattern 9: Progress Feedback / Status Reporting
 
 **Prevalence:** ~2% of skills (40-60 files)
-**Related patterns:** [Phased Execution](#pattern-2), [Structured Output Templates](#pattern-14)
+**Related patterns:** [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow), [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates)
 
 **What it is:** Instructing the agent to show progress indicators during multi-step operations, with defined format and exit status conventions.
 
@@ -220,7 +220,7 @@ When done, tell them the result.
 ## Pattern 145: Iron-Law Inviolable Rule Framing
 
 **Prevalence:** Multi-source (3 skills): superpowers/test-driven-development, systematic-debugging, verification-before-completion
-**Related patterns:** [Negative Constraints](#pattern-6), [Confirmation Gates](#pattern-8)
+**Related patterns:** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** A small number of rules elevated above ordinary instructions by an explicit "Iron Law" framing that names the rule, asserts it cannot be skipped, and adds an anti-loophole clause: *violating the letter is violating the spirit*. Distinct from Pattern 6 (Negative Constraints) — those say "don't do X"; this says "this single rule overrides any rationalization you produce for skipping it."
 
@@ -262,7 +262,7 @@ Try to write tests first when you can. Test-driven development is best practice.
 ## Pattern 148: Anti-Performative-Agreement Vocabulary Ban
 
 **Prevalence:** Multi-source (2): superpowers/receiving-code-review, brainstorming
-**Related patterns:** [Negative Constraints](#pattern-6), [Iron-Law Framing](#pattern-145)
+**Related patterns:** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Iron-Law Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
 
 **What it is:** A specific list of sycophantic phrases the model is forbidden to emit, plus a positive substitute behavior for each. Targets the agent's trained tendency toward performative agreement that masks lack of understanding ("You're absolutely right!", "Great point!", "Let me fix that immediately").
 

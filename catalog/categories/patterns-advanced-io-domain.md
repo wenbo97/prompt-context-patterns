@@ -9,7 +9,7 @@ Deep patterns for data transformation, domain knowledge encoding, visualization,
 ## Pattern 81: Natural Language to Relational Schema Decomposition
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Domain Knowledge Embedding](#pattern-24), [Phased Execution](#pattern-2)
+**Related patterns:** [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding), [Phased Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-2-phasedstepped-execution-flow)
 
 **What it is:** A mandatory intermediate reasoning step that forces the model to decompose an arbitrary natural language subject into a formal relational structure before any code generation. The five-step procedure (identify entities, classify, define relationships, determine generation order, bound complexity) acts as a structured reasoning scaffold.
 
@@ -52,7 +52,7 @@ Make sure to include primary keys and foreign keys.
 ## Pattern 82: Chart Decision Tree with Anti-Pattern Guards
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Tool Routing Tables](#pattern-21), [Negative Constraints](#pattern-6)
+**Related patterns:** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists)
 
 **What it is:** A multi-branch decision tree that maps *data shapes* to *visualization types* with quantitative selection criteria (cardinality guards) and inline anti-pattern prevention.
 
@@ -101,7 +101,7 @@ Pick whichever seems most appropriate for the user's data.
 ## Pattern 83: Audience-Purpose-Driven Content Calibration
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Workflow Mode Branching](#pattern-3), [Structured Output Templates](#pattern-14)
+**Related patterns:** [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding#pattern-3-workflow-mode-branching), [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates)
 
 **What it is:** Establishing the audience and purpose as first-class inputs that gate all downstream decisions about output format, detail level, and presentation style.
 
@@ -140,7 +140,7 @@ Use a professional tone suitable for business stakeholders.
 ## Pattern 84: Socratic Investigation Loop with Active Research
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Interactive Flow Control](#pattern-7), [Evidence Chain](#pattern-26)
+**Related patterns:** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-7-interactive--conversational-flow-control), [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work)
 
 **What it is:** The model alternates between *active tool-based research* (reading code, grepping patterns) and *Socratic questioning*, using its research findings to formulate increasingly precise questions. It deliberately withholds solutions to help the user discover insights.
 
@@ -184,7 +184,7 @@ Use available tools to read code when needed.
 ## Pattern 85: Knowledge Base Index with Intent-to-Source Routing
 
 **Prevalence:** ~2% of plugins
-**Related patterns:** [Reference File Injection](#pattern-23), [Intent Classification](#pattern-20)
+**Related patterns:** [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection), [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing)
 
 **What it is:** A two-tier retrieval system: a lightweight index file read on every invocation (small token cost), followed by selective deep reads of only matching knowledge base files. Per-source disambiguation tables handle overlapping domains.
 
@@ -225,7 +225,7 @@ If multiple files match, combine their guidance into a single answer.
 ## Pattern 86: Heuristic Scoring with Signal Detection
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** Scoring rubrics where each score level specifies *machine-detectable signals* — word counts, regex patterns, structural markers — rather than subjective descriptors.
 
@@ -269,7 +269,7 @@ Scoring philosophy:
 ## Pattern 87: Eager Incremental Materialization
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Interactive Flow Control](#pattern-7), [Confirmation Gates](#pattern-8)
+**Related patterns:** [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-7-interactive--conversational-flow-control), [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop)
 
 **What it is:** Instructing the model to create artifacts *during* the conversation (not after), using tool calls as a real-time feedback channel to the user.
 
@@ -305,7 +305,7 @@ Make sure everything is finalized before making any tool calls.
 ## Pattern 88: Data Shape to Query Pattern Detection
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Intent Classification](#pattern-20), [Domain Knowledge Embedding](#pattern-24)
+**Related patterns:** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-24-domain-knowledge-embedding)
 
 **What it is:** Inferring visualization intent from data artifacts — examining DataFrame column names AND original query text to detect patterns that map to specific chart types with confidence scores.
 
@@ -343,7 +343,7 @@ whether a bar chart, line chart, or scatter plot is appropriate.
 ## Pattern 89: Writability Rules and Linguistic Substitution Tables
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Negative Constraints](#pattern-6), [Self-Critique](#pattern-28)
+**Related patterns:** [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check)
 
 **What it is:** A complete style transformation engine: substitution tables (jargon→simple), detection heuristics (passive voice "by zombies" test), quantitative targets (15-20 word sentence average, 80% active verbs), and a self-verification checklist.
 
@@ -389,7 +389,7 @@ Keep the tone professional but accessible.
 ## Pattern 90: Cross-Platform Surface Compatibility Matrix
 
 **Prevalence:** <1% of plugins
-**Related patterns:** [Cross-Platform Handling](#pattern-17), [Error Handling](#pattern-15)
+**Related patterns:** [Cross-Platform Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-17-cross-platform-handling), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** A compatibility degradation matrix mapping source/target platform pairs to specific feature losses and automated resolution paths, combined with bounded retry semantics.
 
@@ -423,7 +423,7 @@ If the MCP server is unavailable, generate the card JSON directly.
 ## Pattern 91: Hub-Spoke Domain Router with Overlap Resolution
 
 **Prevalence:** ~1% of plugins
-**Related patterns:** [Intent Classification](#pattern-20), [Skill Composition](#pattern-19)
+**Related patterns:** [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-20-intent-classification--smart-routing), [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-19-skill-composition--cross-skill-invocation)
 
 **What it is:** A multi-level specificity cascade for disambiguating between specialized plugins with overlapping keyword spaces. Context-dependent routing rules where the same keyword routes differently based on co-occurring terms.
 
@@ -465,7 +465,7 @@ If unclear, ask the user which plugin they want.
 ## Pattern 144: Agent-Centric Tool Design Principles
 
 **Prevalence:** Codified in Anthropic's `mcp-builder` skill; recurring rubric in agent tool authoring
-**Related patterns:** [Tool Routing Tables](#pattern-21), [Helper Script as Black Box](#pattern-104), [Output Format with Populated Example](#pattern-112)
+**Related patterns:** [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables), [Helper Script as Black Box](/prompt-context-patterns/catalog/categories/patterns-open-source-skills#pattern-104-helper-script-as-black-box), [Output Format with Populated Example](/prompt-context-patterns/catalog/categories/patterns-open-source-skills#pattern-112-output-format-with-populated-example)
 
 **What it is:** A tight checklist for designing tools whose consumer is an LLM, not a human developer. Encodes the recurring asymmetries: LLMs have a finite context budget, can't read API reference docs at runtime, and need actionable error messages that suggest the next call — not stack traces.
 

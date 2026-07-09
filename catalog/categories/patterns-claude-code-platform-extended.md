@@ -11,7 +11,7 @@ Additional patterns from deeper analysis of the Claude Code system prompt archit
 ## Pattern 133: Compositional Prompt Assembly
 
 **Prevalence:** Core architecture of Claude Code; not observed in plugin skills
-**Related patterns:** [Reference File Injection (23)](#pattern-23), [Layered Instruction Loading (SSG P03)](#)
+**Related patterns:** [Reference File Injection (23)](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-23-reference-file--knowledge-base-injection), [Layered Instruction Loading (SSG P03)](#)
 
 **What it is:** Instead of a single monolithic system prompt, the system assembles 110+ small markdown fragments conditionally based on runtime context (OS, available tools, active mode, enabled features). Each fragment is single-concern, independently versioned, and can be included or excluded without affecting others.
 
@@ -72,7 +72,7 @@ The hook output is appended to the session prompt as context — composition wit
 ## Pattern 134: Tool-Constraint Agent Boundaries
 
 **Prevalence:** Core to Claude Code's subagent architecture
-**Related patterns:** [Read-Only Boundary (12)](#pattern-12), [Activation Scope (13)](#pattern-13), [Multi-Agent Orchestration (18)](#pattern-18)
+**Related patterns:** [Read-Only Boundary (12)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-12-read-only--safety-boundary-declaration), [Activation Scope (13)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-13-activation-scope-when-to-use--when-not-to-use), [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies)
 
 **What it is:** Constraining agent capabilities by **removing tools from their toolset**, not by instruction. A Plan agent literally cannot call Edit/Write. An Explore agent literally cannot call Agent (no sub-spawning). This is enforcement at the harness level, not the prompt level.
 
@@ -139,7 +139,7 @@ The verbatim-quote framing and the acknowledge-by-repetition step are the load-b
 ## Pattern 135: Fork vs Fresh Spawning Strategy
 
 **Prevalence:** Core to Claude Code's Agent tool
-**Related patterns:** [Multi-Agent Orchestration (18)](#pattern-18), [Agent Memory Isolation (42)](#pattern-42)
+**Related patterns:** [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Agent Memory Isolation (42)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-42-agent-memory-isolation)
 
 **What it is:** Two distinct spawning strategies for sub-agents. **Fork** inherits the full parent conversation context (shares prompt cache, cheap). **Fresh** starts with zero context (prompt must be self-contained, costs a cache miss). The choice depends on whether the sub-agent needs parent context.
 
@@ -175,8 +175,8 @@ The verbatim-quote framing and the acknowledge-by-repetition step are the load-b
 
 ## Pattern 136: Security Monitor Agent (Dedicated Threat Classifier)
 
-**Prevalence:** Unique to Claude Code; extends [Prompt Injection Defense (10)](#pattern-10) into a full agent
-**Related patterns:** [Prompt Injection Defense (10)](#pattern-10), [Tiered Permissions (60)](#pattern-60), [Adversarial Persona (31)](#pattern-31)
+**Prevalence:** Unique to Claude Code; extends [Prompt Injection Defense (10)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense) into a full agent
+**Related patterns:** [Prompt Injection Defense (10)](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust#pattern-10-prompt-injection-defense), [Tiered Permissions (60)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety#pattern-60-tiered-permission-model-red--defer--green), [Adversarial Persona (31)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-31-adversarial-persona-framing)
 
 **What it is:** A dedicated agent that evaluates every action against BLOCK/ALLOW rules, with formalized threat categories: prompt injection (agent manipulated by file/web content), scope creep (agent escalates beyond task), and accidental damage (agent misunderstands blast radius). Default is ALLOW; blocks only on explicit BLOCK match.
 
@@ -217,7 +217,7 @@ The verbatim-quote framing and the acknowledge-by-repetition step are the load-b
 ## Pattern 137: Analysis-First Compaction
 
 **Prevalence:** Unique to Claude Code's context management
-**Related patterns:** [Context Compaction Survival Protocol (128)](#pattern-128), [State File Continuity (70)](#pattern-70)
+**Related patterns:** [Context Compaction Survival Protocol (128)](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform#pattern-128-context-compaction-survival-protocol), [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism)
 
 **What it is:** When compressing a long conversation into a summary, the system first thinks in analysis tags, then produces the summary. Nine sections are mandated including "All user messages" — preserving the user's exact words prevents the compacted summary from rewriting intent.
 
@@ -254,7 +254,7 @@ Frame as enabling "another instance of yourself" to resume the task.
 ## Pattern 138: Team Task Board Coordination
 
 **Prevalence:** Unique to Claude Code's TeammateTool
-**Related patterns:** [Multi-Agent Orchestration (18)](#pattern-18), [Pull-Based Kanban (72)](#pattern-72), [Hub-and-Spoke (32)](#pattern-32)
+**Related patterns:** [Multi-Agent Orchestration (18)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-18-multi-agent-orchestration--agent-topologies), [Pull-Based Kanban (72)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-72-pull-based-kanban-orchestration), [Hub-and-Spoke (32)](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration#pattern-32-hub-and-spoke-sdlc-state-machine)
 
 **What it is:** A shared task list that multiple agent instances can read, claim, and complete. Agents discover teammates via a config file. Messages auto-deliver between agents. Agents go idle when no tasks are available — idle is normal, not an error.
 
@@ -289,7 +289,7 @@ Key rules:
 ## Pattern 139: Background Job Narration Protocol
 
 **Prevalence:** Unique to Claude Code's background agent system
-**Related patterns:** [Progress Feedback (9)](#pattern-9), [Output Visibility Awareness (131)](#pattern-131)
+**Related patterns:** [Progress Feedback (9)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-9-progress-feedback--status-reporting), [Output Visibility Awareness (131)](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform#pattern-131-output-visibility-awareness)
 
 **What it is:** Background agents must narrate their work in message text because a classifier (not a human) reads their output to determine completion status. The classifier can only read messages, not tool results. Three mandatory signals: `result:` (done), `blocked` (needs human), `failed` (structurally impossible).
 
@@ -330,7 +330,7 @@ When you're done, let the system know what happened.
 ## Pattern 140: Autonomous Trust Calibration
 
 **Prevalence:** Unique to Claude Code's autonomous loop mode
-**Related patterns:** [Confirmation Gates (8)](#pattern-8), [Reversibility × Blast-Radius (123)](#pattern-123)
+**Related patterns:** [Confirmation Gates (8)](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-8-confirmation-gates--human-in-the-loop), [Reversibility × Blast-Radius (123)](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform#pattern-123-reversibility--blast-radius-permission-model)
 
 **What it is:** When running autonomously (no human in the loop), calibrate trust level based on action reversibility. Read/analyze freely. Edit/test when confident it continues established work. Commit/push only when clearly authorized. After 3 consecutive "nothing to do" cycles, scale back and stop.
 
@@ -367,7 +367,7 @@ Do NOT invent work to justify continued execution.
 ## Pattern 141: REPL as Tool Composition Layer
 
 **Prevalence:** Unique to Claude Code
-**Related patterns:** [Skill Composition (19)](#pattern-19), [Tool Routing Tables (21)](#pattern-21)
+**Related patterns:** [Skill Composition (19)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-19-skill-composition--cross-skill-invocation), [Tool Routing Tables (21)](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration#pattern-21-tool-routing-tables)
 
 **What it is:** A JavaScript REPL that exposes all other tools as async functions, enabling loops, branches, and composition that individual tool calls cannot express. Also provides `haiku(prompt, schema?)` for one-turn model sampling and `registerTool()` for dynamic tool creation. Variables persist across calls.
 
@@ -405,7 +405,7 @@ registerTool("checkMigration", "Check if a csproj is migrated", {
 ## Pattern 142: Immutable Memory with Dream Consolidation
 
 **Prevalence:** Unique to Claude Code's memory architecture
-**Related patterns:** [Typed Memory Taxonomy (121)](#pattern-121), [State File Continuity (70)](#pattern-70)
+**Related patterns:** [Typed Memory Taxonomy (121)](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform#pattern-121-typed-memory-taxonomy), [State File Continuity (70)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow#pattern-70-state-file-as-sole-continuity-mechanism)
 
 **What it is:** Memory files are immutable — never edited in place. Updates are done by deleting the old file and creating a new one. A periodic "dream" consolidation agent runs in 4 phases: Orient (read existing), Gather (recent signals), Consolidate (merge into topic files), Prune (keep index under limits). This prevents partial-write corruption and makes memory operations atomic.
 

@@ -9,7 +9,7 @@ How to ensure output quality — scoring rubrics, self-critique, feedback loops,
 ## Pattern 27: Scoring Rubrics / Quantitative Assessment
 
 **Prevalence:** ~4% of skills (80-100 files)
-**Related patterns:** [Structured Output Templates](#pattern-14), [Few-Shot Examples](#pattern-25), [Self-Critique](#pattern-28)
+**Related patterns:** [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-14-structured-output-templates), [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-25-few-shot-examples), [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check)
 
 **What it is:** Providing numerical scoring frameworks with defined criteria, score ranges, descriptors per score level, and threshold mappings that translate totals into categories.
 
@@ -59,7 +59,7 @@ Give an overall assessment.
 ## Pattern 28: Self-Critique / Quality Self-Check
 
 **Prevalence:** ~2% of skills (30-50 files)
-**Related patterns:** [Evidence Chain](#pattern-26), [Negative Constraints](#pattern-6), [Scoring Rubrics](#pattern-27)
+**Related patterns:** [Evidence Chain](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context#pattern-26-evidence-chain--proof-of-work), [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-6-negative-constraints--prohibition-lists), [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-27-scoring-rubrics--quantitative-assessment)
 
 **What it is:** Requiring the agent to critique its own output before delivering it — identifying weaknesses, flagging low-confidence areas, and verifying compliance with the skill's rules.
 
@@ -105,7 +105,7 @@ Review your output and make sure it's good. Fix any issues you find.
 ## Pattern 29: Feedback Solicitation
 
 **Prevalence:** <1% of skills (10-20 files)
-**Related patterns:** [Progress Feedback](#pattern-9), [Configuration Persistence](#pattern-16)
+**Related patterns:** [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-9-progress-feedback--status-reporting), [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup)
 
 **What it is:** Instructing the agent to surface a feedback survey or request at a natural stopping point, with priority tiers and session-level deduplication.
 
@@ -148,7 +148,7 @@ Ask the user for feedback when you're done. Include a link to our survey.
 ## Pattern 30: Version Check / Update Notification
 
 **Prevalence:** <1% of skills (10-20 files)
-**Related patterns:** [Configuration Persistence](#pattern-16), [Error Handling](#pattern-15)
+**Related patterns:** [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-16-configuration-persistence--first-time-setup), [Error Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts#pattern-15-error-handling--graceful-degradation)
 
 **What it is:** Checking whether the installed plugin version matches the latest available version and notifying the user of updates, with graceful fallback when the check fails.
 
@@ -210,7 +210,7 @@ Check if there's a newer version available. If so, tell the user to update.
 ## Pattern 146: Rationalization-Prevention Table
 
 **Prevalence:** Multi-source (3): superpowers/test-driven-development, verification-before-completion, systematic-debugging
-**Related patterns:** [Self-Critique](#pattern-28), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
+**Related patterns:** [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback#pattern-28-self-critique--quality-self-check), [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control#pattern-145-iron-law-inviolable-rule-framing)
 
 **What it is:** A two-column table that pre-enumerates the rationalizations a model is likely to produce when about to skip a critical step, paired with the *reality* that exposes each excuse as wrong. Distinct from self-critique (Pattern 28) — that asks the model to *find* weaknesses; this *names them in advance* so the model can recognize the rationalization as it forms.
 
