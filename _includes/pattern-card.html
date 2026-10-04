@@ -4,6 +4,6 @@
 <article class="pattern-card">
   <span class="record-id">P{{ p.id }}</span>
   <h3><a href="{{ detail | relative_url }}">{{ pattern_name | escape }}</a></h3>
-  <div class="meta-line"><span>{{ p.category | escape }}</span>{% if p.trace_status == 'untraced' %}<span class="badge untraced">{% if page.lang == 'zh' %}来源未确认{% else %}Source unconfirmed{% endif %}</span>{% endif %}</div>
+  <div class="meta-line"><span>{% include category-label.html key=p.category %}</span>{% if p.trace_status == 'untraced' %}<span class="badge untraced">{% if page.lang == 'zh' %}来源未确认{% else %}Source unconfirmed{% endif %}</span>{% endif %}</div>
   <p>{{ summary | escape }}</p>
 </article>

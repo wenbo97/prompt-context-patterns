@@ -1,0 +1,1712 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "partition": "ja-skills-first40",
+  "source_report": "docs/audit/ecc-variants-state.json",
+  "summary": {
+    "status": "complete",
+    "paths_reviewed": 40,
+    "full_semantic": 1,
+    "difference_review": 39
+  },
+  "coverage_updates": [
+    {
+      "path": "docs/ja-JP/skills/kotlin-exposed-patterns/SKILL.md",
+      "counterpart": "skills/kotlin-exposed-patterns/SKILL.md",
+      "hash": "973c22dbc23c8c9d89bd3d85cef5e535bd4477c3df1447521bdab03189b0d2b2",
+      "blob": "af3638e07aa98b58e434a1fcd8e181503429a887",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The DSL, DAO, schema, pools, migrations, query/pagination/batch/transaction/repository/JSON/H2 and dependency sections are retained; code tokens match and only comments are translated. The trigger-first description is removed and metadata.origin is moved to top-level. SQL LIKE escaping remains explicit; no framework behavior was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/kotlin-exposed-patterns/SKILL.md",
+          "blob": "af3638e07aa98b58e434a1fcd8e181503429a887",
+          "hash": "973c22dbc23c8c9d89bd3d85cef5e535bd4477c3df1447521bdab03189b0d2b2"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            719
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The DSL, DAO, schema, pools, migrations, query/pagination/batch/transaction/repository/JSON/H2 and dependency sections are retained; code tokens match and only comments are translated. The trigger-first description is removed and metadata.origin is moved to top-level. SQL LIKE escaping remains explicit; no framework behavior was run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/kotlin-exposed-patterns/SKILL.md",
+          "blob": "5f853d7bded06841e6e73ef53b4f7b530ccd3da7",
+          "hash": "dda4952840ddff31a9ea4ad7161dd75fbc13ff73ebf73d5ee9fa42fcce287167"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            720
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/kotlin-ktor-patterns/SKILL.md",
+      "counterpart": "skills/kotlin-ktor-patterns/SKILL.md",
+      "hash": "8bb72b8b64465bd97fd4f0f099b5cb132d48f711a71ebc07b1c682b0f37e54ac",
+      "blob": "dbb265eb658326a4d81f7134ac802fbde175fb74",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "Routes, auth/JWT, errors, config, validation, WebSockets, services, DI and masking are retained; code is executable-identical apart from translated comments/placeholders, including the RFC 6455 masked-frame note. Trigger-first metadata is removed and origin moved top-level; no runtime validation was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/kotlin-ktor-patterns/SKILL.md",
+          "blob": "dbb265eb658326a4d81f7134ac802fbde175fb74",
+          "hash": "8bb72b8b64465bd97fd4f0f099b5cb132d48f711a71ebc07b1c682b0f37e54ac"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            689
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "Routes, auth/JWT, errors, config, validation, WebSockets, services, DI and masking are retained; code is executable-identical apart from translated comments/placeholders, including the RFC 6455 masked-frame note. Trigger-first metadata is removed and origin moved top-level; no runtime validation was performed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/kotlin-ktor-patterns/SKILL.md",
+          "blob": "b36688570b9590aff40e1400621a5c6da13b965f",
+          "hash": "f2fa0b135ad0f37ee7a79dd346d236758f25c60c525de451bba28678659a5261"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            690
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/kotlin-patterns/SKILL.md",
+      "counterpart": "skills/kotlin-patterns/SKILL.md",
+      "hash": "fc1164b220bb0ce3f11c7a6a2871ca74b8dddf65b1d7ad3ecf9eb3da55582d78",
+      "blob": "1f965bb8ba6f1c05e591b18aa24241854091a9a9",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The full method and examples are retained; code differs only in translated comments. The trigger-first description is omitted and metadata.origin is moved top-level. No Kotlin build or runtime check was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/kotlin-patterns/SKILL.md",
+          "blob": "1f965bb8ba6f1c05e591b18aa24241854091a9a9",
+          "hash": "fc1164b220bb0ce3f11c7a6a2871ca74b8dddf65b1d7ad3ecf9eb3da55582d78"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            711
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The full method and examples are retained; code differs only in translated comments. The trigger-first description is omitted and metadata.origin is moved top-level. No Kotlin build or runtime check was performed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/kotlin-patterns/SKILL.md",
+          "blob": "7b6baba881698144a3af501b64445a3ce7079710",
+          "hash": "e519234772a3697763ad484908d180c4c653439fea75a56c03440c272f9f0896"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            712
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/laravel-security/SKILL.md",
+      "counterpart": "skills/laravel-security/SKILL.md",
+      "hash": "f76f4ebe780bb20ab644924053d4a2729da6837b4bf05935e0a13487ecc36a83",
+      "blob": "5a925bd62d114e7c31910d2380f8f39a8dbc0d5d",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The Japanese version materially condenses the security playbook: environment/HTTPS/trusted-proxy/session-fixation, token abilities, Gates/Policies, validated mass assignment, deeper SQLi/XSS/CSRF examples, dependency/secrets/queues/encrypted jobs/logging and broader rate limits are omitted or reduced. It adds narrower private invoice-upload, route, logging and temporary-link examples, which do not restore the omitted safeguards. Static documentation only; no security claim was tested.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/laravel-security/SKILL.md",
+          "blob": "5a925bd62d114e7c31910d2380f8f39a8dbc0d5d",
+          "hash": "f76f4ebe780bb20ab644924053d4a2729da6837b4bf05935e0a13487ecc36a83"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            285
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The Japanese version materially condenses the security playbook: environment/HTTPS/trusted-proxy/session-fixation, token abilities, Gates/Policies, validated mass assignment, deeper SQLi/XSS/CSRF examples, dependency/secrets/queues/encrypted jobs/logging and broader rate limits are omitted or reduced. It adds narrower private invoice-upload, route, logging and temporary-link examples, which do not restore the omitted safeguards. Static documentation only; no security claim was tested.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/laravel-security/SKILL.md",
+          "blob": "25a185bc79b7999f6f1b76d6d83898e48c262987",
+          "hash": "0440ddff450c63a9338f15b765ec35486f3f3266b321e0b27128faa3c29784fe"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            948
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/laravel-tdd/SKILL.md",
+      "counterpart": "skills/laravel-tdd/SKILL.md",
+      "hash": "d136023ee17afdbcff0f9ad764294ae488b144591694746d97778e589f02fb85",
+      "blob": "c94a3b35ab75027ebf45c9b815505370fde55b21",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The Japanese version condenses canonical PHPUnit configuration, factories, unit/model and detailed feature/API/auth/external-service/fake/command/authorization examples and the coverage table. It adds an 80%+ target, Pest-first guidance, RefreshDatabase notes and localized project examples; canonical text allows PHPUnit or Pest rather than prescribing Pest-first. Examples were not executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/laravel-tdd/SKILL.md",
+          "blob": "c94a3b35ab75027ebf45c9b815505370fde55b21",
+          "hash": "d136023ee17afdbcff0f9ad764294ae488b144591694746d97778e589f02fb85"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            283
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The Japanese version condenses canonical PHPUnit configuration, factories, unit/model and detailed feature/API/auth/external-service/fake/command/authorization examples and the coverage table. It adds an 80%+ target, Pest-first guidance, RefreshDatabase notes and localized project examples; canonical text allows PHPUnit or Pest rather than prescribing Pest-first. Examples were not executed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/laravel-tdd/SKILL.md",
+          "blob": "15ccea11b7ef975901fa7816517261de75364ffb",
+          "hash": "505fa6c5caad022a5db0c359aebdcdcce1ad16e5863dc13ef862aec48cfa1628"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            675
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/network-interface-health/SKILL.md",
+      "counterpart": "skills/network-interface-health/SKILL.md",
+      "hash": "bc4f6ac5c0d5dea2d8da8381737facef5814bcde7925708c9b8aee17e06dd4f1",
+      "blob": "94b9c9b4b15c442934f0f63c096b4d2ed7f3e958",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The diagnosis sequence, counter/rate baselines, two-end comparison, CRC/drop/speed examples and anti-patterns are retained; commands and code match. The canonical exact trigger phrase is removed and origin is top-level. No live network inspection was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/network-interface-health/SKILL.md",
+          "blob": "94b9c9b4b15c442934f0f63c096b4d2ed7f3e958",
+          "hash": "bc4f6ac5c0d5dea2d8da8381737facef5814bcde7925708c9b8aee17e06dd4f1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            143
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The diagnosis sequence, counter/rate baselines, two-end comparison, CRC/drop/speed examples and anti-patterns are retained; commands and code match. The canonical exact trigger phrase is removed and origin is top-level. No live network inspection was performed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/network-interface-health/SKILL.md",
+          "blob": "a4f41113a93f4b83bcbdb939c2aa78528a95366f",
+          "hash": "612cd44e1b80e10dd56f9a2296348cb48882fe24e2435654dae3b6447555e0a3"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            153
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/nextjs-turbopack/SKILL.md",
+      "counterpart": "skills/nextjs-turbopack/SKILL.md",
+      "hash": "55807e39aaff8c287a3ec3b6222c77be447d230c876def6381520bd43a6f87a9",
+      "blob": "91154f3c793d8092b01b2b322c47a370ed8cc5d3",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The translation omits the canonical Next.js 16 middleware.ts-to-proxy.ts migration section, its version-bound rule and warning not to rename proxy.ts; other procedure and examples are retained. Version claims were not checked against current Next.js documentation. Trigger-first metadata is omitted and origin moved top-level.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/nextjs-turbopack/SKILL.md",
+          "blob": "91154f3c793d8092b01b2b322c47a370ed8cc5d3",
+          "hash": "55807e39aaff8c287a3ec3b6222c77be447d230c876def6381520bd43a6f87a9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            44
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The translation omits the canonical Next.js 16 middleware.ts-to-proxy.ts migration section, its version-bound rule and warning not to rename proxy.ts; other procedure and examples are retained. Version claims were not checked against current Next.js documentation. Trigger-first metadata is omitted and origin moved top-level.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/nextjs-turbopack/SKILL.md",
+          "blob": "43e1e60ee22d274259d3f0e8f12afeaffc799bec",
+          "hash": "336034322d2022f47b097e55b5448cbc1e204c11f964910fa6fb3baeab06a474"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            58
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/nodejs-keccak256/SKILL.md",
+      "counterpart": "skills/nodejs-keccak256/SKILL.md",
+      "hash": "fded3af46949db8366d8e7267446f5c1769aed27622f1ff14419bf9682a38089",
+      "blob": "f478901ea0d1518cdacf18f72a506acce3beb072",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The main insight, use cases, code, examples, grep commands and rule are retained with exact code. Frontmatter drops the “Use when” trigger and moves origin/version to top-level. No hashing command was executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/nodejs-keccak256/SKILL.md",
+          "blob": "f478901ea0d1518cdacf18f72a506acce3beb072",
+          "hash": "fded3af46949db8366d8e7267446f5c1769aed27622f1ff14419bf9682a38089"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            102
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The main insight, use cases, code, examples, grep commands and rule are retained with exact code. Frontmatter drops the “Use when” trigger and moves origin/version to top-level. No hashing command was executed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/nodejs-keccak256/SKILL.md",
+          "blob": "c1b9712036d0153b404a6c56f26dfd4bf04c9e41",
+          "hash": "973c1194e28b51f56895617abcbcca82a37d25282e7603700a6bf284459bebdb"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            103
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/nutrient-document-processing/SKILL.md",
+      "counterpart": "skills/nutrient-document-processing/SKILL.md",
+      "hash": "f79f021aebe9870d53fa54f9e74b6fdfadd00787b87b00760c409dbd81f41a5a",
+      "blob": "be433d52b8c3ae4e56e8632601961d2027893423",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The API workflow and curl examples for transformation, OCR, redaction, signing, forms and MCP are retained. Japanese omits the canonical commercial API terms-review warning and shortens trigger metadata/moves origin. API and vendor claims remain unverified static text.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/nutrient-document-processing/SKILL.md",
+          "blob": "be433d52b8c3ae4e56e8632601961d2027893423",
+          "hash": "f79f021aebe9870d53fa54f9e74b6fdfadd00787b87b00760c409dbd81f41a5a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The API workflow and curl examples for transformation, OCR, redaction, signing, forms and MCP are retained. Japanese omits the canonical commercial API terms-review warning and shortens trigger metadata/moves origin. API and vendor claims remain unverified static text.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/nutrient-document-processing/SKILL.md",
+          "blob": "e1bf3dfa96c02f27cb5ae5b2ae80c7b1b4fe443c",
+          "hash": "2a8096af72efaeb29a4221929ac1f1ea9d97b95d44316720764fb7c191c7a5b9"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            168
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/nuxt4-patterns/SKILL.md",
+      "counterpart": "skills/nuxt4-patterns/SKILL.md",
+      "hash": "a4c7206cb2cf065768b2abe36c22574f24131dd155c01c1a0168ee4f314336c6",
+      "blob": "cefa689d70b9e16eddf5ed483dbdb54d32e471f5",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "Hydration, SSR data fetching, route rules, performance and review checklist are retained; code blocks match. The trigger-first description is omitted and origin moved top-level. No Nuxt application was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/nuxt4-patterns/SKILL.md",
+          "blob": "cefa689d70b9e16eddf5ed483dbdb54d32e471f5",
+          "hash": "a4c7206cb2cf065768b2abe36c22574f24131dd155c01c1a0168ee4f314336c6"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "Hydration, SSR data fetching, route rules, performance and review checklist are retained; code blocks match. The trigger-first description is omitted and origin moved top-level. No Nuxt application was run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/nuxt4-patterns/SKILL.md",
+          "blob": "bf7068766984f9f4121051260c04ddb282452635",
+          "hash": "8f99946d5aa8e11dae8ba1ade746a6a803efcba63ba8b618dbf7748331c14e47"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            101
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/openclaw-persona-forge/SKILL.md",
+      "counterpart": "skills/openclaw-persona-forge/SKILL.md",
+      "hash": "1d740cb395a131c69a65aa22f7d03631d924eb96e3db93c343443425cdc186e7",
+      "blob": "f50d6a8df2c44fae2e4a47a1af7fa64072c15cc7",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The Chinese source and Japanese variant preserve the persona workflow; the main adaptation replaces “Skill”/“Agent” labels with localized terms and moves community origin metadata. Both retain the optional avatar-generation capability check, use only an installed/approved generation skill, inspect its interface, and fall back to a text prompt when unavailable or failing. This user-facing fallback is adjacent to optional runtime-module isolation, not the same mechanism; no generation skill was invoked.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/openclaw-persona-forge/SKILL.md",
+          "blob": "f50d6a8df2c44fae2e4a47a1af7fa64072c15cc7",
+          "hash": "1d740cb395a131c69a65aa22f7d03631d924eb96e3db93c343443425cdc186e7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            288
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The Chinese source and Japanese variant preserve the persona workflow; the main adaptation replaces “Skill”/“Agent” labels with localized terms and moves community origin metadata. Both retain the optional avatar-generation capability check, use only an installed/approved generation skill, inspect its interface, and fall back to a text prompt when unavailable or failing. This user-facing fallback is adjacent to optional runtime-module isolation, not the same mechanism; no generation skill was invoked.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/openclaw-persona-forge/SKILL.md",
+          "blob": "f09e76a728793d60ffd3abe926df0ad35c64ecbb",
+          "hash": "3498442cf72ee7efbc4cc56553b48dbbb1a26d1d95eca4037aede69e164a9875"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            289
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/opensource-pipeline/SKILL.md",
+      "counterpart": "skills/opensource-pipeline/SKILL.md",
+      "hash": "4eea2174d8d4d9a6077359ef48ddba97ee4961341f21e5339bf28a04e9a546a9",
+      "blob": "4a30577d9c08392cb224dd54cc3d3ec3bcf1ecfb",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The three-stage fork/sanitize/package workflow, questions and approval gates, bounded failure retry, staging paths and GitHub publication gate are retained in translation. Commands and agent API are static source examples and were not run or checked against current services; origin metadata is moved top-level.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/opensource-pipeline/SKILL.md",
+          "blob": "4a30577d9c08392cb224dd54cc3d3ec3bcf1ecfb",
+          "hash": "4eea2174d8d4d9a6077359ef48ddba97ee4961341f21e5339bf28a04e9a546a9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            255
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The three-stage fork/sanitize/package workflow, questions and approval gates, bounded failure retry, staging paths and GitHub publication gate are retained in translation. Commands and agent API are static source examples and were not run or checked against current services; origin metadata is moved top-level.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/opensource-pipeline/SKILL.md",
+          "blob": "7f2b3559fa6c0bc91eb77d1187496ed802f3789e",
+          "hash": "7032623ed2108d638c1ce5afa7a0738d632551aea2adc9767385375782993a81"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            256
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/perl-patterns/SKILL.md",
+      "counterpart": "skills/perl-patterns/SKILL.md",
+      "hash": "ff67116101772bd0ad1db53ca03b41c8e8111269b7b44b84f7c0f9ef393e4182",
+      "blob": "9463c72901c6246ccb1564d0f15af3ff3a9b9c06",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The method, Perl idioms, versions, module layout, tools and anti-patterns are retained; code tokens match apart from translated comments. The trigger-first phrase is omitted and origin moved top-level. No Perl code was executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/perl-patterns/SKILL.md",
+          "blob": "9463c72901c6246ccb1564d0f15af3ff3a9b9c06",
+          "hash": "ff67116101772bd0ad1db53ca03b41c8e8111269b7b44b84f7c0f9ef393e4182"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            504
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The method, Perl idioms, versions, module layout, tools and anti-patterns are retained; code tokens match apart from translated comments. The trigger-first phrase is omitted and origin moved top-level. No Perl code was executed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/perl-patterns/SKILL.md",
+          "blob": "a2aaa8621df3c175783ee49053f505d1e7fc8b92",
+          "hash": "617ced86628e866a6242ef763ec736d5f7ee3fa0a5afc34236d808db6de9c4b3"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            505
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/perl-security/SKILL.md",
+      "counterpart": "skills/perl-security/SKILL.md",
+      "hash": "4ec69ad69fb79bcba10f54023abf06e9788fa1fa6e5c64cdb41917ffc1eac42b",
+      "blob": "af8853931e8a3260a56987fb09811bfafa7f583a",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The taint/input/process/DBI/web-output security workflow and examples are retained; code tokens match apart from translated comments. The trigger-first phrase is omitted and origin moved top-level. No security test or code execution was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/perl-security/SKILL.md",
+          "blob": "af8853931e8a3260a56987fb09811bfafa7f583a",
+          "hash": "4ec69ad69fb79bcba10f54023abf06e9788fa1fa6e5c64cdb41917ffc1eac42b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            503
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The taint/input/process/DBI/web-output security workflow and examples are retained; code tokens match apart from translated comments. The trigger-first phrase is omitted and origin moved top-level. No security test or code execution was performed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/perl-security/SKILL.md",
+          "blob": "7bb7e470fc1651882482619fa492b5535cd3e719",
+          "hash": "fd6dd778ed3b612dd8ee5f856d557b9328a1f92f87d5b69b91a53d58657531f6"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            504
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/postgres-patterns/SKILL.md",
+      "counterpart": "skills/postgres-patterns/SKILL.md",
+      "hash": "26103ff6c1c005682d9de9a8174a56c86a26073758808449fb32eb64045d1f76",
+      "blob": "3ce71b7d074e31b00666ed8c3ba8a8bbf7987969",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The method sections, examples and code logic are retained; code differences are translated comments. The trigger-first phrase is omitted and origin moved top-level. The attribution “Based on Supabase Agent Skills (credit: Supabase team)” becomes a malformed-looking relative Markdown target `[Supabase Agent Skills](Supabase Agent Skills (credit: Supabase team))`; the destination was not resolved or tested.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/postgres-patterns/SKILL.md",
+          "blob": "3ce71b7d074e31b00666ed8c3ba8a8bbf7987969",
+          "hash": "26103ff6c1c005682d9de9a8174a56c86a26073758808449fb32eb64045d1f76"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            146
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The method sections, examples and code logic are retained; code differences are translated comments. The trigger-first phrase is omitted and origin moved top-level. The attribution “Based on Supabase Agent Skills (credit: Supabase team)” becomes a malformed-looking relative Markdown target `[Supabase Agent Skills](Supabase Agent Skills (credit: Supabase team))`; the destination was not resolved or tested.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/postgres-patterns/SKILL.md",
+          "blob": "12a3a4a05c2278c7fe1316d9403b5ca037dadf69",
+          "hash": "9c8c391ae9e9aa87faa7ca091e1d395c97766df14080d0bfbea8a97721776163"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            148
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/project-guidelines-example/SKILL.md",
+      "counterpart": null,
+      "hash": "1a23a27922b39e580ffd860168d19f7fca114a3ab309f28507452825355b6d51",
+      "blob": "90dde10c63f495e707149f1c98f8bb13ee0794ec",
+      "disposition": "analyzed",
+      "depth": "full-semantic-japanese-skill",
+      "reason": "This Japanese-only, roughly 352-line sample gives a fictional Zenith Next/FastAPI/Supabase/Claude/GCP project tree, API/auth, testing, deployment/configuration and placeholder-secret guidance. It is a domain-specific repository-guidelines example, not a reusable prompt-context method; its example architecture, tokens and deployment claims are static and were not exercised.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/project-guidelines-example/SKILL.md",
+          "blob": "90dde10c63f495e707149f1c98f8bb13ee0794ec",
+          "hash": "1a23a27922b39e580ffd860168d19f7fca114a3ab309f28507452825355b6d51"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            352
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "This Japanese-only, roughly 352-line sample gives a fictional Zenith Next/FastAPI/Supabase/Claude/GCP project tree, API/auth, testing, deployment/configuration and placeholder-secret guidance. It is a domain-specific repository-guidelines example, not a reusable prompt-context method; its example architecture, tokens and deployment claims are static and were not exercised.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/python-patterns/SKILL.md",
+      "counterpart": "skills/python-patterns/SKILL.md",
+      "hash": "cdff3033a79c86f46e1a355cebadf16e4321ef87b711eb93b69b0ad6e9b3be1f",
+      "blob": "a1e2b04c4c6fdb66ebeeab90f7272f396d29135a",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The complete method and examples are translated; the code is exact. Only the trigger-first description and metadata shape differ (origin moved top-level). No Python execution was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/python-patterns/SKILL.md",
+          "blob": "a1e2b04c4c6fdb66ebeeab90f7272f396d29135a",
+          "hash": "cdff3033a79c86f46e1a355cebadf16e4321ef87b711eb93b69b0ad6e9b3be1f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            749
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The complete method and examples are translated; the code is exact. Only the trigger-first description and metadata shape differ (origin moved top-level). No Python execution was performed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/python-patterns/SKILL.md",
+          "blob": "ced3d588d816fb6880dfef4d67f30cab9d1b82df",
+          "hash": "103e0130dac33a49d26705fc5a2df804980fcab6a0138d65bc7f370a987d49f6"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            751
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/python-testing/SKILL.md",
+      "counterpart": "skills/python-testing/SKILL.md",
+      "hash": "e30ef63c23ae7b90074ecd20168d0f017067537b4d3e92d8def4b42be14319ef",
+      "blob": "0ae1c7009f881791a3d150427c346b6053d64051",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "TDD, fixtures, parameterization, mocking/async, organization, best practices, commands and coverage guidance are retained; code matches. Trigger-first metadata is omitted and origin moved top-level. Tests were not run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/python-testing/SKILL.md",
+          "blob": "0ae1c7009f881791a3d150427c346b6053d64051",
+          "hash": "e30ef63c23ae7b90074ecd20168d0f017067537b4d3e92d8def4b42be14319ef"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            815
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "TDD, fixtures, parameterization, mocking/async, organization, best practices, commands and coverage guidance are retained; code matches. Trigger-first metadata is omitted and origin moved top-level. Tests were not run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/python-testing/SKILL.md",
+          "blob": "ddfcc0abc566994a35df68337476c2a401201e57",
+          "hash": "b9f7a158dae3b6c06c9c75ffe84e27a1edc86092d2afdcb39e96fc2569902eb7"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            817
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/quarkus-security/SKILL.md",
+      "counterpart": "skills/quarkus-security/SKILL.md",
+      "hash": "f5623b14daa75036f45a1e76f7b266a149cb9c1bfe8572cacf01a8eb64f64e4a",
+      "blob": "854f2fde2a78e07a8382feb746fc67193166818a",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The security workflow and examples are largely retained; code is the same apart from translated comments. One material mistranslation changes “Vault or environment variables” to “Vault or Lambda environment variables,” narrowing/adding a provider-specific option; the proxy-trust caveat remains. The added CSRF description term has no corresponding body section. No current Quarkus behavior was verified.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/quarkus-security/SKILL.md",
+          "blob": "854f2fde2a78e07a8382feb746fc67193166818a",
+          "hash": "f5623b14daa75036f45a1e76f7b266a149cb9c1bfe8572cacf01a8eb64f64e4a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            466
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The security workflow and examples are largely retained; code is the same apart from translated comments. One material mistranslation changes “Vault or environment variables” to “Vault or Lambda environment variables,” narrowing/adding a provider-specific option; the proxy-trust caveat remains. The added CSRF description term has no corresponding body section. No current Quarkus behavior was verified.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/quarkus-security/SKILL.md",
+          "blob": "6c785751e96b150161179b98c050cc4e9decd3ba",
+          "hash": "bb7c13aec927ec8d73f2e949eee2a4d44a9f908541e7d9acd7e2fd8f64f0ae3e"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            468
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/quarkus-tdd/SKILL.md",
+      "counterpart": "skills/quarkus-tdd/SKILL.md",
+      "hash": "5935c2feffcaf0e2ba20526ee3e27911a1e75b4d1914ecb8f91734875f9a41fd",
+      "blob": "643c84ea94591f0189f24099f49fc81739ed5498",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The TDD method and examples are retained; code differences are translated Java display names/comments. The “Use when” trigger is omitted and origin moved top-level. Test claims were not executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/quarkus-tdd/SKILL.md",
+          "blob": "643c84ea94591f0189f24099f49fc81739ed5498",
+          "hash": "5935c2feffcaf0e2ba20526ee3e27911a1e75b4d1914ecb8f91734875f9a41fd"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            811
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The TDD method and examples are retained; code differences are translated Java display names/comments. The “Use when” trigger is omitted and origin moved top-level. Test claims were not executed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/quarkus-tdd/SKILL.md",
+          "blob": "1c4d52441554f0470660e4c090f7533c236e2dc3",
+          "hash": "556d1c2d04e3e0ef10f474ed413013646088ff057f9be02d3a3c4f833ccc33c5"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            812
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/quarkus-verification/SKILL.md",
+      "counterpart": "skills/quarkus-verification/SKILL.md",
+      "hash": "411a825ad1edae7f45174287df2169180f5817acc03b56457ac18fe074a5d3be",
+      "blob": "5c147b15961b7bc3d3aa8eeef5a795d1df4be7e8",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The nine-step build/static/test/coverage/security/native/performance/health/container/config/docs workflow and examples are retained; code has only a translated Java comment. Trigger-first metadata is omitted and origin moved top-level. No build or checks were run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/quarkus-verification/SKILL.md",
+          "blob": "5c147b15961b7bc3d3aa8eeef5a795d1df4be7e8",
+          "hash": "411a825ad1edae7f45174287df2169180f5817acc03b56457ac18fe074a5d3be"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            480
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The nine-step build/static/test/coverage/security/native/performance/health/container/config/docs workflow and examples are retained; code has only a translated Java comment. Trigger-first metadata is omitted and origin moved top-level. No build or checks were run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/quarkus-verification/SKILL.md",
+          "blob": "2d620bd02a9727c068d90de0fa140938b89f8a1e",
+          "hash": "487818bf26f1ec34a08d5a9c11400ad2603bc70831cf0649a9fe20eaeadf0118"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            481
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/ralphinho-rfc-pipeline/SKILL.md",
+      "counterpart": "skills/ralphinho-rfc-pipeline/SKILL.md",
+      "hash": "ea45d0e19ba57f1cac91dd873d870d9de561454d0d7247f5850f9a82a6961bc5",
+      "blob": "c49458ca01308fffeda0a5fe8d51aafb17e61e19",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The RFC-to-DAG stages, unit/spec/dependency/acceptance work, queue, integration tests and recovery workflow are retained; terminology is localized without a method change. Trigger-first metadata is omitted and origin moved top-level. No pipeline was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/ralphinho-rfc-pipeline/SKILL.md",
+          "blob": "c49458ca01308fffeda0a5fe8d51aafb17e61e19",
+          "hash": "ea45d0e19ba57f1cac91dd873d870d9de561454d0d7247f5850f9a82a6961bc5"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            67
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The RFC-to-DAG stages, unit/spec/dependency/acceptance work, queue, integration tests and recovery workflow are retained; terminology is localized without a method change. Trigger-first metadata is omitted and origin moved top-level. No pipeline was run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/ralphinho-rfc-pipeline/SKILL.md",
+          "blob": "7ac2ba00e8a9327896e2a4447a6dbee9c9646ea3",
+          "hash": "00d92ba603b5989a243b1d4c2f5442bb8451f1153dce2c42aed2a60c821507d6"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            68
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/redis-patterns/SKILL.md",
+      "counterpart": "skills/redis-patterns/SKILL.md",
+      "hash": "31e5c079c336e3b19d68012f3b307f0014c03fbdd693bc596d89c9270f923d2b",
+      "blob": "6a1aa5fa9ab74fdb9e59af2d13aa10ef9c554dc4",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "Data structures, caching/stampede controls, locks, rate limits, pub/sub, streams and recovery examples are retained; code differences are translated comments. “Tag-based invalidation” is rendered as “tag-based deletion,” which matches the described function in context. Trigger metadata/origin shape changes; no Redis runtime behavior was tested.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/redis-patterns/SKILL.md",
+          "blob": "6a1aa5fa9ab74fdb9e59af2d13aa10ef9c554dc4",
+          "hash": "31e5c079c336e3b19d68012f3b307f0014c03fbdd693bc596d89c9270f923d2b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            403
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "Data structures, caching/stampede controls, locks, rate limits, pub/sub, streams and recovery examples are retained; code differences are translated comments. “Tag-based invalidation” is rendered as “tag-based deletion,” which matches the described function in context. Trigger metadata/origin shape changes; no Redis runtime behavior was tested.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/redis-patterns/SKILL.md",
+          "blob": "463e7dd4ff6babdeb25b603eed0dc754cf2f9554",
+          "hash": "6cabb1cd03174a0584ff3538371c780aba90da156db15260691278ed3307d8fe"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            404
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/regex-vs-llm-structured-text/SKILL.md",
+      "counterpart": "skills/regex-vs-llm-structured-text/SKILL.md",
+      "hash": "14cf60af6de57e53b712852b0a47e109c79c3e45cdb0095b3d8b38fc579720a1",
+      "blob": "cfd4fa363a9d8acba789e5dacaa087960301a18f",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The deterministic parser, confidence thresholds, uncertain-case LLM fallback and revalidation workflow are retained, with code blocks matching. The diagram drops the explicit “Source Text” node. Frozen 95–98%, 0.95, 410-item, 98%-success and 95%-savings figures were not reproduced. This is the existing deterministic-fallback mechanism, with per-item confidence routing as a useful bounded enrichment.",
+      "candidate_keys": [
+        "ecc-deterministic-fallback"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/regex-vs-llm-structured-text/SKILL.md",
+          "blob": "cfd4fa363a9d8acba789e5dacaa087960301a18f",
+          "hash": "14cf60af6de57e53b712852b0a47e109c79c3e45cdb0095b3d8b38fc579720a1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            217
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The deterministic parser, confidence thresholds, uncertain-case LLM fallback and revalidation workflow are retained, with code blocks matching. The diagram drops the explicit “Source Text” node. Frozen 95–98%, 0.95, 410-item, 98%-success and 95%-savings figures were not reproduced. This is the existing deterministic-fallback mechanism, with per-item confidence routing as a useful bounded enrichment.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/regex-vs-llm-structured-text/SKILL.md",
+          "blob": "18d84e4a5265fee0a4fceaf441617e9b0823f206",
+          "hash": "5d7d04591ad656ba7b8064b2fa25e83936f8bd077449dac6cc599b4c41ce662a"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            221
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/remotion-video-creation/SKILL.md",
+      "counterpart": "skills/remotion-video-creation/SKILL.md",
+      "hash": "8500da217bcb16e42f9585076f41e555f8bbba6c85b3ac8e23ba9c591f3f7491",
+      "blob": "01dcbb3d802d431ceb5e5efd8b4b23cfdbe154e8",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "This page is an index of 29 rule documents; link targets and descriptions are translated and literal relative `rules/*.md` links remain. The body’s “When to use” section is retained. The linked rules were not separately reviewed from this index, so no claims about their detailed methods are made; this page adds no distinct method.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/remotion-video-creation/SKILL.md",
+          "blob": "01dcbb3d802d431ceb5e5efd8b4b23cfdbe154e8",
+          "hash": "8500da217bcb16e42f9585076f41e555f8bbba6c85b3ac8e23ba9c591f3f7491"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            43
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "This page is an index of 29 rule documents; link targets and descriptions are translated and literal relative `rules/*.md` links remain. The body’s “When to use” section is retained. The linked rules were not separately reviewed from this index, so no claims about their detailed methods are made; this page adds no distinct method.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/remotion-video-creation/SKILL.md",
+          "blob": "b86102f825e6a6dbee8fcfc93255e180681555df",
+          "hash": "dd727cadc4c1e179932b9736955ff3e537f75eeb759c038345ad9fe7d1bc55a9"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            43
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/repo-scan/SKILL.md",
+      "counterpart": "skills/repo-scan/SKILL.md",
+      "hash": "3344cbc5c0ca3d417d571800059961276f15d70a3622d8ff2195efa3eb910aaa",
+      "blob": "733ecb146dbcab270363093f7d8194e7ad8de1b3",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The external bootstrap pointer retains the sequence to review pinned source, install, reload the harness and reinvoke; it does not itself run an audit. Feature counts and instructions are frozen claims, not independently validated, and no script or external skill was executed. No distinct method beyond controlled bootstrap is shown.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/repo-scan/SKILL.md",
+          "blob": "733ecb146dbcab270363093f7d8194e7ad8de1b3",
+          "hash": "3344cbc5c0ca3d417d571800059961276f15d70a3622d8ff2195efa3eb910aaa"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            170
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The external bootstrap pointer retains the sequence to review pinned source, install, reload the harness and reinvoke; it does not itself run an audit. Feature counts and instructions are frozen claims, not independently validated, and no script or external skill was executed. No distinct method beyond controlled bootstrap is shown.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/repo-scan/SKILL.md",
+          "blob": "c2f40eee7ae20da55f5b9e60b658d0574e5cf18d",
+          "hash": "b3318f6263629467d895d71a281cb64575d9d5de12c96d97cd1d19c66734e98e"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            170
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/research-ops/SKILL.md",
+      "counterpart": "skills/research-ops/SKILL.md",
+      "hash": "688940df22d7dae91e9bbdb387ae98ae7a431d13fd280a1c9a6b6c2a25c323fc",
+      "blob": "31278894c1d0521f4a93bbd1caec5cebd5e49376",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The fact/user-evidence/inference/recommendation distinction and lightest-sufficient-evidence workflow are retained, along with source routes, output template, freshness notes and verification checks. Trigger/origin frontmatter changes are present; no web, registry or tool calls were made.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/research-ops/SKILL.md",
+          "blob": "31278894c1d0521f4a93bbd1caec5cebd5e49376",
+          "hash": "688940df22d7dae91e9bbdb387ae98ae7a431d13fd280a1c9a6b6c2a25c323fc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            112
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The fact/user-evidence/inference/recommendation distinction and lightest-sufficient-evidence workflow are retained, along with source routes, output template, freshness notes and verification checks. Trigger/origin frontmatter changes are present; no web, registry or tool calls were made.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/research-ops/SKILL.md",
+          "blob": "449ddc95ef7efeb01883955070d44ad2be83e817",
+          "hash": "114d0e5480ce3ad263316c639ce0c401396e1d9fbec3cf15b3c962ae16f376db"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            113
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/returns-reverse-logistics/SKILL.md",
+      "counterpart": "skills/returns-reverse-logistics/SKILL.md",
+      "hash": "9510046b30c591c8fb988db3729d81a058c360dca8a7baaf4a1dbb151aa8c371",
+      "blob": "8e53ca1f0ea698fba76f4e74c8022ba56ff4bc71",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The 226-line pair retains RMA, inspection/grading/disposition, fraud, vendor recovery, warranty, score thresholds, escalation and customer communication. Material deltas repeatedly render “liquidate/liquidation” as “clearance,” translate pursuing vendor credit as contesting it, and change Grade B electronics from “open box/renewed” to “open box/refurbished” although refurbishment is a distinct Grade C option in English. Industry thresholds and fraud statistics are frozen claims, not verified current facts; this is domain-specific operations guidance, not a generic prompt method.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/returns-reverse-logistics/SKILL.md",
+          "blob": "8e53ca1f0ea698fba76f4e74c8022ba56ff4bc71",
+          "hash": "9510046b30c591c8fb988db3729d81a058c360dca8a7baaf4a1dbb151aa8c371"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            226
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The 226-line pair retains RMA, inspection/grading/disposition, fraud, vendor recovery, warranty, score thresholds, escalation and customer communication. Material deltas repeatedly render “liquidate/liquidation” as “clearance,” translate pursuing vendor credit as contesting it, and change Grade B electronics from “open box/renewed” to “open box/refurbished” although refurbishment is a distinct Grade C option in English. Industry thresholds and fraud statistics are frozen claims, not verified current facts; this is domain-specific operations guidance, not a generic prompt method.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/returns-reverse-logistics/SKILL.md",
+          "blob": "63b5e35b8cee31de84f469e8b28b0d34c3e3983a",
+          "hash": "e5091d29cedd093a80321615d9670ebdb3c15856f3a99da644e07335167c86df"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            233
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/rules-distill/SKILL.md",
+      "counterpart": "skills/rules-distill/SKILL.md",
+      "hash": "145d6d63edfbcade19c7bcaf6b794c079055b9c095a006b02c96b7d6d31d0435",
+      "blob": "61a2de988530a6cd97b81e63acace45dd88de833",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The inventory/cross-read/match/verdict/user-review phases, two-skill criterion, violation risk, match options, JSON result, approval requirement, save step and example are retained. Trigger/origin metadata is localized; no scripts or rules were executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/rules-distill/SKILL.md",
+          "blob": "61a2de988530a6cd97b81e63acace45dd88de833",
+          "hash": "145d6d63edfbcade19c7bcaf6b794c079055b9c095a006b02c96b7d6d31d0435"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            264
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The inventory/cross-read/match/verdict/user-review phases, two-skill criterion, violation risk, match options, JSON result, approval requirement, save step and example are retained. Trigger/origin metadata is localized; no scripts or rules were executed.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/rules-distill/SKILL.md",
+          "blob": "9f76d3fe0c36af92c15607a006ba9b99d18559ef",
+          "hash": "c451a63f96077f92ef6b40c4310f5a470a5d05103a181af518b115c4e828292c"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            265
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/rust-patterns/SKILL.md",
+      "counterpart": "skills/rust-patterns/SKILL.md",
+      "hash": "2a1ede65879cb952c5a97673dd05bcd987ead2c585bca6d8130417bfce9054c1",
+      "blob": "5c115147e187e72c9898a56fe0fa632d74247f19",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "Ownership, errors, types, traits, concurrency, unsafe code, modules, visibility, tools and anti-pattern guidance are retained; code is exact apart from translated comments. No Rust build was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/rust-patterns/SKILL.md",
+          "blob": "5c115147e187e72c9898a56fe0fa632d74247f19",
+          "hash": "2a1ede65879cb952c5a97673dd05bcd987ead2c585bca6d8130417bfce9054c1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            499
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "Ownership, errors, types, traits, concurrency, unsafe code, modules, visibility, tools and anti-pattern guidance are retained; code is exact apart from translated comments. No Rust build was run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/rust-patterns/SKILL.md",
+          "blob": "b87afe5eb81cff8c22e9c71cedc5f29688736c0d",
+          "hash": "51379df2bd92a482309e109e5a210210842594f660cceeb2d68d18e995108edf"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            500
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/rust-testing/SKILL.md",
+      "counterpart": "skills/rust-testing/SKILL.md",
+      "hash": "175b60383d1574f0a6e3d21e9873341d074c4568b5aff0ab15399aefe29c295b",
+      "blob": "17dc1235e27e5447ec86a103d8a86a02fdc0ed83",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The testing method and examples are retained. Japanese uses a four-backtick outer fence around nested Rust doc-test triple fences, preserving the inner examples; no semantic code change was found. Trigger/origin metadata changes; no tests were run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/rust-testing/SKILL.md",
+          "blob": "17dc1235e27e5447ec86a103d8a86a02fdc0ed83",
+          "hash": "175b60383d1574f0a6e3d21e9873341d074c4568b5aff0ab15399aefe29c295b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            502
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The testing method and examples are retained. Japanese uses a four-backtick outer fence around nested Rust doc-test triple fences, preserving the inner examples; no semantic code change was found. Trigger/origin metadata changes; no tests were run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/rust-testing/SKILL.md",
+          "blob": "464555b45ce646ea9396f63277be08f40d2ce49b",
+          "hash": "02a9a40dcc42dd21d14730d29b13ee0a8b274694360585dc0fadb2602eb56ddf"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            501
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/safety-guard/SKILL.md",
+      "counterpart": "skills/safety-guard/SKILL.md",
+      "hash": "b6ba721c341cf53d6a543039cbb6f5bb6a4be0d3b14e7705ec599d4835b8a3b6",
+      "blob": "31e0c58dc56fea0915afcc6991f97ca36fc60de7",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "Careful confirmation for dangerous commands, Freeze write restriction, and combined Guard read-all/write-only-allowed-directory behavior remain. The description narrows its trigger wording to production/autonomous-agent cases while the body includes more triggers. Runtime behavior, log path and `codex -a never` are frozen claims, not verified on this host; no code is run here.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/safety-guard/SKILL.md",
+          "blob": "31e0c58dc56fea0915afcc6991f97ca36fc60de7",
+          "hash": "b6ba721c341cf53d6a543039cbb6f5bb6a4be0d3b14e7705ec599d4835b8a3b6"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            75
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "Careful confirmation for dangerous commands, Freeze write restriction, and combined Guard read-all/write-only-allowed-directory behavior remain. The description narrows its trigger wording to production/autonomous-agent cases while the body includes more triggers. Runtime behavior, log path and `codex -a never` are frozen claims, not verified on this host; no code is run here.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/safety-guard/SKILL.md",
+          "blob": "3a4aa11ee7fe63d3044eb519ce99e9d962405e2a",
+          "hash": "6378dad8e60286b3fcc32e064e4ba2e452000f5eef0cb2c2204ad7fe7dae3afc"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            76
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/santa-method/SKILL.md",
+      "counterpart": "skills/santa-method/SKILL.md",
+      "hash": "0e2738d77036f2aa227107e194b66893065e34c3a3a470b1c750c046fbf18e7f",
+      "blob": "c9767e9b410e7904483640bf9a190ef558a76e15",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The method retains two independent reviewers using one rubric/spec/artifact, a both-must-pass AND gate, fresh reviewers, bounded fix/re-review, rubric and metrics/cost examples. Isolation claims and 70% first-pass, 2–3x cost and >90% systemic-catch figures are unverified. This maps to the existing all-reviewer conjunction candidate; source also describes sample→classify failure patterns→batch-fix→resample, an adjacent batch review loop whose metrics do not establish efficacy.",
+      "candidate_keys": [
+        "ecc-all-reviewer-conjunction"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/santa-method/SKILL.md",
+          "blob": "c9767e9b410e7904483640bf9a190ef558a76e15",
+          "hash": "0e2738d77036f2aa227107e194b66893065e34c3a3a470b1c750c046fbf18e7f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            306
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The method retains two independent reviewers using one rubric/spec/artifact, a both-must-pass AND gate, fresh reviewers, bounded fix/re-review, rubric and metrics/cost examples. Isolation claims and 70% first-pass, 2–3x cost and >90% systemic-catch figures are unverified. This maps to the existing all-reviewer conjunction candidate; source also describes sample→classify failure patterns→batch-fix→resample, an adjacent batch review loop whose metrics do not establish efficacy.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/santa-method/SKILL.md",
+          "blob": "add4a3f734dd62201a68504964155ea85e316f97",
+          "hash": "942eb2301d759aec427771866779b431fa10129d11a4f058583770f68ca6baa7"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            307
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/scientific-db-pubmed-database/SKILL.md",
+      "counterpart": "skills/scientific-db-pubmed-database/SKILL.md",
+      "hash": "dd0b73e9efeb919e42bbe46e04dc600be8bd1b1d8625f875fc29cdc860045aae",
+      "blob": "2e039437577f651d7a95fe518a84959ce891f83e",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The question-to-concept/query workflow, MeSH/tags, E-utilities sequence, rate/key handling, history server, reproducibility logging and checklist are retained; examples match. No current PubMed API or rate behavior was checked.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/scientific-db-pubmed-database/SKILL.md",
+          "blob": "2e039437577f651d7a95fe518a84959ce891f83e",
+          "hash": "dd0b73e9efeb919e42bbe46e04dc600be8bd1b1d8625f875fc29cdc860045aae"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            168
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The question-to-concept/query workflow, MeSH/tags, E-utilities sequence, rate/key handling, history server, reproducibility logging and checklist are retained; examples match. No current PubMed API or rate behavior was checked.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/scientific-db-pubmed-database/SKILL.md",
+          "blob": "18b4c0cb39ec5a5d2ffd70e9c533e164d3ec4cd3",
+          "hash": "5b4c406c73b0fdee3dbbc352fd7d51ee28702d589ea44f3229402fb513354a54"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            176
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/scientific-db-uspto-database/SKILL.md",
+      "counterpart": "skills/scientific-db-uspto-database/SKILL.md",
+      "hash": "849c183b079f63f40d0bea7ebef28cbf8f2a5b21247a4122c11a841f5124648c",
+      "blob": "2826a3332905ab210cc12a67db1eb1ab75b5bbb1",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The official-source-first patent/TSDR/file-wrapper/assignment workflow, key handling, record-versus-legal-ownership caution and reproducible output are retained. No current API name, availability or rate limit was verified.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/scientific-db-uspto-database/SKILL.md",
+          "blob": "2826a3332905ab210cc12a67db1eb1ab75b5bbb1",
+          "hash": "849c183b079f63f40d0bea7ebef28cbf8f2a5b21247a4122c11a841f5124648c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            158
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The official-source-first patent/TSDR/file-wrapper/assignment workflow, key handling, record-versus-legal-ownership caution and reproducible output are retained. No current API name, availability or rate limit was verified.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/scientific-db-uspto-database/SKILL.md",
+          "blob": "a577161ce83cf11d57f4adbc8c54db8f7d2f03e5",
+          "hash": "aeb87193dbafc68b5218612e4845ae3d6c3a040203ff8a625ed98661255fef58"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/scientific-pkg-gget/SKILL.md",
+      "counterpart": "skills/scientific-pkg-gget/SKILL.md",
+      "hash": "3fdf609cb7a61ab3c6458e0d9c7a7d7ac1245ae03135bc86b8eb21d345d4bbaa",
+      "blob": "bae76ad58ffda24e73c9d9ab2a4060be5f1797e5",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The install/environment/query/module/reproducibility workflow and code samples are retained. Current dependency versions and database behavior were not checked, and no command was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/scientific-pkg-gget/SKILL.md",
+          "blob": "bae76ad58ffda24e73c9d9ab2a4060be5f1797e5",
+          "hash": "3fdf609cb7a61ab3c6458e0d9c7a7d7ac1245ae03135bc86b8eb21d345d4bbaa"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            154
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The install/environment/query/module/reproducibility workflow and code samples are retained. Current dependency versions and database behavior were not checked, and no command was run.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/scientific-pkg-gget/SKILL.md",
+          "blob": "13b2ca46fbc377ade82299532760a11b57d5d12a",
+          "hash": "9e7f11f0681ad90c91d665689053481a1be70de474855ff51c3d1cc84013d87b"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            167
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/scientific-thinking-literature-review/SKILL.md",
+      "counterpart": "skills/scientific-thinking-literature-review/SKILL.md",
+      "hash": "aae27bbb95aebe2702f3a00d69a36d01103eac4b9fe6c71a776eb6562c13405c",
+      "blob": "d5b997b0bd2f943f30b514c046cc0969ee69db1b",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "Search question types, protocol, databases, evidence logs, duplicate hierarchy, screening, extraction, synthesis confidence, citation checks and pitfalls are retained in translation. No external databases or current claims were checked.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/scientific-thinking-literature-review/SKILL.md",
+          "blob": "d5b997b0bd2f943f30b514c046cc0969ee69db1b",
+          "hash": "aae27bbb95aebe2702f3a00d69a36d01103eac4b9fe6c71a776eb6562c13405c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            184
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "Search question types, protocol, databases, evidence logs, duplicate hierarchy, screening, extraction, synthesis confidence, citation checks and pitfalls are retained in translation. No external databases or current claims were checked.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/scientific-thinking-literature-review/SKILL.md",
+          "blob": "dd240c89bcabf71bbe1d181fbb7ba3c0d7935729",
+          "hash": "380918f545c7e9b297b23bee4a0432deba977acbdb217232bf1ab9d5aa3c562e"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            193
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/scientific-thinking-scholar-evaluation/SKILL.md",
+      "counterpart": "skills/scientific-thinking-scholar-evaluation/SKILL.md",
+      "hash": "0ad3da570cbdb4896b4be5b3bb2070eae229e8d4d5fadc0d0665a5581b9e4531",
+      "blob": "28dd79b6f059dc0f37dc80990a13308c34e42044",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The repeatable nine-dimension rubric, review sequence and output are retained. Translation/frontmatter are the material differences; scores are proposed judgments rather than an empirically validated measurement.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/scientific-thinking-scholar-evaluation/SKILL.md",
+          "blob": "28dd79b6f059dc0f37dc80990a13308c34e42044",
+          "hash": "0ad3da570cbdb4896b4be5b3bb2070eae229e8d4d5fadc0d0665a5581b9e4531"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            159
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The repeatable nine-dimension rubric, review sequence and output are retained. Translation/frontmatter are the material differences; scores are proposed judgments rather than an empirically validated measurement.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/scientific-thinking-scholar-evaluation/SKILL.md",
+          "blob": "170c287ab81f0050f76d4bc44e7f6e3759d1a0df",
+          "hash": "079ed9182c086fbb2168b723f36cb167d4cb2272a10a41b131f38945d2f0b145"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            161
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/search-first/SKILL.md",
+      "counterpart": "skills/search-first/SKILL.md",
+      "hash": "6aaa73e9246f0ec095b035dca71809854ed70707fbec19f18640a11d026dbb7e",
+      "blob": "80308650879d780d51187e32ac95888f2b049b6d",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The availability preflight, local/registry/MCP/skill/GitHub search, researcher route, adopt/extend/compose/build decision, planner/architect integration and iterative discovery examples are retained. This is the existing research-before-building mechanism; registries/GitHub/tools were not queried.",
+      "candidate_keys": [
+        "ecc-research-before-building"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/search-first/SKILL.md",
+          "blob": "80308650879d780d51187e32ac95888f2b049b6d",
+          "hash": "6aaa73e9246f0ec095b035dca71809854ed70707fbec19f18640a11d026dbb7e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            181
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The availability preflight, local/registry/MCP/skill/GitHub search, researcher route, adopt/extend/compose/build decision, planner/architect integration and iterative discovery examples are retained. This is the existing research-before-building mechanism; registries/GitHub/tools were not queried.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/search-first/SKILL.md",
+          "blob": "3d2669e71ba54afba95defb05080253058190600",
+          "hash": "76835db48dd910061d2e4271b1151793d2fddbabeb2d2866eed068b3580c55d5"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            183
+          ]
+        ]
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/security-bounty-hunter/SKILL.md",
+      "counterpart": "skills/security-bounty-hunter/SKILL.md",
+      "hash": "be44d0cad30ce2ea946b1bf983483cc9a867a45744f622d433ddcdaa275b1047",
+      "blob": "a84f66992ebe3c60a9796cc833a2869a2c0620bf",
+      "disposition": "analyzed",
+      "depth": "complete-japanese-skill-canonical-delta",
+      "reason": "The remote reachability/user-controlled-scope filter, low-signal exclusions, end-to-end source path, safe PoC, duplicate check, bounty scope, report structure and quality gate are retained. “Use when” is omitted and origin/version move top-level. No repository, vulnerability target or bounty program was audited.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/security-bounty-hunter/SKILL.md",
+          "blob": "a84f66992ebe3c60a9796cc833a2869a2c0620bf",
+          "hash": "be44d0cad30ce2ea946b1bf983483cc9a867a45744f622d433ddcdaa275b1047"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            99
+          ]
+        ],
+        "comparison_basis": "Full Japanese skill and its paired canonical English skill were read and compared for method, examples, metadata and material omissions/adaptations at the pinned commit. SHA-256 and Git blob identities were checked against the frozen checkout and state; no behavior is inferred from names or hashes.",
+        "content_role_and_conclusion": "The remote reachability/user-controlled-scope filter, low-signal exclusions, end-to-end source path, safe PoC, duplicate check, bounty scope, report structure and quality gate are retained. “Use when” is omitted and origin/version move top-level. No repository, vulnerability target or bounty program was audited.",
+        "execution": "Static frozen-source text/code comparison only; no source commands, skills, scripts, tests, builds, APIs, providers or external actions were run.",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/security-bounty-hunter/SKILL.md",
+          "blob": "ea62db8b0b58af0646c4ab3f5f147136122fd156",
+          "hash": "c94945165ca16ec06a04727dcbcf7a7593810d83fe168247c9c2d88c5a078611"
+        },
+        "canonical_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ]
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "candidate_update_suggestions": [],
+  "curation_recommendations": [
+    {
+      "candidate_key": "ecc-all-reviewer-conjunction",
+      "source_path": "docs/ja-JP/skills/santa-method/SKILL.md",
+      "recommendation": "Existing conjunction candidate matches the same-rubric/same-artifact both-must-pass gate. Source also contains a separate sample/failure-classification/batch-fix/resample loop; keep it an enrichment or consider separately only if desired, since cited metrics were not reproduced."
+    },
+    {
+      "candidate_key": "ecc-deterministic-fallback",
+      "source_path": "docs/ja-JP/skills/regex-vs-llm-structured-text/SKILL.md",
+      "recommendation": "Existing deterministic fallback candidate matches parser-first, confidence-based LLM escalation and revalidation; enrich with per-item routing/thresholds rather than duplicate."
+    },
+    {
+      "candidate_key": "ecc-research-before-building",
+      "source_path": "docs/ja-JP/skills/search-first/SKILL.md",
+      "recommendation": "Existing research-before-building candidate matches availability/search/adopt-extend-compose-build; preserve the researcher handoff as bounded enrichment, not a duplicate."
+    },
+    {
+      "candidate_key": "ecc-variants-optional-capability-fault-isolation",
+      "source_path": "docs/ja-JP/skills/openclaw-persona-forge/SKILL.md",
+      "recommendation": "Only adjacent: user-facing capability detection with text fallback differs from isolating an optional runtime import. Do not treat as exact equivalence."
+    }
+  ],
+  "editorial_note": "No new candidate is proposed by these 40 Japanese skills. Existing method matches above are comparison targets; locale differences and omissions are evidence, not new methods by themselves."
+}

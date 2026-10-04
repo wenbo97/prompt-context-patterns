@@ -3,6 +3,8 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { ROOT, readJson, validateCatalog, writeText } from './lib.mjs';
 import { REVIEW_KINDS, validateFileOutcome } from './review-coverage.mjs';
+import { sourceRoot, sourceLineCount } from './sources.mjs';
+import { validateDecisions } from './decisions.mjs';
 
 const allowPending = process.argv.includes('--allow-pending'); const verifySources = process.argv.includes('--sources');
 const catalog = readJson('_data/patterns.json'); const errors = validateCatalog(catalog);
@@ -19,6 +21,13 @@ for (const p of catalog.filter(p => p.status === 'active')) for (const lang of [
 }
 const review = readJson('docs/audit/legacy-review.json');
 if (new Set(review.patterns.filter(p => Number.isInteger(p.id)).map(p => p.id)).size !== 206) errors.push('Legacy numeric audit is incomplete');
+if (!allowPending) {
+  const reportNames = ['harvest-composio.json', 'harvest-ecc.json', 'harvest-ecc-variants.json', 'harvest-core.json', 'harvest-gstack.json'];
+  const missingMaps = ['integration-decisions.json', 'new-id-map.json'].filter(name => !fs.existsSync(path.join(ROOT, 'docs/audit', name)));
+  if (missingMaps.length) errors.push(`Editorial integration incomplete: ${missingMaps.join(', ')}`);
+  else errors.push(...validateDecisions(reportNames.flatMap(name => readJson(`docs/audit/${name}`).candidates),
+    readJson('docs/audit/integration-decisions.json'), readJson('docs/audit/new-id-map.json'), catalog));
+}
 for (const name of ['harvest-composio.json', 'harvest-ecc.json', 'harvest-ecc-variants.json', 'harvest-core.json', 'harvest-gstack.json']) {
   const file = path.join(ROOT, 'docs/audit', name);
   if (!fs.existsSync(file)) { if (!allowPending) errors.push(`Research report missing: ${name}`); continue; }
@@ -53,15 +62,15 @@ if (!allowPending) {
 }
 let evidenceChecked = 0; let rangesChecked = 0;
 if (verifySources) {
-  const sourceRoot = process.env.SKILLS_ROOT || 'D:/Projects/open-skills'; const cachedLines = new Map();
+  const sourcesRoot = sourceRoot(); const cachedLines = new Map();
   for (const p of catalog.filter(p => p.status === 'active')) for (const source of p.sources) {
     if (!source.repo) continue;
     const key = `${source.repo}/${source.commit}/${source.path}`;
     if (!cachedLines.has(key)) {
-      const dir = path.join(sourceRoot, ...source.repo.split('/'));
+      const dir = path.join(sourcesRoot, ...source.repo.split('/'));
       const result = spawnSync('git', ['-C', dir, 'show', `${source.commit}:${source.path}`], { maxBuffer: 20 * 1024 * 1024 });
       if (result.status !== 0) { errors.push(`Source file cannot be read: ${key}`); continue; }
-      cachedLines.set(key, result.stdout.toString('utf8').replace(/\r\n/g, '\n').split('\n').length); evidenceChecked++;
+      cachedLines.set(key, sourceLineCount(result.stdout)); evidenceChecked++;
     }
     const lineCount = cachedLines.get(key);
     if (source.end_line > lineCount) errors.push(`Source range exceeds file: ${key}`);

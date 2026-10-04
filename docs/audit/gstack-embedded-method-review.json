@@ -1,0 +1,251 @@
+{
+  "repo": "garrytan/gstack",
+  "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+  "scope": "Relevant embedded method review and curation notes for the gstack source closure. These are source-pattern judgments, not correctness audits of the upstream product.",
+  "method_reviews": [
+    {
+      "candidate_key": "gstack-capability-tiered-instruction-digest",
+      "decision": "provisional distinct candidate",
+      "method": "When a host cannot install or invoke the full skill suite but can load a generic instruction file, provide a generated, host-neutral, versioned and byte-bounded rules digest. Explain that workflows, reviews and evals remain in the full suite; print its path and leave copying to the user so setup never overwrites AGENTS.md.",
+      "sources": [
+        {
+          "path": "setup",
+          "lines": "94-104, 121-141",
+          "sha256": "41c2d255d5f83ab25812a5a4f4ba725b94d1ff9608847fd180bd57ef7f82ecb7",
+          "review": "Exact helper and OpenClaw/Hermes branches read."
+        },
+        {
+          "path": "scripts/gen-agents-digest.ts",
+          "lines": "3-24, 37-75",
+          "sha256": "34c8180a663e6304c4fc49320772470d7ced4cc0b025a3f23db2bd1818c92320",
+          "review": "Generator contract and entire digest template read; 2,048-byte cap and user-copy-only boundary inspected."
+        },
+        {
+          "path": "agents-digest/gstack-AGENTS.md",
+          "lines": "1-35",
+          "sha256": "6af3eddd107765dd29d29fdf7e7ee5b04785e8d7056ef7980ad681c5bf445c42",
+          "review": "Complete rendered digest read."
+        }
+      ],
+      "curation": [
+        {
+          "target": "_data/patterns.json id 100, Progressive Disclosure Architecture",
+          "comparison": "That pattern keeps branch-specific detail unloaded until needed inside a capable host. This method substitutes a limited rules-only package when the host cannot install the full workflow suite. Related, but not the same operation."
+        },
+        {
+          "target": "_data/patterns.json id 173 / composio-unavailable-capability",
+          "comparison": "Those patterns report a requested capability absent and take a documented fallback. This method is a deliberate compatibility tier that still distributes general behavioral rules while explicitly withholding unavailable workflows."
+        },
+        {
+          "target": "composio-capability-branch-routing; ecc-variants-optional-capability-fault-isolation",
+          "comparison": "Those branch on an inspected artifact/runtime capability; this method branches on host integration support and changes the delivered instruction package."
+        }
+      ],
+      "recommendation": "Admit as a distinct pattern, cross-linked to #100 and #173. Keep the user-copy/non-overwrite boundary and explicit loss of workflow capability in the teaching contrast."
+    },
+    {
+      "candidate_key": "gstack-persona-grounded-peer-benchmarking",
+      "decision": "retain as distinct candidate",
+      "source": {
+        "path": "plan-devex-review/SKILL.md",
+        "lines": "883-921",
+        "sha256": "0eeb6052275f108ad6360917b4794edaaa6b1ba4486d67a4a6477f14866b7796",
+        "section": "Competitive DX Benchmarking"
+      },
+      "curation": [
+        {
+          "target": "gstack-comparable-coverage-trends",
+          "comparison": "The existing candidate compares successive health reports under the same check set and measurement definition. Peer benchmarking compares different products’ documented user journeys, start/result boundaries, human versus automated time, estimates and unknowns."
+        },
+        {
+          "target": "ecc-paired-baseline-evaluation",
+          "comparison": "That candidate evaluates two revisions on the same fixed trial panel and preserves paired scores. It does not define an external competitor, user persona, onboarding journey or first-use boundary."
+        },
+        {
+          "target": "ecc-fixed-context-scoring",
+          "comparison": "That candidate isolates score context to prevent one candidate’s verdict from contaminating another. It is an evaluator-isolation method, not a product-journey benchmark."
+        },
+        {
+          "target": "core-matt-ui-comparison-context",
+          "comparison": "That candidate holds a real application host and data constant while comparing UI structures. It shares an apples-to-apples concern but not persona-grounded onboarding evidence or duration claims."
+        }
+      ],
+      "recommendation": "Keep distinct. Numeric boundaries and evidence types are central to peer journey comparison; do not merge into trend reporting or paired prompt-evaluation methods."
+    }
+  ],
+  "non_candidate_relationships": [
+    {
+      "path": "gstack/llms.txt",
+      "sha256": "5f95c08699a041feb38ac78829ab06a6332f840ce0f73f12853c2b25de830709",
+      "review": "Complete generated index read; the full generator scripts/gen-llms-txt.ts and current output were inspected.",
+      "finding": "It maps capabilities to concise descriptions and task-family command lists so agents can select a detailed reference without crawling every workflow.",
+      "curation": "No new candidate. Use as another current example for legacy #100 Progressive Disclosure Architecture, which already has matching progressive reference candidates in core and Composio reports."
+    },
+    {
+      "path": "supabase/functions/community-pulse/index.ts",
+      "sha256": "5f03721685c2067193fc4c45c75f50333ac2cbd8b457b3270cfc7f808e88ffa8",
+      "review": "Complete file read.",
+      "finding": "The API distinguishes current success, stale cached data and unavailable recomputation rather than showing failed reads as healthy zero; it also aggregates low-cardinality community data and applies a k-anonymity threshold to domains/layers.",
+      "curation": "No new prompt/context candidate: this is API/data behavior, not an instruction workflow. It may serve as a domain example when curating evidence/freshness patterns; no security or correctness audit is claimed."
+    }
+  ],
+  "support_content_reviews": [
+    {
+      "group": "supabase/",
+      "files": [
+        {
+          "path": "supabase/config.sh",
+          "sha256": "5d7a5fe956cc36f4f2e26bbc3ccbe63d5b9d257e471cb1d9f7fff32ac49d35f2"
+        },
+        {
+          "path": "supabase/functions/community-pulse/index.ts",
+          "sha256": "5f03721685c2067193fc4c45c75f50333ac2cbd8b457b3270cfc7f808e88ffa8"
+        },
+        {
+          "path": "supabase/functions/telemetry-ingest/index.ts",
+          "sha256": "85b30c6eb37b80ce88d575f7728452c0d7bc5bf5cace094b96e7bebda4bdc314"
+        },
+        {
+          "path": "supabase/functions/update-check/index.ts",
+          "sha256": "5afc71c5643b3b8a0a45887126f56b80b878a43e33807166d4c93312f558dc52"
+        },
+        {
+          "path": "supabase/migrations/001_telemetry.sql",
+          "sha256": "15d2e14d47790f9d3a3b7bee945bef66dedafec444450034e50eba3cd2255740"
+        },
+        {
+          "path": "supabase/migrations/002_tighten_rls.sql",
+          "sha256": "617febf56245a8df057266db08fa1737aa7ee203feed09971238e0bacc353cb3"
+        },
+        {
+          "path": "supabase/migrations/003_installations_upsert_policy.sql",
+          "sha256": "96a14e8ba8ef259385ce45049ed4798e6e56325a3526089a2f948fd7d4101471"
+        },
+        {
+          "path": "supabase/migrations/004_attack_telemetry.sql",
+          "sha256": "26734c75134dae143c8a34ea4210e181e79d7b900be6981db877305422085e36"
+        },
+        {
+          "path": "supabase/verify-rls.sh",
+          "sha256": "3644d825a936688f2022b09a578517496cc5fb78cfdcb06fac8567f71f53169d"
+        }
+      ],
+      "review": "All nine cached source files were read in bounded complete-text batches: edge handlers, schema/RLS migrations, public config and a manual post-deploy RLS smoke script. They implement telemetry/data service behavior, not prompt/context methods. No endpoint, migration or security correctness audit was performed; verify-rls.sh was not run."
+    },
+    {
+      "group": "browser-skills/hackernews-frontpage/",
+      "files": [
+        {
+          "path": "browser-skills/hackernews-frontpage/SKILL.md",
+          "sha256": "1a4e91d00ffdbdd38d2dc2986cf764b6d7d4d9348fdce19f2c60e92fa4a564da"
+        },
+        {
+          "path": "browser-skills/hackernews-frontpage/_lib/browse-client.ts",
+          "sha256": "bb1056c58e442e63558fdfbab2a20bffa8165eaebc246421757f4ce86895e8c6"
+        },
+        {
+          "path": "browser-skills/hackernews-frontpage/fixtures/hn-2026-04-26.html",
+          "sha256": "dc7985d5eff03ea4c4cccd7b6625f6eecaec809093fc8b69e5a9abeb84c9da8f"
+        },
+        {
+          "path": "browser-skills/hackernews-frontpage/script.test.ts",
+          "sha256": "e2c6dc8a6bad7e0ea0c22081111c802084ae4083d6fc53d3041659f59945082c"
+        },
+        {
+          "path": "browser-skills/hackernews-frontpage/script.ts",
+          "sha256": "fbd172c8c1ff7be431d561df02c3e3d379029657f573aee5a4cb5c09f35c0935"
+        }
+      ],
+      "review": "All three complete files were read, including the static five-story HTML fixture. They form a parser, tests and domain fixture; no agent prompt workflow was present and no script or test was run."
+    },
+    {
+      "group": "docs/images/",
+      "files": [
+        {
+          "path": "docs/images/github-2013.png",
+          "sha256": "e6b0cdf51d049ac5da5dc0839881ab173b993ac3207154723a3ed37a5aa305f3"
+        },
+        {
+          "path": "docs/images/github-2026.png",
+          "sha256": "b7aee8baedc4cefdf2928ab726474f93e370a6f84e2eeb1e1b30f3d55bae07fe"
+        }
+      ],
+      "review": "Both actual charts were rendered and viewed. They show 772 GitHub contributions in 2013 and 1,237 in the displayed last-year window; the README attributes the difference to tooling, a causal claim not independently established by this inspection. Images are narrative assets, not prompt methods."
+    },
+    {
+      "group": "large-history-documents",
+      "files": [
+        {
+          "path": "CHANGELOG.md",
+          "sha256": "4db268164955f41883cc2fa2d1bd5124bf2246294c95dc614df6ec1dca2e52ba",
+          "inspection": "bounded structural/content sample; not full semantic review"
+        },
+        {
+          "path": "TODOS.md",
+          "sha256": "84b25c0a6b4e7a65a92eedb16fccc8307e7a67a12f690dbaa98d6c9310cf61f2",
+          "inspection": "bounded structural/content sample; not full semantic review"
+        }
+      ],
+      "review": "CHANGELOG.md is an append-only release archive (11,066 lines, 1,248 headings); current, middle and earliest entries were sampled. TODOS.md is a large backlog/deferral archive (4,597 lines, 306 headings); its current priority section and representative historical entries were read. Both are classified by document role, not treated as current normative methods; no exhaustive historical correctness review is claimed."
+    },
+    {
+      "group": "remaining-small-root-support",
+      "files": [
+        {
+          "path": ".env.example",
+          "sha256": "39fb695d7b1345eaaffe3fdf62cb4f45c0daa27fcb54230e08eb40338ef1aeb9"
+        },
+        {
+          "path": ".gitattributes",
+          "sha256": "a4624d37f72e547372e146aab1a1c760e9f3467fd003ccbd233b088a295a18ea"
+        },
+        {
+          "path": ".gitignore",
+          "sha256": "ede777a6697a8aed4eba4d147de24dca82e182d4671640baeef1c3ef9994d300"
+        },
+        {
+          "path": ".gitlab-ci.yml",
+          "sha256": "b4af153c555a09a624a1e252516c2b0fea7125db87c79bfd641a064a8d344194"
+        },
+        {
+          "path": ".osv-scanner.toml",
+          "sha256": "d106f58742cc90474f024b77373603946c3f7f52c042c1eb8257659058b3e014"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "a8f18234ebac91ae2c36794db1ed2244b2778bef0dec34354b6a77154d5eb465"
+        },
+        {
+          "path": "bun.lock",
+          "sha256": "8176cc551a175129d40fff9c64033b99f1e5a39bbc21ed9dc1355f300340a060"
+        },
+        {
+          "path": "bunfig.toml",
+          "sha256": "acbd20ec51aef5f450d045e3a6004342640e8a979c8ed5f18c1b933dc4b1dec7"
+        },
+        {
+          "path": "connect-chrome",
+          "sha256": "9d6e9df42d0ae82d66f22e2d25f2839a0b369a30ce75d4fbf8abe661b8789d03"
+        },
+        {
+          "path": "design-html/vendor/pretext.js",
+          "sha256": "c85e755d86d33718e66978d18a2733eb5d11cf44747f58846bd390ed0d6f24e7"
+        },
+        {
+          "path": "licenses/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "patches/playwright-core@1.62.1.patch",
+          "sha256": "7de556c0bac215897ca87972ae4dde087a9d7c19f67835e270379edc1854132f"
+        },
+        {
+          "path": "test-setup.ts",
+          "sha256": "f4d66d426c99467a930b14376b8b46f3316e4987c3c0732b7819a00949940274"
+        }
+      ],
+      "review": "Configuration, lock data, metadata, license, patch, test preload and vendored Pretext use were inspected for their actual consumer. These are infrastructure, generated dependency data, legal boilerplate or UI runtime support, not separate reusable prompt/context mechanisms. The OSV suppression config and test-preload behavior were not audited for correctness."
+    }
+  ],
+  "execution_boundary": "No source skill, setup command, build, eval, test, Supabase request or RLS smoke script was executed."
+}

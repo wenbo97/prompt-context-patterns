@@ -2,6 +2,16 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 
+// Exercise integrated content as well as the established reference page.
+const additions = JSON.parse(fs.readFileSync('_data/patterns.json', 'utf8'))
+  .filter(pattern => pattern.status === 'active' && pattern.id >= 207);
+const longestAddition = additions.reduce((selected, pattern) => {
+  const length = ['en', 'zh'].reduce((total, lang) => total + fs.statSync(`_patterns/${pattern.id}.${lang}.md`).size, 0);
+  return !selected || length > selected.length ? { id: pattern.id, length } : selected;
+}, null);
+const integratedReadingRoutes = longestAddition
+  ? [`catalog/patterns/${longestAddition.id}/`, `catalog/patterns/${longestAddition.id}-zh/`] : [];
+
 test('search, facets, language and loaded results survive detail navigation and Back', async ({ page }) => {
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   await page.goto('catalog/browse/');
@@ -33,7 +43,7 @@ test('keyboard controls and reduced motion work under 200% equivalent reflow', a
   const session = await context.newCDPSession(page);
   await session.send('Emulation.setDeviceMetricsOverride', { width: 640, height: 450, deviceScaleFactor: 2, mobile: false, screenWidth: 1280, screenHeight: 900 });
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  for (const route of ['', 'catalog/browse/?lang=zh', 'catalog/patterns/23-zh/', 'sources-zh/']) {
+  for (const route of ['', 'catalog/browse/?lang=zh', 'catalog/patterns/23-zh/', 'sources-zh/', ...integratedReadingRoutes]) {
     await page.goto(route);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBeTruthy();
     expect(await page.evaluate(() => getComputedStyle(document.documentElement).scrollbarColor)).not.toBe('auto');
@@ -91,7 +101,7 @@ test('static fallback and old fragment entry remain usable without JavaScript', 
 
 for (const width of [375, 768, 1280]) test(`reading surfaces are accessible at${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
-  for (const route of ['', 'catalog/browse/', 'catalog/patterns/23/', 'sources/']) {
+  for (const route of ['', 'catalog/browse/', 'catalog/patterns/23/', 'sources/', ...integratedReadingRoutes]) {
     await page.goto(route); if (route.includes('browse')) await expect(page.locator('#pb-list > li')).toHaveCount(30);
     const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(results.violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => n.target) }))).toEqual([]);

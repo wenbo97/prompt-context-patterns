@@ -926,5 +926,145 @@
         "role": "observed-example"
       }
     ]
+  },
+  {
+    "key": "gstack-persona-grounded-peer-benchmarking",
+    "name_en": "Persona-grounded peer benchmarking",
+    "name_zh": "以目标用户旅程为基准的同类比较",
+    "category": "evaluation",
+    "tags": [
+      "developer-experience",
+      "evidence-boundary",
+      "comparability"
+    ],
+    "disposition": "active",
+    "reason_en": "The reviewed DevEx method specifies comparable journey boundaries, evidence labels, uncertainty handling, and a target decision gate. Cross-corpus consolidation remains pending.",
+    "reason_zh": "已审阅的 DevEx 方法明确规定旅程边界、证据标注、不确定性处理和目标选择关口；仍待跨仓库整合。",
+    "content": {
+      "en": {
+        "description": "Compare developer journeys only after naming the persona and the path from documented start to first understood useful result; keep estimated and unknown times explicit.",
+        "scenario": "A team claims its SDK onboarding is faster than peers, although its quickstart paths require different setup and stop at different results.",
+        "mechanism": "Name the target developer, documented start, and first useful result. Record the product and inspected peers with their steps, time, evidence type, journey boundary, design choice, and source. Separate human onboarding from automated execution. Compare durations only when boundaries match; otherwise disclose the mismatch and compare design choices. Label estimates and unknowns, and do not infer that an unmentioned step takes no time. Ask the user to choose the target after the comparison, then carry that answer into later review.",
+        "bad": "Peer A completes a warm canned demo in two minutes, and Peer B gives no duration. Our fresh install takes five minutes, so claim that Peer A is 2.5 times faster and Peer B has no setup wait.",
+        "good": "For the Python application developer, compare each documented path from a clean install to the first result on the developer’s own callable. Mark Peer A’s scaffolded demo as a different endpoint, Peer B’s duration as unknown, and our fresh-install estimate as an estimate. Compare the closest peer’s relevant choices, cite the source steps, and ask which target fits before changing the plan.",
+        "why": "The comparison becomes useful for a specific developer while preserving what the documents show, what was estimated, and which journeys are actually comparable.",
+        "expected": "The review names the closest relevant peer and explains why, avoids numeric ranking across unlike endpoints, leaves unsupported durations unknown, and records the selected target before implementation changes.",
+        "boundaries": "A documented workflow or reviewer estimate does not establish observed onboarding time or product efficacy. Numeric comparisons require the same start and result boundary; peer silence is not evidence that a step is absent."
+      },
+      "zh": {
+        "description": "先说明面向哪类开发者，以及从文档起点到首次理解有用结果的完整路径，再比较体验；估算值和未知值都要明确标出。",
+        "scenario": "团队声称 SDK 入门比同类产品快，但各家的快速开始流程要求不同，结束位置也不相同。",
+        "mechanism": "明确目标开发者、文档中的起点和首次有用结果。逐项记录本产品及查阅到的同类产品，包括操作步骤、时间、证据类型、旅程边界、设计选择和来源。把人工上手时间与自动执行时间分开。只有起止边界一致时才比较时长；否则说明差异，转而比较设计选择。估算与未知都要标记，不能把文档未提到某步骤当作耗时为零。完成比较后先请用户选择目标，再将答案带入后续审查。",
+        "bad": "同类 A 的预热演示两分钟就结束，同类 B 没写耗时。我们的全新安装需要五分钟，所以结论写 A 快 2.5 倍，B 完全没有安装等待。",
+        "good": "对使用 Python 应用开发的目标人群，从干净安装开始，比较各家到首次评估用户自己函数的路径。注明 A 的演示使用脚手架、结果终点不同；B 的耗时未知；本产品的全新安装时间只是估算。说明最接近同类产品的设计选择并引用具体步骤，在修改计划之前询问用户适合哪个目标。",
+        "why": "这样既能围绕特定开发者提出建议，也能保留文档事实、估算依据和旅程之间的可比边界。",
+        "expected": "审查指出最相关的同类产品及原因，不给起止边界不同的流程做数字排名，不替未知数据编值，并在实施变更前记录用户选定的目标。",
+        "boundaries": "文档流程和审阅者估算不能证明实际观察到的上手时间，也不能证明产品有效。数字比较必须有相同起点与结果边界；同类文档没提及某步骤，不代表该步骤不存在。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 2,
+      "boundaries": 2
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "plan-devex-review/SKILL.md",
+        "start_line": 883,
+        "end_line": 921,
+        "section": "Competitive DX Benchmarking",
+        "license": "MIT",
+        "role": "normative-method"
+      }
+    ]
+  },
+  {
+    "key": "gstack-capability-tiered-instruction-digest",
+    "name_en": "Capability-tiered instruction digest",
+    "name_zh": "按宿主能力分层的指令摘要",
+    "category": "context",
+    "tags": [
+      "context",
+      "capability-fallback",
+      "portability"
+    ],
+    "disposition": "active",
+    "reason_en": "A rules-only integration tier is distinct from deferred loading: it preserves a small behavioral baseline when the host cannot install or invoke the full skill suite, and makes the missing workflows explicit.",
+    "reason_zh": "规则摘要层不同于延迟加载：当宿主无法安装或调用完整 skill 套件时，保留精简的行为准则，并明确缺失的工作流。",
+    "content": {
+      "en": {
+        "description": "Give hosts that can read instruction files but cannot run the full skill suite a small, versioned behavioral core.",
+        "scenario": "A team uses an agent host without slash-skill installation; copying every workflow into project context is expensive and can imply tools the host lacks.",
+        "mechanism": "Branch on host capability. Install the full suite where supported; otherwise offer a generated, byte-bounded digest of stable ethos, reuse rules and voice. Label it instruction-only, state which workflows require the full suite, include a visible version, and let the user copy it into a file the host actually reads without overwriting existing instructions.",
+        "bad": "Paste a short digest and tell the agent to run review, QA and deployment skills it cannot access.",
+        "good": "This host only reads project instructions, so offer the versioned 2 KB rules digest for user-controlled copy. State that it provides behavioral guidance only; link the complete suite for review, QA and deployment workflows.",
+        "why": "A portable behavioral baseline carries shared rules across hosts without implying access to missing tools or workflows.",
+        "expected": "The host receives only guidance it can follow, existing user instructions stay intact, and the route to full capabilities remains clear.",
+        "boundaries": "A digest does not supply tools, invocation schemas, multi-step workflows or evaluations. Confirm the target file is loaded; regenerate and recopy after upgrades. Its byte cap does not measure total session context."
+      },
+      "zh": {
+        "description": "为能读取指令文件、却无法运行完整 skill 套件的宿主提供小型、带版本的行为准则。",
+        "scenario": "团队使用不支持斜杠 skill 安装的代理宿主；把所有工作流塞入项目上下文既昂贵，也可能暗示宿主拥有实际缺少的工具。",
+        "mechanism": "先按宿主能力分支：受支持的宿主安装完整套件；否则提供生成式、限制字节数的稳定准则摘要，涵盖行为原则、复用顺序和表达规范。标明它仅提供指令，指出完整工作流需要完整套件，显示版本，并让用户自行复制到宿主确实读取的文件；不要覆盖已有指令。",
+        "bad": "粘贴一份简短摘要后，要求代理执行它无法调用的评审、QA 和部署 skill。",
+        "good": "这个宿主只读取项目指令，因此提供带版本的 2 KB 规则摘要供用户自行复制。说明它只提供行为准则；评审、QA 和部署工作流需使用完整套件。",
+        "why": "跨宿主复用一组行为准则，同时避免暗示宿主能访问缺失的工具或工作流。",
+        "expected": "宿主只得到自身能够遵循的指导，用户原有指令保持完整，也能清楚了解完整能力的获取方式。",
+        "boundaries": "摘要不提供工具、调用格式、多步骤工作流或评测。先确认目标文件会被宿主加载；升级后重新生成并复制。字节上限不等于整个会话的上下文用量。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "setup",
+        "start_line": 94,
+        "end_line": 104,
+        "section": "Instruction-only tier helper",
+        "license": "MIT",
+        "role": "observed-example"
+      },
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "setup",
+        "start_line": 121,
+        "end_line": 141,
+        "section": "OpenClaw and Hermes no-install host branches",
+        "license": "MIT",
+        "role": "observed-example"
+      },
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "scripts/gen-agents-digest.ts",
+        "start_line": 3,
+        "end_line": 24,
+        "section": "Instruction-only tier generation contract",
+        "license": "MIT",
+        "role": "observed-example"
+      },
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "agents-digest/gstack-AGENTS.md",
+        "start_line": 1,
+        "end_line": 35,
+        "section": "Versioned rules-only digest",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
   }
 ]

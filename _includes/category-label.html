@@ -1,0 +1,2 @@
+{%- assign category_record = site.data.categories | where: 'key', include.key | first -%}
+{%- if page.lang == 'zh' -%}{{- category_record.name_zh | escape -}}{%- else -%}{{- category_record.name_en | escape -}}{%- endif -%}

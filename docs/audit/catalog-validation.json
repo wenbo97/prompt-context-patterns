@@ -1,7 +1,15 @@
 {
-  "validated_at": "2026-10-03T07:47:51.037Z",
-  "staged_content_only": true,
-  "evidence_files_checked": 35,
-  "evidence_ranges_checked": 73,
+  "validated_at": "2026-10-04T20:36:19.450Z",
+  "staged_content_only": false,
+  "review_scope": "Content-appropriate review depth; no comprehensive upstream implementation audit",
+  "source_outcomes_checked": 9806,
+  "review_kind_counts": {
+    "full-semantic": 2472,
+    "verified-equivalence": 986,
+    "difference-review": 2257,
+    "scoped-relevance": 4091
+  },
+  "evidence_files_checked": 334,
+  "evidence_ranges_checked": 553,
   "errors": []
 }

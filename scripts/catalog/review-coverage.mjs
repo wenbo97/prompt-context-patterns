@@ -15,5 +15,6 @@ export function validateFileOutcome(row, expectedHash, label) {
   if (row.hash !== expectedHash) errors.push(`Source hash mismatch: ${label}`);
   if (!REVIEW_KINDS.includes(row.review_kind)) errors.push(`Missing or invalid review kind: ${label}`);
   if (!hasEvidence(row.review_evidence)) errors.push(`Review evidence missing: ${label}`);
+  if (row.review_evidence?.refresh_required) errors.push(`Review evidence refresh incomplete: ${label}`);
   return errors;
 }

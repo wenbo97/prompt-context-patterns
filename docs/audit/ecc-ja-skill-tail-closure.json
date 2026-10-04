@@ -1,0 +1,1701 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "partition": "ja-skills-tail",
+  "source_report": "docs/audit/ecc-variants-state.json",
+  "coverage_updates": [
+    {
+      "path": "docs/ja-JP/skills/security-review/SKILL.md",
+      "counterpart": "skills/security-review/SKILL.md",
+      "hash": "b233882c77e135da8d2b0d443cf30bc71c32088a1495b893854a130e93c20542",
+      "blob": "7d34514cd400933e5cafcaa18d222e357b04e2ea",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese checklist tracks the review sequence but omits the canonical CSP hardening guidance: it lacks the warning against defaulting to unsafe-eval/unsafe-inline and the base-uri, object-src and frame-ancestors restrictions. It also omits metadata.origin and the literal-$1 argument-substitution warning; a ZodError property example differs (.errors vs .issues) and is version-sensitive. This is a material security-control parity gap, not evidence of runtime behavior. || JA: 日本語版はレビュー手順を概ね追う一方、CSPの重要な強化説明を省略し、unsafe-eval/unsafe-inlineを既定にしない警告やbase-uri、object-src、frame-ancestorsの制限がない。metadata.originと引数で文字列$1が置換される警告も省略され、ZodError例のプロパティ（.errors/.issues）にも差がある。これはセキュリティ制御の差分であり、実行時挙動の証明ではない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/security-review/SKILL.md",
+          "blob": "7d34514cd400933e5cafcaa18d222e357b04e2ea",
+          "hash": "b233882c77e135da8d2b0d443cf30bc71c32088a1495b893854a130e93c20542"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/security-review/SKILL.md",
+          "blob": "3f26b0df65661425de4e5c40c295e04edcad7a83",
+          "hash": "b9eb6416eebc8dda046674f0a2dbb3be88aff526d182b60a0f55998d3d6d0d8d"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            494
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            511
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese checklist tracks the review sequence but omits the canonical CSP hardening guidance: it lacks the warning against defaulting to unsafe-eval/unsafe-inline and the base-uri, object-src and frame-ancestors restrictions. It also omits metadata.origin and the literal-$1 argument-substitution warning; a ZodError property example differs (.errors vs .issues) and is version-sensitive. This is a material security-control parity gap, not evidence of runtime behavior. || JA: 日本語版はレビュー手順を概ね追う一方、CSPの重要な強化説明を省略し、unsafe-eval/unsafe-inlineを既定にしない警告やbase-uri、object-src、frame-ancestorsの制限がない。metadata.originと引数で文字列$1が置換される警告も省略され、ZodError例のプロパティ（.errors/.issues）にも差がある。これはセキュリティ制御の差分であり、実行時挙動の証明ではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/security-review/cloud-infrastructure-security.md",
+      "counterpart": "skills/security-review/cloud-infrastructure-security.md",
+      "hash": "7890fc771e989994366191f590a3783e45a91dc66693110dd349aae06ff4a37c",
+      "blob": "9f7a2df8adb49586d1e0d4b9f4b9e2bbcfbb9580",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese document preserves the least-privilege, MFA, secrets, network, logging, CI/OIDC, WAF, backup and release-review checklist. Cloud commands, provider/version details and operational outcomes remain frozen source guidance; none was run or checked against current provider docs. || JA: 最小権限、MFA、秘密情報、ネットワーク、ログ、CI/OIDC、WAF、バックアップ、リリース確認の各項目は日本語版に保たれている。クラウドコマンド、プロバイダー／版の記述、運用結果は固定文書の説明に限り、実行も最新仕様との照合もしていない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/security-review/cloud-infrastructure-security.md",
+          "blob": "9f7a2df8adb49586d1e0d4b9f4b9e2bbcfbb9580",
+          "hash": "7890fc771e989994366191f590a3783e45a91dc66693110dd349aae06ff4a37c"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/security-review/cloud-infrastructure-security.md",
+          "blob": "12634421765e25f961913dd380190ebfa970dd64",
+          "hash": "7d9a83852475a9396e04c59c73df84ac24ee0f41322016de7c11c62138c2a8ca"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            361
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            361
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese document preserves the least-privilege, MFA, secrets, network, logging, CI/OIDC, WAF, backup and release-review checklist. Cloud commands, provider/version details and operational outcomes remain frozen source guidance; none was run or checked against current provider docs. || JA: 最小権限、MFA、秘密情報、ネットワーク、ログ、CI/OIDC、WAF、バックアップ、リリース確認の各項目は日本語版に保たれている。クラウドコマンド、プロバイダー／版の記述、運用結果は固定文書の説明に限り、実行も最新仕様との照合もしていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/seo/SKILL.md",
+      "counterpart": "skills/seo/SKILL.md",
+      "hash": "073e9ec20e283a6ba98b790bcf753a0f327cbdb6f51089181e9606e1a667c445",
+      "blob": "eacb8943d41ad5e006e13ad155d21c75804e2e4b",
+      "disposition": "analyzed",
+      "reason": "EN: The complete translated audit preserves the technical/onsite review order, checklist, metrics, structured data, mapping, anti-patterns and output pattern. Thresholds and ranking guidance are statements in this frozen text and were not checked for current validity. || JA: 技術面／サイト内監査の順序、チェックリスト、指標、構造化データ、マッピング、アンチパターン、出力形式は全文で対応している。閾値やランキング助言は固定文書内の記述であり、現在の妥当性は検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/seo/SKILL.md",
+          "blob": "eacb8943d41ad5e006e13ad155d21c75804e2e4b",
+          "hash": "073e9ec20e283a6ba98b790bcf753a0f327cbdb6f51089181e9606e1a667c445"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/seo/SKILL.md",
+          "blob": "a4032a5b5a98c4b09eabf4e4f8971ed664887496",
+          "hash": "4b744d2ff5c9313e903e4e5139322cc98adb9f9778a7231d4826216ab0f6873a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            154
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            155
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The complete translated audit preserves the technical/onsite review order, checklist, metrics, structured data, mapping, anti-patterns and output pattern. Thresholds and ranking guidance are statements in this frozen text and were not checked for current validity. || JA: 技術面／サイト内監査の順序、チェックリスト、指標、構造化データ、マッピング、アンチパターン、出力形式は全文で対応している。閾値やランキング助言は固定文書内の記述であり、現在の妥当性は検証していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/skill-comply/SKILL.md",
+      "counterpart": "skills/skill-comply/SKILL.md",
+      "hash": "e74658abc270f4f298ab037dce9d53a9ccfe2c3c94425dbf78e21f1e1cfca3a6",
+      "blob": "66838094819821e3bc2e80e4da3bd13efd3a900f",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese guide preserves scenario generation by strictness, tool-trace classification, deterministic ordering, reporting and dry/full/custom invocation shapes. No evaluation was run, so the text supplies no measured evidence about classifier accuracy, cost or product efficacy. || JA: 厳格度別シナリオ生成、ツールトレースの分類、決定的な順序、レポート、dry/full/customの実行形態は日本語版に対応している。評価は実行しておらず、分類精度、費用、製品効果の実測根拠にはならない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/skill-comply/SKILL.md",
+          "blob": "66838094819821e3bc2e80e4da3bd13efd3a900f",
+          "hash": "e74658abc270f4f298ab037dce9d53a9ccfe2c3c94425dbf78e21f1e1cfca3a6"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/skill-comply/SKILL.md",
+          "blob": "303863e302fe9ff340197fc7442a86bacbb7f425",
+          "hash": "e26cbbc30a32ea8c76c56d09ba9a3a921e82ad6e2360f825ec63d3f8df6b1f5a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            60
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese guide preserves scenario generation by strictness, tool-trace classification, deterministic ordering, reporting and dry/full/custom invocation shapes. No evaluation was run, so the text supplies no measured evidence about classifier accuracy, cost or product efficacy. || JA: 厳格度別シナリオ生成、ツールトレースの分類、決定的な順序、レポート、dry/full/customの実行形態は日本語版に対応している。評価は実行しておらず、分類精度、費用、製品効果の実測根拠にはならない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/skill-scout/SKILL.md",
+      "counterpart": "skills/skill-scout/SKILL.md",
+      "hash": "ae63045de9c825fb6e59b598636debc4d8cd44e7a0d21df49292b53164e16c8e",
+      "blob": "bf4ac15c99d1bc97109fa929c6edcede81fb6705",
+      "disposition": "analyzed",
+      "reason": "EN: The six-step discover/evaluate/create workflow is substantially translated. The Japanese wording does not preserve the English distinction between the user explicitly skipping search and approval to proceed, so that handoff gate is less explicit; search commands and third-party skill content were not run or trusted. || JA: 発見・評価・作成の6段階は概ね翻訳されている。英語版が区別する「ユーザーが検索を明示的に省略した場合」と「作業続行の承認」が日本語では弱まり、引き継ぎ条件が明確でない。検索コマンドや外部skill本文は実行・信頼していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/skill-scout/SKILL.md",
+          "blob": "bf4ac15c99d1bc97109fa929c6edcede81fb6705",
+          "hash": "ae63045de9c825fb6e59b598636debc4d8cd44e7a0d21df49292b53164e16c8e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/skill-scout/SKILL.md",
+          "blob": "8a55c548ccd47e4f5adf738cf5becf0b8b9ad9e7",
+          "hash": "73ac14373108c29e35f6f950b43762e3e50848d693b712f7c3e989ec21e7abe8"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            131
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            141
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The six-step discover/evaluate/create workflow is substantially translated. The Japanese wording does not preserve the English distinction between the user explicitly skipping search and approval to proceed, so that handoff gate is less explicit; search commands and third-party skill content were not run or trusted. || JA: 発見・評価・作成の6段階は概ね翻訳されている。英語版が区別する「ユーザーが検索を明示的に省略した場合」と「作業続行の承認」が日本語では弱まり、引き継ぎ条件が明確でない。検索コマンドや外部skill本文は実行・信頼していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/social-graph-ranker/SKILL.md",
+      "counterpart": "skills/social-graph-ranker/SKILL.md",
+      "hash": "debc0c67802cf4481f7c109feebf68e0a0db84ffdc61e6ef512e475c7605c850",
+      "blob": "f9a46873ab453a6c9623480d91e74cc3d98b83c8",
+      "disposition": "analyzed",
+      "reason": "EN: The scoring equations and workflow are preserved, including lambda=.5, alpha=.3 and beta=.2. These are documented heuristics only; the pair provides no empirical fit, privacy/access feasibility or outcome validation. || JA: lambda=.5、alpha=.3、beta=.2を含むスコア式と手順は日本語版に保たれている。これらは文書上のヒューリスティックにとどまり、経験的な適合、プライバシー／アクセス可能性、結果の検証は示されていない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/social-graph-ranker/SKILL.md",
+          "blob": "f9a46873ab453a6c9623480d91e74cc3d98b83c8",
+          "hash": "debc0c67802cf4481f7c109feebf68e0a0db84ffdc61e6ef512e475c7605c850"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/social-graph-ranker/SKILL.md",
+          "blob": "c128380cd6a87bbf85fb1ef0b83eca93893bbd4d",
+          "hash": "24657648f76eb7b835fa71275980e704ebf798853565856623c1e3cd4fd7a183"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            154
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            155
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The scoring equations and workflow are preserved, including lambda=.5, alpha=.3 and beta=.2. These are documented heuristics only; the pair provides no empirical fit, privacy/access feasibility or outcome validation. || JA: lambda=.5、alpha=.3、beta=.2を含むスコア式と手順は日本語版に保たれている。これらは文書上のヒューリスティックにとどまり、経験的な適合、プライバシー／アクセス可能性、結果の検証は示されていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/springboot-patterns/SKILL.md",
+      "counterpart": "skills/springboot-patterns/SKILL.md",
+      "hash": "e0dd4726e8baf27d74c0d0a2f5b3c82285f8912e4a0df526a2d1e533e7162ccd",
+      "blob": "902539f5e655fe00938bac3a26093a636d3c4679",
+      "disposition": "analyzed",
+      "reason": "EN: The translated CRUD/JPA/cache/async/logging/pagination/retry patterns are close, but the Japanese version omits several English activation triggers (including WebFlux/profile/event cases). A controller example also differs at the static call site: JA uses .body(MarketResponse::from(market)) while EN uses .body(MarketResponse.from(market)); this is a source-text discrepancy only and was not compiled. || JA: CRUD/JPA/cache/async/logging/pagination/retryの例は概ね対応するが、日本語版ではWebFlux、profile、eventなど英語版の起動条件がいくつか抜けている。controller例には.body(MarketResponse::from(market))と.body(MarketResponse.from(market))の差もあるが、文書上の相違にとどまり、コンパイルしていない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/springboot-patterns/SKILL.md",
+          "blob": "902539f5e655fe00938bac3a26093a636d3c4679",
+          "hash": "e0dd4726e8baf27d74c0d0a2f5b3c82285f8912e4a0df526a2d1e533e7162ccd"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/springboot-patterns/SKILL.md",
+          "blob": "dc0b5f2a1f5e03ad66d774cd1bef3b92e3807cc2",
+          "hash": "ff1884a8492d078d1bbb35f3ce0a8ae25f1ad95dab8596f4944a7c3110680946"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            304
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            315
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The translated CRUD/JPA/cache/async/logging/pagination/retry patterns are close, but the Japanese version omits several English activation triggers (including WebFlux/profile/event cases). A controller example also differs at the static call site: JA uses .body(MarketResponse::from(market)) while EN uses .body(MarketResponse.from(market)); this is a source-text discrepancy only and was not compiled. || JA: CRUD/JPA/cache/async/logging/pagination/retryの例は概ね対応するが、日本語版ではWebFlux、profile、eventなど英語版の起動条件がいくつか抜けている。controller例には.body(MarketResponse::from(market))と.body(MarketResponse.from(market))の差もあるが、文書上の相違にとどまり、コンパイルしていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/springboot-security/SKILL.md",
+      "counterpart": "skills/springboot-security/SKILL.md",
+      "hash": "64e898daa0fac4a91b6eb063b64d545d337f7ce6eca00d0d8c1de7a3769bfa74",
+      "blob": "6d8d8bd5c2bf08b51e5f2129a4d9056b530d5c5f",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese translation is materially shorter and loses operational security examples: activation triggers, authorized-controller flow, complete validation DTO, parameterized SQL, password hashing/PasswordEncoder, secret/Vault configuration, CORS security configuration and the per-endpoint Bucket4j filter/retry response. The remaining checklist is not equivalent in instructional depth. No code was compiled or security-tested. || JA: 日本語版は大幅に短く、起動条件、認可controller例、完全なvalidation DTO、parameterized SQL、password hashing/PasswordEncoder、secret/Vault設定、CORS安全設定、endpoint別Bucket4j filter/retry応答などの運用例を欠く。残ったチェックリストだけでは説明深度が同等でない。コードのcompileやsecurity testは行っていない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/springboot-security/SKILL.md",
+          "blob": "6d8d8bd5c2bf08b51e5f2129a4d9056b530d5c5f",
+          "hash": "64e898daa0fac4a91b6eb063b64d545d337f7ce6eca00d0d8c1de7a3769bfa74"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/springboot-security/SKILL.md",
+          "blob": "37391ec7e1b2b16c7ee9b636efdd73a4a619a553",
+          "hash": "566ecf928bf76812d15efd62e2f00841652e1618f0a97d8dda93e1c247a162c5"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            273
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese translation is materially shorter and loses operational security examples: activation triggers, authorized-controller flow, complete validation DTO, parameterized SQL, password hashing/PasswordEncoder, secret/Vault configuration, CORS security configuration and the per-endpoint Bucket4j filter/retry response. The remaining checklist is not equivalent in instructional depth. No code was compiled or security-tested. || JA: 日本語版は大幅に短く、起動条件、認可controller例、完全なvalidation DTO、parameterized SQL、password hashing/PasswordEncoder、secret/Vault設定、CORS安全設定、endpoint別Bucket4j filter/retry応答などの運用例を欠く。残ったチェックリストだけでは説明深度が同等でない。コードのcompileやsecurity testは行っていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/springboot-tdd/SKILL.md",
+      "counterpart": "skills/springboot-tdd/SKILL.md",
+      "hash": "b7dbe8dcbafecffcc58750082ab298a263ccfb6a427b46f0a2e588497aff966f",
+      "blob": "a1a543fa6e8be364b0169621b98392c66e156772",
+      "disposition": "analyzed",
+      "reason": "EN: The translated unit, WebMvc, integration, persistence, JaCoCo, assertion and test-builder command patterns closely track the canonical guide. The stated 80% coverage and tool/version guidance are source claims, not project requirements or independently validated results. || JA: unit、WebMvc、integration、persistence、JaCoCo、assertion、test-builderのコマンド例は原文と概ね一致する。記載されたcoverage 80%やツール／版の説明は原文の主張であり、本プロジェクト要件や独立検証結果ではない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/springboot-tdd/SKILL.md",
+          "blob": "a1a543fa6e8be364b0169621b98392c66e156772",
+          "hash": "b7dbe8dcbafecffcc58750082ab298a263ccfb6a427b46f0a2e588497aff966f"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/springboot-tdd/SKILL.md",
+          "blob": "fc07f24face95ac19568ae338760a8e73d18b01e",
+          "hash": "e4bd145484d93fb569eb0e1a09ffeb5cca68533d63c83805146b111c48bba172"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            157
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            159
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The translated unit, WebMvc, integration, persistence, JaCoCo, assertion and test-builder command patterns closely track the canonical guide. The stated 80% coverage and tool/version guidance are source claims, not project requirements or independently validated results. || JA: unit、WebMvc、integration、persistence、JaCoCo、assertion、test-builderのコマンド例は原文と概ね一致する。記載されたcoverage 80%やツール／版の説明は原文の主張であり、本プロジェクト要件や独立検証結果ではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/springboot-verification/SKILL.md",
+      "counterpart": "skills/springboot-verification/SKILL.md",
+      "hash": "2537a1392105a408a79f3fe644520c015cd4d3f92bcbd6634e6308108624f0e2",
+      "blob": "388006b5ac6b4ecb305ebe82e25462dbaa490f1b",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese phase workflow is present but omits major verification depth from English: activation criteria; concrete unit/integration, Testcontainers and MockMvc examples (including duplicate-email, real DB vs H2 and validation cases); and common security searches for secrets, System.out, exception leakage and wildcard CORS. This reduces reproducible evidence and security review coverage. Examples were not executed. || JA: 日本語版には段階的な手順があるものの、起動条件、unit/integration・Testcontainers・MockMvcの具体例（重複email、実DBとH2、validationなど）、secret／System.out／例外漏洩／wildcard CORSの検索といった英語版の検証深度がない。再現可能な証拠とsecurity reviewの範囲が狭まる。例は実行していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/springboot-verification/SKILL.md",
+          "blob": "388006b5ac6b4ecb305ebe82e25462dbaa490f1b",
+          "hash": "2537a1392105a408a79f3fe644520c015cd4d3f92bcbd6634e6308108624f0e2"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/springboot-verification/SKILL.md",
+          "blob": "4abd92b1c7a9b11fa02668843aba0dc7c4cda07e",
+          "hash": "c9449f169a3b920fd01875e3b2b2712c743c5fe8f469d2eabfe78886c590d04a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            232
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese phase workflow is present but omits major verification depth from English: activation criteria; concrete unit/integration, Testcontainers and MockMvc examples (including duplicate-email, real DB vs H2 and validation cases); and common security searches for secrets, System.out, exception leakage and wildcard CORS. This reduces reproducible evidence and security review coverage. Examples were not executed. || JA: 日本語版には段階的な手順があるものの、起動条件、unit/integration・Testcontainers・MockMvcの具体例（重複email、実DBとH2、validationなど）、secret／System.out／例外漏洩／wildcard CORSの検索といった英語版の検証深度がない。再現可能な証拠とsecurity reviewの範囲が狭まる。例は実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/swift-actor-persistence/SKILL.md",
+      "counterpart": "skills/swift-actor-persistence/SKILL.md",
+      "hash": "1ab38960a6e08792eb2b621b37b5bfcb8d50a504614d0c0676f6b6f7539823cd",
+      "blob": "3f5c0afb7505adae69d3941839caa355b1bb8dff",
+      "disposition": "analyzed",
+      "reason": "EN: Core actor cache and file round-trip examples align; JA adds rollback of in-memory cache state if persistToFile() fails during save/delete, a localized compensating-state behavior absent from EN. This is a real instructional expansion, not proof that the persistence code works. No Swift build or file-operation test was run. || JA: actor cacheとファイル往復の基本例は一致する。日本語版はsave/delete時にpersistToFile()が失敗した場合のメモリcache rollbackを追加しており、英語版にない補償状態の説明である。これは説明上の拡張であり、永続化コードの動作証明ではない。Swift buildやファイル操作testは行っていない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/swift-actor-persistence/SKILL.md",
+          "blob": "3f5c0afb7505adae69d3941839caa355b1bb8dff",
+          "hash": "1ab38960a6e08792eb2b621b37b5bfcb8d50a504614d0c0676f6b6f7539823cd"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/swift-actor-persistence/SKILL.md",
+          "blob": "9cbf45df1487593cfffa25024d1cbeddcd0e7c7b",
+          "hash": "438f75a3f37db2b8db699fb5d27a7207d0f31eace31d057b775ad152d6462c5c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            157
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            144
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Core actor cache and file round-trip examples align; JA adds rollback of in-memory cache state if persistToFile() fails during save/delete, a localized compensating-state behavior absent from EN. This is a real instructional expansion, not proof that the persistence code works. No Swift build or file-operation test was run. || JA: actor cacheとファイル往復の基本例は一致する。日本語版はsave/delete時にpersistToFile()が失敗した場合のメモリcache rollbackを追加しており、英語版にない補償状態の説明である。これは説明上の拡張であり、永続化コードの動作証明ではない。Swift buildやファイル操作testは行っていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/swift-concurrency-6-2/SKILL.md",
+      "counterpart": "skills/swift-concurrency-6-2/SKILL.md",
+      "hash": "619ed1535c6310af85177a307917864e3d3967e647d7f6962a901e2f7e7bb9a7",
+      "blob": "5d44b4e2bf9a3233b293a913b5a5f2a51ba483ce",
+      "disposition": "analyzed",
+      "reason": "EN: The method-bearing guidance is closely translated: build-flag caveats, MainActor/caller semantics, isolated conformance, opt-in, background @concurrent work and migration cautions are preserved. Swift 6.2/Xcode 26 behavior/version statements remain frozen and were not current-checked or compiled. || JA: build flagの注意、MainActor/callerの意味、isolated conformance、opt-in、backgroundの@concurrent処理、移行時の注意は概ね翻訳されている。Swift 6.2／Xcode 26の挙動・版の記述は固定文書のままで、最新確認やcompileはしていない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/swift-concurrency-6-2/SKILL.md",
+          "blob": "5d44b4e2bf9a3233b293a913b5a5f2a51ba483ce",
+          "hash": "619ed1535c6310af85177a307917864e3d3967e647d7f6962a901e2f7e7bb9a7"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/swift-concurrency-6-2/SKILL.md",
+          "blob": "d88911687e9108f73473f307ece3a55ecd444593",
+          "hash": "00aed6a804ff7dc9b37d119cdb115d0869643dd84caf3c01d7f058398ab1955a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            217
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            216
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The method-bearing guidance is closely translated: build-flag caveats, MainActor/caller semantics, isolated conformance, opt-in, background @concurrent work and migration cautions are preserved. Swift 6.2/Xcode 26 behavior/version statements remain frozen and were not current-checked or compiled. || JA: build flagの注意、MainActor/callerの意味、isolated conformance、opt-in、backgroundの@concurrent処理、移行時の注意は概ね翻訳されている。Swift 6.2／Xcode 26の挙動・版の記述は固定文書のままで、最新確認やcompileはしていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/swift-protocol-di-testing/SKILL.md",
+      "counterpart": "skills/swift-protocol-di-testing/SKILL.md",
+      "hash": "595ca39bb0f5de5064a1f0d273c694a7a407db33b9efc7949538883c59c0d273",
+      "blob": "35b5b49230035dd9ee6d4bd6bb0a58a5499a01c3",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese version preserves small focused protocols, default implementations, mocks, dependency injection, Swift Testing examples and boundaries. Examples were not compiled; the shared @unchecked Sendable mutable-mock example is not evidence of thread safety. || JA: 小さく焦点を絞ったprotocol、default実装、mock、dependency injection、Swift Testing例と適用範囲は保たれている。例はcompileしておらず、両言語にある@unchecked Sendableのmutable mockもthread safetyの証拠ではない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/swift-protocol-di-testing/SKILL.md",
+          "blob": "35b5b49230035dd9ee6d4bd6bb0a58a5499a01c3",
+          "hash": "595ca39bb0f5de5064a1f0d273c694a7a407db33b9efc7949538883c59c0d273"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/swift-protocol-di-testing/SKILL.md",
+          "blob": "5866cfd2683a6a1d29ef05d8cb1beb97008418a3",
+          "hash": "1e0b9fddf0a731956cdc686fb55dfa1862a5f172a5140299f4ec9d95c7a5e6e9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            190
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            191
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese version preserves small focused protocols, default implementations, mocks, dependency injection, Swift Testing examples and boundaries. Examples were not compiled; the shared @unchecked Sendable mutable-mock example is not evidence of thread safety. || JA: 小さく焦点を絞ったprotocol、default実装、mock、dependency injection、Swift Testing例と適用範囲は保たれている。例はcompileしておらず、両言語にある@unchecked Sendableのmutable mockもthread safetyの証拠ではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/swiftui-patterns/SKILL.md",
+      "counterpart": "skills/swiftui-patterns/SKILL.md",
+      "hash": "878ccab53056a677a4d97685dfa0dc2baf77fb9ed4be91f273c53b4072411cc5",
+      "blob": "d7e9b6b820b31fbcdf1a40910942f1bbeea3e8c8",
+      "disposition": "analyzed",
+      "reason": "EN: The Observation, @State, binding, environment, composition, navigation, performance, preview and anti-pattern guidance is closely translated. API and performance recommendations are frozen examples, not checked against current SwiftUI documentation or runtime behavior. || JA: Observation、@State、binding、environment、composition、navigation、performance、preview、anti-patternの説明は概ね翻訳されている。APIやperformance助言は固定例であり、現行SwiftUI文書や実行時挙動とは照合していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/swiftui-patterns/SKILL.md",
+          "blob": "d7e9b6b820b31fbcdf1a40910942f1bbeea3e8c8",
+          "hash": "878ccab53056a677a4d97685dfa0dc2baf77fb9ed4be91f273c53b4072411cc5"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/swiftui-patterns/SKILL.md",
+          "blob": "4497ece6e75bfb30839dd5d7bb3bd1ee53431f75",
+          "hash": "79e3c8b5b7c38fa04778b1084cddc2f8db5f671e682b0e9c1d5bd2f95800f690"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            259
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            259
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Observation, @State, binding, environment, composition, navigation, performance, preview and anti-pattern guidance is closely translated. API and performance recommendations are frozen examples, not checked against current SwiftUI documentation or runtime behavior. || JA: Observation、@State、binding、environment、composition、navigation、performance、preview、anti-patternの説明は概ね翻訳されている。APIやperformance助言は固定例であり、現行SwiftUI文書や実行時挙動とは照合していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/tdd-workflow/SKILL.md",
+      "counterpart": "skills/tdd-workflow/SKILL.md",
+      "hash": "d615ff5fe149a12803a0495c41a75025c21367aae180ede7fae945117505a8c0",
+      "blob": "45e8eac53a1299f9c5633ef6ec7933f029a45b55",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese workflow omits substantial controls present in the English guide: plan-file handoff/trust and shell-command review; RED/GREEN proof before production edits; checkpoint evidence rules; runner/package-manager detection and Bun matrix; and the factual end-of-task TDD evidence report. JA also hardcodes npm test where EN uses runner-aware placeholders. This can change execution and completion claims. Instructions/commands were not run. || JA: 日本語版は英語版にあるplan fileの引き継ぎ・信頼境界とshell command確認、本番編集前のRED/GREEN証拠、checkpoint証明、runner/package manager検出とBun matrix、作業終了時の事実ベースTDD証拠報告を省く。またENがrunnerに応じたplaceholderを使う箇所でnpm testを固定している。実施手順と完了判定が変わり得る。指示やcommandは実行していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/tdd-workflow/SKILL.md",
+          "blob": "45e8eac53a1299f9c5633ef6ec7933f029a45b55",
+          "hash": "d615ff5fe149a12803a0495c41a75025c21367aae180ede7fae945117505a8c0"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/tdd-workflow/SKILL.md",
+          "blob": "ad6517386574e623d954c5e9fec74a3f0e36803a",
+          "hash": "8887afa786ef30de834e7567115d3df71934b343c3d9d849714f8ea43f979ee0"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            409
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            583
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese workflow omits substantial controls present in the English guide: plan-file handoff/trust and shell-command review; RED/GREEN proof before production edits; checkpoint evidence rules; runner/package-manager detection and Bun matrix; and the factual end-of-task TDD evidence report. JA also hardcodes npm test where EN uses runner-aware placeholders. This can change execution and completion claims. Instructions/commands were not run. || JA: 日本語版は英語版にあるplan fileの引き継ぎ・信頼境界とshell command確認、本番編集前のRED/GREEN証拠、checkpoint証明、runner/package manager検出とBun matrix、作業終了時の事実ベースTDD証拠報告を省く。またENがrunnerに応じたplaceholderを使う箇所でnpm testを固定している。実施手順と完了判定が変わり得る。指示やcommandは実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/team-builder/SKILL.md",
+      "counterpart": "skills/team-builder/SKILL.md",
+      "hash": "177d3c0fdb18e0800b4a1907c36769cee1bffdc79b2516aaece915f75ca9550e",
+      "blob": "c397727d4a6ae2dd935e817111ab53ac8767013e",
+      "disposition": "analyzed",
+      "reason": "EN: JA scans local/global agents directories and applies project-over-global name precedence, but omits EN’s primary `claude agents` enumeration of CLI-known user/plugin/built-in agents, user > plugin > built-in precedence, built-in filtering and plugin-domain routing. Discovery/selection/spawn/synthesis otherwise align. Host commands were not executed. || JA: 日本語版はlocal/global agents directoryを走査しproject優先の名前解決を行う一方、英語版の主経路である`claude agents`によるCLI認識済みuser/plugin/built-in列挙、user > plugin > built-in優先順位、built-in除外、plugin domain routingを省いている。発見・選択・spawn・統合の他部分は概ね一致する。host commandは実行していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/team-builder/SKILL.md",
+          "blob": "c397727d4a6ae2dd935e817111ab53ac8767013e",
+          "hash": "177d3c0fdb18e0800b4a1907c36769cee1bffdc79b2516aaece915f75ca9550e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/team-builder/SKILL.md",
+          "blob": "2de7d028b6af3e67fb88ab54b631b10fb3e779a8",
+          "hash": "23ce20d4d50be35d4b6cfe7facc01010983e18cb95c4aaf3d100338ca55e671b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            165
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            169
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: JA scans local/global agents directories and applies project-over-global name precedence, but omits EN’s primary `claude agents` enumeration of CLI-known user/plugin/built-in agents, user > plugin > built-in precedence, built-in filtering and plugin-domain routing. Discovery/selection/spawn/synthesis otherwise align. Host commands were not executed. || JA: 日本語版はlocal/global agents directoryを走査しproject優先の名前解決を行う一方、英語版の主経路である`claude agents`によるCLI認識済みuser/plugin/built-in列挙、user > plugin > built-in優先順位、built-in除外、plugin domain routingを省いている。発見・選択・spawn・統合の他部分は概ね一致する。host commandは実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/terminal-ops/SKILL.md",
+      "counterpart": "skills/terminal-ops/SKILL.md",
+      "hash": "ce01d382f601fecc896475ca17283554c0018ec67bd2e3510d919048aac0d8ba",
+      "blob": "097720e85e75b49ed4589d675f2bd70c85e1551f",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese document closely preserves inspect-first, narrow fixes, exact status reporting and the prohibition on destructive Git commands or changing unrelated work. Terminal examples were not run. || JA: 先に調査すること、修正範囲を絞ること、状態を正確に報告すること、破壊的Git commandや無関係な作業変更を避けることは概ね保たれている。terminal例は実行していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/terminal-ops/SKILL.md",
+          "blob": "097720e85e75b49ed4589d675f2bd70c85e1551f",
+          "hash": "ce01d382f601fecc896475ca17283554c0018ec67bd2e3510d919048aac0d8ba"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/terminal-ops/SKILL.md",
+          "blob": "22aecd4198c90476495d5449eb2e20d0b0605cfe",
+          "hash": "f26e518e6922fe0796f5b6a55349a409f5b03745c4eeed9be80b4c66d890d852"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            110
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese document closely preserves inspect-first, narrow fixes, exact status reporting and the prohibition on destructive Git commands or changing unrelated work. Terminal examples were not run. || JA: 先に調査すること、修正範囲を絞ること、状態を正確に報告すること、破壊的Git commandや無関係な作業変更を避けることは概ね保たれている。terminal例は実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/tinystruct-patterns/SKILL.md",
+      "counterpart": "skills/tinystruct-patterns/SKILL.md",
+      "hash": "d2b04c7102a394b100525b31341239a969aa44f8c6c988598ed46754f2061ed4",
+      "blob": "b204125bb028898af930b7e65dc448d533c8bb87",
+      "disposition": "analyzed",
+      "reason": "EN: JA covers a minimal app, route/mode handling, simple JSON builder, config stub, tests and anti-patterns, but omits large canonical areas: AbstractData persistence/POJO generation, Builders and array serialization, SSE, uploads, outbound HTTP/networking, MCP server/tool and prompt-injection sanitization, fuller session configuration, and extended testing/best-practice material. This is substantial scope and example loss; no framework code was executed. || JA: 日本語版は最小アプリ、route/mode処理、基本JSON builder、config stub、test、anti-patternを扱うが、AbstractData永続化／POJO生成、Buildersとarray serialization、SSE、upload、外向きHTTP/networking、MCP server/toolとprompt-injection sanitization、session設定、詳細なtest／best practiceなど原文の大きな範囲を省く。主要scopeと例の欠落であり、framework codeは実行していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/tinystruct-patterns/SKILL.md",
+          "blob": "b204125bb028898af930b7e65dc448d533c8bb87",
+          "hash": "d2b04c7102a394b100525b31341239a969aa44f8c6c988598ed46754f2061ed4"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/tinystruct-patterns/SKILL.md",
+          "blob": "64ffd8e9ce5088980ebe6c646cd29d70d7a2828e",
+          "hash": "6f5d16090aa5b1913002480ecfb00feb3ad894a05c9b84d8f3645e2297b6024b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            104
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            279
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: JA covers a minimal app, route/mode handling, simple JSON builder, config stub, tests and anti-patterns, but omits large canonical areas: AbstractData persistence/POJO generation, Builders and array serialization, SSE, uploads, outbound HTTP/networking, MCP server/tool and prompt-injection sanitization, fuller session configuration, and extended testing/best-practice material. This is substantial scope and example loss; no framework code was executed. || JA: 日本語版は最小アプリ、route/mode処理、基本JSON builder、config stub、test、anti-patternを扱うが、AbstractData永続化／POJO生成、Buildersとarray serialization、SSE、upload、外向きHTTP/networking、MCP server/toolとprompt-injection sanitization、session設定、詳細なtest／best practiceなど原文の大きな範囲を省く。主要scopeと例の欠落であり、framework codeは実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/token-budget-advisor/SKILL.md",
+      "counterpart": "skills/token-budget-advisor/SKILL.md",
+      "hash": "ba14e6c3cc20af2a91153246e61fbce7514ac97bc98125c7b6c34ba9a9a3dd0d",
+      "blob": "7eaa7cc4ee7ed8f4121f4d383444b70a6742304a",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese heuristic, multipliers, output fields, depth tiers, shortcuts and trigger rules are closely translated. The stated 85–90% accuracy and ±15% error are not supported by tokenizer-backed evidence in the pair; they remain unverified claims, not measured project results. || JA: token推定heuristic、倍率、出力項目、depth段階、簡略法、起動条件は概ね翻訳されている。記載の精度85–90%、誤差±15%はこの文書ペア内のtokenizer実測根拠を伴わず、未検証の主張であって本プロジェクトの測定結果ではない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/token-budget-advisor/SKILL.md",
+          "blob": "7eaa7cc4ee7ed8f4121f4d383444b70a6742304a",
+          "hash": "ba14e6c3cc20af2a91153246e61fbce7514ac97bc98125c7b6c34ba9a9a3dd0d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/token-budget-advisor/SKILL.md",
+          "blob": "49987758c37150718bca091e29ecfca6dfc6627d",
+          "hash": "7f037a58306a6bd5c5a024491a6c4529cd8373309e413eda517ad2430420e25a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            122
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            122
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese heuristic, multipliers, output fields, depth tiers, shortcuts and trigger rules are closely translated. The stated 85–90% accuracy and ±15% error are not supported by tokenizer-backed evidence in the pair; they remain unverified claims, not measured project results. || JA: token推定heuristic、倍率、出力項目、depth段階、簡略法、起動条件は概ね翻訳されている。記載の精度85–90%、誤差±15%はこの文書ペア内のtokenizer実測根拠を伴わず、未検証の主張であって本プロジェクトの測定結果ではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/ui-demo/SKILL.md",
+      "counterpart": "skills/ui-demo/SKILL.md",
+      "hash": "1d1ad4eccffceafa3bf26c0a802d0ed2c40da18a34429eda4f0d915bcc26ca9c",
+      "blob": "f25d832824e45f3fc885495dc8585ae5be41b9ab",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Discover→Rehearse→Record workflow, evidence-first inspection, ensureVisible gate, movement/type overlays, subtitles, script template and checklists align. JA localizes prose/example values and contains a duplicated `ある` typo, with no material workflow delta found. Browser APIs and production outcomes were not tested. || JA: Discover→Rehearse→Record、証拠を先に確認する流れ、ensureVisible gate、movement/type overlay、字幕、script template、checklistは対応する。日本語では文言や例をローカライズし、「ある」の重複誤記があるが、手順の実質的差分は確認できない。browser APIやproduction結果は検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/ui-demo/SKILL.md",
+          "blob": "f25d832824e45f3fc885495dc8585ae5be41b9ab",
+          "hash": "1d1ad4eccffceafa3bf26c0a802d0ed2c40da18a34429eda4f0d915bcc26ca9c"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/ui-demo/SKILL.md",
+          "blob": "b90b7fe6834de3fc7950c0bab28922e9d1534f2d",
+          "hash": "893eee77f98f52d28bffa6bbababa7481300cc13535dea519fa0cc1b0168b2f8"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            465
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            466
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The complete Discover→Rehearse→Record workflow, evidence-first inspection, ensureVisible gate, movement/type overlays, subtitles, script template and checklists align. JA localizes prose/example values and contains a duplicated `ある` typo, with no material workflow delta found. Browser APIs and production outcomes were not tested. || JA: Discover→Rehearse→Record、証拠を先に確認する流れ、ensureVisible gate、movement/type overlay、字幕、script template、checklistは対応する。日本語では文言や例をローカライズし、「ある」の重複誤記があるが、手順の実質的差分は確認できない。browser APIやproduction結果は検証していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/ui-to-vue/SKILL.md",
+      "counterpart": "skills/ui-to-vue/SKILL.md",
+      "hash": "439db3b22a200eca96ff473c1b68f6ac14590dc81398e155e969c10d83112d1d",
+      "blob": "f3648148d0be4a013a195c508b963afec96c3871",
+      "disposition": "analyzed",
+      "reason": "EN: JA retains the input model, transformation steps, version-pinned npx invocation, options, privacy and output review/troubleshooting. It omits EN’s nested screenshot layout and desktop UI-library examples, global-install alternative, and file-config API-key route/gitignore example. These are setup/capability omissions; commands, packages and API claims were not tested. || JA: 入力モデル、変換手順、版固定npx呼び出し、option、privacy、出力確認／troubleshootingは保たれている。英語版にあるnested screenshot layoutとdesktop UI library例、global install案、file configでのAPI key指定とgitignore例は省略される。setup／機能範囲の差であり、command、package、API主張は試していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/ui-to-vue/SKILL.md",
+          "blob": "f3648148d0be4a013a195c508b963afec96c3871",
+          "hash": "439db3b22a200eca96ff473c1b68f6ac14590dc81398e155e969c10d83112d1d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/ui-to-vue/SKILL.md",
+          "blob": "83bf5e912be65860c79c18cf1f8be7a77a5cf6da",
+          "hash": "cb6c17f7ae28a53b31fb2904180521ccdaa31ad0deafa96c6b4f5b2f4bfea480"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            86
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            135
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: JA retains the input model, transformation steps, version-pinned npx invocation, options, privacy and output review/troubleshooting. It omits EN’s nested screenshot layout and desktop UI-library examples, global-install alternative, and file-config API-key route/gitignore example. These are setup/capability omissions; commands, packages and API claims were not tested. || JA: 入力モデル、変換手順、版固定npx呼び出し、option、privacy、出力確認／troubleshootingは保たれている。英語版にあるnested screenshot layoutとdesktop UI library例、global install案、file configでのAPI key指定とgitignore例は省略される。setup／機能範囲の差であり、command、package、API主張は試していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/unified-notifications-ops/SKILL.md",
+      "counterpart": "skills/unified-notifications-ops/SKILL.md",
+      "hash": "20fdfda480d0e1d6a21b5b7eee39390ddf3730b1f96c61c67c5c29c4758682a3",
+      "blob": "70c8086003c6efbdc66ddf6336c589a43094da5d",
+      "disposition": "analyzed",
+      "reason": "EN: The translated event→severity/owner→route/deduplicate→action pipeline, non-negotiables, severity table, workflow and output contract align closely. No separate reusable method delta was identified; operational integrations were not exercised. || JA: event→severity/owner→route/deduplicate→actionの流れ、必須条件、severity表、workflow、出力契約は概ね一致する。独立した再利用手法の差分は確認できず、運用integrationも実行していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/unified-notifications-ops/SKILL.md",
+          "blob": "70c8086003c6efbdc66ddf6336c589a43094da5d",
+          "hash": "20fdfda480d0e1d6a21b5b7eee39390ddf3730b1f96c61c67c5c29c4758682a3"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/unified-notifications-ops/SKILL.md",
+          "blob": "fe3839306cbab33a1543c69580e0f581246825ee",
+          "hash": "0ade130619dfc73781d6a4beaf79b65b6d3ac70f0751dce0844a8f9fd39167aa"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            197
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            188
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The translated event→severity/owner→route/deduplicate→action pipeline, non-negotiables, severity table, workflow and output contract align closely. No separate reusable method delta was identified; operational integrations were not exercised. || JA: event→severity/owner→route/deduplicate→actionの流れ、必須条件、severity表、workflow、出力契約は概ね一致する。独立した再利用手法の差分は確認できず、運用integrationも実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/video-editing/SKILL.md",
+      "counterpart": "skills/video-editing/SKILL.md",
+      "hash": "f2327cdf424a9181282c95d22a839ce47668c5355640ff74c7ea80df4672e699",
+      "blob": "ebf692d63f82cf70da120cdfabba69453aca8802",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese pipeline omits material pre/post-operation controls added to EN: taste-distillation/application sequencing; verified project checkpoints before and after editor/DAW changes; separation of saved project, render and approval; MIDI pitch mapping/audition and reconstructed-project/native-export checks; bridge capability handshake; and consent limits on upload/training telemetry. These change evidence and consent behavior beyond ordinary localization. Fusion preset descriptions are also EN-only frozen claims and were not verified. || JA: 日本語版は英語版に追加された操作前後の重要な統制を省く。taste-distillation/application連携、編集前後のproject checkpoint保存確認、保存済project／render／承認の分離、MIDI pitch mappingと試聴・復元project/native export検証、bridge機能handshake、upload／training telemetryへの同意制限がない。単なる文体差を超える証拠・同意条件の差である。Fusion presetの説明も英語版だけにある固定記述で、検証していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/video-editing/SKILL.md",
+          "blob": "ebf692d63f82cf70da120cdfabba69453aca8802",
+          "hash": "f2327cdf424a9181282c95d22a839ce47668c5355640ff74c7ea80df4672e699"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/video-editing/SKILL.md",
+          "blob": "524f075989aff50a74ca3b3159b6a9200eee82fa",
+          "hash": "4ab8c9ef5a511e8a0de9ed375b9edbbfa74f23a0881519d2aceea67e7252b197"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            317
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            337
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese pipeline omits material pre/post-operation controls added to EN: taste-distillation/application sequencing; verified project checkpoints before and after editor/DAW changes; separation of saved project, render and approval; MIDI pitch mapping/audition and reconstructed-project/native-export checks; bridge capability handshake; and consent limits on upload/training telemetry. These change evidence and consent behavior beyond ordinary localization. Fusion preset descriptions are also EN-only frozen claims and were not verified. || JA: 日本語版は英語版に追加された操作前後の重要な統制を省く。taste-distillation/application連携、編集前後のproject checkpoint保存確認、保存済project／render／承認の分離、MIDI pitch mappingと試聴・復元project/native export検証、bridge機能handshake、upload／training telemetryへの同意制限がない。単なる文体差を超える証拠・同意条件の差である。Fusion presetの説明も英語版だけにある固定記述で、検証していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/SKILL.md",
+      "counterpart": "skills/videodb/SKILL.md",
+      "hash": "e8c0907a0e4cd122cb0147ecf1bb5a9c16062e44d8d0251c17a728c9053da8cb",
+      "blob": "ad4b0060f17c7676a0e10befa4c5028bb7b30c1b",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese guide closely translates setup, user-managed API-key handling, search/no-result and existing-index handling, timeline timestamp checks, slow-reframe precautions, error handling, capture lifecycle and event reading; fenced method examples match exactly. Front matter omits EN’s allowed-tools and argument-hint fields. SDK behavior, quotas, platform availability and hosted claims are frozen text, not externally checked. || JA: setup、API keyを利用者に設定させる扱い、検索／結果なし・既存index処理、timeline時刻確認、時間のかかるreframeへの注意、error処理、capture lifecycle、event読取は概ね翻訳され、コード例は一致する。front matterから英語版のallowed-toolsとargument-hintが抜けている。SDK挙動、quota、platform対応、hosting記述は固定文書であり、外部確認していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/SKILL.md",
+          "blob": "ad4b0060f17c7676a0e10befa4c5028bb7b30c1b",
+          "hash": "e8c0907a0e4cd122cb0147ecf1bb5a9c16062e44d8d0251c17a728c9053da8cb"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/SKILL.md",
+          "blob": "e1290296ab5277274bc04ca6856544c0e6aca816",
+          "hash": "4509fd09f659314f8cec19bf8d9593e4907f244b576b36d83b2259064cae4da4"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            386
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            375
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese guide closely translates setup, user-managed API-key handling, search/no-result and existing-index handling, timeline timestamp checks, slow-reframe precautions, error handling, capture lifecycle and event reading; fenced method examples match exactly. Front matter omits EN’s allowed-tools and argument-hint fields. SDK behavior, quotas, platform availability and hosted claims are frozen text, not externally checked. || JA: setup、API keyを利用者に設定させる扱い、検索／結果なし・既存index処理、timeline時刻確認、時間のかかるreframeへの注意、error処理、capture lifecycle、event読取は概ね翻訳され、コード例は一致する。front matterから英語版のallowed-toolsとargument-hintが抜けている。SDK挙動、quota、platform対応、hosting記述は固定文書であり、外部確認していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/api-reference.md",
+      "counterpart": "skills/videodb/reference/api-reference.md",
+      "hash": "1e1842b07271a7344ae0c7160ecab0fa40b14644f6c027f94ab73cfec627fa86",
+      "blob": "9d03d45805a5691ec9fa4b7c437a5f3cc481bd06",
+      "disposition": "analyzed",
+      "reason": "EN: The full API surface, parameter tables, timeline asset families, search exception/threshold cautions and slow-reframe warning are translated; all 27 fenced examples are byte-identical. This is reference parity evidence only, not SDK correctness or current API verification. || JA: API一覧、parameter表、timeline asset、search例外／threshold注意、遅いreframe警告は翻訳され、27個すべてのfenced exampleはbyte-identicalである。これはreference翻訳の根拠に限り、SDKの正しさや現行APIの検証ではない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/api-reference.md",
+          "blob": "9d03d45805a5691ec9fa4b7c437a5f3cc481bd06",
+          "hash": "1e1842b07271a7344ae0c7160ecab0fa40b14644f6c027f94ab73cfec627fa86"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/api-reference.md",
+          "blob": "5ca529eabc7053dee80bb90469e43cbce0da2014",
+          "hash": "fa15b0239185cc807ee77f201818c49cdaf74a50142a04ab8acfa0d90eef43b9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            550
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            550
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The full API surface, parameter tables, timeline asset families, search exception/threshold cautions and slow-reframe warning are translated; all 27 fenced examples are byte-identical. This is reference parity evidence only, not SDK correctness or current API verification. || JA: API一覧、parameter表、timeline asset、search例外／threshold注意、遅いreframe警告は翻訳され、27個すべてのfenced exampleはbyte-identicalである。これはreference翻訳の根拠に限り、SDKの正しさや現行APIの検証ではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/capture-reference.md",
+      "counterpart": "skills/videodb/reference/capture-reference.md",
+      "hash": "646d6c199ca655c65870de0f028810c12e565485dbfc2b281681b066a29e893a",
+      "blob": "d1bf9e515065b100ff2cabdb86b54e05d21e14b9",
+      "disposition": "analyzed",
+      "reason": "EN: Event structures, persistence/listener lifecycle, websocket, CaptureSession, CaptureClient, permissions/channels and RTStream cross-reference are translated; all 20 code fences match exactly. Japanese prose is nine lines longer due to formatting and adds no identified method delta. No capture code was run. || JA: event構造、保存／listener lifecycle、websocket、CaptureSession、CaptureClient、permission／channel、RTStream参照は翻訳され、20個のcode fenceはすべて一致する。日本語文書は整形上9行長いが、独立したmethod差分は確認できない。capture codeは実行していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/capture-reference.md",
+          "blob": "d1bf9e515065b100ff2cabdb86b54e05d21e14b9",
+          "hash": "646d6c199ca655c65870de0f028810c12e565485dbfc2b281681b066a29e893a"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/capture-reference.md",
+          "blob": "3576b535c0902ad7c0557c9d7450dd7e59edc34e",
+          "hash": "c84989ef482bbb5504d6952ee5733b2a5f1e70c5bc0478dd475041b647351c6b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            416
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            407
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Event structures, persistence/listener lifecycle, websocket, CaptureSession, CaptureClient, permissions/channels and RTStream cross-reference are translated; all 20 code fences match exactly. Japanese prose is nine lines longer due to formatting and adds no identified method delta. No capture code was run. || JA: event構造、保存／listener lifecycle、websocket、CaptureSession、CaptureClient、permission／channel、RTStream参照は翻訳され、20個のcode fenceはすべて一致する。日本語文書は整形上9行長いが、独立したmethod差分は確認できない。capture codeは実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/capture.md",
+      "counterpart": "skills/videodb/reference/capture.md",
+      "hash": "a6e91beafcd6c90de3116b2847b16dbdb52727fa658c3dffeedc9c09c84c7e84",
+      "blob": "8e5807689c9a585e98efcbeab06e989d918ef8c1",
+      "disposition": "analyzed",
+      "reason": "EN: The complete lifecycle preserves the long-lived CaptureClient requirement, SIGINT/SIGTERM cleanup, event/export ordering, PID handling and listener stop sequence; the code example matches exactly. This is frozen workflow text, not tested host behavior. || JA: CaptureClientを長時間動作させる条件、SIGINT/SIGTERM cleanup、event/export順序、PID管理、listener停止手順は保たれ、code exampleも一致する。固定workflow文書の対照であり、host上での動作試験ではない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/capture.md",
+          "blob": "8e5807689c9a585e98efcbeab06e989d918ef8c1",
+          "hash": "a6e91beafcd6c90de3116b2847b16dbdb52727fa658c3dffeedc9c09c84c7e84"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/capture.md",
+          "blob": "8b6be22846b5f122e1af387b8bfbc6fa97e9faf6",
+          "hash": "e0021243fda7da46f4d080af9a2fc9b3e067a0554cdc64bba5313b269e05f948"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            104
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The complete lifecycle preserves the long-lived CaptureClient requirement, SIGINT/SIGTERM cleanup, event/export ordering, PID handling and listener stop sequence; the code example matches exactly. This is frozen workflow text, not tested host behavior. || JA: CaptureClientを長時間動作させる条件、SIGINT/SIGTERM cleanup、event/export順序、PID管理、listener停止手順は保たれ、code exampleも一致する。固定workflow文書の対照であり、host上での動作試験ではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/editor.md",
+      "counterpart": "skills/videodb/reference/editor.md",
+      "hash": "a6ffef9c7ddfca96cd7a6737523f513adba67fdef4f6b48cf65da9e27f129512",
+      "blob": "c782ace4bf84c3ab6df91d417f7068231ba3bd19",
+      "disposition": "analyzed",
+      "reason": "EN: Timeline composition, seconds-based trimming, timestamp validation, five asset types, distinct non-interchangeable Timeline APIs and explicit limitations are fully translated; all 12 fenced examples match. No SDK/editor behavior was executed. || JA: timeline合成、秒単位trim、timestamp検証、5種asset、互換性のない2種類のTimeline API、明示された制限は全文で翻訳され、12個のfenced exampleは一致する。SDK/editor挙動は実行していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/editor.md",
+          "blob": "c782ace4bf84c3ab6df91d417f7068231ba3bd19",
+          "hash": "a6ffef9c7ddfca96cd7a6737523f513adba67fdef4f6b48cf65da9e27f129512"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/editor.md",
+          "blob": "6f772af0a7effa8fb8bd2eb3d285b8d4dde3bf4b",
+          "hash": "5f0d0ac43c9534f4eed8e1459a17a3879ee5e4e4d36aed5d6b58561f379a668e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            443
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            443
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Timeline composition, seconds-based trimming, timestamp validation, five asset types, distinct non-interchangeable Timeline APIs and explicit limitations are fully translated; all 12 fenced examples match. No SDK/editor behavior was executed. || JA: timeline合成、秒単位trim、timestamp検証、5種asset、互換性のない2種類のTimeline API、明示された制限は全文で翻訳され、12個のfenced exampleは一致する。SDK/editor挙動は実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/generative.md",
+      "counterpart": "skills/videodb/reference/generative.md",
+      "hash": "0b831c50528e20bf28490a1d87d6ee9c451c47f619073e2c6c6e177e21f73dba",
+      "blob": "360f272a2805d6b3c4c9d3b20736aea33a38d5a8",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese guide preserves image/video/music/SFX/voice/text method separation, parameters, collection-level context, translation/dubbing and complete workflow examples; all 15 code fences match. Model tiers, language support and service behavior are not independently verified. || JA: image/video/music/SFX/voice/text methodの区分、parameter、collection-level context、翻訳／吹替、全workflow例は保たれ、15個のcode fenceは一致する。model tier、対応言語、service挙動は独立確認していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/generative.md",
+          "blob": "360f272a2805d6b3c4c9d3b20736aea33a38d5a8",
+          "hash": "0b831c50528e20bf28490a1d87d6ee9c451c47f619073e2c6c6e177e21f73dba"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/generative.md",
+          "blob": "8b36c524ee41df85e0a511186c7fe1671856ab3f",
+          "hash": "2004debb4e62aa904f7163c1d5252bbd21e7400c5495caaaf91fdb752371ff9f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            331
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            331
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese guide preserves image/video/music/SFX/voice/text method separation, parameters, collection-level context, translation/dubbing and complete workflow examples; all 15 code fences match. Model tiers, language support and service behavior are not independently verified. || JA: image/video/music/SFX/voice/text methodの区分、parameter、collection-level context、翻訳／吹替、全workflow例は保たれ、15個のcode fenceは一致する。model tier、対応言語、service挙動は独立確認していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/rtstream-reference.md",
+      "counterpart": "skills/videodb/reference/rtstream-reference.md",
+      "hash": "67c190875dcf0b7810ab60a7de3b1a55f1873390017f3d0b92aa81079728e3ca",
+      "blob": "30b830512a38a347e6a92257293001a7db3bb43f",
+      "disposition": "analyzed",
+      "reason": "EN: Collection/RTStream methods, Unix-time stream generation, export, audio/visual indexing, batch configuration, transcript, scene-index and alert delivery reference material is translated; all 24 fenced examples match. API claims and alert latency were not tested or checked against the linked live docs. || JA: Collection／RTStream method、Unix timeでのstream生成、export、audio／visual indexing、batch設定、transcript、scene index、alert配信のreferenceは翻訳され、24個のfenced exampleは一致する。API記述やalert latencyは試験せず、リンク先の現行docsとも照合していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/rtstream-reference.md",
+          "blob": "30b830512a38a347e6a92257293001a7db3bb43f",
+          "hash": "67c190875dcf0b7810ab60a7de3b1a55f1873390017f3d0b92aa81079728e3ca"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/rtstream-reference.md",
+          "blob": "f0d89fdd451a763aca0ba2c2ab36d650e3bd3643",
+          "hash": "e73dc675c9a433986cea6a78a36085e0552ee4a74317d7f7e0eb988ea4271dcf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            567
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            564
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Collection/RTStream methods, Unix-time stream generation, export, audio/visual indexing, batch configuration, transcript, scene-index and alert delivery reference material is translated; all 24 fenced examples match. API claims and alert latency were not tested or checked against the linked live docs. || JA: Collection／RTStream method、Unix timeでのstream生成、export、audio／visual indexing、batch設定、transcript、scene index、alert配信のreferenceは翻訳され、24個のfenced exampleは一致する。API記述やalert latencyは試験せず、リンク先の現行docsとも照合していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/rtstream.md",
+      "counterpart": "skills/videodb/reference/rtstream.md",
+      "hash": "41c5bfe84ff008ac0326e46bd722f5fcd48460ac547e8116908e22d75c79ef74",
+      "blob": "21e6119d982c8dd1a1aa4ca5c72f92bc957555e1",
+      "disposition": "analyzed",
+      "reason": "EN: The use cases, seven-step connect→ingest→index→monitor→export→search flow, and source links align; both code fences match. Line-count differences are formatting, not a workflow gap. No RTSP/RTMP connection was made. || JA: use case、接続→取り込み→index→監視→export→検索の7段階、参照先は対応し、2個のcode fenceも一致する。行数差は整形によるもので手順差ではない。RTSP/RTMP接続は行っていない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/rtstream.md",
+          "blob": "21e6119d982c8dd1a1aa4ca5c72f92bc957555e1",
+          "hash": "41c5bfe84ff008ac0326e46bd722f5fcd48460ac547e8116908e22d75c79ef74"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/rtstream.md",
+          "blob": "0d79843354d4ec4e9b6f8e962f70cb4735115f2b",
+          "hash": "bd929e5583ff6377b7b5d72fb8c3416f97c8548450dc6d570fb75586753fea73"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            65
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The use cases, seven-step connect→ingest→index→monitor→export→search flow, and source links align; both code fences match. Line-count differences are formatting, not a workflow gap. No RTSP/RTMP connection was made. || JA: use case、接続→取り込み→index→監視→export→検索の7段階、参照先は対応し、2個のcode fenceも一致する。行数差は整形によるもので手順差ではない。RTSP/RTMP接続は行っていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/search.md",
+      "counterpart": "skills/videodb/reference/search.md",
+      "hash": "572377fdc1859224ce1b31291d26050f8e0ab918c65b8eab86a80866cf79fa3b",
+      "blob": "5f6f8501c42e22528e45f3cb1cce145056de3554",
+      "disposition": "analyzed",
+      "reason": "EN: Spoken-word and scene index, semantic/keyword/scene search, metadata filtering, result handling, collection search limitation, no-result error and score-threshold notes are translated with all 12 code fences matching. No index/search request was made; plan/version statements are unverified. || JA: spoken-word／scene index、semantic／keyword／scene search、metadata filter、result処理、collection search制限、結果なし例外、score threshold注意は翻訳され、12個のcode fenceが一致する。index/search requestは行わず、plan／版の記述も未確認である。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/search.md",
+          "blob": "5f6f8501c42e22528e45f3cb1cce145056de3554",
+          "hash": "572377fdc1859224ce1b31291d26050f8e0ab918c65b8eab86a80866cf79fa3b"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/search.md",
+          "blob": "7fff8c8728445e25985d2c897128418309cc3b66",
+          "hash": "c26a1eab8b4adde439f1bdf252ef4dc1dd17275ebc65c3524ed8c6061b836797"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            230
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            230
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Spoken-word and scene index, semantic/keyword/scene search, metadata filtering, result handling, collection search limitation, no-result error and score-threshold notes are translated with all 12 code fences matching. No index/search request was made; plan/version statements are unverified. || JA: spoken-word／scene index、semantic／keyword／scene search、metadata filter、result処理、collection search制限、結果なし例外、score threshold注意は翻訳され、12個のcode fenceが一致する。index/search requestは行わず、plan／版の記述も未確認である。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/streaming.md",
+      "counterpart": "skills/videodb/reference/streaming.md",
+      "hash": "58c747123e30d9c886f326d65f925ebe4cccc8580dd91654d0d713ed3a50ed09",
+      "blob": "84b1c9e7fc77780862410bf6a33a7955e36a07e4",
+      "disposition": "analyzed",
+      "reason": "EN: Streaming prerequisites, single-video/segment/timeline/search/audio examples, HLS and caching tips, and inline-versus-overlay constraint are translated; all 12 fenced examples match. Playback/API claims were not tested. || JA: streaming前提条件、単一video／segment／timeline／search／audio例、HLSとcacheのtips、inlineとoverlayの制約は翻訳され、12個のfenced exampleが一致する。再生/API記述は試験していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/streaming.md",
+          "blob": "84b1c9e7fc77780862410bf6a33a7955e36a07e4",
+          "hash": "58c747123e30d9c886f326d65f925ebe4cccc8580dd91654d0d713ed3a50ed09"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/streaming.md",
+          "blob": "cf591d923eb513024811d8b2bbf350f4bb08d4f1",
+          "hash": "8963e4a52985dd2b274a259d815dd2ef23bdc2b75930d7f42cb2b8d6a6e0f935"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            406
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            406
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Streaming prerequisites, single-video/segment/timeline/search/audio examples, HLS and caching tips, and inline-versus-overlay constraint are translated; all 12 fenced examples match. Playback/API claims were not tested. || JA: streaming前提条件、単一video／segment／timeline／search／audio例、HLSとcacheのtips、inlineとoverlayの制約は翻訳され、12個のfenced exampleが一致する。再生/API記述は試験していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/videodb/reference/use-cases.md",
+      "counterpart": "skills/videodb/reference/use-cases.md",
+      "hash": "3340ba830e3a46302115eb6c7a0ddecc04bc588f28a061349f83c92630adf0c3",
+      "blob": "6157af65c98f1a0ab6904b9e354b95f0377c4f08",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese prose follows the same search/highlight, enhancement, real-time capture, live-stream, moderation, platform-format and workflow-summary cases. It uses expanded Japanese spacing/list formatting; no method example or distinct workflow delta is present. Scenario claims were not validated against a service. || JA: search／highlight、動画強化、リアルタイムcapture、live stream、moderation、platform形式、workflow summaryの各例は原文に対応する。日本語版は空行や箇条書きの整形を広げており、method例や独立workflow差分はない。事例の実現可能性はserviceで検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/videodb/reference/use-cases.md",
+          "blob": "6157af65c98f1a0ab6904b9e354b95f0377c4f08",
+          "hash": "3340ba830e3a46302115eb6c7a0ddecc04bc588f28a061349f83c92630adf0c3"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/videodb/reference/use-cases.md",
+          "blob": "d86f8470f0b7d1df0d1b74264f1d3190bb1f391f",
+          "hash": "b64966f872d036191747050c5c8121601f54ce8099716665cf09bc0a66c69905"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            142
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            118
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Japanese prose follows the same search/highlight, enhancement, real-time capture, live-stream, moderation, platform-format and workflow-summary cases. It uses expanded Japanese spacing/list formatting; no method example or distinct workflow delta is present. Scenario claims were not validated against a service. || JA: search／highlight、動画強化、リアルタイムcapture、live stream、moderation、platform形式、workflow summaryの各例は原文に対応する。日本語版は空行や箇条書きの整形を広げており、method例や独立workflow差分はない。事例の実現可能性はserviceで検証していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/visa-doc-translate/README.md",
+      "counterpart": "skills/visa-doc-translate/README.md",
+      "hash": "67ce1256039be75bfa639de2d4000d01e29024da467cdf325e2d30d5a24b9e83",
+      "blob": "2a54cbbbea58090bc6f81f1ec8e1798500a0ca5b",
+      "disposition": "analyzed",
+      "reason": "EN: The translated README preserves the stated OCR fallback choices, supported document types, two-page PDF output, requirements and workflow. These are repository claims and were not run, legally assessed or validated against visa authorities. || JA: OCR fallback候補、対応書類、2ページPDF出力、要件、処理手順の記述は翻訳されている。これはrepository内の説明であり、実行、法的評価、各国のビザ当局との照合はしていない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/visa-doc-translate/README.md",
+          "blob": "2a54cbbbea58090bc6f81f1ec8e1798500a0ca5b",
+          "hash": "67ce1256039be75bfa639de2d4000d01e29024da467cdf325e2d30d5a24b9e83"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/visa-doc-translate/README.md",
+          "blob": "8e06bd244ef4f9f4a93cf6b10dfbd173a52f9cbc",
+          "hash": "34c2550bd066d0dbfb976704da8c532f52f7c788b9ecad31f1262754d426e152"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            91
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            86
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The translated README preserves the stated OCR fallback choices, supported document types, two-page PDF output, requirements and workflow. These are repository claims and were not run, legally assessed or validated against visa authorities. || JA: OCR fallback候補、対応書類、2ページPDF出力、要件、処理手順の記述は翻訳されている。これはrepository内の説明であり、実行、法的評価、各国のビザ当局との照合はしていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/visa-doc-translate/SKILL.md",
+      "counterpart": "skills/visa-doc-translate/SKILL.md",
+      "hash": "1bd2445302b1610d85a0bfa6b4cf2047a43c034d41a22e98c136bccd575bb99f",
+      "blob": "e52af725a1ef0a204e72b55b8d00e41cf3630f98",
+      "disposition": "analyzed",
+      "reason": "EN: The complete OCR/rotation/translation/PDF workflow and examples are translated, including the unconditional no-confirmation instruction and the “certified English translation” footer language. No script, OCR, document or PDF was executed or created; the wording itself does not establish certification or acceptance by any authority. || JA: OCR／回転／翻訳／PDFの全手順と例は翻訳され、確認を求めない指示と“certified English translation”の注記も含まれる。script、OCR、書類、PDFは実行・生成していない。この文言だけで公的な認証や当局の受理が成立するわけではない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/visa-doc-translate/SKILL.md",
+          "blob": "e52af725a1ef0a204e72b55b8d00e41cf3630f98",
+          "hash": "1bd2445302b1610d85a0bfa6b4cf2047a43c034d41a22e98c136bccd575bb99f"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/visa-doc-translate/SKILL.md",
+          "blob": "0d48bb2da7b2414e80401bbfb9b3c9e4c0877a40",
+          "hash": "528a180f10389f3228980a487f004e0eaccccf00be0d88073a554001c36bcd89"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            117
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The complete OCR/rotation/translation/PDF workflow and examples are translated, including the unconditional no-confirmation instruction and the “certified English translation” footer language. No script, OCR, document or PDF was executed or created; the wording itself does not establish certification or acceptance by any authority. || JA: OCR／回転／翻訳／PDFの全手順と例は翻訳され、確認を求めない指示と“certified English translation”の注記も含まれる。script、OCR、書類、PDFは実行・生成していない。この文言だけで公的な認証や当局の受理が成立するわけではない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/vite-patterns/SKILL.md",
+      "counterpart": "skills/vite-patterns/SKILL.md",
+      "hash": "3500e9ce0881eed1363dbf32f4c2c7c6855abf81426dbe59d5dcb3722f0eb515",
+      "blob": "b4b72d902e5ca38446c53b1c174b8cb3d2ffde46",
+      "disposition": "analyzed",
+      "reason": "EN: The Vite config, plugin, HMR, env, security/loadEnv, proxy, chunking, library, SSR, prebundle, deployment and monorepo guidance is translated. Code fences differ only in translated comments/localized wording in the examples inspected; executable statements align. Vite 8+/plugin/version behavior was not checked against current docs or run. || JA: Vite config、plugin、HMR、env、security/loadEnv、proxy、chunk、library、SSR、prebundle、deployment、monorepoの説明は翻訳されている。確認したcode fenceの差はcomment／文言の翻訳で、実行文は対応する。Vite 8+やplugin／版の挙動は現行docsと照合せず、実行していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/vite-patterns/SKILL.md",
+          "blob": "b4b72d902e5ca38446c53b1c174b8cb3d2ffde46",
+          "hash": "3500e9ce0881eed1363dbf32f4c2c7c6855abf81426dbe59d5dcb3722f0eb515"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/vite-patterns/SKILL.md",
+          "blob": "98db326bd2e4f1d38fa539b84c0c0ab059848ea4",
+          "hash": "2238d353196b6732ba897e32f1872078fde7a9d11f5aca43b53da8bfc7e3917d"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            449
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            450
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The Vite config, plugin, HMR, env, security/loadEnv, proxy, chunking, library, SSR, prebundle, deployment and monorepo guidance is translated. Code fences differ only in translated comments/localized wording in the examples inspected; executable statements align. Vite 8+/plugin/version behavior was not checked against current docs or run. || JA: Vite config、plugin、HMR、env、security/loadEnv、proxy、chunk、library、SSR、prebundle、deployment、monorepoの説明は翻訳されている。確認したcode fenceの差はcomment／文言の翻訳で、実行文は対応する。Vite 8+やplugin／版の挙動は現行docsと照合せず、実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/windows-desktop-e2e/SKILL.md",
+      "counterpart": "skills/windows-desktop-e2e/SKILL.md",
+      "hash": "6a91f2ccad3d35f579d14fade8510691502231d5b73598bdcc02b2926d97b60e",
+      "blob": "a1cb2816dc8423553fa8ce36c82d4a8098cb9824",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese retains the core UIA/pywinauto, framework, page-object, wait, locator, artifact and sandbox examples but omits the English opt-in per-step JSONL trace section, including its explicit warning not to log typed credentials/PII, and the screenshot-fallback DPI/scaling plus match-confidence diagnostic guidance. The missing observability/privacy and screenshot-calibration details reduce parity. Windows tests and APIs were not run. || JA: UIA／pywinauto、framework、page object、wait、locator、artifact、sandboxの中心例は保たれる一方、入力したcredential／PIIを記録しない警告を含むopt-in逐次JSONL trace節、およびscreenshot fallbackのDPI／scale・match-confidence診断説明が抜けている。観測／privacy／画像校正の説明深度が不足する。Windows testやAPIは実行していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/windows-desktop-e2e/SKILL.md",
+          "blob": "a1cb2816dc8423553fa8ce36c82d4a8098cb9824",
+          "hash": "6a91f2ccad3d35f579d14fade8510691502231d5b73598bdcc02b2926d97b60e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/windows-desktop-e2e/SKILL.md",
+          "blob": "f965b043cee51ed1c464088c08b91cf05710d65f",
+          "hash": "cbc93a1e2514ecdcee30da744aa13eb6c0ebe4948ca3dfff52b287df4f9f0814"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            784
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            888
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: Japanese retains the core UIA/pywinauto, framework, page-object, wait, locator, artifact and sandbox examples but omits the English opt-in per-step JSONL trace section, including its explicit warning not to log typed credentials/PII, and the screenshot-fallback DPI/scaling plus match-confidence diagnostic guidance. The missing observability/privacy and screenshot-calibration details reduce parity. Windows tests and APIs were not run. || JA: UIA／pywinauto、framework、page object、wait、locator、artifact、sandboxの中心例は保たれる一方、入力したcredential／PIIを記録しない警告を含むopt-in逐次JSONL trace節、およびscreenshot fallbackのDPI／scale・match-confidence診断説明が抜けている。観測／privacy／画像校正の説明深度が不足する。Windows testやAPIは実行していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/workspace-surface-audit/SKILL.md",
+      "counterpart": "skills/workspace-surface-audit/SKILL.md",
+      "hash": "3a15b2cd5de85a1edaa1ddbec5e6233a4b96352b26e75c20306fcac11bb97ae0",
+      "blob": "624b1ed6f1a79e2f7a6d058d3de4d50842c5da99",
+      "disposition": "analyzed",
+      "reason": "EN: The read-only audit method, secret-value prohibition, repo/environment/tool/ECC inventories, benchmark comparison, gap-to-skill/hook/agent/MCP choice, five-part output and recommendation limits are translated closely. No host surfaces were inspected as part of reading this frozen skill. || JA: read-only監査、secret値を出さない規則、repo／environment／tool／ECCの棚卸し、benchmark比較、gapに応じたskill／hook／agent／MCPの選択、5部構成の出力、推奨数の制限は概ね翻訳されている。このskill文書を読む作業ではhost設定を調査していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/workspace-surface-audit/SKILL.md",
+          "blob": "624b1ed6f1a79e2f7a6d058d3de4d50842c5da99",
+          "hash": "3a15b2cd5de85a1edaa1ddbec5e6233a4b96352b26e75c20306fcac11bb97ae0"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/workspace-surface-audit/SKILL.md",
+          "blob": "6e7e75376c8fd520240425ee5b6bea967da19277",
+          "hash": "ca6eadae6bd303713da56344bedbd8b246fe07bde1d20a26c9f21844d919cd6f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            125
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            126
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: The read-only audit method, secret-value prohibition, repo/environment/tool/ECC inventories, benchmark comparison, gap-to-skill/hook/agent/MCP choice, five-part output and recommendation limits are translated closely. No host surfaces were inspected as part of reading this frozen skill. || JA: read-only監査、secret値を出さない規則、repo／environment／tool／ECCの棚卸し、benchmark比較、gapに応じたskill／hook／agent／MCPの選択、5部構成の出力、推奨数の制限は概ね翻訳されている。このskill文書を読む作業ではhost設定を調査していない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/skills/x-api/SKILL.md",
+      "counterpart": "skills/x-api/SKILL.md",
+      "hash": "47461b2a4d8acbb355114ab8bda867efafe100a4f2eb9081e02f9e86ebf7ee6d",
+      "blob": "e24e0663b31e0a0c82dcc9ec55d6a114d55b81ac",
+      "disposition": "analyzed",
+      "reason": "EN: JA omits the drift-prone endpoint/access warning, the recent-original-post workflow for voice modeling, and the explicit rule that timelines/search/replies are untrusted data and must never trigger writes; it also lacks user-approval gates before posting. Its OAuth 1.0a example uses X_API_KEY/X_API_SECRET/X_ACCESS_SECRET while EN documents X_CONSUMER_* and X_ACCESS_TOKEN_SECRET and calls legacy aliases out separately. These are material safety/configuration differences; no X request was made. || JA: endpoint／tierが変動する警告、voice modeling用の最近のoriginal post取得手順、timeline／search／replyを信頼しないデータとして扱い投稿などのwriteを誘発させない明示規則、投稿前の利用者承認gateが日本語版にない。OAuth 1.0a例もX_API_KEY／X_API_SECRET／X_ACCESS_SECRETを使う一方、英語版はX_CONSUMER_*／X_ACCESS_TOKEN_SECRETを示し、legacy aliasを別記している。安全性と設定の重要差分であり、X API requestは行っていない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/skills/x-api/SKILL.md",
+          "blob": "e24e0663b31e0a0c82dcc9ec55d6a114d55b81ac",
+          "hash": "47461b2a4d8acbb355114ab8bda867efafe100a4f2eb9081e02f9e86ebf7ee6d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/x-api/SKILL.md",
+          "blob": "70fa8396e7d3ef3a3c09f537d5a662f4d96e5775",
+          "hash": "997937ac9dc11779c6bb6c16833630836a22f1b2f115482982f6350474fa8ff1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            210
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            244
+          ]
+        ],
+        "comparison_basis": "Full Japanese and paired canonical English files were read from the fixed Git commit. SHA-256 and blob identities were cross-checked against the state and source inventory. No translated-file byte-equality claim is made.",
+        "content_role_and_conclusion": "EN: JA omits the drift-prone endpoint/access warning, the recent-original-post workflow for voice modeling, and the explicit rule that timelines/search/replies are untrusted data and must never trigger writes; it also lacks user-approval gates before posting. Its OAuth 1.0a example uses X_API_KEY/X_API_SECRET/X_ACCESS_SECRET while EN documents X_CONSUMER_* and X_ACCESS_TOKEN_SECRET and calls legacy aliases out separately. These are material safety/configuration differences; no X request was made. || JA: endpoint／tierが変動する警告、voice modeling用の最近のoriginal post取得手順、timeline／search／replyを信頼しないデータとして扱い投稿などのwriteを誘発させない明示規則、投稿前の利用者承認gateが日本語版にない。OAuth 1.0a例もX_API_KEY／X_API_SECRET／X_ACCESS_SECRETを使う一方、英語版はX_CONSUMER_*／X_ACCESS_TOKEN_SECRETを示し、legacy aliasを別記している。安全性と設定の重要差分であり、X API requestは行っていない。",
+        "execution": "Static frozen-pair reading only. Source instructions, commands, tests, software, host integrations, paid evaluations and external product/API claims were not executed or verified."
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "candidate_update_suggestions": [
+    {
+      "recommendation": "Do not add a second semantic-control-parity candidate. This skill partition adds independent examples to the existing ecc-ja-agent-semantic-control-parity proposal: security-review, skill-scout, Spring Boot security/verification, TDD workflow, video editing, Windows desktop E2E and X API all show translated or omitted evidence, stop/consent, privacy, authorization or output gates. Keep machine-literal integrity under ecc-variants-localization-symbol-integrity; these are different review dimensions.",
+      "recommendation_zh": "不要重复新增 semantic-control-parity 候选。本分区为既有 ecc-ja-agent-semantic-control-parity 提案补充独立案例：security-review、skill-scout、Spring Boot security/verification、TDD workflow、video editing、Windows desktop E2E 与 X API 的译文呈现证据、停止／同意、隐私、授权或输出门槛的保留和遗漏。机器标识符完整性仍归 ecc-variants-localization-symbol-integrity；这是不同审查维度。",
+      "compare_against": [
+        "ecc-variants-localization-symbol-integrity"
+      ],
+      "supporting_paths": [
+        "docs/ja-JP/skills/security-review/SKILL.md",
+        "docs/ja-JP/skills/skill-scout/SKILL.md",
+        "docs/ja-JP/skills/springboot-security/SKILL.md",
+        "docs/ja-JP/skills/springboot-verification/SKILL.md",
+        "docs/ja-JP/skills/tdd-workflow/SKILL.md",
+        "docs/ja-JP/skills/video-editing/SKILL.md",
+        "docs/ja-JP/skills/windows-desktop-e2e/SKILL.md",
+        "docs/ja-JP/skills/x-api/SKILL.md"
+      ]
+    }
+  ],
+  "curation_recommendations": [
+    {
+      "recommendation": "Treat the skill-reference partition as a translation/control review, not as implementation validation. The VideoDB method references generally preserve code examples and method coverage; defer any API capability, quota, latency, platform, package-version or provider claim until checked against a fixed authoritative source. Prioritize correcting material control gaps in the Japanese security-review, springboot-security, springboot-verification, tdd-workflow, video-editing, windows-desktop-e2e and x-api documents.",
+      "recommendation_zh": "将本分区作为翻译与操作门槛审查，不视为实现验证。VideoDB reference 大体保留代码示例和方法覆盖；API 能力、配额、延迟、平台、包版本或供应商结论应等固定权威来源核实后再采纳。优先修复 security-review、springboot-security、springboot-verification、tdd-workflow、video-editing、windows-desktop-e2e 和 x-api 日文文档中的实质控制缺口。"
+    }
+  ],
+  "editorial_note": "All 40 reserved JA skill-tail pairs were compared with their frozen English counterparts. Conclusions are document-level only; commands, examples, instructions, software behavior and external product claims were not executed or independently verified."
+}

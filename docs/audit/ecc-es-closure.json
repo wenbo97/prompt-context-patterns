@@ -1,0 +1,2436 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "partition": "es-all",
+  "summary": {
+    "status": "complete",
+    "files_reviewed": 62,
+    "spanish_support_docs": 5,
+    "commands": 30,
+    "skills": 26,
+    "standalone_guides": 1,
+    "method": "Full actual Spanish-source read for every assigned path, with counterpart identity from the frozen variants state and English semantic baseline from persisted actual-source reviews. Localized files use difference-review; byte-equivalence and blanket translation aliasing are not claimed.",
+    "candidate_result": "No distinct Spanish-only prompt/context method was found. Existing mechanisms are referenced on Spanish rows that materially illustrate or reinforce them; candidate additions are empty.",
+    "limits": "Historical release, product counts, model/provider claims, and source examples were not re-verified as current/runtime facts. No upstream implementation correctness audit or source execution was performed."
+  },
+  "file_updates": [
+    {
+      "path": "docs/es/CHANGELOG.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "a937c68b37a15e1805bfd9bb8bdc0961fd24dd8b3a962182b9722d2576852757",
+      "blob": "5893c537a5358479a620244b126aeb16b6f0f916",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Read the full Spanish release history. This is localized release and producer/consumer metadata, including reported checkpoint and version claims; it adds no distinct method. Canonical review was intentionally scoped to the actual opening plus selected release excerpts, so no full-history equivalence is claimed. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/CHANGELOG.md",
+          "blob": "5893c537a5358479a620244b126aeb16b6f0f916",
+          "hash": "a937c68b37a15e1805bfd9bb8bdc0961fd24dd8b3a962182b9722d2576852757"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            203
+          ]
+        ],
+        "canonical_path": "CHANGELOG.md",
+        "inspected_delta_conclusion": "Read the full Spanish release history. This is localized release and producer/consumer metadata, including reported checkpoint and version claims; it adds no distinct method. Canonical review was intentionally scoped to the actual opening plus selected release excerpts, so no full-history equivalence is claimed.",
+        "content_role_and_conclusion": "Historical release history. The actual opening records naming-only Pi regeneration and bounded npm-registry propagation polling, while section bodies list release changes and reported checkpoints. This is shipped-change metadata referencing separately reviewed canonical methods; historical current counts, audit results and vulnerability statements are not new experimentally verified patterns. Actual opening, section-content excerpts, source links and declared producer/consumer role were inspected. Full historical/product correctness or every domain recipe is not claimed. No source execution or external changes.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[CHANGELOG.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/CHANGELOG.md]",
+        "canonical_review_depth": "Scoped persisted review; canonical selected excerpts are described in the cited reason and no full-file read is claimed.",
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/CONTRIBUTING.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "ddbb59c3939190a455150f1f8ba4665b5ad2423ff802c24069242e1db2e93ed2",
+      "blob": "6f7eacc88d6d428d38bea4eedc7667ae9cb031f6",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Read the full Spanish contributor guide against the persisted full-source English review. Templates and contribution flow are translated and shortened. Spanish retains legacy matcher, exit-status, and Stop-session-end examples, so translation is not a current host-contract correction. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/CONTRIBUTING.md",
+          "blob": "6f7eacc88d6d428d38bea4eedc7667ae9cb031f6",
+          "hash": "ddbb59c3939190a455150f1f8ba4665b5ad2423ff802c24069242e1db2e93ed2"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            473
+          ]
+        ],
+        "canonical_path": "CONTRIBUTING.md",
+        "inspected_delta_conclusion": "Read the full Spanish contributor guide against the persisted full-source English review. Templates and contribution flow are translated and shortened. Spanish retains legacy matcher, exit-status, and Stop-session-end examples, so translation is not a current host-contract correction.",
+        "content_role_and_conclusion": "Full542line complete authoring/templates/concrete examples/frontmatter consumer constraints, review/source/tool scope, dependency and cross-harness metadata wiring, package/tag exact-byte release gate read. Shared skill-authoring/routing/independent verification/artifact identity methods. Old matcher expressions/exit1-block/Stop-session-end contradict current actual hooks README and are not transplanted; origin/version versus Codex allowlist differs, flat examples and modeltier claims notruntimeproof. No fork/install/PR/release actions.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[CONTRIBUTING.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/CONTRIBUTING.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            541
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/README.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "c7e9bacdf0c6cffe769e0d4c04933a577c272837c2b7cca6f7ec76d18b621d79",
+      "blob": "954adaa86503ebdd7df334d5da0bdd6e915955a8",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Read the Spanish README in bounded overlapping sections covering install, component roles, plugin/manual boundaries, MCP/runtime, host-specific setup, skills/TDD, and support navigation. Catalog and marketing inventory is support content; the reviewed sections preserve the English onramp but do not validate current host/provider availability, claims, or counts. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/README.md",
+          "blob": "954adaa86503ebdd7df334d5da0bdd6e915955a8",
+          "hash": "c7e9bacdf0c6cffe769e0d4c04933a577c272837c2b7cca6f7ec76d18b621d79"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            1388
+          ]
+        ],
+        "canonical_path": "README.md",
+        "inspected_delta_conclusion": "Read the Spanish README in bounded overlapping sections covering install, component roles, plugin/manual boundaries, MCP/runtime, host-specific setup, skills/TDD, and support navigation. Catalog and marketing inventory is support content; the reviewed sections preserve the English onramp but do not validate current host/provider availability, claims, or counts.",
+        "content_role_and_conclusion": "Primary product catalog, installer onramp and canonical skill/command/guide navigation. Fully read manual resource/hook/MCP/runtime boundaries and agents/skills/TDD/trust-scoped memory examples. These point to the already fully reviewed canonical methods rather than introduce a second workflow. Remaining exhaustive catalog/business/platform listing is support data; native availability, model benefits and current counts are not verified by a README. Source tree and section-content role inspected; no upstream installation or provider operation.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[README.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/README.md]",
+        "canonical_review_depth": "Scoped persisted review; canonical selected excerpts are described in the cited reason and no full-file read is claimed.",
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/SECURITY.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "eccf44a9d0fff0db5a7c85083588cf3ba6d709ab1138c874f8dfd54488300f41",
+      "blob": "ba549c06ffd025fb44b900a9cf7107f6539a53b5",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Read the full Spanish security guide against the persisted full-source English review. Disclosure, report fields, source/runtime evidence distinction, and secret-handling examples are translated; local disclosure deadlines and distribution/version assertions remain dated policy, not verified current facts. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/SECURITY.md",
+          "blob": "ba549c06ffd025fb44b900a9cf7107f6539a53b5",
+          "hash": "eccf44a9d0fff0db5a7c85083588cf3ba6d709ab1138c874f8dfd54488300f41"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "canonical_path": "SECURITY.md",
+        "inspected_delta_conclusion": "Read the full Spanish security guide against the persisted full-source English review. Disclosure, report fields, source/runtime evidence distinction, and secret-handling examples are translated; local disclosure deadlines and distribution/version assertions remain dated policy, not verified current facts.",
+        "content_role_and_conclusion": "Full157line affected trust-boundary/repro/version/source report format, private disclosure versus public docs, official distribution metadata and current-process versus superficial system-reminder triage read. Shared evidence-first failure proof/audience separation/current identity trust methods. Reporter deadlines/distribution/vendor status are local dated policy; regex audit not complete secret detection and source blanket rewrite-history advice not performed. No reports/network/history mutations.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[SECURITY.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/SECURITY.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            156
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/TROUBLESHOOTING.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "4c94756bf07c1221d80f42bdefb0ecf9451ff2b705d73c1dd8a29b2bda07eadd",
+      "blob": "f4778692d4541751224db71a18827bebe61d2c1f",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Read the full Spanish troubleshooting guide against the persisted full-source English review. It preserves the diagnostic topic set but retains legacy ~/.claude path examples; the notes also identify sampling, gzip/truncate, and permission risks shared with the source. No troubleshooting commands or cleanup were run. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/TROUBLESHOOTING.md",
+          "blob": "f4778692d4541751224db71a18827bebe61d2c1f",
+          "hash": "4c94756bf07c1221d80f42bdefb0ecf9451ff2b705d73c1dd8a29b2bda07eadd"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            432
+          ]
+        ],
+        "canonical_path": "TROUBLESHOOTING.md",
+        "inspected_delta_conclusion": "Read the full Spanish troubleshooting guide against the persisted full-source English review. It preserves the diagnostic topic set but retains legacy ~/.claude path examples; the notes also identify sampling, gzip/truncate, and permission risks shared with the source. No troubleshooting commands or cleanup were run.",
+        "content_role_and_conclusion": "Full471line all memory/context/agent/tool/hook/setup/performance/version/GUI/third-party owner/durable diagnostics variants read. Shared typed error/failure capture and config-versus-runtime methods. Legacy ~/.claude root conflicts XDG CLI; head is sampling not complete analysis, gzip failure followed unconditional truncate can lose data, chmodgo+rX can expose private memory. Claimed source env knobs/providerversions/fixes notcurrent verified; no commands/permissions/log cleanup performed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[TROUBLESHOOTING.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/TROUBLESHOOTING.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            470
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/build-fix.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "bcff8bc926dbb6e184b119483202a794ea1cc135e0fd0c1001b03855ebb7af29",
+      "blob": "ea27be49cf77949dd26714d899fa26c203117920",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The Spanish text preserves the detect-build-system → group stderr → inspect nearby context → minimal fix → rerun same build → stop/report sequence; wording and examples are localized, with no separate host interface introduced. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/build-fix.md",
+          "blob": "ea27be49cf77949dd26714d899fa26c203117920",
+          "hash": "bcff8bc926dbb6e184b119483202a794ea1cc135e0fd0c1001b03855ebb7af29"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "canonical_path": "commands/build-fix.md",
+        "inspected_delta_conclusion": "The Spanish text preserves the detect-build-system → group stderr → inspect nearby context → minimal fix → rerun same build → stop/report sequence; wording and examples are localized, with no separate host interface introduced.",
+        "content_role_and_conclusion": "Full66line actualbuildsystem→stderrfilegroups-deporder→read10linesminimalfix→samebuild each→3repeat/errorincrease/archdepsstop→observedreport. Shared causal-red/protectedacceptance; 10linesnotalwayscallercontext, npxcanfetchunpinned, compileall notfullbuildbehavior, sourceguardaskingnotourcurrentauthority.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/build-fix.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/build-fix.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/checkpoint.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "75b88ba9bc4542efa84d599bd162972320ec7fab198f2dc1414d9bb04001c0ce",
+      "blob": "e6d3ffe4b50a2edc3c2f61a14c0a9c0d7737914e",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The Spanish text translates the verify-before-stash/commit and timestamp/HEAD/diff/test/coverage checkpoint recipe; it does not add a content-addressed dirty-tree snapshot or change checkpoint scope. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/checkpoint.md",
+          "blob": "e6d3ffe4b50a2edc3c2f61a14c0a9c0d7737914e",
+          "hash": "75b88ba9bc4542efa84d599bd162972320ec7fab198f2dc1414d9bb04001c0ce"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "canonical_path": "commands/checkpoint.md",
+        "inspected_delta_conclusion": "The Spanish text translates the verify-before-stash/commit and timestamp/HEAD/diff/test/coverage checkpoint recipe; it does not add a content-addressed dirty-tree snapshot or change checkpoint scope.",
+        "content_role_and_conclusion": "Full78line verifybeforestash-orcommit/logname-time-shortHEAD/current-diff-testcoverage/list/status/phase sequence/clearlast5 flag. Durablecheckpointmethod shared; dirty/stashsnapshot notidentifiedbyHEAD alone andbaseline testcounts notpersistedlog, safequoting/callerflags/clearimplementation unspecified. No stash/commit/log operation.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/checkpoint.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/checkpoint.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/code-review.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "b19025c578b8f043190c3f98b41b3d4ab34cc7e8f9d72f56d134b242517194c3",
+      "blob": "225e0b001b62085dfe5b49b6aaa67b15cb30722d",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The seven-axis review, local/PR inputs, verdict, evidence artifact, and publication handoff are retained in Spanish; the approve override and npx fallback remain source examples with the same limitations. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/code-review.md",
+          "blob": "225e0b001b62085dfe5b49b6aaa67b15cb30722d",
+          "hash": "b19025c578b8f043190c3f98b41b3d4ab34cc7e8f9d72f56d134b242517194c3"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            289
+          ]
+        ],
+        "canonical_path": "commands/code-review.md",
+        "inspected_delta_conclusion": "The seven-axis review, local/PR inputs, verdict, evidence artifact, and publication handoff are retained in Spanish; the approve override and npx fallback remain source examples with the same limitations.",
+        "content_role_and_conclusion": "Full289line localHEADchangedfullfiles versusPRmetadata-headbranchfullfiles/intent-rules-plan/sevenaxes→stackvalidationrecord→verdict/artifact→publication/report. Shared source-context/evidence-scorecard; actualheadbranchmutable andcurrentworktreechecks notfrozenPRhead, localHEADdiffomitsuntracked, npxfallbackonfailedcanonicaltypecheck hidesfailure, explicitapproveoverride canapprovecriticalcontradictsneverapprove, docs/configlightercanmissharnesspayloadrisk. GitHubpublishnotauthorizedbyanalysis/no calls.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/code-review.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/code-review.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            289
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/evolve.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "8202cbf1ccdf0d28f6e2048ba664220522da924a94239d4f76f3b12e33ce41f6",
+      "blob": "f2c5b0a577462822eb0d0f8627cb3363050f0ba2",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Project/global precedence, domain clustering, routing, promotion, and provenance generation are retained in Spanish; localization does not correct the legacy roots or make counts/confidence semantic proof. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/evolve.md",
+          "blob": "f2c5b0a577462822eb0d0f8627cb3363050f0ba2",
+          "hash": "8202cbf1ccdf0d28f6e2048ba664220522da924a94239d4f76f3b12e33ce41f6"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ],
+        "canonical_path": "commands/evolve.md",
+        "inspected_delta_conclusion": "Project/global precedence, domain clustering, routing, promotion, and provenance generation are retained in Spanish; localization does not correct the legacy roots or make counts/confidence semantic proof.",
+        "content_role_and_conclusion": "Full178line project-globalprecedence→triggerdomainclusters→command/skill/agent routing→promotion candidates→generateoptionalscopedderivedfiles/evolved-from provenance. ActualCLIalreadyfullyread; docs oldXDGpath/globalfallbackbroaden, counts/confidenceclustersnotsemanticequivalence orquality; generatedagent IDlistnotinstructions/overwrites andUnicodeASCIIcollisions inactualcode. No evolutionrun.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/evolve.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/evolve.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/go-build.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "a1060f31e3df5f532c141753fa6e267449a05748ff12bc4ef4b33c00f669c447",
+      "blob": "d387d4478c819727dc76ee81ff1aa966d70a52c0",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The Spanish guide compresses and flattens some examples while retaining diagnostic build/vet/lint, one-error-at-a-time repair, rerun, and stop/report gates; no Go command was run. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/go-build.md",
+          "blob": "d387d4478c819727dc76ee81ff1aa966d70a52c0",
+          "hash": "a1060f31e3df5f532c141753fa6e267449a05748ff12bc4ef4b33c00f669c447"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            166
+          ]
+        ],
+        "canonical_path": "commands/go-build.md",
+        "inspected_delta_conclusion": "The Spanish guide compresses and flattens some examples while retaining diagnostic build/vet/lint, one-error-at-a-time repair, rerun, and stop/report gates; no Go command was run.",
+        "content_role_and_conclusion": "Full183line diagnosticbuild-vet-lint-module→oneerrorfix-rerun→remainingreport/3repeatarchstop/testafter. Shared causal-red/protectedacceptance; strconv.Atoidiscarderror convertsinvalidtozero, returnusernilignorespossiblefinderror, go modtidy ismutationnotdiagnosticread-only. Cannedtimingsgreenresultsnotactualrun/effectiveness.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/go-build.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/go-build.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            183
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/go-review.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "694e6a0637ca7201e0856180e21a75f07d5f97d935ef9eba16e2534447003c2f",
+      "blob": "28aea3d1a5a5a619587b30be34db972e7bf9bf94",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The Spanish review checklist and severity/report shape are retained in compressed form; no independent concurrency/race evidence or run result is added. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/go-review.md",
+          "blob": "28aea3d1a5a5a619587b30be34db972e7bf9bf94",
+          "hash": "694e6a0637ca7201e0856180e21a75f07d5f97d935ef9eba16e2534447003c2f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            124
+          ]
+        ],
+        "canonical_path": "commands/go-review.md",
+        "inspected_delta_conclusion": "The Spanish review checklist and severity/report shape are retained in compressed form; no independent concurrency/race evidence or run result is added.",
+        "content_role_and_conclusion": "Full148line Goagentrouter/changedfiles/staticoptionaltools/racebuild/security/critical-high-medium/fileline-fix-verdict/examples. Shared reviewscorecard; read-onlymapexampledoesnotshowconcurrentwriter so raceclaimnotproven, go build-racenotexecutedracecoverage, fixedstylecriticalseverity/contextmustverify. Domainrecipes no newpromptmethod.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/go-review.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/go-review.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            148
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/go-test.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "955b797a733655593ff36d82fc40d1871d506986aed5b2b0b0cedfb2780c54ba",
+      "blob": "cf1b044991cd851dae7249db2fa74ff7a9b4b414",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The red/green/table-driven recipe remains in Spanish, while helper/setup and test-output detail is condensed; the panic stub and regex examples keep the same limits as the source. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/go-test.md",
+          "blob": "cf1b044991cd851dae7249db2fa74ff7a9b4b414",
+          "hash": "955b797a733655593ff36d82fc40d1871d506986aed5b2b0b0cedfb2780c54ba"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            191
+          ]
+        ],
+        "canonical_path": "commands/go-test.md",
+        "inspected_delta_conclusion": "The red/green/table-driven recipe remains in Spanish, while helper/setup and test-output detail is condensed; the panic stub and regex examples keep the same limits as the source.",
+        "content_role_and_conclusion": "Full268line types-beforetabletest→runbehavioralRED→minimalGREEN/refactor→coverage/unithelperscleanup/paralleltablecase/sharedbaselinerecipe. Supports causal-red/testbehavior; panicstubfailsfirstcase notalltestedcases andregexnotcompleteemailstandard despite100coverage, arbitrary80/90/100targetsnotreliability. CannedPASSnotactualexecution.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/go-test.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/go-test.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            268
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/instinct-export.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "2e3b5dae0c17eb7d573f7aba0c30bed817f240cd47ed19c309c9080970828a89",
+      "blob": "76ca542d620c8f43979534127ded0389c2637670",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Scope selection, confidence/domain filters, YAML fields, and project provenance translate the same export contract; the all/personal wording tension and untrusted raw body are retained. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/instinct-export.md",
+          "blob": "76ca542d620c8f43979534127ded0389c2637670",
+          "hash": "2e3b5dae0c17eb7d573f7aba0c30bed817f240cd47ed19c309c9080970828a89"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "canonical_path": "commands/instinct-export.md",
+        "inspected_delta_conclusion": "Scope selection, confidence/domain filters, YAML fields, and project provenance translate the same export contract; the all/personal wording tension and untrusted raw body are retained.",
+        "content_role_and_conclusion": "Full66line scopeallprojectglobal/filterminconfidence/domain/YAMLwithprojectsource+example/flags. Sharedmemoryscope/provenance; exampleallpersonal description differsallmergeddefault, rawbodymaycontainprivate/untrustedinstructions andconfidenceunverified. ActualCLIread, notexported.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/instinct-export.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/instinct-export.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/instinct-import.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "fab3a0dc760ac75eda39ffae34e2087b9938e82fcdb24ddbb5dba7aaf76fe79d",
+      "blob": "94fe6caadbc76c8788f55f9b308ed073088ef9cc",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "File/URL, dry-run, duplicate, confidence, and scope handling follow the same import flow; translation does not resolve stale path/global-summary or raw-content trust issues. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/instinct-import.md",
+          "blob": "94fe6caadbc76c8788f55f9b308ed073088ef9cc",
+          "hash": "fab3a0dc760ac75eda39ffae34e2087b9938e82fcdb24ddbb5dba7aaf76fe79d"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            114
+          ]
+        ],
+        "canonical_path": "commands/instinct-import.md",
+        "inspected_delta_conclusion": "File/URL, dry-run, duplicate, confidence, and scope handling follow the same import flow; translation does not resolve stale path/global-summary or raw-content trust issues.",
+        "content_role_and_conclusion": "Full114line fileURLparse-IDduplicate/confidencescope/confirmforce/sourcefields. CanonicalCLI actualfullyread; rawuntrustedinstructions/selfconfidence/IDequalitynotquality orsemanticrecurrence; oldpaths/inconsistentglobalsummary, dryrun canmetadatamutate. No imports/network.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/instinct-import.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/instinct-import.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            114
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/instinct-status.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "6c2bc61d815d2a1307c08623ae3a388fc7b04860fc963ca6cffdab3e5646f17c",
+      "blob": "c1bf7917978ad6b6f34455e89b6c0fc0d74cce12",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Shared-root discovery and project/global status reporting are translated; legacy ~/.claude paths remain and scalar confidence is not turned into empirical quality evidence. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/instinct-status.md",
+          "blob": "c1bf7917978ad6b6f34455e89b6c0fc0d74cce12",
+          "hash": "6c2bc61d815d2a1307c08623ae3a388fc7b04860fc963ca6cffdab3e5646f17c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "canonical_path": "commands/instinct-status.md",
+        "inspected_delta_conclusion": "Shared-root discovery and project/global status reporting are translated; legacy ~/.claude paths remain and scalar confidence is not turned into empirical quality evidence.",
+        "content_role_and_conclusion": "Full59line sharedactivepluginroot resolver versusstalelegacy→actualproject/globalprecedencestatusconfidence/domainstats. Existing scopedmemory/currentstate; old ~/.claude/homunculus docs contradictactualXDGCLI, scalarconfidencebarsnotempirical. CanonicalCLI alreadyfullyread.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/instinct-status.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/instinct-status.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/learn-eval.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "8e85fbd32ab7305b15e8bb18e883ce6dc264e400070ee3bba33ca92052347407",
+      "blob": "4dab181444190071de19c36cd7256b44bf29440c",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Fact/uncertainty extraction, scoped checks, skill comparison, and Save/Improve/Absorb/Drop remain; Spanish condenses rationale and evidence guidance, and keyword grep is not semantic completeness. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/learn-eval.md",
+          "blob": "4dab181444190071de19c36cd7256b44bf29440c",
+          "hash": "8e85fbd32ab7305b15e8bb18e883ce6dc264e400070ee3bba33ca92052347407"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            112
+          ]
+        ],
+        "canonical_path": "commands/learn-eval.md",
+        "inspected_delta_conclusion": "Fact/uncertainty extraction, scoped checks, skill comparison, and Save/Improve/Absorb/Drop remain; Spanish condenses rationale and evidence guidance, and keyword grep is not semantic completeness.",
+        "content_role_and_conclusion": "Full153line sessionfacts→uncertaintyprojectscope/guards→triggerdraft→actuallyreadskills+memory overlap/append→Save-Improve-Absorb-Drop→visiblechanges→structuraldiscoverabilitychecks. Shared scopedmemory/evidencepromotion/atomic-learning; keywordgrepnotsemanticwholecoverage/highermodeljudgmentquality claimunsupported/providerfuturefamiliesunverified, checklistnotexecutiontrace andstructuralvaliditynotactivation. No persisteduserglobalskills.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/learn-eval.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/learn-eval.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            153
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/learn.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "7d4f9b40bcc62479fa78fb36a5128cbaa2bf1ecd3991bbd3f9cb18df8abd45cc",
+      "blob": "3c4ffc14ca0e59fb66aad5d2145df2bdfd6400d1",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish retains session-to-reusable-learning and draft structure but omits several canonical safeguards for untrusted redaction, path confinement, existing-file diff/no-overwrite, validation, and recovery; no skill was written. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/learn.md",
+          "blob": "3c4ffc14ca0e59fb66aad5d2145df2bdfd6400d1",
+          "hash": "7d4f9b40bcc62479fa78fb36a5128cbaa2bf1ecd3991bbd3f9cb18df8abd45cc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            74
+          ]
+        ],
+        "canonical_path": "commands/learn.md",
+        "inspected_delta_conclusion": "Spanish retains session-to-reusable-learning and draft structure but omits several canonical safeguards for untrusted redaction, path confinement, existing-file diff/no-overwrite, validation, and recovery; no skill was written.",
+        "content_role_and_conclusion": "Full107line sessionnontrivialreusableevidence→untrustedredaction/policyexclude→slugconfinedapprovedroot→existingdiff/no silentoverwrite→YAMLsanitizeddraft→globalapproval→directorynamefrontmattertriggerdiscoverability actualvalidation/recoveryquarantine. Shared atomic-learning/evidencepromotion/scopedmemory/resourcelayout; prosechecksnotOScontainment/higherpriorityauthority, validYAMLdoesnotprovegoodtrigger orbehavior, providerdiscoveryclaimsnotcurrentverified. No skill installed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/learn.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/learn.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            107
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/multi-backend.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "67f95a625f19815f273b17092fe56aa0b0e23d5d9fc1ffeb007ebbc40b057195",
+      "blob": "3a78c9d362d7922bd27aa3f79ee9a4b6b4c9ae2b",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish keeps model-role selection and research/plan/implementation/review at a high level but compresses the structured task/session call packet and communication contract; no provider was contacted. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/multi-backend.md",
+          "blob": "3a78c9d362d7922bd27aa3f79ee9a4b6b4c9ae2b",
+          "hash": "67f95a625f19815f273b17092fe56aa0b0e23d5d9fc1ffeb007ebbc40b057195"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            97
+          ]
+        ],
+        "canonical_path": "commands/multi-backend.md",
+        "inspected_delta_conclusion": "Spanish keeps model-role selection and research/plan/implementation/review at a high level but compresses the structured task/session call packet and communication contract; no provider was contacted.",
+        "content_role_and_conclusion": "Full164line externalccgprereq/taskpacketrole-context-output/sessionreuse→researchselectedsolutionapprovedplan→authoritativewriter-onlyimplementation→modelreview+tests. Shared laneownership/shared-boundarycontract/capabilitypreflight; modelbrandassertedtrust notverifiedcompetence/authorization andenhancerreplacesuserrequirement canloseconstraints; zerowriteclaimed notenforcedwrapper unavailable; quotedheredocstilltaskEOFdelimiterrisk. No runtimeinstall/providers.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/multi-backend.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/multi-backend.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/multi-execute.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "b06227408b50d775e16ba2078feeca5bc2bb0affe80e0b1fd16a4c481d440779",
+      "blob": "d14121c4b896287ff3171b3c237742cb2454f89d",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish routes frontend/UI work to Gemini where the canonical flow names Antigravity and skips the distinct second validation phase; it also substitutes a mental sandbox for explicit interface/evidence checks. This is a material role/phase delta, not equivalence. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/multi-execute.md",
+          "blob": "d14121c4b896287ff3171b3c237742cb2454f89d",
+          "hash": "b06227408b50d775e16ba2078feeca5bc2bb0affe80e0b1fd16a4c481d440779"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            127
+          ]
+        ],
+        "canonical_path": "commands/multi-execute.md",
+        "inspected_delta_conclusion": "Spanish routes frontend/UI work to Gemini where the canonical flow names Antigravity and skips the distinct second validation phase; it also substitutes a mental sandbox for explicit interface/evidence checks. This is a material role/phase delta, not equivalence.",
+        "content_role_and_conclusion": "Full321line actualplancontext+sessionreuse→route taskscopedprototypepatchonly→mainwriterread/simulate/conflict-check/refactor/apply/minimalselftests→dualroleaudit/necessaryfix/report. Shared contract/ownership/sourcecontext; explicitYrequirement contradictsmulti-planforbidsY/N/commandinvocationalreadyauthorization, mentalsandboxnotexecutioncontainment/typeproof, sameagentreviewcontext notindependent/blindbrandweights vsfeedbackevidence, testsrecommendonly thencompletecanoverstate. No providerorwrite.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/multi-execute.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/multi-execute.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            321
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/multi-frontend.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "0a659e56d4ec604bb450a51c550720020e575127c0fe18f205038c9c0e38e591",
+      "blob": "3cc444e144f9ab62ff31ea14d48434bf9e314c50",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The frontend specialist role is assigned to Gemini in Spanish versus Antigravity in the canonical route, and detailed call-packet/context obligations are condensed; no provider was invoked. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/multi-frontend.md",
+          "blob": "3cc444e144f9ab62ff31ea14d48434bf9e314c50",
+          "hash": "0a659e56d4ec604bb450a51c550720020e575127c0fe18f205038c9c0e38e591"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            97
+          ]
+        ],
+        "canonical_path": "commands/multi-frontend.md",
+        "inspected_delta_conclusion": "The frontend specialist role is assigned to Gemini in Spanish versus Antigravity in the canonical route, and detailed call-packet/context obligations are condensed; no provider was invoked.",
+        "content_role_and_conclusion": "Full164line actualAntigravityrolepaths/sessionreuse/uioutput/domainselectedsolution→sourcecontextplan/write-authorityClaude→reviewresponsivea11y. Fullycomparedbackendvariant UIrolechanges notnewmethod; rawenhancerreplacement/trustbranding andzero-writeclaim lackexternalruntimeauthority proof. Contextretrievaldatauntrusted. No providers/install orUIwork.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/multi-frontend.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/multi-frontend.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/multi-plan.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "a2def67453eb1f7f5c1875990b7ee900ff81103fdf40f0cda3903789886bc78d",
+      "blob": "1607c01b47811db594f4a888ce988822ae013f6d",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish shortens enhancement, source cross-validation, dual-draft/risk comparison, session, and handoff detail; no explicit Y/N authorization step was added, so English gates are not inferred from the translation. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/multi-plan.md",
+          "blob": "1607c01b47811db594f4a888ce988822ae013f6d",
+          "hash": "a2def67453eb1f7f5c1875990b7ee900ff81103fdf40f0cda3903789886bc78d"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "canonical_path": "commands/multi-plan.md",
+        "inspected_delta_conclusion": "Spanish shortens enhancement, source cross-validation, dual-draft/risk comparison, session, and handoff detail; no explicit Y/N authorization step was added, so English gates are not inferred from the translation.",
+        "content_role_and_conclusion": "Full274line externalccgpreflight/planning-only→enhance/retrieveactualsymbols recursivegap→unbiaseddualroles→save actualplan/sessionIDs/context/risks/iteration→manualexecutionhandoff noautoY/N. Shared iterative-gapretrieval/sourcepointers/laneownership; originalrequirementline133 vsreplaced90 ambiguity/enhanceruntrusted, externalzerowritesnotactualsandbox, backend/frontbrandauthorityunsupported, neverkillpollunboundedbudget. No runtime/modelcalls.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/multi-plan.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/multi-plan.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            274
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/multi-workflow.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "6f466ce9bc00c2a75ae8f4bd47ee7dc0e661ec05a539f23703c04296748ad06c",
+      "blob": "1a5efd033adc3840c104b2524dacc8ab0a7c96c8",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish condenses role/session packets, staged research completeness, and integration/review boundaries; translation does not establish provider or write isolation. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/multi-workflow.md",
+          "blob": "1a5efd033adc3840c104b2524dacc8ab0a7c96c8",
+          "hash": "6f466ce9bc00c2a75ae8f4bd47ee7dc0e661ec05a539f23703c04296748ad06c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            104
+          ]
+        ],
+        "canonical_path": "commands/multi-workflow.md",
+        "inspected_delta_conclusion": "Spanish condenses role/session packets, staged research completeness, and integration/review boundaries; translation does not establish provider or write isolation.",
+        "content_role_and_conclusion": "Full197line externalccgcapabilitypreflight/role-sessionpackets/parallelallawait/stagedresearch-completeness→selectedideation/plan→onewriterexecution→independentlanereview/tests/externalworktreeonlywhenactualisolationneed. Shared routing/ownership/contract/boundedphases; foreverpollno killnotboundedresourcecost/hosttimeoutfactsunverified, brandtrust/enhancerreplacement/notwriteprose noactualenforcement,6confirmationgatesnotuser-taskauthority. No modelwork orruntimeinstalls.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/multi-workflow.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/multi-workflow.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            197
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/plan.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "5d7c4e66189947842cfbe4b59c9bd5a8596dca9578fb3b97cc3b01da852cd96a",
+      "blob": "e3d1f5b84cd3309e994d31fbbaab60d60c91879b",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Inline/no-delegation default, source-linked tasks, risks, validation, and user gate remain in Spanish; examples are shorter and the selected-milestone example is not a uniform project rule. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/plan.md",
+          "blob": "e3d1f5b84cd3309e994d31fbbaab60d60c91879b",
+          "hash": "5d7c4e66189947842cfbe4b59c9bd5a8596dca9578fb3b97cc3b01da852cd96a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "canonical_path": "commands/plan.md",
+        "inspected_delta_conclusion": "Inline/no-delegation default, source-linked tasks, risks, validation, and user gate remain in Spanish; examples are shorter and the selected-milestone example is not a uniform project rule.",
+        "content_role_and_conclusion": "Full206line inline/defaultnodelegation exposedoptionalplanneronly userrequest→requirements/codepattern topfileline→riskdeps/selectedPRDmilestone→source-linkedtasks/validation/artifact→usergate/canvas. Sharedgolden-file-pointers/typedlaunchplan/technicalvsproductconstraints; toponeexampledoesnotproveuniformprojectstandard, chosenmilestonein-progress beforeapproval isstatechange, sourceplanestimates9–13hunverified/no budgettoourtask. Dynamicruntimeavailabilitycondition explicitgood. No planupstreamwrite/agentslaunched.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/plan.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/plan.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            206
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/pm2.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "ee317108f6befeaf9c9ce811a2a76ddfe120bbe5df8ab35ff382f8843d0bbf61",
+      "blob": "1da77339fcd9af7296de576dff625a0f25bd3cf0",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish retains stack/port detection and generated config/wrapper outline but omits substantial Python wrapper source, PowerShell, and documentation-update details; existing process-scope and quoting hazards remain. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/pm2.md",
+          "blob": "1da77339fcd9af7296de576dff625a0f25bd3cf0",
+          "hash": "ee317108f6befeaf9c9ce811a2a76ddfe120bbe5df8ab35ff382f8843d0bbf61"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            116
+          ]
+        ],
+        "canonical_path": "commands/pm2.md",
+        "inspected_delta_conclusion": "Spanish retains stack/port detection and generated config/wrapper outline but omits substantial Python wrapper source, PowerShell, and documentation-update details; existing process-scope and quoting hazards remain.",
+        "content_role_and_conclusion": "Full276line actualstack-portprecedence→generatedCJS/pywrapper/minimalthincommands→CLAUDEsectionupdate/report. Shared typed-launchplan/pointer/configfacts; globalpm2stop/restartall notprojectscoped, hardcodedNodepath/0.0.0.0/generationoverwrites unchecked, Pythonspawnclose null→process.exit/null lacks error handler andchildsignalcleanup, WindowsstartBashshellmixed/untrustedinterpolations. CLIcommandtext notsafe directexecution oractualavailability; no processesinstalledstartedstopped.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/pm2.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/pm2.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            276
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/refactor-clean.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "2d7ed52baff3a10d924835dbda8f0724cf659edfb222833a0f0281b8f2dce624",
+      "blob": "09ac7844eba064ca28a3157b70dfed85085c4997",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Risk-ranked scan, baseline, one-at-a-time deletion, rerun, and report are preserved in Spanish; rollback can still erase preexisting edits and tests do not prove all external consumers. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/refactor-clean.md",
+          "blob": "09ac7844eba064ca28a3157b70dfed85085c4997",
+          "hash": "2d7ed52baff3a10d924835dbda8f0724cf659edfb222833a0f0281b8f2dce624"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            81
+          ]
+        ],
+        "canonical_path": "commands/refactor-clean.md",
+        "inspected_delta_conclusion": "Risk-ranked scan, baseline, one-at-a-time deletion, rerun, and report are preserved in Spanish; rollback can still erase preexisting edits and tests do not prove all external consumers.",
+        "content_role_and_conclusion": "Full84line scan→risktiers→baselineonedel-reruntests→publicdynamicconsumerinvestigation→duplicates/report. Existing cleanup-pass/protectedacceptance; noimportsnotunused, testsnotcompleteexternalconsumerproof; gitcheckout file rollbackcanerasepreexistingcoworkeredits; percentduplicate notsemantic-equivalence. No removalsupstream.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/refactor-clean.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/refactor-clean.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/sessions.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "0e638401420bcbf816e4938c6ccde5b69377c1bacc1e3dfbd45d37666b71756a",
+      "blob": "d3984de096822d26cd86aff4e5f90b3dac6436e9",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish compresses the list/load/alias/remove/info/cost command surface; persisted source notes show the same load-output, argument parsing, listing, alias ambiguity, and self-reported statistics gaps. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/sessions.md",
+          "blob": "d3984de096822d26cd86aff4e5f90b3dac6436e9",
+          "hash": "0e638401420bcbf816e4938c6ccde5b69377c1bacc1e3dfbd45d37666b71756a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "canonical_path": "commands/sessions.md",
+        "inspected_delta_conclusion": "Spanish compresses the list/load/alias/remove/info/cost command surface; persisted source notes show the same load-output, argument parsing, listing, alias ambiguity, and self-reported statistics gaps.",
+        "content_role_and_conclusion": "Full339line sharedpluginrootresolver/sessionlist metadata-projectbranchworktree→exactIDalias resolution/loadstats→set-deletealiases/info withactualstateoutput. Shared current-state/identity/context; loadblockprintsmetadata notfullcontent despiteclaim, quotedwholeARGUMENTS givesonearg whereasalias expectsargv1+2, listingfixedlimit20 vsdocs50/filtersunimplemented snippets, aliasesbasenameslegacycurrentcollision/truncatedIDsworktree namesambiguous andselfreportedstatsnotactualruntime. Actuallibs pending/no upstreamscript execution.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/sessions.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/sessions.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            339
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/setup-pm.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "b35050d38e0f67b7e55bc98db6e1f688eab288b6c2fd0fc741e01d9ccb8bb0d9",
+      "blob": "2c0f7f0820f97763fce5731e0ba8c8e8f3db3963",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Detection precedence and manual-only behavior translate the same routing contract; a lockfile remains an input signal rather than proof of installed manager/version. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/setup-pm.md",
+          "blob": "2c0f7f0820f97763fce5731e0ba8c8e8f3db3963",
+          "hash": "b35050d38e0f67b7e55bc98db6e1f688eab288b6c2fd0fc741e01d9ccb8bb0d9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "canonical_path": "commands/setup-pm.md",
+        "inspected_delta_conclusion": "Detection precedence and manual-only behavior translate the same routing contract; a lockfile remains an input signal rather than proof of installed manager/version.",
+        "content_role_and_conclusion": "Full80line explicitdetect/list versusproject/globalpreference/manual-onlymodelinvocationoff/6level env-project-package-lock-global-available precedence/TOMLJSONshellvariants. Sourcepriorityresolvedcontextmethod shared; lockpresenceversusinstalledcompatiblePM/differentversions mustbeverifiedactualscript. No setup orglobalconfigwrite.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/setup-pm.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/setup-pm.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/skill-create.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "94dab2bca66108fcd0a954414d4f298d1e621c2b2d7b95752c8d75db0b3765f5",
+      "blob": "353e7dc305644dd62df4f2d6decb8301d44fff70",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish preserves history-informed skill drafting but omits canonical evidence validation and much of the atomic no-overwrite/recovery flow; exact-artifact-promotion and live-state-proof are existing represented mechanisms. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [
+        "ecc-exact-artifact-promotion",
+        "ecc-live-state-proof"
+      ],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/skill-create.md",
+          "blob": "353e7dc305644dd62df4f2d6decb8301d44fff70",
+          "hash": "94dab2bca66108fcd0a954414d4f298d1e621c2b2d7b95752c8d75db0b3765f5"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            89
+          ]
+        ],
+        "canonical_path": "commands/skill-create.md",
+        "inspected_delta_conclusion": "Spanish preserves history-informed skill drafting but omits canonical evidence validation and much of the atomic no-overwrite/recovery flow; exact-artifact-promotion and live-state-proof are existing represented mechanisms.",
+        "content_role_and_conclusion": "Full178line gitrecenthistory/coconventions→sanitizeobservedfacts/slugrootno silentoverwrite→trigger-firstsameentryname→configuredrootversusexport distinction→uniquevalidatedsiblings YAML/name/triggerbeforeatomicreplacement preservingold/onfailtempquarantine. Addedsupport exact-artifact-promotion124–137/live-state-proof69–76; fixedconfidence0.8/historycochange≠desiredcurrentpolicy ororder, grep^[a-f0-9] wronglyfiltersmanyfilepathfirstletters, nameASCIIcanempty, notactualfilepermission/loadedproof. No skills written/installed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/skill-create.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/skill-create.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/test-coverage.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "5eaedc293a469b003573504bd34f405c1315fd8c3c54d6d6aa94f1301482f5cc",
+      "blob": "5295283d977278d2173bf6545bbb112949efc695",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Framework detection, risk/gap ranking, focused edge tests, rerun, and report are preserved in Spanish; percentage targets remain limited evidence, not a quality guarantee. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/test-coverage.md",
+          "blob": "5295283d977278d2173bf6545bbb112949efc695",
+          "hash": "5eaedc293a469b003573504bd34f405c1315fd8c3c54d6d6aa94f1301482f5cc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "canonical_path": "commands/test-coverage.md",
+        "inspected_delta_conclusion": "Framework detection, risk/gap ranking, focused edge tests, rerun, and report are preserved in Spanish; percentage targets remain limited evidence, not a quality guarantee.",
+        "content_role_and_conclusion": "Full73line detectexistingframework/reportlinebranchgap/riskhappy-error-edge tests/existingconventions/independence/fulltest-reruncoverage loop/report. Shared testgeneration/protectedacceptance; 80percentnotqualityproof/blanketmockFSDBcanlosebehaviorparity/unboundedrepeat canoptimizemeasurement nottask. No testsrun/upstreamwritten.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/test-coverage.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/test-coverage.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/commands/update-docs.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "17266a8dbcc8e1d5574c8bee56b34fa4353627dbbdbf80c4f2b21ce3f4a98cd3",
+      "blob": "7e12724d395a5f793bb5a2b1e2dc6910cc6e483f",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The source-of-truth versus generated/manual sections and stale-doc review are preserved in Spanish; source behavior is not promoted to normative contract and age alone is not proof of factual staleness. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/commands/update-docs.md",
+          "blob": "7e12724d395a5f793bb5a2b1e2dc6910cc6e483f",
+          "hash": "17266a8dbcc8e1d5574c8bee56b34fa4353627dbbdbf80c4f2b21ce3f4a98cd3"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            88
+          ]
+        ],
+        "canonical_path": "commands/update-docs.md",
+        "inspected_delta_conclusion": "The source-of-truth versus generated/manual sections and stale-doc review are preserved in Spanish; source behavior is not promoted to normative contract and age alone is not proof of factual staleness.",
+        "content_role_and_conclusion": "Full88line package/env/routes/exports→generatedsectiontables preservemanual andexplicitnewdocscope/freshness crosscheck/report. Shared doc-fact-ownership/goldenpointers; sourcecodebehavior≠normativecontract/generatedpurposedescriptionsneedactualcommands not guessedexample, ageproxy notfactstaleness; no sourcewrites.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[commands/update-docs.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/commands/update-docs.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            88
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/database-migrations/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "3ca465f5b6b7e55a4258ebf2611898abfb59278ff7611a71dbaed437fa62ed78",
+      "blob": "9ee44bb29fa626d39f301414978b9d8635ab9e20",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Immutable migrations, separate schema/data changes, expand/contract, batched backfill, locking, and framework recipes are translated; code examples remain illustrative and were not applied or executed. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/database-migrations/SKILL.md",
+          "blob": "9ee44bb29fa626d39f301414978b9d8635ab9e20",
+          "hash": "3ca465f5b6b7e55a4258ebf2611898abfb59278ff7611a71dbaed437fa62ed78"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            429
+          ]
+        ],
+        "canonical_path": "skills/database-migrations/SKILL.md",
+        "inspected_delta_conclusion": "Immutable migrations, separate schema/data changes, expand/contract, batched backfill, locking, and framework recipes are translated; code examples remain illustrative and were not applied or executed.",
+        "content_role_and_conclusion": "Full domain immutable deployed migrations, realistic data/recovery and framework examples plus phased expand/write-both/backfill/read-new/contract compatibility. Early backfill-before-dual-write outline can race; migration force/resolve metadata is not database rollback, no-lock/zero-downtime claims require platform verification.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/database-migrations/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/database-migrations/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            430
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/deployment-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "72eb9ebc98abf26e99e3680d02088789daa92a5c4eab46e3acc618e10e14d3fc",
+      "blob": "3bb16b9bbdb6105dd9d27fb04f6df3d3cdaa1c72",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Rolling/blue-green/canary, immutable artifacts, health, rollback, and CI topics remain in near-complete translation; command and zero-downtime examples are not deployment evidence. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/deployment-patterns/SKILL.md",
+          "blob": "3bb16b9bbdb6105dd9d27fb04f6df3d3cdaa1c72",
+          "hash": "72eb9ebc98abf26e99e3680d02088789daa92a5c4eab46e3acc618e10e14d3fc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            427
+          ]
+        ],
+        "canonical_path": "skills/deployment-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Rolling/blue-green/canary, immutable artifacts, health, rollback, and CI topics remain in near-complete translation; command and zero-downtime examples are not deployment evidence.",
+        "content_role_and_conclusion": "Full staged/blue-green/canary/backward-compatible rollout, immutable artifact/health/env/rollback examples; domain operational commands excluded. Echo deployment and migration resolve status are not applied deployment/database rollback evidence; zero-downtime/latency constants not guarantees.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/deployment-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/deployment-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            428
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/django-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "98edb49c99397ac3d63edc01926be1c31ab7586193c9445a94dd267041484d2a",
+      "blob": "c69cca6381ab44f2dc93105b3784d06dc41e286e",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Settings, models/querysets, DRF, services, cache, signals, middleware, and performance examples remain in the same order with translated prose; code was not executed. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/django-patterns/SKILL.md",
+          "blob": "c69cca6381ab44f2dc93105b3784d06dc41e286e",
+          "hash": "98edb49c99397ac3d63edc01926be1c31ab7586193c9445a94dd267041484d2a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            734
+          ]
+        ],
+        "canonical_path": "skills/django-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Settings, models/querysets, DRF, services, cache, signals, middleware, and performance examples remain in the same order with translated prose; code was not executed.",
+        "content_role_and_conclusion": "Full domain settings/models/query/manager/serializer/view/actions/service/cache/signals/middleware/performance/bulk recipes. No independent prompt method; mutable importedconfig leak, payment statusnot effect-idempotence, objectpermission notlist/create policy, signals/bulk paths differ, decimal/partialfield/absentmodel fields and missing paginationfallback exemplars not runnablecomplete. Sourceclaims not runtimeproof.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/django-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/django-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            735
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/docker-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "227683634ce76be47d6a94ba15bf688c0add3e86e584b8f061e047ea73120581",
+      "blob": "ec4a652b91cc898722be30c61113186763241320",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish covers ordinary Docker/Compose/build/network/volume/security/debug material but omits specialized hardened ECC installer harness/isolation, fixture/double-apply, and named session lifecycle sections; no container or harness was run. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/docker-patterns/SKILL.md",
+          "blob": "ec4a652b91cc898722be30c61113186763241320",
+          "hash": "227683634ce76be47d6a94ba15bf688c0add3e86e584b8f061e047ea73120581"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            364
+          ]
+        ],
+        "canonical_path": "skills/docker-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Spanish covers ordinary Docker/Compose/build/network/volume/security/debug material but omits specialized hardened ECC installer harness/isolation, fixture/double-apply, and named session lifecycle sections; no container or harness was run.",
+        "content_role_and_conclusion": "Full domain Compose/build/network/volume/security/debug recipes plus separate hardened installer fixture copy, no-network/no-credentials/shell-free contract, nonempty confined plan/no-write dryrun/double-apply and named reconnect/cleanup. Linux harness not native macOS/Windows validation; source says claimed policies need implementation inspection. Mutable tags/no-root/noexec do not establish full isolation/reproducibility; no containers/source commands executed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/docker-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/docker-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            520
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/e2e-testing/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "ca886b03dbdfb8446ca0375dfe89fab14be0546fb2d01d12bb17726f8c2b9a6a",
+      "blob": "7fc693c4c082b23db9bd60ef4e9c56b8e0f55704",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Page objects, fixtures, explicit waits, flake/quarantine handling, artifacts, and CI are retained in close translation; no browser test was run. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/e2e-testing/SKILL.md",
+          "blob": "7fc693c4c082b23db9bd60ef4e9c56b8e0f55704",
+          "hash": "ca886b03dbdfb8446ca0375dfe89fab14be0546fb2d01d12bb17726f8c2b9a6a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            326
+          ]
+        ],
+        "canonical_path": "skills/e2e-testing/SKILL.md",
+        "inspected_delta_conclusion": "Page objects, fixtures, explicit waits, flake/quarantine handling, artifacts, and CI are retained in close translation; no browser test was run.",
+        "content_role_and_conclusion": "Full Playwright fixture/config/page-object/trace/retry/quarantine/screenshot/CI examples; wait on observable conditions and keep failed/flaky/skipped evidence distinct. After-action response waits may race; production env flag alone is not safe target authority.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/e2e-testing/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/e2e-testing/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            327
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/frontend-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "88567ac4486c855b2a6966bb2eb7d6a818c33f0c5380330f18718a2ed2cc280a",
+      "blob": "8db6565d45534053127caa63803e9aab46bd0192",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Compound/render patterns, hooks, data state, forms, performance, errors, and accessibility examples are translated from the canonical domain guide; sample edge cases remain illustrative, not verified UI behavior. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/frontend-patterns/SKILL.md",
+          "blob": "8db6565d45534053127caa63803e9aab46bd0192",
+          "hash": "88567ac4486c855b2a6966bb2eb7d6a818c33f0c5380330f18718a2ed2cc280a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            642
+          ]
+        ],
+        "canonical_path": "skills/frontend-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Compound/render patterns, hooks, data state, forms, performance, errors, and accessibility examples are translated from the canonical domain guide; sample edge cases remain illustrative, not verified UI behavior.",
+        "content_role_and_conclusion": "Full domain compound/render-prop/hooks/reducer/cache/loading/memo/lazy/list/form/error/animation/a11y recipes. Explicit latestfunction refs versus stableidentity avoids self-induced loop, but no distinct prompt method. DataLoader lacks HTTP/reset/cancel handling, useQuery no stale-request guard, comments conceal form errors, dropdown placeholder not keyboard/ARIA complete and modal no focus trap; not production/a11y proof.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/frontend-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/frontend-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            657
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/golang-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "01b9cc29c7cfa5287addd03f38db342fb6b56855e0fb386b4f0e28c305b6c6bc",
+      "blob": "e123751ea72ba77202ab4052d4c7ad82b45b5a1a",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Error wrapping, interfaces, worker/cancellation/shutdown, options, pooling, layout, and tool recipes remain in near-complete translation; channel-closure and pooled-buffer ownership issues remain source limitations. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/golang-patterns/SKILL.md",
+          "blob": "e123751ea72ba77202ab4052d4c7ad82b45b5a1a",
+          "hash": "01b9cc29c7cfa5287addd03f38db342fb6b56855e0fb386b4f0e28c305b6c6bc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            674
+          ]
+        ],
+        "canonical_path": "skills/golang-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Error wrapping, interfaces, worker/cancellation/shutdown, options, pooling, layout, and tool recipes remain in near-complete translation; channel-closure and pooled-buffer ownership issues remain source limitations.",
+        "content_role_and_conclusion": "Full domain useful zero/typed errors/worker/cancellation/shutdown/interface/package/options/pooling/tool recipes; no independent prompt method. safeFetch leaves channel unclosed and fetch uncancelled, pool returns buffer bytes afterreset/reuse, join examples differ trailing separator, broad error/cleanup policies not tested assurances. Interface default/protocol claims remain domain choices.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/golang-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/golang-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            676
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/golang-testing/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "d5048ddc02315e55f555a244d3210ba1859472f7181b936a33749cd51a67a521",
+      "blob": "d23fd68169c202921ebf9200e41f7f905c495d46",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "TDD, tables, subtests, fixtures, mocks, benchmarks, fuzzing, metamorphic/property examples, coverage, and HTTP tests are retained; invariant examples reinforce the existing metamorphic-oracle candidate rather than add a distinct candidate. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [
+        "ecc-metamorphic-oracle"
+      ],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/golang-testing/SKILL.md",
+          "blob": "d23fd68169c202921ebf9200e41f7f905c495d46",
+          "hash": "d5048ddc02315e55f555a244d3210ba1859472f7181b936a33749cd51a67a521"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            720
+          ]
+        ],
+        "canonical_path": "skills/golang-testing/SKILL.md",
+        "inspected_delta_conclusion": "TDD, tables, subtests, fixtures, mocks, benchmarks, fuzzing, metamorphic/property examples, coverage, and HTTP tests are retained; invariant examples reinforce the existing metamorphic-oracle candidate rather than add a distinct candidate.",
+        "content_role_and_conclusion": "Full red-green/table/subtests/cleanup/golden/mocks/benchmark/fuzz/metamorphic/coverage/HTTP/CI recipes. Related-input invariant oracle is reusable evaluation method beyond domainAPI, with degenerate comparator blindspot documented. Empty assertions/sharedfixedID/golden-update selfacceptance not proof; benchmark setup/copy cost and build-tag exclusion claims limited. No tests/percentages/runtime efficacy adopted.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/golang-testing/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/golang-testing/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            721
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/jpa-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "c5df7acecb34a89e809d836252c74185fdda2aedf96c01ed1227ebc4f8eac655",
+      "blob": "7555ee210adc657b8278fa8f9177ef392653b5e2",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Entity relationships, fetch/projection, transactions, pagination, indexing, pooling, cache, and migration topics follow the English reference; no standalone prompt/context mechanism is introduced. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/jpa-patterns/SKILL.md",
+          "blob": "7555ee210adc657b8278fa8f9177ef392653b5e2",
+          "hash": "c5df7acecb34a89e809d836252c74185fdda2aedf96c01ed1227ebc4f8eac655"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            151
+          ]
+        ],
+        "canonical_path": "skills/jpa-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Entity relationships, fetch/projection, transactions, pagination, indexing, pooling, cache, and migration topics follow the English reference; no standalone prompt/context mechanism is introduced.",
+        "content_role_and_conclusion": "Domain entity/relationship/projection/transaction/pagination/index/pool/cache/migration/test recipes. No new prompt/context mechanism beyond task-bound knowledge and specialist review.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/jpa-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/jpa-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            152
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/kotlin-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "f2846750eb9d8da09352e9ea5ee1d38ce276ecad68ecbf196ce454aea8b741b1",
+      "blob": "adf459cd85bb416841fdd95602151b441d26c074",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Nullability, immutable types, coroutines/Flow, cancellation, delegation, DSL, Gradle, and collection examples remain in translation; domain methods do not add a separate prompt mechanism. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/kotlin-patterns/SKILL.md",
+          "blob": "adf459cd85bb416841fdd95602151b441d26c074",
+          "hash": "f2846750eb9d8da09352e9ea5ee1d38ce276ecad68ecbf196ce454aea8b741b1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            711
+          ]
+        ],
+        "canonical_path": "skills/kotlin-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Nullability, immutable types, coroutines/Flow, cancellation, delegation, DSL, Gradle, and collection examples remain in translation; domain methods do not add a separate prompt mechanism.",
+        "content_role_and_conclusion": "Full domain null/immutable/sealed/scope/extensions/structuredconcurrency/Flow/cleanup/delegation/DSL/sequence/Gradle/error/collections. Respect cancellation and cleanup ownership generalmethods alreadycovered; emptyfallback erases failedread provenance, val/read-only list not deepimmutability, runCatching may swallow cancellation, fakeemail not confirmedaddress and valueclass zerooverhead/context versions not adopted.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/kotlin-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/kotlin-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            712
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/kotlin-testing/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "7211cb654459f677dcee10b29ae4bf4e8b36d5a1d9252f61a057f25452e3e1c6",
+      "blob": "6a8409a07d07053e72aaf7185edbf6c6e2c89859",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Kotest/MockK, async/Flow, fake time, property and metamorphic examples, fixtures, and coverage remain in translation; related-input involution/idempotence/round-trip tests support the existing metamorphic-oracle candidate. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [
+        "ecc-metamorphic-oracle"
+      ],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/kotlin-testing/SKILL.md",
+          "blob": "6a8409a07d07053e72aaf7185edbf6c6e2c89859",
+          "hash": "7211cb654459f677dcee10b29ae4bf4e8b36d5a1d9252f61a057f25452e3e1c6"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            824
+          ]
+        ],
+        "canonical_path": "skills/kotlin-testing/SKILL.md",
+        "inspected_delta_conclusion": "Kotest/MockK, async/Flow, fake time, property and metamorphic examples, fixtures, and coverage remain in translation; related-input involution/idempotence/round-trip tests support the existing metamorphic-oracle candidate.",
+        "content_role_and_conclusion": "Full domain redgreen/spec styles/matchers/mocks/async scheduler/Flow/related-input involution-idempotence-roundtrip/property generator/lifecycle/coverage/Ktor/CI recipes. Metamorphic evaluation has genuine reusable method, constantoutput canpassoneproperty so retaingroundedfixtures; initialsharedFlow eventsbeforecollector/advanceexacttime incomplete schedulerproof, testscope/mock/spec config and coverage exclusion not actualruntime.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/kotlin-testing/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/kotlin-testing/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            825
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/laravel-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "a39b058d834144dd40a2c919738959b30be0b240cb5dfde28e881c021483f1fa",
+      "blob": "f4956c7f31c60f3e6ab6f0469e8868f42accde1b",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Routes/scoped binding, DI, Eloquent, queries, transactions, requests, resources, events/jobs, and cache recipes remain localized; parent-child binding is distinct from authorization in both. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/laravel-patterns/SKILL.md",
+          "blob": "f4956c7f31c60f3e6ab6f0469e8868f42accde1b",
+          "hash": "a39b058d834144dd40a2c919738959b30be0b240cb5dfde28e881c021483f1fa"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            415
+          ]
+        ],
+        "canonical_path": "skills/laravel-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Routes/scoped binding, DI, Eloquent, queries, transactions, requests, resources, events/jobs, and cache recipes remain localized; parent-child binding is distinct from authorization in both.",
+        "content_role_and_conclusion": "Domain routes/scoped bindings/DI/models/casts/queries/transactions/migrations/form authorization/resource/events/queue/cache/config. Explicit parent-child binding distinct from authorization and avoid duplicate same filters; no new prompt mechanism.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/laravel-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/laravel-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            416
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/laravel-security/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "acc0d27e3714547a92963aea33c2bb78af8a3cd4f0d7cfccb60bb0faef8ed007",
+      "blob": "7403b988f08fc08f8ffb6b438e719be1a0304acc",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish covers core auth/session, policies, validation, SQL, CSRF, uploads, and logging but substantially abridges production environment/TLS, Sanctum/Passport, detailed request, queue, logging, and dependency material; examples do not certify host security. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/laravel-security/SKILL.md",
+          "blob": "7403b988f08fc08f8ffb6b438e719be1a0304acc",
+          "hash": "acc0d27e3714547a92963aea33c2bb78af8a3cd4f0d7cfccb60bb0faef8ed007"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            285
+          ]
+        ],
+        "canonical_path": "skills/laravel-security/SKILL.md",
+        "inspected_delta_conclusion": "Spanish covers core auth/session, policies, validation, SQL, CSRF, uploads, and logging but substantially abridges production environment/TLS, Sanctum/Passport, detailed request, queue, logging, and dependency material; examples do not certify host security.",
+        "content_role_and_conclusion": "Full domain config/auth/session/policy/massassignment/SQL/casts/CSRF/template/validation/API/upload/storage/deps/queue/audit/checklist. Generic data/parser/context/authorization methods alreadycovered. ForceHTTPS flag notactualTLS, clientrole validationnotauthority, extensionslist nottypecorrespondence, signedURL mintedbeforepermission, fullURLslogs maysecrets and missingsecret merelylogs; sourcedefault/API/cert/safety statements notadopted.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/laravel-security/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/laravel-security/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            948
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/laravel-tdd/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "403a13d0faf2086ad6c9dc339b2e670a9033671e4a55c6cd5a0ecdf8908b3758",
+      "blob": "33af40d9b9806d2556e3ecfcaee9990cf817b4f1",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Spanish retains core PHPUnit/Pest, factories, HTTP/auth, fake, and coverage workflow but omits many setup, Artisan, queue/storage/event fake, and detailed API examples; no test execution is claimed. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/laravel-tdd/SKILL.md",
+          "blob": "33af40d9b9806d2556e3ecfcaee9990cf817b4f1",
+          "hash": "403a13d0faf2086ad6c9dc339b2e670a9033671e4a55c6cd5a0ecdf8908b3758"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            283
+          ]
+        ],
+        "canonical_path": "skills/laravel-tdd/SKILL.md",
+        "inspected_delta_conclusion": "Spanish retains core PHPUnit/Pest, factories, HTTP/auth, fake, and coverage workflow but omits many setup, Artisan, queue/storage/event fake, and detailed API examples; no test execution is claimed.",
+        "content_role_and_conclusion": "Full domain red-green/config/factory/model/HTTP/API/auth/fake/command/authorization/Pest/coverage recipes with independent fresh fixture and scoped service mocking. No distinct prompt method; mockedmail/queue assertions not realdelivery, redirect/status alone not state mutation proof, timeoutchargeexample lacks idempotence guarantee. One logicalassertion/percentages/frameworkdefaults localpolicy not exhaustive correctness.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/laravel-tdd/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/laravel-tdd/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            675
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/laravel-verification/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "1c06a4600f17672df3fdaa0d09072372fc56c75927e9169a56b03be1d8f82c38",
+      "blob": "87f080e861c37e77f487b62a14b8f18e4aa9edf0",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Environment/Composer/static/test/security/migration/build and queue readiness gates remain; Spanish preserves the distinction between passive queue status and a scoped active staging job, without running either. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/laravel-verification/SKILL.md",
+          "blob": "87f080e861c37e77f487b62a14b8f18e4aa9edf0",
+          "hash": "1c06a4600f17672df3fdaa0d09072372fc56c75927e9169a56b03be1d8f82c38"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            179
+          ]
+        ],
+        "canonical_path": "skills/laravel-verification/SKILL.md",
+        "inspected_delta_conclusion": "Environment/Composer/static/test/security/migration/build and queue readiness gates remain; Spanish preserves the distinction between passive queue status and a scoped active staging job, without running either.",
+        "content_role_and_conclusion": "Sequential env/Composer/static/test/security/migration/build/queue readiness gates; distinguish harmless status from active staging test job and verify expected side effect. Laravel commands excluded from generic catalog.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/laravel-verification/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/laravel-verification/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            180
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/nextjs-turbopack/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "ac600f37fb43a41e127e013009395213e765cfac29b67d27f3117ba94c90249e",
+      "blob": "df5b97374773f1d5541e99270cb90bf9f771ac3e",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The Next/Turbopack development versus production version caveat and proxy.ts/middleware.ts naming are localized; version/performance claims remain source-scoped rather than current-verified. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/nextjs-turbopack/SKILL.md",
+          "blob": "df5b97374773f1d5541e99270cb90bf9f771ac3e",
+          "hash": "ac600f37fb43a41e127e013009395213e765cfac29b67d27f3117ba94c90249e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            55
+          ]
+        ],
+        "canonical_path": "skills/nextjs-turbopack/SKILL.md",
+        "inspected_delta_conclusion": "The Next/Turbopack development versus production version caveat and proxy.ts/middleware.ts naming are localized; version/performance claims remain source-scoped rather than current-verified.",
+        "content_role_and_conclusion": "Domain bundler/version-specific filenames and current-docs guard against obsolete review advice. Performance factors and release facts not reused as generic measured claims.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/nextjs-turbopack/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/nextjs-turbopack/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            58
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/postgres-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "e9c6bfe2bebc2998f1e5bb17223c91ad0663f63355f1fe7e7aee2ae266e607fb",
+      "blob": "ebade8dfa9b3a6fd947bf6a821db20c46e343dba",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Indexing, RLS, upsert, cursor pagination, queue locking, and diagnostic queries remain as domain reference; no new prompt method is introduced and SQL efficiency is not benchmarked. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/postgres-patterns/SKILL.md",
+          "blob": "ebade8dfa9b3a6fd947bf6a821db20c46e343dba",
+          "hash": "e9c6bfe2bebc2998f1e5bb17223c91ad0663f63355f1fe7e7aee2ae266e607fb"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            147
+          ]
+        ],
+        "canonical_path": "skills/postgres-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Indexing, RLS, upsert, cursor pagination, queue locking, and diagnostic queries remain as domain reference; no new prompt method is introduced and SQL efficiency is not benchmarked.",
+        "content_role_and_conclusion": "Domain SQL index/schema/RLS/upsert/pagination/locking/diagnostics/config reference and specialist routing. No unique prompt method; complexity/type preference claims not generalized.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/postgres-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/postgres-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            148
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/python-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "6ad7bbde18cdde2d719464a8acbc715685d010bde61546d082d5b9a6e3e33a8e",
+      "blob": "04a20e11adc03359cbe9ebcc2f30881a52301411",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "EAFP, types, exceptions, context managers, generators, decorators, concurrency, layout, and tool examples remain; timeout/status/cancellation and error-body limitations are retained, not tested. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/python-patterns/SKILL.md",
+          "blob": "04a20e11adc03359cbe9ebcc2f30881a52301411",
+          "hash": "6ad7bbde18cdde2d719464a8acbc715685d010bde61546d082d5b9a6e3e33a8e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            740
+          ]
+        ],
+        "canonical_path": "skills/python-patterns/SKILL.md",
+        "inspected_delta_conclusion": "EAFP, types, exceptions, context managers, generators, decorators, concurrency, layout, and tool examples remain; timeout/status/cancellation and error-body limitations are retained, not tested.",
+        "content_role_and_conclusion": "Full domain idioms/types/error/contextmanager/generators/dataclass/decorators/concurrency/layout/tool/performance examples; no distinct prompt method. Error-body interpolation can leak inputs, timeout/status/cancel and typed failure absent in fetchrecipes, timers miss failure, type hints not validators and isinstance bool/numeric boundary requires exact type where intended. GOOD stylistic choices not measured quality guarantees.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/python-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/python-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            751
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/python-testing/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "57bdd725ca4ba9c2c8a32d657e42b8c486c4adc6c2ddb101df363eb885755784",
+      "blob": "cbacce810dac98a9f228c63b61bc129c019dfa6f",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "pytest/TDD, assertions, fixture scope, params, mocks, async, exceptions, temp paths, and configuration follow the English reference; configured mocks and coverage do not prove application behavior. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/python-testing/SKILL.md",
+          "blob": "cbacce810dac98a9f228c63b61bc129c019dfa6f",
+          "hash": "57bdd725ca4ba9c2c8a32d657e42b8c486c4adc6c2ddb101df363eb885755784"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            562
+          ]
+        ],
+        "canonical_path": "skills/python-testing/SKILL.md",
+        "inspected_delta_conclusion": "pytest/TDD, assertions, fixture scope, params, mocks, async, exceptions, temp paths, and configuration follow the English reference; configured mocks and coverage do not prove application behavior.",
+        "content_role_and_conclusion": "Full domain TDD/assertions/fixture lifecycle and scope/params/markers/mocks/async/exceptions/sideeffects/layout/DB/config/run recipes. No distinct prompt method; directly testing configuredmock or selfraisedexception not application errorbehavior, fixedtemp path races, sharedresource mutable isolation needs care, nestedrollback after commit not provenrestoration and Flaskclient not FastAPI portability. Coverage target not correctness proof.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/python-testing/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/python-testing/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            817
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/quarkus-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "5136b1300fd9bcd9a97c2c892d2d261dd8cabce203c3b9a7430d11c4663ca1b9",
+      "blob": "24fc983ecea5317f2d4f35dc91cf069cf5051d9f",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Layers, messaging, logging, transactions, DTOs, futures, cache, profiles, and health recipes are translated; publish-before-commit and payload-log limitations remain and were not exercised. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/quarkus-patterns/SKILL.md",
+          "blob": "24fc983ecea5317f2d4f35dc91cf069cf5051d9f",
+          "hash": "5136b1300fd9bcd9a97c2c892d2d261dd8cabce203c3b9a7430d11c4663ca1b9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            521
+          ]
+        ],
+        "canonical_path": "skills/quarkus-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Layers, messaging, logging, transactions, DTOs, futures, cache, profiles, and health recipes are translated; publish-before-commit and payload-log limitations remain and were not exercised.",
+        "content_role_and_conclusion": "Full domain layer/event/logcontext/Camel messaging/file/bean/resource/transaction/DTO/error/future/cache/profile/health/dependency recipes. No new prompt mechanism; asyncpublishing beforetransactioncommit contradictslateravoid rule, erroreventmayrollback, fullpayloadlogs leak, claimed receipt/startedcontext not actualdelivery/readiness, constructor/LTS/API/dependency guarantees need actualversion/platformreview.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/quarkus-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/quarkus-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            723
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/quarkus-security/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "142064a0428a9b5ee57ce24f5c95a0805a96285e6dfc190b5ecb06ea62562aa8",
+      "blob": "c7e4743b1e0cc3d4a3967229a7df0be535a846a4",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "JWT/OIDC, ownership, validation, SQL, secrets, CORS, local limits, and audit examples are retained; validateToken returning true remains an explicit fail-open placeholder and the local map is not fleet enforcement. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/quarkus-security/SKILL.md",
+          "blob": "c7e4743b1e0cc3d4a3967229a7df0be535a846a4",
+          "hash": "142064a0428a9b5ee57ce24f5c95a0805a96285e6dfc190b5ecb06ea62562aa8"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            392
+          ]
+        ],
+        "canonical_path": "skills/quarkus-security/SKILL.md",
+        "inspected_delta_conclusion": "JWT/OIDC, ownership, validation, SQL, secrets, CORS, local limits, and audit examples are retained; validateToken returning true remains an explicit fail-open placeholder and the local map is not fleet enforcement.",
+        "content_role_and_conclusion": "Full domain auth/ownership/input/SQL/password/CORS/secrets/rate/headers/audit/CVE examples; no unique prompt method. validateToken true is explicit fail-open placeholder, local unbounded limiter map is neither fleet quota nor distributed identity proof, proxy/header/Servlet integration requires actual setup. No safe-default or CSP/scanner claims adopted.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/quarkus-security/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/quarkus-security/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            468
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/quarkus-tdd/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "aacfc1523ef370f752ee3564721851c08244d667733c51933f6b737bd9945e19",
+      "blob": "622807d1ab87eb0cfe53631fe2a5ee2c4cd2b9d0",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Nested assertions, mocked routes/events/futures, REST tests, coverage, and dependency examples remain; mocks do not prove broker delivery, transaction rollback, or worker context propagation. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/quarkus-tdd/SKILL.md",
+          "blob": "622807d1ab87eb0cfe53631fe2a5ee2c4cd2b9d0",
+          "hash": "aacfc1523ef370f752ee3564721851c08244d667733c51933f6b737bd9945e19"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            485
+          ]
+        ],
+        "canonical_path": "skills/quarkus-tdd/SKILL.md",
+        "inspected_delta_conclusion": "Nested assertions, mocked routes/events/futures, REST tests, coverage, and dependency examples remain; mocks do not prove broker delivery, transaction rollback, or worker context propagation.",
+        "content_role_and_conclusion": "Full nested AAA/positiveandnegativeeffect/mockroute/event/future/resource/API/integration/coverage/dependency/checklist examples. No unique prompt method; route AdviceWith mutations not restoredbetween tests, mockRabbit assertion not realbrokerdelivery, synchronous executormock notworker-threadcontext propagation, test1024size mismatches actualstream and transactionaltest not serverrequestrollback. No execution/coverage/nativeLTSguarantees adopted.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/quarkus-tdd/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/quarkus-tdd/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            812
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/quarkus-verification/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "649ad56225618995774ca319305c07f5babfe118a05f0f5f6b5364ed60c3b70e",
+      "blob": "5dbdac002f689845741a21b03a25523b0c95c535",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Build/static/test/security/native/health/config/documentation gates remain; the example script covers a subset and is not a complete readiness proof. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/quarkus-verification/SKILL.md",
+          "blob": "5dbdac002f689845741a21b03a25523b0c95c535",
+          "hash": "649ad56225618995774ca319305c07f5babfe118a05f0f5f6b5364ed60c3b70e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            378
+          ]
+        ],
+        "canonical_path": "skills/quarkus-verification/SKILL.md",
+        "inspected_delta_conclusion": "Build/static/test/security/native/health/config/documentation gates remain; the example script covers a subset and is not a complete readiness proof.",
+        "content_role_and_conclusion": "Full layered compile/static/test/security/native/health/config/doc/CI examples and applicability gates. Domain API/target thresholds excluded, dynamic/paid/destructive checks require real safe scope; example script covers only subset and is not complete readiness proof.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/quarkus-verification/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/quarkus-verification/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            481
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/rust-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "f323848780ab40729615c9f6350c18058755d48c163867561efbfd5194db06cd",
+      "blob": "d2da3899246fa18f6a22bd701ae0ad52eedceb66",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Ownership/Result, enums, newtypes, traits, concurrency, unsafe, and visibility recipes remain translated; examples and prose are domain advice, not compiled behavior evidence. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/rust-patterns/SKILL.md",
+          "blob": "d2da3899246fa18f6a22bd701ae0ad52eedceb66",
+          "hash": "f323848780ab40729615c9f6350c18058755d48c163867561efbfd5194db06cd"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            499
+          ]
+        ],
+        "canonical_path": "skills/rust-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Ownership/Result, enums, newtypes, traits, concurrency, unsafe, and visibility recipes remain translated; examples and prose are domain advice, not compiled behavior evidence.",
+        "content_role_and_conclusion": "Full domain ownership/Result/enum/exhaustive/newtype/trait/builder/iterator/concurrency/unsafe/public/tool recipes. Distinct state+payload and no wildcard support typed boundary methods, no standalone API pattern. Compile correctness slogan not behavior proof; panic examples contradict no-unwrap policy, request timeout excludes body read, unsafe lifetime/memory invariants incomplete.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/rust-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/rust-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            500
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/rust-testing/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "d44a67e47132caa501bdbdf0d1cbd0b3e2f3d898db05d07f3a4500b754435f0f",
+      "blob": "6cd0bbf4355c99ee2fb2ac1cf3102e6416119bcb",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Red/green, async, integration, property testing, fixtures, docs, benchmarks, coverage, and CI topics remain; no tests were executed and no-run docs or coverage prove only limited scope. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/rust-testing/SKILL.md",
+          "blob": "6cd0bbf4355c99ee2fb2ac1cf3102e6416119bcb",
+          "hash": "d44a67e47132caa501bdbdf0d1cbd0b3e2f3d898db05d07f3a4500b754435f0f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            500
+          ]
+        ],
+        "canonical_path": "skills/rust-testing/SKILL.md",
+        "inspected_delta_conclusion": "Red/green, async, integration, property testing, fixtures, docs, benchmarks, coverage, and CI topics remain; no tests were executed and no-run docs or coverage prove only limited scope.",
+        "content_role_and_conclusion": "Full domain red-green/Result/panic/unit/async/integration/fixture/property/mock/doc/benchmark/coverage/CI examples, deterministic fresh boundaries and fake time. no_run docs/coverage only limited evidence, not executed behavior; no tests or crate efficacy claimed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/rust-testing/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/rust-testing/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            501
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/security-review/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "0cc19a9931d2b2ede0c1f8b1c0e8b0cf7e462970385cc51f58230cd8b6db76e7",
+      "blob": "d4129a5872aa84451da28284afbd50f0ea091f85",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The security review workflow and examples cover input, auth, uploads, SQL, logs, rate limits, and release checks; identity binding, MIME/extension, and local-quota limitations remain from the source. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/security-review/SKILL.md",
+          "blob": "d4129a5872aa84451da28284afbd50f0ea091f85",
+          "hash": "0cc19a9931d2b2ede0c1f8b1c0e8b0cf7e462970385cc51f58230cd8b6db76e7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            503
+          ]
+        ],
+        "canonical_path": "skills/security-review/SKILL.md",
+        "inspected_delta_conclusion": "The security review workflow and examples cover input, auth, uploads, SQL, logs, rate limits, and release checks; identity binding, MIME/extension, and local-quota limitations remain from the source.",
+        "content_role_and_conclusion": "Full10-domain security/check/test workflow plus invocation-time dollar-placeholder collision warning delegated to variants author. Parameter binding must match driver, SELECT-star/redacted-email still disclosure, requester identity needs authenticated binding, upload MIME/extension not content proof, local quota not fleet and placeholder wallet/API code not verified. Root checklist not complete security guarantee.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/security-review/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/security-review/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            511
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/springboot-patterns/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "6f29cf23a643f223fc9f36e1df50b097e19e792c46bd3fa7c64f967e90844c75",
+      "blob": "7af0d056b26a039b78b767c90cc372156f35b052",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Controller/service, validation, caching, async, pagination, jobs, observability, and configuration examples remain translated; process-local quota and retry examples do not establish production behavior. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/springboot-patterns/SKILL.md",
+          "blob": "7af0d056b26a039b78b767c90cc372156f35b052",
+          "hash": "6f29cf23a643f223fc9f36e1df50b097e19e792c46bd3fa7c64f967e90844c75"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            313
+          ]
+        ],
+        "canonical_path": "skills/springboot-patterns/SKILL.md",
+        "inspected_delta_conclusion": "Controller/service, validation, caching, async, pagination, jobs, observability, and configuration examples remain translated; process-local quota and retry examples do not establish production behavior.",
+        "content_role_and_conclusion": "Domain controller/service/repository/validation/cache/async/log/filter/pagination/job/observability recipes. Broad exception retry and per-process quota examples limited; trusted proxy identity separate from user headers; no new prompt method.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/springboot-patterns/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/springboot-patterns/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            315
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/springboot-security/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "3c0e8812d055c2f504d1cfbff63548e4b950ee22a1433e3fd65d538a1bf8a0fc",
+      "blob": "00a36e6f694e86f26b08cbd676bad5b2cd1d6fbb",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Authentication, guards, validation, SQL, passwords, CSRF, CORS, rate limiting, dependencies, and logging examples remain; sample auth chain and in-memory limits are not production-completeness proof. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/springboot-security/SKILL.md",
+          "blob": "00a36e6f694e86f26b08cbd676bad5b2cd1d6fbb",
+          "hash": "3c0e8812d055c2f504d1cfbff63548e4b950ee22a1433e3fd65d538a1bf8a0fc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            272
+          ]
+        ],
+        "canonical_path": "skills/springboot-security/SKILL.md",
+        "inspected_delta_conclusion": "Authentication, guards, validation, SQL, passwords, CSRF, CORS, rate limiting, dependencies, and logging examples remain; sample auth chain and in-memory limits are not production-completeness proof.",
+        "content_role_and_conclusion": "Domain token/guard/DTO/query/password/CSRF/headers/CORS/rate/dependency/log/upload examples; generic input boundaries/redaction only. In-memory quota and sample auth chain not production completeness proof; no live probes performed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/springboot-security/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/springboot-security/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            273
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/springboot-tdd/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "4bf319f7bcd924037d4488ae955c5e0fcb6146f7ea181fc90ddcbdf11b98bd59",
+      "blob": "4d22aa8cd284c5c902ec9cc6d0cfb7d7eb1ae487",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "JUnit/Mockito, MockMvc, application/data tests, containers, coverage, and CI recipes remain localized; no distinct meta-method beyond behavioral TDD/contract verification. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/springboot-tdd/SKILL.md",
+          "blob": "4d22aa8cd284c5c902ec9cc6d0cfb7d7eb1ae487",
+          "hash": "4bf319f7bcd924037d4488ae955c5e0fcb6146f7ea181fc90ddcbdf11b98bd59"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            158
+          ]
+        ],
+        "canonical_path": "skills/springboot-tdd/SKILL.md",
+        "inspected_delta_conclusion": "JUnit/Mockito, MockMvc, application/data tests, containers, coverage, and CI recipes remain localized; no distinct meta-method beyond behavioral TDD/contract verification.",
+        "content_role_and_conclusion": "Framework-specific red/green/refactor and behavioral assertions, boundary mocks, deterministic fast fixtures and matching production test container. No unique meta-pattern beyond TDD/contract verification.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/springboot-tdd/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/springboot-tdd/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            159
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/springboot-verification/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "3e23f796cd2d16de735ca522bdbce62e59516adef953ed9f5e8eebb74403d720",
+      "blob": "1d1453ff04a95ab05e759bb8b23e8391b41d201c",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Build/static/test/security/diff phases and isolated fixtures remain; the optional formatter mutates files, while grep and coverage thresholds are bounded evidence. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/springboot-verification/SKILL.md",
+          "blob": "1d1453ff04a95ab05e759bb8b23e8391b41d201c",
+          "hash": "3e23f796cd2d16de735ca522bdbce62e59516adef953ed9f5e8eebb74403d720"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            231
+          ]
+        ],
+        "canonical_path": "skills/springboot-verification/SKILL.md",
+        "inspected_delta_conclusion": "Build/static/test/security/diff phases and isolated fixtures remain; the optional formatter mutates files, while grep and coverage thresholds are bounded evidence.",
+        "content_role_and_conclusion": "Full framework build/static/tests/security/diff phases and isolated database/API fixtures; mutating format step must be distinguished from read-only verification. Grep/coverage threshold are limited evidence, not complete safety proof.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/springboot-verification/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/springboot-verification/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            232
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/skills/tdd-workflow/SKILL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "17c8061d0f1f0a66164689e62713ee7d8f6210fcd701e2f88e88bf58c5520dc7",
+      "blob": "0e02b84f27bb2e51a3f99adf5fe4f664210b5184",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The untrusted-plan boundary, behavior → test → causal red → same-target green, active reachable checkpoint, and final report remain; mandatory commits/approval/coverage numbers are source policy, not universal new patterns. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [
+        "ecc-causal-red-gate"
+      ],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/skills/tdd-workflow/SKILL.md",
+          "blob": "0e02b84f27bb2e51a3f99adf5fe4f664210b5184",
+          "hash": "17c8061d0f1f0a66164689e62713ee7d8f6210fcd701e2f88e88bf58c5520dc7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            463
+          ]
+        ],
+        "canonical_path": "skills/tdd-workflow/SKILL.md",
+        "inspected_delta_conclusion": "The untrusted-plan boundary, behavior → test → causal red → same-target green, active reachable checkpoint, and final report remain; mandatory commits/approval/coverage numbers are source policy, not universal new patterns.",
+        "content_role_and_conclusion": "Full untrusted-plan/data normalization and behavior→test→causalRED→same-targetGREEN evidence mapping, actual package manager versus runner resolution, active reachable taskcheckpoint and squash-preserved report. Intended-failure gate distinct fromwritten test or missingdeps/setup RED. Mandatory perstagecommit/humancommandapproval/80percent/allTDD are upstreamworkflowpolicies only; emptytests/wrongthresholdname/waits not validproof.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[skills/tdd-workflow/SKILL.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/skills/tdd-workflow/SKILL.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            583
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/es/the-shortform-guide.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "1a29290e179e881b9c3765333011a643503b34a7d29ea797730bc9da59e7cc91",
+      "blob": "56b32c7b4ebe5bf730ce1cf2cbd1b47172a1af1f",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Skills versus legacy shims, hooks, scoped agents, modular rules, MCP selection, and worktrees remain in Spanish; image paths are remapped and the MCP overview link differs, while old path/matcher and fixed context/model claims remain unverified. Canonical content role and bounded limitations are preserved in the linked persisted review note.",
+      "review_kind": "difference-review",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/the-shortform-guide.md",
+          "blob": "56b32c7b4ebe5bf730ce1cf2cbd1b47172a1af1f",
+          "hash": "1a29290e179e881b9c3765333011a643503b34a7d29ea797730bc9da59e7cc91"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            429
+          ]
+        ],
+        "canonical_path": "the-shortform-guide.md",
+        "inspected_delta_conclusion": "Skills versus legacy shims, hooks, scoped agents, modular rules, MCP selection, and worktrees remain in Spanish; image paths are remapped and the MCP overview link differs, while old path/matcher and fixed context/model claims remain unverified.",
+        "content_role_and_conclusion": "Full432line skills-first canonical versus slash shims, explicit event lifecycles, scoped agents, modular rule memory, selective tool loading, worktrees and actual project setup examples read. Same underlying context/ownership/interface methods already extracted. Source raw matcher-expression/mock hook config and legacy flat skill paths conflict newer actual discoverability/host contracts; 200K-to70K/tools80/cheapmodel/editor superiority and sandbox-no-system-effects are unverified. Limited-tools instruction alone is not containment or live parity. No installations or shell commands.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[the-shortform-guide.md]",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/es/the-shortform-guide.md]",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            431
+          ]
+        ],
+        "execution": "Frozen-source text review plus persisted canonical semantic notes only; no upstream commands, builds, tests, installs, providers, deployments, or external mutations were run."
+      }
+    }
+  ],
+  "candidate_additions": []
+}

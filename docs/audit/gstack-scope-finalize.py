@@ -19,6 +19,12 @@ data=read(data_path)['containers'] if data_path.exists() else {}
 
 for row in report['coverage']:
     name = row['path']
+    # Preserve previously closed exclusions and exact duplicates. The role
+    # ledger spans more paths than the pending-only support-shapes cache, so
+    # reprocessing every historical row can index a shape that was never
+    # collected for that already-closed path.
+    if row['disposition'] in ('excluded', 'duplicate'):
+        continue
     if name in direct:
         proof = direct[name]
         if proof['hash'] != row['hash']: raise ValueError('Direct-read hash mismatch: '+name)

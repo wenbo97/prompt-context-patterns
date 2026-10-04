@@ -1,0 +1,75 @@
+{
+  "review_baseline": "9456091c44d796918745eaecad9d1ee9e726b244",
+  "branch": "rebuild/skills-catalog",
+  "catalog": {
+    "active": 306,
+    "traced": 272,
+    "untraced": 34,
+    "merged": 75,
+    "removed": 9,
+    "categories": {
+      "prompt": 14,
+      "context": 45,
+      "workflow": 56,
+      "orchestration": 19,
+      "tools": 43,
+      "output": 10,
+      "evaluation": 73,
+      "safety": 26,
+      "skill-authoring": 20
+    }
+  },
+  "candidate_decisions": {
+    "active": 184,
+    "merged": 138,
+    "rejected": 3,
+    "total": 325
+  },
+  "new_ids": {
+    "first": 207,
+    "last": 390,
+    "count": 184
+  },
+  "checks": {
+    "node_tests": 19,
+    "liquid_roundtrips": 5,
+    "patternfoo_tests": 11,
+    "patternfoo_typescript_build": "pass",
+    "jekyll_build": "pass",
+    "browser_tests": 9,
+    "browser_viewports_css_px": [
+      375,
+      768,
+      1280
+    ],
+    "zoom_check": "200% equivalent reflow via 640 CSS pixels on an emulated 1280-pixel display; browser chrome zoom UI was not tested",
+    "strict_premium_audit_findings": 0,
+    "generated_output_changes": 0,
+    "source_repositories": 10,
+    "frozen_files": 9806,
+    "source_files_with_catalog_locators": 334,
+    "source_ranges_checked": 553,
+    "rendered_pages": 876,
+    "internal_hrefs_checked": 21931,
+    "internal_href_errors": 0,
+    "independent_review": {
+      "rounds": 1,
+      "standards_documented_findings": 1,
+      "standards_minor_judgments": 1,
+      "resolved": 2,
+      "spec_material_findings": 0
+    },
+    "maintenance_relative_links_checked": 24,
+    "maintenance_relative_link_errors": 0,
+    "post_review_affected_browser_tests": 3,
+    "localized_static_labels_checked": 48,
+    "localized_static_surfaces": 6
+  },
+  "boundaries": [
+    "Local checks only; remote PR CI and deployment were not run.",
+    "No source skills, installers, tests, services or paid model evaluations were executed.",
+    "Editorial admission is not empirical efficacy; pinned occurrences are not earliest provenance.",
+    "Patternfoo installation reported eight pre-existing dependency advisories; versions were not force-upgraded."
+  ],
+  "delivery": "Local commit; no push, merge to master or deployment."
+}

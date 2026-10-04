@@ -28,7 +28,9 @@ jobs:
       - run: npm ci
       - run: npm --prefix eval/patternfoo ci --legacy-peer-deps --omit=peer
       - run: npm test
+      - run: npm run sources:restore
       - run: npm run check
+      - run: npm run check:sources
       - run: npm run check:generated
       - run: bundle exec ruby tests/liquid-literals.rb
       - run: npm --prefix eval/patternfoo test

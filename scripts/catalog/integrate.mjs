@@ -19,7 +19,7 @@ const patterns = review.patterns.filter(p => Number.isInteger(p.id)).map(p => ({
   tags: p.tags ?? [], trace_status: p.sources?.length ? 'traceable' : 'untraced', origin_status: p.origin_status ?? 'unknown',
   sources: (p.sources ?? []).map(normalizeSource), related_ids: p.related_ids ?? [],
   reason_en: p.reason_en, reason_zh: p.reason_zh, ...(p.merged_into ? { merged_into: p.merged_into } : {}),
-  review: { scores: p.scores, decision: p.status, reason_en: p.reason_en, reason_zh: p.reason_zh, reviewed_at: '2026-10-03' },
+  review: { scores: p.scores, decision: p.status, reason_en: p.reason_en, reason_zh: p.reason_zh, reviewed_at: p.reviewed_at ?? '2026-10-03' },
   example_origin: 'teaching-construction', validation_status: 'editorial-review-only',
 }));
 const content = new Map(review.patterns.filter(p => p.status === 'active' && Number.isInteger(p.id)).map(p => [p.id, p.content]));
@@ -42,7 +42,7 @@ if (!legacyOnly) {
     patterns.push({ id, key: c.key, status: 'active', name_en: c.name_en ?? name.en, name_zh: c.name_zh ?? name.zh,
       summary_en: c.content.en.description, summary_zh: c.content.zh.description, category: c.category, tags: c.tags,
       trace_status: 'traceable', origin_status: 'unknown', sources, related_ids: decision.related_ids ?? [],
-      review: { scores: c.scores, decision: 'active', reason_en: decision.reason_en, reason_zh: decision.reason_zh, reviewed_at: '2026-10-03' },
+      review: { scores: c.scores, decision: 'active', reason_en: decision.reason_en, reason_zh: decision.reason_zh, reviewed_at: decision.reviewed_at },
       example_origin: 'teaching-construction', validation_status: 'editorial-review-only' });
     content.set(id, c.content);
   }

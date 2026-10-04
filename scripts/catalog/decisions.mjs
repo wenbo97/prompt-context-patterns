@@ -19,3 +19,31 @@ export function resolveDecision(key, decisions, idMap, patterns, seen = new Set(
   if (pattern.status !== 'active') throw new Error(`Candidate ${key} merges into inactive ${pattern.id}`);
   return pattern;
 }
+
+export function validateDecisions(candidates, decisions, idMap, patterns) {
+  const errors = []; const keys = new Set(); const activeIds = new Set();
+  for (const candidate of candidates) {
+    const key = candidate.key;
+    if (!key || keys.has(key)) errors.push(`Duplicate or missing candidate key: ${key}`);
+    keys.add(key); const decision = decisions[key];
+    if (!decision || !['active', 'merged', 'rejected'].includes(decision.status)) {
+      errors.push(`Missing or invalid editorial decision: ${key}`); continue;
+    }
+    if (!decision.reason_en?.trim() || !decision.reason_zh?.trim()) errors.push(`Bilingual editorial rationale missing: ${key}`);
+    if (decision.status === 'rejected') {
+      if (idMap[key] !== undefined) errors.push(`Rejected candidate has an allocated identity: ${key}`);
+      continue;
+    }
+    try {
+      const pattern = resolveDecision(key, decisions, idMap, patterns);
+      if (idMap[key] !== pattern.id) errors.push(`Candidate identity disagrees with its target: ${key}`);
+      if (decision.status === 'active') {
+        if (pattern.id < 207 || activeIds.has(pattern.id)) errors.push(`New candidate identity is invalid or reused: ${key}`);
+        activeIds.add(pattern.id);
+      }
+    } catch (error) { errors.push(error.message); }
+  }
+  for (const key of Object.keys(decisions)) if (!keys.has(key)) errors.push(`Editorial decision has no candidate: ${key}`);
+  for (const key of Object.keys(idMap)) if (!keys.has(key)) errors.push(`Allocated identity has no candidate: ${key}`);
+  return errors;
+}

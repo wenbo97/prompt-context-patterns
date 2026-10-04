@@ -1,38 +1,16 @@
-# Gstack remaining delivery work
+# Gstack source review closure
 
-User revised scope in docs/specs/2026-10-03-blog-rebuild.md is controlling: full method/essential-reference review; exact-equivalence/difference proofs; scoped runtime/test/data purpose review; no comprehensive upstream audit or execution.
+Controlling scope: `docs/specs/2026-10-03-blog-rebuild.md`. Frozen source: `garrytan/gstack` at `f30b7b788a210d217ea3125bf3001b29cbc2a463`.
 
-{
-  "status": "in_progress",
-  "files_analyzed": 507,
-  "scope": "Normative current skill/template/reference mechanisms; repo-specific implementation and history classified separately.",
-  "reviewed_unique_blocks": 4583,
-  "parameter_alias_blocks": 117,
-  "delta_reads": 428,
-  "coverage_counts": {
-    "pending": 958,
-    "analyzed": 507,
-    "excluded": 1184,
-    "duplicate": 7
-  },
-  "review_kind_counts": {
-    "pending": 958,
-    "full-semantic": 369,
-    "scoped-relevance": 1184,
-    "difference-review": 138,
-    "verified-equivalence": 7
-  }
-}
+The source harvest is closed with **0 pending rows**: 2,656 files total, 512 analyzed, 2,137 scoped exclusions and 7 exact duplicates. Review kinds are 385 full-semantic, 127 difference-review, 2,137 scoped-relevance and 7 verified-equivalence. `docs/audit/harvest-gstack.json` records the dispositions and evidence. The former 808 pending rows are all accounted for; support roles were read in bounded batches before closure.
 
-Role ledger contains actual displayed source-opening/import/declaration/test-contract samples, not full implementation semantic claims. All 327 JSON containers have parsed field/provenance scoped reviews; 13 embedded method fields fully read. All 21 section manifests fully read and upgraded in direct-full ledger. Exact byte/Git-blob equivalence verified for six iOS template/fixture copies and the browse SDK copy.
+The source-role review covered test, browse, migration, Supabase, browser-skill, documentation-asset and root-support batches. Complete text was read for the nine Supabase files and the three Hacker News browser-skill files; both contribution-chart images were rendered and viewed. Large release/backlog archives were classified through bounded structural and representative-content samples, not full semantic reviews. Runtime, migrations, network checks, tests, builds and evals were not run. No upstream correctness, security or performance audit is claimed. `docs/audit/gstack-embedded-method-review.json` records support-content review boundaries and candidate curation.
 
-Next: continue gstack-role-batch.py test/ --mark-last --tests-brief (mark only after actual complete displayed output); current role batch is 34 test files, cso-lease-identity.test.ts last, already fully displayed/read but not yet marked. Remaining test implementation files are scoped, not comprehensive audits. After test and browse tests, remaining roots/configs/upgrade/supabase and browser skill helpers need actual purpose review. Fully review remaining essential embedded examples: forcing-finding-seeds.ts, overlay-nudges.ts, plan-decision-classification.ts, devex-peer-comparison-classification.ts; inspect unresolved non-agent-owned long literal inputs where natural-language prompt builders exist (codex-offering/workflow-judge/session clocks already partly covered by earlier full blocks). Do not deep-read all old pending SDK/code blocks.
+The four essential prompt/calibration fixtures and `test/redact-semantic-pass.eval.ts` received full direct reads. The paid eval was not executed. Existing 17 authored candidates were preserved. Two bilingual eight-field candidates are now in the harvest, for 19 total:
 
-Current data batch has all 327 container rows marked; current-literals.json is empty, all design 24-literal batch marked. Full-block current batch is empty; lib/office-hours-review.ts all five blocks marked (4583 unique blocks total). Direct ledger also records complete design/brief.ts, paired arm reference patches and distill CLI reads.
+- `gstack-persona-grounded-peer-benchmarking` compares persona-specific journeys between products, including equal start/result boundaries, evidence types and unknown durations.
+- `gstack-capability-tiered-instruction-digest` preserves a versioned rules-only baseline for hosts that cannot run the full suite, while explicitly withholding unavailable workflows and leaving AGENTS.md copying to the user.
 
-After full gstack closure, finish cross-corpus curation, full integration, final proportionate checks, one parallel independent standards/spec review round, material fixes, local commit. No push/deploy; never finish with partial research.
+Curation: keep persona-based peer benchmarking distinct from `gstack-comparable-coverage-trends` (longitudinal checks), ECC's paired trial-panel evaluation, fixed-context scoring and the shared-host UI comparison. Keep the instruction-only digest distinct from legacy #100's on-demand loading and #173's unavailable-capability report: it distributes a limited but useful behavioral tier. Treat the generated `gstack/llms.txt` as another example of #100, not a separate candidate.
 
-Latest checkpoint: {"status": "in_progress", "files_analyzed": 511, "scope": "Normative current skill/template/reference mechanisms; repo-specific implementation and history classified separately.", "reviewed_unique_blocks": 4583, "parameter_alias_blocks": 117, "delta_reads": 428, "coverage_counts": {"pending": 883, "analyzed": 511, "excluded": 1255, "duplicate": 7}, "review_kind_counts": {"pending": 883, "full-semantic": 373, "scoped-relevance": 1255, "difference-review": 138, "verified-equivalence": 7}}
-Current role batch: 37 test files, ending test/eng-count-question-policy.test.ts; all displayed/read but NOT marked yet. Previous batches are marked. Direct-full ledger now includes the complete 61-rule vendored design vocabulary, module-size template snippet and positive/negative simplification examples. The one 858-token truncated rules output was repaired by explicitly reading rule records 30–43 before recording completion. Essential 4 TS seed/calibration fixtures remain to read.
-
-2026-10-04 status checkpoint: last 38-file source-role batch ending test/gbrain-exec-invariant.test.ts has now been marked after complete displayed review. No current role batch remains. Corpus union before this marking had 7,764 terminal dispositions / 2,042 pending; 184 core terminal records need richer evidence. Next root review resumes test/ --tests-brief without --mark-last.
+The local scope finalizer needed a disposition guard because the historical role ledger includes already-closed paths absent from the pending-only shape cache. The guard preserves existing exclusions and duplicates; pending rows still require matching hash evidence. No source files were changed and no commit was made.

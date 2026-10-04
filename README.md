@@ -2,7 +2,7 @@
 
 Reusable methods extracted from real agent skills. Every active pattern has a concise description, concrete use case, same-task bad/good examples, observable expectations, limits and provenance.
 
-Current directory: **122** active methods, **69** with located source instances, **53** labelled Source unconfirmed. Merged and withdrawn identities remain reachable and are not counted as active.
+Current directory: **306** active methods, **272** with located source instances, **34** labelled Source unconfirmed. Merged and withdrawn identities remain reachable and are not counted as active.
 
 [中文](README-zh.md)
 
@@ -31,9 +31,13 @@ Pinned commit links establish observed instances, not earliest invention. Teachi
 
 ## Verification and maintenance
 
+Sources default to the adjacent `open-skills/<owner>/<repo>` directory; override with `SKILLS_ROOT`. Restoration fetches only frozen commits. Existing directories must pass verification and are never reset.
+
 ```bash
+npm run sources:restore
 npm test
 npm run check
+npm run check:sources
 npm run check:generated
 bundle exec ruby tests/liquid-literals.rb
 bundle exec jekyll build

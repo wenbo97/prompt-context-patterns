@@ -6,7 +6,7 @@
     "stars": 294518,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 229,
-    "pattern_count": 31
+    "pattern_count": 48
   },
   {
     "repo": "mattpocock/skills",
@@ -15,7 +15,7 @@
     "stars": 274789,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 172,
-    "pattern_count": 9
+    "pattern_count": 38
   },
   {
     "repo": "affaan-m/ECC",
@@ -24,7 +24,7 @@
     "stars": 271437,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 4212,
-    "pattern_count": 9
+    "pattern_count": 93
   },
   {
     "repo": "multica-ai/andrej-karpathy-skills",
@@ -33,7 +33,7 @@
     "stars": 216601,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 9,
-    "pattern_count": 0
+    "pattern_count": 4
   },
   {
     "repo": "anthropics/skills",
@@ -42,7 +42,7 @@
     "stars": 179423,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 430,
-    "pattern_count": 20
+    "pattern_count": 55
   },
   {
     "repo": "garrytan/gstack",
@@ -51,7 +51,7 @@
     "stars": 134811,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 2656,
-    "pattern_count": 1
+    "pattern_count": 20
   },
   {
     "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -60,7 +60,7 @@
     "stars": 132596,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 682,
-    "pattern_count": 0
+    "pattern_count": 10
   },
   {
     "repo": "addyosmani/agent-skills",
@@ -69,7 +69,7 @@
     "stars": 100569,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 208,
-    "pattern_count": 0
+    "pattern_count": 38
   },
   {
     "repo": "Leonxlnx/taste-skill",
@@ -78,7 +78,7 @@
     "stars": 92092,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 66,
-    "pattern_count": 0
+    "pattern_count": 14
   },
   {
     "repo": "ComposioHQ/awesome-claude-skills",
@@ -87,6 +87,6 @@
     "stars": 76376,
     "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
     "tracked_files": 1142,
-    "pattern_count": 2
+    "pattern_count": 39
   }
 ]

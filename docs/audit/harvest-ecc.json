@@ -102950,24 +102950,27 @@
     }
   ],
   "summary": {
-    "status": "in_progress",
+    "status": "complete",
     "tracked": 4212,
     "unique_normalized_hashes": 3944,
-    "completed": 2433,
-    "pending": 1779,
+    "completed": 4212,
+    "pending": 0,
     "canonical_full": 293
   },
-  "status": "in_progress",
+  "status": "complete",
   "assigned_partition": {
     "status": "complete",
     "reviewer": "harvest_ecc",
     "owned_closed_paths": 2433,
     "owned_pending_paths": 0,
-    "external_pending_occurrences": 1779,
+    "external_pending_occurrences": 0,
+    "external_closed_unique_paths": 1779,
+    "external_duplicate_overlaps": 12,
     "external_owner": "audit_existing",
-    "scope": "Canonical skills/references/agents/commands/rules/contexts/examples and remaining nonlocale support; locale/harness variants stay externally owned."
+    "external_closure_report": "ecc-variants-state.json",
+    "scope": "Canonical skills/references/agents/commands/rules/contexts/examples and support are closed in this report. Locale/harness variants are closed in ecc-variants-state.json and its evidence ledger; 12 exact variant duplicate rows overlap the base path set."
   },
-  "pending_coverage_count": 1779,
+  "pending_coverage_count": 0,
   "coverage_ledger": "ecc-review-ledger.json",
   "families": [
     {

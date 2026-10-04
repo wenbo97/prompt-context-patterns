@@ -51,6 +51,7 @@ exclude:
   - UX-CONTRACT.md
   - CONTEXT.md
   - CLAUDE.md
+  - AGENTS.md
   - blog-cc-dev.cmd
   - README.md
   - README-zh.md

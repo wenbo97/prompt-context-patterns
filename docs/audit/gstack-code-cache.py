@@ -9,7 +9,7 @@ from pathlib import Path
 p = argparse.ArgumentParser()
 p.add_argument('selection')
 a = p.parse_args()
-root = 'D:/Projects/open-skills/garrytan/gstack'
+root = r'D:\A_Projects\open-skills\garrytan\gstack'
 commit = 'f30b7b788a210d217ea3125bf3001b29cbc2a463'
 cache_path = Path('.tools/gstack/blocks.json')
 cache = json.loads(cache_path.read_text('utf-8'))

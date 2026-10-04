@@ -20,3 +20,7 @@ eval/harvest-2026-07/
 superpowers/
 
 .playwright-mcp/
+
+# Generated Python reader caches
+__pycache__/
+*.py[cod]

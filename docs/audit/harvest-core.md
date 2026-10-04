@@ -1,35 +1,21 @@
 # Eight-repository skill-pattern harvest
 
-Status: **in_progress**. Completed: 3/7 owned repositories; gstack is assigned to the root separate report. Pending coverage is not represented as semantic analysis.
+Status: **complete** for frozen-file accounting at the approved review depth. All eight repositories have terminal evidence-backed outcomes. No source skills, tests, scripts or model calls were executed. Final candidate admission, aliases and IDs are authoritative in `integration-decisions.json` and `new-id-map.json`; harvest statuses are draft recommendations.
 
 ## Repository coverage
 
-- [obra/superpowers](https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d): in_progress; {'excluded': 136, 'analyzed': 93}.
-  - No original source scripts or live evals executed. Root MIT license reviewed; source material treated as evidence, never task instructions.
-  - Unsupported cost/pass-rate/impossibility claims and weakened sample oracles/path checks recorded in per-file conclusions.
-  - Historical project-specific plans/specs, runtime UI/math/installer/CI code and fixtures excluded explicitly after scope review, not labeled semantic duplicates or full reads.
-- [mattpocock/skills](https://github.com/mattpocock/skills/tree/d81f3a183412e71a5b1e84ca21bc1a35eea03a60): complete; {'analyzed': 148, 'excluded': 24}.
-  - All 37 bodies, all current method references/examples, all 37 host adapters and supporting code inspected. Every tracked path has an analyzed/duplicate/excluded disposition.
-  - Documentation URL display stripped for reading; exact paragraph duplicate occurrences retained in core-matt-doc-blocks.json.
-  - Fixed smart-zone/reliability numbers, anonymous field anecdotes, model/host claims, pedagogical efficacy and security scanner exoneration are not established facts.
-  - MIT locally scoped; PR representation attribution to show-me retained as observed adaptation, original invention unknown.
-- [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills/tree/2c606141936f1eeef17fa3043a72095b4765b9c2): complete; {'excluded': 2, 'analyzed': 7}.
-  - All 9 tracked files dispositioned. No root LICENSE; MIT is declared in skill, README and plugin metadata.
-  - One example oracle defect recorded; no claimed empirical improvement imported.
-- [anthropics/skills](https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4): in_progress; {'excluded': 226, 'analyzed': 61, 'duplicate': 35, 'pending': 108}.
-  - Partial source audit:19/20 skill bodies are closed; claude-api body is pending. Ten complete shared API references, all skill-creator sources, current PDF/GIF helpers and art templates are read. Remaining method-bearing support code and API references are pending; no source scripts or live models executed. Public audit records contain independent summaries/examples and frozen locator/hash/range evidence; verbatim reading caches are local under ignored .tools/core-reading-cache.
-- [garrytan/gstack](https://github.com/garrytan/gstack/tree/f30b7b788a210d217ea3125bf3001b29cbc2a463): in_progress; {'pending': 2656}.
-- [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/09170eec67eefd46a7ae85de61b40c194020f997): in_progress; {'pending': 591, 'analyzed': 4, 'duplicate': 6, 'excluded': 81}.
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills/tree/9d0c60d406b454a78ccc0a175b19932047aa4dac): complete; {'excluded': 8, 'analyzed': 195, 'duplicate': 5}.
-  - All 208 tracked paths closed: all 25 bodies, every shared/local reference and example, all personas/adapters, current hooks and validators, full tests/fixtures/plugin graders were semantically read. Only five equal-hash command mirrors were deduplicated; all four modified mirrors had full deltas reviewed.
-  - MIT applies locally. Source scripts, CLI installs, behavioral models, attacks and alert sends were never executed; all examples are independent teaching constructions and efficacy is editorial review only.
-  - Keep semantic variants: five-axis leverage ranking and deliberate reviewer mutation differ from Matt orthogonal axes and Superpowers no-retest reviewers; dialogue, static potential impact, lab, field and trace are distinct evidence kinds.
-  - Source limits include HEAD-after-derived-body cache races and question relevance; unsafe reset/secret-print examples; incomplete error-boundary snippets; contradictory wrapper paths/severity/role scope; short-hash/in-place/fuzzy projection and cross-session risks; narrow parser/validator guarantees; fixed timing, market, host/API, legal and model-effect claims unverified.
-- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/tree/ce26fc25c0e5e8cab638f883de62d9a86ee5e45b): in_progress; {'excluded': 32, 'analyzed': 34}.
-  - All13 skill bodies and their material variants read in full, including long image-generation procedures, code skeletons/appendices and all research text. Supporting source and three rendered examples inspected; branding assets excluded after content-role inspection.
-  - MIT locally scoped. Stars, sponsor/model/pricing claims, subjective luxury quality and statistical laziness efficacy do not establish method quality.
-  - Source flaws: mock RNG called true execution, invented dates/organic metrics, source-unsupported causal/efficacy statistics, contradictory hard style bans, unbounded image/refinement loops and capability descriptions mistaken for execution.
-  - v2 explicitly adds factual/mock number disclosure, contextual constraints and reduced motion relative to v1. No purported block implementation files exist, only schema.
+- **obra/superpowers**: 229 files; dispositions {'excluded': 99, 'analyzed': 130}; review kinds {'difference-review': 14, 'scoped-relevance': 124, 'full-semantic': 91}.
+- **mattpocock/skills**: 172 files; dispositions {'analyzed': 148, 'excluded': 24}; review kinds {'full-semantic': 148, 'scoped-relevance': 24}.
+- **multica-ai/andrej-karpathy-skills**: 9 files; dispositions {'excluded': 2, 'analyzed': 7}; review kinds {'scoped-relevance': 2, 'full-semantic': 7}.
+- **anthropics/skills**: 430 files; dispositions {'excluded': 266, 'analyzed': 109, 'duplicate': 55}; review kinds {'scoped-relevance': 49, 'full-semantic': 105, 'verified-equivalence': 272, 'difference-review': 4}.
+- **garrytan/gstack**: 2656 files; dispositions {'excluded': 2137, 'analyzed': 512, 'duplicate': 7}; review kinds {'scoped-relevance': 2137, 'full-semantic': 385, 'difference-review': 127, 'verified-equivalence': 7}.
+- **nextlevelbuilder/ui-ux-pro-max-skill**: 682 files; dispositions {'analyzed': 202, 'excluded': 205, 'duplicate': 275}; review kinds {'scoped-relevance': 244, 'full-semantic': 82, 'verified-equivalence': 356}.
+- **addyosmani/agent-skills**: 208 files; dispositions {'excluded': 8, 'analyzed': 195, 'duplicate': 5}; review kinds {'difference-review': 4, 'full-semantic': 195, 'verified-equivalence': 5, 'scoped-relevance': 4}.
+- **Leonxlnx/taste-skill**: 66 files; dispositions {'excluded': 32, 'analyzed': 34}; review kinds {'scoped-relevance': 32, 'full-semantic': 34}.
+
+## Evidence correction
+
+Nextlevel's 82 unsubstantiated full-read labels were withdrawn and replaced with fresh bounded complete-body readings, totaling 16,846 physical lines. Sixty exact mirrors now link to these reviewed canonical bodies, with frozen blob/hash equality. Parser coverage and actual reading are separate. Unsupported positive source mappings were pruned rather than retained from headings alone. Audit range endpoints also exclude the phantom empty line after a final LF; corrections are recorded in `source-range-corrections.json`.
 
 ## Source quality and limits
 

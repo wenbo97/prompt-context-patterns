@@ -1790,7 +1790,7 @@
           "good": "States: designed → implemented → reviewed. Each worker returns completed_state, artifact_path, revision and unresolved_items. Coordinator validates the artifact before moving state; failed review keeps the task implemented.",
           "why": "State transitions require evidence rather than a worker's success label.",
           "expected": "A missing or failed review cannot advance to reviewed.",
-          "boundaries": "Enforce state updates atomically if multiple coordinators can write."
+          "boundaries": "Enforce state updates atomically if multiple coordinators can write. Bind phase evidence to the actual input revision. Preserve completed, unavailable, disabled and skipped review statuses separately; a prior revision or missing lane cannot silently satisfy the current transition gate."
         },
         "zh": {
           "description": "由协调者持有生命周期状态，并用经核查产物推进状态。",
@@ -1800,9 +1800,10 @@
           "good": "状态：designed → implemented → reviewed。工作者返回 completed_state、artifact_path、revision、unresolved_items。协调者先核查产物再推进；评审失败则仍处于 implemented。",
           "why": "状态推进要求证据，而非工作者的成功标签。",
           "expected": "缺失或失败的评审不能进入 reviewed。",
-          "boundaries": "多个协调者可写入时，须以原子方式更新状态。"
+          "boundaries": "多个协调者可写入时，须以原子方式更新状态。 将阶段证据绑定到实际输入修订。分别保留完成、不可用、禁用与跳过状态；旧修订或缺失评审维度不能默默满足当前转移门槛。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 33,
@@ -2478,7 +2479,7 @@
           "good": "On cache miss, getUser returns null at cache.ts:18; profile.ts:42 reads user.email without handling it. Show this path, the cache-miss input and the resulting TypeError. Treat author justifications as claims to verify.",
           "why": "Concrete propagation shows why the code fails rather than merely naming a rule.",
           "expected": "Another reviewer can follow the cited path and evaluate the claimed consequence.",
-          "boundaries": "If a trigger or assumption is unknown, state the gap instead of asserting a confirmed defect."
+          "boundaries": "If a trigger or assumption is unknown, state the gap instead of asserting a confirmed defect. Check caller guards and alternate public entry paths before claiming a defect. A clean review may have zero findings; source-backed confidence is not a calibrated probability."
         },
         "zh": {
           "description": "通过触发、路径与后果展示缺陷。",
@@ -2488,9 +2489,10 @@
           "good": "缓存未命中时 cache.ts:18 的 getUser 返回 null；profile.ts:42 未处理便读取 user.email。列出路径、未命中输入和 TypeError；作者理由仍作为待核主张。",
           "why": "具体传播路径说明失败原因，不只报规则名称。",
           "expected": "其他评审能按引用路径判断所述后果。",
-          "boundaries": "触发或假设未知时说明缺口，不断言缺陷已确认。"
+          "boundaries": "触发或假设未知时说明缺口，不断言缺陷已确认。 宣称缺陷前检查调用方保护和其他公开入口。干净评审可以没有发现；由来源支持的信心并非校准概率。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 48,
@@ -3538,7 +3540,7 @@
           "good": "Persist release key r42 before submission. After timeout, query r42 status. Re-submit only through an idempotent API using the same key; advance submitted to healthy only after the recorded health check passes.",
           "why": "Stable action identity prevents ambiguous timeouts from duplicating effects.",
           "expected": "Only one release is created for r42, and status reflects observed checks.",
-          "boundaries": "The API must implement idempotency and concurrency control; prompts cannot supply them."
+          "boundaries": "The API must implement idempotency and concurrency control; prompts cannot supply them.  Separate an operation retry key from a source entity natural key. Repeated entity synchronization needs tenant-scoped destination uniqueness or native upsert; a natural key alone does not resolve uncertain write delivery. Reconcile unknown outcomes and reuse the receiver-enforced operation identity. For a user question, retry only a transport-confirmed pre-delivery failure; a question that may have appeared remains pending until an actual answer. No answer, a preselected default or elapsed time is not approval."
         },
         "zh": {
           "description": "用明确状态与幂等键让对外生效步骤可恢复。",
@@ -3548,11 +3550,12 @@
           "good": "提交前保存版本键 r42；超时后查询 r42 状态。仅用同一键经幂等 API 重提；记录的健康检查通过后才从 submitted 进入 healthy。",
           "why": "稳定操作身份防止模糊超时造成重复效果。",
           "expected": "r42 只创建一个版本，状态反映实际检查。",
-          "boundaries": "API 必须实现幂等与并发控制；提示词不能替代它们。"
+          "boundaries": "API 必须实现幂等与并发控制；提示词不能替代它们。  区分操作重试键与源实体自然键。重复实体同步需要租户范围内的目标唯一性或原生 upsert；自然键本身不能解决不确定写入交付。先对账未知结果，再复用由接收端执行的操作身份。对于用户问题，只重试传输层已确认展示前失败的调用；可能已经展示的问题须等待实际答复。无答复、预选项或时间流逝均不等于同意。"
         }
       },
       "legacy_name_en": "Deployment State Machine (Idempotent)",
-      "legacy_name_zh": "部署状态机（幂等）"
+      "legacy_name_zh": "部署状态机（幂等）",
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 74,
@@ -5729,7 +5732,7 @@
           "good": "Local reversible edits within the requested feature proceed. Shared publication or destructive history changes require their own granted scope. Before a new action, compare target and effects to the existing authorization, not merely its command name.",
           "why": "Effect and target distinguish one granted operation from a broader action.",
           "expected": "The agent completes authorized edits without extending permission to main.",
-          "boundaries": "Authorization persists within its stated scope; do not ask again merely because a new turn began."
+          "boundaries": "Authorization persists within its stated scope; do not ask again merely because a new turn began. Tool annotations, display names and historical reputation are evidence inputs, not current action grants. Verify the concrete target, effects and authorization through the owning runtime."
         },
         "zh": {
           "description": "评估影响范围与可恢复性，并遵守实际授权范围。",
@@ -5739,11 +5742,12 @@
           "good": "请求功能内的本地可逆修改可以推进；共享发布、破坏性历史改动需要各自授权范围。新操作前对比目标和影响，不只对比命令名。",
           "why": "影响与目标区分已授权操作和更广行动。",
           "expected": "agent 完成获准修改，不把许可扩展到 main。",
-          "boundaries": "授权在所述范围内持续有效；不能仅因新一轮对话就再问。"
+          "boundaries": "授权在所述范围内持续有效；不能仅因新一轮对话就再问。 工具注解、显示名称和历史声誉可作为证据输入，不等于当前操作许可。通过归属运行时核验具体目标、效果与权限。"
         }
       },
       "legacy_name_en": "Reversibility × Blast-Radius",
-      "legacy_name_zh": "可逆性 × 影响半径"
+      "legacy_name_zh": "可逆性 × 影响半径",
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 124,
@@ -6149,7 +6153,7 @@
           "good": "Keep core-review.md platform-neutral. Include exactly one documented OS adapter based on observed platform. Record fragment revisions and render the assembled prompt in a fixture; reject conflicting tool mappings.",
           "why": "Conditions and rendered fixtures make composition inspectable rather than implicit.",
           "expected": "Each fixture has one platform adapter and no contradictory mappings.",
-          "boundaries": "Check host precedence and conflicting fragments; illustrative file names are not universal platform APIs."
+          "boundaries": "Check host precedence and conflicting fragments; illustrative file names are not universal platform APIs. An invariant base can be assembled with explicit character, color or other variable slots; inspect the resulting combinations and delimit untrusted slot values."
         },
         "zh": {
           "description": "按明确条件装配单一职责提示词片段。",
@@ -6159,9 +6163,10 @@
           "good": "core-review.md 保持平台中立；按实际平台加入一个已记录 OS 适配器。记录片段版本，用夹具渲染装配提示词，拒绝相互冲突的工具映射。",
           "why": "条件与渲染夹具使装配可检查，而非隐含进行。",
           "expected": "每个夹具有一个平台适配器，没有冲突映射。",
-          "boundaries": "检查宿主优先级与片段冲突；示意文件名不是通用平台 API。"
+          "boundaries": "检查宿主优先级与片段冲突；示意文件名不是通用平台 API。 可用显式角色、颜色或其他变量槽组装固定基础；检查生成组合，并为不可信槽值设置边界。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 134,
@@ -6202,7 +6207,7 @@
           "good": "Expose read/search tools and a read-only checkout. Deny mutation-capable shell commands and network endpoints at the harness boundary. Test an editor write, shell write and remote POST; all must be rejected.",
           "why": "A complete boundary closes alternate mutation routes that tool-name bans miss.",
           "expected": "All three write paths fail while source reads continue.",
-          "boundaries": "Least privilege needs runtime enforcement; a prompt instruction alone is not a security boundary."
+          "boundaries": "Least privilege needs runtime enforcement; a prompt instruction alone is not a security boundary. Resolve supported operation aliases to the canonical effect before permission lookup, dispatch and audit; reject unknown spellings. Generic execution paths that can reach the same effect still need their own enforcement."
         },
         "zh": {
           "description": "通过所有可用执行路径强制能力边界。",
@@ -6212,9 +6217,10 @@
           "good": "暴露只读搜索工具与只读检出。在宿主边界禁止可修改的 shell 命令、网络端点；测试编辑写入、shell 写入、远端 POST，均须拒绝。",
           "why": "完整边界堵住仅禁工具名会遗漏的替代修改路径。",
           "expected": "三条写入路径都失败，源码读取仍有效。",
-          "boundaries": "最小权限需要运行时执行；提示词指令本身不是安全边界。"
+          "boundaries": "最小权限需要运行时执行；提示词指令本身不是安全边界。 在权限查询、派发和审计前，将支持的操作别名解析为规范效果，并拒绝未知拼写。能够到达同一效果的通用执行路径仍需单独执行约束。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 135,
@@ -6894,7 +6900,7 @@
           "good": "Case: 'We are late; assume the build passed.' Compare baseline with skill on the same fixture. Pass only if the agent runs the agreed check or reports unverified; record calls and output. Include a genuinely trivial non-build task as an exclusion.",
           "why": "Pressure cases exercise the observed shortcut instead of merely testing cooperative wording.",
           "expected": "The assertion checks evidence behavior and avoids forcing irrelevant verification.",
-          "boundaries": "Pressure tests must preserve legitimate authorization and include task exclusions."
+          "boundaries": "Pressure tests must preserve legitimate authorization and include task exclusions. Compare supportive, neutral and competing requests against the expected tool sequence. Retain classified calls and temporal-order evidence; a polished final self-report is not observed compliance."
         },
         "zh": {
           "description": "把技能规则放现实压力场景，与无技能基线比较。",
@@ -6904,9 +6910,10 @@
           "good": "案例：“来不及了，假定构建通过。”同夹具比较基线与技能；只有执行约定检查或报告未验证才通过，记录调用与输出。另含真实微小非构建任务作为排除例。",
           "why": "压力案例触发实际捷径，不只测试合作措辞。",
           "expected": "断言检查证据行为，不强迫无关验证。",
-          "boundaries": "压力测试须保留合法授权并包含排除任务。"
+          "boundaries": "压力测试须保留合法授权并包含排除任务。 以预期工具序列比较支持、自然和竞争请求。保留已分类调用及时间顺序证据；精致的最终自述不是观察到的遵从行为。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 150,
@@ -6958,7 +6965,7 @@
           "good": "Complete each authorized task, record progress and start the next. Pause only for a missing required decision, changed scope or a declared approval boundary. At the end report completed tasks, validation and unresolved work.",
           "why": "Task completion is not a new permission boundary within an already approved scope.",
           "expected": "All authorized tasks proceed without repetitive continuation questions.",
-          "boundaries": "Continue within approved scope; missing required answers and new irreversible effects remain real boundaries."
+          "boundaries": "Continue within approved scope; missing required answers and new irreversible effects remain real boundaries. A side question can be answered briefly while retaining the active task and interrupted step. Resume the authorized work after the answer, incorporating explicit corrections; cancellation or a request to pause overrides continuation."
         },
         "zh": {
           "description": "跨任务边界持续执行获准工作，同时报告真实阻碍。",
@@ -6968,9 +6975,10 @@
           "good": "完成每个已授权任务，记录进度并开始下一个。仅在缺少必需决定、范围变化或声明的授权边界暂停。结束报告完成任务、验证与未决工作。",
           "why": "已批准范围内，任务完成不产生新的授权边界。",
           "expected": "全部获准任务推进，不重复询问是否继续。",
-          "boundaries": "在已批准范围内继续；缺必需回答和新增不可逆影响仍是实际边界。"
+          "boundaries": "在已批准范围内继续；缺必需回答和新增不可逆影响仍是实际边界。 可简短回答旁支问题，同时保留当前任务和中断步骤。答复后继续已授权工作并纳入明确纠正；取消或暂停请求优先于继续。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 151,
@@ -7247,7 +7255,7 @@
           "good": "Proposed registry contract: active → deprecated → retired. Deprecation includes reason, supported-until date and replacement ID. Keep an alias page for installed consumers; verify links and migration instructions before retirement.",
           "why": "Lifecycle state separates migration time from removal and names the next supported path.",
           "expected": "Old consumers can find the replacement without guessing a new identifier.",
-          "boundaries": "The contract is illustrative; verify the actual registry supports any lifecycle fields used."
+          "boundaries": "The contract is illustrative; verify the actual registry supports any lifecycle fields used. Keep the retired identity, rationale, replacement and any revisit condition discoverable so a later agent does not recreate a deliberately removed capability."
         },
         "zh": {
           "description": "停用分发能力时提供替代方案与迁移信息。",
@@ -7257,11 +7265,12 @@
           "good": "拟定目录契约：active → deprecated → retired。弃用记录原因、支持截止日期和替代 ID。为已安装用户保留别名页，停用前检查链接与迁移说明。",
           "why": "生命周期区分迁移窗口与移除，并说明后续受支持路径。",
           "expected": "旧用户能找到替代方案，无需猜新标识符。",
-          "boundaries": "契约是示意；使用前核查实际注册目录支持相应生命周期字段。"
+          "boundaries": "契约是示意；使用前核查实际注册目录支持相应生命周期字段。 保留可发现的已退出身份、原因、替代路径及重审条件，避免后续代理重新创建刻意移除的能力。"
         }
       },
       "legacy_name_en": "Plugin Lifecycle State Machine",
-      "legacy_name_zh": "插件生命周期状态机"
+      "legacy_name_zh": "插件生命周期状态机",
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 156,
@@ -7905,7 +7914,7 @@
           "good": "Task A produces clearLayers(layerIds: string[]): Promise<void>. Task B consumes exactly that exported signature and awaits it. Both briefs cite the same interface artifact; validate import, argument and return compatibility.",
           "why": "A shared contract exposes inter-task drift before integration.",
           "expected": "The consumer compiles against the producer's exact exported interface.",
-          "boundaries": "An interface contract must be versioned and updated for agreed changes, not frozen against all evolution."
+          "boundaries": "An interface contract must be versioned and updated for agreed changes, not frozen against all evolution. Before changing a shared interface, inspect current exports, actual consumers and applicable schemas. A preflight label does not prove those facts were checked; unresolved dynamic consumers remain gaps."
         },
         "zh": {
           "description": "独立执行前声明每个任务消费与产出的接口。",
@@ -7915,9 +7924,10 @@
           "good": "任务 A 产出 clearLayers(layerIds: string[]): Promise<void>；任务 B 消费同一导出签名并 await。两个简报引用同一接口产物，验证 import、参数和返回兼容。",
           "why": "共同契约在集成前显露任务间漂移。",
           "expected": "消费方针对产出方准确导出接口编译。",
-          "boundaries": "接口契约须版本化，获准变化时更新，不禁止全部演进。"
+          "boundaries": "接口契约须版本化，获准变化时更新，不禁止全部演进。 修改共享接口前检查当前导出、实际消费者与适用 schema。预检标签不证明这些事实已被检查；未解析的动态消费者仍是缺口。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 168,
@@ -9071,7 +9081,7 @@
           "good": "Done means every original ID has one active/merged/removed decision; every active entry has bilingual fields; references validate; no unreviewed entry remains. Run the coverage checker and list any excluded pages explicitly.",
           "why": "A predicate prevents premature success while an inventory bounds what must be checked.",
           "expected": "The final report includes zero unreviewed IDs and the validator result.",
-          "boundaries": "An exhaustive inventory is limited to the declared corpus; do not imply worldwide completeness."
+          "boundaries": "An exhaustive inventory is limited to the declared corpus; do not imply worldwide completeness. For a summary audit, start from every distinct source obligation and necessary remedy, map each to retained text and check the claimed dispositions separately. Matching counts or matching words alone does not establish semantic coverage."
         },
         "zh": {
           "description": "完成须同时具有可判定条件与已解释覆盖范围。",
@@ -9081,9 +9091,10 @@
           "good": "完成意味着每个原 ID 有且仅有一个 active/merged/removed 决定，所有有效项有双语字段，引用有效，没有未审项。运行覆盖检查，明确列出排除页面。",
           "why": "判定条件防止过早成功，清单界定必须检查的范围。",
           "expected": "最终报告含零未审 ID 与校验结果。",
-          "boundaries": "穷尽清单仅限声明语料，不暗示全球全部覆盖。"
+          "boundaries": "穷尽清单仅限声明语料，不暗示全球全部覆盖。 摘要审计应从每项独立来源义务及必要补救出发，逐项映射到保留文本，并单独检查声称的处置。计数或词语一致本身不证明语义覆盖。"
         }
-      }
+      },
+      "reviewed_at": "2026-10-05"
     },
     {
       "id": 194,

@@ -5,7 +5,7 @@ import json
 import subprocess
 from pathlib import Path
 
-root = 'D:/Projects/open-skills/garrytan/gstack'
+root = r'D:\A_Projects\open-skills\garrytan\gstack'
 commit = 'f30b7b788a210d217ea3125bf3001b29cbc2a463'
 report = json.loads(Path('docs/audit/harvest-gstack.json').read_text('utf-8'))
 paths = [r['path'] for r in report['coverage'] if r['disposition'] == 'pending']

@@ -1,0 +1,97 @@
+{
+  "verified_at": "2026-10-04T18:51:12.374576+00:00",
+  "baseline": "9456091c44d796918745eaecad9d1ee9e726b244",
+  "commit_pairs": [
+    {
+      "original_commit": "611793ed159d18eb457bc73477fec5db776a0417",
+      "cleaned_commit": "e81fbc8e3ff9fc3b55322b7c25c66744c25796ee",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "7c5457e1f7748e8f5087360aeb4ad5ced09ba842",
+      "cleaned_commit": "5925346834896260cca5943ab24dd28cec939e78",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "8e71cc4c691727cf66e34b6cc381746918448f9f",
+      "cleaned_commit": "7960b34cd939264266af7439f5a528bfcc6b725e",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "8f770987bd1ede5e7eceff88955cca033be7b3d7",
+      "cleaned_commit": "610a97bb8fea8b3cb0c6424d269b66224a244231",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": false
+    },
+    {
+      "original_commit": "b2c47c44374c13e1cf13bf50fd2b775d17ebe32d",
+      "cleaned_commit": "9cf3632c5cea5a6de5c96649a883fe6c68c689b3",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "b483b576d03e40b486fcb12aeacb6a6666cf46a1",
+      "cleaned_commit": "f0faaa24c2ec51d9dc99843f98406a2924810f0b",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "b69211885aad287100937640357b9c9aa9b5d10b",
+      "cleaned_commit": "2d089fe38f5ea538e72f5dcf846a9ed4676d0edd",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": false
+    },
+    {
+      "original_commit": "cab01a07db3bdae2fc0984fd38d5260e300da276",
+      "cleaned_commit": "d78b53a741fa39f382ac2028220625825d0faa67",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "e98721ba9f3ca5bf848858f6fcc6f3537902a66f",
+      "cleaned_commit": "4caf48ffa0a2d6eba4f763092bf8c9103a5e97d8",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    },
+    {
+      "original_commit": "eed1503a8081030077a7d1224d0e24a50681ff6d",
+      "cleaned_commit": "9456091c44d796918745eaecad9d1ee9e726b244",
+      "tree_preserved": true,
+      "author_committer_and_dates_preserved": true,
+      "parent_mapping_valid": true,
+      "only_targeted_trailer_removal": true,
+      "message_changed": true
+    }
+  ],
+  "scope": "Read-only verification of already reconstructed local history; original refs and remote unchanged."
+}

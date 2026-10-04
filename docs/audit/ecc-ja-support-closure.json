@@ -1,0 +1,331 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "summary": {
+    "status": "complete",
+    "paths_reviewed": 7,
+    "scope": "Seven Japanese support documents only; the-shortform-guide.md is excluded because root already closed it.",
+    "review": "Independent methods and material translation/host-interface deltas were compared against canonical English text and persisted semantic reviews. Changelog, command registry, README catalog, install/runtime examples, and current vendor claims were scoped according to their role; no broad correctness or current-provider audit was performed.",
+    "candidate_result": "No distinct prompt/context method was found in these support documents; candidate_additions is empty."
+  },
+  "coverage_updates": [
+    {
+      "path": "docs/ja-JP/CHANGELOG.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "14867cb17b93aebc21324d5e6c0e8aeac51a513ade4b3b961e473062e7bd17bb",
+      "blob": "cf505e255f59572dd7635bc8396ea15df621b2fc",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The complete Japanese history ends at 2.0.0-rc.1 dated 2026-04-28, while the frozen English changelog starts at 2.2.3 dated 2026-10-01. Japanese release counts and alpha/runtime statements are historical catalog metadata, not current inventory or independent methods. Compared selected English openings and release excerpts; no full-history equivalence or current claim verification is asserted. Release-history index and shipped-change summaries. Technical methods are referenced changes whose canonical sources are reviewed separately; reported versions, counts, test results, and release claims were not independently reproduced. Full Japanese text was read; English comparison was scoped to the recorded excerpts.",
+      "candidate_keys": [],
+      "review_kind": "scoped-relevance",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/CHANGELOG.md",
+          "blob": "cf505e255f59572dd7635bc8396ea15df621b2fc",
+          "hash": "14867cb17b93aebc21324d5e6c0e8aeac51a513ade4b3b961e473062e7bd17bb"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            202
+          ]
+        ],
+        "canonical_path": "CHANGELOG.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            55
+          ],
+          [
+            115,
+            155
+          ],
+          [
+            175,
+            210
+          ]
+        ],
+        "inspected_delta_conclusion": "The complete Japanese history ends at 2.0.0-rc.1 dated 2026-04-28, while the frozen English changelog starts at 2.2.3 dated 2026-10-01. Japanese release counts and alpha/runtime statements are historical catalog metadata, not current inventory or independent methods. Compared selected English openings and release excerpts; no full-history equivalence or current claim verification is asserted.",
+        "content_role_and_conclusion": "Release-history index and shipped-change summaries. Technical methods are referenced changes whose canonical sources are reviewed separately; reported versions, counts, test results, and release claims were not independently reproduced. Full Japanese text was read; English comparison was scoped to the recorded excerpts.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[CHANGELOG.md]",
+        "canonical_review_basis": "Persisted scoped-relevance review; ranges above are the excerpts actually compared in this partition.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/CHANGELOG.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/COMMANDS-QUICK-REF.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "6ced044bf46224f43711ed88da4b1b5e06d3eecd7f6b6fafd7f59e9bd6d2f3ca",
+      "blob": "3312e98b8a919be7638bacf096f4d5abe8475cb0",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Japanese quick reference says 59 slash commands are globally installed and presents /tdd, /docs, /verify, /e2e, /claw, /context-budget, and /eval as available routes. The current English reference says 94 slash commands but explicitly marks several of those names as retired shims and directs users to skills; it also separates the ecc memory and lifecycle CLIs from slash commands. Japanese omits the PRP/epic, cross-harness memory, install-health/feedback, and retired-command sections. Its one-line decision guide is routing metadata, not an independently specified workflow. Navigation table and task-to-command index. Command labels and short descriptions do not prove installation or invocation behavior; full English quick-reference text was compared. No commands were run.",
+      "candidate_keys": [],
+      "review_kind": "scoped-relevance",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/COMMANDS-QUICK-REF.md",
+          "blob": "3312e98b8a919be7638bacf096f4d5abe8475cb0",
+          "hash": "6ced044bf46224f43711ed88da4b1b5e06d3eecd7f6b6fafd7f59e9bd6d2f3ca"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            159
+          ]
+        ],
+        "canonical_path": "COMMANDS-QUICK-REF.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            278
+          ]
+        ],
+        "inspected_delta_conclusion": "Japanese quick reference says 59 slash commands are globally installed and presents /tdd, /docs, /verify, /e2e, /claw, /context-budget, and /eval as available routes. The current English reference says 94 slash commands but explicitly marks several of those names as retired shims and directs users to skills; it also separates the ecc memory and lifecycle CLIs from slash commands. Japanese omits the PRP/epic, cross-harness memory, install-health/feedback, and retired-command sections. Its one-line decision guide is routing metadata, not an independently specified workflow.",
+        "content_role_and_conclusion": "Navigation table and task-to-command index. Command labels and short descriptions do not prove installation or invocation behavior; full English quick-reference text was compared. No commands were run.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[COMMANDS-QUICK-REF.md]",
+        "canonical_review_basis": "Persisted scoped-relevance review; ranges above are the excerpts actually compared in this partition.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/COMMANDS-QUICK-REF.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/CONTRIBUTING.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "9813d2efaf2a9baa4d3c02976ae363ed4617911442d2328b70aa1f909393f812",
+      "blob": "3c7888fece03dd6d3609ece2a5b0094190fda6c5",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Japanese contains skill/agent/hook/command templates, PR checklist, naming rules, and basic author workflow, but is materially shorter than the full English guide. It omits the skill activation, anti-pattern, related-skill, category, and adaptation-policy sections; MCP/Context7 contribution guidance; cross-harness and translation requirements; pre-push checks; and release/tag integrity workflow. Its matcher/exit-1 examples are retained as literal examples, not evidence of a current hook API. Method-bearing contribution guide. The Japanese templates were read fully and compared with the persisted full-source English review plus English section map. The simplified guide does not establish current host behavior; no fork, install, hook, PR, or release action was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/CONTRIBUTING.md",
+          "blob": "3c7888fece03dd6d3609ece2a5b0094190fda6c5",
+          "hash": "9813d2efaf2a9baa4d3c02976ae363ed4617911442d2328b70aa1f909393f812"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            429
+          ]
+        ],
+        "canonical_path": "CONTRIBUTING.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            541
+          ]
+        ],
+        "inspected_delta_conclusion": "Japanese contains skill/agent/hook/command templates, PR checklist, naming rules, and basic author workflow, but is materially shorter than the full English guide. It omits the skill activation, anti-pattern, related-skill, category, and adaptation-policy sections; MCP/Context7 contribution guidance; cross-harness and translation requirements; pre-push checks; and release/tag integrity workflow. Its matcher/exit-1 examples are retained as literal examples, not evidence of a current hook API.",
+        "content_role_and_conclusion": "Method-bearing contribution guide. The Japanese templates were read fully and compared with the persisted full-source English review plus English section map. The simplified guide does not establish current host behavior; no fork, install, hook, PR, or release action was performed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[CONTRIBUTING.md]",
+        "canonical_review_basis": "Persisted full-source semantic review; its path-specific reason is copied into content_role_and_conclusion.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/CONTRIBUTING.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/README.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "838d11c377c8d5af27cdff665dd22622d7b8c78753193c27d84c3c9f388480a9",
+      "blob": "3c772b7bdb3199a7d8316fdc7d01c70bedcfeec8",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Reviewed Japanese install, memory/trust, platform, Codex/OpenCode/Copilot, and Claude hook/version sections against the corresponding English sections. Core one-path-per-harness, preflight/dry-run, memory-as-untrusted-context, platform parity limits, and Codex native-plugin boundaries are retained. Material deltas: Japanese examples pin ecc-universal 2.2.1 while English pins 2.2.3; Japanese full manual install omits English --enable-hooks and its explicit --no-hooks alternative; Japanese Codex MCP text says --update-mcp forces the latest section but omits the English warning that it replaces the whole chrome-devtools section, including custom args, and that retired Context7 defaults are not migrated. Remaining catalog, pricing, model, and performance claims are not independently verified. Primary installer/onboarding and cross-harness capability guide with method-bearing install, memory handoff/trust, and runtime configuration sections. Read the listed Japanese ranges in bounded chunks; canonical English review reused its persisted scoped notes and directly read matching install, memory, platform, Codex/OpenCode/Copilot, and version/hook ranges. Catalog inventories and product claims were scoped, not exhaustively audited. No install, provider, CLI, or hook was executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/README.md",
+          "blob": "3c772b7bdb3199a7d8316fdc7d01c70bedcfeec8",
+          "hash": "838d11c377c8d5af27cdff665dd22622d7b8c78753193c27d84c3c9f388480a9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            625
+          ],
+          [
+            1048,
+            1245
+          ],
+          [
+            1246,
+            1710
+          ],
+          [
+            1750,
+            1825
+          ]
+        ],
+        "canonical_path": "README.md",
+        "canonical_actual_read_ranges": [
+          [
+            162,
+            612
+          ],
+          [
+            1221,
+            1273
+          ],
+          [
+            1274,
+            1439
+          ],
+          [
+            1470,
+            1673
+          ],
+          [
+            1784,
+            1817
+          ]
+        ],
+        "inspected_delta_conclusion": "Reviewed Japanese install, memory/trust, platform, Codex/OpenCode/Copilot, and Claude hook/version sections against the corresponding English sections. Core one-path-per-harness, preflight/dry-run, memory-as-untrusted-context, platform parity limits, and Codex native-plugin boundaries are retained. Material deltas: Japanese examples pin ecc-universal 2.2.1 while English pins 2.2.3; Japanese full manual install omits English --enable-hooks and its explicit --no-hooks alternative; Japanese Codex MCP text says --update-mcp forces the latest section but omits the English warning that it replaces the whole chrome-devtools section, including custom args, and that retired Context7 defaults are not migrated. Remaining catalog, pricing, model, and performance claims are not independently verified.",
+        "content_role_and_conclusion": "Primary installer/onboarding and cross-harness capability guide with method-bearing install, memory handoff/trust, and runtime configuration sections. Read the listed Japanese ranges in bounded chunks; canonical English review reused its persisted scoped notes and directly read matching install, memory, platform, Codex/OpenCode/Copilot, and version/hook ranges. Catalog inventories and product claims were scoped, not exhaustively audited. No install, provider, CLI, or hook was executed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[README.md]",
+        "canonical_review_basis": "Persisted scoped-relevance review; ranges above are the excerpts actually compared in this partition.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/README.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/SECURITY.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "5a6f2db271a9eabad4f5e8b3840869f8086c415b1e40967b0198dd1bb5bee79d",
+      "blob": "5623b0d55433f15c9aa9ff47e89ae62c3a31ec55",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Japanese preserves vulnerability-report fields, secret handling, localhost MCP PID checks, and the three-step suspicious system-reminder triage, including the rule not to sanitize repository files for ephemeral client reminders. It omits English sections for official distribution surfaces, out-of-scope reports, and supply-chain rules. The Japanese supported-version table lists 1.9.x/1.8.x although the frozen changelog is at 2.2.3; disclosure email/deadlines and version support are dated local policy, not verified current status. The grep patterns are quick checks, not complete secret detection. Security reporting and trust-boundary support policy. The complete Japanese file was read; the English full-source review and section map supplied the canonical scope comparison. No vulnerability report, network request, secret scan, or history mutation was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/SECURITY.md",
+          "blob": "5623b0d55433f15c9aa9ff47e89ae62c3a31ec55",
+          "hash": "5a6f2db271a9eabad4f5e8b3840869f8086c415b1e40967b0198dd1bb5bee79d"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "canonical_path": "SECURITY.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            156
+          ]
+        ],
+        "inspected_delta_conclusion": "Japanese preserves vulnerability-report fields, secret handling, localhost MCP PID checks, and the three-step suspicious system-reminder triage, including the rule not to sanitize repository files for ephemeral client reminders. It omits English sections for official distribution surfaces, out-of-scope reports, and supply-chain rules. The Japanese supported-version table lists 1.9.x/1.8.x although the frozen changelog is at 2.2.3; disclosure email/deadlines and version support are dated local policy, not verified current status. The grep patterns are quick checks, not complete secret detection.",
+        "content_role_and_conclusion": "Security reporting and trust-boundary support policy. The complete Japanese file was read; the English full-source review and section map supplied the canonical scope comparison. No vulnerability report, network request, secret scan, or history mutation was performed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[SECURITY.md]",
+        "canonical_review_basis": "Persisted full-source semantic review; its path-specific reason is copied into content_role_and_conclusion.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/SECURITY.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/SOUL.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "7720ada60f796f0a88f15930a9edfb9febffdbf2df98eb88537f2bb7ffe7032e",
+      "blob": "0deef8a04be2669691457539635ae2ebe8754e8a",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "The Japanese identity and five principles translate the English structure and retain the initial cross-harness portability statement. Its identity count is 30 agents/135 skills/60 commands versus the English 68/293/94 at the same frozen commit, so the localized count is stale. The principles are high-level identity statements, not a separate operational workflow or measured production-readiness evidence. Short project identity and principles statement. Entire Japanese and English files were read; no independent method or candidate was found.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/SOUL.md",
+          "blob": "0deef8a04be2669691457539635ae2ebe8754e8a",
+          "hash": "7720ada60f796f0a88f15930a9edfb9febffdbf2df98eb88537f2bb7ffe7032e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            17
+          ]
+        ],
+        "canonical_path": "SOUL.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            17
+          ]
+        ],
+        "inspected_delta_conclusion": "The Japanese identity and five principles translate the English structure and retain the initial cross-harness portability statement. Its identity count is 30 agents/135 skills/60 commands versus the English 68/293/94 at the same frozen commit, so the localized count is stale. The principles are high-level identity statements, not a separate operational workflow or measured production-readiness evidence.",
+        "content_role_and_conclusion": "Short project identity and principles statement. Entire Japanese and English files were read; no independent method or candidate was found.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[SOUL.md]",
+        "canonical_review_basis": "Persisted full-source semantic review; its path-specific reason is copied into content_role_and_conclusion.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/SOUL.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    },
+    {
+      "path": "docs/ja-JP/TROUBLESHOOTING.md",
+      "repo": "affaan-m/ECC",
+      "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "hash": "0073aa743346084f763fa314b285c2bd0e5a1a275622b139b39162d4945740e3",
+      "blob": "e81c2bbed06b73182ece707a39318bb20dc79da3",
+      "outcome": "analyzed",
+      "disposition": "analyzed",
+      "reason": "Japanese retains symptom/cause/remedy sections for context and memory, agent/hook failures, setup, package managers, performance, and common errors, and includes the safer ECC doctor/repair/account-recovery order. It omits the English OpenCode-on-Termux/Android repair section, including the distinction between ECC-managed files and a third-party model-prefix error. Japanese examples still use legacy ~/.claude/homunculus paths, sample with head, truncate observations after gzip without checking gzip success, and recommend go+rX on private memory; these are scoped risks from the documented commands, not executed behavior. Procedural troubleshooting guidance. The full Japanese guide was read and compared with the persisted full-source English semantic review and section map. Commands, permissions, logs, installs, processes, and cleanup were not executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/TROUBLESHOOTING.md",
+          "blob": "e81c2bbed06b73182ece707a39318bb20dc79da3",
+          "hash": "0073aa743346084f763fa314b285c2bd0e5a1a275622b139b39162d4945740e3"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            432
+          ]
+        ],
+        "canonical_path": "TROUBLESHOOTING.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            470
+          ]
+        ],
+        "inspected_delta_conclusion": "Japanese retains symptom/cause/remedy sections for context and memory, agent/hook failures, setup, package managers, performance, and common errors, and includes the safer ECC doctor/repair/account-recovery order. It omits the English OpenCode-on-Termux/Android repair section, including the distinction between ECC-managed files and a third-party model-prefix error. Japanese examples still use legacy ~/.claude/homunculus paths, sample with head, truncate observations after gzip without checking gzip success, and recommend go+rX on private memory; these are scoped risks from the documented commands, not executed behavior.",
+        "content_role_and_conclusion": "Procedural troubleshooting guidance. The full Japanese guide was read and compared with the persisted full-source English semantic review and section map. Commands, permissions, logs, installs, processes, and cleanup were not executed.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json coverage[TROUBLESHOOTING.md]",
+        "canonical_review_basis": "Persisted full-source semantic review; its path-specific reason is copied into content_role_and_conclusion.",
+        "variant_identity_record": "docs/audit/ecc-variants-state.json coverage[docs/ja-JP/TROUBLESHOOTING.md]",
+        "execution": "Frozen-source text inspection only. No upstream commands, installers, hooks, providers, tests, vulnerability probes, or external mutations were run."
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "editorial_note": "Fragment only. The repository shared reports and variant state were not edited; ECC owner can merge these individual coverage rows."
+}

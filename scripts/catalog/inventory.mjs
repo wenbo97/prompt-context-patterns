@@ -3,8 +3,9 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { readJson, writeText } from './lib.mjs';
+import { sourceRoot } from './sources.mjs';
 
-const sourcesRoot = process.env.SKILLS_ROOT || 'D:/Projects/open-skills';
+const sourcesRoot = sourceRoot();
 const selected = readJson('docs/research/open-source-skills-top10.snapshot.json').selected;
 function git(dir, args, binary = false) {
   const result = spawnSync('git', ['-C', dir, ...args], { encoding: binary ? undefined : 'utf8', maxBuffer: 256 * 1024 * 1024 });

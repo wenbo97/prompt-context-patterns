@@ -2,7 +2,7 @@
 
 从真实技能中提炼可迁移的方法。每个有效模式包含简短介绍、使用场景、同任务正反例、可检查结果、适用边界与来源状态。
 
-当前目录：**122** 个有效模式；**69** 个已定位原文实例；**53** 个带来源未确认标签。合并和撤下条目保留兼容入口，不计入有效数量。
+当前目录：**306** 个有效模式；**272** 个已定位原文实例；**34** 个带来源未确认标签。合并和撤下条目保留兼容入口，不计入有效数量。
 
 [English](README.md)
 
@@ -31,9 +31,13 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 
 ## 验证与维护
 
+来源默认位于项目旁的 `open-skills/<owner>/<repo>`；可通过 `SKILLS_ROOT` 指定其他目录。恢复命令仅下载清单中的固定提交；已有目录必须通过校验，不会被重置。
+
 ```bash
+npm run sources:restore
 npm test
 npm run check
+npm run check:sources
 npm run check:generated
 bundle exec ruby tests/liquid-literals.rb
 bundle exec jekyll build

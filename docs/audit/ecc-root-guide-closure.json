@@ -1,0 +1,338 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "coverage_updates": [
+    {
+      "path": "docs/es/the-longform-guide.md",
+      "hash": "82bca0886e22d77a4a52e0cb4cee13dc2b63fccde7ad5f54c14f7e3d09e98c26",
+      "disposition": "analyzed",
+      "reason": "Full translated guide and English canonical method text inspected, including every shell/plaintext prompt and procedure. Translation retains scoped CLI wrappers, evidence-backed session handoff, phase compaction, lifecycle memory hooks, model/task routing, bounded retrieval, independent-worktree parallelism and consumed phase artifacts. These enrich existing candidates rather than adding a mechanism. Pass@k versus repeated reliability examples and mgrep/model/pricing/productivity claims are source illustrations or unverified historical assertions, not measured blog efficacy; loading memory as system authority requires provenance and authorization, not blind promotion. Relative image references are remapped to ../../assets; executable aliases, three-cycle retrieval limit and phase artifact names are retained.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/the-longform-guide.md",
+          "blob": "93ecece4918bad6dad89e57c8af5b389ee4c3b88",
+          "hash": "82bca0886e22d77a4a52e0cb4cee13dc2b63fccde7ad5f54c14f7e3d09e98c26"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            354
+          ]
+        ],
+        "canonical_path": "the-longform-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            354
+          ]
+        ],
+        "inspected_delta_conclusion": "Relative image references are remapped to ../../assets; executable aliases, three-cycle retrieval limit and phase artifact names are retained.",
+        "content_role_and_conclusion": "Full translated guide and English canonical method text inspected, including every shell/plaintext prompt and procedure. Translation retains scoped CLI wrappers, evidence-backed session handoff, phase compaction, lifecycle memory hooks, model/task routing, bounded retrieval, independent-worktree parallelism and consumed phase artifacts. These enrich existing candidates rather than adding a mechanism. Pass@k versus repeated reliability examples and mgrep/model/pricing/productivity claims are source illustrations or unverified historical assertions, not measured blog efficacy; loading memory as system authority requires provenance and authorization, not blind promotion.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/the-longform-guide.md",
+      "hash": "eee4bb592ac2a79ad56b1e6612d244642b28aedbe5db030bf4c941bcf6c8a5be",
+      "disposition": "analyzed",
+      "reason": "Full translated guide and English canonical method text inspected, including every shell/plaintext prompt and procedure. Translation retains scoped CLI wrappers, evidence-backed session handoff, phase compaction, lifecycle memory hooks, model/task routing, bounded retrieval, independent-worktree parallelism and consumed phase artifacts. These enrich existing candidates rather than adding a mechanism. Pass@k versus repeated reliability examples and mgrep/model/pricing/productivity claims are source illustrations or unverified historical assertions, not measured blog efficacy; loading memory as system authority requires provenance and authorization, not blind promotion. Image links remain ./assets under the translated directory and therefore cannot establish valid rendered references. Shell identifiers and phase artifact names remain literal, with translated prose and headings.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/the-longform-guide.md",
+          "blob": "18bd6f4a4aa5da9d0a16a054fb2b6046dde6205a",
+          "hash": "eee4bb592ac2a79ad56b1e6612d244642b28aedbe5db030bf4c941bcf6c8a5be"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            354
+          ]
+        ],
+        "canonical_path": "the-longform-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            354
+          ]
+        ],
+        "inspected_delta_conclusion": "Image links remain ./assets under the translated directory and therefore cannot establish valid rendered references. Shell identifiers and phase artifact names remain literal, with translated prose and headings.",
+        "content_role_and_conclusion": "Full translated guide and English canonical method text inspected, including every shell/plaintext prompt and procedure. Translation retains scoped CLI wrappers, evidence-backed session handoff, phase compaction, lifecycle memory hooks, model/task routing, bounded retrieval, independent-worktree parallelism and consumed phase artifacts. These enrich existing candidates rather than adding a mechanism. Pass@k versus repeated reliability examples and mgrep/model/pricing/productivity claims are source illustrations or unverified historical assertions, not measured blog efficacy; loading memory as system authority requires provenance and authorization, not blind promotion.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/the-longform-guide.md",
+      "hash": "af7a65b5b55227042d64315807d64e80d8fec2f4df5d7b9393738f362f96fcb4",
+      "disposition": "analyzed",
+      "reason": "Full translated guide and English canonical method text inspected, including every shell/plaintext prompt and procedure. Translation retains scoped CLI wrappers, evidence-backed session handoff, phase compaction, lifecycle memory hooks, model/task routing, bounded retrieval, independent-worktree parallelism and consumed phase artifacts. These enrich existing candidates rather than adding a mechanism. Pass@k versus repeated reliability examples and mgrep/model/pricing/productivity claims are source illustrations or unverified historical assertions, not measured blog efficacy; loading memory as system authority requires provenance and authorization, not blind promotion. The title expands ECC to a historical Claude Code phrasing; image references remap to ../../assets. Workflow prompts translate phase labels while preserving artifact names and bounded retrieval.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/the-longform-guide.md",
+          "blob": "4103af62ec5325c4412cced89137a8498cd18121",
+          "hash": "af7a65b5b55227042d64315807d64e80d8fec2f4df5d7b9393738f362f96fcb4"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            354
+          ]
+        ],
+        "canonical_path": "the-longform-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            354
+          ]
+        ],
+        "inspected_delta_conclusion": "The title expands ECC to a historical Claude Code phrasing; image references remap to ../../assets. Workflow prompts translate phase labels while preserving artifact names and bounded retrieval.",
+        "content_role_and_conclusion": "Full translated guide and English canonical method text inspected, including every shell/plaintext prompt and procedure. Translation retains scoped CLI wrappers, evidence-backed session handoff, phase compaction, lifecycle memory hooks, model/task routing, bounded retrieval, independent-worktree parallelism and consumed phase artifacts. These enrich existing candidates rather than adding a mechanism. Pass@k versus repeated reliability examples and mgrep/model/pricing/productivity claims are source illustrations or unverified historical assertions, not measured blog efficacy; loading memory as system authority requires provenance and authorization, not blind promotion.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/es/the-shortform-guide.md",
+      "hash": "1a29290e179e881b9c3765333011a643503b34a7d29ea797730bc9da59e7cc91",
+      "disposition": "analyzed",
+      "reason": "Full guide method text and English canonical counterpart inspected, including directory examples, tool/lifecycle hook JSON, aliases, installation and capability instructions. Main patterns are scoped skill entry points, tool permissions, modular standing rules, measured context inventory and isolated parallel checkout; already represented. Fixed context/model/tool-count advice and editor efficacy claims remain unverified historical preferences, and sample hook JSON is illustrative rather than a checked current host contract. Worktree isolation does not guarantee conflict-free integration or authorize effects. Omits canonical tmux video link and uses mcp-overview reference; human-readable hook placeholders are translated, not concrete runnable hook implementations. Image links remap to ../../assets. Canonical skills-versus-legacy-shims distinction retained.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/the-shortform-guide.md",
+          "blob": "56b32c7b4ebe5bf730ce1cf2cbd1b47172a1af1f",
+          "hash": "1a29290e179e881b9c3765333011a643503b34a7d29ea797730bc9da59e7cc91"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            429
+          ]
+        ],
+        "canonical_path": "the-shortform-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            431
+          ]
+        ],
+        "inspected_delta_conclusion": "Omits canonical tmux video link and uses mcp-overview reference; human-readable hook placeholders are translated, not concrete runnable hook implementations. Image links remap to ../../assets. Canonical skills-versus-legacy-shims distinction retained.",
+        "content_role_and_conclusion": "Full guide method text and English canonical counterpart inspected, including directory examples, tool/lifecycle hook JSON, aliases, installation and capability instructions. Main patterns are scoped skill entry points, tool permissions, modular standing rules, measured context inventory and isolated parallel checkout; already represented. Fixed context/model/tool-count advice and editor efficacy claims remain unverified historical preferences, and sample hook JSON is illustrative rather than a checked current host contract. Worktree isolation does not guarantee conflict-free integration or authorize effects.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/the-shortform-guide.md",
+      "hash": "c533ece13dc341c9f9aa680a0ea69fcd03c0693fc6db92c862edee317ecca431",
+      "disposition": "analyzed",
+      "reason": "Full guide method text and English canonical counterpart inspected, including directory examples, tool/lifecycle hook JSON, aliases, installation and capability instructions. Main patterns are scoped skill entry points, tool permissions, modular standing rules, measured context inventory and isolated parallel checkout; already represented. Fixed context/model/tool-count advice and editor efficacy claims remain unverified historical preferences, and sample hook JSON is illustrative rather than a checked current host contract. Worktree isolation does not guarantee conflict-free integration or authorize effects. Omits canonical tmux video link, keeps directory-relative ./assets image roots and mcp-overview reference. Hook matcher prose is translated in the summary JSON; complete command hook remains English. Canonical skills-versus-legacy-shims distinction retained.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/the-shortform-guide.md",
+          "blob": "0f3ea21aa3b6f6680dae1b644f6e38c348f97123",
+          "hash": "c533ece13dc341c9f9aa680a0ea69fcd03c0693fc6db92c862edee317ecca431"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            429
+          ]
+        ],
+        "canonical_path": "the-shortform-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            431
+          ]
+        ],
+        "inspected_delta_conclusion": "Omits canonical tmux video link, keeps directory-relative ./assets image roots and mcp-overview reference. Hook matcher prose is translated in the summary JSON; complete command hook remains English. Canonical skills-versus-legacy-shims distinction retained.",
+        "content_role_and_conclusion": "Full guide method text and English canonical counterpart inspected, including directory examples, tool/lifecycle hook JSON, aliases, installation and capability instructions. Main patterns are scoped skill entry points, tool permissions, modular standing rules, measured context inventory and isolated parallel checkout; already represented. Fixed context/model/tool-count advice and editor efficacy claims remain unverified historical preferences, and sample hook JSON is illustrative rather than a checked current host contract. Worktree isolation does not guarantee conflict-free integration or authorize effects.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/the-shortform-guide.md",
+      "hash": "e418f227b65f8733692c4f2bfb163ca05ac017020cb0e5ab79d9cbdf20fb65ee",
+      "disposition": "analyzed",
+      "reason": "Full guide method text and English canonical counterpart inspected, including directory examples, tool/lifecycle hook JSON, aliases, installation and capability instructions. Main patterns are scoped skill entry points, tool permissions, modular standing rules, measured context inventory and isolated parallel checkout; already represented. Fixed context/model/tool-count advice and editor efficacy claims remain unverified historical preferences, and sample hook JSON is illustrative rather than a checked current host contract. Worktree isolation does not guarantee conflict-free integration or authorize effects. Material stale contract differences: calls commands directly executable skill shortcuts rather than legacy compatibility shims (13-25), describes a multi-file skill with README.md instead of SKILL.md (32), and routes disabled MCP configuration to ~/.claude.json projects.disabledMcpServers rather than canonical settings/project config (152). These differences are recorded rather than treated as equivalent or adopted. The video URL is a placeholder user-attachments path.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/the-shortform-guide.md",
+          "blob": "90519eb48a6957cdcda365844f629926586b8beb",
+          "hash": "e418f227b65f8733692c4f2bfb163ca05ac017020cb0e5ab79d9cbdf20fb65ee"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            431
+          ]
+        ],
+        "canonical_path": "the-shortform-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            431
+          ]
+        ],
+        "inspected_delta_conclusion": "Material stale contract differences: calls commands directly executable skill shortcuts rather than legacy compatibility shims (13-25), describes a multi-file skill with README.md instead of SKILL.md (32), and routes disabled MCP configuration to ~/.claude.json projects.disabledMcpServers rather than canonical settings/project config (152). These differences are recorded rather than treated as equivalent or adopted. The video URL is a placeholder user-attachments path.",
+        "content_role_and_conclusion": "Full guide method text and English canonical counterpart inspected, including directory examples, tool/lifecycle hook JSON, aliases, installation and capability instructions. Main patterns are scoped skill entry points, tool permissions, modular standing rules, measured context inventory and isolated parallel checkout; already represented. Fixed context/model/tool-count advice and editor efficacy claims remain unverified historical preferences, and sample hook JSON is illustrative rather than a checked current host contract. Worktree isolation does not guarantee conflict-free integration or authorize effects.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/es/the-security-guide.md",
+      "hash": "6d0da74518f2c47a4cfc6e2083a6e3b1cadc3d59baefb6fb93ccc378f4856163",
+      "disposition": "analyzed",
+      "reason": "Complete translated security method text, shell/JSON/YAML/embedded guardrail prompts and English canonical counterpart inspected; ES/TR process-group snippet diff also inspected (comment translation only). Existing methods cover action policy outside model output, separate extraction and action roles, trust labels across memory, scoped credentials/permissions, source/runtime evidence and external stop supervision. No new candidate. The blanket no meaningful data/instruction distinction and clean-summary safety claim are not accepted; stripping Unicode/comments is a heuristic, not authorization. CVE/study/version claims were not independently verified as current facts, and risk_score0.94 is illustrative, not calibration. Compared with canonical, omits lines166-170 container/kernel, host-extension and verified restricted-egress/VM caveats. Keeps offline Docker, least-agency, linked-content guardrail and independent heartbeat supervisor. Local guide links and ../../assets roots replace originals.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/the-security-guide.md",
+          "blob": "c4fe80421325681be6f1566f2ea14906e77bd0b5",
+          "hash": "6d0da74518f2c47a4cfc6e2083a6e3b1cadc3d59baefb6fb93ccc378f4856163"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            456
+          ]
+        ],
+        "canonical_path": "the-security-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            463
+          ]
+        ],
+        "inspected_delta_conclusion": "Compared with canonical, omits lines166-170 container/kernel, host-extension and verified restricted-egress/VM caveats. Keeps offline Docker, least-agency, linked-content guardrail and independent heartbeat supervisor. Local guide links and ../../assets roots replace originals.",
+        "content_role_and_conclusion": "Complete translated security method text, shell/JSON/YAML/embedded guardrail prompts and English canonical counterpart inspected; ES/TR process-group snippet diff also inspected (comment translation only). Existing methods cover action policy outside model output, separate extraction and action roles, trust labels across memory, scoped credentials/permissions, source/runtime evidence and external stop supervision. No new candidate. The blanket no meaningful data/instruction distinction and clean-summary safety claim are not accepted; stripping Unicode/comments is a heuristic, not authorization. CVE/study/version claims were not independently verified as current facts, and risk_score0.94 is illustrative, not calibration.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/the-security-guide.md",
+      "hash": "30dfafff5788d054e818d052ce8a4028f6a4d034cbc8b0b889d98e2ea0dff777",
+      "disposition": "analyzed",
+      "reason": "Complete translated security method text, shell/JSON/YAML/embedded guardrail prompts and English canonical counterpart inspected; ES/TR process-group snippet diff also inspected (comment translation only). Existing methods cover action policy outside model output, separate extraction and action roles, trust labels across memory, scoped credentials/permissions, source/runtime evidence and external stop supervision. No new candidate. The blanket no meaningful data/instruction distinction and clean-summary safety claim are not accepted; stripping Unicode/comments is a heuristic, not authorization. CVE/study/version claims were not independently verified as current facts, and risk_score0.94 is illustrative, not calibration. Condenses463 canonical lines to257; removes offline one-shot Docker and crucial kernel/host-extension/constrained-egress caveats, linked-content guardrail prompt, detailed heartbeat supervisor procedure and most evidence references. Retains high-level least-agency, extraction/action split, logging, process-group stop and memory constraints. Checklist mentions heartbeat without showing its implementation; no equivalent completeness claimed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/the-security-guide.md",
+          "blob": "b5d1da6810ea1fcbfc4c1f1d5e82feb1d7951d67",
+          "hash": "30dfafff5788d054e818d052ce8a4028f6a4d034cbc8b0b889d98e2ea0dff777"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            257
+          ]
+        ],
+        "canonical_path": "the-security-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            463
+          ]
+        ],
+        "inspected_delta_conclusion": "Condenses463 canonical lines to257; removes offline one-shot Docker and crucial kernel/host-extension/constrained-egress caveats, linked-content guardrail prompt, detailed heartbeat supervisor procedure and most evidence references. Retains high-level least-agency, extraction/action split, logging, process-group stop and memory constraints. Checklist mentions heartbeat without showing its implementation; no equivalent completeness claimed.",
+        "content_role_and_conclusion": "Complete translated security method text, shell/JSON/YAML/embedded guardrail prompts and English canonical counterpart inspected; ES/TR process-group snippet diff also inspected (comment translation only). Existing methods cover action policy outside model output, separate extraction and action roles, trust labels across memory, scoped credentials/permissions, source/runtime evidence and external stop supervision. No new candidate. The blanket no meaningful data/instruction distinction and clean-summary safety claim are not accepted; stripping Unicode/comments is a heuristic, not authorization. CVE/study/version claims were not independently verified as current facts, and risk_score0.94 is illustrative, not calibration.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/the-security-guide.md",
+      "hash": "2baf9bd0119151b1270c052df929390260f3f17463e39a77c7eec95050ddef26",
+      "disposition": "analyzed",
+      "reason": "Complete translated security method text, shell/JSON/YAML/embedded guardrail prompts and English canonical counterpart inspected; ES/TR process-group snippet diff also inspected (comment translation only). Existing methods cover action policy outside model output, separate extraction and action roles, trust labels across memory, scoped credentials/permissions, source/runtime evidence and external stop supervision. No new candidate. The blanket no meaningful data/instruction distinction and clean-summary safety claim are not accepted; stripping Unicode/comments is a heuristic, not authorization. CVE/study/version claims were not independently verified as current facts, and risk_score0.94 is illustrative, not calibration. Omits canonical container/kernel, host-extension and verified restricted-egress/VM caveats at166-170; video is explicitly marked unavailable and bibliography drops Safe Haven/new sandbox references. Shell/JSON/YAML and linked-content guardrail contracts retain semantics, with code-comment localization only.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/the-security-guide.md",
+          "blob": "e074a5be10e98258820c8ecf9f482ab08b5c6d87",
+          "hash": "2baf9bd0119151b1270c052df929390260f3f17463e39a77c7eec95050ddef26"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            455
+          ]
+        ],
+        "canonical_path": "the-security-guide.md",
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            463
+          ]
+        ],
+        "inspected_delta_conclusion": "Omits canonical container/kernel, host-extension and verified restricted-egress/VM caveats at166-170; video is explicitly marked unavailable and bibliography drops Safe Haven/new sandbox references. Shell/JSON/YAML and linked-content guardrail contracts retain semantics, with code-comment localization only.",
+        "content_role_and_conclusion": "Complete translated security method text, shell/JSON/YAML/embedded guardrail prompts and English canonical counterpart inspected; ES/TR process-group snippet diff also inspected (comment translation only). Existing methods cover action policy outside model output, separate extraction and action roles, trust labels across memory, scoped credentials/permissions, source/runtime evidence and external stop supervision. No new candidate. The blanket no meaningful data/instruction distinction and clean-summary safety claim are not accepted; stripping Unicode/comments is a heuristic, not authorization. CVE/study/version claims were not independently verified as current facts, and risk_score0.94 is illustrative, not calibration.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/the-openclaw-guide.md",
+      "hash": "f8ab2da1a03e07f1e4dd54c48cb9c63b7d8a87caf8e0f974698b38e5ad106c6b",
+      "disposition": "analyzed",
+      "reason": "Entire471line standalone Japanese essay inspected, including architecture comparison, literal Mac Mini/tmux/SSH setup, permission/channel audit checklist and numerous image-generation placeholders. Transferable method is inspect full received payload, minimize actual granted capabilities/identities and preserve trust in memory/actions; these are existing patterns, not a new candidate. No canonical counterpart asserted. Shell access does not itself imply root; narrower ingress does not eliminate malicious repo/doc input; hosted or containerized architecture is not automatic containment. The90%-productivity/5%-surface statement, attack statistics, quotations, market prediction and CVE/version claims are unverified historical assertions and are not adopted as measured efficacy or current recommendations. Image briefs are placeholder requests, not rendered evidence. No source commands or external attacks executed.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/the-openclaw-guide.md",
+          "blob": "96c97a77e3a1a687ba0f4ab89755f00047b7bbb7",
+          "hash": "f8ab2da1a03e07f1e4dd54c48cb9c63b7d8a87caf8e0f974698b38e5ad106c6b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            471
+          ]
+        ],
+        "content_role_and_conclusion": "Entire471line standalone Japanese essay inspected, including architecture comparison, literal Mac Mini/tmux/SSH setup, permission/channel audit checklist and numerous image-generation placeholders. Transferable method is inspect full received payload, minimize actual granted capabilities/identities and preserve trust in memory/actions; these are existing patterns, not a new candidate. No canonical counterpart asserted. Shell access does not itself imply root; narrower ingress does not eliminate malicious repo/doc input; hosted or containerized architecture is not automatic containment. The90%-productivity/5%-surface statement, attack statistics, quotations, market prediction and CVE/version claims are unverified historical assertions and are not adopted as measured efficacy or current recommendations. Image briefs are placeholder requests, not rendered evidence. No source commands or external attacks executed.",
+        "review_record": "docs/audit/ecc-root-guide-closure.json",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    }
+  ]
+}

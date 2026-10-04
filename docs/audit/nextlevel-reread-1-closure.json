@@ -1,0 +1,1044 @@
+{
+  "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+  "review_status": "fragment-ready-for-parent-merge",
+  "file_updates": [
+    {
+      "path": ".claude/skills/brand/references/brand-guideline-template.md",
+      "hash": "392db8cf10fef492221c15a86e68590074bf5716de1f2982f41c01fbe30567cc",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A fillable brand-guidelines document scaffold: version/context, quick reference, color palette and accessibility, typography, logo use, voice/tone, imagery, icons, and maintenance fields. Bracketed entries are placeholders; this file supplies no brand facts or validated palette.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/brand-guideline-template.md",
+          "hash": "392db8cf10fef492221c15a86e68590074bf5716de1f2982f41c01fbe30567cc",
+          "blob": "63c481efb19a1f4186118ad4a0bee2f596f4e2fe",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            140
+          ]
+        ],
+        "content_role_and_conclusion": "A fillable brand-guidelines document scaffold: version/context, quick reference, color palette and accessibility, typography, logo use, voice/tone, imagery, icons, and maintenance fields. Bracketed entries are placeholders; this file supplies no brand facts or validated palette.",
+        "content_role_and_conclusion_zh": "品牌指南的可填写文档骨架，覆盖版本与背景、速查表、色板与无障碍、字体、Logo、语气、图像、图标及维护字段。方括号内容只是占位符，本文件没有提供真实品牌事实或经过验证的配色。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/consistency-checklist.md",
+      "hash": "56d8b2d4852cda11e600adec4b9dd68fc89a1b8265382359953bec5c5e5e2c36",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A cross-channel audit checklist for visual identity and voice, with issue-to-fix examples and a suggested review cadence. It is a qualitative checklist; it contains no measured audit result or brand-specific acceptance evidence.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/consistency-checklist.md",
+          "hash": "56d8b2d4852cda11e600adec4b9dd68fc89a1b8265382359953bec5c5e5e2c36",
+          "blob": "918f3ed9239aaa7ba52567a8c888fad1644db267",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            94
+          ]
+        ],
+        "content_role_and_conclusion": "A cross-channel audit checklist for visual identity and voice, with issue-to-fix examples and a suggested review cadence. It is a qualitative checklist; it contains no measured audit result or brand-specific acceptance evidence.",
+        "content_role_and_conclusion_zh": "跨渠道检查视觉一致性与品牌语气的清单，附常见问题到修正方向的示例及建议复查频率。它是定性清单，不包含实测审核结果或特定品牌的验收证据。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/update.md",
+      "hash": "26c23af628869bbbc0ec55929e7f087374606218cff32ecaa864a772e477d28e",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The /brand:update procedure gathers a theme, named colors/hex values, and image-mood words; edits the human brand guide; syncs JSON/CSS token outputs; checks extraction and CSS; and reports the files and values. It says to inspect an existing token source and limits --force to intentional replacement of managed outputs. Presets and verification commands are examples only; no script was run or behavior independently verified.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/update.md",
+          "hash": "26c23af628869bbbc0ec55929e7f087374606218cff32ecaa864a772e477d28e",
+          "blob": "23d3978e6a08353f30006a97eb1f45eade688d6b",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            129
+          ]
+        ],
+        "content_role_and_conclusion": "The /brand:update procedure gathers a theme, named colors/hex values, and image-mood words; edits the human brand guide; syncs JSON/CSS token outputs; checks extraction and CSS; and reports the files and values. It says to inspect an existing token source and limits --force to intentional replacement of managed outputs. Presets and verification commands are examples only; no script was run or behavior independently verified.",
+        "content_role_and_conclusion_zh": "/brand:update 流程先收集主题、颜色名称与十六进制值、图像情绪词，再更新人工维护的品牌指南、同步 JSON/CSS token、检查提取结果与 CSS 并汇报变更。文档要求先检查现有 token 来源，且仅在确实要替换受管生成产物时使用 --force。预设值与验证命令只是示例；未运行脚本，也未独立确认其行为。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-leon-semantic-token-contract",
+            "ranges": [
+              [
+                14,
+                65
+              ],
+              [
+                89,
+                94
+              ]
+            ],
+            "mechanism": "Names primary/secondary/accent roles with exact hex inputs, writes the roles and values into the human guide and JSON/CSS token outputs, and requires syncing the outputs."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/voice-framework.md",
+      "hash": "08c15ac79f81cd964c5efbe593131b61a093c7e1b060d5dd28b17f3cc5b331fb",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A writing method distinguishes stable brand voice from context-varying tone, uses four spectrums, selects 3–5 personality traits, turns them into Do/Do-not examples, maps contexts to tone shifts, and tests draft fit. The guide is a blank framework with illustrative examples, not evidence of audience response.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/voice-framework.md",
+          "hash": "08c15ac79f81cd964c5efbe593131b61a093c7e1b060d5dd28b17f3cc5b331fb",
+          "blob": "cdc26ab51f444723d9b1de0b651e17416b3a2ae8",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            88
+          ]
+        ],
+        "content_role_and_conclusion": "A writing method distinguishes stable brand voice from context-varying tone, uses four spectrums, selects 3–5 personality traits, turns them into Do/Do-not examples, maps contexts to tone shifts, and tests draft fit. The guide is a blank framework with illustrative examples, not evidence of audience response.",
+        "content_role_and_conclusion_zh": "写作方法先区分稳定的品牌 voice 与随场景变化的 tone，再使用四组维度、选取 3–5 个个性特征、写成 Do/Do not 示例、映射场景语气并检查文案是否符合品牌。它是空白框架及示例，不是受众效果证据。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/primitive-tokens.md",
+      "hash": "91e6caa12646c08c8aadf8e09399aed65760a25c8d80595936d81a9131118fc3",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A primitive-token reference defines raw color scales plus spacing, type, radius, shadow, motion-duration, and z-index values in CSS custom properties. Values are sample foundations without semantic meaning; the reference does not validate contrast, browser support, or a consuming implementation.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/primitive-tokens.md",
+          "hash": "91e6caa12646c08c8aadf8e09399aed65760a25c8d80595936d81a9131118fc3",
+          "blob": "eb251a278ffa9769af03fb0e32dd0b25e1fb9088",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            203
+          ]
+        ],
+        "content_role_and_conclusion": "A primitive-token reference defines raw color scales plus spacing, type, radius, shadow, motion-duration, and z-index values in CSS custom properties. Values are sample foundations without semantic meaning; the reference does not validate contrast, browser support, or a consuming implementation.",
+        "content_role_and_conclusion_zh": "基础 token 参考以 CSS 自定义属性列出原始色阶、间距、字号、圆角、阴影、动效时长和 z-index。它们是尚无语义含义的示例基值；本参考没有验证对比度、浏览器支持或实际使用实现。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/tailwind-integration.md",
+      "hash": "6d01092db1479dbd2060567b4232bb2b4bc16e89730ab07e1f87a3e7f5c406b9",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "An integration recipe places primitive and semantic CSS variables in base layers, maps semantic HSL values into Tailwind colors/radii, and illustrates component classes, spacing/motion extensions, and a class-based dark-mode toggle. The snippets show a convention and sample setup; tool/version compatibility and runtime behavior were not tested.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/tailwind-integration.md",
+          "hash": "6d01092db1479dbd2060567b4232bb2b4bc16e89730ab07e1f87a3e7f5c406b9",
+          "blob": "c632788c9aafa347406b487ac2f18f734094aac8",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            251
+          ]
+        ],
+        "content_role_and_conclusion": "An integration recipe places primitive and semantic CSS variables in base layers, maps semantic HSL values into Tailwind colors/radii, and illustrates component classes, spacing/motion extensions, and a class-based dark-mode toggle. The snippets show a convention and sample setup; tool/version compatibility and runtime behavior were not tested.",
+        "content_role_and_conclusion_zh": "集成示例将 primitive 与 semantic CSS 变量放在基础层，把语义 HSL 值映射到 Tailwind 颜色和圆角，并示范组件类、间距/动效扩展及 class 模式的深色主题切换。代码展示的是约定与样例配置，未测试工具/版本兼容性或运行时行为。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-leon-semantic-token-contract",
+            "ranges": [
+              [
+                15,
+                56
+              ],
+              [
+                61,
+                113
+              ],
+              [
+                128,
+                171
+              ]
+            ],
+            "mechanism": "Pairs named semantic variables (such as primary/foreground) with concrete HSL values and maps the same roles into Tailwind utility/component usage."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/token-architecture.md",
+      "hash": "925f4049c4c4313d9fd5df98cdfd52004112aca49fba1664ad85e76bc9dce4d3",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "A three-layer token model maps raw primitive values to purpose-named semantic aliases and then component-specific properties; it shows semantic dark-theme overrides, naming/file-layout conventions, a flat-token migration, and a small DTCG-shaped JSON example. Examples are illustrative and provide no schema-validator or migration-run evidence.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/token-architecture.md",
+          "hash": "925f4049c4c4313d9fd5df98cdfd52004112aca49fba1664ad85e76bc9dce4d3",
+          "blob": "e13ed2bba5a9c6eb78d2e96b9ee888e8c3115dbf",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            224
+          ]
+        ],
+        "content_role_and_conclusion": "A three-layer token model maps raw primitive values to purpose-named semantic aliases and then component-specific properties; it shows semantic dark-theme overrides, naming/file-layout conventions, a flat-token migration, and a small DTCG-shaped JSON example. Examples are illustrative and provide no schema-validator or migration-run evidence.",
+        "content_role_and_conclusion_zh": "三层 token 模型把原始 primitive 映射为按用途命名的 semantic alias，再供组件属性引用；文档还展示语义层深色覆盖、命名/文件布局、扁平 token 迁移及一个 DTCG 形状的 JSON 例子。均为说明性示例，没有 schema 校验器或迁移运行证据。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-leon-semantic-token-contract",
+            "ranges": [
+              [
+                62,
+                120
+              ],
+              [
+                137,
+                147
+              ]
+            ],
+            "mechanism": "Shows purpose-named semantic aliases with exact primitive values and component properties that state where roles apply, then provides an explicit naming contract."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/design-routing.md",
+      "hash": "bc099a1fc0d7b0a6580f214b9166376b711aed61978c56d0666edb27dea160d8",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A routing index selects brand, token-system, implementation, logo/CIP, slides, banner, or icon skills by task/question, then gives multi-skill orderings and command examples. It is a static directory of task boundaries; listed counts, paths, and commands were not checked against runtime or current external services.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/design-routing.md",
+          "hash": "bc099a1fc0d7b0a6580f214b9166376b711aed61978c56d0666edb27dea160d8",
+          "blob": "4d745bd267994d1500aa9ffe12577cf3350cc94b",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            207
+          ]
+        ],
+        "content_role_and_conclusion": "A routing index selects brand, token-system, implementation, logo/CIP, slides, banner, or icon skills by task/question, then gives multi-skill orderings and command examples. It is a static directory of task boundaries; listed counts, paths, and commands were not checked against runtime or current external services.",
+        "content_role_and_conclusion_zh": "路由索引按任务或问题选择 brand、token system、实现、Logo/CIP、幻灯片、横幅或图标技能，并给出多技能的先后顺序及命令示例。它是静态任务边界目录；其中数量、路径和命令未通过运行时或当前外部服务验证。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/logo-prompt-engineering.md",
+      "hash": "e50f55bf323263eb27b4cd4c5172383a787fb894581d5d2befb3f6e0180b253e",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A prompt recipe combines brand/industry, visual description, style and palette with technical constraints; it supplies style/industry keyword blocks, exclusions, scalable/versatile output constraints, short/detailed/variation templates, and common failure prompts. These are prompt-writing suggestions, not tested model outputs or guarantees about generated logos.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/logo-prompt-engineering.md",
+          "hash": "e50f55bf323263eb27b4cd4c5172383a787fb894581d5d2befb3f6e0180b253e",
+          "blob": "c91db39db3ea2fb6db0cd82b5a163ec5c5ec52e2",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            158
+          ]
+        ],
+        "content_role_and_conclusion": "A prompt recipe combines brand/industry, visual description, style and palette with technical constraints; it supplies style/industry keyword blocks, exclusions, scalable/versatile output constraints, short/detailed/variation templates, and common failure prompts. These are prompt-writing suggestions, not tested model outputs or guarantees about generated logos.",
+        "content_role_and_conclusion_zh": "提示词配方把品牌/行业、视觉描述、风格与色板和技术约束组合起来，并给出风格/行业关键词、排除项、可缩放/多用途约束、简短/详细/变体模板及常见失误提示。这些是提示词建议，不是模型输出实测或生成 Logo 的保证。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/logo-style-guide.md",
+      "hash": "611baa841eedab101f45c113c6bfbd4d7e16e859c9d6ebd2cf941827a6e8dd15",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A taxonomy distinguishes seven logo constructions and six broad aesthetics, maps a few brand types to preferred options, and ends with small-size, monochrome, and clarity checks. The matching matrix is heuristic advice rather than user research or validated design outcomes.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/logo-style-guide.md",
+          "hash": "611baa841eedab101f45c113c6bfbd4d7e16e859c9d6ebd2cf941827a6e8dd15",
+          "blob": "1db8aa1c278709b1f0b4855eed104d9574f50e90",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "content_role_and_conclusion": "A taxonomy distinguishes seven logo constructions and six broad aesthetics, maps a few brand types to preferred options, and ends with small-size, monochrome, and clarity checks. The matching matrix is heuristic advice rather than user research or validated design outcomes.",
+        "content_role_and_conclusion_zh": "分类指南区分七种 Logo 结构和六类宽泛美学，为少量品牌类型配对首选选项，并以小尺寸、单色和清晰度检查收尾。配对矩阵是启发式建议，不是用户研究或已验证的设计结果。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/slides-copywriting-formulas.md",
+      "hash": "2df4d83d7a6d4e578dd78911348357b45dfaedbcc948ffbac0e31579c5fb692a",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A slide-copy reference expands PAS, AIDA, FAB, cost-of-inaction, and before-after-bridge into component sequences and fill-in templates, then maps formula families to slide roles/emotions and lists headline patterns/search examples. The stated formula count exceeds the few formulas expanded here; examples do not establish persuasion efficacy.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/slides-copywriting-formulas.md",
+          "hash": "2df4d83d7a6d4e578dd78911348357b45dfaedbcc948ffbac0e31579c5fb692a",
+          "blob": "87352fc24996bbc268835d03e95a98a0ec9edcab",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ],
+        "content_role_and_conclusion": "A slide-copy reference expands PAS, AIDA, FAB, cost-of-inaction, and before-after-bridge into component sequences and fill-in templates, then maps formula families to slide roles/emotions and lists headline patterns/search examples. The stated formula count exceeds the few formulas expanded here; examples do not establish persuasion efficacy.",
+        "content_role_and_conclusion_zh": "幻灯片文案参考把 PAS、AIDA、FAB、无行动成本和 before-after-bridge 展开为步骤与填空模板，再把公式类别映射到页面角色/情绪并列出标题模式与搜索示例。标题宣称的公式总数多于本页具体展开的数量；示例不能证明说服效果。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/slides-create.md",
+      "hash": "792d647a5d4f87d765cf417f7ac54dd0b2fc4d229cc23ea9df56282d4c1ee086",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A four-line slash-command wrapper delegates the supplied task to the slides skill and names design tokens, Chart.js, and a slide knowledge database as its intended resources. It contains no actual slide procedure, implementation, or evidence that those dependencies are present.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/slides-create.md",
+          "hash": "792d647a5d4f87d765cf417f7ac54dd0b2fc4d229cc23ea9df56282d4c1ee086",
+          "blob": "55b79a1349fb4c8b4e8f3a87dcfade9b08955290",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "content_role_and_conclusion": "A four-line slash-command wrapper delegates the supplied task to the slides skill and names design tokens, Chart.js, and a slide knowledge database as its intended resources. It contains no actual slide procedure, implementation, or evidence that those dependencies are present.",
+        "content_role_and_conclusion_zh": "四行斜杠命令包装器把给定任务交给 slides 技能，并指出设计 token、Chart.js 与幻灯片知识库作为预期资源。它没有实际制作用法、实现内容，也没有证明这些依赖确实存在。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/SKILL.md",
+      "hash": "625e302c60ee8f2e22d56cbe638c4a739e2657f566dae42689503ad517c30f1e",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-nextlevel-path-roots"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The skill routes UI work through shadcn/Radix components, Tailwind, and a canvas-art direction layer; its workflow covers setup, component use, thematic/responsive/accessibility references, and scripts for adding components or generating config. It warns that script paths are skill-relative while project outputs are cwd-relative and guards replacing an existing Tailwind config. Snippets are static; dependencies and host behavior were not exercised.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/SKILL.md",
+          "hash": "625e302c60ee8f2e22d56cbe638c4a739e2657f566dae42689503ad517c30f1e",
+          "blob": "b5a9acb9643e10b3629c0b9cac7e616c1080b597",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            336
+          ]
+        ],
+        "content_role_and_conclusion": "The skill routes UI work through shadcn/Radix components, Tailwind, and a canvas-art direction layer; its workflow covers setup, component use, thematic/responsive/accessibility references, and scripts for adding components or generating config. It warns that script paths are skill-relative while project outputs are cwd-relative and guards replacing an existing Tailwind config. Snippets are static; dependencies and host behavior were not exercised.",
+        "content_role_and_conclusion_zh": "该技能把 UI 工作路由到 shadcn/Radix 组件、Tailwind 和 canvas 艺术方向层，流程涵盖初始化、组件使用、主题/响应式/无障碍参考，以及添加组件或生成配置的脚本。文档区分技能相对的脚本路径与相对项目工作目录的输出路径，并提醒已有 Tailwind 配置时先检查再强制替换。示例均为静态文本，未运行依赖或宿主流程。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-nextlevel-path-roots",
+            "ranges": [
+              [
+                56,
+                58
+              ],
+              [
+                225,
+                237
+              ]
+            ],
+            "mechanism": "Explicitly resolves helper scripts from the skill directory while project inputs/outputs use project cwd, and guards replacing a Tailwind config already present among project siblings."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/canvas-design-system.md",
+      "hash": "f5de85ff39d9f3a8275c4164b921ba72d5e1d34b8d7a9243d9ee34b3870a4f5f",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A two-phase visual-design method first writes a 4–6 paragraph philosophy and then expresses it in canvas artifacts with minimal text; it provides movement examples, palette/type/composition rules, multi-page variation, a refinement pass that polishes instead of expanding, and Markdown plus PDF/PNG deliverables. Museum-quality language is subjective; no artifact or rendering was evaluated.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/canvas-design-system.md",
+          "hash": "f5de85ff39d9f3a8275c4164b921ba72d5e1d34b8d7a9243d9ee34b3870a4f5f",
+          "blob": "6f99bee54c461c435aea10135435e2defd085585",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            320
+          ]
+        ],
+        "content_role_and_conclusion": "A two-phase visual-design method first writes a 4–6 paragraph philosophy and then expresses it in canvas artifacts with minimal text; it provides movement examples, palette/type/composition rules, multi-page variation, a refinement pass that polishes instead of expanding, and Markdown plus PDF/PNG deliverables. Museum-quality language is subjective; no artifact or rendering was evaluated.",
+        "content_role_and_conclusion_zh": "两阶段视觉方法先写 4–6 段设计哲学，再以少量文字呈现在画布作品中；指南提供流派示例、色彩/字体/构图规则、多页变化方式、只精修不扩张的复审步骤，以及 Markdown 与 PDF/PNG 交付物。所谓“博物馆级”属主观标准；未评估实际作品或渲染。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/shadcn-theming.md",
+      "hash": "d17d641474221123ff0e0288043ca2f2dab3ac96908a19eed28d82f9e58865ed",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "A theming recipe shows a next-themes provider/toggle and a separate localStorage-based fallback, HSL CSS variables mapped into Tailwind, light/dark and data-attribute themes, and edits to component variants/base classes. It also lists presets/style and radius choices. Documentation snippets do not establish compatibility with current package versions or accessibility/runtime correctness.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/shadcn-theming.md",
+          "hash": "d17d641474221123ff0e0288043ca2f2dab3ac96908a19eed28d82f9e58865ed",
+          "blob": "989c5d363b6715d457b1d50359652284a7833cd5",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            373
+          ]
+        ],
+        "content_role_and_conclusion": "A theming recipe shows a next-themes provider/toggle and a separate localStorage-based fallback, HSL CSS variables mapped into Tailwind, light/dark and data-attribute themes, and edits to component variants/base classes. It also lists presets/style and radius choices. Documentation snippets do not establish compatibility with current package versions or accessibility/runtime correctness.",
+        "content_role_and_conclusion_zh": "主题配方展示 next-themes provider/切换器及另一种 localStorage 实现、映射到 Tailwind 的 HSL CSS 变量、亮/暗及 data-attribute 主题，以及组件变体/基础类修改，还列出预设、风格和圆角选项。文档示例不能证明对当前依赖版本兼容或运行时/无障碍正确。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-leon-semantic-token-contract",
+            "ranges": [
+              [
+                95,
+                198
+              ],
+              [
+                200,
+                216
+              ]
+            ],
+            "mechanism": "Pairs concrete HSL values with named semantic roles and maps those variables to Tailwind classes, then shows role-specific theme substitutions."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      "hash": "0609bc7c89dacb40472465d8fc14257b56b2c43439660fc8d6fa3b8c022e1876",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A static ten-category UI review checklist spans accessibility, touch/interaction, performance, style, responsive layout, typography/color, animation, forms, navigation, and charts/data. It offers priority tags and many platform/WCAG-labelled numeric heuristics; the file itself says rules are also indexed in CSVs. It is not an evaluation result, and thresholds need the right platform and criterion context.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+          "hash": "0609bc7c89dacb40472465d8fc14257b56b2c43439660fc8d6fa3b8c022e1876",
+          "blob": "7acc7e7540ca6981d878a90aae4455c1638e2385",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            130
+          ],
+          [
+            131,
+            256
+          ]
+        ],
+        "content_role_and_conclusion": "A static ten-category UI review checklist spans accessibility, touch/interaction, performance, style, responsive layout, typography/color, animation, forms, navigation, and charts/data. It offers priority tags and many platform/WCAG-labelled numeric heuristics; the file itself says rules are also indexed in CSVs. It is not an evaluation result, and thresholds need the right platform and criterion context.",
+        "content_role_and_conclusion_zh": "静态 UI 复核清单覆盖无障碍、触控/交互、性能、风格、响应式布局、字体/颜色、动画、表单、导航及图表/数据十类。条目带优先级，并包含许多标注平台/WCAG 的数值启发；文件说明同一规则也位于 CSV 索引中。它不是评测结果，具体阈值须结合平台和准则语境。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "hash": "72ea8c443e8620837098e5dea51241ffa1c07af587c34f9509d36b0b5ede27de",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A PR form asks for change and motivation, then prompts contributors to edit the canonical source, sync/check assets when relevant, add behavior tests, use Conventional Commits, and target a feature branch. It documents requested metadata/checks, not proof that any check ran or is enforced.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".github/PULL_REQUEST_TEMPLATE.md",
+          "hash": "72ea8c443e8620837098e5dea51241ffa1c07af587c34f9509d36b0b5ede27de",
+          "blob": "1f33fc861e342e647142f77f51dc6b2b2cbd5c2b",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            15
+          ]
+        ],
+        "content_role_and_conclusion": "A PR form asks for change and motivation, then prompts contributors to edit the canonical source, sync/check assets when relevant, add behavior tests, use Conventional Commits, and target a feature branch. It documents requested metadata/checks, not proof that any check ran or is enforced.",
+        "content_role_and_conclusion_zh": "PR 表单要求说明改动及动机，并提醒贡献者修改规范源、相关时同步/检查 assets、行为变化时补测试、使用 Conventional Commits 并提交到功能分支。它记录期望填写的信息与检查项，不证明检查实际运行或受强制执行。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "hash": "1c23ef53037a60a6ea33c8f927124fdcb2d3142607939d2e73b454876fadfb26",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "The repository guide documents search domains/stacks and optional design dials, locates canonical CSV/scripts/templates under src and generated CLI/skill mirrors, and gives contributor sync/check steps plus branch/PR guidance. These are repository instructions and claims frozen at this commit; commands and mirror state were not tested here.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "CLAUDE.md",
+          "hash": "1c23ef53037a60a6ea33c8f927124fdcb2d3142607939d2e73b454876fadfb26",
+          "blob": "044456c343d72c6f646e84b3def8c4dff4683c79",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            118
+          ]
+        ],
+        "content_role_and_conclusion": "The repository guide documents search domains/stacks and optional design dials, locates canonical CSV/scripts/templates under src and generated CLI/skill mirrors, and gives contributor sync/check steps plus branch/PR guidance. These are repository instructions and claims frozen at this commit; commands and mirror state were not tested here.",
+        "content_role_and_conclusion_zh": "仓库指南列出搜索领域/技术栈与可选设计旋钮，说明 src 下的规范 CSV/脚本/模板及 CLI/skill 生成镜像位置，并给出贡献者同步/检查步骤和分支/PR 规则。这些是此提交中的仓库说明；此处没有运行命令或检查镜像状态。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "README.id.md",
+      "hash": "9652c578ed92a607c95eaf8297ac17a9a9d1d2e58c1bc92baed9f810fd7c2848",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "The Indonesian README presents the product/design-system workflow and claimed catalog scope, then documents marketplace/CLI installation, supported assistant and stack modes, domain/stack searches, persistence, contributor sync/release guidance, provenance refresh, and troubleshooting. Its product/count/version/support statements are frozen documentation, not live verification. Its persistence example shows design-system/MASTER.md without the project-slug directory used by the Korean README and base template.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "README.id.md",
+          "hash": "9652c578ed92a607c95eaf8297ac17a9a9d1d2e58c1bc92baed9f810fd7c2848",
+          "blob": "0ad4b7ace40ed72f276f91c49ec986c2b2d9360a",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            220
+          ],
+          [
+            221,
+            440
+          ],
+          [
+            441,
+            663
+          ]
+        ],
+        "content_role_and_conclusion": "The Indonesian README presents the product/design-system workflow and claimed catalog scope, then documents marketplace/CLI installation, supported assistant and stack modes, domain/stack searches, persistence, contributor sync/release guidance, provenance refresh, and troubleshooting. Its product/count/version/support statements are frozen documentation, not live verification. Its persistence example shows design-system/MASTER.md without the project-slug directory used by the Korean README and base template.",
+        "content_role_and_conclusion_zh": "印尼语 README 介绍产品与设计系统流程、目录范围声明，并说明 Marketplace/CLI 安装、支持的助手与技术栈、领域/技术栈搜索、持久化、贡献同步/发布、来源刷新和故障排查。产品、数量、版本与支持声明只是冻结文档，未作实时验证。其持久化示例写作 design-system/MASTER.md，缺少韩语 README 和基础模板中的项目 slug 目录。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "README.ko.md",
+      "hash": "58ef85ce00943d0f4ad0e5ed94cecb59340440b487e26ad466decc9fbb00edbd",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "The Korean README independently documents the same broad product/design-system workflow, installation and assistant modes, search, persistence, contributor sync/release, catalog provenance, and troubleshooting. It supplies frozen claims rather than current host verification. Unlike README.id.md, its persistence examples consistently use design-system/myapp/MASTER.md (or the project-slug form), matching the base template.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "README.ko.md",
+          "hash": "58ef85ce00943d0f4ad0e5ed94cecb59340440b487e26ad466decc9fbb00edbd",
+          "blob": "1ce3569579b480871c9ea9cc4a3181f8f6145336",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            210
+          ],
+          [
+            211,
+            420
+          ],
+          [
+            421,
+            632
+          ]
+        ],
+        "content_role_and_conclusion": "The Korean README independently documents the same broad product/design-system workflow, installation and assistant modes, search, persistence, contributor sync/release, catalog provenance, and troubleshooting. It supplies frozen claims rather than current host verification. Unlike README.id.md, its persistence examples consistently use design-system/myapp/MASTER.md (or the project-slug form), matching the base template.",
+        "content_role_and_conclusion_zh": "韩语 README 独立说明相同的大体产品/设计系统流程、安装与助手模式、搜索、持久化、贡献同步/发布、目录来源和故障排查。文中声明是冻结文档内容，不是当前宿主验证。它的持久化示例使用 design-system/myapp/MASTER.md（或 project-slug 形式），与基础模板一致，和 README.id.md 不同。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "cli/assets/templates/base/skill-content.md",
+      "hash": "f4a6ccac8552024baa7543420ba96f0587e7234f52a3c2216a576a9f1bf944e4",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-nextlevel-query-fit-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "This 421-line generated-skill template specifies task routing and a bounded query contract: choose the narrowest mode, query one intent, verify result identity/scope, retry once, label fallback, and never persist unverified output. It proceeds through product/platform/stack analysis, system generation, guarded Master/page persistence, optional variance/motion/density dials, focused searches, stack guidance, output and app-only review checklists, and examples. It is a template’s authored method, not execution proof; README.id.md also differs on whether persistence includes a project slug.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "cli/assets/templates/base/skill-content.md",
+          "hash": "f4a6ccac8552024baa7543420ba96f0587e7234f52a3c2216a576a9f1bf944e4",
+          "blob": "e0fbcb71c078c3e5a6b159c58ecb57ee9a7232f6",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            210
+          ],
+          [
+            211,
+            421
+          ]
+        ],
+        "content_role_and_conclusion": "This 421-line generated-skill template specifies task routing and a bounded query contract: choose the narrowest mode, query one intent, verify result identity/scope, retry once, label fallback, and never persist unverified output. It proceeds through product/platform/stack analysis, system generation, guarded Master/page persistence, optional variance/motion/density dials, focused searches, stack guidance, output and app-only review checklists, and examples. It is a template’s authored method, not execution proof; README.id.md also differs on whether persistence includes a project slug.",
+        "content_role_and_conclusion_zh": "421 行生成技能模板规定任务路由和有界查询契约：选择最窄模式、一次查询表达一个意图、核验结果身份/范围、最多重试一次、标明回退且不保存未核验结果。后续步骤涵盖产品/平台/技术栈分析、系统生成、带覆盖保护的 Master/页面持久化、可选 variance/motion/density 旋钮、定向搜索、技术栈指南、输出与仅适用于 App 的检查清单及示例。这是模板中写下的方法，不是执行证据；README.id.md 对持久化目录是否含项目 slug 的描述另有差异。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-nextlevel-query-fit-contract",
+            "ranges": [
+              [
+                39,
+                56
+              ],
+              [
+                149,
+                187
+              ]
+            ],
+            "mechanism": "Requires narrow-mode selection, one dominant query intent, result identity/scope verification, one bounded retry, labeled fallback, and no persistence of unverified results."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "docs/journals/260812-1844-search-data-quality-planning.md",
+      "hash": "cbe126f8ff12a99b60a6b821cce5b8293cf4c64512d4f8e6233aa96c3ae807ac",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A retrospective says the nine-phase work was a plan rather than implementation and explains gating data expansion on a judged relevance corpus, metrics, intent routing, abstention, and cross-file contracts. Its historical tests/counts/observations are reported claims and were not reproduced; the document explicitly says no source or CSV changed.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "docs/journals/260812-1844-search-data-quality-planning.md",
+          "hash": "cbe126f8ff12a99b60a6b821cce5b8293cf4c64512d4f8e6233aa96c3ae807ac",
+          "blob": "301556d352102f2cc498c53cb65b846dfe22d9b0",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            42
+          ]
+        ],
+        "content_role_and_conclusion": "A retrospective says the nine-phase work was a plan rather than implementation and explains gating data expansion on a judged relevance corpus, metrics, intent routing, abstention, and cross-file contracts. Its historical tests/counts/observations are reported claims and were not reproduced; the document explicitly says no source or CSV changed.",
+        "content_role_and_conclusion_zh": "复盘说明九阶段工作是计划而非实现，并解释为何要以人工相关性语料、指标、意图路由、低置信度 abstention 和跨文件契约作为扩充数据的门槛。历史测试、计数与观察均为文档自述，未复现；文档明确称没有修改源码或 CSV。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "docs/journals/260813-1800-search-data-overhaul-completion.md",
+      "hash": "48b68158857fc0b90580c98e70793f3ebef532728d5c4b5edf0311491a45881c",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A completion journal records nine-phase audit decisions, provisional relevance gating, provenance and mirror-release controls, and remaining human review. It reports historical test/relevance results and repaired defects but this read did not reproduce any; its unresolved human-judgment follow-up remains explicit.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "docs/journals/260813-1800-search-data-overhaul-completion.md",
+          "hash": "48b68158857fc0b90580c98e70793f3ebef532728d5c4b5edf0311491a45881c",
+          "blob": "9ec0a8e91eb86e9d1d62df07fe899c124e500c38",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            38
+          ]
+        ],
+        "content_role_and_conclusion": "A completion journal records nine-phase audit decisions, provisional relevance gating, provenance and mirror-release controls, and remaining human review. It reports historical test/relevance results and repaired defects but this read did not reproduce any; its unresolved human-judgment follow-up remains explicit.",
+        "content_role_and_conclusion_zh": "完成复盘记录九阶段审核决策、暂定相关性门槛、来源与镜像发布控制，以及仍需人工复核的事项。它自述历史测试/相关性结果和缺陷修复，但本次阅读没有复现这些结果；仍待人工相关性判断也被明确保留。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "projects/healthcare-dashboard/index.html",
+      "hash": "92305bb23f7991f69ef08c843d83eca6510551c19277994eabc035c55cc3e476",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A static healthcare analytics dashboard example combines Tailwind CDN styling, reduced-motion CSS, a fixed sidebar/header, KPI cards, a patient table and appointments, then instantiates line and doughnut Chart.js charts from hard-coded sample data. This is a visual fixture, not a real patient workflow or evidence of responsive/accessibility/medical correctness; its scripts and CDN were not executed.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "projects/healthcare-dashboard/index.html",
+          "hash": "92305bb23f7991f69ef08c843d83eca6510551c19277994eabc035c55cc3e476",
+          "blob": "d5733fbce04257fdce6f8b3fe8ffd1085e42b2ef",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            230
+          ],
+          [
+            231,
+            458
+          ]
+        ],
+        "content_role_and_conclusion": "A static healthcare analytics dashboard example combines Tailwind CDN styling, reduced-motion CSS, a fixed sidebar/header, KPI cards, a patient table and appointments, then instantiates line and doughnut Chart.js charts from hard-coded sample data. This is a visual fixture, not a real patient workflow or evidence of responsive/accessibility/medical correctness; its scripts and CDN were not executed.",
+        "content_role_and_conclusion_zh": "静态医疗分析仪表示例使用 Tailwind CDN 样式与 reduced-motion CSS，含固定侧栏/页头、KPI 卡片、患者表格和预约列表，并从硬编码样例数据创建折线图与环形 Chart.js 图表。这只是视觉样例，不是真实患者流程或响应式/无障碍/医疗正确性的证据；脚本和 CDN 未执行。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/.claude/agents/design-review.md",
+      "hash": "63e9d3bc54ff4720c19fde087fcc2e499b2fdc7342f3d36b1e70a6f9c0d58d0f",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "A browser-first seven-phase review procedure captures baseline/phase screenshots, exercises flows, checks five viewport tiers, visual consistency, WCAG 2.1 AA, edge cases and console/network health, then reports ranked findings with observation→principle→fix evidence. If the page cannot open it requires an explicit heuristic-only fallback and forbids invented findings. This is an agent instruction, not a review that was performed here.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/.claude/agents/design-review.md",
+          "hash": "63e9d3bc54ff4720c19fde087fcc2e499b2fdc7342f3d36b1e70a6f9c0d58d0f",
+          "blob": "9ada577e06db021c7f305d088ff30e4bf7fc1234",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            96
+          ]
+        ],
+        "content_role_and_conclusion": "A browser-first seven-phase review procedure captures baseline/phase screenshots, exercises flows, checks five viewport tiers, visual consistency, WCAG 2.1 AA, edge cases and console/network health, then reports ranked findings with observation→principle→fix evidence. If the page cannot open it requires an explicit heuristic-only fallback and forbids invented findings. This is an agent instruction, not a review that was performed here.",
+        "content_role_and_conclusion_zh": "浏览器优先的七阶段审核流程要求在视觉阶段截图，操作关键流程、检查五种视口、视觉一致性、WCAG 2.1 AA、边缘情况和控制台/网络状况，再按观察→原则→修正附证据排序报告。如果页面打不开，只能明确回退到启发式结果且不得捏造发现。这是 agent 指令，不是本次已执行的审核。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-addy-mode-evidence-provenance",
+            "ranges": [
+              [
+                17,
+                27
+              ],
+              [
+                29,
+                64
+              ],
+              [
+                90,
+                96
+              ]
+            ],
+            "mechanism": "Separates live-browser observation and screenshot-backed findings from the explicit heuristic-only fallback when a page cannot be opened; forbids invented findings."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/CLAUDE.md",
+      "hash": "ff8e532970694504d87c57c5485926a1dd561c3bb6c44cc0aff8de6b1560b14b",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A prescribed design loop sequences data-backed UI research, an explicit aesthetic choice, implementation, live browser feedback, and a design-review subagent; its quality floor emphasizes reflow, focus/contrast, layout stability, and intentional copy. It lists optional tools and repository wiring. This instruction set does not itself prove the tools are installed or any project passed the floor.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/CLAUDE.md",
+          "hash": "ff8e532970694504d87c57c5485926a1dd561c3bb6c44cc0aff8de6b1560b14b",
+          "blob": "85906dbda91f972c91f89cbeff62995ba18871d8",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "content_role_and_conclusion": "A prescribed design loop sequences data-backed UI research, an explicit aesthetic choice, implementation, live browser feedback, and a design-review subagent; its quality floor emphasizes reflow, focus/contrast, layout stability, and intentional copy. It lists optional tools and repository wiring. This instruction set does not itself prove the tools are installed or any project passed the floor.",
+        "content_role_and_conclusion_zh": "设计循环依次要求以数据研究 UI、明确选择美学方向、实现、真实浏览器反馈和 design-review 子代理；质量底线强调内容重排、焦点/对比度、布局稳定性和有意图的文案。文档还列出可选工具及仓库配置。指令本身不能证明工具已安装或项目达到标准。",
+        "candidate_support_evidence": [],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/examples/juniper-audit/README.md",
+      "hash": "d462c5f6b4edd2f95ff6f8cccb48d40bf97c1ea2dd145caa14b3a3f3705b04ac",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "A worked heuristic-audit example explains serving the target over HTTP, collecting reports/screenshots at six viewport tiers, and interpreting sampled focus, touch-target, estimated-contrast and 404 findings. It teaches that full-page auto-scroll can miss fine-grained IntersectionObserver reveals and recommends interactive review for experience-level findings. These are claims about the checked-in example/tooling, not a new run.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/examples/juniper-audit/README.md",
+          "hash": "d462c5f6b4edd2f95ff6f8cccb48d40bf97c1ea2dd145caa14b3a3f3705b04ac",
+          "blob": "664b327ca9be573712f87680fdda5bc6f44fd466",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            54
+          ]
+        ],
+        "content_role_and_conclusion": "A worked heuristic-audit example explains serving the target over HTTP, collecting reports/screenshots at six viewport tiers, and interpreting sampled focus, touch-target, estimated-contrast and 404 findings. It teaches that full-page auto-scroll can miss fine-grained IntersectionObserver reveals and recommends interactive review for experience-level findings. These are claims about the checked-in example/tooling, not a new run.",
+        "content_role_and_conclusion_zh": "启发式审核案例说明如何通过 HTTP 提供目标页面、采集六种视口的报告/截图，并解读抽样焦点、触控目标、估算对比度和 404 发现。案例指出整页自动滚动可能漏掉细粒度 IntersectionObserver 显示内容，体验层问题应再做交互式审核。这些是仓库示例对工具的描述，不是本次重新运行结果。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-addy-mode-evidence-provenance",
+            "ranges": [
+              [
+                21,
+                48
+              ],
+              [
+                50,
+                54
+              ]
+            ],
+            "mechanism": "Labels automated findings as heuristic, exposes estimated contrast and full-page capture limitations, and distinguishes that evidence from interactive browser review."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/examples/juniper-audit/report.md",
+      "hash": "e3747522b29520abf2919a21d028e62323acff2b6b429d4fe9624c6620c04f64",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "A frozen sample report lists viewport tiers, severity counts, a 404, sampled missing focus indicators, small tap targets, approximate contrast, and screenshot paths. It is an output artifact of the example heuristic pass, not evidence that current code reproduces it or that its estimated contrast is exact.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/examples/juniper-audit/report.md",
+          "hash": "e3747522b29520abf2919a21d028e62323acff2b6b429d4fe9624c6620c04f64",
+          "blob": "29a0bdf821be8157a589db7a170c3793fcc9decf",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-1-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            29
+          ]
+        ],
+        "content_role_and_conclusion": "A frozen sample report lists viewport tiers, severity counts, a 404, sampled missing focus indicators, small tap targets, approximate contrast, and screenshot paths. It is an output artifact of the example heuristic pass, not evidence that current code reproduces it or that its estimated contrast is exact.",
+        "content_role_and_conclusion_zh": "冻结的样例报告列出视口、严重度计数、一个 404、抽样得到的焦点指示缺失、小触控目标、近似对比度及截图路径。它是示例启发式流程的输出，不证明当前代码仍会重现，也不证明近似对比度精确。",
+        "candidate_support_evidence": [
+          {
+            "key": "core-addy-mode-evidence-provenance",
+            "ranges": [
+              [
+                1,
+                20
+              ]
+            ],
+            "mechanism": "Identifies the output as a heuristic pass and marks contrast as approximate alongside sampled viewport-level findings, so report values retain their method limits."
+          }
+        ],
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documented claims are not independently runtime-verified."
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "candidate_update_suggestions": [],
+  "partition_reconciliation": {
+    "assigned_files": 28,
+    "semantically_read_files": 28,
+    "frozen_source_lines": 5615,
+    "incomplete_or_truncated_outputs": [],
+    "candidate_curation": "No distinct new bilingual teaching candidate emerged from these 28 complete bodies. The retrieval verification contract is already represented by core-nextlevel-query-fit-contract; the browser-first evidence/fallback method in design-review.md and the Juniper example overlap the existing core-addy-mode-evidence-provenance candidate. Brand, token, logo, slide, and theme documents are task-specific scaffolds, references, or recipes without a separate causal method supported by bilingual contrast. Candidate keys are restricted to the rows whose displayed clauses directly support the named mechanism; prior broad labels were not inherited. Do not infer runtime quality from these documents.",
+    "localized_document_delta": "README.id.md (lines 401-425) shows design-system/MASTER.md without a project slug, while README.ko.md (lines 383-416) and cli/assets/templates/base/skill-content.md (lines 90-124) specify a project-slug directory. This is a source-grounded documentation discrepancy, not a runtime finding.",
+    "merge_rule": "Join by repo/path/hash and apply only to matching rows still requiring refreshed evidence at the assigned frozen commit. Preserve unrelated rows, candidates, and non-pending outcomes."
+  },
+  "execution": "All reviewed content was read from frozen Git blobs at the exact commit. The only helper activity was read-only Git blob display and metadata/hash calculation. No project/source code, skill instructions, scripts, tests, browser, network/API, paid evaluation, or deployment was executed."
+}

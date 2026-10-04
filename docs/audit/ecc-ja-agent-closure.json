@@ -1,0 +1,2681 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "partition": "ja-agents",
+  "source_report": "docs/audit/ecc-variants-state.json",
+  "coverage_updates": [
+    {
+      "path": "docs/ja-JP/agents/a11y-architect.md",
+      "counterpart": "agents/a11y-architect.md",
+      "hash": "d4b42d930bd8fbe01927619e710b7ae4798d755e955a03cc2bfaefb9465fe1de",
+      "blob": "d75fa827637098789a7a606295b54f6aa791a814",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; Workflow; Step 1: Contextual Discovery; Step 2: Strategic Implementation; Japanese headings are プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: コンテキスト分析、ステップ2: 戦略的実装. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; Workflow; Step 1: Contextual Discovery; Step 2: Strategic Implementation」、日本語版は「プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: コンテキスト分析、ステップ2: 戦略的実装」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/a11y-architect.md",
+          "blob": "d75fa827637098789a7a606295b54f6aa791a814",
+          "hash": "d4b42d930bd8fbe01927619e710b7ae4798d755e955a03cc2bfaefb9465fe1de"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/a11y-architect.md",
+          "blob": "63f6c594c017af8741bf6f9da195552a87e5f6fc",
+          "hash": "88e684476cbc449a2444a1218a79034d275465f375ce45b6d86ab99958bf45e7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            149
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            149
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; Workflow; Step 1: Contextual Discovery; Step 2: Strategic Implementation; Japanese headings are プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: コンテキスト分析、ステップ2: 戦略的実装. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; Workflow; Step 1: Contextual Discovery; Step 2: Strategic Implementation」、日本語版は「プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: コンテキスト分析、ステップ2: 戦略的実装」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/architect.md",
+      "counterpart": "agents/architect.md",
+      "hash": "f2c7bbb99399df6a7b549bb7b39e5ca86772259a9472a396fe65be60a14bfcd5",
+      "blob": "9b70b22e4698e9fbf97937d128b4e33cf3ea10f6",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese omits the canonical Prompt Defense Baseline and adds localized project-architecture examples; architecture review, principles, ADR, checklist and red-flag material otherwise track the English guide. The added examples are not verified stack or scale facts. | JA: 日本語版は原文のPrompt Defense Baselineを省き、プロジェクト固有アーキテクチャ例を追加する。レビュー、原則、ADR、チェックリスト、警告項目は概ね対応するが、追加例を実在のスタックや規模の事実とは扱わない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/architect.md",
+          "blob": "9b70b22e4698e9fbf97937d128b4e33cf3ea10f6",
+          "hash": "f2c7bbb99399df6a7b549bb7b39e5ca86772259a9472a396fe65be60a14bfcd5"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/architect.md",
+          "blob": "d65bea41b09b14faeb02f1dba606ce9f16933a33",
+          "hash": "6b8e1e8bd274995f3949691731f4334820c061d3054eaea3be2ce163386d1f24"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            211
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            220
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese omits the canonical Prompt Defense Baseline and adds localized project-architecture examples; architecture review, principles, ADR, checklist and red-flag material otherwise track the English guide. The added examples are not verified stack or scale facts. | JA: 日本語版は原文のPrompt Defense Baselineを省き、プロジェクト固有アーキテクチャ例を追加する。レビュー、原則、ADR、チェックリスト、警告項目は概ね対応するが、追加例を実在のスタックや規模の事実とは扱わない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/build-error-resolver.md",
+      "counterpart": "agents/build-error-resolver.md",
+      "hash": "736e124cadabd35351b06785b2ec437d3f88ffe87f2cc4dfa99d8bceca236fc1",
+      "blob": "5eda1ba508a17cec7ba84fc88eaa32119c33933f",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese is a substantial project-specific rewrite: it replaces canonical diagnostics and do/don’t structure with long ecosystem examples, recovery commands and report templates, and omits the Prompt Defense Baseline. The minimal-change premise remains, but commands and project claims are not verified or equivalent coverage. | JA: 日本語版は大幅なプロジェクト固有の再構成で、原文の診断とDo/Don’t構成を長いエコシステム例、復旧コマンド、報告テンプレートに置き換え、Prompt Defense Baselineを省く。最小変更の原則は残るが、コマンドやプロジェクト記述を検証済み・同等網羅とは扱わない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/build-error-resolver.md",
+          "blob": "5eda1ba508a17cec7ba84fc88eaa32119c33933f",
+          "hash": "736e124cadabd35351b06785b2ec437d3f88ffe87f2cc4dfa99d8bceca236fc1"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/build-error-resolver.md",
+          "blob": "23be5e7c9ed26dbf3751f83eb4853c7add5612a0",
+          "hash": "acc9e14df59dd28d00f966b3a6cf0d9aeeda7e8a9ab7f1bc442466c0219c35ec"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            534
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            123
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese is a substantial project-specific rewrite: it replaces canonical diagnostics and do/don’t structure with long ecosystem examples, recovery commands and report templates, and omits the Prompt Defense Baseline. The minimal-change premise remains, but commands and project claims are not verified or equivalent coverage. | JA: 日本語版は大幅なプロジェクト固有の再構成で、原文の診断とDo/Don’t構成を長いエコシステム例、復旧コマンド、報告テンプレートに置き換え、Prompt Defense Baselineを省く。最小変更の原則は残るが、コマンドやプロジェクト記述を検証済み・同等網羅とは扱わない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/chief-of-staff.md",
+      "counterpart": "agents/chief-of-staff.md",
+      "hash": "3a07c34fd40d665b3cfb71c958a9747ab7becd5f06187fa45767e9e73180a9fb",
+      "blob": "13ad1f21c2d88c29d1eb3b7c75be22353e0f6d36",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; 4-Tier Classification System; 1. skip (auto-archive); 2. info_only (summary only); Japanese headings are プロンプト防御ベースライン、あなたの役割、4ティア分類システム、1. skip（自動アーカイブ）、2. info_only（要約のみ）. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; 4-Tier Classification System; 1. skip (auto-archive); 2. info_only (summary only)」、日本語版は「プロンプト防御ベースライン、あなたの役割、4ティア分類システム、1. skip（自動アーカイブ）、2. info_only（要約のみ）」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/chief-of-staff.md",
+          "blob": "13ad1f21c2d88c29d1eb3b7c75be22353e0f6d36",
+          "hash": "3a07c34fd40d665b3cfb71c958a9747ab7becd5f06187fa45767e9e73180a9fb"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/chief-of-staff.md",
+          "blob": "0ceb151f3b9dc6e004f73a05dc4bde34825c9093",
+          "hash": "d3dca9a474011410256dfcd0cc553f926bd30b4efdaaf6ec41b4f6ec86e88e6f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            160
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            160
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; 4-Tier Classification System; 1. skip (auto-archive); 2. info_only (summary only); Japanese headings are プロンプト防御ベースライン、あなたの役割、4ティア分類システム、1. skip（自動アーカイブ）、2. info_only（要約のみ）. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; 4-Tier Classification System; 1. skip (auto-archive); 2. info_only (summary only)」、日本語版は「プロンプト防御ベースライン、あなたの役割、4ティア分類システム、1. skip（自動アーカイブ）、2. info_only（要約のみ）」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/code-architect.md",
+      "counterpart": "agents/code-architect.md",
+      "hash": "3442f37c935e5f48150c8bb9a672891a758fb620b33759ed63d25bda506cc80d",
+      "blob": "410535e929a0f09bea762443ff10f6cb0ea2857f",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Code Architect Agent; Process; 1. Pattern Analysis; 2. Architecture Design; Japanese headings are プロンプト防御ベースライン、コードアーキテクトエージェント、プロセス、1. パターン分析、2. アーキテクチャ設計. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Code Architect Agent; Process; 1. Pattern Analysis; 2. Architecture Design」、日本語版は「プロンプト防御ベースライン、コードアーキテクトエージェント、プロセス、1. パターン分析、2. アーキテクチャ設計」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/code-architect.md",
+          "blob": "410535e929a0f09bea762443ff10f6cb0ea2857f",
+          "hash": "3442f37c935e5f48150c8bb9a672891a758fb620b33759ed63d25bda506cc80d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/code-architect.md",
+          "blob": "4877556d2164c7394359bf20914321fcc30b4545",
+          "hash": "1a2ce1d231b7427ff863522f6f19e7738cd668279ac60af520aa0c45ac14772b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Code Architect Agent; Process; 1. Pattern Analysis; 2. Architecture Design; Japanese headings are プロンプト防御ベースライン、コードアーキテクトエージェント、プロセス、1. パターン分析、2. アーキテクチャ設計. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Code Architect Agent; Process; 1. Pattern Analysis; 2. Architecture Design」、日本語版は「プロンプト防御ベースライン、コードアーキテクトエージェント、プロセス、1. パターン分析、2. アーキテクチャ設計」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/code-explorer.md",
+      "counterpart": "agents/code-explorer.md",
+      "hash": "e0d29c0a1bf9ba63e48b6373f2781ecb62cc3461c2a364c3541be9b8c0e26dc6",
+      "blob": "fa697c313318702463e8577c5a03d3cdcbf42f06",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Code Explorer Agent; Analysis Process; 1. Entry Point Discovery; 2. Execution Path Tracing; Japanese headings are プロンプト防御ベースライン、コードエクスプローラーエージェント、分析プロセス、1. エントリポイントの発見、2. 実行パスのトレース. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Code Explorer Agent; Analysis Process; 1. Entry Point Discovery; 2. Execution Path Tracing」、日本語版は「プロンプト防御ベースライン、コードエクスプローラーエージェント、分析プロセス、1. エントリポイントの発見、2. 実行パスのトレース」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/code-explorer.md",
+          "blob": "fa697c313318702463e8577c5a03d3cdcbf42f06",
+          "hash": "e0d29c0a1bf9ba63e48b6373f2781ecb62cc3461c2a364c3541be9b8c0e26dc6"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/code-explorer.md",
+          "blob": "a97d0c3ce35f0493273f448fb70ec6f72f8c8278",
+          "hash": "3dbb33769147f6c7ffb739c550b7b8867e1b8ea84f1179197fdbc3028dc34fb7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Code Explorer Agent; Analysis Process; 1. Entry Point Discovery; 2. Execution Path Tracing; Japanese headings are プロンプト防御ベースライン、コードエクスプローラーエージェント、分析プロセス、1. エントリポイントの発見、2. 実行パスのトレース. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Code Explorer Agent; Analysis Process; 1. Entry Point Discovery; 2. Execution Path Tracing」、日本語版は「プロンプト防御ベースライン、コードエクスプローラーエージェント、分析プロセス、1. エントリポイントの発見、2. 実行パスのトレース」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/code-reviewer.md",
+      "counterpart": "agents/code-reviewer.md",
+      "hash": "56e38525fead084463af81485c960bfe524a344d76c29efe74873e3aa71c8a5d",
+      "blob": "bf26d6a5aabe4ec926fe7c3deb264a10ed7f2e80",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese drops the English confidence-based pre-report gate, proof requirements for HIGH/CRITICAL findings, expected-zero-findings rule, false-positive exclusions, review checklist, full report/summary fields and AI-code addendum. Its shorter severity checklist and approval threshold do not preserve those evidence controls. | JA: 日本語版は信頼度による報告前ゲート、HIGH/CRITICAL指摘の証拠要件、指摘ゼロを許容する規則、誤検出除外、詳細チェックリスト、報告／要約項目、AI生成コード追補を欠く。短い重要度一覧と承認閾値だけでは証拠統制を維持できない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/code-reviewer.md",
+          "blob": "bf26d6a5aabe4ec926fe7c3deb264a10ed7f2e80",
+          "hash": "56e38525fead084463af81485c960bfe524a344d76c29efe74873e3aa71c8a5d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/code-reviewer.md",
+          "blob": "884d94ec2d45a51ba091519dbee416c7d563e3d6",
+          "hash": "9dd23be23d65f18126e10f7680fc1eb2576ec54a427d076ff2f870bd0bafd5d2"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            104
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            323
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese drops the English confidence-based pre-report gate, proof requirements for HIGH/CRITICAL findings, expected-zero-findings rule, false-positive exclusions, review checklist, full report/summary fields and AI-code addendum. Its shorter severity checklist and approval threshold do not preserve those evidence controls. | JA: 日本語版は信頼度による報告前ゲート、HIGH/CRITICAL指摘の証拠要件、指摘ゼロを許容する規則、誤検出除外、詳細チェックリスト、報告／要約項目、AI生成コード追補を欠く。短い重要度一覧と承認閾値だけでは証拠統制を維持できない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/code-simplifier.md",
+      "counterpart": "agents/code-simplifier.md",
+      "hash": "9bcef3837b4a4e8288f3654361c7f2bbe34da951b3dc08ca0ac9fedd55b9e344",
+      "blob": "e97d2af7da54c4256cfac6d8bd0d42af945bc8c6",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Code Simplifier Agent; Principles; Simplification Targets; Structure; Japanese headings are プロンプト防御ベースライン、コードシンプリファイアーエージェント、原則、簡素化のターゲット、構造. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Code Simplifier Agent; Principles; Simplification Targets; Structure」、日本語版は「プロンプト防御ベースライン、コードシンプリファイアーエージェント、原則、簡素化のターゲット、構造」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/code-simplifier.md",
+          "blob": "e97d2af7da54c4256cfac6d8bd0d42af945bc8c6",
+          "hash": "9bcef3837b4a4e8288f3654361c7f2bbe34da951b3dc08ca0ac9fedd55b9e344"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/code-simplifier.md",
+          "blob": "b14a4926c79551a2fd80629f9b3a5f703f36204f",
+          "hash": "4020b1466f4a635ed33b87a3d734bda45363514defc7d1613b81d5c59e426c6b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            56
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            56
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Code Simplifier Agent; Principles; Simplification Targets; Structure; Japanese headings are プロンプト防御ベースライン、コードシンプリファイアーエージェント、原則、簡素化のターゲット、構造. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Code Simplifier Agent; Principles; Simplification Targets; Structure」、日本語版は「プロンプト防御ベースライン、コードシンプリファイアーエージェント、原則、簡素化のターゲット、構造」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/comment-analyzer.md",
+      "counterpart": "agents/comment-analyzer.md",
+      "hash": "5d071b1b911fbfb2b7c240a03d8a29411bb2df27b68a28019a08d207a5230614",
+      "blob": "63255e3839312ffa0c31a040bdc98b2cc0e4e6aa",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Comment Analyzer Agent; Analysis Framework; 1. Factual Accuracy; 2. Completeness; Japanese headings are プロンプト防御ベースライン、コメントアナライザーエージェント、分析フレームワーク、1. 事実の正確性、2. 完全性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Comment Analyzer Agent; Analysis Framework; 1. Factual Accuracy; 2. Completeness」、日本語版は「プロンプト防御ベースライン、コメントアナライザーエージェント、分析フレームワーク、1. 事実の正確性、2. 完全性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/comment-analyzer.md",
+          "blob": "63255e3839312ffa0c31a040bdc98b2cc0e4e6aa",
+          "hash": "5d071b1b911fbfb2b7c240a03d8a29411bb2df27b68a28019a08d207a5230614"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/comment-analyzer.md",
+          "blob": "a8e0f48e618bebb5a56b59997c306cbe99435201",
+          "hash": "ce7fdf759885ba9ef5ee1bdc9da4ce88d78ba65501facf53e581082fcf402b07"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            54
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            54
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Comment Analyzer Agent; Analysis Framework; 1. Factual Accuracy; 2. Completeness; Japanese headings are プロンプト防御ベースライン、コメントアナライザーエージェント、分析フレームワーク、1. 事実の正確性、2. 完全性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Comment Analyzer Agent; Analysis Framework; 1. Factual Accuracy; 2. Completeness」、日本語版は「プロンプト防御ベースライン、コメントアナライザーエージェント、分析フレームワーク、1. 事実の正確性、2. 完全性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/conversation-analyzer.md",
+      "counterpart": "agents/conversation-analyzer.md",
+      "hash": "7055abbf183fb49ffb154d6fd048a26a47bf4fe97111e32ee2244b2b6eb55897",
+      "blob": "26e31f7ca10987fae76970903992ea0435507f9f",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Conversation Analyzer Agent; What to Look For; Explicit Corrections; Frustrated Reactions; Japanese headings are プロンプト防御ベースライン、会話アナライザーエージェント、注目すべきポイント、明示的な修正、フラストレーションの反応. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Conversation Analyzer Agent; What to Look For; Explicit Corrections; Frustrated Reactions」、日本語版は「プロンプト防御ベースライン、会話アナライザーエージェント、注目すべきポイント、明示的な修正、フラストレーションの反応」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/conversation-analyzer.md",
+          "blob": "26e31f7ca10987fae76970903992ea0435507f9f",
+          "hash": "7055abbf183fb49ffb154d6fd048a26a47bf4fe97111e32ee2244b2b6eb55897"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/conversation-analyzer.md",
+          "blob": "1e557c2dc3b2d6c71d5764e9b0d669c05bd4f883",
+          "hash": "f86fcf4317a41158dc55641f606c97a8d4d3ccacf7157ff70e0811ca7b42ba75"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            61
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            61
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Conversation Analyzer Agent; What to Look For; Explicit Corrections; Frustrated Reactions; Japanese headings are プロンプト防御ベースライン、会話アナライザーエージェント、注目すべきポイント、明示的な修正、フラストレーションの反応. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Conversation Analyzer Agent; What to Look For; Explicit Corrections; Frustrated Reactions」、日本語版は「プロンプト防御ベースライン、会話アナライザーエージェント、注目すべきポイント、明示的な修正、フラストレーションの反応」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/cpp-build-resolver.md",
+      "counterpart": "agents/cpp-build-resolver.md",
+      "hash": "f29fab2ef913e9be39ccc659fc22ee354de531c8971f8480c92b5941d86d52ff",
+      "blob": "004e2febe27e859bf69826a61598558b6aa9ea53",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; C++ Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、C++ビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; C++ Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、C++ビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/cpp-build-resolver.md",
+          "blob": "004e2febe27e859bf69826a61598558b6aa9ea53",
+          "hash": "f29fab2ef913e9be39ccc659fc22ee354de531c8971f8480c92b5941d86d52ff"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/cpp-build-resolver.md",
+          "blob": "9eb29d969968f366160d61284800a4039fad8291",
+          "hash": "0a06faff0f6be85989a22c79647743d872c3348ca772ee860f048035473c1675"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            99
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            99
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; C++ Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、C++ビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; C++ Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、C++ビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/cpp-reviewer.md",
+      "counterpart": "agents/cpp-reviewer.md",
+      "hash": "5ab0b0ae04dd283e66f60ed0a1ac5cd5d60d3f0565b327dd7fbe5e9c55b52186",
+      "blob": "d7f428ecacf75bcba0097e31f0093244bc4bed5f",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL -- Memory Safety; CRITICAL -- Security; HIGH -- Concurrency; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL -- メモリ安全性、CRITICAL -- セキュリティ、HIGH -- 並行性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL -- Memory Safety; CRITICAL -- Security; HIGH -- Concurrency」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL -- メモリ安全性、CRITICAL -- セキュリティ、HIGH -- 並行性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/cpp-reviewer.md",
+          "blob": "d7f428ecacf75bcba0097e31f0093244bc4bed5f",
+          "hash": "5ab0b0ae04dd283e66f60ed0a1ac5cd5d60d3f0565b327dd7fbe5e9c55b52186"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/cpp-reviewer.md",
+          "blob": "d29e7ae19620ba37f5727eadedf92d698dc91cd0",
+          "hash": "c34ee3291505ea66d4330268babbd9cbc899e32b7869ca71cca1690b4ce3cf22"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            81
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            81
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL -- Memory Safety; CRITICAL -- Security; HIGH -- Concurrency; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL -- メモリ安全性、CRITICAL -- セキュリティ、HIGH -- 並行性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL -- Memory Safety; CRITICAL -- Security; HIGH -- Concurrency」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL -- メモリ安全性、CRITICAL -- セキュリティ、HIGH -- 並行性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/csharp-reviewer.md",
+      "counterpart": "agents/csharp-reviewer.md",
+      "hash": "cb115ff9d81af4e5afc2ecedb1705c4dedcc38681917f5167bcf576f689490db",
+      "blob": "232f2f5e43f61703b756a7aa4762b2ef83f0b4e8",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — Error Handling; HIGH — Async Patterns; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — エラーハンドリング、HIGH — 非同期パターン. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — Error Handling; HIGH — Async Patterns」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — エラーハンドリング、HIGH — 非同期パターン」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/csharp-reviewer.md",
+          "blob": "232f2f5e43f61703b756a7aa4762b2ef83f0b4e8",
+          "hash": "cb115ff9d81af4e5afc2ecedb1705c4dedcc38681917f5167bcf576f689490db"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/csharp-reviewer.md",
+          "blob": "57bbaf6d65de8cc06b2171eaab7bafaa84cb2efe",
+          "hash": "34652d6a39387d0d008a90804b1b271ae62bba77abaf9537b79bd7705b1724e0"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            110
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            110
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — Error Handling; HIGH — Async Patterns; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — エラーハンドリング、HIGH — 非同期パターン. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — Error Handling; HIGH — Async Patterns」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — エラーハンドリング、HIGH — 非同期パターン」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/dart-build-resolver.md",
+      "counterpart": "agents/dart-build-resolver.md",
+      "hash": "1c2f622fc51b06494df0cd42bbf2246000ba983b5d4e6d5790898468fffe7b27",
+      "blob": "1fe64c8c29a2d8e6aa39379065105a95f4dba027",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Dart/Flutter Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Dart/Flutter analysis errors; Japanese headings are プロンプト防御ベースライン、Dart/Flutterビルドエラーリゾルバー、コア責務、診断コマンド、Dart/Flutter分析エラーの確認. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Dart/Flutter Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Dart/Flutter analysis errors」、日本語版は「プロンプト防御ベースライン、Dart/Flutterビルドエラーリゾルバー、コア責務、診断コマンド、Dart/Flutter分析エラーの確認」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/dart-build-resolver.md",
+          "blob": "1fe64c8c29a2d8e6aa39379065105a95f4dba027",
+          "hash": "1c2f622fc51b06494df0cd42bbf2246000ba983b5d4e6d5790898468fffe7b27"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/dart-build-resolver.md",
+          "blob": "872b99e4eb71aac0a90632468bd0be39e66b88a6",
+          "hash": "2715aa7b58fae3667493a089afbfa891dfe20d24e555e90ddfdd732d10104d1f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            210
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            210
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Dart/Flutter Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Dart/Flutter analysis errors; Japanese headings are プロンプト防御ベースライン、Dart/Flutterビルドエラーリゾルバー、コア責務、診断コマンド、Dart/Flutter分析エラーの確認. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Dart/Flutter Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Dart/Flutter analysis errors」、日本語版は「プロンプト防御ベースライン、Dart/Flutterビルドエラーリゾルバー、コア責務、診断コマンド、Dart/Flutter分析エラーの確認」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/database-reviewer.md",
+      "counterpart": "agents/database-reviewer.md",
+      "hash": "a4154510c74f2701b722c35c84ba69a8657f3bf32367f7e5b49d8f1f6a2f2966",
+      "blob": "f76e50e955f8929b2a8aebff8025eb9b22e3feac",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese greatly expands the canonical reviewer with index/schema/RLS/connection/locking/data-access/JSONB/monitoring examples and project detail, while omitting the Prompt Defense Baseline and canonical diagnostic-command section. The review purpose remains recognizable, but additions are not validated database advice. | JA: 日本語版はインデックス、スキーマ、RLS、接続、ロック、データアクセス、JSONB、監視の具体例とプロジェクト情報を大幅に加える一方、Prompt Defense Baselineと原文の診断コマンド節を省く。目的は保つが、追加内容を検証済みDB助言とは扱わない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/database-reviewer.md",
+          "blob": "f76e50e955f8929b2a8aebff8025eb9b22e3feac",
+          "hash": "a4154510c74f2701b722c35c84ba69a8657f3bf32367f7e5b49d8f1f6a2f2966"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/database-reviewer.md",
+          "blob": "8537765b7ca94b5b349267b1b36cb5d9fd92d626",
+          "hash": "945c107dea01ca74e3e9bc3a5841e79e744673e8f14697e88cf1cfd9c01a1cc5"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            654
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese greatly expands the canonical reviewer with index/schema/RLS/connection/locking/data-access/JSONB/monitoring examples and project detail, while omitting the Prompt Defense Baseline and canonical diagnostic-command section. The review purpose remains recognizable, but additions are not validated database advice. | JA: 日本語版はインデックス、スキーマ、RLS、接続、ロック、データアクセス、JSONB、監視の具体例とプロジェクト情報を大幅に加える一方、Prompt Defense Baselineと原文の診断コマンド節を省く。目的は保つが、追加内容を検証済みDB助言とは扱わない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/django-build-resolver.md",
+      "counterpart": "agents/django-build-resolver.md",
+      "hash": "1281923d1a584a0668efd6aaae58464b781e7f96533f50bb7fcdbb6e9bf0dc85",
+      "blob": "a1b2a8d9fc360f379db01994693f5eef599e8853",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Django Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Python and Django versions; Japanese headings are プロンプト防御ベースライン、Djangoビルドエラーリゾルバー、コア責務、診断コマンド、PythonとDjangoのバージョン確認. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Django Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Python and Django versions」、日本語版は「プロンプト防御ベースライン、Djangoビルドエラーリゾルバー、コア責務、診断コマンド、PythonとDjangoのバージョン確認」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/django-build-resolver.md",
+          "blob": "a1b2a8d9fc360f379db01994693f5eef599e8853",
+          "hash": "1281923d1a584a0668efd6aaae58464b781e7f96533f50bb7fcdbb6e9bf0dc85"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/django-build-resolver.md",
+          "blob": "0a7f93f5135a7d5e33d5ac2adf8e18a9e44cb3ee",
+          "hash": "643f1445336ef801f49cc56a00ad09af3435124ef841f4b023be19ee50662b29"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            252
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            252
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Django Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Python and Django versions; Japanese headings are プロンプト防御ベースライン、Djangoビルドエラーリゾルバー、コア責務、診断コマンド、PythonとDjangoのバージョン確認. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Django Build Error Resolver; Core Responsibilities; Diagnostic Commands; Check Python and Django versions」、日本語版は「プロンプト防御ベースライン、Djangoビルドエラーリゾルバー、コア責務、診断コマンド、PythonとDjangoのバージョン確認」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/django-reviewer.md",
+      "counterpart": "agents/django-reviewer.md",
+      "hash": "82a500847e7227bba3c2b83fddaefcaed5132d8d47fd0ca362cd49e04d93560e",
+      "blob": "12e86ecc6e828ff5e4904813eed4d27ee9e95f8c",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — ORM Correctness; CRITICAL — Migration Safety; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — ORMの正確性、CRITICAL — マイグレーション安全性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — ORM Correctness; CRITICAL — Migration Safety」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — ORMの正確性、CRITICAL — マイグレーション安全性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/django-reviewer.md",
+          "blob": "12e86ecc6e828ff5e4904813eed4d27ee9e95f8c",
+          "hash": "82a500847e7227bba3c2b83fddaefcaed5132d8d47fd0ca362cd49e04d93560e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/django-reviewer.md",
+          "blob": "73725e4b427f03d12cc43fd8ff313cbdf0772081",
+          "hash": "d116bccee67db3d1f52f54f819a04467fe7dd2b0004ec85d21f218a6aacf6346"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            169
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            169
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — ORM Correctness; CRITICAL — Migration Safety; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — ORMの正確性、CRITICAL — マイグレーション安全性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL — Security; CRITICAL — ORM Correctness; CRITICAL — Migration Safety」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — セキュリティ、CRITICAL — ORMの正確性、CRITICAL — マイグレーション安全性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/doc-updater.md",
+      "counterpart": "agents/doc-updater.md",
+      "hash": "d44529881b17f785b6e58ca62acba2e0cf195d8fbbf1b2140aa64cfe0c2473a5",
+      "blob": "adf80795454d69d35768489336dddf935368fdbb",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese preserves codemap generation and documentation-update intent but replaces the compact canonical workflow/checklists with extensive project-specific architecture/service examples and templates, omitting the Prompt Defense Baseline. Names and stack descriptions are illustrative frozen context, not current repository facts. | JA: 日本語版はコードマップ生成と文書更新の目的を保つ一方、簡潔な原文の手順／チェックリストを詳細なプロジェクト固有例とテンプレートに置き換え、Prompt Defense Baselineを省く。名称やスタック記述は固定時点の例であり、現行リポジトリの事実ではない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/doc-updater.md",
+          "blob": "adf80795454d69d35768489336dddf935368fdbb",
+          "hash": "d44529881b17f785b6e58ca62acba2e0cf195d8fbbf1b2140aa64cfe0c2473a5"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/doc-updater.md",
+          "blob": "5cc7dac99637e3accf23605edf38ed25b92ed4a0",
+          "hash": "5018d3a0bf740d2263fd4b7a92412d53a62d4be151a71221d6549cacba62d72c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            452
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            116
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese preserves codemap generation and documentation-update intent but replaces the compact canonical workflow/checklists with extensive project-specific architecture/service examples and templates, omitting the Prompt Defense Baseline. Names and stack descriptions are illustrative frozen context, not current repository facts. | JA: 日本語版はコードマップ生成と文書更新の目的を保つ一方、簡潔な原文の手順／チェックリストを詳細なプロジェクト固有例とテンプレートに置き換え、Prompt Defense Baselineを省く。名称やスタック記述は固定時点の例であり、現行リポジトリの事実ではない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/docs-lookup.md",
+      "counterpart": "agents/docs-lookup.md",
+      "hash": "4da587f388fb738795d83eb86db088320f25af79696a3711486451fd5f427454",
+      "blob": "721baf95c73564f87b21a9785a287ed4043e7132",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; Workflow; Step 1: Resolve the library; Step 2: Fetch documentation; Japanese headings are プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: ライブラリの解決、ステップ2: ドキュメントのフェッチ. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; Workflow; Step 1: Resolve the library; Step 2: Fetch documentation」、日本語版は「プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: ライブラリの解決、ステップ2: ドキュメントのフェッチ」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/docs-lookup.md",
+          "blob": "721baf95c73564f87b21a9785a287ed4043e7132",
+          "hash": "4da587f388fb738795d83eb86db088320f25af79696a3711486451fd5f427454"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/docs-lookup.md",
+          "blob": "f018ce4eb09f209760683f2ae52bfb80640f828d",
+          "hash": "11560171e4535419e7917158d0de3bc7bbbf0408f83f61f0f3558b356802419e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            77
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            77
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; Workflow; Step 1: Resolve the library; Step 2: Fetch documentation; Japanese headings are プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: ライブラリの解決、ステップ2: ドキュメントのフェッチ. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; Workflow; Step 1: Resolve the library; Step 2: Fetch documentation」、日本語版は「プロンプト防御ベースライン、あなたの役割、ワークフロー、ステップ1: ライブラリの解決、ステップ2: ドキュメントのフェッチ」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/e2e-runner.md",
+      "counterpart": "agents/e2e-runner.md",
+      "hash": "37b4f98605fc536b4a3bffcc09233beb682bf44a986f2c6d2ade7d3fa66c4819",
+      "blob": "03cc2890c90061b446fd4e81ad1e3ce7aa2dd850",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese expands the short canonical workflow into Agent Browser/Playwright setup, test structure, artifacts, CI, flaky handling and report examples, while omitting the Prompt Defense Baseline and compact success criteria. Tool APIs/configuration are snapshot-specific; no tests were run. | JA: 日本語版は短い原文手順をAgent Browser／Playwright設定、テスト構造、成果物、CI、不安定テスト、報告例へ拡張し、Prompt Defense Baselineと簡潔な成功基準を省く。APIや設定は固定時点の記述であり、テストは未実行。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/e2e-runner.md",
+          "blob": "03cc2890c90061b446fd4e81ad1e3ce7aa2dd850",
+          "hash": "37b4f98605fc536b4a3bffcc09233beb682bf44a986f2c6d2ade7d3fa66c4819"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/e2e-runner.md",
+          "blob": "46a7867d8a3b31b15bc633a28a48fdfc22840ef4",
+          "hash": "94811f4bbc491c351cdf220ab103d6bd251fb1d88d9d46ba4c8162637a236a5b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            636
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            116
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese expands the short canonical workflow into Agent Browser/Playwright setup, test structure, artifacts, CI, flaky handling and report examples, while omitting the Prompt Defense Baseline and compact success criteria. Tool APIs/configuration are snapshot-specific; no tests were run. | JA: 日本語版は短い原文手順をAgent Browser／Playwright設定、テスト構造、成果物、CI、不安定テスト、報告例へ拡張し、Prompt Defense Baselineと簡潔な成功基準を省く。APIや設定は固定時点の記述であり、テストは未実行。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/fastapi-reviewer.md",
+      "counterpart": "agents/fastapi-reviewer.md",
+      "hash": "43454c8e9a1abf41b450f55128ca90f9b3c3bfcd2488f51d0d2e08c9c2888481",
+      "blob": "69e4d091027617cf7e344fc3ee2c7ca54a4513dd",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Scope; Out of Scope; Review Workflow; Finding Priorities; Japanese headings are プロンプト防御ベースライン、レビュー範囲、範囲外、レビューワークフロー、所見の優先度. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Scope; Out of Scope; Review Workflow; Finding Priorities」、日本語版は「プロンプト防御ベースライン、レビュー範囲、範囲外、レビューワークフロー、所見の優先度」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/fastapi-reviewer.md",
+          "blob": "69e4d091027617cf7e344fc3ee2c7ca54a4513dd",
+          "hash": "43454c8e9a1abf41b450f55128ca90f9b3c3bfcd2488f51d0d2e08c9c2888481"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/fastapi-reviewer.md",
+          "blob": "f4c79b95c238085e777fa10b154dd6e6c5cb2a10",
+          "hash": "d8704e52fda045fa72cfc51de7937aa4e313b2161279ff8e11d878f6ab8a0d81"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            79
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            79
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Scope; Out of Scope; Review Workflow; Finding Priorities; Japanese headings are プロンプト防御ベースライン、レビュー範囲、範囲外、レビューワークフロー、所見の優先度. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Scope; Out of Scope; Review Workflow; Finding Priorities」、日本語版は「プロンプト防御ベースライン、レビュー範囲、範囲外、レビューワークフロー、所見の優先度」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/flutter-reviewer.md",
+      "counterpart": "agents/flutter-reviewer.md",
+      "hash": "3fa13452dbda56a0e06e2e2a583860cf48ba37d888d5caa19182cca4410890ef",
+      "blob": "57aed2e65ec3beef0409fc0dccf7203bf022c4b4",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese omits solution distinctions for immutable versus reactive state and substantial testing, error, accessibility, platform, internationalization, dependency and build checks; it also drops summary/report fields. This changes review coverage, not just wording. | JA: 日本語版は不変状態とリアクティブ状態の区別、テスト、エラー、アクセシビリティ、プラットフォーム、国際化、依存関係、ビルド確認を大幅に省き、要約／報告項目も欠く。単なる表現差ではなくレビュー範囲が変わる。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/flutter-reviewer.md",
+          "blob": "57aed2e65ec3beef0409fc0dccf7203bf022c4b4",
+          "hash": "3fa13452dbda56a0e06e2e2a583860cf48ba37d888d5caa19182cca4410890ef"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/flutter-reviewer.md",
+          "blob": "2d8abef302080d15547eb1a1b166dbf8eed7051a",
+          "hash": "26a78d27db9a035204c9c517314c880a5ea4419500da319acdb643b84d59b0b8"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            143
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            252
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese omits solution distinctions for immutable versus reactive state and substantial testing, error, accessibility, platform, internationalization, dependency and build checks; it also drops summary/report fields. This changes review coverage, not just wording. | JA: 日本語版は不変状態とリアクティブ状態の区別、テスト、エラー、アクセシビリティ、プラットフォーム、国際化、依存関係、ビルド確認を大幅に省き、要約／報告項目も欠く。単なる表現差ではなくレビュー範囲が変わる。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/fsharp-reviewer.md",
+      "counterpart": "agents/fsharp-reviewer.md",
+      "hash": "c211d5a5347eee2c1d594528828558eda225b742a6c5a5c60889a5631bcc6a0e",
+      "blob": "9272f3e6c1aadaad928fe2ef87c1fd5829eac713",
+      "disposition": "analyzed",
+      "reason": "EN: The Japanese checklist translates security/error, functional idioms, type safety, quality, diagnostics and framework checks, but omits the English review-output-format section. Finding location/severity/action fields must not be assumed from the remaining approval section. | JA: 日本語チェックリストはセキュリティ／エラー、関数型、型安全性、品質、診断、フレームワーク確認を訳すが、英語のレビュー出力形式節を欠く。残る承認節から位置／重要度／対応欄を推測してはならない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/fsharp-reviewer.md",
+          "blob": "9272f3e6c1aadaad928fe2ef87c1fd5829eac713",
+          "hash": "c211d5a5347eee2c1d594528828558eda225b742a6c5a5c60889a5631bcc6a0e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/fsharp-reviewer.md",
+          "blob": "9628c328e0e2ca8e203fc946423753adb4ec47a7",
+          "hash": "24200e4814ddbdb32ed2eeb5b6aecabbb3d655d5ba0de7b2a054638fe12e7c5a"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The Japanese checklist translates security/error, functional idioms, type safety, quality, diagnostics and framework checks, but omits the English review-output-format section. Finding location/severity/action fields must not be assumed from the remaining approval section. | JA: 日本語チェックリストはセキュリティ／エラー、関数型、型安全性、品質、診断、フレームワーク確認を訳すが、英語のレビュー出力形式節を欠く。残る承認節から位置／重要度／対応欄を推測してはならない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/gan-evaluator.md",
+      "counterpart": "agents/gan-evaluator.md",
+      "hash": "149ae6755b422652c3c2eb53ca09e0f48cc9a2940ca856a8da9747369f46c205",
+      "blob": "7dd200268297169133df599797de19b833186ea3",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese preserves score bands and verdict thresholds but omits mandatory evaluation-mode capture, browser-unavailable fallback/adaptation, screenshot reporting and browser-test commands. Without mode and evidence fields, a verdict may hide materially different test coverage. | JA: 日本語版は採点帯と合否閾値を保つが、必須の評価モード記録、ブラウザー利用不可時の代替／適応、スクリーンショット報告、テストコマンドを省く。モードと証拠欄がなければ、合否の背後にテスト範囲の違いが隠れる。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/gan-evaluator.md",
+          "blob": "7dd200268297169133df599797de19b833186ea3",
+          "hash": "149ae6755b422652c3c2eb53ca09e0f48cc9a2940ca856a8da9747369f46c205"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/gan-evaluator.md",
+          "blob": "0c3c0c9ee06ba7e19d95f1aff15a4d7644d559da",
+          "hash": "e5c8e6ab245ce97502472ae5223e529cc3d1c4c84527f4c19bcca3d362513322"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            149
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            232
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese preserves score bands and verdict thresholds but omits mandatory evaluation-mode capture, browser-unavailable fallback/adaptation, screenshot reporting and browser-test commands. Without mode and evidence fields, a verdict may hide materially different test coverage. | JA: 日本語版は採点帯と合否閾値を保つが、必須の評価モード記録、ブラウザー利用不可時の代替／適応、スクリーンショット報告、テストコマンドを省く。モードと証拠欄がなければ、合否の背後にテスト範囲の違いが隠れる。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/gan-generator.md",
+      "counterpart": "agents/gan-generator.md",
+      "hash": "ef76f63b0d15a6b4c0c3cdeda1f3fc36ab2279d25dc0fe214b4e9389733a15e6",
+      "blob": "9a38626082a187bd820039543e9c792bb4b30cc3",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese omits the generator state-file contract and evaluator feedback loop, including processing all feedback and critical handling of low scores. It retains iteration and technical/creative guidance but loses traceability and the evaluation-to-revision handoff. | JA: 日本語版はGenerator State File契約と評価者フィードバックループ（全指摘の確認、低評価を重大扱いする規則など）を省く。反復や技術・創作指針は残るが、追跡可能性と評価から修正への引き継ぎが失われる。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/gan-generator.md",
+          "blob": "9a38626082a187bd820039543e9c792bb4b30cc3",
+          "hash": "ef76f63b0d15a6b4c0c3cdeda1f3fc36ab2279d25dc0fe214b4e9389733a15e6"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/gan-generator.md",
+          "blob": "af0c577ff3180a85e051441914d8da22fde6eeb7",
+          "hash": "52411e8bb705284ef0be36a86b9df69d7365cda84a2780d5e3c2d64e6019a352"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            93
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            140
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese omits the generator state-file contract and evaluator feedback loop, including processing all feedback and critical handling of low scores. It retains iteration and technical/creative guidance but loses traceability and the evaluation-to-revision handoff. | JA: 日本語版はGenerator State File契約と評価者フィードバックループ（全指摘の確認、低評価を重大扱いする規則など）を省く。反復や技術・創作指針は残るが、追跡可能性と評価から修正への引き継ぎが失われる。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/gan-planner.md",
+      "counterpart": "agents/gan-planner.md",
+      "hash": "7db4468a1818a86eb57e215af45b37ba9585b482713de23a1638d4f896d10109",
+      "blob": "acf2752d249a140af849dd6786a46f00405184dc",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; Key Principle; Output: Product Specification; Product Specification: [App Name]; Japanese headings are プロンプト防御ベースライン、あなたの役割、主要原則、出力: 製品仕様、製品仕様: [アプリ名]. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; Key Principle; Output: Product Specification; Product Specification: [App Name]」、日本語版は「プロンプト防御ベースライン、あなたの役割、主要原則、出力: 製品仕様、製品仕様: [アプリ名]」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/gan-planner.md",
+          "blob": "acf2752d249a140af849dd6786a46f00405184dc",
+          "hash": "7db4468a1818a86eb57e215af45b37ba9585b482713de23a1638d4f896d10109"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/gan-planner.md",
+          "blob": "57a018249a89523032f2997e54457ed89fb08c86",
+          "hash": "852f8ac7cc1761186ec6f48e1b1be65cc32307a182062e0cebb84aae2d3ca901"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            108
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            108
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Your Role; Key Principle; Output: Product Specification; Product Specification: [App Name]; Japanese headings are プロンプト防御ベースライン、あなたの役割、主要原則、出力: 製品仕様、製品仕様: [アプリ名]. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Your Role; Key Principle; Output: Product Specification; Product Specification: [App Name]」、日本語版は「プロンプト防御ベースライン、あなたの役割、主要原則、出力: 製品仕様、製品仕様: [アプリ名]」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/go-build-resolver.md",
+      "counterpart": "agents/go-build-resolver.md",
+      "hash": "57c8354a1bdaae0b34cbfe85232939b69584712f3486e54b2d7f823dc5b53b63",
+      "blob": "64f2f7df59081ecbfa3c07587c4ca6e7fe2ca8d4",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese expands Go error examples but omits the Prompt Defense Baseline and reshapes canonical resolution/key-principle sections. Broad update/cleanup examples are not run; transferable core remains diagnose, minimally fix, verify and stop/escalate. | JA: 日本語版はGoエラー例を拡張する一方、Prompt Defense Baselineと原文の解決手順／主要原則の節構成を変える。広範な更新／cleanup例は未実行で、再利用できる中核は診断、最小修正、検証、停止／エスカレーションである。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/go-build-resolver.md",
+          "blob": "64f2f7df59081ecbfa3c07587c4ca6e7fe2ca8d4",
+          "hash": "57c8354a1bdaae0b34cbfe85232939b69584712f3486e54b2d7f823dc5b53b63"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/go-build-resolver.md",
+          "blob": "b3dbe383b4f2d6407a5f136c1a58678568330da2",
+          "hash": "fa191d2a3c66915402b343a8f2da21090bb330968e62a8615739acccfce90424"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            368
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            103
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese expands Go error examples but omits the Prompt Defense Baseline and reshapes canonical resolution/key-principle sections. Broad update/cleanup examples are not run; transferable core remains diagnose, minimally fix, verify and stop/escalate. | JA: 日本語版はGoエラー例を拡張する一方、Prompt Defense Baselineと原文の解決手順／主要原則の節構成を変える。広範な更新／cleanup例は未実行で、再利用できる中核は診断、最小修正、検証、停止／エスカレーションである。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/go-reviewer.md",
+      "counterpart": "agents/go-reviewer.md",
+      "hash": "3e7223afb2435d208f0ae8b6bfbbc05d3ca2c08586cf2a3e56abce73ca354314",
+      "blob": "0dd66d87648bc2b30a18d6d6a0da7fe23c4f4efc",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese expands security and Go anti-pattern examples but omits the Prompt Defense Baseline and compresses canonical diagnostics. Severity-led review remains; code snippets including path checks are illustrative, not tested complete defenses. | JA: 日本語版はセキュリティとGo固有アンチパターンを拡張する一方、Prompt Defense Baselineと原文の診断節を圧縮する。重要度順レビューは残るが、パス確認を含むコード例は説明用で完全な防御として試験していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/go-reviewer.md",
+          "blob": "0dd66d87648bc2b30a18d6d6a0da7fe23c4f4efc",
+          "hash": "3e7223afb2435d208f0ae8b6bfbbc05d3ca2c08586cf2a3e56abce73ca354314"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/go-reviewer.md",
+          "blob": "72dc7654ae34325cb6af2340ba752c450e8aae16",
+          "hash": "be174fc66f6be1ade25f496548ba7040c00894aec81da163863b046d44233e39"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            269
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese expands security and Go anti-pattern examples but omits the Prompt Defense Baseline and compresses canonical diagnostics. Severity-led review remains; code snippets including path checks are illustrative, not tested complete defenses. | JA: 日本語版はセキュリティとGo固有アンチパターンを拡張する一方、Prompt Defense Baselineと原文の診断節を圧縮する。重要度順レビューは残るが、パス確認を含むコード例は説明用で完全な防御として試験していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/harmonyos-app-resolver.md",
+      "counterpart": "agents/harmonyos-app-resolver.md",
+      "hash": "460f307b26a8c5baae54ac8304300d3b6fb07b255d2a822aec969ff31c621cb1",
+      "blob": "e37bf69e216f872e5a33afd20a2c33df7d56e92b",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese retains V2-state and Navigation-only constraints but omits canonical ArkTS compilation blockers, API-usage verification, animation/performance rules and behavior implementation guidance. The development role loses much of its actionable domain workflow. | JA: 日本語版はV2状態管理とNavigation限定の制約を保つが、ArkTSコンパイル阻害事項、API利用確認、アニメーション／性能規則、動作実装ガイダンスを欠く。開発対応の役割を掲げながら、実務的な手順の多くを失う。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/harmonyos-app-resolver.md",
+          "blob": "e37bf69e216f872e5a33afd20a2c33df7d56e92b",
+          "hash": "460f307b26a8c5baae54ac8304300d3b6fb07b255d2a822aec969ff31c621cb1"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/harmonyos-app-resolver.md",
+          "blob": "ef52fd09de9a9acb33d5b978517addb0f06a28d6",
+          "hash": "2385d05160744130f6f5fadbae0314a7500db92da13719779dac41eb53ae1202"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            182
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese retains V2-state and Navigation-only constraints but omits canonical ArkTS compilation blockers, API-usage verification, animation/performance rules and behavior implementation guidance. The development role loses much of its actionable domain workflow. | JA: 日本語版はV2状態管理とNavigation限定の制約を保つが、ArkTSコンパイル阻害事項、API利用確認、アニメーション／性能規則、動作実装ガイダンスを欠く。開発対応の役割を掲げながら、実務的な手順の多くを失う。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/harness-optimizer.md",
+      "counterpart": "agents/harness-optimizer.md",
+      "hash": "813dc95bd001272b6f5c8307d6fd977ab2e8f3bf482be191f317b4ed4762a36d",
+      "blob": "ae9f4d560561df158b102ecd2df720c98cb3d02b",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese removes eval-driven grading/pass@k and pass^k checks, baseline snapshot, regression/restore path, no-slash-command constraint, trial records and human-approval safety boundary. The abbreviated workflow changes safeguards and evidence requirements. | JA: 日本語版は評価駆動の採点／pass@k・pass^k確認、初期スナップショット、回帰／復元経路、スラッシュコマンド禁止、試行記録、人間承認の安全境界を省く。短縮版では安全策と証拠要件が変わる。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/harness-optimizer.md",
+          "blob": "ae9f4d560561df158b102ecd2df720c98cb3d02b",
+          "hash": "813dc95bd001272b6f5c8307d6fd977ab2e8f3bf482be191f317b4ed4762a36d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/harness-optimizer.md",
+          "blob": "7bc8b2c5ddfc5fc3a2dd55d1d712ee14e8ba75d4",
+          "hash": "16b5cd0cd03ba4de2a9cc6b737c8cc0d4e52d3fdc423a1c2bcdd6496d65d4cfd"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            44
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            55
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese removes eval-driven grading/pass@k and pass^k checks, baseline snapshot, regression/restore path, no-slash-command constraint, trial records and human-approval safety boundary. The abbreviated workflow changes safeguards and evidence requirements. | JA: 日本語版は評価駆動の採点／pass@k・pass^k確認、初期スナップショット、回帰／復元経路、スラッシュコマンド禁止、試行記録、人間承認の安全境界を省く。短縮版では安全策と証拠要件が変わる。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/healthcare-reviewer.md",
+      "counterpart": "agents/healthcare-reviewer.md",
+      "hash": "222900f0b5eb34753716f4e11aedef7d942c1ab26bc21e446717bd8379958761",
+      "blob": "4622055dc35a270631869faaf82b656b02f0cb7e",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Healthcare Reviewer — Clinical Safety & PHI Compliance; Your Responsibilities; Critical Checks; CDSS Engine; Japanese headings are プロンプト防御ベースライン、ヘルスケアレビュアー — 臨床安全性 & PHIコンプライアンス、あなたの責務、重要なチェック、CDSSエンジン. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Healthcare Reviewer — Clinical Safety & PHI Compliance; Your Responsibilities; Critical Checks; CDSS Engine」、日本語版は「プロンプト防御ベースライン、ヘルスケアレビュアー — 臨床安全性 & PHIコンプライアンス、あなたの責務、重要なチェック、CDSSエンジン」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/healthcare-reviewer.md",
+          "blob": "4622055dc35a270631869faaf82b656b02f0cb7e",
+          "hash": "222900f0b5eb34753716f4e11aedef7d942c1ab26bc21e446717bd8379958761"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/healthcare-reviewer.md",
+          "blob": "187079ca75367173457be39913b8765d4447659f",
+          "hash": "ffe0855862276f94bd47fbbdeba0d233b7ca2c8647bce784c94f61c382e3cc69"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            92
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            92
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Healthcare Reviewer — Clinical Safety & PHI Compliance; Your Responsibilities; Critical Checks; CDSS Engine; Japanese headings are プロンプト防御ベースライン、ヘルスケアレビュアー — 臨床安全性 & PHIコンプライアンス、あなたの責務、重要なチェック、CDSSエンジン. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Healthcare Reviewer — Clinical Safety & PHI Compliance; Your Responsibilities; Critical Checks; CDSS Engine」、日本語版は「プロンプト防御ベースライン、ヘルスケアレビュアー — 臨床安全性 & PHIコンプライアンス、あなたの責務、重要なチェック、CDSSエンジン」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/homelab-architect.md",
+      "counterpart": "agents/homelab-architect.md",
+      "hash": "06736a47d3a26b0944275dd32b4413790e3dac21d00d265944ef16e0fb39c566",
+      "blob": "ba6fb6d165fdbbfbff11e871e34710db5f6a972b",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese preserves scope, safety defaults and output plan but omits the canonical six-step goal/hardware/capability discovery workflow and explicit expert-skill routing. The required discovery sequence is therefore no longer explicit. | JA: 日本語版は対象範囲、安全デフォルト、出力計画を保つが、目標／機材／能力を確認する原文の6段階手順と専門スキルへの明示的ルーティングを省く。必須の事前把握手順が明示されなくなる。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/homelab-architect.md",
+          "blob": "ba6fb6d165fdbbfbff11e871e34710db5f6a972b",
+          "hash": "06736a47d3a26b0944275dd32b4413790e3dac21d00d265944ef16e0fb39c566"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/homelab-architect.md",
+          "blob": "608d59eb301162be6c9fa6f6b9a0179839bd04dd",
+          "hash": "d851727c8d07d2c44ea953d1ccab812865de3ba4b693d0392e86ba52187664bc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            107
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese preserves scope, safety defaults and output plan but omits the canonical six-step goal/hardware/capability discovery workflow and explicit expert-skill routing. The required discovery sequence is therefore no longer explicit. | JA: 日本語版は対象範囲、安全デフォルト、出力計画を保つが、目標／機材／能力を確認する原文の6段階手順と専門スキルへの明示的ルーティングを省く。必須の事前把握手順が明示されなくなる。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/java-build-resolver.md",
+      "counterpart": "agents/java-build-resolver.md",
+      "hash": "752c8f33dca1133890e9102f05c22d9df6cd33a54bdc86a7358702a1b977d63f",
+      "blob": "e03c8fdcf99d0468f35b8ddc389b9fd47149ae3a",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese retains minimal fixing but omits diagnostic-command and resolution-workflow sections, detailed Maven/Gradle/Spring/Quarkus procedures and framework-ambiguity stop branches. Framework detection remains while the canonical decision tree is reduced. | JA: 日本語版は最小修正を保つが、診断コマンド／解決手順、Maven／Gradle／Spring／Quarkus対応、フレームワーク判定不能時の停止分岐を省く。判定節は残るものの、原文の判断木が縮小する。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/java-build-resolver.md",
+          "blob": "e03c8fdcf99d0468f35b8ddc389b9fd47149ae3a",
+          "hash": "752c8f33dca1133890e9102f05c22d9df6cd33a54bdc86a7358702a1b977d63f"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/java-build-resolver.md",
+          "blob": "ba638dd07208f38df6fef1a0ae86abec69699359",
+          "hash": "6dc1da9c6ac9f39671dcf1013a8e8ab30cccf3604808d7da1b0a21935c1ac537"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            275
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese retains minimal fixing but omits diagnostic-command and resolution-workflow sections, detailed Maven/Gradle/Spring/Quarkus procedures and framework-ambiguity stop branches. Framework detection remains while the canonical decision tree is reduced. | JA: 日本語版は最小修正を保つが、診断コマンド／解決手順、Maven／Gradle／Spring／Quarkus対応、フレームワーク判定不能時の停止分岐を省く。判定節は残るものの、原文の判断木が縮小する。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/java-reviewer.md",
+      "counterpart": "agents/java-reviewer.md",
+      "hash": "cddd951be656e852311d30ddc31f675738198d90fbe54627a51db2fb8276b8d6",
+      "blob": "0e73038feba0363d552a3060e75ffb69da9209a9",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese shortens review priorities and omits diagnostic commands plus detailed security/framework/architecture coverage, including injection, path traversal, CSRF/auth and workflow/state concerns. Severity headings remain without equivalent review depth. | JA: 日本語版はレビュー優先事項を短縮し、診断コマンドに加え、注入、パストラバーサル、CSRF／認証、ワークフロー／状態を含む詳細確認を省く。重要度見出しはあるが同等のレビュー深度ではない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/java-reviewer.md",
+          "blob": "0e73038feba0363d552a3060e75ffb69da9209a9",
+          "hash": "cddd951be656e852311d30ddc31f675738198d90fbe54627a51db2fb8276b8d6"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/java-reviewer.md",
+          "blob": "fbe19bf40d8e69954173af9ae545e3c6490e7da5",
+          "hash": "e768811020978d62930e8a1de33d674f07fbd479073de570df57c143b8eb33b6"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            190
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese shortens review priorities and omits diagnostic commands plus detailed security/framework/architecture coverage, including injection, path traversal, CSRF/auth and workflow/state concerns. Severity headings remain without equivalent review depth. | JA: 日本語版はレビュー優先事項を短縮し、診断コマンドに加え、注入、パストラバーサル、CSRF／認証、ワークフロー／状態を含む詳細確認を省く。重要度見出しはあるが同等のレビュー深度ではない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/kotlin-build-resolver.md",
+      "counterpart": "agents/kotlin-build-resolver.md",
+      "hash": "5d506897086f671bd8cab5262bc28737c6b3fd885c2bdabcc478900738fd5ed1",
+      "blob": "5c46de7cec479cc7ea6075d56e15c1dd43e7168a",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese retains core build diagnostics but omits canonical Gradle troubleshooting, compiler-flag guidance and explicit stop conditions. Equal resolution coverage would require those branches. | JA: 日本語版は基本的なビルド診断を保つが、Gradleトラブル対応、コンパイラーフラグ指針、明示的停止条件を省く。同等の解決範囲にはこれらの分岐が必要。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/kotlin-build-resolver.md",
+          "blob": "5c46de7cec479cc7ea6075d56e15c1dd43e7168a",
+          "hash": "5d506897086f671bd8cab5262bc28737c6b3fd885c2bdabcc478900738fd5ed1"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/kotlin-build-resolver.md",
+          "blob": "45315270f13e4fd2369c376d75dbe3ae7959771a",
+          "hash": "db6796bdc2294d795bac286f7c04f4e6048af8acb3faf80edfc110285172e16b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            70
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            127
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese retains core build diagnostics but omits canonical Gradle troubleshooting, compiler-flag guidance and explicit stop conditions. Equal resolution coverage would require those branches. | JA: 日本語版は基本的なビルド診断を保つが、Gradleトラブル対応、コンパイラーフラグ指針、明示的停止条件を省く。同等の解決範囲にはこれらの分岐が必要。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/kotlin-reviewer.md",
+      "counterpart": "agents/kotlin-reviewer.md",
+      "hash": "6165c08b2afe9bfc360b10059a8ecac87191d1fe0c128ec5d2dcc89bb306b574",
+      "blob": "97c6799bb24f6b5cf1031bf3ea7a49056484df88",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese retains checklist and approval threshold but omits canonical context-gathering workflow and output/summary contract. Checklist content alone does not specify equivalent evidence collection or finding reports. | JA: 日本語版はチェックリストと承認閾値を残すが、状況収集手順と出力／要約契約を省く。チェックリストだけでは同等の証拠収集や指摘報告を定めない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/kotlin-reviewer.md",
+          "blob": "97c6799bb24f6b5cf1031bf3ea7a49056484df88",
+          "hash": "6165c08b2afe9bfc360b10059a8ecac87191d1fe0c128ec5d2dcc89bb306b574"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/kotlin-reviewer.md",
+          "blob": "95ed8a2c32f8ba2f4bdca8cb4f2d772d92ef263a",
+          "hash": "be82de3435c4b7b48e4ff9589e8c211d80fafa5c8c9ac98d6572c88004519858"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            168
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese retains checklist and approval threshold but omits canonical context-gathering workflow and output/summary contract. Checklist content alone does not specify equivalent evidence collection or finding reports. | JA: 日本語版はチェックリストと承認閾値を残すが、状況収集手順と出力／要約契約を省く。チェックリストだけでは同等の証拠収集や指摘報告を定めない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/loop-operator.md",
+      "counterpart": "agents/loop-operator.md",
+      "hash": "c1d0af8e3b4942ba29fe71c1b8de870662c1c1d57b9a8013e74b82fcb2265de3",
+      "blob": "58525a20eb7cdd17bd66a1110183ab2cf51b3cfe",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Mission; Workflow; Required Checks; Escalation; Japanese headings are プロンプト防御ベースライン、ミッション、ワークフロー、必須チェック、エスカレーション. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Mission; Workflow; Required Checks; Escalation」、日本語版は「プロンプト防御ベースライン、ミッション、ワークフロー、必須チェック、エスカレーション」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/loop-operator.md",
+          "blob": "58525a20eb7cdd17bd66a1110183ab2cf51b3cfe",
+          "hash": "c1d0af8e3b4942ba29fe71c1b8de870662c1c1d57b9a8013e74b82fcb2265de3"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/loop-operator.md",
+          "blob": "4da0665eb5ae3f8dd5712005b9de3583d907769b",
+          "hash": "51f8283a56b799c2bd2c2455b3480e949656cbf997ea2feb34a972d3d6400f22"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            45
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            45
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Mission; Workflow; Required Checks; Escalation; Japanese headings are プロンプト防御ベースライン、ミッション、ワークフロー、必須チェック、エスカレーション. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Mission; Workflow; Required Checks; Escalation」、日本語版は「プロンプト防御ベースライン、ミッション、ワークフロー、必須チェック、エスカレーション」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/mle-reviewer.md",
+      "counterpart": "agents/mle-reviewer.md",
+      "hash": "d00dd5e83cb702517cf9c97151f68bb4cca67a6fda603f70da776c3cfa0326ba",
+      "blob": "154dbc2b111ffed4cb42cc785bf398328c7449d6",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; MLE Reviewer; Start Here; Reuse Existing Review Lanes; Critical Review Areas; Japanese headings are プロンプト防御ベースライン、MLEレビュアー、ここから開始、既存レビューレーンの再利用、重要なレビュー領域. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; MLE Reviewer; Start Here; Reuse Existing Review Lanes; Critical Review Areas」、日本語版は「プロンプト防御ベースライン、MLEレビュアー、ここから開始、既存レビューレーンの再利用、重要なレビュー領域」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/mle-reviewer.md",
+          "blob": "154dbc2b111ffed4cb42cc785bf398328c7449d6",
+          "hash": "d00dd5e83cb702517cf9c97151f68bb4cca67a6fda603f70da776c3cfa0326ba"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/mle-reviewer.md",
+          "blob": "9b5c8d55a56ed77167ea2d4f4a32d3f6e19f278f",
+          "hash": "c505be5fccea9d067775b86fed76bc4b84e63e17090855ac135694adbc83a7f8"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            162
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            162
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; MLE Reviewer; Start Here; Reuse Existing Review Lanes; Critical Review Areas; Japanese headings are プロンプト防御ベースライン、MLEレビュアー、ここから開始、既存レビューレーンの再利用、重要なレビュー領域. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; MLE Reviewer; Start Here; Reuse Existing Review Lanes; Critical Review Areas」、日本語版は「プロンプト防御ベースライン、MLEレビュアー、ここから開始、既存レビューレーンの再利用、重要なレビュー領域」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/network-architect.md",
+      "counterpart": "agents/network-architect.md",
+      "hash": "ed692bc27b629366a2c30455320fdc9cd9c4cb66da1ff4e1b59d8ad508bc8b0e",
+      "blob": "dbd905e1e1645511fdc0ccc4f04e1c068b9f37e7",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Scope; Workflow; Design Defaults; Output Format; Japanese headings are プロンプト防御ベースライン、スコープ、ワークフロー、設計デフォルト、出力フォーマット. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Scope; Workflow; Design Defaults; Output Format」、日本語版は「プロンプト防御ベースライン、スコープ、ワークフロー、設計デフォルト、出力フォーマット」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/network-architect.md",
+          "blob": "dbd905e1e1645511fdc0ccc4f04e1c068b9f37e7",
+          "hash": "ed692bc27b629366a2c30455320fdc9cd9c4cb66da1ff4e1b59d8ad508bc8b0e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/network-architect.md",
+          "blob": "181fc473a94d2a8c29c365573c12b0d449f4e74a",
+          "hash": "1b434aa8496a1cb8c39add08d0c68a4b27af8378de725f370d7682c02a56997e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            90
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            106
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Scope; Workflow; Design Defaults; Output Format; Japanese headings are プロンプト防御ベースライン、スコープ、ワークフロー、設計デフォルト、出力フォーマット. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Scope; Workflow; Design Defaults; Output Format」、日本語版は「プロンプト防御ベースライン、スコープ、ワークフロー、設計デフォルト、出力フォーマット」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/network-config-reviewer.md",
+      "counterpart": "agents/network-config-reviewer.md",
+      "hash": "2bf52b821cd46d875912feb11c6d2eace5462c097177bfd61c65f4cba96088bd",
+      "blob": "e13e44a9c54aadc5e8d310cb30bfa0a200364b38",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Scope; Review Workflow; Severity Guide; Critical; Japanese headings are プロンプト防御ベースライン、スコープ、レビューワークフロー、重大度ガイド、Critical. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Scope; Review Workflow; Severity Guide; Critical」、日本語版は「プロンプト防御ベースライン、スコープ、レビューワークフロー、重大度ガイド、Critical」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/network-config-reviewer.md",
+          "blob": "e13e44a9c54aadc5e8d310cb30bfa0a200364b38",
+          "hash": "2bf52b821cd46d875912feb11c6d2eace5462c097177bfd61c65f4cba96088bd"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/network-config-reviewer.md",
+          "blob": "1362f47015c80626ceda49b561d8975b2240318c",
+          "hash": "12b2b04d8235941f6a9a0d42a679c581ce89963172d5fb0f63abb4202521593f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            95
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            106
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Scope; Review Workflow; Severity Guide; Critical; Japanese headings are プロンプト防御ベースライン、スコープ、レビューワークフロー、重大度ガイド、Critical. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Scope; Review Workflow; Severity Guide; Critical」、日本語版は「プロンプト防御ベースライン、スコープ、レビューワークフロー、重大度ガイド、Critical」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/network-troubleshooter.md",
+      "counterpart": "agents/network-troubleshooter.md",
+      "hash": "44b92a13bcd81a72a757e3848106169c40ab2378b7df3508b1049c135006d3eb",
+      "blob": "89d9c3e536e96b1693c064d53ed1a67e39246dbf",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Scope; Workflow; Layer Checks; Layer 1 and 2; Japanese headings are プロンプト防御ベースライン、スコープ、ワークフロー、レイヤーチェック、レイヤー1および2. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Scope; Workflow; Layer Checks; Layer 1 and 2」、日本語版は「プロンプト防御ベースライン、スコープ、ワークフロー、レイヤーチェック、レイヤー1および2」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/network-troubleshooter.md",
+          "blob": "89d9c3e536e96b1693c064d53ed1a67e39246dbf",
+          "hash": "44b92a13bcd81a72a757e3848106169c40ab2378b7df3508b1049c135006d3eb"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/network-troubleshooter.md",
+          "blob": "4bd666026de7009175bc521a8b3042aeae800ca8",
+          "hash": "64528c41b59eea2cb4ac642bd3197bbadc8c456f3601520e410cf606e848fb07"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            120
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            128
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Scope; Workflow; Layer Checks; Layer 1 and 2; Japanese headings are プロンプト防御ベースライン、スコープ、ワークフロー、レイヤーチェック、レイヤー1および2. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Scope; Workflow; Layer Checks; Layer 1 and 2」、日本語版は「プロンプト防御ベースライン、スコープ、ワークフロー、レイヤーチェック、レイヤー1および2」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/opensource-forker.md",
+      "counterpart": "agents/opensource-forker.md",
+      "hash": "075019e4e5dc58ab2c0017ac7b0d70e9d7acb4d9c692f3da96ee75ded43fd5dc",
+      "blob": "30a81d7aee22bf58d543ab5242a56f29328500f8",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Open-Source Forker; Your Role; Workflow; Step 1: Analyze Source; Japanese headings are プロンプト防御ベースライン、オープンソースフォーカー、あなたの役割、ワークフロー、ステップ1: ソースの分析. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Open-Source Forker; Your Role; Workflow; Step 1: Analyze Source」、日本語版は「プロンプト防御ベースライン、オープンソースフォーカー、あなたの役割、ワークフロー、ステップ1: ソースの分析」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/opensource-forker.md",
+          "blob": "30a81d7aee22bf58d543ab5242a56f29328500f8",
+          "hash": "075019e4e5dc58ab2c0017ac7b0d70e9d7acb4d9c692f3da96ee75ded43fd5dc"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/opensource-forker.md",
+          "blob": "4c5d8cbb83fb479699789d4cca12fe44e0e32148",
+          "hash": "3b302c2d4b080509a1f290e74412eb8076bec9aa42438e74c52fe519f8ff0242"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            207
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            207
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Open-Source Forker; Your Role; Workflow; Step 1: Analyze Source; Japanese headings are プロンプト防御ベースライン、オープンソースフォーカー、あなたの役割、ワークフロー、ステップ1: ソースの分析. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Open-Source Forker; Your Role; Workflow; Step 1: Analyze Source」、日本語版は「プロンプト防御ベースライン、オープンソースフォーカー、あなたの役割、ワークフロー、ステップ1: ソースの分析」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/opensource-packager.md",
+      "counterpart": "agents/opensource-packager.md",
+      "hash": "51fb0c240f1b83437bd2de9afe7ecefb30be1767c5e2d7eae6858dc8b128e88d",
+      "blob": "916147b045d6997c61fc40c436f788e727464421",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Open-Source Packager; Your Role; Workflow; Step 1: Project Analysis; Japanese headings are プロンプト防御ベースライン、オープンソースパッケージャー、あなたの役割、ワークフロー、ステップ1: プロジェクト分析. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Open-Source Packager; Your Role; Workflow; Step 1: Project Analysis」、日本語版は「プロンプト防御ベースライン、オープンソースパッケージャー、あなたの役割、ワークフロー、ステップ1: プロジェクト分析」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/opensource-packager.md",
+          "blob": "916147b045d6997c61fc40c436f788e727464421",
+          "hash": "51fb0c240f1b83437bd2de9afe7ecefb30be1767c5e2d7eae6858dc8b128e88d"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/opensource-packager.md",
+          "blob": "e6e24199dc2a21f01f5ae370fba48bf27ac97185",
+          "hash": "996f528ac789b3c19ded6bf7c25217a3e9e7c1e6d320a4f9d69f17252815cb16"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            258
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            258
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Open-Source Packager; Your Role; Workflow; Step 1: Project Analysis; Japanese headings are プロンプト防御ベースライン、オープンソースパッケージャー、あなたの役割、ワークフロー、ステップ1: プロジェクト分析. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Open-Source Packager; Your Role; Workflow; Step 1: Project Analysis」、日本語版は「プロンプト防御ベースライン、オープンソースパッケージャー、あなたの役割、ワークフロー、ステップ1: プロジェクト分析」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/opensource-sanitizer.md",
+      "counterpart": "agents/opensource-sanitizer.md",
+      "hash": "3a0b01e72fd4b68d83561eff841a1faa46eca67e9042f1801ac0d58e8619574e",
+      "blob": "949b9e7f414225df8ade72a77d50bd97fb4ee287",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Open-Source Sanitizer; Your Role; Workflow; Step 1: Secrets Scan (CRITICAL — any match = FAIL); Japanese headings are プロンプト防御ベースライン、オープンソースサニタイザー、あなたの役割、ワークフロー、ステップ1: シークレットスキャン（CRITICAL — マッチした場合 = FAIL）. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Open-Source Sanitizer; Your Role; Workflow; Step 1: Secrets Scan (CRITICAL — any match = FAIL)」、日本語版は「プロンプト防御ベースライン、オープンソースサニタイザー、あなたの役割、ワークフロー、ステップ1: シークレットスキャン（CRITICAL — マッチした場合 = FAIL）」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/opensource-sanitizer.md",
+          "blob": "949b9e7f414225df8ade72a77d50bd97fb4ee287",
+          "hash": "3a0b01e72fd4b68d83561eff841a1faa46eca67e9042f1801ac0d58e8619574e"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/opensource-sanitizer.md",
+          "blob": "a0d538508957c6be54b6b513bfd0d4926861d7f1",
+          "hash": "cee1d6cf26759c085fe090ca5ac92d37c5dbeceef0f1b00434369a6e812da371"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            197
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            197
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Open-Source Sanitizer; Your Role; Workflow; Step 1: Secrets Scan (CRITICAL — any match = FAIL); Japanese headings are プロンプト防御ベースライン、オープンソースサニタイザー、あなたの役割、ワークフロー、ステップ1: シークレットスキャン（CRITICAL — マッチした場合 = FAIL）. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Open-Source Sanitizer; Your Role; Workflow; Step 1: Secrets Scan (CRITICAL — any match = FAIL)」、日本語版は「プロンプト防御ベースライン、オープンソースサニタイザー、あなたの役割、ワークフロー、ステップ1: シークレットスキャン（CRITICAL — マッチした場合 = FAIL）」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/performance-optimizer.md",
+      "counterpart": "agents/performance-optimizer.md",
+      "hash": "9d7fe29f91f6ad3217055d9a16130f123a46edf302129966ed283b5f4df4d843",
+      "blob": "fae0ee9d2eafcbcda75fc8e490b304ed924dcdba",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Performance Optimizer; Core Responsibilities; Analysis Commands; Bundle analysis; Japanese headings are プロンプト防御ベースライン、パフォーマンスオプティマイザー、コア責務、分析コマンド、バンドル分析. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Performance Optimizer; Core Responsibilities; Analysis Commands; Bundle analysis」、日本語版は「プロンプト防御ベースライン、パフォーマンスオプティマイザー、コア責務、分析コマンド、バンドル分析」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/performance-optimizer.md",
+          "blob": "fae0ee9d2eafcbcda75fc8e490b304ed924dcdba",
+          "hash": "9d7fe29f91f6ad3217055d9a16130f123a46edf302129966ed283b5f4df4d843"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/performance-optimizer.md",
+          "blob": "4d5de6f963600ce606020caa70f1ae7cc2ad9aad",
+          "hash": "76d00a70fcc07a0b207f6b517d54078fa7a59f29e157fea72bf5f1d9cab8f9b2"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            455
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            455
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Performance Optimizer; Core Responsibilities; Analysis Commands; Bundle analysis; Japanese headings are プロンプト防御ベースライン、パフォーマンスオプティマイザー、コア責務、分析コマンド、バンドル分析. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Performance Optimizer; Core Responsibilities; Analysis Commands; Bundle analysis」、日本語版は「プロンプト防御ベースライン、パフォーマンスオプティマイザー、コア責務、分析コマンド、バンドル分析」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/planner.md",
+      "counterpart": "agents/planner.md",
+      "hash": "50a56b11ab98d0dc07bd68f4751e5996df5313978cab1d71c67f17330fa6ed6a",
+      "blob": "35da69e2fb1439d737182eedf8044629b06ce9f7",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese retains requirements, architecture, implementation, test/risk/success planning but omits the Prompt Defense Baseline, worked Stripe example, independent-phase sizing criterion and red flags such as missing test strategy/non-independent phases. Planning gates and teaching coverage are reduced. | JA: 日本語版は要件、構成、実装、テスト／リスク／成功計画を保つが、Prompt Defense Baseline、Stripe作例、フェーズ独立性による規模分割基準、テスト戦略欠落等の警告を省く。計画ゲートと教材範囲が縮小する。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/planner.md",
+          "blob": "35da69e2fb1439d737182eedf8044629b06ce9f7",
+          "hash": "50a56b11ab98d0dc07bd68f4751e5996df5313978cab1d71c67f17330fa6ed6a"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/planner.md",
+          "blob": "e9e282f54d5ea8dbecae31d00c8647960c089f05",
+          "hash": "63aba865206bac9cb5887542fb01b97656e7701faff98e091aa77057ba9860bc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            221
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese retains requirements, architecture, implementation, test/risk/success planning but omits the Prompt Defense Baseline, worked Stripe example, independent-phase sizing criterion and red flags such as missing test strategy/non-independent phases. Planning gates and teaching coverage are reduced. | JA: 日本語版は要件、構成、実装、テスト／リスク／成功計画を保つが、Prompt Defense Baseline、Stripe作例、フェーズ独立性による規模分割基準、テスト戦略欠落等の警告を省く。計画ゲートと教材範囲が縮小する。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/pr-test-analyzer.md",
+      "counterpart": "agents/pr-test-analyzer.md",
+      "hash": "82b0f98cf9caff99cd26d8aa280499f9f2643b648e106052dc7d86e52310fca2",
+      "blob": "14fc90e655353f34bce075fac85bea2b4d6ee016",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; PR Test Analyzer Agent; Analysis Process; 1. Identify Changed Code; 2. Behavioral Coverage; Japanese headings are プロンプト防御ベースライン、PRテスト分析エージェント、分析プロセス、1. 変更されたコードの特定、2. 行動カバレッジ. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; PR Test Analyzer Agent; Analysis Process; 1. Identify Changed Code; 2. Behavioral Coverage」、日本語版は「プロンプト防御ベースライン、PRテスト分析エージェント、分析プロセス、1. 変更されたコードの特定、2. 行動カバレッジ」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/pr-test-analyzer.md",
+          "blob": "14fc90e655353f34bce075fac85bea2b4d6ee016",
+          "hash": "82b0f98cf9caff99cd26d8aa280499f9f2643b648e106052dc7d86e52310fca2"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/pr-test-analyzer.md",
+          "blob": "07bf41ebda6590a73a274e4598e3a00dc654a919",
+          "hash": "5432aaf7e5fcb0813ac21828382971cc00f17d56ee95eac6d0ce180fc5d58016"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            54
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            54
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; PR Test Analyzer Agent; Analysis Process; 1. Identify Changed Code; 2. Behavioral Coverage; Japanese headings are プロンプト防御ベースライン、PRテスト分析エージェント、分析プロセス、1. 変更されたコードの特定、2. 行動カバレッジ. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; PR Test Analyzer Agent; Analysis Process; 1. Identify Changed Code; 2. Behavioral Coverage」、日本語版は「プロンプト防御ベースライン、PRテスト分析エージェント、分析プロセス、1. 変更されたコードの特定、2. 行動カバレッジ」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/python-reviewer.md",
+      "counterpart": "agents/python-reviewer.md",
+      "hash": "fc02e6116fb3b7efa2eb26800c93774f887e7701dfbfd0bccb4ff4e2f038a508",
+      "blob": "a8ffe16db1fe578c1c53551c27acfe76dd969520",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese is much more expansive with Python/Django/Flask async/security examples, but omits the Prompt Defense Baseline and canonical reference section, and changes checklist scope/commands. Added detail is not automatically verified; path checks remain illustrative. | JA: 日本語版はPython／Django／Flaskの非同期・セキュリティ例を増やす一方、Prompt Defense Baselineと原文参照を省き、チェック範囲／コマンドも変える。詳細さは正確性の証明ではなく、パス確認例も説明用である。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/python-reviewer.md",
+          "blob": "a8ffe16db1fe578c1c53551c27acfe76dd969520",
+          "hash": "fc02e6116fb3b7efa2eb26800c93774f887e7701dfbfd0bccb4ff4e2f038a508"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/python-reviewer.md",
+          "blob": "b1b3ee6f53dfb21f1d97b70f4ba5be17a142e11f",
+          "hash": "d2180b115f5840383268c13d5d075b0541fe7ef2a1ac8ecd5d835266ca1b27ce"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            469
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            107
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese is much more expansive with Python/Django/Flask async/security examples, but omits the Prompt Defense Baseline and canonical reference section, and changes checklist scope/commands. Added detail is not automatically verified; path checks remain illustrative. | JA: 日本語版はPython／Django／Flaskの非同期・セキュリティ例を増やす一方、Prompt Defense Baselineと原文参照を省き、チェック範囲／コマンドも変える。詳細さは正確性の証明ではなく、パス確認例も説明用である。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/pytorch-build-resolver.md",
+      "counterpart": "agents/pytorch-build-resolver.md",
+      "hash": "dedcc961000e7fe861f1a251905851ddc4777e9545e64c89129225539af05c28",
+      "blob": "87cbd4b127aeb4cf887de78a7b30e56272e3e9a7",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; PyTorch Build/Runtime Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、PyTorchビルド/ランタイムエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; PyTorch Build/Runtime Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、PyTorchビルド/ランタイムエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/pytorch-build-resolver.md",
+          "blob": "87cbd4b127aeb4cf887de78a7b30e56272e3e9a7",
+          "hash": "dedcc961000e7fe861f1a251905851ddc4777e9545e64c89129225539af05c28"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/pytorch-build-resolver.md",
+          "blob": "88f567968a3058aa1a6828fc2d32fa83681bdfe9",
+          "hash": "5ec08de6c6b616b068e7075be4496edd3e4ef3b041f0095a2e073131a58a9f7c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            125
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            129
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; PyTorch Build/Runtime Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、PyTorchビルド/ランタイムエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; PyTorch Build/Runtime Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、PyTorchビルド/ランタイムエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/refactor-cleaner.md",
+      "counterpart": "agents/refactor-cleaner.md",
+      "hash": "2b265eecd337649c9bdeee1e3550a9beecc91a1a2f05034e8bd14a3a10e1e4ba",
+      "blob": "a6757490d0b54eaa51c473e8f387de26aa20455b",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese adds a deletion log, backup/branch guidance, project-specific examples, PR template and recovery commands (including git revert), while omitting the Prompt Defense Baseline and canonical detection-command detail. These broaden side effects/recovery policy; no instruction was executed. | JA: 日本語版は削除ログ、バックアップ／ブランチ指針、プロジェクト例、PRテンプレート、git revert等の復旧コマンドを追加する一方、Prompt Defense Baselineと検出コマンド詳細を省く。副作用／復旧方針が広がるが、指示は実行していない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/refactor-cleaner.md",
+          "blob": "a6757490d0b54eaa51c473e8f387de26aa20455b",
+          "hash": "2b265eecd337649c9bdeee1e3550a9beecc91a1a2f05034e8bd14a3a10e1e4ba"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/refactor-cleaner.md",
+          "blob": "093c8f6478052f3cc78072204fca957ffac82f07",
+          "hash": "13704c3aee163bcbf6bcbf7a7933630a70d6c312ff3ee5a29bff63b8800484cc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            306
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            94
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese adds a deletion log, backup/branch guidance, project-specific examples, PR template and recovery commands (including git revert), while omitting the Prompt Defense Baseline and canonical detection-command detail. These broaden side effects/recovery policy; no instruction was executed. | JA: 日本語版は削除ログ、バックアップ／ブランチ指針、プロジェクト例、PRテンプレート、git revert等の復旧コマンドを追加する一方、Prompt Defense Baselineと検出コマンド詳細を省く。副作用／復旧方針が広がるが、指示は実行していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/rust-build-resolver.md",
+      "counterpart": "agents/rust-build-resolver.md",
+      "hash": "eb273856ccbd7de8ba3b34aa3bf7c3b53fc53867226fc4d7c2cf23a19ce155cc",
+      "blob": "159246dbe7e155e4d1a48549e7d65294b510179c",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Rust Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、Rustビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Rust Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、Rustビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/rust-build-resolver.md",
+          "blob": "159246dbe7e155e4d1a48549e7d65294b510179c",
+          "hash": "eb273856ccbd7de8ba3b34aa3bf7c3b53fc53867226fc4d7c2cf23a19ce155cc"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/rust-build-resolver.md",
+          "blob": "552d267cd5eeed414014eab340935598ff7ff1f8",
+          "hash": "78c75c6be38ff376963b3c5b26d60dce0491064481d1a61e842a6d2879534e82"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            157
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            157
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Rust Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、Rustビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Rust Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、Rustビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/rust-reviewer.md",
+      "counterpart": "agents/rust-reviewer.md",
+      "hash": "ef48cad1e81e131eed6c3e15db4b51efcefafde5c10eea5f59b817c467224598",
+      "blob": "80cb2974521684d2209b224c36d48c1d9b6265ef",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL — Safety; CRITICAL — Error Handling; HIGH — Ownership and Lifetimes; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 所有権とライフタイム. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL — Safety; CRITICAL — Error Handling; HIGH — Ownership and Lifetimes」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 所有権とライフタイム」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/rust-reviewer.md",
+          "blob": "80cb2974521684d2209b224c36d48c1d9b6265ef",
+          "hash": "ef48cad1e81e131eed6c3e15db4b51efcefafde5c10eea5f59b817c467224598"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/rust-reviewer.md",
+          "blob": "380fb0d9fb3753fcdb7f8b80343a35e9fd6cbe8d",
+          "hash": "10af67c5764677596d43f32a952d8ec28662bb353fd986d726daefd3382ebeca"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            103
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            103
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL — Safety; CRITICAL — Error Handling; HIGH — Ownership and Lifetimes; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 所有権とライフタイム. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL — Safety; CRITICAL — Error Handling; HIGH — Ownership and Lifetimes」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 所有権とライフタイム」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/security-reviewer.md",
+      "counterpart": "agents/security-reviewer.md",
+      "hash": "9aa2dee1b4fe0352e5050b2444ac109a648112baa63726b70edd73777c5d4f91",
+      "blob": "d2285a3e31e99d6ff803e201a538e68814cb53db",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese expands the short review flow into vulnerability examples, install commands, severity templates, emergency steps and false-positive guidance, while omitting the Prompt Defense Baseline and canonical key-principles/reference material. Commands were not run; this is not a validated security standard. | JA: 日本語版は短いレビューを脆弱性例、導入コマンド、重要度テンプレート、緊急対応、誤検知指針へ拡張する一方、Prompt Defense Baselineと原文の原則／参照を省く。コマンドは未実行で、検証済みセキュリティ標準ではない。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/security-reviewer.md",
+          "blob": "d2285a3e31e99d6ff803e201a538e68814cb53db",
+          "hash": "9aa2dee1b4fe0352e5050b2444ac109a648112baa63726b70edd73777c5d4f91"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/security-reviewer.md",
+          "blob": "b5c5e38d2d8c389650162afe18cfe3ab24f353ad",
+          "hash": "813e4062bed5f42ab25dd02a0070f682058ffe9508198fcfdbb2c31296f93b7b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            545
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            117
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese expands the short review flow into vulnerability examples, install commands, severity templates, emergency steps and false-positive guidance, while omitting the Prompt Defense Baseline and canonical key-principles/reference material. Commands were not run; this is not a validated security standard. | JA: 日本語版は短いレビューを脆弱性例、導入コマンド、重要度テンプレート、緊急対応、誤検知指針へ拡張する一方、Prompt Defense Baselineと原文の原則／参照を省く。コマンドは未実行で、検証済みセキュリティ標準ではない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/seo-specialist.md",
+      "counterpart": "agents/seo-specialist.md",
+      "hash": "7cdf34a987b731fa220240c88b10f9f7a2cc7e553a15241f1643053ccdc348c9",
+      "blob": "9ea3acd6b133ec8ab2b42ca8ab1fbc12e367d5a2",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Audit Priorities; Critical; High; Medium; Japanese headings are プロンプト防御ベースライン、監査の優先度、Critical、High、Medium. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Audit Priorities; Critical; High; Medium」、日本語版は「プロンプト防御ベースライン、監査の優先度、Critical、High、Medium」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/seo-specialist.md",
+          "blob": "9ea3acd6b133ec8ab2b42ca8ab1fbc12e367d5a2",
+          "hash": "7cdf34a987b731fa220240c88b10f9f7a2cc7e553a15241f1643053ccdc348c9"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/seo-specialist.md",
+          "blob": "fd127ec08b999d92f0a31a1ccf76e4b8958e7339",
+          "hash": "40a66d601113669585cf6abbf4c9ae2bf134ef23ffdb78c45223733dbde90a2c"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            71
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            71
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Audit Priorities; Critical; High; Medium; Japanese headings are プロンプト防御ベースライン、監査の優先度、Critical、High、Medium. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Audit Priorities; Critical; High; Medium」、日本語版は「プロンプト防御ベースライン、監査の優先度、Critical、High、Medium」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/silent-failure-hunter.md",
+      "counterpart": "agents/silent-failure-hunter.md",
+      "hash": "9c9c705ce34f27ce2739520b5516a6b4f1aace54b9aa9b00a7d14b62e3800e49",
+      "blob": "e31d6297cf7452485f03f3f8952c808e37d81a4d",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Silent Failure Hunter Agent; Hunt Targets; 1. Empty Catch Blocks; 2. Inadequate Logging; Japanese headings are プロンプト防御ベースライン、サイレント障害ハンターエージェント、ハンティングターゲット、1. 空のCatchブロック、2. 不適切なロギング. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Silent Failure Hunter Agent; Hunt Targets; 1. Empty Catch Blocks; 2. Inadequate Logging」、日本語版は「プロンプト防御ベースライン、サイレント障害ハンターエージェント、ハンティングターゲット、1. 空のCatchブロック、2. 不適切なロギング」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/silent-failure-hunter.md",
+          "blob": "e31d6297cf7452485f03f3f8952c808e37d81a4d",
+          "hash": "9c9c705ce34f27ce2739520b5516a6b4f1aace54b9aa9b00a7d14b62e3800e49"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/silent-failure-hunter.md",
+          "blob": "e38053453908f27687826db7b34ba5849971205b",
+          "hash": "e5e2094c6f50cc515a77376331c78e4955d5ff16c7a0e5d8f6edec692b7ebd8d"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Silent Failure Hunter Agent; Hunt Targets; 1. Empty Catch Blocks; 2. Inadequate Logging; Japanese headings are プロンプト防御ベースライン、サイレント障害ハンターエージェント、ハンティングターゲット、1. 空のCatchブロック、2. 不適切なロギング. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Silent Failure Hunter Agent; Hunt Targets; 1. Empty Catch Blocks; 2. Inadequate Logging」、日本語版は「プロンプト防御ベースライン、サイレント障害ハンターエージェント、ハンティングターゲット、1. 空のCatchブロック、2. 不適切なロギング」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/swift-build-resolver.md",
+      "counterpart": "agents/swift-build-resolver.md",
+      "hash": "ef79a5e1c3fcfdff1e263dc3f23b22820350feb729feb461509c2dc2cc876843",
+      "blob": "6c38d9a63cf0a8afa1e7c4f925bc88d856162cd8",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Swift Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、Swiftビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Swift Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、Swiftビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/swift-build-resolver.md",
+          "blob": "6c38d9a63cf0a8afa1e7c4f925bc88d856162cd8",
+          "hash": "ef79a5e1c3fcfdff1e263dc3f23b22820350feb729feb461509c2dc2cc876843"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/swift-build-resolver.md",
+          "blob": "5896e74e70c766747c00552ad6615fec92951583",
+          "hash": "219e9e37151e385c0eae69b28306897e2a21ba1dbad5ed3077801c822c98b156"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            170
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            170
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Swift Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow; Japanese headings are プロンプト防御ベースライン、Swiftビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Swift Build Error Resolver; Core Responsibilities; Diagnostic Commands; Resolution Workflow」、日本語版は「プロンプト防御ベースライン、Swiftビルドエラーリゾルバー、コア責務、診断コマンド、解決ワークフロー」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/swift-reviewer.md",
+      "counterpart": "agents/swift-reviewer.md",
+      "hash": "b4c61c67ede5913b41615195a2b0fa647adba24004943ebe9c499429ef784cb9",
+      "blob": "a4af60413a09f85719d75a8c4d2beee5778a9348",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL - Safety; CRITICAL - Error Handling; HIGH - Concurrency; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 並行性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL - Safety; CRITICAL - Error Handling; HIGH - Concurrency」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 並行性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/swift-reviewer.md",
+          "blob": "a4af60413a09f85719d75a8c4d2beee5778a9348",
+          "hash": "b4c61c67ede5913b41615195a2b0fa647adba24004943ebe9c499429ef784cb9"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/swift-reviewer.md",
+          "blob": "c77c2b0db5bdc8faf95aa9f679c952bb0837ec11",
+          "hash": "b8de7f16fafef82645aca3923b0c4fdbe619433c5df9386b3737fb6591545e8b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            116
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            116
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Review Priorities; CRITICAL - Safety; CRITICAL - Error Handling; HIGH - Concurrency; Japanese headings are プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 並行性. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Review Priorities; CRITICAL - Safety; CRITICAL - Error Handling; HIGH - Concurrency」、日本語版は「プロンプト防御ベースライン、レビュー優先度、CRITICAL — 安全性、CRITICAL — エラーハンドリング、HIGH — 並行性」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/tdd-guide.md",
+      "counterpart": "agents/tdd-guide.md",
+      "hash": "81a17daba7f6a268bafbd2bb34950210e26bfc945f8ffd72a10542e801b8ce33",
+      "blob": "79bac72df772e28d1e8035e848e77fc2da89307f",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese expands the red/green cycle with test types, edge cases, mocks and coverage but omits the Prompt Defense Baseline and canonical v1.8 eval-driven TDD addendum. This changes both safety context and the explicit evaluation-driven extension. | JA: 日本語版はred／greenサイクルをテスト種類、境界例、mock、網羅性へ拡張するが、Prompt Defense Baselineとv1.8評価駆動TDD追補を省く。安全文脈と評価駆動の拡張が変わる。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/tdd-guide.md",
+          "blob": "79bac72df772e28d1e8035e848e77fc2da89307f",
+          "hash": "81a17daba7f6a268bafbd2bb34950210e26bfc945f8ffd72a10542e801b8ce33"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/tdd-guide.md",
+          "blob": "d4f6443b8fa3b7e31d469d9b557b658f612f6077",
+          "hash": "979afbb40c42bfdd02fc308c130d7e257f5d6dd5f6531ef2562644862f6b7771"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            280
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese expands the red/green cycle with test types, edge cases, mocks and coverage but omits the Prompt Defense Baseline and canonical v1.8 eval-driven TDD addendum. This changes both safety context and the explicit evaluation-driven extension. | JA: 日本語版はred／greenサイクルをテスト種類、境界例、mock、網羅性へ拡張するが、Prompt Defense Baselineとv1.8評価駆動TDD追補を省く。安全文脈と評価駆動の拡張が変わる。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/type-design-analyzer.md",
+      "counterpart": "agents/type-design-analyzer.md",
+      "hash": "5f4bc2313525c8c13ba47d5b61bbcd01e65041c83a3194a82497b256f1035aa5",
+      "blob": "f4732f58bf477a79a647151bf7e941634ff515d4",
+      "disposition": "analyzed",
+      "reason": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Type Design Analyzer Agent; Evaluation Criteria; 1. Encapsulation; 2. Invariant Expression; Japanese headings are プロンプト防御ベースライン、型設計分析エージェント、評価基準、1. カプセル化、2. 不変条件の表現. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Type Design Analyzer Agent; Evaluation Criteria; 1. Encapsulation; 2. Invariant Expression」、日本語版は「プロンプト防御ベースライン、型設計分析エージェント、評価基準、1. カプセル化、2. 不変条件の表現」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/type-design-analyzer.md",
+          "blob": "f4732f58bf477a79a647151bf7e941634ff515d4",
+          "hash": "5f4bc2313525c8c13ba47d5b61bbcd01e65041c83a3194a82497b256f1035aa5"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/type-design-analyzer.md",
+          "blob": "394f2626be1bcb7ff89ba3bb042b6eed99ac6e1f",
+          "hash": "753908aadd759d4710e07ac1a0ba8a6fbc0bc35fe369cadd3ede9655da5d1c49"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            50
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            50
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: The complete Japanese/English pair was compared section by section. Canonical sections include Prompt Defense Baseline; Type Design Analyzer Agent; Evaluation Criteria; 1. Encapsulation; 2. Invariant Expression; Japanese headings are プロンプト防御ベースライン、型設計分析エージェント、評価基準、1. カプセル化、2. 不変条件の表現. Role, main review/build sequence and report/stop intent align, with localized wording or examples; no separate reusable method delta was identified. Commands, versions and domain examples are frozen text, not executed or externally verified. | JA: 日英全文を節ごとに対照した。原文の主な節は「Prompt Defense Baseline; Type Design Analyzer Agent; Evaluation Criteria; 1. Encapsulation; 2. Invariant Expression」、日本語版は「プロンプト防御ベースライン、型設計分析エージェント、評価基準、1. カプセル化、2. 不変条件の表現」。役割、中心となるレビュー／ビルド手順、停止／報告意図は対応し、文言や例を翻訳している。独立した再利用手法の差分は確認できない。コマンド、版、領域例は固定文書の記述であり、実行・外部検証していない。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    },
+    {
+      "path": "docs/ja-JP/agents/typescript-reviewer.md",
+      "counterpart": "agents/typescript-reviewer.md",
+      "hash": "c2986205c508744a866dc2dfec7f90ad8459ecc84dfca94a289935995449ca71",
+      "blob": "e0c7c172ccf76adad8933e7fc5be26588f8efff6",
+      "disposition": "analyzed",
+      "reason": "EN: Japanese preserves most TypeScript security/type/async/error and output guidance but omits the English requirement to hand off changed .tsx/.jsx review to both TypeScript and React reviewers. This routing condition is an operational coverage gap. | JA: 日本語版はTypeScriptのセキュリティ／型／非同期／エラーや出力指針の多くを保つが、変更された.tsx／.jsxをTypeScript reviewerとReact reviewerの両方へ回す要件を省く。このルーティング条件は運用上の網羅性欠落である。",
+      "candidate_keys": [
+        "ecc-ja-agent-semantic-control-parity"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/typescript-reviewer.md",
+          "blob": "e0c7c172ccf76adad8933e7fc5be26588f8efff6",
+          "hash": "c2986205c508744a866dc2dfec7f90ad8459ecc84dfca94a289935995449ca71"
+        },
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/typescript-reviewer.md",
+          "blob": "23af98e654d07bb01c688d2c6f15e58509723d74",
+          "hash": "6b012db1a9039870c4f040975144a0d4e3592510d6332e2d260f02859ec66da1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            121
+          ]
+        ],
+        "canonical_read_ranges": [
+          [
+            1,
+            124
+          ]
+        ],
+        "comparison_basis": "Compared complete frozen Japanese text against the complete paired English canonical text; commit/blob/SHA identities were checked against source-inventory.json and Git objects. No byte-equality claim is made for translated files.",
+        "content_role_and_conclusion": "EN: Japanese preserves most TypeScript security/type/async/error and output guidance but omits the English requirement to hand off changed .tsx/.jsx review to both TypeScript and React reviewers. This routing condition is an operational coverage gap. | JA: 日本語版はTypeScriptのセキュリティ／型／非同期／エラーや出力指針の多くを保つが、変更された.tsx／.jsxをTypeScript reviewerとReact reviewerの両方へ回す要件を省く。このルーティング条件は運用上の網羅性欠落である。",
+        "execution": "Static frozen-pair reading only. Instructions, commands, examples, builds, tests, source code, host integrations and external product claims were not executed or verified."
+      }
+    }
+  ],
+  "candidate_additions": [
+    {
+      "key": "ecc-ja-agent-semantic-control-parity",
+      "name_en": "Preserve Behavioral Control Semantics Across Localization",
+      "name_zh": "本地化中保留行为控制语义",
+      "category": "skill-authoring",
+      "tags": [
+        "localization",
+        "semantic-parity",
+        "safety-gates",
+        "agent-instructions"
+      ],
+      "summary_en": "Compare translated agent instructions for preserved evidence, stop, escalation, evaluation and output gates, beyond exact identifier preservation.",
+      "summary_zh": "检查译文是否保留证据、停止、升级、评估和输出门槛，不止核对标识符字面值。",
+      "status": "proposed",
+      "content": {
+        "en": {
+          "description": "Preserve operational controls in agent instructions when translating or adapting prose.",
+          "scenario": "A localized reviewer keeps the same topic and severity labels but drops a proof gate, zero-finding acceptance rule, stop condition or report evidence field.",
+          "mechanism": "Extract canonical controls: required evidence, permitted action, stop/escalate trigger, scoring or acceptance threshold, and report fields. Map each to the translation as preserved, omitted, weakened or strengthened; inspect examples against the same conditions.",
+          "bad": "Headings and terminology look equivalent, so mark the translation equivalent even though critical findings no longer require proof.",
+          "good": "Build a bilingual control-by-control table with source and translation locators. Record missing/softened gates separately, compare output contracts, and require correction or explicit acceptance of every material delta before claiming parity.",
+          "why": "Readable prose and preserved technical names can conceal changed agent behavior when a safety, evidence or evaluation gate disappears.",
+          "expected": "A reviewer can name each material control delta and consequence, and the localized instructions retain the agreed stop, evidence and reporting behavior.",
+          "boundaries": "This is document-pair review, not proof of runtime enforcement or efficacy. Check literal identifiers/schema/paths separately. Frozen stack/version/API examples are not current product facts."
+        },
+        "zh": {
+          "description": "翻译或改写 agent 指令时，保留其操作控制条件。",
+          "scenario": "本地化 reviewer 保留主题和严重级别，却省略原文的证据门槛、零发现也可通过的规则、停止条件或报告证据字段。",
+          "mechanism": "逐条抽取原文控制语句：所需证据、允许动作、停止／升级触发条件、评分或验收阈值、报告字段。将译文对应项标为保留、省略、弱化或强化，并按相同条件核对示例。",
+          "bad": "标题和术语看似对应，便判定译文语义等价，即使严重问题不再要求证据。",
+          "good": "制作逐项双语控制表并记录原文与译文定位。单列缺失或弱化的门槛，对照最终输出契约；在修正或明确接受每项实质差异前，不宣称语义一致。",
+          "why": "即使译文易读且技术名称未变，安全、证据或评估门槛的消失仍会改变 agent 的操作行为。",
+          "expected": "审查者可以指出每项实质控制差异及其影响，且本地化指令保留已约定的停止、取证和报告行为。",
+          "boundaries": "这是文档对照，不证明运行时强制执行或实际效果。机器标识符／schema／路径完整性应另行检查。不得把固定版本的技术栈、版本或 API 示例当作当前产品事实。"
+        }
+      },
+      "scores": {
+        "scenario": 2,
+        "mechanism": 2,
+        "contrast": 2,
+        "observable": 2,
+        "boundaries": 2
+      },
+      "suggested_existing_ids": [],
+      "related_existing_ids": [
+        166,
+        171,
+        172,
+        190
+      ],
+      "related_candidate_keys": [
+        "ecc-variants-localization-symbol-integrity"
+      ],
+      "example_origin": "editorial-teaching-example",
+      "validation_status": "editorial-review-only",
+      "origin_status": "unknown",
+      "scores_note": "10/10 editorial score across five existing dimensions; eligible for human curation, not automatic admission. Distinct from exact identifier/schema/path integrity.",
+      "sources": [
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/code-reviewer.md",
+          "start_line": 1,
+          "end_line": 104,
+          "section": "Translation drops canonical proof, confidence and acceptance gates",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/code-reviewer.md",
+          "start_line": 1,
+          "end_line": 323,
+          "section": "Canonical confidence gate, proof requirements and report contract",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/gan-evaluator.md",
+          "start_line": 1,
+          "end_line": 149,
+          "section": "Translation omits evaluation mode and evidence fields",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/gan-evaluator.md",
+          "start_line": 1,
+          "end_line": 232,
+          "section": "Canonical evaluation mode adaptation and evidence requirements",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/harness-optimizer.md",
+          "start_line": 1,
+          "end_line": 44,
+          "section": "Translation omits baseline, regression, restore and approval controls",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/harness-optimizer.md",
+          "start_line": 1,
+          "end_line": 55,
+          "section": "Canonical eval, regression, restore and approval boundaries",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/agents/gan-generator.md",
+          "start_line": 1,
+          "end_line": 93,
+          "section": "Translation omits generator state and evaluator feedback handoff",
+          "license": "MIT",
+          "role": "observed-example"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "agents/gan-generator.md",
+          "start_line": 1,
+          "end_line": 140,
+          "section": "Canonical generator state and evaluator interaction sections",
+          "license": "MIT",
+          "role": "observed-example"
+        }
+      ]
+    }
+  ],
+  "candidate_update_suggestions": [],
+  "curation_recommendations": [
+    {
+      "recommendation": "Consider the proposed semantic-control-parity candidate as distinct from ecc-variants-localization-symbol-integrity. The existing candidate covers literal machine identifiers, schema keys and paths; this evidence concerns preservation of readable operational gates (proof, stop/escalate, evaluation validity and report contracts). Keep it only if it remains non-duplicative of root/core localization candidates. Do not turn Japanese additions or omissions into current platform/product facts.",
+      "recommendation_zh": "建议将语义控制一致性候选与 ecc-variants-localization-symbol-integrity 区分：现有候选检查机器标识符、schema 键和路径字面值；本证据针对可读指令中的操作门槛（证明、停止／升级、评估有效性、报告契约）是否保留。仅在确认未与 root/core 的本地化候选重复后保留。不要把日文扩写或缺失章节提升为当前平台／产品事实。",
+      "compare_against": [
+        "ecc-variants-localization-symbol-integrity"
+      ],
+      "supporting_paths": [
+        "docs/ja-JP/agents/code-reviewer.md",
+        "docs/ja-JP/agents/gan-evaluator.md",
+        "docs/ja-JP/agents/gan-generator.md",
+        "docs/ja-JP/agents/harness-optimizer.md",
+        "docs/ja-JP/agents/harmonyos-app-resolver.md",
+        "docs/ja-JP/agents/java-reviewer.md",
+        "docs/ja-JP/agents/planner.md",
+        "docs/ja-JP/agents/typescript-reviewer.md"
+      ]
+    }
+  ],
+  "editorial_note": "All 60 assigned Japanese agent files and paired canonical English documents were read completely from the frozen commit. Every row is a full difference-review; no byte-equivalence claim is made. Commands and source instructions were not executed. Project-specific expansions are not adopted as repository facts."
+}

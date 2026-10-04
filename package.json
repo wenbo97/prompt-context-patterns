@@ -9,6 +9,8 @@
     "test": "node --test tests/*.test.mjs",
     "generate": "node scripts/catalog/generate.mjs",
     "check": "node scripts/catalog/check.mjs",
+    "check:sources": "node scripts/catalog/sources.mjs && node scripts/catalog/check.mjs --sources",
+    "sources:restore": "node scripts/catalog/sources.mjs --restore",
     "check:generated": "node scripts/catalog/generate.mjs --check",
     "check:links": "node scripts/catalog/check-links.mjs",
     "test:e2e": "playwright test",

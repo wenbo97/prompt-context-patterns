@@ -1,4 +1,4 @@
-# ECC locale and harness variant review — in progress
+# ECC locale and harness variant review — complete
 
 Frozen repository: `affaan-m/ECC@ef648e01899ba3e8dc6371642deaaf64b4477775`. Git-tree authority is [source-inventory.json](source-inventory.json). This partition has **1,791 tracked paths**: the fourteen translated docs locales and the `.agents`, `.cursor`, `.kiro`, `.opencode` harness trees. The canonical reviewer owns the root skills, references, commands, agents, rules, contexts and examples; this review owns every assigned occurrence and its material delta.
 
@@ -69,7 +69,7 @@ The Chinese UI-demo body and its JavaScript match the canonical implementation, 
 
 ## Closed locale milestones and actual interface drift
 
-Chinese, Korean, Portuguese and Traditional Chinese assigned trees are now closed, as are all four harness trees. Japanese, Spanish, Turkish and three large translated README tails remain in progress; live counts and explicit pending paths are in the JSON. Each closed occurrence now also supplies `review_kind` and `review_evidence`; [the evidence ledger](ecc-variants-review-evidence.json) distinguishes full-semantic, difference-review, verified-equivalence and scoped-relevance without replacing the preserved depth.
+Chinese, Korean, Portuguese, Traditional Chinese, Japanese and Spanish assigned trees are now closed, as are all four harness trees. The Turkish support documents, command set and all 34 Turkish skill guides are closed after full method-prose and canonical-delta review. The three unpaired DE/RU/UK locale README reviews are also closed. Live counts and terminal evidence are in the JSON. Each closed occurrence now also supplies `review_kind` and `review_evidence`; [the evidence ledger](ecc-variants-review-evidence.json) distinguishes full-semantic, difference-review, verified-equivalence and scoped-relevance without replacing the preserved depth.
 
 - The [Chinese hook authoring recipe](https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/docs/zh-CN/hooks/README.md#L92-L115) says to echo the input payload. The [current canonical protocol](https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/hooks/README.md#L162-L165) requires empty stdout for a no-op and only explicit decisions/context. This changes the consumer interface.
 - The [Korean personal template](https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/docs/ko-KR/examples/user-CLAUDE.md#L62-L64) translates redacting logs as deleting logs. The reviewed Portuguese wording retains anonymization. These are different actions, not harmless wording variants.

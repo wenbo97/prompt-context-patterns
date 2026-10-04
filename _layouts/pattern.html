@@ -8,7 +8,7 @@ layout: default
 <article>
   {% if page.lang == 'zh' %}{% assign browse_url = '/catalog/browse/?lang=zh' %}{% else %}{% assign browse_url = '/catalog/browse/' %}{% endif %}
   <div class="breadcrumb"><a href="{{ browse_url | relative_url }}">{% if page.lang == 'zh' %}模式目录{% else %}Pattern catalog{% endif %}</a> / P{{ p.id }}</div>
-  <header class="pattern-heading"><span class="record-id">P{{ p.id }} · {{ p.category | escape }}</span><h1>{{ name | escape }}</h1><p class="lead">{{ summary | escape }}</p>
+  <header class="pattern-heading"><span class="record-id">P{{ p.id }} · {% include category-label.html key=p.category %}</span><h1>{{ name | escape }}</h1><p class="lead">{{ summary | escape }}</p>
     <div class="meta-line"><span class="badge">{% if page.lang == 'zh' %}编辑审核{% else %}Editorially reviewed{% endif %}</span>{% if p.trace_status == 'untraced' %}<span class="badge untraced">{% if page.lang == 'zh' %}来源未确认{% else %}Source unconfirmed{% endif %}</span>{% endif %}</div>
   </header>
   <div class="pattern-content">{{ content }}</div>

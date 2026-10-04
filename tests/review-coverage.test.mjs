@@ -18,3 +18,8 @@ test('pending, changed-source and empty-evidence outcomes stay invalid', () => {
   assert.ok(validateFileOutcome(outcome, 'changed-hash', 'repo/file').some(e=>e.includes('hash mismatch')));
   for (const evidence of ['', [], {}, null]) assert.ok(validateFileOutcome({...outcome,review_evidence:evidence}, 'frozen-hash', 'repo/file').some(e=>e.includes('evidence missing')));
 });
+
+test('a terminal label cannot hide an explicitly unfinished evidence refresh', () => {
+  const row = { ...outcome, review_evidence: { ...outcome.review_evidence, refresh_required: 'Inspect actual source content before final delivery.' } };
+  assert.ok(validateFileOutcome(row, 'frozen-hash', 'repo/file').some(e => e.includes('refresh incomplete')));
+});

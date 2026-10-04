@@ -1,0 +1,816 @@
+{
+  "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+  "review_status": "fragment-ready-for-parent-merge",
+  "file_updates": [
+    {
+      "path": ".claude/skills/banner-design/references/banner-sizes-and-styles.md",
+      "hash": "c8906fb1073a576ee8c680d9bc8586249cbc4ed36690da960d65a1c9c37143b7",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "Static banner reference tables cover output sizes, 22 visual styles, a three-zone hierarchy, safe areas, CTA, typography, image/text balance, print specs, and Pinterest search prompts. These are design constraints/examples, not measured conversion guidance; neither platform claims nor a consumer were verified.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/banner-design/references/banner-sizes-and-styles.md",
+          "hash": "c8906fb1073a576ee8c680d9bc8586249cbc4ed36690da960d65a1c9c37143b7",
+          "blob": "f72727be2e44ea042195730a7ae04f1371418817",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            118
+          ]
+        ],
+        "content_role_and_conclusion": "Static banner reference tables cover output sizes, 22 visual styles, a three-zone hierarchy, safe areas, CTA, typography, image/text balance, print specs, and Pinterest search prompts. These are design constraints/examples, not measured conversion guidance; neither platform claims nor a consumer were verified.",
+        "content_role_and_conclusion_zh": "静态横幅参考列出输出尺寸、22 种风格、三分区层级、安全区域、CTA、字体、图文比例、印刷规格和 Pinterest 搜索词。这些是设计约束/示例，不是实测转化建议；平台信息和消费者均未验证。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/logo-usage-rules.md",
+      "hash": "044c5ddf30cfe0eea047451cfce6ea654939198ffdd8968a19161c97066a5a26",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A logo usage reference specifies variants/backgrounds, clear space based on mark height, digital/print minimum sizes, prohibited treatments, co-branding, vector formats, platform exports, and approval workflow. It is prescriptive reference content; current platform specifications and adoption were not checked.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/logo-usage-rules.md",
+          "hash": "044c5ddf30cfe0eea047451cfce6ea654939198ffdd8968a19161c97066a5a26",
+          "blob": "64d84cb984621e964d3a612168c4e24154df7e2b",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            185
+          ]
+        ],
+        "content_role_and_conclusion": "A logo usage reference specifies variants/backgrounds, clear space based on mark height, digital/print minimum sizes, prohibited treatments, co-branding, vector formats, platform exports, and approval workflow. It is prescriptive reference content; current platform specifications and adoption were not checked.",
+        "content_role_and_conclusion_zh": "Logo 使用参考规定版本与背景、按标志高度计算留白、数字/印刷最小尺寸、禁止处理、联合品牌、矢量格式、平台导出和审批流程。它是规范性参考；未核查当前平台规格或实际采用情况。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/visual-identity.md",
+      "hash": "63f0cfc5d95403d8e12aca4d839cc28471515574d9a431334bfbb96c15407c31",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A compact visual-identity worksheet supplies example palette/type choices, a guide outline, contrast reminders, image/icon prompts, and quick checks. It is a starter reference rather than a brand-specific identity or validated contrast audit.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/visual-identity.md",
+          "hash": "63f0cfc5d95403d8e12aca4d839cc28471515574d9a431334bfbb96c15407c31",
+          "blob": "93f4ed1ccffd0a666ec60570e7e406600e5e5672",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            96
+          ]
+        ],
+        "content_role_and_conclusion": "A compact visual-identity worksheet supplies example palette/type choices, a guide outline, contrast reminders, image/icon prompts, and quick checks. It is a starter reference rather than a brand-specific identity or validated contrast audit.",
+        "content_role_and_conclusion_zh": "简要视觉识别工作表提供示例色板/字体、指南提纲、对比度提醒、图像/图标提示和快速检查。它是起步参考，不是特定品牌身份，也不是已验证的对比度审计。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/templates/brand-guidelines-starter.md",
+      "hash": "d157a57b15f0b458c79636d11de42f3c89f03d8c0bbea1bdd3cf1c3542b2140d",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "An editable brand-guidelines template combines sample colors and type with sections for logo, voice, imagery, components, accessibility, and an image-generation prompt. Bracketed/sample values are placeholders, including its contrast assertions; filling the template does not establish brand facts or WCAG conformance.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/templates/brand-guidelines-starter.md",
+          "hash": "d157a57b15f0b458c79636d11de42f3c89f03d8c0bbea1bdd3cf1c3542b2140d",
+          "blob": "eb98dd0a525e3e82e897ec8ce4605d3c526ec30e",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            275
+          ]
+        ],
+        "content_role_and_conclusion": "An editable brand-guidelines template combines sample colors and type with sections for logo, voice, imagery, components, accessibility, and an image-generation prompt. Bracketed/sample values are placeholders, including its contrast assertions; filling the template does not establish brand facts or WCAG conformance.",
+        "content_role_and_conclusion_zh": "可编辑品牌指南模板把示例颜色/字体与 Logo、语气、图像、组件、无障碍及图像生成提示章节组合。方括号/样例值均为占位符，包括对比度断言；填表本身不能证明品牌事实或符合 WCAG。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/semantic-tokens.md",
+      "hash": "97e16d8061bbc22e82b51966a7015e3fc990932902e4647843506669a1cdebcc",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "A semantic-token reference maps purpose-named color, spacing, type, state, and theme aliases to primitive CSS variables; examples contrast role names with hard-coded values and show a JS theme toggle. This supports the semantic-alias mechanism only; the sample has no checked token schema or consuming implementation.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/semantic-tokens.md",
+          "hash": "97e16d8061bbc22e82b51966a7015e3fc990932902e4647843506669a1cdebcc",
+          "blob": "b441010e5a45bfc7bd61fdbb11b49651e44f3792",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            215
+          ]
+        ],
+        "content_role_and_conclusion": "A semantic-token reference maps purpose-named color, spacing, type, state, and theme aliases to primitive CSS variables; examples contrast role names with hard-coded values and show a JS theme toggle. This supports the semantic-alias mechanism only; the sample has no checked token schema or consuming implementation.",
+        "content_role_and_conclusion_zh": "语义 token 参考将有用途名称的颜色、间距、字体、状态和主题别名映射到 CSS 原始变量，并对比角色名称与硬编码值、示范 JS 主题切换。它只支持语义别名机制；样例没有经过核验的 token schema 或消费端实现。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/states-and-variants.md",
+      "hash": "8dacb95d57d4bb37d8a99cc55515ff26da272056f837d29abc74aedcaa3ba104",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A static component-state reference orders disabled, loading, active, focus, hover, and default treatments, then illustrates disabled semantics/contrast, loading/error visuals, size/color variants, and ARIA examples. The priority order is guidance, not a tested component-state engine or universal interaction rule.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/states-and-variants.md",
+          "hash": "8dacb95d57d4bb37d8a99cc55515ff26da272056f837d29abc74aedcaa3ba104",
+          "blob": "64b808a6aaf202c66527e3787d476bb84dc91f28",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            241
+          ]
+        ],
+        "content_role_and_conclusion": "A static component-state reference orders disabled, loading, active, focus, hover, and default treatments, then illustrates disabled semantics/contrast, loading/error visuals, size/color variants, and ARIA examples. The priority order is guidance, not a tested component-state engine or universal interaction rule.",
+        "content_role_and_conclusion_zh": "静态组件状态参考排列 disabled、loading、active、focus、hover、default 的处理，并示范禁用语义/对比度、加载/错误视觉、尺寸/颜色变体和 ARIA。优先顺序只是建议，不是经测试的组件状态引擎或普遍交互定律。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/SKILL.md",
+      "hash": "c84f3ecfd6a0fd1c46abf6805a0bbc26ea0b94a104f457e243ccf0943ece123c",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A design dispatcher routes logo, CIP, banner, social-image, brand-package, and design-system requests into specialized workflows. It describes briefs/search, user choice, generation/rendering/preview, and bounded fallbacks when image or browser capability is absent; setup keys/providers and success claims were not run or checked. The document is orchestration guidance, not evidence that its commands or providers work.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/SKILL.md",
+          "hash": "c84f3ecfd6a0fd1c46abf6805a0bbc26ea0b94a104f457e243ccf0943ece123c",
+          "blob": "6ffc5039f8aede70b6201ff13795c14a9d892953",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            333
+          ]
+        ],
+        "content_role_and_conclusion": "A design dispatcher routes logo, CIP, banner, social-image, brand-package, and design-system requests into specialized workflows. It describes briefs/search, user choice, generation/rendering/preview, and bounded fallbacks when image or browser capability is absent; setup keys/providers and success claims were not run or checked. The document is orchestration guidance, not evidence that its commands or providers work.",
+        "content_role_and_conclusion_zh": "设计分发器将 Logo、CIP、横幅、社交图片、品牌包和 design-system 需求路由到专门流程，涵盖需求收集/检索、用户选择、生成/渲染/预览，以及缺少图像或浏览器能力时的边界回退。未运行或核查配置密钥/提供方及成功断言；文档是编排说明，不证明命令或服务可用。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/cip-style-guide.md",
+      "hash": "f3e15408cd981e93804440c1159c12e02d001bc37a3945f455b3fc13729ed4e1",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A CIP lookup sheet pairs eight industry contexts with sample color, typography, material/finish directions and brief color-psychology notes. It is a prompt/reference matrix, not an empirical mapping from industry to audience response.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/cip-style-guide.md",
+          "hash": "f3e15408cd981e93804440c1159c12e02d001bc37a3945f455b3fc13729ed4e1",
+          "blob": "76328be91ce6ac3cde23e220372a61e3614bdab2",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            68
+          ]
+        ],
+        "content_role_and_conclusion": "A CIP lookup sheet pairs eight industry contexts with sample color, typography, material/finish directions and brief color-psychology notes. It is a prompt/reference matrix, not an empirical mapping from industry to audience response.",
+        "content_role_and_conclusion_zh": "CIP 风格表将八类行业场景与示例颜色、字体、材质/饰面方向及简短色彩心理说明配对。它是提示/参考矩阵，不是行业与受众反应之间的实证映射。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/icon-design.md",
+      "hash": "ba1a1ccaa1e427c75ec9808dc4d2057628977188953773a641d49651de2d64e2",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "An icon-design reference documents script/CLI modes for single, batch, multi-size, and listing workflows; style/category catalogs; SVG conventions; and setup/provider notes. It is static usage guidance: no CLI, SVG validation, model, or provider contract was executed or independently verified.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/icon-design.md",
+          "hash": "ba1a1ccaa1e427c75ec9808dc4d2057628977188953773a641d49651de2d64e2",
+          "blob": "961cdacc20391d0ed43f29b0a34312596dbae4ad",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            122
+          ]
+        ],
+        "content_role_and_conclusion": "An icon-design reference documents script/CLI modes for single, batch, multi-size, and listing workflows; style/category catalogs; SVG conventions; and setup/provider notes. It is static usage guidance: no CLI, SVG validation, model, or provider contract was executed or independently verified.",
+        "content_role_and_conclusion_zh": "图标设计参考介绍单个、批量、多尺寸和列表模式的脚本/CLI、风格/类别目录、SVG 约定及环境/提供方说明。它是静态使用指南；未执行 CLI 或 SVG 验证，也未独立核实模型及服务契约。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/logo-design.md",
+      "hash": "8f335b0e7e8538069bfd5af2c1ee4a9f281f14b2854e8a49bfa14253324abb7d",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A logo-design guide sequences brief collection, visual-style/color/industry lookup, generation on white backgrounds, user approval, and preview, with style taxonomies and provider setup notes. These are prescribed steps and illustrative industry defaults; no provider, generated mark, or audience outcome was checked.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/logo-design.md",
+          "hash": "8f335b0e7e8538069bfd5af2c1ee4a9f281f14b2854e8a49bfa14253324abb7d",
+          "blob": "7b83120e510ec665ed6cd8a5b3758a983e7eb2dc",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            110
+          ]
+        ],
+        "content_role_and_conclusion": "A logo-design guide sequences brief collection, visual-style/color/industry lookup, generation on white backgrounds, user approval, and preview, with style taxonomies and provider setup notes. These are prescribed steps and illustrative industry defaults; no provider, generated mark, or audience outcome was checked.",
+        "content_role_and_conclusion_zh": "Logo 设计指南依次收集 brief、查询风格/颜色/行业、白底生成、用户批准和预览，并附风格分类与提供方配置说明。这些是规定步骤和行业示例默认值；未核验服务、生成标志或受众效果。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/slides-layout-patterns.md",
+      "hash": "0de6208dcb32f896ad24df1bfa0c88a6abfe13c6a1ce43df06014810ab98314b",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A slide-layout reference gives a goal-to-layout selection flow and examples for title, split, grid, and metric treatments, plus CSS/search guidance. Its heading says 25 patterns while the visible summary table lists 14 and the detailed CSS covers only four; the document's own coverage/count claim is therefore narrower than advertised, and no deck was tested.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/slides-layout-patterns.md",
+          "hash": "0de6208dcb32f896ad24df1bfa0c88a6abfe13c6a1ce43df06014810ab98314b",
+          "blob": "0949ab0fa240b5ffb5ff823be521a647977c2614",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            137
+          ]
+        ],
+        "content_role_and_conclusion": "A slide-layout reference gives a goal-to-layout selection flow and examples for title, split, grid, and metric treatments, plus CSS/search guidance. Its heading says 25 patterns while the visible summary table lists 14 and the detailed CSS covers only four; the document's own coverage/count claim is therefore narrower than advertised, and no deck was tested.",
+        "content_role_and_conclusion_zh": "幻灯片布局参考给出按目标选布局的流程，并示范标题、分栏、网格、指标样式及 CSS/检索说明。标题称有 25 种布局，但摘要表列 14 种、详细 CSS 只覆盖四种；文档实际覆盖少于宣称，未测试任何演示文稿。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/slides-strategies.md",
+      "hash": "cc97651ae1b404bde4df6ad0f7b5ef0c3f91506c9c5cb67748489a96fd155a0f",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A presentation-strategy guide lists 15 narrative strategies and details YC pitch, product demo, and sales arcs, using audience/emotion sequencing, a Duarte-style sparkline, and pattern breaks to shape slide order. 'Proven' and effectiveness language is not substantiated by experiments in this reference.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/slides-strategies.md",
+          "hash": "cc97651ae1b404bde4df6ad0f7b5ef0c3f91506c9c5cb67748489a96fd155a0f",
+          "blob": "eae5b131f596490f4bdef4aedaa80b4194eef95c",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            94
+          ]
+        ],
+        "content_role_and_conclusion": "A presentation-strategy guide lists 15 narrative strategies and details YC pitch, product demo, and sales arcs, using audience/emotion sequencing, a Duarte-style sparkline, and pattern breaks to shape slide order. 'Proven' and effectiveness language is not substantiated by experiments in this reference.",
+        "content_role_and_conclusion_zh": "演示策略指南列出 15 种叙事策略，并展开 YC 融资、产品演示和销售故事线，通过受众/情绪顺序、Duarte 式曲线和节奏变化安排幻灯片。文中的“验证有效”等效果措辞没有实验佐证。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/tailwind-responsive.md",
+      "hash": "8d00ae620df26daea4623c7bf996d6e612e09d359305fcfa2b40cab757ed840c",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A mobile-first responsive reference uses named viewport breakpoints and examples for grids, visibility, type, spacing, sidebars, cards, hero sections, navigation, range/container queries, and breakpoint testing. It is a recipe/checklist; Tailwind version behavior and rendered outcomes were not checked.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/tailwind-responsive.md",
+          "hash": "8d00ae620df26daea4623c7bf996d6e612e09d359305fcfa2b40cab757ed840c",
+          "blob": "f252e1857bb2f5f5a884711fcf983ea945ce45e7",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            382
+          ]
+        ],
+        "content_role_and_conclusion": "A mobile-first responsive reference uses named viewport breakpoints and examples for grids, visibility, type, spacing, sidebars, cards, hero sections, navigation, range/container queries, and breakpoint testing. It is a recipe/checklist; Tailwind version behavior and rendered outcomes were not checked.",
+        "content_role_and_conclusion_zh": "移动优先的响应式参考使用具名视口断点，并示范网格、显隐、字体、间距、侧栏、卡片、hero、导航、范围/容器查询和断点测试。它是配方/清单，未核验 Tailwind 版本行为或实际渲染。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/tailwind-utilities.md",
+      "hash": "aba1c40ef84f43beea142ae310371e332541f39d973df90a71f1854823effda1",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A Tailwind utility compendium groups display/flex/grid/position, spacing, type, color, border, shadow, sizing, arbitrary-value, aspect, overflow, cursor, and selection classes. It is a lookup catalog rather than a version-pinned contract; class availability and output were not tested.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/tailwind-utilities.md",
+          "hash": "aba1c40ef84f43beea142ae310371e332541f39d973df90a71f1854823effda1",
+          "blob": "7b7b12363f2dbe40961cd7a11446419046a921af",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            455
+          ]
+        ],
+        "content_role_and_conclusion": "A Tailwind utility compendium groups display/flex/grid/position, spacing, type, color, border, shadow, sizing, arbitrary-value, aspect, overflow, cursor, and selection classes. It is a lookup catalog rather than a version-pinned contract; class availability and output were not tested.",
+        "content_role_and_conclusion_zh": "Tailwind utility 汇编按 display/flex/grid/定位、间距、字体、颜色、边框、阴影、尺寸、任意值、比例、溢出、光标和选择等分组列类名。它是速查目录而非固定版本契约，未测试类名可用性或输出。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "hash": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-nextlevel-query-fit-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The skill sets a visual-work boundary, prioritizes ten UX domains, and specifies query fit: use the narrowest mode, one dominant intent plus a few terms/constraints, verify domain/result identity and fit, retry once more narrowly, then expose a bounded fallback rather than inventing a match. It also requires stack detection, accessibility-first outcomes, explicit persistence and non-destructive force handling, optional variance/motion/density controls, and version-aware legacy lookup. Catalog counts/model claims were not verified and the command was not run.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+          "hash": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+          "blob": "41f8e2fd7f8c568228d0b55186ebe3f7b4007377",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            214
+          ]
+        ],
+        "content_role_and_conclusion": "The skill sets a visual-work boundary, prioritizes ten UX domains, and specifies query fit: use the narrowest mode, one dominant intent plus a few terms/constraints, verify domain/result identity and fit, retry once more narrowly, then expose a bounded fallback rather than inventing a match. It also requires stack detection, accessibility-first outcomes, explicit persistence and non-destructive force handling, optional variance/motion/density controls, and version-aware legacy lookup. Catalog counts/model claims were not verified and the command was not run.",
+        "content_role_and_conclusion_zh": "该 skill 设定视觉工作边界、排列十类 UX 领域优先级，并规定查询匹配流程：选最窄模式，以一个主意图加少量术语/约束检索，核对领域/结果身份及相关性，最多窄化重试一次，之后明确有限回退而不伪造匹配。还要求检测技术栈、优先查询无障碍结果、显式持久化与谨慎 force、可选变化/动效/密度控制及版本感知的旧版查找。未验证目录数量/模型宣称，也未运行命令。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "hash": "e53f2024bbf9acc0a613887afac5aa18ead61316813668c7a07fa4c418c09bf3",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "Contributor instructions identify src/ui-ux-pro-max as source of truth, require editing source data/scripts/templates before syncing CLI assets, list Node/npm/Python/Bun prerequisites, and describe issue/PR/release conventions. This is repository process guidance; commands and release steps were not executed.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "CONTRIBUTING.md",
+          "hash": "e53f2024bbf9acc0a613887afac5aa18ead61316813668c7a07fa4c418c09bf3",
+          "blob": "199374480ac2683d0224a0e9e636c2a758b6e855",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            179
+          ]
+        ],
+        "content_role_and_conclusion": "Contributor instructions identify src/ui-ux-pro-max as source of truth, require editing source data/scripts/templates before syncing CLI assets, list Node/npm/Python/Bun prerequisites, and describe issue/PR/release conventions. This is repository process guidance; commands and release steps were not executed.",
+        "content_role_and_conclusion_zh": "贡献指南指定 src/ui-ux-pro-max 为事实来源，要求先改源数据/脚本/模板再同步 CLI 资源，列出 Node/npm/Python/Bun 前置条件，并说明 issue/PR/release 约定。这是仓库流程说明，未执行命令或发布步骤。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "README.vi.md",
+      "hash": "cefd29bfeb350f61110f293302096ffcf7709748d87b88465c732ae81ae1adcf",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-nextlevel-query-fit-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The Vietnamese README describes parallel design-system searches and staged relevance reasoning, catalog/rule counts, style choices, agent installation and project/global scopes, token queries and version-aware legacy filtering, MASTER plus page overrides, and read-only/offline refresh flows with explicit review before promotion. This full-body read was not a line-by-line translation comparison; feature counts, provider claims, and commands were not independently verified.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "README.vi.md",
+          "hash": "cefd29bfeb350f61110f293302096ffcf7709748d87b88465c732ae81ae1adcf",
+          "blob": "d5e4551a04dd3811a6239207ee2163a2dd439c01",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            645
+          ]
+        ],
+        "content_role_and_conclusion": "The Vietnamese README describes parallel design-system searches and staged relevance reasoning, catalog/rule counts, style choices, agent installation and project/global scopes, token queries and version-aware legacy filtering, MASTER plus page overrides, and read-only/offline refresh flows with explicit review before promotion. This full-body read was not a line-by-line translation comparison; feature counts, provider claims, and commands were not independently verified.",
+        "content_role_and_conclusion_zh": "越南语 README 说明并行 design-system 检索与分阶段相关性判断、目录/规则数量、风格选择、agent 安装及项目/全局作用域、token 查询与版本感知旧版筛选、MASTER 加页面覆盖，以及离线只读刷新和提升前显式审核。本次完整阅读未逐行对照译文；功能数量、服务声明和命令未独立验证。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "README.zh.md",
+      "hash": "47da3425b824800ea23b00a7c5fbbba3b929bbfe52972d657bbff9b0f086eb25",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-nextlevel-query-fit-contract"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The Chinese README describes parallel design-system searches and relevance reasoning, UX resilience controls, catalog and style choices, installation scopes, stack-aware searches, version-aware legacy filters, MASTER/page-override persistence, and offline review/promotion workflows. This full-body read was not a line-by-line comparison with another locale; counts, service schedules, and commands remain documentary claims.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "README.zh.md",
+          "hash": "47da3425b824800ea23b00a7c5fbbba3b929bbfe52972d657bbff9b0f086eb25",
+          "blob": "e7bc34ae6c04e20c89000104fd3678976499d85f",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            658
+          ]
+        ],
+        "content_role_and_conclusion": "The Chinese README describes parallel design-system searches and relevance reasoning, UX resilience controls, catalog and style choices, installation scopes, stack-aware searches, version-aware legacy filters, MASTER/page-override persistence, and offline review/promotion workflows. This full-body read was not a line-by-line comparison with another locale; counts, service schedules, and commands remain documentary claims.",
+        "content_role_and_conclusion_zh": "中文 README 说明并行 design-system 检索与相关性判断、UX 韧性控制、目录/风格选择、安装作用域、按技术栈检索、版本感知旧版筛选、MASTER/页面覆盖持久化及离线审核/提升流程。本次完整阅读未逐行与其他语言对照；数量、服务时程和命令仍是文档声明。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "SECURITY.md",
+      "hash": "72e07fd7235c15dfb2a91003a62b13427eb22645f413b014c3dad87350b79e2c",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "The security policy states supported-version scope, private vulnerability reporting rather than public disclosure, requested reproduction/version/platform/log details, response and remediation targets, and in-scope installer/search execution, traversal, unsafe writes, and release-pipeline risks versus excluded design-output choices. It is a policy statement; current hosting/reporting behavior and response targets were not verified.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "SECURITY.md",
+          "hash": "72e07fd7235c15dfb2a91003a62b13427eb22645f413b014c3dad87350b79e2c",
+          "blob": "f7ca4b04a7f3ca44dbbf5264e54925d008aab3b6",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            35
+          ]
+        ],
+        "content_role_and_conclusion": "The security policy states supported-version scope, private vulnerability reporting rather than public disclosure, requested reproduction/version/platform/log details, response and remediation targets, and in-scope installer/search execution, traversal, unsafe writes, and release-pipeline risks versus excluded design-output choices. It is a policy statement; current hosting/reporting behavior and response targets were not verified.",
+        "content_role_and_conclusion_zh": "安全政策说明支持版本范围、漏洞应私下报告而非公开披露、所需复现/版本/平台/日志信息、响应与修复目标，以及安装器/搜索执行、路径穿越、不安全写入、发布管道等范围和设计输出选择等排除项。它是政策文本，未核查当前托管/报告行为或响应目标。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "cli/assets/templates/base/quick-reference.md",
+      "hash": "0a6da6ef08190792fa2d55eaa44ddaac0c071ff2cf9a087d372924c2a99e942f",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A Chinese quick-reference catalog groups actionable UX rules across accessibility, touch, performance, style, layout, typography, animation, forms, navigation, and charts. It explicitly says the script does not read this table, so the examples (focus, touch targets, feedback, wrapping, interruptible motion, error focus, navigation invariants, accessible chart alternatives) are human/AI reference content rather than executable enforcement.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "cli/assets/templates/base/quick-reference.md",
+          "hash": "0a6da6ef08190792fa2d55eaa44ddaac0c071ff2cf9a087d372924c2a99e942f",
+          "blob": "992ad8c792541a9a91cb7731fc8708fc6e87eb50",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            313
+          ]
+        ],
+        "content_role_and_conclusion": "A Chinese quick-reference catalog groups actionable UX rules across accessibility, touch, performance, style, layout, typography, animation, forms, navigation, and charts. It explicitly says the script does not read this table, so the examples (focus, touch targets, feedback, wrapping, interruptible motion, error focus, navigation invariants, accessible chart alternatives) are human/AI reference content rather than executable enforcement.",
+        "content_role_and_conclusion_zh": "中文速查目录按无障碍、触控、性能、风格、布局、字体、动画、表单、导航和图表归类 UX 规则。文件明确说明脚本不读取该表，因此其中焦点、触控目标、反馈、换行、可中断动效、错误焦点、导航不变量和图表替代文本等示例是人/AI 参考内容，并非可执行强制检查。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "docs/journals/260813-0816-phase-6-accessibility-refresh.md",
+      "hash": "6619802268999cb818a15cb451e4decf64ab2687d97bb95f56486d5cbcf9138a",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A historical phase-6 journal describes how adversarial review found semantic gaps after initial gates, then records fixes involving legacy chart shape, role-aware palette checks, query routing, icon semantics, imports, React safety, reduced motion, form errors, and provenance. Its tests and precision figures are reported history, not reproduced in this review; the journal is not a reusable validation procedure by itself.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "docs/journals/260813-0816-phase-6-accessibility-refresh.md",
+          "hash": "6619802268999cb818a15cb451e4decf64ab2687d97bb95f56486d5cbcf9138a",
+          "blob": "c9f935cfa36c2a0519fbb98011a913ccaeaa9c5a",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            40
+          ]
+        ],
+        "content_role_and_conclusion": "A historical phase-6 journal describes how adversarial review found semantic gaps after initial gates, then records fixes involving legacy chart shape, role-aware palette checks, query routing, icon semantics, imports, React safety, reduced motion, form errors, and provenance. Its tests and precision figures are reported history, not reproduced in this review; the journal is not a reusable validation procedure by itself.",
+        "content_role_and_conclusion_zh": "phase-6 历史日志记载：初始门禁通过后，对抗式复核仍发现语义缺口，随后修复旧图表结构、按角色校验色板、查询路由、图标语义、导入、React 安全、减少动效、表单错误和来源记录。测试及精度数据只是历史报告，本次未复现；日志本身也不是可直接复用的验证流程。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "preview/xiaomaomi-app.html",
+      "hash": "af0018d3c3ae96a4d491b7ffdd3197f6c1faea2437545106a24981eabf593577",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A self-contained pet-care mobile dashboard demo uses named CSS variables, rounded cards, a three-column action grid, hard-coded feeding/activity facts, a fixed bottom navigation, focus-visible button/card styles, and an aria-labelled avatar/nav. The anchors are placeholders and there is no application data or interaction logic; the sample does not establish WCAG contrast, responsive quality, or product behavior, and fonts/scripts were not loaded or run.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "preview/xiaomaomi-app.html",
+          "hash": "af0018d3c3ae96a4d491b7ffdd3197f6c1faea2437545106a24981eabf593577",
+          "blob": "075a9a1e6944bef49ddb2a9321c6186380f04fd6",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            411
+          ]
+        ],
+        "content_role_and_conclusion": "A self-contained pet-care mobile dashboard demo uses named CSS variables, rounded cards, a three-column action grid, hard-coded feeding/activity facts, a fixed bottom navigation, focus-visible button/card styles, and an aria-labelled avatar/nav. The anchors are placeholders and there is no application data or interaction logic; the sample does not establish WCAG contrast, responsive quality, or product behavior, and fonts/scripts were not loaded or run.",
+        "content_role_and_conclusion_zh": "独立宠物照护移动仪表盘样例使用命名 CSS 变量、圆角卡片、三列操作网格、硬编码喂食/活动信息、固定底部导航、focus-visible 按钮/卡片样式及带 aria 标签的头像/导航。链接只是占位符，没有应用数据或交互逻辑；样例不能证明 WCAG 对比度、响应式质量或产品行为，也未加载字体/运行脚本。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/.claude/commands/design-plan.md",
+      "hash": "bd7298174dd61783872fe2e2253117782272bfca85052c94e825bf2046302b4c",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "A prompt command delays coding until a compact design plan captures purpose, audience, tone, constraints, differentiation, a signature element, palette, type roles, spacing, and rationale; it also asks for relevant design-system domains. It is a human decision scaffold, not proof that plans improve outcomes or that coding is actually gated.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/.claude/commands/design-plan.md",
+          "hash": "bd7298174dd61783872fe2e2253117782272bfca85052c94e825bf2046302b4c",
+          "blob": "92611eec0c62dce5196475237cc666babf7b1fe4",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            26
+          ]
+        ],
+        "content_role_and_conclusion": "A prompt command delays coding until a compact design plan captures purpose, audience, tone, constraints, differentiation, a signature element, palette, type roles, spacing, and rationale; it also asks for relevant design-system domains. It is a human decision scaffold, not proof that plans improve outcomes or that coding is actually gated.",
+        "content_role_and_conclusion_zh": "提示命令要求先形成简洁设计计划再写代码，记录目标、受众、语气、约束、差异点、标志性元素、色板、字体角色、间距和理由，并选择相关 design-system 领域。它是人工决策脚手架，不证明计划能改善结果或真正阻止编码。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/.claude/commands/design-review.md",
+      "hash": "df81f0c262fff22f9337efc6d1c64d8bafa6ed23db340522e056fb4ffbdd18de",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The review command delegates to a design-review agent and calls for real-browser/Playwright screenshots across viewport tiers, blocker-to-nit ranking, and missing-target clarification. If no browser exists, it permits only a labeled heuristic Node fallback; the command was not invoked, so it provides no project review evidence.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/.claude/commands/design-review.md",
+          "hash": "df81f0c262fff22f9337efc6d1c64d8bafa6ed23db340522e056fb4ffbdd18de",
+          "blob": "d2a59883430f68e3a95c570541db403a1967a112",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            15
+          ]
+        ],
+        "content_role_and_conclusion": "The review command delegates to a design-review agent and calls for real-browser/Playwright screenshots across viewport tiers, blocker-to-nit ranking, and missing-target clarification. If no browser exists, it permits only a labeled heuristic Node fallback; the command was not invoked, so it provides no project review evidence.",
+        "content_role_and_conclusion_zh": "审核命令委派给 design-review agent，要求用真实浏览器/Playwright 对多个视口截图并按 blocker 到 nit 排序，缺少目标时先澄清。没有浏览器时只允许明确标注的 Node 启发式回退。本次未调用该命令，因此不构成任何项目审核证据。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/README.md",
+      "hash": "aa9e3a481566d78c357333a3b2b90530ecb0cf84ec11861ab7d31c1c6199cbea",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The stack README composes knowledge, aesthetic direction, component sourcing, browser feedback, and independent review into plan→commit→build→observe→review, with a separate heuristic script. Its displayed style/font/rule totals disagree with the current UI/UX Pro Max skill's totals, so those figures are stale documentation; integrations and visual results were not run.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/README.md",
+          "hash": "aa9e3a481566d78c357333a3b2b90530ecb0cf84ec11861ab7d31c1c6199cbea",
+          "blob": "107c463998b15fda36290043cbae57c300db1b52",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            96
+          ]
+        ],
+        "content_role_and_conclusion": "The stack README composes knowledge, aesthetic direction, component sourcing, browser feedback, and independent review into plan→commit→build→observe→review, with a separate heuristic script. Its displayed style/font/rule totals disagree with the current UI/UX Pro Max skill's totals, so those figures are stale documentation; integrations and visual results were not run.",
+        "content_role_and_conclusion_zh": "stack README 将知识库、美学方向、组件来源、浏览器反馈和独立审核组合为 plan→commit→build→observe→review，并另列启发式脚本。文中风格/字体/规则总数与当前 UI/UX Pro Max skill 不一致，属于过时数据；集成和视觉结果均未运行。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/docs/STACK.md",
+      "hash": "5a52f8f43b059069eb36852a022db468077834740672085cfd382ada3fdbf0d2",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "reason": "An architecture note describes knowledge, aesthetic commitment, UI components, visual-feedback integration, and reviewer layers, while reporting example inventory and viewport-phase counts. Its reported counts conflict with the current skill/docs snapshot and are not freshness guarantees; MCP integrations or review behavior were not tested.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/docs/STACK.md",
+          "hash": "5a52f8f43b059069eb36852a022db468077834740672085cfd382ada3fdbf0d2",
+          "blob": "8672fa05cf0fc2333f68c03f521c6fc1f8003b2f",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            67
+          ]
+        ],
+        "content_role_and_conclusion": "An architecture note describes knowledge, aesthetic commitment, UI components, visual-feedback integration, and reviewer layers, while reporting example inventory and viewport-phase counts. Its reported counts conflict with the current skill/docs snapshot and are not freshness guarantees; MCP integrations or review behavior were not tested.",
+        "content_role_and_conclusion_zh": "架构说明介绍知识、美学承诺、UI 组件、视觉反馈集成和审核分层，并报告示例目录及视口阶段数量。其数量与当前 skill/文档快照不一致，不能视为最新保证；未测试 MCP 集成或审核行为。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    },
+    {
+      "path": "stack/docs/WORKFLOW.md",
+      "hash": "9382897ea79fe1d01a1c0513089947ec32e989b567ec1f6acad7cedf7d8d23b4",
+      "hash_kind": "sha256-normalized-utf8-lf",
+      "disposition": "analyzed",
+      "candidate_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "review_kind": "full-semantic",
+      "reason": "The workflow prescribes plan→aesthetic commitment→build→browser observation→independent review, with a pricing-page walkthrough across mobile/desktop, billing/focus states, screenshot correction loops, and severity gates. It presents a repeatable evidence loop, but its production/example claims and actual browser outcomes were not verified here.",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/docs/WORKFLOW.md",
+          "hash": "9382897ea79fe1d01a1c0513089947ec32e989b567ec1f6acad7cedf7d8d23b4",
+          "blob": "8c2fa7850ff2d3327d404034e0b345a3f8834570",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "review_record": "docs/audit/nextlevel-reread-2-closure.json",
+        "actual_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ],
+        "content_role_and_conclusion": "The workflow prescribes plan→aesthetic commitment→build→browser observation→independent review, with a pricing-page walkthrough across mobile/desktop, billing/focus states, screenshot correction loops, and severity gates. It presents a repeatable evidence loop, but its production/example claims and actual browser outcomes were not verified here.",
+        "content_role_and_conclusion_zh": "工作流规定 plan→明确美学→实现→浏览器观察→独立审核，并以定价页为例覆盖移动/桌面、计费/焦点状态、截图修正循环和严重度门槛。它提出可重复的证据循环，但生产/示例效果及真实浏览器结果未在本次核验。",
+        "execution": "Frozen Git blob read-only semantic review. No source skill/script, sample page, browser, package installer, test runner, network/API, paid evaluation, or deployment was executed; documentary claims were not independently runtime-verified."
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "candidate_update_suggestions": [],
+  "partition_reconciliation": {
+    "assigned_files": 27,
+    "semantically_read_files": 27,
+    "frozen_source_lines": 5614,
+    "frozen_source_lf_terminators": 5614,
+    "incomplete_or_truncated_outputs": [],
+    "candidate_curation": "No distinct candidate was added. The semantic-alias mechanism is supported by the semantic-tokens reference; query-fit support is limited to the UI/UX Pro Max skill and the two READMEs that actually explain that retrieval contract; browser-evidence/fallback support is limited to the design-review and stack workflow docs. Remaining files are static reference tables, templates, examples, contribution/security policy, historical notes, or stale inventory summaries. Do not infer execution, measurable design quality, translation parity, or current provider/version behavior.",
+    "merge_rule": "Join by repo/path/hash and apply only to matching rows still requiring refreshed evidence at the assigned frozen commit. Preserve unrelated rows, candidates, and non-pending outcomes."
+  },
+  "execution": "All assigned content was read from frozen Git blobs at the exact commit. The only helper activity was read-only Git blob display and metadata/hash calculation. No source code, skill instructions, scripts, tests, browser, network/API, paid evaluation, or deployment was executed."
+}

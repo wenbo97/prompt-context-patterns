@@ -1,6 +1,6 @@
 """Emit line-preserving method text or complete canonical deltas for review."""
 import json,pathlib,re,difflib,sys
-OUT=pathlib.Path(__file__).resolve().parent;BASE=pathlib.Path('D:/Projects/open-skills/affaan-m/ECC')
+OUT=pathlib.Path(__file__).resolve().parent;BASE=pathlib.Path('D:/A_Projects/open-skills/affaan-m/ECC')
 state=json.loads((OUT/'ecc-variants-state.json').read_text(encoding='utf-8'))
 def read(p):return (BASE/p).read_text(encoding='utf-8-sig').replace('\r\n','\n').splitlines()
 def method(lines):

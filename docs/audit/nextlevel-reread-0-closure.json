@@ -1,0 +1,945 @@
+{
+  "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+  "review_status": "fresh-full-source-reread-ready-for-parent-merge",
+  "source_root": "D:\\A_Projects\\open-skills\\nextlevelbuilder\\ui-ux-pro-max-skill",
+  "file_updates": [
+    {
+      "path": ".claude/skills/brand/references/approval-checklist.md",
+      "hash": "1cbf5f0fb3aa780c1a1406f56afe16f6af8e2e59165b8efc40038c7c0847f5b6",
+      "content_hash": "1cbf5f0fb3aa780c1a1406f56afe16f6af8e2e59165b8efc40038c7c0847f5b6",
+      "disposition": "analyzed",
+      "reason": "Reviews purpose/audience, visual identity/accessibility, copy, technical/platform, legal/regulatory, reviewer sign-off, final approval, limited automated checks, and archival.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/approval-checklist.md",
+          "blob": "0ce4bb69d7c14116f86fa37b53b1427efe78d9b7",
+          "hash": "1cbf5f0fb3aa780c1a1406f56afe16f6af8e2e59165b8efc40038c7c0847f5b6",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            169
+          ]
+        ],
+        "content_role_and_conclusion": "brand-asset approval checklist: Reviews purpose/audience, visual identity/accessibility, copy, technical/platform, legal/regulatory, reviewer sign-off, final approval, limited automated checks, and archival.",
+        "limits": "The 60/30/10 ratio, contrast/size values and platform examples are source assertions only; no validator or current platform rule was run. This is a checklist, not an implemented validation mechanism.",
+        "distinct_method_assessment": "No independent method; reusable review checklist.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/asset-organization.md",
+      "hash": "de98123417e9c5a1cc71a78131bba979c4c8ed2e5289e6c7a7f166576e488101",
+      "content_hash": "de98123417e9c5a1cc71a78131bba979c4c8ed2e5289e6c7a7f166576e488101",
+      "disposition": "analyzed",
+      "reason": "Defines metadata-vs-raw-assets tree, filename grammar, manifest/version entries, tag categories, search snippets, and cleanup sequence.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/asset-organization.md",
+          "blob": "5c69677e16b9abeb90f52c03d9ba59d83c4e0574",
+          "hash": "de98123417e9c5a1cc71a78131bba979c4c8ed2e5289e6c7a7f166576e488101",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            157
+          ]
+        ],
+        "content_role_and_conclusion": "brand asset organization reference: Defines metadata-vs-raw-assets tree, filename grammar, manifest/version entries, tag categories, search snippets, and cleanup sequence.",
+        "limits": "Schema, folder examples, commands, model names and >100MB convention are illustrative; no schema consumer or script was executed.",
+        "distinct_method_assessment": "No independent method beyond conventional asset cataloging guidance.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/color-palette-management.md",
+      "hash": "c429298ffe3955edb8b22c9f51426fef75e83d02848cd4300e89c0d3fc34b44a",
+      "content_hash": "c429298ffe3955edb8b22c9f51426fef75e83d02848cd4300e89c0d3fc34b44a",
+      "disposition": "analyzed",
+      "reason": "Structures colors as primary/secondary/neutral/semantic roles; shows table, CSS variable and Tailwind representations, contrast criteria, extraction/validation stages, output and do/don’t examples.",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/color-palette-management.md",
+          "blob": "042e29c5a4b926692cd2bfa33fe993e1135165ee",
+          "hash": "c429298ffe3955edb8b22c9f51426fef75e83d02848cd4300e89c0d3fc34b44a",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            186
+          ]
+        ],
+        "content_role_and_conclusion": "brand palette documentation and compliance guidance: Structures colors as primary/secondary/neutral/semantic roles; shows table, CSS variable and Tailwind representations, contrast criteria, extraction/validation stages, output and do/don’t examples.",
+        "limits": "Ratios, percentages, color associations and sample output are unvalidated source guidance; no extraction or contrast check was run.",
+        "distinct_method_assessment": "Supports semantic color naming/value/usage; corroborates core-leon-semantic-token-contract.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/messaging-framework.md",
+      "hash": "24b2500a72867b55dd10f4bf359178b0eb347fddd852659ce47b69d9f597d4e6",
+      "content_hash": "24b2500a72867b55dd10f4bf359178b0eb347fddd852659ce47b69d9f597d4e6",
+      "disposition": "analyzed",
+      "reason": "Presents mission→vision→value proposition→positioning→messages→proof points; includes audience mapping, elevator-pitch lengths and five message tests.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/messaging-framework.md",
+          "blob": "983e8431ccd58bcf132ef5990c6ac7f4f187b5f7",
+          "hash": "24b2500a72867b55dd10f4bf359178b0eb347fddd852659ce47b69d9f597d4e6",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "content_role_and_conclusion": "brand messaging framework: Presents mission→vision→value proposition→positioning→messages→proof points; includes audience mapping, elevator-pitch lengths and five message tests.",
+        "limits": "Templates are prompts/examples; no audience testing or efficacy evidence is supplied.",
+        "distinct_method_assessment": "No distinct method candidate; structured writing scaffold.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/brand/references/typography-specifications.md",
+      "hash": "921c3d9e6ddfde2677b9a3e32eee94c7922f54f22c1f380c5ed2eb25a7d5bfa9",
+      "content_hash": "921c3d9e6ddfde2677b9a3e32eee94c7922f54f22c1f380c5ed2eb25a7d5bfa9",
+      "disposition": "analyzed",
+      "reason": "Defines font roles/loading, type scale, responsive adjustments, weights, line-height/spacing, CSS/Tailwind variables, pairings and accessibility minima.",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/brand/references/typography-specifications.md",
+          "blob": "0e7b620bd97d55ddaed52c6963f25568ee0bb670",
+          "hash": "921c3d9e6ddfde2677b9a3e32eee94c7922f54f22c1f380c5ed2eb25a7d5bfa9",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            214
+          ]
+        ],
+        "content_role_and_conclusion": "brand typography reference: Defines font roles/loading, type scale, responsive adjustments, weights, line-height/spacing, CSS/Tailwind variables, pairings and accessibility minima.",
+        "limits": "Scale and minima are generic source recommendations; no font compatibility, render or accessibility measurement was run.",
+        "distinct_method_assessment": "Supports named typography values/roles; corroborates core-leon-semantic-token-contract.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/component-specs.md",
+      "hash": "b265d979a741dd748d4e595e6898ae430faeef4f6d13d7a634fa6241b91d2da4",
+      "content_hash": "b265d979a741dd748d4e595e6898ae430faeef4f6d13d7a634fa6241b91d2da4",
+      "disposition": "analyzed",
+      "reason": "Documents variants, sizes, states and anatomy for buttons, inputs, cards, badges, alerts, dialogs and tables, with use cases and spacing examples.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/component-specs.md",
+          "blob": "cc7821b33a86faa8200b9defb1c522401aa21cf9",
+          "hash": "b265d979a741dd748d4e595e6898ae430faeef4f6d13d7a634fa6241b91d2da4",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            236
+          ]
+        ],
+        "content_role_and_conclusion": "component specification catalog: Documents variants, sizes, states and anatomy for buttons, inputs, cards, badges, alerts, dialogs and tables, with use cases and spacing examples.",
+        "limits": "Values are descriptive examples; there is no implementation or established behavior, contrast or platform correctness.",
+        "distinct_method_assessment": "No distinct method candidate.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design-system/references/component-tokens.md",
+      "hash": "e27f8f5999badee425c98235eabbd2cb3ebe2a1a364766d5c7a6b3134ceaaec8",
+      "content_hash": "e27f8f5999badee425c98235eabbd2cb3ebe2a1a364766d5c7a6b3134ceaaec8",
+      "disposition": "analyzed",
+      "reason": "Maps button, input, card, badge, alert, dialog and table tokens to semantic tokens, then demonstrates consuming button variables in CSS.",
+      "candidate_keys": [
+        "core-leon-semantic-token-contract"
+      ],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design-system/references/component-tokens.md",
+          "blob": "912ab9da54b19c9ce631bacec8d17e96245f9dea",
+          "hash": "e27f8f5999badee425c98235eabbd2cb3ebe2a1a364766d5c7a6b3134ceaaec8",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            214
+          ]
+        ],
+        "content_role_and_conclusion": "component token reference: Maps button, input, card, badge, alert, dialog and table tokens to semantic tokens, then demonstrates consuming button variables in CSS.",
+        "limits": "A token naming example only; tokens are not connected to a running design system and dependency values were not checked.",
+        "distinct_method_assessment": "Directly supports component tokens referencing semantic roles; corroborates core-leon-semantic-token-contract.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/cip-deliverable-guide.md",
+      "hash": "1424e120b967288e2334f24fcfa5cdc7f238420326a7444f4c5597efecfabc41",
+      "content_hash": "1424e120b967288e2334f24fcfa5cdc7f238420326a7444f4c5597efecfabc41",
+      "disposition": "analyzed",
+      "reason": "Lists logo variants, stationery, office signage, apparel, vehicle, digital, event and promotional deliverables with example specs.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/cip-deliverable-guide.md",
+          "blob": "4c9524e17fdd707b7a60bbee8269082403e8a955",
+          "hash": "1424e120b967288e2334f24fcfa5cdc7f238420326a7444f4c5597efecfabc41",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            95
+          ]
+        ],
+        "content_role_and_conclusion": "corporate identity deliverable catalog: Lists logo variants, stationery, office signage, apparel, vehicle, digital, event and promotional deliverables with example specs.",
+        "limits": "Physical dimensions/materials and ADA reference are not checked against current production standards; this is a scope checklist.",
+        "distinct_method_assessment": "No independent method candidate.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/cip-design.md",
+      "hash": "1194f59a330fa70052d193c6ff8c1f6b907cd1ad1eb182a7f21b7b8020f7bf74",
+      "content_hash": "1194f59a330fa70052d193c6ff8c1f6b907cd1ad1eb182a7f21b7b8020f7bf74",
+      "disposition": "analyzed",
+      "reason": "Routes searches across deliverable/style/industry/mockup domains; gives a brief→mockup→HTML presentation sequence and model, deliverable and style taxonomies.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/cip-design.md",
+          "blob": "40377690524212109579e0036c6523c23cd3d087",
+          "hash": "1194f59a330fa70052d193c6ff8c1f6b907cd1ad1eb182a7f21b7b8020f7bf74",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            121
+          ]
+        ],
+        "content_role_and_conclusion": "corporate identity program command guide: Routes searches across deliverable/style/industry/mockup domains; gives a brief→mockup→HTML presentation sequence and model, deliverable and style taxonomies.",
+        "limits": "Commands, API/model names, setup, packages and counts were not tested; no source script/provider was run.",
+        "distinct_method_assessment": "Product-specific CLI recipe; no distinct reusable pattern admitted.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/cip-prompt-engineering.md",
+      "hash": "4bf3a0c858f38c230e43e872857b72d9eb692e066e8de5920da75aac733e753c",
+      "content_hash": "4bf3a0c858f38c230e43e872857b72d9eb692e066e8de5920da75aac733e753c",
+      "disposition": "analyzed",
+      "reason": "Composes a base prompt from deliverable, brand, style, colors, typography, placement, materials/finish, context and mood; adds deliverable/style/lighting/context/quality modifiers and negatives.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/cip-prompt-engineering.md",
+          "blob": "57bb178547e90bd5dd7bdfa2b357b681a38067ba",
+          "hash": "4bf3a0c858f38c230e43e872857b72d9eb692e066e8de5920da75aac733e753c",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ],
+        "content_role_and_conclusion": "CIP mockup prompt composition guide: Composes a base prompt from deliverable, brand, style, colors, typography, placement, materials/finish, context and mood; adds deliverable/style/lighting/context/quality modifiers and negatives.",
+        "limits": "Modifiers and “8k” do not establish generated image fidelity; no model call was made.",
+        "distinct_method_assessment": "Prompt template, not a distinct procedural mechanism.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/logo-color-psychology.md",
+      "hash": "3fd0e93e24c3b2ea7f3be778e8f2d03b1c62c7c6eab3ade478c8fca332bff287",
+      "content_hash": "3fd0e93e24c3b2ea7f3be778e8f2d03b1c62c7c6eab3ade478c8fca332bff287",
+      "disposition": "analyzed",
+      "reason": "Maps color to claimed psychology, industries, example hex/pairings and industry palettes; lists harmony schemes and contrast/color-vision reminders.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/logo-color-psychology.md",
+          "blob": "6ce29fb7b8148fd1a1db4d9e922823a40740ee56",
+          "hash": "3fd0e93e24c3b2ea7f3be778e8f2d03b1c62c7c6eab3ade478c8fca332bff287",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "content_role_and_conclusion": "logo color association reference: Maps color to claimed psychology, industries, example hex/pairings and industry palettes; lists harmony schemes and contrast/color-vision reminders.",
+        "limits": "Associations and industry advice are broad editorial generalizations, not validated causal evidence; do not treat as universal.",
+        "distinct_method_assessment": "No independent method candidate.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/slides-html-template.md",
+      "hash": "fd5b051a37365fc6059c75bb388ec6f64daf1bd9ae938b287b6d762dc83c0c35",
+      "content_hash": "fd5b051a37365fc6059c75bb388ec6f64daf1bd9ae938b287b6d762dc83c0c35",
+      "disposition": "analyzed",
+      "reason": "Shows HTML/CSS token slots, 16:9 deck and responsive sizing, active-slide/progress/counter, arrow/space/click navigation, Chart.js, animation and background-image examples.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/slides-html-template.md",
+          "blob": "8b5a178f6c28c3bacc4f411c587c1495a48c778c",
+          "hash": "fd5b051a37365fc6059c75bb388ec6f64daf1bd9ae938b287b6d762dc83c0c35",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            295
+          ]
+        ],
+        "content_role_and_conclusion": "single-file responsive slide-deck template: Shows HTML/CSS token slots, 16:9 deck and responsive sizing, active-slide/progress/counter, arrow/space/click navigation, Chart.js, animation and background-image examples.",
+        "limits": "Not rendered or tested; keyboard/focus accessibility, CDN and font/image availability remain unverified.",
+        "distinct_method_assessment": "Implementation example only; no distinct method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/slides.md",
+      "hash": "5630d5daec947ff58ab1ac97c7a1ee77a21cf6f5dce5155535b65d291691979f",
+      "content_hash": "5630d5daec947ff58ab1ac97c7a1ee77a21cf6f5dce5155535b65d291691979f",
+      "disposition": "analyzed",
+      "reason": "Lists topic guides and routes: infer presentation type, load creation guide, choose layout, apply copy formula, use HTML template, then choose strategy.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/slides.md",
+          "blob": "748577ddb3183189d0e22faba0ada84ba651b8ce",
+          "hash": "5630d5daec947ff58ab1ac97c7a1ee77a21cf6f5dce5155535b65d291691979f",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            42
+          ]
+        ],
+        "content_role_and_conclusion": "slide-design reference router: Lists topic guides and routes: infer presentation type, load creation guide, choose layout, apply copy formula, use HTML template, then choose strategy.",
+        "limits": "A short index and claimed feature summary; target guides are outside this reread partition.",
+        "distinct_method_assessment": "Routing checklist; no independent candidate.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/design/references/social-photos-design.md",
+      "hash": "5ea9aec209d089a01eb9f689b11f9707ef80443e0ab7602e5c63022afe42d082",
+      "content_hash": "5ea9aec209d089a01eb9f689b11f9707ef80443e0ab7602e5c63022afe42d082",
+      "disposition": "analyzed",
+      "reason": "Eight stages: plan work; parse platform/brand/content; create and approve concepts; make per-concept/per-size HTML; capture exact-size images after assets settle; inspect/fix/re-export; report; organize outputs.",
+      "candidate_keys": [
+        "core-nextlevel-social-asset-output-loop"
+      ],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/social-photos-design.md",
+          "blob": "1dc1fdc533c16b1ef2adb13e167977e685b7d1a4",
+          "hash": "5ea9aec209d089a01eb9f689b11f9707ef80443e0ab7602e5c63022afe42d082",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            329
+          ]
+        ],
+        "content_role_and_conclusion": "social image production workflow: Eight stages: plan work; parse platform/brand/content; create and approve concepts; make per-concept/per-size HTML; capture exact-size images after assets settle; inspect/fix/re-export; report; organize outputs.",
+        "limits": "Dimensions, delays, typography thresholds and tips are examples needing current/task-specific verification. Screenshot QA does not prove engagement; source excludes AI image generation, video, print and posting.",
+        "distinct_method_assessment": "Distinct approved-concept→target-size HTML→raster capture→visual repair/report workflow; new candidate included.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/shadcn-accessibility.md",
+      "hash": "a22cd4ccf82b635b2b2c4f12416a0c4f7edcd825d219d6089450fa797a0d9511",
+      "content_hash": "a22cd4ccf82b635b2b2c4f12416a0c4f7edcd825d219d6089450fa797a0d9511",
+      "disposition": "analyzed",
+      "reason": "Covers focus/keyboard behavior for dialogs, menus, command palettes, forms, tabs/selects, live regions, contrast, reduced motion and testing tools/checklist.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/shadcn-accessibility.md",
+          "blob": "d1cef4d9390e61c2887c0f80690bfb20e18c6be1",
+          "hash": "a22cd4ccf82b635b2b2c4f12416a0c4f7edcd825d219d6089450fa797a0d9511",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            471
+          ]
+        ],
+        "content_role_and_conclusion": "shadcn/Radix accessibility reference: Covers focus/keyboard behavior for dialogs, menus, command palettes, forms, tabs/selects, live regions, contrast, reduced motion and testing tools/checklist.",
+        "limits": "Claims depend on library version/host code; examples not run; no screen reader, browser or WCAG audit performed.",
+        "distinct_method_assessment": "General accessibility patterns; no distinct method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/shadcn-components.md",
+      "hash": "79c4f91cbf68993a43fa3a95889c35db73de45bdd3dfd83a6830863c01aa598a",
+      "content_hash": "79c4f91cbf68993a43fa3a95889c35db73de45bdd3dfd83a6830863c01aa598a",
+      "disposition": "analyzed",
+      "reason": "Shows install commands and example use for forms/inputs, layout/navigation, overlays, feedback and display components.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/shadcn-components.md",
+          "blob": "b6c60b371f808116ea9e95a1199c86f56e5be5c2",
+          "hash": "79c4f91cbf68993a43fa3a95889c35db73de45bdd3dfd83a6830863c01aa598a",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            424
+          ]
+        ],
+        "content_role_and_conclusion": "shadcn component catalog: Shows install commands and example use for forms/inputs, layout/navigation, overlays, feedback and display components.",
+        "limits": "CLI behavior and APIs may vary by release; snippets were not compiled.",
+        "distinct_method_assessment": "Reference catalog, no distinct method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-styling/references/tailwind-customization.md",
+      "hash": "4c5adeed6263a274f74f6eb2c816ca420fd6ef4f35683582988bacd404799afe",
+      "content_hash": "4c5adeed6263a274f74f6eb2c816ca420fd6ef4f35683582988bacd404799afe",
+      "disposition": "analyzed",
+      "reason": "Shows CSS @theme tokens, custom utilities/variants/layers, @apply, plugins, legacy config, dark mode, content globs and safelist patterns.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-styling/references/tailwind-customization.md",
+          "blob": "b77ff3e7fe4fbaf2c0170d4f80677c6bc80cab8d",
+          "hash": "4c5adeed6263a274f74f6eb2c816ca420fd6ef4f35683582988bacd404799afe",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            483
+          ]
+        ],
+        "content_role_and_conclusion": "Tailwind customization reference: Shows CSS @theme tokens, custom utilities/variants/layers, @apply, plugins, legacy config, dark mode, content globs and safelist patterns.",
+        "limits": "Mixes CSS-first and JS config-era syntax; major-version compatibility must be checked. Examples were not compiled.",
+        "distinct_method_assessment": "Configuration cookbook; no distinct method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
+      "hash": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23",
+      "content_hash": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23",
+      "disposition": "analyzed",
+      "reason": "Explicitly scopes to native/mobile UI, groups icon/interaction/contrast/layout principles, then checklist for process, visuals, themes, layout and accessibility.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
+          "blob": "b2ce233287e37ec9ca13476c4014b922e9d5a0e9",
+          "hash": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            117
+          ]
+        ],
+        "content_role_and_conclusion": "native/mobile pre-delivery rules and checklist: Explicitly scopes to native/mobile UI, groups icon/interaction/contrast/layout principles, then checklist for process, visuals, themes, layout and accessibility.",
+        "limits": "Touch-target units/thresholds are source-stated; scope is native/mobile and not 1:1 desktop web. No design was tested.",
+        "distinct_method_assessment": "Checklist, not independent mechanism.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "hash": "0da813cf4d622c1a5ff9a84e7059e1dde7c6263860dedcdca5dcbb4f00c77238",
+      "content_hash": "0da813cf4d622c1a5ff9a84e7059e1dde7c6263860dedcdca5dcbb4f00c77238",
+      "disposition": "analyzed",
+      "reason": "States pledge, positive/unacceptable conduct, maintainer responsibilities, scope, reporting route and Contributor Covenant attribution.",
+      "candidate_keys": [],
+      "review_kind": "scoped-relevance",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "CODE_OF_CONDUCT.md",
+          "blob": "8190df1619c1465b3fe9653b5921744c50d6b9ac",
+          "hash": "0da813cf4d622c1a5ff9a84e7059e1dde7c6263860dedcdca5dcbb4f00c77238",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            38
+          ]
+        ],
+        "content_role_and_conclusion": "community conduct policy: States pledge, positive/unacceptable conduct, maintainer responsibilities, scope, reporting route and Contributor Covenant attribution.",
+        "limits": "Policy/contact references read as frozen text only; no enforcement/endpoint was tested.",
+        "distinct_method_assessment": "Administrative policy; no UI method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "LICENSE",
+      "hash": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014",
+      "content_hash": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014",
+      "disposition": "analyzed",
+      "reason": "Full MIT grant, notice condition and warranty/liability disclaimer.",
+      "candidate_keys": [],
+      "review_kind": "scoped-relevance",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "LICENSE",
+          "blob": "1e71cbf26660f31903807d099fe902c098fc7e4c",
+          "hash": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            21
+          ]
+        ],
+        "content_role_and_conclusion": "MIT license terms: Full MIT grant, notice condition and warranty/liability disclaimer.",
+        "limits": "Source text classification only; no legal compatibility determination.",
+        "distinct_method_assessment": "License text; no method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "README.md",
+      "hash": "13957904b9999d6e367ecbb13d4df1aeb0a945d84f2da8c69c3b22e0750d2d7f",
+      "content_hash": "13957904b9999d6e367ecbb13d4df1aeb0a945d84f2da8c69c3b22e0750d2d7f",
+      "disposition": "analyzed",
+      "reason": "Full overview includes design-system/search explanation, catalog claims, installation and invocation, query examples/version-aware legacy behavior, master/page overrides, CLI development/release, isolated catalog refresh and troubleshooting.",
+      "candidate_keys": [
+        "core-nextlevel-persisted-design-overrides"
+      ],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "README.md",
+          "blob": "8c4918afb508556ff45c5514798d3d671a4525ac",
+          "hash": "13957904b9999d6e367ecbb13d4df1aeb0a945d84f2da8c69c3b22e0750d2d7f",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            250
+          ],
+          [
+            251,
+            500
+          ],
+          [
+            501,
+            722
+          ]
+        ],
+        "content_role_and_conclusion": "repository overview and contributor/user guide: Full overview includes design-system/search explanation, catalog claims, installation and invocation, query examples/version-aware legacy behavior, master/page overrides, CLI development/release, isolated catalog refresh and troubleshooting.",
+        "limits": "Counts, release/workflow claims, commands, integrations and behavior were not verified or run. Page overrides are described but merge/replacement semantics are incomplete.",
+        "distinct_method_assessment": "Distinct persistent design-context method: project MASTER plus page-specific deviation files with lookup/precedence; new candidate included. Generic search examples do not expand the query-fit candidate.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "cli/README.md",
+      "hash": "6f2e02fa25aff521ca94f7ba103a825fba2478012e4a52b4af94984e172d2d73",
+      "content_hash": "6f2e02fa25aff521ca94f7ba103a825fba2478012e4a52b4af94984e172d2d73",
+      "disposition": "analyzed",
+      "reason": "Documents platform init, token precedence/cautions, update behavior, template generation and development checks/linking.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "cli/README.md",
+          "blob": "20ad3c37e83f8d7c62bab98988e27cb0fcc33f0f",
+          "hash": "6f2e02fa25aff521ca94f7ba103a825fba2478012e4a52b4af94984e172d2d73",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "content_role_and_conclusion": "CLI install/update/development guide: Documents platform init, token precedence/cautions, update behavior, template generation and development checks/linking.",
+        "limits": "Limits and current package behavior are README claims; commands were not executed. Secrets must remain outside checked-in files.",
+        "distinct_method_assessment": "Product usage procedure only; no distinct method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "docs/journals/260813-1622-phase-7-web-stack-freshness.md",
+      "hash": "c76f67cf3b20fa3fd010fe98739bd1d17f419a160e6c628efcb97d7b2a3e2056",
+      "content_hash": "c76f67cf3b20fa3fd010fe98739bd1d17f419a160e6c628efcb97d7b2a3e2056",
+      "disposition": "analyzed",
+      "reason": "Records false release assumption/stale APIs, missed legacy query forms, resulting parser/test changes and lesson to verify releases, syntax variants and removed APIs.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "docs/journals/260813-1622-phase-7-web-stack-freshness.md",
+          "blob": "ffeaed9bbbe3f2abffe5ce826a02d7104165f2dd",
+          "hash": "c76f67cf3b20fa3fd010fe98739bd1d17f419a160e6c628efcb97d7b2a3e2056",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            45
+          ]
+        ],
+        "content_role_and_conclusion": "phase-7 freshness incident retrospective: Records false release assumption/stale APIs, missed legacy query forms, resulting parser/test changes and lesson to verify releases, syntax variants and removed APIs.",
+        "limits": "Historical metrics/status/test outcomes are authored session claims; not rerun or independently verified.",
+        "distinct_method_assessment": "Retrospective overlaps freshness/review candidates; no new distinct method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "docs/三个 data-scripts-templates 的区别.md",
+      "hash": "f808d1c26c80a7b957f4c36372b5b249cc8961c6e7f1270f8e1598b3d9fd742b",
+      "content_hash": "f808d1c26c80a7b957f4c36372b5b249cc8961c6e7f1270f8e1598b3d9fd742b",
+      "disposition": "analyzed",
+      "reason": "Distinguishes source assets from Claude/CLI copies and sequences sync/check before publishing.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "docs/三个 data-scripts-templates 的区别.md",
+          "blob": "3cb36df13314174a164e1e8febe0588d04d20ac9",
+          "hash": "f808d1c26c80a7b957f4c36372b5b249cc8961c6e7f1270f8e1598b3d9fd742b",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            31
+          ]
+        ],
+        "content_role_and_conclusion": "Chinese source-vs-mirror maintenance guide: Distinguishes source assets from Claude/CLI copies and sequences sync/check before publishing.",
+        "limits": "Paths and sync behavior are snapshot assertions; scripts/CI were not inspected or run in this reread.",
+        "distinct_method_assessment": "Conventional source-of-truth/sync guidance; no distinct candidate.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "projects/portfolio-dark/index.html",
+      "hash": "6c9c472d7a6e42e4738a32a19405f3647c41a83a804a0edaa7cb498583a56122",
+      "content_hash": "6c9c472d7a6e42e4738a32a19405f3647c41a83a804a0edaa7cb498583a56122",
+      "disposition": "analyzed",
+      "reason": "Complete portfolio markup with hero, project cards, skills, about, contact and footer; Tailwind CDN, Google Fonts, inline config and reduced-motion CSS.",
+      "candidate_keys": [],
+      "review_kind": "scoped-relevance",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "projects/portfolio-dark/index.html",
+          "blob": "3b7b4d3122e5ab856756f61de5cd14b61ef58fbd",
+          "hash": "6c9c472d7a6e42e4738a32a19405f3647c41a83a804a0edaa7cb498583a56122",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            409
+          ]
+        ],
+        "content_role_and_conclusion": "static dark portfolio UI example: Complete portfolio markup with hero, project cards, skills, about, contact and footer; Tailwind CDN, Google Fonts, inline config and reduced-motion CSS.",
+        "limits": "Static example only, not browser-rendered. Links are placeholders, project cards are not linked, contact form has no submit handler.",
+        "distinct_method_assessment": "Authored artifact example, not a method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "projects/saas-landing/index.html",
+      "hash": "a5385877c97c753a02a2246f6b4ee6bafb5a90f84e8bd4259527f0e6cd803fef",
+      "content_hash": "a5385877c97c753a02a2246f6b4ee6bafb5a90f84e8bd4259527f0e6cd803fef",
+      "disposition": "analyzed",
+      "reason": "Complete landing layout with hero/social proof, logos, features, testimonials, pricing, CTA and footer; Tailwind CDN and Google Fonts.",
+      "candidate_keys": [],
+      "review_kind": "scoped-relevance",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "projects/saas-landing/index.html",
+          "blob": "9883fc3606fe3e321b4f330c6dfe1ee02856645d",
+          "hash": "a5385877c97c753a02a2246f6b4ee6bafb5a90f84e8bd4259527f0e6cd803fef",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            345
+          ]
+        ],
+        "content_role_and_conclusion": "static SaaS marketing page example: Complete landing layout with hero/social proof, logos, features, testimonials, pricing, CTA and footer; Tailwind CDN and Google Fonts.",
+        "limits": "Static example only, not browser-rendered; claims unverified. Many links/buttons are placeholders and no conversion behavior is wired.",
+        "distinct_method_assessment": "Authored artifact example, not a method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    },
+    {
+      "path": "stack/docs/SETUP.md",
+      "hash": "e45857d6f62b718dae38d26321bf9d3e0d67e13e3cfe46ecf39b377030f14cb9",
+      "content_hash": "e45857d6f62b718dae38d26321bf9d3e0d67e13e3cfe46ecf39b377030f14cb9",
+      "disposition": "analyzed",
+      "reason": "Orders Node/Python setup, audit install, plugin/MCP approval, command prompts and standalone audit; describes report artifacts and optional Figma/Magic MCP.",
+      "candidate_keys": [],
+      "review_kind": "full-semantic",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "stack/docs/SETUP.md",
+          "blob": "a0be5a6a77924e68bebffc6757885248eaa4e115",
+          "hash": "e45857d6f62b718dae38d26321bf9d3e0d67e13e3cfe46ecf39b377030f14cb9",
+          "hash_kind": "sha256-normalized-utf8-lf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            82
+          ]
+        ],
+        "content_role_and_conclusion": "website-design stack setup guide: Orders Node/Python setup, audit install, plugin/MCP approval, command prompts and standalone audit; describes report artifacts and optional Figma/Magic MCP.",
+        "limits": "Setup/integration not run; versions/network/platform requirements are source claims. Stack-specific operations documentation.",
+        "distinct_method_assessment": "Setup procedure, no distinct design method.",
+        "execution": "Fresh frozen-source full-body read only. No upstream skill, source script, CLI, eval, test, provider, browser or service was executed."
+      }
+    }
+  ],
+  "candidate_additions": [
+    {
+      "key": "core-nextlevel-social-asset-output-loop",
+      "name": {
+        "en": "Verify social assets in their target-size render",
+        "zh": "在目标尺寸渲染中验证社交素材"
+      },
+      "category": "workflow",
+      "tags": [
+        "workflow",
+        "design-assets",
+        "visual-qa"
+      ],
+      "status": "candidate",
+      "reason": "Distinct end-to-end method: concept approval, per-platform HTML artifacts, exact-size screenshot export, visual repair and traceable output report; no existing core candidate covers this production loop.",
+      "suggested_existing_ids": [],
+      "suggested_existing_keys": [
+        "core-addy-mode-evidence-provenance"
+      ],
+      "content": {
+        "en": {
+          "description": "Produce social-image variants as separate target-sized artifacts, then check rendered exports before delivery.",
+          "scenario": "Create a launch set for square feed posts and vertical story placements across two social platforms.",
+          "mechanism": "Record each platform size, brand and content needs; draft distinct concepts and get approval before pixel work; create a self-contained HTML file for every approved concept and target size; capture each at its exact viewport after fonts and images settle; inspect exports for clipping, safe-zone, contrast and hierarchy issues; fix the HTML, recapture, and report the decisions and output files.",
+          "bad": "Reuse one generic canvas for every platform and deliver source HTML without checking a target-size render, leaving cropped copy and fallback fonts undiscovered.",
+          "good": "Keep separate square and vertical layouts, obtain concept approval, capture at target dimensions, repair a clipped headline, re-export and list each checked file in the report.",
+          "why": "Source markup alone cannot show whether external fonts, viewport sizing or layout cause the exported image to clip or differ from intent.",
+          "expected": "Each approved concept has an export at its declared size, visible rendering issues corrected and decisions/files recorded.",
+          "boundaries": "Source dimensions, concept counts, wait times and text sizes are examples, not permanent platform standards. Recheck specs and asset readiness. Screenshot QA does not prove engagement; video, print, direct posting and AI image generation are outside scope."
+        },
+        "zh": {
+          "description": "将社交图片变体分别制作成目标尺寸的素材，并在交付前检查实际渲染结果。",
+          "scenario": "为两个社交平台制作正方形信息流图片和竖版限时动态素材。",
+          "mechanism": "记录各平台尺寸、品牌与内容要求；先提出不同创意并取得批准，再进入像素制作；为每个获批创意和目标尺寸建立独立、自包含的 HTML 文件；等待字体与图片就绪后按目标视口截图；检查裁切、安全区域、对比度和层级问题；修复 HTML、重新截图，并在报告中记录决策与输出文件。",
+          "bad": "所有平台复用一张通用画布，不检查目标尺寸渲染就交付源 HTML，导致标题裁切、字体回退等问题未被发现。",
+          "good": "分别保留正方形和竖版布局，先确认创意，再按目标尺寸截图；修复被裁切的标题，重新导出，并在报告中逐项列出检查过的文件。",
+          "why": "只看源标记无法发现外部字体、视口尺寸或布局造成的导出裁切与视觉偏差。",
+          "expected": "每个获批创意都有标明目标尺寸的导出图，已修复可见渲染问题，并记录相关决策和文件。",
+          "boundaries": "源文档中的平台尺寸、创意数量、等待时间和字号都只是有限示例，不是永久的平台标准。应重新核对规格及素材加载状态。截图检查不能证明互动效果；视频、印刷、直接发布和 AI 图片生成均不属于此方法。"
+        }
+      },
+      "sources": [
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": ".claude/skills/design/references/social-photos-design.md",
+          "line_start": 23,
+          "line_end": 275,
+          "section": "Workflow Steps 1–8: plan, approve concepts, design per-size HTML, capture, verify, report and organize",
+          "license": "MIT",
+          "license_path": "LICENSE",
+          "role": "observed-example",
+          "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/09170eec67eefd46a7ae85de61b40c194020f997/.claude/skills/design/references/social-photos-design.md#L23-L275"
+        }
+      ],
+      "example_origin": "project-authored-teaching-construction",
+      "scores": {
+        "scenario": 2,
+        "mechanism": 2,
+        "contrast": 2,
+        "observable": 2,
+        "boundaries": 2
+      },
+      "quality_total": 10,
+      "efficacy_status": "editorial-review-only",
+      "original_origin_status": "earliest-origin-not-established"
+    },
+    {
+      "key": "core-nextlevel-persisted-design-overrides",
+      "name": {
+        "en": "Persist a master design system with page-specific overrides",
+        "zh": "持久化全局设计系统与页面级覆盖"
+      },
+      "category": "workflow",
+      "tags": [
+        "workflow",
+        "design-system",
+        "context-persistence"
+      ],
+      "status": "candidate",
+      "reason": "Distinct persistence/retrieval contract: keep shared project rules centrally and store page deviations separately; adjacent to contextual precedence but adds cross-session artifact layout and lookup.",
+      "suggested_existing_ids": [],
+      "suggested_existing_keys": [
+        "core-leon-contextual-rule-precedence"
+      ],
+      "content": {
+        "en": {
+          "description": "Keep shared design rules in one project master and persist page-specific deviations separately for later retrieval.",
+          "scenario": "A multi-page product has shared color, typography and spacing rules, while checkout needs a documented exception.",
+          "mechanism": "Generate a project MASTER file for shared rules; create a page-specific file containing only deviations; when implementing a named page, look up that page file first and apply documented overrides, otherwise use the master. Make field-level merge or replacement semantics explicit.",
+          "bad": "Copy the entire master into each page file, then edit copies independently so shared rules drift and no one knows which source wins.",
+          "good": "Keep common tokens/components in MASTER.md, record only checkout-specific deviations in pages/checkout.md, and tell implementers how those deviations interact with the master.",
+          "why": "Durable shared defaults and local exceptions remain discoverable across sessions without silently conflating precedence.",
+          "expected": "A reviewer can locate the project baseline, page-specific delta and stated precedence used for that page.",
+          "boundaries": "The source proposes page overrides but leaves field-level merge versus replacement underspecified; define semantics before relying on partial files. This pattern does not validate token values or guarantee runtime retrieval."
+        },
+        "zh": {
+          "description": "将共享设计规则保存在项目主文件中，并把页面专属偏差单独持久化以便后续检索。",
+          "scenario": "多页面产品已有共享颜色、字体和间距规则，而结账页需要一项明确记录的例外。",
+          "mechanism": "为共享规则生成项目 MASTER 文件；另建页面文件，只记录偏差；实现具名页面时先查找该页面文件并应用其中明确说明的覆盖规则，否则使用主文件。明确字段级合并或替换语义。",
+          "bad": "把主文件完整复制到每个页面文件后分别修改，使共享规则逐渐漂移，也让执行者无法判断应以哪份规则为准。",
+          "good": "在 MASTER.md 保存通用 token 和组件，只在 pages/checkout.md 记录结账页偏差，并说明这些偏差与主文件的交互方式。",
+          "why": "跨会话仍能找到持久化的共享默认规则和局部例外，也不会默默混淆优先级。",
+          "expected": "审阅者能定位项目基线、页面专属差异，以及该页面采用的明确优先规则。",
+          "boundaries": "源文档提出页面覆盖，但没有充分说明字段级合并还是替换；依赖部分文件前应先定义语义。该模式本身不会验证 token 数值，也不保证运行时一定检索到文件。"
+        }
+      },
+      "sources": [
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+          "path": "README.md",
+          "line_start": 436,
+          "line_end": 469,
+          "section": "Persist Design System (Master + Overrides Pattern) and context-aware retrieval",
+          "license": "MIT",
+          "license_path": "LICENSE",
+          "role": "observed-example",
+          "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/09170eec67eefd46a7ae85de61b40c194020f997/README.md#L436-L469"
+        }
+      ],
+      "example_origin": "project-authored-teaching-construction",
+      "scores": {
+        "scenario": 2,
+        "mechanism": 2,
+        "contrast": 2,
+        "observable": 2,
+        "boundaries": 1
+      },
+      "quality_total": 9,
+      "efficacy_status": "editorial-review-only",
+      "original_origin_status": "earliest-origin-not-established"
+    }
+  ],
+  "candidate_update_suggestions": [],
+  "execution": "All 27 assigned frozen files (5,617 source lines) were freshly emitted as complete, line-numbered bodies in non-truncated sequential tool outputs; full method/example content was read. Only static reads and Git identity/hash resolution were used; upstream skills/scripts/evals/tests/providers/browsers were not executed."
+}
