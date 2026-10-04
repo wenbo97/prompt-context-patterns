@@ -1,0 +1,51 @@
+# 提示词与上下文工程参考
+
+从真实技能中提炼可迁移的方法。每个有效模式包含简短介绍、使用场景、同任务正反例、可检查结果、适用边界与来源状态。
+
+当前目录：**122** 个有效模式；**69** 个已定位原文实例；**53** 个带来源未确认标签。合并和撤下条目保留兼容入口，不计入有效数量。
+
+[English](README.md)
+
+## 本地预览
+
+需要 Node20+、Ruby3.3 与 Bundler。
+
+```bash
+npm ci
+bundle install
+npm run generate
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+
+本机隔离版本可运行 `scripts/preview.ps1`，它会使用本地安装的 Ruby。预览地址：http://127.0.0.1:4000/prompt-context-patterns/ 。
+
+## 内容与证据
+
+- [_data/patterns.json](_data/patterns.json)：权威目录与编辑结论。
+- [_patterns/](_patterns/)：独立双语正文。
+- [审核标准](methodology/index-zh.md)：质量与追溯分别评估。
+- [旧内容审核](docs/audit/legacy-review.md)：保留、合并与撤下理由。
+- [来源研究](docs/research/open-source-skills-top10.md)：仓库及固定版本入口。
+
+固定 commit 链接证明公开实例，不证明最早发明者。本站教学例独立构造，不冒充实际模型输出。历史文章保留日期与样例，缺少原始输出的数字已校正。
+
+## 验证与维护
+
+```bash
+npm test
+npm run check
+npm run check:generated
+bundle exec ruby tests/liquid-literals.rb
+bundle exec jekyll build
+npm run check:links
+npm run test:e2e
+npm --prefix eval/patternfoo ci --legacy-peer-deps --omit=peer
+npm --prefix eval/patternfoo test
+npm --prefix eval/patternfoo run build
+```
+
+构建检查不调用模型。真实 A/B 评测通过 [Patternfoo](eval/patternfoo/README.md) 显式运行。旧评测脚本留作历史样例；原始输出缺失时不宣称实验已复核。所有文本采用 CRLF。
+
+## 许可证
+
+本站采用 MIT。来源仓库的具体文件各自保留授权范围；引用不把整个来源仓库自动视为同一种许可证。

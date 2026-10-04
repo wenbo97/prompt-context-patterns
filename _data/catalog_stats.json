@@ -1,0 +1,18 @@
+{
+  "active": 122,
+  "traced": 69,
+  "untraced": 53,
+  "merged": 75,
+  "removed": 9,
+  "categories": {
+    "prompt": 8,
+    "context": 12,
+    "workflow": 26,
+    "orchestration": 11,
+    "tools": 16,
+    "output": 6,
+    "evaluation": 20,
+    "safety": 13,
+    "skill-authoring": 10
+  }
+}

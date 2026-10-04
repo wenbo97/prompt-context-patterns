@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/ko-KR/skills/backend-patterns/SKILL.md",
+    "reason": "Full method prose599lines and complete code deltas read against reviewed canonical body: task-specific REST/repository/service/middleware, cache/error/retry/auth/queue/telemetry choices. Korean retains extra in-process limiter removed from canonical: local Map and spoofable forwarded-IP not distributed trusted quota. Also adds findByIds signature/copy-before-sort/initialized retry error, retains old Zod.errors versus issues. Software API mechanics excluded from agent-pattern authoring; no new prompt method, framework scale/performance unverified.",
+    "disposition": "analyzed",
+    "depth": "full-semantic-comparison"
+  },
+  {
+    "path": "docs/ko-KR/skills/clickhouse-io/SKILL.md",
+    "reason": "Read full455line method-bearing prose, SQL/TS delta and YAML/shell context. Specific OLAP schema/query/index/materialized-view/ETL/CDC reference, no distinct agent control beyond activation. Korean adds per-process etlRunning guard/finally instead of overlapping hourly calls; local guard not distributed scheduling/exactly-once and rejected async interval remains unhandled. Other code differences localized comments; high-cardinality/order/FINAL/general speed claims workload-specific, no benchmark or database run.",
+    "disposition": "excluded",
+    "depth": "full-method-prose-domain-exclusion"
+  },
+  {
+    "path": "docs/ko-KR/skills/coding-standards/SKILL.md",
+    "reason": "Full530line method prose/context contrast and complete programming delta read. KISS/YAGNI/explicit task need and specific same-task examples reuse existing minimum-necessary-code/contrast cards; generic software implementation details excluded. Korean keeps old Zod.errors and omits sort mutation explanation although copy preserved. Universal immutable/50-line/always-memo standards need project context; no current library/effectiveness assertion or code run.",
+    "disposition": "analyzed",
+    "depth": "full-semantic-comparison"
+  },
+  {
+    "path": "docs/ko-KR/skills/frontend-patterns/SKILL.md",
+    "reason": "Full652line method prose and complete code delta read; domain React composition/hooks/forms/rendering/motion/keyboard/focus implementation, no new reusable agent orchestration. Korean useQuery depends on caller fetcher rather than stable fetcherRef canonical fix: inline callback recreates refetch and effect can loop after state updates; adds callback refs/import, no cancellation/stale result guarantee. Library performance/accessibility coverage not empirical proof; implementation specifics excluded with this actual delta.",
+    "disposition": "excluded",
+    "depth": "full-method-prose-domain-exclusion"
+  },
+  {
+    "path": "docs/ko-KR/skills/golang-patterns/SKILL.md",
+    "reason": "Full676line method prose, path/shell/YAML and code delta read: Go values/errors/interfaces/concurrency/structure/tool reference. Korean pool example copies returned bytes before buffer reused, improving domain lifetime versus canonical; no new agent method. Generic accept-interface/zero-value/gofmt/linters not prompting mechanisms, blanket Go-version/style/performance assertions unverified; no build/format mutation.",
+    "disposition": "excluded",
+    "depth": "full-method-prose-domain-exclusion"
+  },
+  {
+    "path": "docs/ko-KR/skills/golang-testing/SKILL.md",
+    "reason": "Full720line method prose plus complete shell/YAML/golden/control choices read; all439programminglines exact canonical reviewed body match. Shared causal RED→minimal GREEN, known table oracles/behavior-vs-implementation/independent cleanup and fixed-context benchmark. Coverage targets100/90/80 are policy not correctness; shell grep/awk lacks pipefail/empty-result fail-closed; short/race flags exercise only actual selected workloads. No tests/benchmarks executed.",
+    "disposition": "analyzed",
+    "depth": "full-semantic-comparison"
+  },
+  {
+    "path": "docs/ko-KR/skills/postgres-patterns/SKILL.md",
+    "reason": "Full147line activation/index/type/workload references, snippets headings and literal related-source pointers read;60SQLdomainlines equal canonical reviewed body. Specific PostgreSQL index/RLS/UPSERT/cursor/queue/tuning recipes without distinct agent instruction beyond routing. UUID/type/index preferences not universal; credits Supabase as source observation not invention proof, no query/security/currentAPI validation performed.",
+    "disposition": "excluded",
+    "depth": "full-method-prose-domain-exclusion"
+  },
+  {
+    "path": "docs/ko-KR/skills/security-review/SKILL.md",
+    "reason": "Full504line method prose/checklist and complete programming deltas read against canonical review. Korean omits invocation literal-substitution warning/driver-specific prose while $1 remains, old Zod.errors; nonce header/script matching added but base-uri/object-src/frame-ancestors removed; Solana corrected base58/nacl rather than canonical claimed nonexistent verify export. Retains checklist→actual check mechanism, not promise all code secure. Auth callerId, uploaded MIME, local quota/CSP config need actual boundaries; nonce placeholder is not real runtime generation, no scans/signatures/API executed.",
+    "disposition": "analyzed",
+    "depth": "full-semantic-comparison"
+  },
+  {
+    "path": "docs/ko-KR/skills/security-review/cloud-infrastructure-security.md",
+    "reason": "Full361line method prose and all YAML/JSON/shell policies read;91domainprogramminglines exact canonical reviewed body. Domain IAM/rotation/VPC/log/CI/CD/WAF/backup configuration checklists reuse permission/evidence gates, no variant agent method. Sketch S3 resource does not scope ListBucket correctly, OIDC workflow lacks id-token write,90-day retention not general compliance guarantee; checked configuration is not tested recovery/enforced policy. No cloud mutation.",
+    "disposition": "excluded",
+    "depth": "full-method-prose-domain-exclusion"
+  },
+  {
+    "path": "docs/ko-KR/skills/tdd-workflow/SKILL.md",
+    "reason": "Read full408line prose and all151proceduraltestcode lines, compare complete current canonical delta. Causal RED/GREEN/behavior contracts/isolated setup already captured; Korean omits concrete Bun empty-query/sort oracle but replaces600ms sleep with bounded actual result visibility/count. Empty semantic and DB-failure test callbacks still vacuous, count fixture/search-result can be stale, one-assert/fixed50ms/80% not task correctness or stability evidence. Source user workflow/context mocks retained, no test or model run.",
+    "disposition": "analyzed",
+    "depth": "full-semantic-comparison"
+  }
+]

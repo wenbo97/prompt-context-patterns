@@ -1,0 +1,93 @@
+[
+  {
+    "path": "docs/tr/rules/common/agents.md",
+    "reason": "Full Turkish semantic comparison retains plugin namespace/router, role/task routing including Rust, independent parallel reviews and diverse lenses. Omits current HarmonyOS row and delegated-result completion/collection/depth contract. No new mechanism; namespace presence is not usable-capability proof.",
+    "existing_ids": [
+      18,
+      33,
+      36,
+      127
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/coding-style.md",
+    "reason": "Complete semantic comparison retains immutable-update contrast, explicit layer errors, schema input boundary and completion checklist. Omits current KISS/DRY/YAGNI, language-dependent naming and soft size/role exceptions. Domain code-style prescriptions not extracted as prompt mechanisms; immutable data alone does not prove safe concurrency.",
+    "existing_ids": [
+      53
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/git-workflow.md",
+    "reason": "Complete Turkish semantic equivalent of full-history/triple-dot PR summary, commit format, explicit attribution choice and real development-workflow relative router. TODO test plan is planned rather than executed evidence.",
+    "existing_ids": [
+      126,
+      175
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/hooks.md",
+    "reason": "Complete semantic equivalent of event-stage routing, permission caution and progress-list feedback. Actual host tools/settings and whether event hook blocks or only reminds must be verified separately; source instructions are not runtime containment.",
+    "existing_ids": [
+      69,
+      123,
+      138,
+      177
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/patterns.md",
+    "reason": "Complete semantic equivalent of repository search, independent option lenses and skeleton iteration. Repository-interface and response-envelope domain architecture excluded from prompt-method catalog. Search/cloning does not itself verify security or suitability.",
+    "candidate_keys": [
+      "ecc-research-before-building"
+    ],
+    "existing_ids": [
+      33
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/performance.md",
+    "reason": "Complete Turkish comparison retains model complexity tiers, context headroom, critique lenses and incremental build verification. Pins model versions while canonical generic; 90% capability, 3x savings, last20% and 31,999 thinking-token default are unverified source claims, not current product facts or empirical improvements.",
+    "candidate_keys": [
+      "ecc-model-tier-routing",
+      "ecc-budget-inventory"
+    ],
+    "existing_ids": [
+      33,
+      35,
+      41
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/security.md",
+    "reason": "Complete semantic equivalent of secret/input checklist, required-secret startup validation and stop/remediate/rotate/similar-issue review. Application threat-model requirements are domain guidance and are not a new agent method or full security proof.",
+    "existing_ids": [
+      53,
+      123,
+      151
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/testing.md",
+    "reason": "Complete comparison retains expected behavior failure, minimal pass, refactor, isolated mocks and wrong-test correction; omits current Arrange-Act-Assert and descriptive-name examples. Fixed80% and all test types are source defaults; verify observed intended failure rather than setup failure.",
+    "candidate_keys": [
+      "ecc-causal-red-gate"
+    ],
+    "existing_ids": [
+      25,
+      53
+    ]
+  },
+  {
+    "path": "docs/tr/rules/common/development-workflow.md",
+    "reason": "Complete Turkish semantic comparison retains repository-first research, version-grounded primary docs, registry reuse, dependency planning, RED/GREEN and review; omits final explicit CI/merge/base pre-review gate. Source 80%-solution and 80%-coverage defaults are not evidence. No new mechanism beyond existing research-before-build, planning and causal verification.",
+    "candidate_keys": [
+      "ecc-research-before-building",
+      "ecc-version-grounded-docs",
+      "ecc-causal-red-gate"
+    ],
+    "existing_ids": [
+      18,
+      53
+    ]
+  }
+]

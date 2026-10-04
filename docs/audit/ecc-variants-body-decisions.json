@@ -1,0 +1,258 @@
+[
+  {
+    "path": "docs/ja-JP/skills/dotnet-patterns/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/dotnet-patterns/SKILL.md",
+    "body_hash": "cf881c19176b3481c42d06a560c2d17aa1f74856a2865b90d3348d0d2250fbdb",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/e2e-testing/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/e2e-testing/SKILL.md",
+    "body_hash": "d91871ab36a8f7f5fba47d229f79ca3a6e5112bf67f37326fada4b29e078d50f",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/ecc-guide/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/ecc-guide/SKILL.md",
+    "body_hash": "d6b0bdc0a05d8a29fbd86c364d0e17f401e287b6b88e51ff3d73d315baa4e196",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description retains live-repository reading before answer; detailed install/reset/task-routing activation cases are compressed. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/ecc-tools-cost-audit/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/ecc-tools-cost-audit/SKILL.md",
+    "body_hash": "6931fd122234e8afe9435cc3c22a5bf6b374e44ceedc6d0bcba2df3a5ea07f9e",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Translated description claims generic prompt-token efficiency; canonical trigger is evidence-first ECC Tools billing/runaway PR/quota/model/job leakage audit. Material discovery mismatch. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/energy-procurement/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/energy-procurement/SKILL.md",
+    "body_hash": "0f5bb58472657c53fa2b0a62910ccb45deb1fba83a0550c5499bb0e0a2f04e9b",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Multiline plain description continues without a YAML scalar marker and may parse differently; claimed expert experience is source narration, not validated effectiveness. File declares Apache-2.0 separately from root MIT. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/enterprise-agent-ops/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/enterprise-agent-ops/SKILL.md",
+    "body_hash": "899dc7b3f721e076812463927ec6162919d0c25936bc4c0952c8784b15ac09b5",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/foundation-models-on-device/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/foundation-models-on-device/SKILL.md",
+    "body_hash": "cf482f783f40ff936a9ea1cb0043aef803749208dbeda52e6195f2f2f7336880",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Translated description adds quantization/optimization/privacy scope; canonical trigger targets Apple FoundationModels guided generation/tools/snapshots on iOS26+. Do not infer unsupported quantization support. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/frontend-design-direction/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/frontend-design-direction/SKILL.md",
+    "body_hash": "3469c1dd75228f92ababb812a6948069378cea29ef2792d598a14b2306ebecdd",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Generic translated aesthetics/design-language description omits task/product-specific production UI trigger boundary. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/frontend-slides/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/frontend-slides/SKILL.md",
+    "body_hash": "cc9297ed0036595bbe302fe72925a71ffcca67b683c1a4c51ffb182b185980bf",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Generic frontend-presentation description omits concrete HTML-animation/PPT conversion and user visual-taste exploration triggers. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/fsharp-testing/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/fsharp-testing/SKILL.md",
+    "body_hash": "d159d04bf1c0feb7e090f093fea98770014f2a357a9d5ccdf53385373b95401a",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/gan-style-harness/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/gan-style-harness/SKILL.md",
+    "body_hash": "08174e5fe49367802cbc0b377acf6ba5368edde0d53c154438fde3d7fe2942aa",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Japanese wrapper misleadingly advertises image generation/metrics; identical body is autonomous application Generator-Evaluator iteration, not an image GAN workflow. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/git-workflow/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/git-workflow/SKILL.md",
+    "body_hash": "0aa3dccbf88f5f09ef2685c6cc31d226ce5e0d5b951ee691567651e67cae9462",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/google-workspace-ops/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/google-workspace-ops/SKILL.md",
+    "body_hash": "103bc2b0891a3c097e8d67a994db838306ad651d74592f171f351a0714c13651",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Wrapper advertises Workspace API/Sheets/Gmail automation while canonical body covers Drive/Docs/Sheets/Slides documents; Gmail/API scope is not established by this body. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-cdss-patterns/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/healthcare-cdss-patterns/SKILL.md",
+    "body_hash": "75a5e6990f97f80657bb39ca79a9dae92bc894de13486d8554aa4c584398ff3b",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-emr-patterns/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/healthcare-emr-patterns/SKILL.md",
+    "body_hash": "673f40e91d2fc3486ea50dcf4ed1a3c40b07ff76bf7eadc0546c8d684e11da9a",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-eval-harness/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/healthcare-eval-harness/SKILL.md",
+    "body_hash": "9a3d08b81c23c5bf2669a9e9d26524e9d9c5d926ba5c0f1e6518e5484ff6e260",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Generic translated AI-model/clinical/regulation verification description loses concrete patient-safety deployment-blocking application gate. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-phi-compliance/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/healthcare-phi-compliance/SKILL.md",
+    "body_hash": "a19596773c94d46de8e490b3c9f4a72c4eae31ea7c2d4b29db7aa36e28d4f3a3",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/hermes-imports/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/hermes-imports/SKILL.md",
+    "body_hash": "e5301ada62b30d3ba88d18537b001edab4ff01a823270540807f71a3113770a4",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Wrapper misleadingly advertises data import/mapping/integrity; actual unchanged body sanitizes private Hermes operator workflows into public ECC artifacts. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/hexagonal-architecture/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/hexagonal-architecture/SKILL.md",
+    "body_hash": "f5f6710a39207d9b41c6fc6d34e13b673280bbde12cee72f1d399d9b1f030a71",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/hipaa-compliance/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/hipaa-compliance/SKILL.md",
+    "body_hash": "71ac25172f9c2eddedbee198e7779800fd1dec3fe5990b0af29dadfb7b8b2d78",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Generic HIPAA security implementation description loses explicit US covered-entity/BAA/breach framing; copied body is an entrypoint, not compliance certification. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-network-readiness/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/homelab-network-readiness/SKILL.md",
+    "body_hash": "76dc366a13befcac23033286a6ef23f9283828efcf26871e2809aadc2b200652",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-network-setup/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/homelab-network-setup/SKILL.md",
+    "body_hash": "550fc7b73ebe3c8c6e0882ca0c050474200cf59e9cdfd2a8548defba03d428da",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-pihole-dns/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/homelab-pihole-dns/SKILL.md",
+    "body_hash": "dbc36ff3ee056c5867a3dc7bac123c7ef36ab01605c79ea616bbcb0933df7e61",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-vlan-segmentation/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/homelab-vlan-segmentation/SKILL.md",
+    "body_hash": "ecc3dce2c25f006c682f932c6aae65a05eaf16b4f88142a58e09b55dee5e5649",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-wireguard-vpn/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/homelab-wireguard-vpn/SKILL.md",
+    "body_hash": "c768abc037f2af8ca18a82534a9880a943743c99405ce219fbff58f0f43df8fd",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/hookify-rules/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/hookify-rules/SKILL.md",
+    "body_hash": "9a2280b45f02178a11916c74f5309ae99c9d8d8e54a6940b1caa8f6c4f17b819",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Generic automatic-hook implementation description omits warn-vs-block, event/predicate and YAML rule-authoring syntax boundary. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/inventory-demand-planning/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/inventory-demand-planning/SKILL.md",
+    "body_hash": "6f8640337445c4d3a6aff239fbe2689db0d82a91d3a1976e5f7b4613f2bec7f1",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Multiline plain description continues without a YAML scalar marker and may parse differently; claimed expert experience is source narration, not validated effectiveness. File declares Apache-2.0 separately from root MIT. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/investor-materials/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/investor-materials/SKILL.md",
+    "body_hash": "d4073fdcaaada8f999bf793e7e70560b38e390e305ace037d9c5564e17ec477d",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/investor-outreach/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/investor-outreach/SKILL.md",
+    "body_hash": "8e291d195ed3bd7e726c977d1dd32a58d07d76c940fa8bd4471228836e6f3001",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/kotlin-testing/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/kotlin-testing/SKILL.md",
+    "body_hash": "ed305615ee8277095a002b154b558f565c9a1d47c921a9fe99975aac26c7a968",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/laravel-patterns/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/laravel-patterns/SKILL.md",
+    "body_hash": "c4d79eff31a92e29e8e9a45f4b0fe88a473e88e7691420736c152b977ff9759d",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Description is a broader Japanese domain synopsis, omitting concrete canonical activation cases; no extra body instruction or method added. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  },
+  {
+    "path": "docs/ja-JP/skills/laravel-plugin-discovery/SKILL.md",
+    "depth": "exact-body-plus-full-wrapper-semantic",
+    "body_duplicate_of": "skills/laravel-plugin-discovery/SKILL.md",
+    "body_hash": "ed3f8b277c011f719bfe006469adc1dd77964ae21acd744bc534721c2597f893",
+    "wrapper_review": "complete",
+    "reason": "Full LF/outer-whitespace-normalized body exactly equals canonical Git file; body analysis belongs to canonical reviewer. Complete wrapper semantic comparison: Wrapper adds dependency resolution/provider integration; copied body only discovers/evaluates packages through LaraPlugins.io MCP, not installation or resolution proof. Metadata origin/version flattening differs from canonical nested metadata; no runtime discovery guarantee. No translated-body equivalence inferred."
+  }
+]

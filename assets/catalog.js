@@ -1,218 +1,108 @@
-/* Catalog pattern browser — vanilla JS + Fuse.js. Data: /assets/patterns.json */
-(function () {
-  'use strict';
-
-  var BASE = window.PB_BASEURL || '';
-  var LANG_KEY = 'pcp-lang';
-
-  // --- label maps -----------------------------------------------------------
-  var CAT = {
-    'structural-scaffolding': ['Structural Scaffolding', '结构脚手架'],
-    'execution-control': ['Execution Control', '执行控制'],
-    'safety-and-trust': ['Safety & Trust', '安全与信任'],
-    'input-output-contracts': ['I/O Contracts', '输入输出契约'],
-    'agent-orchestration': ['Agent Orchestration', 'Agent 编排'],
-    'knowledge-and-context': ['Knowledge & Context', '知识与上下文'],
-    'quality-and-feedback': ['Quality & Feedback', '质量与反馈'],
-    'advanced-orchestration': ['Advanced Orchestration', '高级编排'],
-    'advanced-quality': ['Advanced Quality', '高级质量'],
-    'advanced-safety': ['Advanced Safety', '高级安全'],
-    'advanced-workflow': ['Advanced Workflow', '高级工作流'],
-    'advanced-io-domain': ['Advanced I/O & Domain', '高级 I/O'],
-    'gap-fills': ['Gap Fills', '补充模式'],
-    'open-source-skills': ['Open-Source Skills', '开源技能'],
-    'claude-code-platform': ['Claude Code Platform', 'Claude Code 平台'],
-    'skill-authoring': ['Skill Authoring', '技能创作']
+import { readState, stateUrl, filterRows } from './browser-state.js';
+const host = document.getElementById('pattern-browser');
+if (host) {
+  const base = host.dataset.baseurl || '';
+  const el = id => document.getElementById(id);
+  const text = {
+    en: { title: 'Find a method', intro: 'Search use cases in either language. Filter methods by theme, source repository and provenance.', search: 'Search patterns and use cases', clear: 'Clear search', reset: 'Clear filters',
+      category: 'Theme', repo: 'Source repository', trace: 'Source status', traceable: 'Source instance located', untraced: 'Source unconfirmed', loading: 'Loading patterns…',
+      error: 'Pattern data could not be loaded.', retry: 'Try again', static: 'Open the static index', empty: 'No active patterns are available.', noResults: 'No methods match these conditions.',
+      count: (n,total,shown) => `${n} matching · ${shown} shown · ${total} active patterns`, more: 'Load30 more', scenario: 'Use case', detail: 'Read method', english: 'English', chinese: '中文' },
+    zh: { title: '查找方法', intro: '可以用中文或英文搜索使用场景，再按主题、来源仓库和追溯状态筛选。', search: '搜索模式与使用场景', clear: '清空搜索', reset: '清空筛选',
+      category: '主题', repo: '来源仓库', trace: '来源状态', traceable: '已定位原文实例', untraced: '来源未确认', loading: '正在加载模式…',
+      error: '未能加载模式数据。', retry: '重试', static: '打开静态索引', empty: '当前没有有效模式。', noResults: '没有符合条件的方法。',
+      count: (n,total,shown) => `匹配 ${n} 个 · 已显示 ${shown} 个 · 共 ${total} 个有效模式`, more: '再加载30个', scenario: '使用场景', detail: '阅读方法', english: 'English', chinese: '中文' },
   };
-  var SRC = {
-    '500plus': ['500+ plugins', '500+ 插件'],
-    'open-source': ['Open-source skills', '开源技能'],
-    'claude-code': ['Claude Code', 'Claude Code'],
-    'superpowers': ['superpowers', 'superpowers'],
-    'claude-plugins-official': ['claude-plugins-official', 'claude-plugins-official'],
-    'mattpocock': ['mattpocock/skills', 'mattpocock/skills']
-  };
-  var CONF = { high: ['High', '高'], medium: ['Medium', '中'], low: ['Low', '低'] };
-
-  var T = {
-    en: { search: 'Search patterns…', category: 'Category', source: 'Source', confidence: 'Confidence',
-          count: function (s, t) { return s + ' of ' + t + ' patterns'; }, empty: 'No patterns match.',
-          detail: 'detail →', pending: 'write-up pending', clear: 'clear' },
-    zh: { search: '搜索模式…', category: '分类', source: '来源', confidence: '置信度',
-          count: function (s, t) { return t + ' 个模式 · 显示 ' + s + ' 个'; }, empty: '没有匹配的模式。',
-          detail: '详情 →', pending: '正文待补', clear: '清除' }
-  };
-
-  // --- state -----------------------------------------------------------------
-  var lang = localStorage.getItem(LANG_KEY) === 'zh' ? 'zh' : 'en';
-  var data = [], fuse = null;
-  var sel = { category: new Set(), source: new Set(), confidence: new Set() };
-  var query = '';
-
-  var $search = document.getElementById('pb-search');
-  var $facets = document.getElementById('pb-facets');
-  var $count = document.getElementById('pb-count');
-  var $list = document.getElementById('pb-list');
-  var $empty = document.getElementById('pb-empty');
-  var $lang = document.getElementById('pb-lang');
-
-  function label(map, key) { var e = map[key]; return e ? e[lang === 'zh' ? 1 : 0] : key; }
-  function nameOf(p) { return lang === 'zh' ? p.name_zh : p.name_en; }
-  function problemOf(p) { return lang === 'zh' ? p.problem_zh : p.problem_en; }
-  function detailOf(p) { return lang === 'zh' ? p.detail_zh : p.detail_en; }
-
-  // --- data load -------------------------------------------------------------
-  fetch(BASE + '/assets/patterns.json')
-    .then(function (r) { return r.json(); })
-    .then(function (rows) {
-      data = rows;
-      // Fuzzy search is progressive enhancement: if the Fuse library failed to
-      // load, filters + list still work; only the search box gets disabled.
-      try {
-        fuse = new Fuse(rows, {
-          keys: [
-            { name: 'name_en', weight: 2 }, { name: 'name_zh', weight: 2 },
-            'problem_en', 'problem_zh'
-          ],
-          threshold: 0.35, ignoreLocation: true, minMatchCharLength: 2
-        });
-      } catch (e) { fuse = null; }
-      applyStaticText();
-      renderFacets();
-      render();
-      if (!fuse) { $search.disabled = true; $search.placeholder = 'search unavailable'; }
-    })
-    .catch(function () { $empty.hidden = false; $empty.textContent = 'Failed to load patterns.json'; });
-
-  // --- facets ----------------------------------------------------------------
-  function counts(field) {
-    var m = {};
-    data.forEach(function (p) { if (p[field]) m[p[field]] = (m[p[field]] || 0) + 1; });
-    return m;
+  let remembered = 'en'; try { remembered = localStorage.getItem('pcp-language') || 'en'; } catch (_) {}
+  let state = readState(location.href, remembered); let rows = []; let fuse = null; let request = 0; let composing = false; let available = false;
+  const element = (tag, value, className) => { const node = document.createElement(tag); if (value != null) node.textContent = value; if (className) node.className = className; return node; };
+  const t = () => text[state.lang];
+  function commit(push = true) {
+    const url = stateUrl(location.href, state); if (url !== location.href) history[push ? 'pushState' : 'replaceState'](null, '', url);
+    try { localStorage.setItem('pcp-language', state.lang); } catch (_) {}
   }
-  // desired display order for categories = the map's insertion order
-  function orderedKeys(map, present) {
-    return Object.keys(map).filter(function (k) { return present[k]; });
-  }
-
-  function renderFacets() {
-    $facets.innerHTML = '';
-    var cCat = counts('category'), cSrc = counts('source'), cConf = counts('confidence');
-    groupEl('category', CAT, orderedKeys(CAT, cCat), cCat);
-    groupEl('source', SRC, orderedKeys(SRC, cSrc), cSrc);
-    // confidence keys derived from data so a future 'low' pattern still gets a chip
-    groupEl('confidence', CONF, ['high', 'medium', 'low'].filter(function (k) { return cConf[k]; }), cConf);
-  }
-
-  function groupEl(field, labelMap, keys, cnt) {
-    var wrap = document.createElement('div');
-    wrap.className = 'pb-facet-group';
-    var h = document.createElement('span');
-    h.className = 'pb-facet-label';
-    h.textContent = T[lang][field];
-    wrap.appendChild(h);
-    keys.forEach(function (k) {
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'pb-chip' + (sel[field].has(k) ? ' is-on' : '');
-      b.dataset.field = field; b.dataset.key = k;
-      b.innerHTML = '<span>' + escapeHtml(label(labelMap, k)) + '</span><i>' + (cnt[k] || 0) + '</i>';
-      b.addEventListener('click', function () {
-        sel[field].has(k) ? sel[field].delete(k) : sel[field].add(k);
-        b.classList.toggle('is-on');
-        render();
-      });
-      wrap.appendChild(b);
-    });
-    $facets.appendChild(wrap);
-  }
-
-  // --- filter + search + render ---------------------------------------------
-  function passesFacets(p) {
-    for (var f in sel) {
-      if (sel[f].size && !sel[f].has(p[f])) return false;
+  function localize() {
+    document.documentElement.lang = state.lang === 'zh' ? 'zh-CN' : 'en'; document.title = `${t().title} | Prompt & Context Patterns`;
+    document.querySelector('.site-nav').setAttribute('aria-label', state.lang === 'zh' ? '主要导航' : 'Main navigation');
+    el('pb-lang').setAttribute('aria-label', state.lang === 'zh' ? '语言' : 'Language');
+    for (const node of document.querySelectorAll('[data-i18n-en]')) {
+      node.textContent = node.getAttribute(`data-i18n-${state.lang}`);
     }
-    return true;
+    for (const node of document.querySelectorAll('[data-url-en]')) node.setAttribute('href', node.getAttribute(`data-url-${state.lang}`));
+    const localeLink = document.querySelector('.locale-link');
+    if (localeLink) { const other = { ...state, lang: state.lang === 'en' ? 'zh' : 'en' }; localeLink.href = stateUrl(location.href, other); localeLink.textContent = state.lang === 'en' ? '中文' : 'English'; }
+    el('browser-title').textContent = t().title; el('browser-intro').textContent = t().intro;
+    el('search-label').textContent = t().search; el('pb-search').placeholder = t().search;
+    el('clear-search').textContent = t().clear; el('clear-filters').textContent = t().reset;
+    el('load-more').textContent = t().more; el('retry-load').textContent = t().retry;
+    el('static-index').textContent = t().static; el('static-index').href = base + `/catalog/catalog-index${state.lang === 'zh' ? '-zh' : ''}/`;
+    for (const button of el('pb-lang').querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.dataset.lang === state.lang));
+    for (const group of el('pb-facets').querySelectorAll('fieldset')) {
+      const key = group.dataset.facet; group.querySelector('legend').textContent = t()[key];
+      for (const button of group.querySelectorAll('button')) {
+        button.setAttribute('aria-pressed', String(state[key].has(button.dataset.value)));
+        button.textContent = (key === 'category' ? button.getAttribute(`data-label-${state.lang}`) : key === 'trace' ? t()[button.dataset.value] : button.dataset.value) + ` (${button.dataset.count})`;
+      }
+    }
   }
-
+  function buildFacets() {
+    el('pb-facets').replaceChildren();
+    for (const key of ['category', 'repo', 'trace']) {
+      const counts = new Map(); const labels = new Map();
+      for (const p of rows) for (const value of key === 'repo' ? p.repos : [key === 'trace' ? p.trace_status : p.category]) {
+        counts.set(value, (counts.get(value) || 0) + 1); labels.set(value, [p.category_en || value, p.category_zh || value]);
+      }
+      const group = element('fieldset', null, 'filter-group'); group.dataset.facet = key; group.append(element('legend', t()[key]));
+      const buttons = element('div', null, 'filter-options');
+      for (const value of [...counts.keys()].sort()) {
+        const button = element('button', null, 'filter-chip'); button.type = 'button'; button.dataset.value = value; button.dataset.count = counts.get(value);
+        button.setAttribute('data-label-en', labels.get(value)[0]); button.setAttribute('data-label-zh', labels.get(value)[1]);
+        button.addEventListener('click', () => { state[key].has(value) ? state[key].delete(value) : state[key].add(value); state.limit = 30; commit(); render(); }); buttons.append(button);
+      }
+      group.append(buttons); el('pb-facets').append(group);
+    }
+  }
   function render() {
-    var rows;
-    if (query && fuse) {
-      rows = fuse.search(query).map(function (r) { return r.item; }).filter(passesFacets);
-    } else {
-      rows = data.filter(passesFacets);
+    localize(); if (!available) return;
+    const ranked = state.q.trim() && fuse ? fuse.search(state.q.trim()).map(result => result.item) : null;
+    const results = filterRows(rows, state, ranked); const shown = results.slice(0, state.limit);
+    el('pb-count').textContent = t().count(results.length, rows.length, shown.length);
+    el('pb-empty').hidden = results.length > 0; el('pb-empty').textContent = rows.length ? t().noResults : t().empty;
+    el('pb-list').replaceChildren();
+    for (const p of shown) {
+      const item = element('li', null, 'pattern-card'); item.append(element('span', `P${p.id}`, 'record-id'));
+      const heading = element('h2'); const anchor = element('a', p[`name_${state.lang}`]); anchor.href = base + `/catalog/patterns/${p.id}${state.lang === 'zh' ? '-zh' : ''}/`; heading.append(anchor); item.append(heading);
+      const meta = element('div', null, 'meta-line'); meta.append(element('span', p[`category_${state.lang}`] || p.category));
+      if (p.trace_status === 'untraced') meta.append(element('span', t().untraced, 'badge untraced')); item.append(meta);
+      item.append(element('p', p[`summary_${state.lang}`]));
+      const scenario = element('p', `${t().scenario}: ${p[`scenario_${state.lang}`]}`, 'scenario'); item.append(scenario); el('pb-list').append(item);
     }
-    $count.textContent = T[lang].count(rows.length, data.length);
-    $list.innerHTML = '';
-    $empty.hidden = rows.length > 0;
-    if (!rows.length) { $empty.textContent = T[lang].empty; return; }
-
-    var frag = document.createDocumentFragment();
-    rows.forEach(function (p) { frag.appendChild(card(p)); });
-    $list.appendChild(frag);
+    el('load-more').hidden = shown.length >= results.length;
   }
-
-  function card(p) {
-    var li = document.createElement('li');
-    var det = detailOf(p);
-    li.className = 'pb-card' + (det ? ' pb-card--link' : '');
-    if (det) li.dataset.detail = det;
-    var detHtml = det
-      ? '<a class="pb-detail" href="' + escapeAttr(det) + '">' + T[lang].detail + '</a>'
-      : '<span class="pb-detail pb-pending">' + T[lang].pending + '</span>';
-    li.innerHTML =
-      '<div class="pb-card-head"><span class="pb-id">#' + p.id + '</span>' +
-      '<span class="pb-name">' + escapeHtml(nameOf(p)) + '</span></div>' +
-      '<div class="pb-meta">' +
-        '<span class="pb-tag pb-cat">' + escapeHtml(label(CAT, p.category)) + '</span>' +
-        '<span class="pb-tag pb-src">' + escapeHtml(label(SRC, p.source)) + '</span>' +
-        (p.confidence ? '<span class="pb-tag pb-conf pb-conf-' + p.confidence + '">' +
-          escapeHtml(label(CONF, p.confidence)) + '</span>' : '') +
-      '</div>' +
-      '<p class="pb-problem">' + escapeHtml(problemOf(p) || '') + '</p>' +
-      detHtml;
-    return li;
+  async function load() {
+    const seq = ++request; const controller = new AbortController(); const timeout = setTimeout(() => controller.abort(), 15000);
+    el('browser-error').hidden = true; el('pb-count').textContent = t().loading; localize();
+    try {
+      const response = await fetch(base + '/assets/patterns.json', { signal: controller.signal }); if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json(); if (!Array.isArray(data) || data.some(p => !Number.isInteger(p.id) || !Array.isArray(p.repos))) throw new Error('Invalid catalog data');
+      if (seq !== request) return; rows = data; available = true;
+      fuse = typeof window.Fuse === 'function' ? new window.Fuse(rows, { includeScore: true, threshold: .35, ignoreLocation: true,
+        keys: ['name_en', 'name_zh', 'summary_en', 'summary_zh', 'scenario_en', 'scenario_zh', 'tags'] }) : null;
+      buildFacets(); commit(false); render();
+    } catch (_) {
+      if (seq !== request) return; available = false; el('pb-count').textContent = ''; el('browser-error').hidden = false; el('error-text').textContent = t().error; localize();
+    } finally { clearTimeout(timeout); }
   }
-
-  // --- static text + language toggle ----------------------------------------
-  function applyStaticText() {
-    $search.placeholder = T[lang].search;
-    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
-  }
-
-  $search.addEventListener('input', function () { query = this.value.trim(); render(); });
-
-  // Whole card is clickable → jump to its detail page (patterns without a
-  // write-up have no data-detail and stay inert). Real inner links keep working.
-  $list.addEventListener('click', function (e) {
-    if (e.target.closest('a')) return;
-    var c = e.target.closest('.pb-card');
-    if (c && c.dataset.detail) window.location.href = c.dataset.detail;
-  });
-
-  $lang.addEventListener('click', function (e) {
-    var btn = e.target.closest('button[data-lang]');
-    if (!btn) return;
-    lang = btn.dataset.lang;
-    localStorage.setItem(LANG_KEY, lang);
-    Array.prototype.forEach.call($lang.children, function (b) {
-      b.classList.toggle('is-active', b.dataset.lang === lang);
-    });
-    applyStaticText();
-    renderFacets();
-    render();
-  });
-
-  // init lang button state from storage
-  Array.prototype.forEach.call($lang.children, function (b) {
-    b.classList.toggle('is-active', b.dataset.lang === lang);
-  });
-
-  // --- helpers ---------------------------------------------------------------
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"]/g, function (c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
-    });
-  }
-  function escapeAttr(s) { return escapeHtml(s).replace(/'/g, '&#39;'); }
-})();
+  el('pb-search').value = state.q;
+  const search = () => { state.q = el('pb-search').value; state.limit = 30; commit(false); render(); };
+  el('pb-search').addEventListener('compositionstart', () => { composing = true; });
+  el('pb-search').addEventListener('compositionend', () => { composing = false; search(); });
+  el('pb-search').addEventListener('input', () => { if (!composing) search(); });
+  el('clear-search').addEventListener('click', () => { el('pb-search').value = ''; search(); el('pb-search').focus(); });
+  el('clear-filters').addEventListener('click', () => { state.category.clear(); state.repo.clear(); state.trace.clear(); state.limit = 30; commit(); render(); });
+  el('load-more').addEventListener('click', () => { state.limit += 30; commit(); render(); });
+  el('retry-load').addEventListener('click', load);
+  for (const button of el('pb-lang').querySelectorAll('button')) button.addEventListener('click', () => { state.lang = button.dataset.lang; commit(); render(); });
+  window.addEventListener('popstate', () => { state = readState(location.href); el('pb-search').value = state.q; render(); });
+  load();
+}

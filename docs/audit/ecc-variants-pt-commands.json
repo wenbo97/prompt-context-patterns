@@ -1,0 +1,74 @@
+[
+  {
+    "path": "docs/pt-BR/commands/build-fix.md",
+    "reason": "Full62line repair method read: project tool detection→dependency-ordered errors→minimum single correction→same build rerun→three attempts/scope growth stop/report. Preserves reviewed canonical mechanism; Python py_compile lacks target, no frontmatter unlike current canonical. Language runtime recipes scoped out, no buildrun."
+  },
+  {
+    "path": "docs/pt-BR/commands/checkpoint.md",
+    "reason": "Full74line checkpoint/log/comparison/cleanup template read. Stash/commit named but HEAD-only locator lacks exact dirty snapshot/test baseline; clear present args but absent usage. Existing exact-artifact/evidence checkpoint comparison retained with limits, no stash/log write."
+  },
+  {
+    "path": "docs/pt-BR/commands/code-review.md",
+    "reason": "Full40line local uncommitted review/report/gate read: same historical checklist, current canonical fuller PR/base/artifact/context/failure-proof/report rules omitted. Blanket50/800/TODOHIGH and JSDoc preference not task defect evidence. Native block not proved; no reviews run."
+  },
+  {
+    "path": "docs/pt-BR/commands/e2e.md",
+    "reason": "Full365line method and complete nested test/report example read. Scenario/POM/actual outcome/artifacts/flake policy retained; PT adds PMX testnet/staging/funds boundary325–329, updated source agent locator340–343. NODE_ENV alone not targetidentity proof; constructed3pass/70%/9.1s not empirical evidence. Three-backtick nested fence malformed, no test/upload performed; root alias retired."
+  },
+  {
+    "path": "docs/pt-BR/commands/eval.md",
+    "reason": "Full120line capability/regression define/check/attempt ledger/report/list/clean read. Same metrics distinction but fixed90%/100%/example outputs source policy/construction and exact attempt/baseline identity not supplied. Current retired shim→eval-harness; containment and actual executions not established, no eval run."
+  },
+  {
+    "path": "docs/pt-BR/commands/go-build.md",
+    "reason": "Full183line prompt and worked minimal repair/rebuild/report read. Actual error→cause→single fix→same-command verification and bounded stop shared; teaching outputs not runs. No new variant; Go conversion/dependency implementation scoped out."
+  },
+  {
+    "path": "docs/pt-BR/commands/go-review.md",
+    "reason": "Full147line method and worked report/codecontrast read. Scoped actual diff/static/categorical-risk/severity report and gate preserved, instrumented build distinct running race workload. Source policy not calibrated defect proof, domain APIs scoped out, no tool run."
+  },
+  {
+    "path": "docs/pt-BR/commands/go-test.md",
+    "reason": "Full268line interface/table-oracle/causal-red/minimumgreen/recheck and cleanup/parallel snippets read. Known GoTDD method preserved, stubpanic not missing business assertion and100% illustrative. Names/CLI preserved, language validation/code detail scoped out, no tests run."
+  },
+  {
+    "path": "docs/pt-BR/commands/learn.md",
+    "reason": "Full70line cause/context/solution/example/trigger draft-confirm-save read. Flat learned/name.md old target lacks current frontmatter/standard folder/slug/configured-root/collision/taint rules; not verified discoverable skill. Existing evidence-to-skill comparison, no memory/config access."
+  },
+  {
+    "path": "docs/pt-BR/commands/orchestrate.md",
+    "reason": "Full230line prompt/templates read. Sequential role handoff and independent parallel checks known; PT154–178 adds explicit dirty/untracked seedPaths overlay into isolated worktrees plus distinct runtime snapshot;180–205 separates sessions/diffs/pendingapprovals/telemetry in final handoff. Actual operator metadata distinct authorization and frozenseed≠current state; current aliases retired. No worktree/agents/process launched; refer main ECC orchestration methods instead duplicate card."
+  },
+  {
+    "path": "docs/pt-BR/commands/plan.md",
+    "reason": "Full113line requirements/risks/dependencies/phases/confirm and complete notification example read. Source plan contract retained with updated canonical agent locator, no invented time/reliability facts adopted. User authorization supersedes example confirmation rule; no plan generated."
+  },
+  {
+    "path": "docs/pt-BR/commands/refactor-clean.md",
+    "reason": "Full80line detection/reference/publicAPI risk→baseline→one deletion→test/rollback/readback method read. Same bounded cleanup; full-file restore threatens unrelated changes, lexical80% similarity not equivalence. Runtime detector specifics excluded, no deletion/restore."
+  },
+  {
+    "path": "docs/pt-BR/commands/setup-pm.md",
+    "reason": "Full80line literal commands/JSON/env precedence read. PT fallback first-available pnpm>bun>yarn>npm differs Korean npm-only and agrees current availability-oriented mechanism; disable-model-invocation preserved. Actual usability not proved by config, no package setting action."
+  },
+  {
+    "path": "docs/pt-BR/commands/tdd.md",
+    "reason": "Full328line complete prompt/tests/implementation/refactor/report read. Same causal-red/contract/mocks and actual shared source locator, reused previously reviewed English teaching construction after reading actual source. Added clamps change unspecified negative/future input behavior; coverage100% is authored text not runtime. Alias retired, no code/test action."
+  },
+  {
+    "path": "docs/pt-BR/commands/test-coverage.md",
+    "reason": "Full69line framework detect→actual gap report→behavior/edge/branch fixtures→independent tests→full rerun/report read. Shared gap-targeted verification;80% policy not performance/quality guarantee, language commands scoped out and no run."
+  },
+  {
+    "path": "docs/pt-BR/commands/update-codemaps.md",
+    "reason": "Full72line source entry/data-flow map template read. PT uses architecture/data/dependencies and reports diff with30% approval/90day cues, unlike current index/domain generator. Source pointers compressed context known; threshold not permission/semantic drift proof, absent exact generator not assumed; no docs writes."
+  },
+  {
+    "path": "docs/pt-BR/commands/update-docs.md",
+    "reason": "Full84line actual source→scripts/env/API reference→generated owner/manual preserve markers/request-bound file output read. Same source-fact ownership;90day stale cue not evidence of inaccuracy. Names/CLI/markers preserved, no docs write."
+  },
+  {
+    "path": "docs/pt-BR/commands/verify.md",
+    "reason": "Full59line fixed build/type/lint/test/log/git sequence read. Report still Secrets field but body omits secret scan, unlike Korean/CN; current retired shim→verification-loop adds stronger actual-result contracts. Unrun/unavailable does not equalPASS; no execution."
+  }
+]

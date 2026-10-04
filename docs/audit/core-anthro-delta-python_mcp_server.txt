@@ -1,0 +1,17 @@
+CHANGE delete old 207-232 target 207-206
+CHANGE delete old 380-380 target 354-353
+CHANGE replace old 646-646 target 619-619
+619 ### Transport Options
+CHANGE replace old 648-648 target 621-621
+621 FastMCP supports two main transport mechanisms:
+CHANGE replace old 651-651 target 624-624
+624 # stdio transport (for local tools) - default
+CHANGE replace old 655-655 target 628-628
+628 # Streamable HTTP transport (for remote servers)
+CHANGE delete old 658-661 target 631-630
+CHANGE replace old 665-667 target 634-635
+634 - **stdio**: Command-line tools, local integrations, subprocess execution
+635 - **Streamable HTTP**: Web services, remote access, multiple clients
+CHANGE replace old 736-736 target 704-704
+704 - [ ] Appropriate transport configured (stdio or streamable HTTP)
+CHANGE delete old 741-741 target 709-708

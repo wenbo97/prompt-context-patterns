@@ -1,0 +1,1146 @@
+[
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": ".gitattributes",
+    "hash": "4702b23e09afad9638c184c8900b31af635673ba439c265ecc3d341efb54eaf8",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": ".github/FUNDING.yml",
+    "hash": "2f9cdda7b1f3ea4be28bbcc3444c2c6512d7739589e6c5e72fd4f95950d3e7d4",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": ".github/ISSUE_TEMPLATE/config.yml",
+    "hash": "e955d428a9ac46ed35f407b6532d74d1dade217d89d9a4c7f6b05b72872a004a",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": ".gitignore",
+    "hash": "30b79670d7359590a4f1798e99112d9298d8eed889042aba2ee9a1722dc06ebb",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "CODE_OF_CONDUCT.md",
+    "hash": "5604db48bb38684df7b0816cc2a8b2659a9c7efcfb2fa17936e6b16b1ec79316",
+    "reason": "Release history/community governance; no standalone prompt/context workflow extracted from this non-runtime document.",
+    "prior_conclusion": "Scope reviewed: release chronology or community conduct policy, not a skill/ref/procedural prompt body."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "RELEASE-NOTES.md",
+    "hash": "b9dc0271ee82306ae10922e42c25d539bdad1bfa416b155735d2b8ff295ecc04",
+    "reason": "Release history/community governance; no standalone prompt/context workflow extracted from this non-runtime document.",
+    "prior_conclusion": "Scope reviewed: release chronology or community conduct policy, not a skill/ref/procedural prompt body."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "assets/app-icon.png",
+    "hash": "b7477eb39b5109617fe37e51dd65d8bdd8dff6c40fda49adfbc21eec445777ee",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "assets/superpowers-small.svg",
+    "hash": "54a632d9ee6197ccbc10d43d42217e23d08375bea63ba8eb4b6af757c1535038",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/plans/2025-11-22-opencode-support-design.md",
+    "hash": "4688cb2e4bafa7e6124dd811be57c8873bfb4b8cccb95ddbd7032557a9cfd10b",
+    "reason": "Repository-specific historical implementation/design of OpenCode Support Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: OpenCode Support Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/plans/2025-11-22-opencode-support-implementation.md",
+    "hash": "2cc68cc29ee1174e13a65739b004f2346911a0d89a20744930f9f5b81963b4f3",
+    "reason": "Repository-specific historical implementation/design of OpenCode Support Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: OpenCode Support Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/plans/2025-11-28-skills-improvements-from-user-feedback.md",
+    "hash": "cce0b2e951209ac7d555fcbacfc858d8069b4036019d44dd95bb4334afaf2e65",
+    "reason": "Repository-specific historical implementation/design of Skills Improvements from User Feedback; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Skills Improvements from User Feedback"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/plans/2026-01-17-visual-brainstorming.md",
+    "hash": "2ff9c06d8c7cf650becb588d74507c5681c55844c61e21160a290cbe26d41ca4",
+    "reason": "Repository-specific historical implementation/design of Visual Brainstorming Companion Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Brainstorming Companion Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-01-22-document-review-system.md",
+    "hash": "92875a4d7db7acef7737ace512ed5a6ae29ab76aff421633276a4a824c5d5cf7",
+    "reason": "Repository-specific historical implementation/design of Document Review System Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Document Review System Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-02-19-visual-brainstorming-refactor.md",
+    "hash": "fbc67c4e7c5e42ff6e8e647951b749a2610ca2e13639903867258032c175bbbe",
+    "reason": "Repository-specific historical implementation/design of Visual Brainstorming Refactor Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Brainstorming Refactor Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-03-11-zero-dep-brainstorm-server.md",
+    "hash": "d1e3b19e1111cab0a113519a9d2d9e881080c5fe13c3227e6c22fa88d08dc11d",
+    "reason": "Repository-specific historical implementation/design of Zero-Dependency Brainstorm Server Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Zero-Dependency Brainstorm Server Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-03-23-codex-app-compatibility.md",
+    "hash": "28b0335e97ceea066ab2eefa9a02eea6bf30d3e580788ce462976efce13dc709",
+    "reason": "Repository-specific historical implementation/design of Codex App Compatibility Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Codex App Compatibility Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-04-06-worktree-rototill.md",
+    "hash": "98d21b8bbbee1d7359aaf65ba74a9f1313d9f5114000613301a00244a415f61f",
+    "reason": "Repository-specific historical implementation/design of Worktree Rototill Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Worktree Rototill Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-05-06-lift-drill-into-evals.md",
+    "hash": "3b1b5c8748dde0754872181631ef8b6188d0221b2723106ab2a82d2b9290accd",
+    "reason": "Repository-specific historical implementation/design of Lift drill into superpowers as `evals/` — implementation plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Lift drill into superpowers as `evals/` — implementation plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-05-07-pi-extension-and-evals.md",
+    "hash": "887dda265dc5f61ad4a04b9d0da98c059f6d93d08ff79180afbdafa7a000d75e",
+    "reason": "Repository-specific historical implementation/design of Pi Extension and Evals Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Pi Extension and Evals Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-06-09-sdd-task-scoped-review-dispatch.md",
+    "hash": "1597b91dbf9f8113533c6da8410607c5ac6c47db92b043a1284fff075b037aa8",
+    "reason": "Repository-specific historical implementation/design of SDD Task-Scoped Review Dispatch Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: SDD Task-Scoped Review Dispatch Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-06-09-visual-companion-issues.md",
+    "hash": "bf939ca1e1398f54e1950193299084836e45767cb00735342e3d7c31ff1fe31e",
+    "reason": "Repository-specific historical implementation/design of Visual Brainstorming Companion — Issue & Change Catalog; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Brainstorming Companion — Issue & Change Catalog"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-06-10-visual-companion-auth-hardening.md",
+    "hash": "7387fa4ddbc9bf071088372802c9aed6e44b224875291d2309007d76929af2f2",
+    "reason": "Repository-specific historical implementation/design of Visual Companion Auth Hardening Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Companion Auth Hardening Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-06-11-visual-companion-final-hardening-fixup.md",
+    "hash": "5604d33566ba5ca9940924819892a6d3f095a8704e2705e3fcc64a23334ca2f3",
+    "reason": "Repository-specific historical implementation/design of Visual Companion Final Hardening Fixup Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Companion Final Hardening Fixup Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-07-06-sdd-plan-scoped-workspace.md",
+    "hash": "2d1b484cd2a4ead41fd5be842ccbc4c114b7b5eb52135c79190a6f756acbfd39",
+    "reason": "Repository-specific historical implementation/design of SDD Plan-Scoped Workspace Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: SDD Plan-Scoped Workspace Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-07-15-sdd-fix-loop-redesign.md",
+    "hash": "83189840f8591276c481187dc742f99f3e6add14eec0f7a782b5150a89024648",
+    "reason": "Repository-specific historical implementation/design of SDD Fix-Loop Redesign Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: SDD Fix-Loop Redesign Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-07-30-codex-efficiency-fixes.md",
+    "hash": "78e7b8cd163ee78ac16a9ba9fbfffe3ae98b7711c092d75c7283bd325fdf42f7",
+    "reason": "Repository-specific historical implementation/design of Codex Efficiency Fixes Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Codex Efficiency Fixes Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-08-06-hermes-version-bump-wiring.md",
+    "hash": "3a9669467c0db792fb1465ccee38e086349b8415aa7077e1d6b8633f47eab208",
+    "reason": "Repository-specific historical implementation/design of Hermes Version-Bump Wiring Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Hermes Version-Bump Wiring Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/plans/2026-08-27-diagnosing-superpowers.md",
+    "hash": "a8a57533a032af65e649a63b9f0f9a306913cc319d3638ec609befcb6c77b7fd",
+    "reason": "Repository-specific historical implementation/design of Diagnosing Superpowers Skill Implementation Plan; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Diagnosing Superpowers Skill Implementation Plan"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-01-22-document-review-system-design.md",
+    "hash": "19dd839168b9e4a072985e8941aa3ae7cf9101357111620755d50dbeb1bea04b",
+    "reason": "Repository-specific historical implementation/design of Document Review System Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Document Review System Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-02-19-visual-brainstorming-refactor-design.md",
+    "hash": "f27d0f9c33cc4f34101fd676d48e73d6259e6cd4e1b3adc477ea81f4c7557af7",
+    "reason": "Repository-specific historical implementation/design of Visual Brainstorming Refactor: Browser Displays, Terminal Commands; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Brainstorming Refactor: Browser Displays, Terminal Commands"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-03-11-zero-dep-brainstorm-server-design.md",
+    "hash": "8f29bac7d4df2b51062c005fe4d591140f1da3ab2030b28537df6f964637b9e9",
+    "reason": "Repository-specific historical implementation/design of Zero-Dependency Brainstorm Server; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Zero-Dependency Brainstorm Server"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-03-23-codex-app-compatibility-design.md",
+    "hash": "f351216f0b8abb5f08a9209d71ec3c218c79b1ba9d6a1c68aec990ef00e31a53",
+    "reason": "Repository-specific historical implementation/design of Codex App Compatibility: Worktree and Finishing Skill Adaptation; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Codex App Compatibility: Worktree and Finishing Skill Adaptation"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-04-06-worktree-rototill-design.md",
+    "hash": "757ce61bbcd16dcb8f61fa69778ca7a3b1d26f7a11a0fcea3d302fd99a52ebae",
+    "reason": "Repository-specific historical implementation/design of Worktree Rototill: Detect-and-Defer; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Worktree Rototill: Detect-and-Defer"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-05-05-platform-neutral-config-refs-design.md",
+    "hash": "7a3c5e5fb77a3f8a500e9406283653cfee5edf1b98e58d5f267c5f21905eee19",
+    "reason": "Repository-specific historical implementation/design of Platform-neutral config-file references — Phase B design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Platform-neutral config-file references — Phase B design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-05-05-platform-neutral-prose-design.md",
+    "hash": "d55fa30a3b1422f8364a81f49c755ada9cc792b2cc10193b1dbd43c551918c19",
+    "reason": "Repository-specific historical implementation/design of Platform-neutral prose — Phase A design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Platform-neutral prose — Phase A design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-05-05-platform-neutral-readme-design.md",
+    "hash": "63eb346415386c6850832f4b7414d03570a033eaf37de0b60d2ec4834169896e",
+    "reason": "Repository-specific historical implementation/design of Platform-neutral README ordering — Phase C design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Platform-neutral README ordering — Phase C design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-05-06-lift-drill-into-evals-design.md",
+    "hash": "fac3785f6f779bd899a6e93bcd60a934b4946ce4f7e8b6129d7910979650a6a1",
+    "reason": "Repository-specific historical implementation/design of Lift drill into superpowers as `evals/` — design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Lift drill into superpowers as `evals/` — design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md",
+    "hash": "08b6b77be0d3b95e1d19a3dc320b93bba52917ca9beb0084fd74ecd75c015b59",
+    "reason": "Repository-specific historical implementation/design of SDD Task-Scoped Review Dispatch; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: SDD Task-Scoped Review Dispatch"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-06-10-visual-companion-auth-hardening-design.md",
+    "hash": "8d97d0384c61c0400fb67429a4384ad989bdc11953cce160069c368ac1f7e362",
+    "reason": "Repository-specific historical implementation/design of Visual Companion Auth Hardening Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Companion Auth Hardening Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-06-11-visual-companion-final-hardening-fixup-design.md",
+    "hash": "78c4fbc2b609b1fe3ca0d7aba0f4d800511baf069355d25b37da5cf957dc0e7c",
+    "reason": "Repository-specific historical implementation/design of Visual Companion Final Hardening Fixup Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Visual Companion Final Hardening Fixup Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace.md",
+    "hash": "301328cb8dec833dc35e05e90b4c10a6e67ebd915b33a3a5d34f83927094815d",
+    "reason": "Repository-specific historical implementation/design of SDD plan-scoped workspace — design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: SDD plan-scoped workspace — design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-07-15-sdd-fix-loop-redesign-design.md",
+    "hash": "9ed33fe2821fd9d61e198c03e0377a9151294737a6ea34074637c1eef98c1a06",
+    "reason": "Repository-specific historical implementation/design of SDD Fix-Loop Redesign — Design Spec; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: SDD Fix-Loop Redesign — Design Spec"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-07-30-codex-efficiency-fixes-design.md",
+    "hash": "6a6f81dcea03ebb8ffa710536fc92faab285c7bc894430c3348eb0bfa3fea926",
+    "reason": "Repository-specific historical implementation/design of Codex Efficiency Fixes — Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Codex Efficiency Fixes — Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-08-05-hermes-version-bump-wiring-design.md",
+    "hash": "f649e3afbd3a14df4c1ac5bd1942ffb4846129836f20b5f2aa3263fd3c19ed69",
+    "reason": "Repository-specific historical implementation/design of Hermes Version-Bump Wiring Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Hermes Version-Bump Wiring Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "docs/superpowers/specs/2026-08-27-diagnosing-superpowers-design.md",
+    "hash": "da21af32ea629de17c3221f08dc4825c0f26d7bea4902f217eba9e5caf7b966d",
+    "reason": "Repository-specific historical implementation/design of Diagnosing Superpowers Sessions — Design; code changes, past acceptance details and superseded policies are excluded rather than presented as current agent instructions. Normative successor bodies carry transferable mechanisms.",
+    "prior_conclusion": "Scope reviewed by dated title, objective/architecture and section inventory; current corresponding skill/ref/runtime mechanisms have been semantically reviewed. Historical artifact: Diagnosing Superpowers Sessions — Design"
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "scripts/bump-version.sh",
+    "hash": "fc96339dad5f54ffcef3393b28542dbe93ec168573c012d9c599603009e80006",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "scripts/lint-shell.sh",
+    "hash": "aa34cc2dad4b130231bcf21fdd18f3f91e8fd7ab80d88a82a13e1395f32756f8",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "scripts/package-codex-plugin.sh",
+    "hash": "2541617b86519273428d12d18a5f7ec852ac39cfdec74622c01ce71a504bb80d",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "scripts/sync-to-codex-plugin.sh",
+    "hash": "d24c3a579f5d6759f08f8c1c9a7772caa6e937dcc124f1aae5fe0ffd1177ee24",
+    "reason": "Repository support, package/version/CI/installer metadata or code; no distinct method-bearing instruction body. Current harness/bootstrap/authoring contracts were reviewed in full.",
+    "prior_conclusion": "Scope assessed from tracked path/type and normative references; package metadata, installer/release or CI support for reviewed runtime."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "skills/brainstorming/scripts/frame-template.html",
+    "hash": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e",
+    "reason": "Domain browser UI/HTTP/WebSocket/rendering implementation, not an additional prompt or context procedure. User-facing event/lifecycle and validation method are covered by visual-companion and porting references.",
+    "prior_conclusion": "Scope assessed via referenced helper contracts and file type; serves/renders the already-reviewed visual/graph workflow."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "skills/brainstorming/scripts/helper.js",
+    "hash": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
+    "reason": "Domain browser UI/HTTP/WebSocket/rendering implementation, not an additional prompt or context procedure. User-facing event/lifecycle and validation method are covered by visual-companion and porting references.",
+    "prior_conclusion": "Scope assessed via referenced helper contracts and file type; serves/renders the already-reviewed visual/graph workflow."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "skills/brainstorming/scripts/server.cjs",
+    "hash": "2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412",
+    "reason": "Domain browser UI/HTTP/WebSocket/rendering implementation, not an additional prompt or context procedure. User-facing event/lifecycle and validation method are covered by visual-companion and porting references.",
+    "prior_conclusion": "Scope assessed via referenced helper contracts and file type; serves/renders the already-reviewed visual/graph workflow."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "skills/brainstorming/scripts/start-server.sh",
+    "hash": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
+    "reason": "Domain browser UI/HTTP/WebSocket/rendering implementation, not an additional prompt or context procedure. User-facing event/lifecycle and validation method are covered by visual-companion and porting references.",
+    "prior_conclusion": "Scope assessed via referenced helper contracts and file type; serves/renders the already-reviewed visual/graph workflow."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "skills/brainstorming/scripts/stop-server.sh",
+    "hash": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
+    "reason": "Domain browser UI/HTTP/WebSocket/rendering implementation, not an additional prompt or context procedure. User-facing event/lifecycle and validation method are covered by visual-companion and porting references.",
+    "prior_conclusion": "Scope assessed via referenced helper contracts and file type; serves/renders the already-reviewed visual/graph workflow."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "skills/writing-skills/render-graphs.js",
+    "hash": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196",
+    "reason": "Domain browser UI/HTTP/WebSocket/rendering implementation, not an additional prompt or context procedure. User-facing event/lifecycle and validation method are covered by visual-companion and porting references.",
+    "prior_conclusion": "Scope assessed via referenced helper contracts and file type; serves/renders the already-reviewed visual/graph workflow."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/antigravity/run-tests.sh",
+    "hash": "76355b01132d4f27cc5545c15926eb0c3614d38db2b5d6988a2d818918d9eaf1",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/antigravity/test-antigravity-tools.sh",
+    "hash": "8114d937d2ff960262e5d281a7e1ea2f95eb05ceb1690ac91b0db059e0c83799",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/auth.test.js",
+    "hash": "8efa43628b582973dcc543c0768e91066cf9834292e2e724657c6801b63df062",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/branding.test.js",
+    "hash": "b116f645b46130a3a58867493863a1398cf5426375d695203c858c95eb5e8d02",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/browser-launcher.test.js",
+    "hash": "ffb9ccecf27968b9359049ff96b50725669b1f86863f88b583b9aa0c3aa37c94",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/helper.test.js",
+    "hash": "9917fc944e8c5594430ba2600035ff5fd8212119b9cae2d62c75f5725de94061",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/lifecycle.test.js",
+    "hash": "8146fc31bd814dec0e497da6dc1c9423e4352e0fb1c3cdebd1b9db42a2ac8d8e",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/package-lock.json",
+    "hash": "80f45a9d8857e27d9363d47789284a26d13fb47388fa8596ef0db7207e6d7c10",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/package.json",
+    "hash": "d785483894bfedbccf9731fd7ed52f959973f62dc9c42a8a7407fc7779d220c8",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/server.test.js",
+    "hash": "fd1cc628222a6fcc657461b84f85f3b50d5a9709056dc9232241f9cb4182593a",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/start-server.test.sh",
+    "hash": "fb0c928e206fbd6a0fe77e750198d71ae0c331e361b13e9a8b8742cdb22302b5",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/stop-server.test.sh",
+    "hash": "35e150e95f0e97d50470f2c0a30bc7c9c8c5cb7721c53dcff887b430067490db",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/windows-lifecycle.test.sh",
+    "hash": "7dc8e09edfe0a4cc34550fdb0e5ae5117758991d490756971be51c88e4f5908d",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/brainstorm-server/ws-protocol.test.js",
+    "hash": "abd0a10eaffe4e30a9918c79c7692775db36c8a3e132e04d52ec06d6cddaa132",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/analyze-token-usage.py",
+    "hash": "b3b124b975086e66540dca1328d7b6b75416450b0c93fc246f0d7d148fc2394c",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/run-skill-tests.sh",
+    "hash": "a7bffa447f489be5a9507114027ddcdb94409eba3156df88c9338307710502a4",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-executing-plans-scripts.sh",
+    "hash": "65629962e5fea4144310d42025ed7c39db5954b1f6add0ebf6a29b3b8f00b2d7",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-helpers.sh",
+    "hash": "b06a890c9d371195d8f256b1227607dd32ad28831658be1033756cc8dbcd86a7",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-sdd-workspace.sh",
+    "hash": "81697baaa96698f0ace309c746c2b68ff5db94905ea277c842067cc807dd57be",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-subagent-driven-development-integration.sh",
+    "hash": "0794d17e3cc5d8a64c07a6c181538e1142819b86382d171f677510cfe6a3f722",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-subagent-driven-development.sh",
+    "hash": "37e9a1fbb20f9f6ca2e7eb62f16b4b04c90da2874ec48ec3d2cc5c73ed99155d",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-worktree-native-preference.sh",
+    "hash": "1c0a94fb097ad33186bb7ea2b0321b11d8ba92ed8c6ef61464a2246eec33acf6",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/claude-code/test-worktree-path-policy.sh",
+    "hash": "3498f973a9cf288f2959b7a02fc3acea09ee11650b46d689aef81b394f8ab85c",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/codex-plugin-sync/test-sync-to-codex-plugin.sh",
+    "hash": "0fe708303673f20089c611060714cfb86de3fc620f9e6b7820e85c4fbc46fb74",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/codex/test-marketplace-manifest.sh",
+    "hash": "9c5afb24318bd959606f5063f444042e08e6fc2c6ff8c4988760476021e4ec90",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/codex/test-package-codex-plugin.sh",
+    "hash": "bbf76d50eac33b60d73318946bc1418a6e6c6d52cdd918f39c7b18b8eaa0b0f4",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/devin/test-devin-plugin.sh",
+    "hash": "e156be13b2e902449ef8bd1836b9dc60a7fc5f2f670896f4faf621d9a1f3a6e4",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/diagnosing-superpowers/test-skill-structure.sh",
+    "hash": "35baf007e9a744621c6d374200cfac3b597a5b969bbf824178975257f239854b",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/explicit-skill-requests/run-all.sh",
+    "hash": "b657ef562b6ce3d02b3422eb5ab8571be5545525249088034ab36c27343b95cc",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/explicit-skill-requests/run-extended-multiturn-test.sh",
+    "hash": "1004578e3ef68d6fda8646c9257d27dd4ca30c4c1bdc986a50fbcb929ea0934d",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/explicit-skill-requests/run-haiku-test.sh",
+    "hash": "27b92722271fd25dfcad9b04e8c45b81e2a51a51005c3bcf13dd9d5a70567d01",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/explicit-skill-requests/run-multiturn-test.sh",
+    "hash": "dc22f0b1ed0d367811ecf046c942430d15e87f4b8b2b4cc8260d60e00bee6ecb",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/explicit-skill-requests/run-test.sh",
+    "hash": "841f1d014f231c84f441cc6b91f388cc3e9e788012e6d36f5e78406c1f4c9b49",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/hermes/__init__.py",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/hermes/conftest.py",
+    "hash": "daac0d99bc1848c35cf1aa85694d0dc752628acb876f552f65c15972942dd2f9",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/hermes/test_bootstrap.py",
+    "hash": "a4aaeb394779f3d22106866bfe67723301a5cf317dfad7a1386994eddd7a3031",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/hermes/test_plugin.py",
+    "hash": "a159fbee0e56b0ff320a85642b5b38f703ba64382d1e3de0200889598af8dfa2",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/hooks/test-session-start.sh",
+    "hash": "427f5464b635504ab2dc1f2bde9aa0bce348e13be451985e541099219130e92f",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/kimi/run-tests.sh",
+    "hash": "fb53a9ce91ae119146764ef2d55c63a5d20b86198e2ee08759fbae8194177ff0",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/kimi/test-plugin-manifest.sh",
+    "hash": "d7ca4db2e67c8611d3d1fe1fbf28fe41a33b187155563f1a553212df04250aaa",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/run-tests.sh",
+    "hash": "b2f2067cfefa61aec22da47686dcc7b60e4de16bca439d1f3e4631d71ad78054",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/setup.sh",
+    "hash": "0e8600fa5e56d7613f41d19732601397d2c18087a71da2801cc53443756a6348",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-bootstrap-caching.mjs",
+    "hash": "7966d45d3bfa281679c917c03704824ae9752f2e624173b598baaea961bebafa",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-bootstrap-caching.sh",
+    "hash": "b13d826fdae77feaf922f4009f544d0ad51ce722258dee997b252f76af70330a",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-plugin-loading.sh",
+    "hash": "41389f92e160766cfb27bfd15849e3ef546427444f88d241506915044209bed0",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-priority.sh",
+    "hash": "123a82b72f22a5a0d1be2c6cfb898bf4d8d772ee4c7ba2f4540562a1b62a0902",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-session-bootstrap.mjs",
+    "hash": "843f69300ee5f93f5ec9a8cedf7467427cc254f91a6d21e4b4ddc15f849c3aa1",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-session-bootstrap.sh",
+    "hash": "8dd9605232ac6030f052ab0102fcea6109dfe6a44e74a2bbe15fd6eb450fe7db",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-skill-registration.mjs",
+    "hash": "779ba75046c2860096e232b5efa298c2073b459234e7279d87510e10fdeacd79",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-skill-registration.sh",
+    "hash": "0d01ec62a39b3d996ca8c3160a93e7d5f0bc3591941a8ee6d48f65dd61eddd28",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/opencode/test-tools.sh",
+    "hash": "ae8bfae51fd2d25b9659177ec257c0551bc521d7f9e7c60c34110497b501e182",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/pi/test-pi-extension.mjs",
+    "hash": "0f84e8fe4190575e907a109e3b2540a21832ddac4f1bdb76f1074489f4f605c6",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/shell-lint/test-lint-shell.sh",
+    "hash": "e777907226ed8614fe1cbc06afd538e223e4081c368757b26a5f77dfb4355b40",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/systematic-debugging/test-find-polluter.sh",
+    "hash": "7c5ae1adb7c6e292b73eccba6ba442501c442aefe8c883a94c9fdd809d592cea",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/version-bump/test-bump-version.sh",
+    "hash": "5ee6381b450985934877a6fb3da71f769559f413419c616158cd6b79ff582ff1",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "path": "tests/writing-skills/test-render-graphs.sh",
+    "hash": "c977fb34ec6614400673cc3d73e9979eb5428d35e1413c50ab4b1cef47eb7b3b",
+    "reason": "Plugin/runtime or historical CLI integration implementation/tests; transferable testing/pressure/oracle methods are reviewed in normative authoring/debugging references. No source tests executed.",
+    "prior_conclusion": "Scope assessed against corresponding current skill/reference: repository-specific automated fixture/assertion/harness wiring."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": ".claude-plugin/marketplace.json",
+    "hash": "669b9a23f5b46326946465198829ff6d35a9b7fd36abc6b4a2ef652f02e615e2",
+    "reason": "Repo-specific release or distribution/sponsorship metadata; canonical methods separately analyzed.",
+    "prior_conclusion": "Release/sponsor/distribution scope inspected; v1→v2 semantic deltas read at both full canonical bodies and changelog. Plugin manifests contain display/version metadata only, not independent host workflow."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": ".claude-plugin/plugin.json",
+    "hash": "bc9ddf22f1025944447bf56197e35a65aef0f8921fc7e68c616d4599d3d8bbf4",
+    "reason": "Repo-specific release or distribution/sponsorship metadata; canonical methods separately analyzed.",
+    "prior_conclusion": "Release/sponsor/distribution scope inspected; v1→v2 semantic deltas read at both full canonical bodies and changelog. Plugin manifests contain display/version metadata only, not independent host workflow."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": ".github/FUNDING.yml",
+    "hash": "38f3a3fac585c3c35d6ed2297baba8d2d22ea974fa9799f842771c2f7c42d916",
+    "reason": "Repo-specific release or distribution/sponsorship metadata; canonical methods separately analyzed.",
+    "prior_conclusion": "Release/sponsor/distribution scope inspected; v1→v2 semantic deltas read at both full canonical bodies and changelog. Plugin manifests contain display/version metadata only, not independent host workflow."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "CHANGELOG.md",
+    "hash": "55a81cbf8d45c5ca064b21d4ce61792e8d973c525cf2a65ee3e2c65f28b16f3b",
+    "reason": "Repo-specific release or distribution/sponsorship metadata; canonical methods separately analyzed.",
+    "prior_conclusion": "Release/sponsor/distribution scope inspected; v1→v2 semantic deltas read at both full canonical bodies and changelog. Plugin manifests contain display/version metadata only, not independent host workflow."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/.gitkeep",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "Empty tracked presentation-directory placeholder inspected."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-banner.webp",
+    "hash": "2ee8933393eb15190040135b4a5a2ab87456c5269398d0089ae1b376c8cfccbe",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 1983x793; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-buttons/btn-agent-skills.webp",
+    "hash": "b1c4844cd59ce0b61e448933beab8988f25228b36a948354adc97da9878c9f50",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 1230x281; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-buttons/btn-changelog.webp",
+    "hash": "49650fcb4739ad331b83d1b82e58b4047d6bb2565e413bb0238dd611adba6df5",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 1220x286; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-buttons/btn-mit.webp",
+    "hash": "ce87211af13ccb11991b02ce220164be06f719be022dd87a14f52f950208b61c",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 1236x307; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-buttons/btn-site.webp",
+    "hash": "1b776c5c6d91b4d32047eddceed3e03635117da2898737d193fcac4f45df2d55",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 1234x315; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-buttons/btn-tools.webp",
+    "hash": "0fb2189928c221441c6c9398fb85af0b820f73aef133aed2b66b6f57e7e3d10b",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 1393x281; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/readme-cta-tasteskill.svg",
+    "hash": "bd9c6ffff65c3b50b47d358bbdb5a68d524153e7cd905c6ef9c6afdd0f3e101c",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'rect': 1, 'image': 1, 'text': 1}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/animations-dev.webp",
+    "hash": "37d37fd9b4181c0dfc1260fe7f11265a0c7fb5ee7dd54558c6c6733aa7a72cea",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 192x192; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/emil-animations-dev.webp",
+    "hash": "64dde04e4594bea4f17b48214f30fee884462faabd70b98feac50703bbbd9ef4",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 720x240; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/fluxion-ai-banner.png",
+    "hash": "c8d9ac21e50d3162895462ab75015f6b0e5556b294b29ecdff82fc5f1ae2f73b",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "PNG raster 2400x720; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/fluxion-ai.png",
+    "hash": "c7969c3c3070f9efefed7d741605ac22653278d256a675d7071048093b4b6a5d",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "PNG raster 1254x1254; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/imgly-logo.svg",
+    "hash": "2dd10ba9f8005d6b52149db678d611678609e653d0870b42cdb083fe9506e85f",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'rect': 1, 'g': 1, 'path': 2}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/interfaces-dev-icon.webp",
+    "hash": "bc6607b4721cd0b3f9a8314a6b5c8e36ee3bb53b988fbc55cb0d856e893a2873",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 512x512; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/kimi-icon.png",
+    "hash": "dbd00e2ad61ea8832ef0b024662a4a8a5d1b66f0599d5d42e1c9688b9d4cfdf6",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "PNG raster 128x128; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/reactbits-icon-dark.svg",
+    "hash": "e78e92b5289d049945dd6c3c7403d6d6799d78c7c4e503a4ace5ac0927df4840",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'g': 1, 'path': 1}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/reactbits-icon-light.svg",
+    "hash": "fbb62de0895647def6c562ec3bf2819de0d4bb091ce3114dfd72b17288af4020",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'g': 1, 'path': 1}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/reactbits-logo-dark.svg",
+    "hash": "64e2e3bbdceb70c7e390517a18932b1dd984bb7c67d8737aa831d83f98825513",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'path': 10}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/reactbits-logo-light.svg",
+    "hash": "5001b2e25e293ed3cbf751cf92b69a19b0ac96b7d963845cd9879f7b7e1aab0a",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'path': 10}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/sentdm.png",
+    "hash": "e22c024eba502cf83b1d86018d310d23430b8173093dda9f9686190df1db0b48",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "PNG raster 200x200; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/sponsors/vercel-logo.svg",
+    "hash": "e1346e2d4f4d2e81f01939f5e333720c527185471dcdae90304f476766c1633f",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'rect': 1, 'path': 1}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/taste-skill-logo.png",
+    "hash": "0a1071bf1b34238add2519dccd4e727cd5d269ef91dd467ea664aa80d83efaad",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "PNG raster 180x180; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/taste-skill-logo.webp",
+    "hash": "f59c2954a0a2a32c4a65a3599d2d2834a2a4068820aa34c8b2c902491bafc16c",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "WEBP raster 180x180; role established by fully-read README as sponsor/logo/navigation/banner presentation asset, not method reference."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "assets/vercel-oss-program-badge.svg",
+    "hash": "edd338b3735bc2668b84d11d6f98b2704c45fae93fa5918d5cfbdcd6b43cf041",
+    "reason": "Repository branding/sponsorship presentation asset; format/content role inspected, no in-scope instruction method.",
+    "prior_conclusion": "SVG geometry inspected ({'svg': 1, 'rect': 1, 'g': 1, 'path': 42}); README sponsor/badge/link decoration, no embedded script or method text."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "scripts/build-emil-sponsor-row.mjs",
+    "hash": "4e48beb43439e2f1136d36c1c1a00554bd6136700812b7f7d4890d5f4972ed18",
+    "reason": "Repo presentation-media implementation, outside transferable prompt/context/workflow mechanisms; read before exclusion.",
+    "prior_conclusion": "Full supporting image-preparation source inspected: fixed sponsor/readme inputs, flood-fill edge background removal, alpha bounds/cropping, format/size conversion or compositing. No prompt/tool orchestration; hardcoded local Downloads paths and missing package manifest limit reproducibility."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "scripts/convert-readme-assets-webp.mjs",
+    "hash": "e3439bbef12845b07bb0475a34a9f4b8695a9db8d9621c40aebecb9d1dce9edd",
+    "reason": "Repo presentation-media implementation, outside transferable prompt/context/workflow mechanisms; read before exclusion.",
+    "prior_conclusion": "Full supporting image-preparation source inspected: fixed sponsor/readme inputs, flood-fill edge background removal, alpha bounds/cropping, format/size conversion or compositing. No prompt/tool orchestration; hardcoded local Downloads paths and missing package manifest limit reproducibility."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "scripts/process-readme-buttons.mjs",
+    "hash": "10090fe18260cea2b99306ad7b27e3ccfa7b907e6a25fe26960d988de0a38802",
+    "reason": "Repo presentation-media implementation, outside transferable prompt/context/workflow mechanisms; read before exclusion.",
+    "prior_conclusion": "Full supporting image-preparation source inspected: fixed sponsor/readme inputs, flood-fill edge background removal, alpha bounds/cropping, format/size conversion or compositing. No prompt/tool orchestration; hardcoded local Downloads paths and missing package manifest limit reproducibility."
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "path": "scripts/process-sponsor-badge.mjs",
+    "hash": "31fe1016f562ab736ff7240d054ccb81592b23942e33f0885ca57c3d5c143996",
+    "reason": "Repo presentation-media implementation, outside transferable prompt/context/workflow mechanisms; read before exclusion.",
+    "prior_conclusion": "Full supporting image-preparation source inspected: fixed sponsor/readme inputs, flood-fill edge background removal, alpha bounds/cropping, format/size conversion or compositing. No prompt/tool orchestration; hardcoded local Downloads paths and missing package manifest limit reproducibility."
+  }
+]

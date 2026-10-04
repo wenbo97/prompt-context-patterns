@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/ja-JP/skills/finance-billing-ops/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full127line actual live-vs-timestampedsnapshot revenue/customerimpact/code-entitlement/productclaim/recommendation separation, currentbillingevidence→case→exactcheckout-seat-quota runtimepath→decision/gap/report read. Same maincanonical live-state/source-factproof methods, not genericfinancialadvice or sourcecurrentmarketfacts. BillingAPI/privacy/financeimplementation scoped, no refund/query/messages."
+  },
+  {
+    "path": "docs/ja-JP/skills/flox-environments/SKILL.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full496line essential activation/platformscope/manifest-pathidentity/project-scopeddependencybootstrap/inspectactualresolvedbinary and automatic-hook-vs-interactiveprofile/secret-boundary prose+shell read. Reproducibletooling/sourcepointer methods shared; environment/version/OSlibraryTOMLrecipes excluded domainimplementation. Source no-sandbox-restrictions/sameallplatform/150k package/immediateexactreproduce claims unsupported; actualhost permissions remain, no install/activation/shellscripts."
+  },
+  {
+    "path": "docs/ja-JP/skills/flutter-dart-code-review/SKILL.md",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "reason": "Full435line actual domain-purpose/checklist/prose read, repaired1–178truncation including state-shapeexample. Flutter/Dart15category architecture/state/performance/test/a11y/security/l10n/DI/staticanalysis guide; native project-library adaptations and physicalsymbols retained, no independent agentpromptmethod beyond generic checklist. Runtime/library/standard/goldenAPI/source80/130scorepreferences scoped without upstreamaudit/efficacy claim, no code/UI actions."
+  }
+]

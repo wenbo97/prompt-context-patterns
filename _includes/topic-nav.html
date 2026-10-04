@@ -1,0 +1,8 @@
+<aside class="topic-nav" aria-label="{% if page.lang == 'zh' %}主题导航{% else %}Theme navigation{% endif %}">
+  <span class="eyebrow">{% if page.lang == 'zh' %}主题{% else %}Themes{% endif %}</span>
+  <ul>{% for category in site.data.categories %}
+    {% if page.lang == 'zh' %}{% assign label = category.name_zh %}{% assign suffix = '-zh' %}{% else %}{% assign label = category.name_en %}{% assign suffix = '' %}{% endif %}
+    {% capture target %}/topics/{{ category.key }}{{ suffix }}/{% endcapture %}
+    <li><a href="{{ target | relative_url }}">{{ label | escape }}</a></li>
+  {% endfor %}</ul>
+</aside>

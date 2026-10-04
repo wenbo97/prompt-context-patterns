@@ -1,4 +1,5 @@
-id: 999
+case_id: fake-fixture
+pattern_ids: [999]
 name: Fake Pattern
 category: test
 hypothesis: just a fixture

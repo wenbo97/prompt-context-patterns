@@ -1,0 +1,122 @@
+[
+  {
+    "path": "docs/ja-JP/rules/java/coding-style.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same Java scope, project indentation, records/defensive copies, version-conditioned modern features, Optional and contextual errors/streams plus Java/JPA routers. Domain Java code excluded from prompt-method extraction. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/java/hooks.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same Java/Maven/Gradle scope, formatting/checkstyle and wrapper compilation verification; prose does not register callbacks and actual detected build-tool choice is prerequisite. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/java/patterns.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Same repository/service/constructor/DTO/builder/sealed-state/response recipes; all Java/Spring/Quarkus/JPA routers preserved and Japanese Quarkus description correctly retains current REST/Panache/messaging, unlike Chinese Camel wording. Application Java code excluded from new prompt method. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/java/security.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same secret/input/SQL/auth/dependency and safe-client/detailed-server-error policy; Spring/Quarkus/general routers retained. Dependency tree is inventory, not a vulnerability scan result. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/java/testing.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Same JUnit/Mockito/Testcontainers, layer-mirrored and behavior-named tests and coverage/source routers. Japanese Quarkus pointer retains canonical RESTAssured/DevServices wording, unlike Chinese Camel wording. Fixed80%/skip-trivial defaults are not behavior proof. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/kotlin/coding-style.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same kt/kts scope, immutable-value preference/naming/null/sealed/scope-function and cancellation-rethrow rules. Domain language API code excluded. Read-only collection interface and shallow copy do not guarantee deep immutability. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/kotlin/hooks.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same kt/kts/Gradle scope, after-edit formatter/static analysis/build verification. No actual registration, runner detection or successful build inferred. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/kotlin/patterns.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same constructor/one-way-state/repository/use-case/platform/coroutine/DSL recipes and coroutine/Android routers. Child-failure independence is an application concurrency recipe, not agent delegation evidence. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/kotlin/security.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same Android/iOS secret/network/input/auth/release/WebView domain policy, including release-byte tests and conditional JavaScript. BuildConfig is embedded release data, not confidential secret storage; numeric/code/API guidance not promoted as verified security. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/kotlin/testing.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same configured KMP/Android frameworks, handwritten fakes, virtual-time coroutine, mock engine/memory DB, behavior names and layer organization. Framework time/isolation claims are source examples requiring runtime proof; no new agent method. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/rust/coding-style.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same rs scope, formatter/clippy, ownership/context errors, domain-organized/private/public API policy and Rust router. Language implementation code excluded from prompt-pattern authorship. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/rust/hooks.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same rs/Cargo scope, after-edit formatter/clippy/check. Source faster-than-build claim not measured; config text is not callback/result proof. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/rust/patterns.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same trait/repository/service/newtype/exhaustive state/builder/sealed trait/response recipes and Rust router. Domain type-system/architecture implementation excluded from new agent mechanism. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/rust/security.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same required-secret, parameterized query, typed boundary parse, unsafe-invariant comment/review, dependency scanning and safe-client/server error policy. Commentary on unsafe invariant is a claim to check, not safety proof; no security guidance endorsed solely from prose. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/rust/testing.md",
+    "reason": "Full Japanese method prose/predicates/pointers/shell/XML/templates read and compared with previously completely read same canonical fields. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same unit/integration placement, parametrization/proptest/mock/async, behavior names and domain-target coverage/command routers. Source80% is a project threshold, not adequacy; test outcomes not executed or inferred. Domain implementation examples excluded from prompt-method authorship; no whole-body duplicate claim or source execution.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  }
+]

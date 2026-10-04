@@ -1,0 +1,75 @@
+31|The adversarial framing is a specialized review lens under role assignment; remove the forced assumption that a bug must exist.|对抗框架是角色职责中的评审视角变体；去掉必须存在错误的预设。
+33|The M×N grid is a multi-agent topology variant; agreement counts remain observations, not correctness probabilities.|M×N 网格是多 agent 拓扑变体；票数是观察，不是正确率。
+37|The useful mechanism is a constructed task brief with selective artifact access, already covered by handoff context; the absolute read-nothing rule is unwarranted.|有用机制是构造简报与选择性产物访问，交接上下文已覆盖；绝对不读内容没有依据。
+38|Complexity tiers specialize requirement-based dispatch; model routing retains explicit quality checks and workflow routing remains a related case.|复杂度分级是按任务要求派发的变体；模型路由保留质量检查，流程路由是相关情形。
+39|The durable state-file component belongs in the progress ledger; task ownership and messaging are handled by the task-board method.|持久状态文件部分归入进度台账；任务归属与通信由任务看板处理。
+40|The proprietary work-item tag is an integration detail; portable task inputs, expected outputs and audit artifacts belong in the handoff contract.|专有工单 tag 是集成细节；可移植任务输入、期望输出和审核产物归入交接契约。
+45|Per-rule blocking/advisory consequences are part of the versioned rule catalog, not a separate review algorithm.|逐规则的阻断或建议后果属于版本化规则目录，不是独立评审算法。
+46|Repo discovery is the observe-before-action method applied before review; retain its convention and dependency checks as a scenario.|仓库勘探是先观察后行动在评审前的应用；约定与依赖检查保留为场景。
+53|The incident-specific rubric is an application of anchored criteria; keep owner and observable repair completion requirements there.|事故专用量规是锚定判据的应用；负责人和可观察修复完成要求保留在该模式。
+54|Supplying test conventions, anti-patterns and determinism rules is domain-knowledge embedding for test generation; execution is a separate verification gate.|给出测试约定、反例和确定性规则是测试生成中的领域知识嵌入；执行另属验证门。
+56|The useful rule is selective disclosure of sensitive tool-response fields, already covered by redaction and pre-context minimization.|有用规则是选择性披露工具响应敏感字段，脱敏与进入上下文前最小化已覆盖。
+57|Surfacing a detected external instruction as data is a response variant of the trust-boundary method; only evidence-backed vulnerabilities are findings.|把检测的外部指令作为数据报告是信任边界的响应变体；只有证据支持的漏洞才是发现。
+58|Prosecutor, defender and judge rename the finding/rebuttal/adjudication triad; preserve evidence-based resolution without legal-role authority.|控辩审是发现、反驳、裁决三方的重命名；保留证据裁决，不赋予法律角色权威。
+62|Cross-plugin instruction propagation is the same untrusted-data boundary across a tool chain; discard universal sanitization guarantees.|跨插件指令传播是在工具链应用同一不可信数据边界；去掉通用净化保证。
+63|Severity litmus questions are rubric anchors; they must be calibrated to local operational policy rather than treated as universal thresholds.|严重度问题是量规锚点；应按本地操作策略校准，不视为通用阈值。
+64|Security posture deltas are evidence-first review using deployment context; no separate unvalidated severity calculus is needed.|安全态势变化是结合部署背景的证据优先评审；无需独立未验证严重度计算。
+65|Useful uncertainty reporting is evidence qualification; replace self-assigned percentages with observed support and explicit missing checks.|有用的不确定性报告是证据限定；用观察支持和缺失检查替代自赋百分比。
+69|Versioned declarative policy and review-rule catalogs share the predicate/action data mechanism; policy authority remains explicit.|版本化声明策略与评审规则目录共享判据、行动数据机制；策略权威仍须明确。
+71|The portable part is time-budgeted partial-result triage; a no-questions mandate cannot override genuinely required intent or authorization.|可移植部分是有时间预算的部分结果分诊；零提问不能覆盖必需意图或授权。
+75|Eleven is an arbitrary count of stages; dependent stage execution and per-stage validation are the underlying reusable method.|十一是任意阶段数量；可复用方法是依赖阶段执行与逐阶段验证。
+78|The override taxonomy duplicates the inline deployment schema already used for domain knowledge embedding.|覆盖类型表重复了领域知识嵌入中的内联发布 schema。
+79|Escalation matrices are intent/risk routing predicates with declared outcomes; the sample thresholds are local policy, not universal severity definitions.|升级矩阵是带明确结果的意图、风险路由判据；示例阈值是本地策略，不是通用严重度定义。
+80|Task-specific effort checkpoints are investigation budgets with explicit changed-scope reporting; unmeasured agent-hour multipliers are removed.|任务投入检查点是带范围变化报告的调查预算；去掉未测量的 agent 工时倍数。
+82|Chart choice is a domain instance of signal-to-workflow routing with guards; numeric chart heuristics require domain-specific validation.|图表选择是带防护的信号到流程路由实例；数字图表启发式需领域验证。
+84|Research-informed questions are an adaptive interaction-loop variant; withholding solutions is appropriate only for an agreed teaching task.|研究后提问是自适应交互循环变体；仅在约定教学任务中保留答案。
+85|A small index followed by selective deep reads is progressive disclosure; source disambiguation belongs to its pointer conditions.|小索引后选择性深读是渐进披露；来源消歧属于引用条件。
+86|Detectable signals can anchor a scoring rubric but word counts do not establish substantive quality.|可检测信号可作为量规锚点，但词数不证明实质质量。
+88|Column/query cues specialize intent routing; author-supplied confidence numbers are not calibrated probabilities.|列和查询线索是意图路由变体；作者给的置信数字不是校准概率。
+90|Source/target feature degradation is a compatibility-adapter case of platform handling.|源和目标间功能退化是平台处理中的兼容适配器实例。
+91|Specificity-first overlap resolution belongs in the router's signal predicates and ambiguity branch.|具体性优先的重叠消解属于路由信号判据与歧义分支。
+93|Multiple-source harvesting supplies the evidence chain; audience-specific output is a related presentation method, not proof of complete coverage.|多源采集提供证据链；按受众输出是相关表达方法，不证明覆盖完整。
+98|Engineer-to-executive reframing is audience/decision calibration with domain-specific checklists.|工程师向高管改写是带领域检查表的受众、决定校准。
+99|An accessibility post-processor is a real artifact-validation pipeline; it does not prove full compliance from a fixed assertion count.|无障碍后处理是实际产物校验管线；固定断言数量不证明完全合规。
+102|A mandatory polishing pass is targeted self-review; the emotional phrase has no established universal effect.|强制精修是有目标的自查；情绪化句子的通用效果没有依据。
+105|Named undesirable aesthetics with intended alternatives instantiate negative constraints; choices remain brief-specific.|具名不良审美及替代方案是具体否定约束；选择仍依简报而定。
+110|Embedding algorithm details is inline domain knowledge; unverifiable platform ranking weights must not be presented as current facts.|嵌入算法细节是内联领域知识；不可核查的平台排名权重不能当当前事实。
+111|Targeted clarification is part of the adaptive interaction loop; do not mandate three-to-five questions for already specified tasks.|有目标澄清属于自适应交互循环；已明确任务不强制三到五个问题。
+112|A populated output example is a few-shot transformation example; its sample availability and price are not live facts.|填充输出样例是少样本转换例；示例可用性和价格不是实时事实。
+113|Input-type routing uses the same observable-predicate dispatch mechanism as intent routing.|输入类型路由使用与意图路由相同的可观察判据派发机制。
+114|Bundled assets are exact resource pointers with path resolution; the claim that runtime downloading is never allowed is unsupported.|打包资源是需路径解析的准确引用；永不允许运行时下载的主张没有依据。
+117|Language-specific SDK guides are branch-specific references under progressive disclosure.|按语言选择 SDK 指南是渐进披露中的分支资料。
+118|Architectural API surfaces are branch-specific reference choices under progressive disclosure.|按架构选择 API 面是渐进披露中的分支资料选择。
+120|Provider detection is an activation-boundary example; explicit cross-provider migrations must not be refused by a blanket guard.|供应商检测是激活边界示例；不能一概拒绝用户明确要求的跨供应商迁移。
+122|Explicit corrections and confirmations are scoped feedback-memory records; silence is not a new preference.|明确修正与确认是带范围的反馈记忆；沉默不是新偏好。
+124|Tool preference and forbidden alternatives already appear in the routing contract; exact tool names remain host-specific.|工具偏好和禁止替代已在路由契约中；准确工具名依宿主而定。
+126|A smart-colleague briefing metaphor describes the same self-contained handoff contract.|像向刚到的同事简报，是同一独立交接契约的比喻。
+129|Approval persistence is determined by granted target and effects, already covered by scoped authorization.|授权持续性由已批准目标与影响决定，授权范围模式已覆盖。
+130|Investigating unexpected files and locks is observe-before-action applied to destructive operations.|调查意外文件与锁，是先观察后行动在破坏性操作的应用。
+131|Before/during/after updates are the visible progress protocol; visibility depends on the actual host.|开始、过程、结束更新是可见进度协议；可见性依实际宿主而定。
+136|A monitor that classifies allowed/approved/denied actions implements tiered permission policy; model judgment is not tool enforcement.|分类允许、需授权、禁止操作的监视者实现分级权限策略；模型判断不是工具限制。
+137|The useful part is state-preserving compaction; exposing private deliberation or copying all history is not required.|有用部分是保留状态的压缩；无需暴露私有思考或复制全部历史。
+138|A shared owned task board is the coordination surface of pull-based task orchestration.|共享、有归属的任务看板是拉取式任务编排的协调面。
+139|Machine-visible result/blocked/failed markers are terminal status fields within the progress protocol.|机器可见的结果、阻塞、失败标记是进度协议中的终态字段。
+140|Autonomous stewardship is authorization-scope checking plus bounded idle exits; it cannot create new user intent.|自主维护是授权范围检查与有界空闲退出，不能创造用户新意图。
+147|Announcing the selected discipline is a concise progress-event variant; it does not create compliance evidence.|声明所选技能是简短进度事件变体，不会产生遵从证据。
+157|An author's rationale is a claim checked against code under evidence-first review, not a separate severity rule.|作者理由是证据优先评审中待代码核查的主张，不是独立严重度规则。
+161|Explicit model choice is an interface detail of allowed model routing, subject to host and user override policy.|显式选模型是受允许模型路由的接口细节，须遵守宿主与用户覆盖规则。
+162|File-based briefs and reports are durable progress/handoff artifacts; their names alone do not ensure safe communication.|文件简报和报告是持久进度、交接产物；名称本身不保证安全通信。
+163|Avoiding pasted history is the bounded-context handoff method; required dependencies still must be included.|不粘贴历史是有界上下文交接方法；必要依赖仍须提供。
+168|Choosing instruction form based on observed failure is skill improvement driven by evaluation, not an independent output algorithm.|按观察失败选指令形式是评测驱动技能改进，不是独立输出算法。
+169|Wording micro-tests with a no-guidance control are a lower-cost ablation experiment, already covered by behavior-versus-baseline pruning.|含无指导对照的措辞微测试是低成本消融实验，基线行为剪枝已覆盖。
+172|Loading one harness adapter is branch-selective progressive disclosure; adapter bindings are handled by the related capability-abstraction method.|加载一个宿主适配器是分支选择式渐进披露；绑定由相关能力抽象方法处理。
+179|Embedded state is one serialization surface for the durable ledger; the data and generated view must still agree.|内嵌状态是持久台账的一种序列化面；数据和生成视图仍须一致。
+180|Numbering is a display convention for a dependency graph, not a separate scheduling mechanism.|编号是依赖图展示约定，不是独立调度机制。
+182|Reviewing shipped but unloaded scripts is exactly the complete-payload skill review scope.|审核已交付但未加载脚本，就是完整技能载荷审查范围。
+184|Derived summaries inherit untrusted-data status under the same cross-tool trust-boundary method.|派生摘要在同一跨工具信任边界中继承不可信数据状态。
+185|Fake generated fixtures and approved secret retrieval are part of selective sensitive-data disclosure.|生成假夹具与获准密钥读取属于敏感数据选择性披露。
+186|In-loop correction is self-review before presentation; a stop-hook implementation is optional infrastructure.|呈现前回路内修正是自查，stop-hook 实现是可选基础设施。
+191|Hiding later-stage reference content is a context-boundary variant of progressive disclosure, with explicit stage handoff.|隐藏后续阶段内容是渐进披露的上下文边界变体，需明确阶段交接。
+195|Rejected interpretations are contrastive examples around a defined concept; include the correct interpretation and concrete consequence.|被否定解释是围绕已定义概念的对照示例，需给正确解释与具体后果。
+196|Tracking introduced concepts is a coherence check while drafting sections; do not claim a model-internal guarantee.|追踪已介绍概念是逐节起草的连贯性检查，不声称模型内部保证。
+199|Preparing a decision-ready brief before a required approval is the concrete confirmation gate; required decisions cannot be delayed past dependent work.|必需确认前准备决策简报是具体确认门；不能把必需选择推迟到依赖工作之后。
+200|Separate exploration and production are named workflow modes with different outputs and entry conditions.|把探索与生产分开，是输出和入口条件不同的具名流程模式。
+203|A human-only gate resolves from a live answer or verified evidence, never fabricated agent consent.|人工门由真实回答或核查证据解决，不能由 agent 编造同意。
+205|Checkpointed handoff preserves state before context pressure; no universal reasoning cliff or token threshold is established.|上下文压力前检查交接保存状态；通用推理断崖或 token 阈值没有依据。

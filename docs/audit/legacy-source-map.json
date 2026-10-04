@@ -1,0 +1,884 @@
+{
+  "1": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 73,
+      "end_line": 87,
+      "license": "Apache-2.0",
+      "section": "#### Anatomy of a Skill"
+    }
+  ],
+  "14": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 119,
+      "end_line": 142,
+      "license": "Apache-2.0",
+      "section": "**Defining output formats**"
+    }
+  ],
+  "25": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 119,
+      "end_line": 142,
+      "license": "Apache-2.0",
+      "section": "**Defining output formats**"
+    }
+  ],
+  "112": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 119,
+      "end_line": 142,
+      "license": "Apache-2.0",
+      "section": "**Defining output formats**"
+    }
+  ],
+  "100": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 86,
+      "end_line": 113,
+      "license": "Apache-2.0",
+      "section": "#### Progressive Disclosure"
+    }
+  ],
+  "117": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 86,
+      "end_line": 113,
+      "license": "Apache-2.0",
+      "section": "#### Progressive Disclosure"
+    }
+  ],
+  "118": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 86,
+      "end_line": 113,
+      "license": "Apache-2.0",
+      "section": "#### Progressive Disclosure"
+    }
+  ],
+  "172": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 86,
+      "end_line": 113,
+      "license": "Apache-2.0",
+      "section": "#### Progressive Disclosure"
+    }
+  ],
+  "119": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 169,
+      "end_line": 195,
+      "license": "Apache-2.0",
+      "section": "### Step 1: Spawn all runs"
+    }
+  ],
+  "23": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 80,
+      "end_line": 87,
+      "license": "Apache-2.0",
+      "section": "└── Bundled Resources"
+    }
+  ],
+  "114": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/SKILL.md",
+      "start_line": 80,
+      "end_line": 87,
+      "license": "Apache-2.0",
+      "section": "└── Bundled Resources"
+    }
+  ],
+  "52": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/agents/grader.md",
+      "start_line": 33,
+      "end_line": 59,
+      "license": "Apache-2.0",
+      "section": "### Step 3: Evaluate Each Assertion"
+    }
+  ],
+  "27": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/agents/comparator.md",
+      "start_line": 37,
+      "end_line": 85,
+      "license": "Apache-2.0",
+      "section": "### Step 3: Generate Evaluation Rubric"
+    }
+  ],
+  "108": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator/agents/comparator.md",
+      "start_line": 37,
+      "end_line": 85,
+      "license": "Apache-2.0",
+      "section": "### Step 3: Generate Evaluation Rubric"
+    }
+  ],
+  "2": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-plans/SKILL.md",
+      "start_line": 43,
+      "end_line": 51,
+      "license": "MIT",
+      "section": "## Step Granularity"
+    }
+  ],
+  "18": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 10,
+      "end_line": 14,
+      "license": "MIT",
+      "section": "**Why subagents:**"
+    }
+  ],
+  "36": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 10,
+      "end_line": 14,
+      "license": "MIT",
+      "section": "**Why subagents:**"
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/unified-memory/SKILL.md",
+      "start_line": 60,
+      "end_line": 102,
+      "license": "MIT",
+      "section": "Memory sources, evidence and scope"
+    }
+  ],
+  "126": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 10,
+      "end_line": 14,
+      "license": "MIT",
+      "section": "**Why subagents:**"
+    }
+  ],
+  "32": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 62,
+      "end_line": 123,
+      "license": "MIT",
+      "section": "digraph process"
+    }
+  ],
+  "35": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 184,
+      "end_line": 223,
+      "license": "MIT",
+      "section": "## Model Selection"
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/cost-aware-llm-pipeline/SKILL.md",
+      "start_line": 21,
+      "end_line": 43,
+      "license": "MIT",
+      "section": "Complexity-based model routing"
+    }
+  ],
+  "38": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 184,
+      "end_line": 223,
+      "license": "MIT",
+      "section": "## Model Selection"
+    }
+  ],
+  "161": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 184,
+      "end_line": 223,
+      "license": "MIT",
+      "section": "## Model Selection"
+    }
+  ],
+  "70": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 131,
+      "end_line": 161,
+      "license": "MIT",
+      "section": "Conversation memory does not survive"
+    }
+  ],
+  "128": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 131,
+      "end_line": 161,
+      "license": "MIT",
+      "section": "Conversation memory does not survive"
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/strategic-compact/SKILL.md",
+      "start_line": 76,
+      "end_line": 122,
+      "license": "MIT",
+      "section": "Phase-boundary compaction and preserved state"
+    }
+  ],
+  "162": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 131,
+      "end_line": 161,
+      "license": "MIT",
+      "section": "Conversation memory does not survive"
+    }
+  ],
+  "41": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 373,
+      "end_line": 394,
+      "license": "MIT",
+      "section": "Five rounds maximum per task"
+    }
+  ],
+  "150": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 17,
+      "end_line": 34,
+      "license": "MIT",
+      "section": "**Continuous execution:**"
+    }
+  ],
+  "164": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 458,
+      "end_line": 468,
+      "license": "MIT",
+      "section": "If the final whole-branch review returns findings"
+    }
+  ],
+  "156": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "start_line": 339,
+      "end_line": 344,
+      "license": "MIT",
+      "section": "Do not pre-judge findings"
+    }
+  ],
+  "157": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "start_line": 64,
+      "end_line": 72,
+      "license": "MIT",
+      "section": "## Do Not Trust the Report"
+    }
+  ],
+  "159": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "start_line": 45,
+      "end_line": 52,
+      "license": "MIT",
+      "section": "Do not crawl the broader codebase"
+    }
+  ],
+  "160": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "start_line": 73,
+      "end_line": 95,
+      "license": "MIT",
+      "section": "## Tests"
+    }
+  ],
+  "158": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "start_line": 153,
+      "end_line": 159,
+      "license": "MIT",
+      "section": "If the plan or brief explicitly mandates"
+    }
+  ],
+  "12": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/task-reviewer-prompt.md",
+      "start_line": 52,
+      "end_line": 54,
+      "license": "MIT",
+      "section": "Your review is read-only"
+    }
+  ],
+  "43": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/using-git-worktrees/SKILL.md",
+      "start_line": 90,
+      "end_line": 101,
+      "license": "MIT",
+      "section": "#### Create the Worktree"
+    }
+  ],
+  "28": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/implementer-prompt.md",
+      "start_line": 92,
+      "end_line": 120,
+      "license": "MIT",
+      "section": "## Before Reporting Back: Self-Review"
+    }
+  ],
+  "102": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/implementer-prompt.md",
+      "start_line": 92,
+      "end_line": 120,
+      "license": "MIT",
+      "section": "## Before Reporting Back: Self-Review"
+    }
+  ],
+  "186": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/implementer-prompt.md",
+      "start_line": 92,
+      "end_line": 120,
+      "license": "MIT",
+      "section": "## Before Reporting Back: Self-Review"
+    }
+  ],
+  "165": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-plans/SKILL.md",
+      "start_line": 34,
+      "end_line": 42,
+      "license": "MIT",
+      "section": "## Task Right-Sizing"
+    }
+  ],
+  "166": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-plans/SKILL.md",
+      "start_line": 70,
+      "end_line": 77,
+      "license": "MIT",
+      "section": "## Global Constraints"
+    }
+  ],
+  "167": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-plans/SKILL.md",
+      "start_line": 102,
+      "end_line": 108,
+      "license": "MIT",
+      "section": "**Interfaces:**"
+    }
+  ],
+  "47": [
+    {
+      "repo": "garrytan/gstack",
+      "path": "review/SKILL.md",
+      "start_line": 761,
+      "end_line": 775,
+      "license": "MIT",
+      "section": "### Pre-emit verification gate"
+    }
+  ],
+  "65": [
+    {
+      "repo": "garrytan/gstack",
+      "path": "review/SKILL.md",
+      "start_line": 761,
+      "end_line": 775,
+      "license": "MIT",
+      "section": "### Pre-emit verification gate"
+    }
+  ],
+  "144": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/mcp-builder/SKILL.md",
+      "start_line": 25,
+      "end_line": 41,
+      "license": "Apache-2.0",
+      "section": "**API Coverage vs. Workflow Tools:**"
+    }
+  ],
+  "101": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/canvas-design/SKILL.md",
+      "start_line": 15,
+      "end_line": 34,
+      "license": "Apache-2.0",
+      "section": "## DESIGN PHILOSOPHY CREATION"
+    }
+  ],
+  "103": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/webapp-testing/SKILL.md",
+      "start_line": 65,
+      "end_line": 82,
+      "license": "Apache-2.0",
+      "section": "## Reconnaissance-Then-Action Pattern"
+    }
+  ],
+  "104": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/webapp-testing/SKILL.md",
+      "start_line": 14,
+      "end_line": 17,
+      "license": "Apache-2.0",
+      "section": "**Always run scripts with"
+    }
+  ],
+  "87": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "start_line": 152,
+      "end_line": 231,
+      "license": "Apache-2.0",
+      "section": "**For each section:**"
+    }
+  ],
+  "106": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "start_line": 152,
+      "end_line": 231,
+      "license": "Apache-2.0",
+      "section": "**For each section:**"
+    }
+  ],
+  "107": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "start_line": 261,
+      "end_line": 275,
+      "license": "Apache-2.0",
+      "section": "### Step 2: Test with Sub-Agent"
+    }
+  ],
+  "51": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/pptx/SKILL.md",
+      "start_line": 186,
+      "end_line": 207,
+      "license": "LicenseRef-Anthropic-source-available",
+      "section": "### File QA (required)"
+    }
+  ],
+  "115": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/pptx/SKILL.md",
+      "start_line": 204,
+      "end_line": 222,
+      "license": "LicenseRef-Anthropic-source-available",
+      "section": "### Visual QA"
+    }
+  ],
+  "116": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/xlsx/SKILL.md",
+      "start_line": 24,
+      "end_line": 29,
+      "license": "LicenseRef-Anthropic-source-available",
+      "section": "**Use formulas, never hardcoded results.**"
+    }
+  ],
+  "143": [
+    {
+      "repo": "anthropics/skills",
+      "path": "skills/theme-factory/SKILL.md",
+      "start_line": 58,
+      "end_line": 59,
+      "license": "Apache-2.0",
+      "section": "## Create your Own Theme"
+    }
+  ],
+  "137": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/strategic-compact/SKILL.md",
+      "start_line": 76,
+      "end_line": 122,
+      "license": "MIT",
+      "section": "Phase-boundary compaction and preserved state"
+    }
+  ],
+  "42": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/continuous-learning-v2/SKILL.md",
+      "start_line": 287,
+      "end_line": 342,
+      "license": "MIT",
+      "section": "Project-scoped instincts and learning"
+    }
+  ],
+  "95": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/continuous-learning-v2/SKILL.md",
+      "start_line": 287,
+      "end_line": 342,
+      "license": "MIT",
+      "section": "Project-scoped instincts and learning"
+    }
+  ],
+  "26": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/unified-memory/SKILL.md",
+      "start_line": 60,
+      "end_line": 102,
+      "license": "MIT",
+      "section": "Memory sources, evidence and scope"
+    }
+  ],
+  "11": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/hermes-imports/SKILL.md",
+      "start_line": 21,
+      "end_line": 49,
+      "license": "MIT",
+      "section": "Secret and content sanitization"
+    }
+  ],
+  "127": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/dmux-workflows/SKILL.md",
+      "start_line": 105,
+      "end_line": 117,
+      "license": "MIT",
+      "section": "Parallel-safe file ownership"
+    }
+  ],
+  "175": [
+    {
+      "repo": "affaan-m/ECC",
+      "path": "skills/terminal-ops/SKILL.md",
+      "start_line": 30,
+      "end_line": 36,
+      "license": "MIT",
+      "section": "Exact execution and repository-state reporting"
+    }
+  ],
+  "173": [
+    {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "path": "composio-skills/ring-central-automation/SKILL.md",
+      "start_line": 11,
+      "end_line": 34,
+      "license": "Apache-2.0 (repository README declaration; per-skill license not supplied)",
+      "section": "Unavailable capabilities and unrelated search results"
+    }
+  ],
+  "109": [
+    {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "path": "composio-skills/alpha-vantage-automation/SKILL.md",
+      "start_line": 14,
+      "end_line": 80,
+      "license": "Apache-2.0 (repository README declaration; per-skill license not supplied)",
+      "section": "Discovery, active connection and validated execution"
+    }
+  ],
+  "13": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-skills/SKILL.md",
+      "start_line": 146,
+      "end_line": 192,
+      "license": "MIT",
+      "section": "**Purpose:** Your agent reads the description"
+    }
+  ],
+  "149": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-skills/SKILL.md",
+      "start_line": 397,
+      "end_line": 413,
+      "license": "MIT",
+      "section": "## Testing All Skill Types"
+    }
+  ],
+  "145": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/verification-before-completion/SKILL.md",
+      "start_line": 14,
+      "end_line": 39,
+      "license": "MIT",
+      "section": "## The Iron Law"
+    }
+  ],
+  "146": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/verification-before-completion/SKILL.md",
+      "start_line": 61,
+      "end_line": 78,
+      "license": "MIT",
+      "section": "## Rationalization Prevention"
+    }
+  ],
+  "148": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/receiving-code-review/SKILL.md",
+      "start_line": 27,
+      "end_line": 52,
+      "license": "MIT",
+      "section": "## Forbidden Responses"
+    }
+  ],
+  "74": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/receiving-code-review/SKILL.md",
+      "start_line": 27,
+      "end_line": 52,
+      "license": "MIT",
+      "section": "## Forbidden Responses"
+    }
+  ],
+  "7": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "start_line": 14,
+      "end_line": 37,
+      "license": "MIT",
+      "section": "## Establish Shared Understanding"
+    }
+  ],
+  "8": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "start_line": 38,
+      "end_line": 56,
+      "license": "MIT",
+      "section": "<HARD-GATE>"
+    }
+  ],
+  "151": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "start_line": 38,
+      "end_line": 56,
+      "license": "MIT",
+      "section": "<HARD-GATE>"
+    }
+  ],
+  "152": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "start_line": 142,
+      "end_line": 163,
+      "license": "MIT",
+      "section": "```dot"
+    }
+  ],
+  "192": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "start_line": 45,
+      "end_line": 55,
+      "license": "MIT",
+      "section": "## Steps and completion criteria"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "start_line": 81,
+      "end_line": 81,
+      "license": "MIT",
+      "section": "Hunt **no-ops** sentence by sentence"
+    }
+  ],
+  "193": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "start_line": 45,
+      "end_line": 55,
+      "license": "MIT",
+      "section": "## Steps and completion criteria"
+    }
+  ],
+  "191": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "start_line": 45,
+      "end_line": 55,
+      "license": "MIT",
+      "section": "## Steps and completion criteria"
+    }
+  ],
+  "190": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
+      "start_line": 5,
+      "end_line": 14,
+      "license": "MIT",
+      "section": "## Invocation"
+    }
+  ],
+  "194": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "start_line": 48,
+      "end_line": 51,
+      "license": "MIT",
+      "section": "### Sharpen fuzzy language"
+    }
+  ],
+  "206": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "start_line": 66,
+      "end_line": 74,
+      "license": "MIT",
+      "section": "### Offer ADRs sparingly"
+    }
+  ],
+  "197": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "start_line": 82,
+      "end_line": 95,
+      "license": "MIT",
+      "section": "## Fog of war"
+    }
+  ],
+  "203": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "start_line": 75,
+      "end_line": 77,
+      "license": "MIT",
+      "section": "Every ticket is either"
+    }
+  ],
+  "198": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "start_line": 11,
+      "end_line": 14,
+      "license": "MIT",
+      "section": "Both axes run as"
+    }
+  ],
+  "201": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "start_line": 120,
+      "end_line": 126,
+      "license": "MIT",
+      "section": "**If no correct seam exists"
+    }
+  ],
+  "202": [
+    {
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "start_line": 57,
+      "end_line": 70,
+      "license": "MIT",
+      "section": "### Completion criterion"
+    }
+  ],
+  "6": [
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/receiving-code-review/SKILL.md",
+      "start_line": 27,
+      "end_line": 39,
+      "license": "MIT",
+      "section": "## Forbidden Responses"
+    }
+  ]
+}

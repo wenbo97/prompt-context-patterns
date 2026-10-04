@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/ja-JP/skills/exa-search/SKILL.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full105line actual driftprone preflight/exposedexacttools/twoquerymodes/parameterbudget/scoped followups/examples read and complete canonicalmethoddelta inspected. Newer root entire UntrustedResults boundary omitted: retrievedcontent/snippets never instructions or unreviewed code/dependencies, no resultchosenaction/dataendpoint/auth. Identity/schema/tokenlimits remain literal but sourceconfig≠live toolavailability. No search/server/code execution; runtimeAPI details scoped."
+  },
+  {
+    "path": "docs/ja-JP/skills/fal-ai-media/SKILL.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full286line essential actual modelsearch/find/capabilitymetadata-beforepromise/upload→generation/media prompts/seed/costbeforeexpensivecall references and examples read. Shared fixed-context variants/capabilitygrounding/leastcostroute; source listedMCP models/params/vendorclaims not verified current callable API, no budgethardcap proof. Voice/VideoDBdirectAPI code scoped domainimplementation, no media generation/uploads/provideractions."
+  },
+  {
+    "path": "docs/ja-JP/skills/fastapi-patterns/SKILL.md",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "reason": "Full327line domain-purpose/actuallayerresponsibility/prose/request-responseboundary/dependencyoverride/nativeHTTPtesting/OpenAPI reference read. Software FastAPI schemas/DI/error/auth/security/performance cookbook, no independent agentmethod beyond scope/sourceversionrouting. Framework/API/implementation/currentStarletteclaims scoped not audited or adopted, no code/tests/server actions."
+  }
+]

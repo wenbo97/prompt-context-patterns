@@ -6,7 +6,11 @@ _site/
 .jekyll-cache/
 .sass-cache/
 vendor/
-Gemfile.lock
+.bundle/
+node_modules/
+.tools/
+playwright-report/
+test-results/
 
 # Local only
 media/

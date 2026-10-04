@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "numeric_ids": 206,
+  "karpathy_aliases": 6,
+  "active_numeric": 122,
+  "unique_karpathy_candidates": 4,
+  "validated_source_records": 94,
+  "distinct_source_ranges": 69,
+  "bilingual_fields_per_retained_entry": 16,
+  "nonpattern_pages": 32,
+  "status_counts": {
+    "active": 122,
+    "merged": 76,
+    "removed": 9,
+    "new": 5
+  }
+}

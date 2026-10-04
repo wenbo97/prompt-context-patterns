@@ -1,0 +1,21 @@
+{
+  "name": "traceable-patterns-blog",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "generate": "node scripts/catalog/generate.mjs",
+    "check": "node scripts/catalog/check.mjs",
+    "check:generated": "node scripts/catalog/generate.mjs --check",
+    "check:links": "node scripts/catalog/check-links.mjs",
+    "test:e2e": "playwright test",
+    "preview": "bundle exec jekyll serve --host 127.0.0.1 --port 4000"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0"
+  }
+}

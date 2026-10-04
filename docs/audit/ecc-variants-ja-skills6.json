@@ -1,0 +1,32 @@
+[
+  {
+    "path": "docs/ja-JP/skills/backend-patterns/SKILL.md",
+    "reason": "Full587line purpose/method prose read: backend REST/repository/service/cache/retry/auth/log reference, no independent agent method beyond named skilldescription. Actual old local limiter section retained and current activation/origin/sharedquota+HTTP-abuse reference boundaries omitted. Domain implementation/production/performance claims scoped out, no new card or codeexecution.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/benchmark/SKILL.md",
+    "reason": "Full93line actual page/API/build/beforeafter measurement modes, metric-baseline JSON/report and taskroute read. Same fixed-context comparison idea;100requests/10concurrency/thresholds are recipe assumptions and table illustrative, not measured. No warmup/artifact/env identity/repetition/time budget clauses from stronger canonical; unchanged workloads required, no loadtest or benchmarkrun.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/blueprint/SKILL.md",
+    "reason": "Full61line coldstart selfcontained perstep brief/tasks/verification/exits, dependencies/model/rollback/adversarialreview/preflight fallback and sampleplan read. Same explicit launchplan/DAGsource methods; summary promises detailed catalog/changeprotocol but currentbody provides none, test-f presence not runnable hostproof. Exact symbols preserved, no git/agents/planwrite.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/brand-voice/SKILL.md",
+    "reason": "Full79line actual real-source priority/samples/public-vs-private profile/currentuseroverride and VOICEPROFILE schema/router read. Same source-derived reusable voice contextfactowner; defaultAffaanstyle source construction,5–20 heuristic not measured quality, providedsource not instruction authority. Referenced relative schema not copied into JA inventory; use currentcanonical source, no privateoutreach/APIaction.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/browser-qa/SKILL.md",
+    "reason": "Full84line smoke/realinteraction/visualbaseline/accessibility/readbackreport templates read. Same observable browsergoal/lanecomparison method; current canonical explicit read-only/staging-optin/testcredentials/redaction, missingbaselineINCONCLUSIVE and manuala11y limitation absent from short variant. Screenshot/checkcounts/metrics sample not results, no browser/scanner/upload performed; runtime implementation scoped.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  }
+]

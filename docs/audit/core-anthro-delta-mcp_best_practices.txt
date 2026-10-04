@@ -1,0 +1,148 @@
+CHANGE replace old 1-7 target 1-1
+1 # MCP Server Best Practices
+CHANGE replace old 30-33 target 24-27
+24 ### Transport
+25 - **Streamable HTTP**: For remote servers, multi-client scenarios
+26 - **stdio**: For local integrations, command-line tools
+27 - Avoid SSE (deprecated in favor of streamable HTTP)
+CHANGE replace old 37-51 target 31-31
+31 ## Server Naming Conventions
+CHANGE replace old 53-57 target 33-33
+33 Follow these standardized naming patterns:
+CHANGE replace old 60-60 target 36-36
+36 - Examples: `slack_mcp`, `github_mcp`, `jira_mcp`
+CHANGE replace old 65-69 target 41-41
+41 The name should be general, descriptive of the service being integrated, easy to infer from the task description, and without version numbers.
+CHANGE replace old 73-73 target 45-45
+45 ## Tool Naming and Design
+CHANGE replace old 75-75 target 47-47
+47 ### Tool Naming
+CHANGE delete old 81-81 target 53-52
+CHANGE delete old 84-84 target 55-54
+CHANGE replace old 86-86 target 56-56
+56 ### Tool Design
+CHANGE replace old 90-91 target 60-60
+60 - Provide tool annotations (readOnlyHint, destructiveHint, idempotentHint, openWorldHint)
+CHANGE replace old 96-96 target 65-65
+65 ## Response Formats
+CHANGE replace old 98-98 target 67-67
+67 All tools that return data should support multiple formats:
+CHANGE replace old 104-105 target 73-73
+73 - Use for programmatic processing
+CHANGE replace old 110-114 target 78-80
+78 - Convert timestamps to human-readable format
+79 - Show display names with IDs in parentheses
+80 - Omit verbose metadata
+CHANGE replace old 118-118 target 84-84
+84 ## Pagination
+CHANGE replace old 122-122 target 88-88
+88 - **Always respect the `limit` parameter**
+CHANGE delete old 127-127 target 93-92
+CHANGE replace old 129-129 target 94-94
+94 Example pagination response:
+CHANGE replace old 143-143 target 108-108
+108 ## Transport Options
+CHANGE replace old 145-145 target 110-110
+110 ### Streamable HTTP
+CHANGE replace old 147-151 target 112-112
+112 **Best for**: Remote servers, web services, multi-client scenarios
+CHANGE replace old 153-155 target 114-118
+114 **Characteristics**:
+115 - Bidirectional communication over HTTP
+116 - Supports multiple simultaneous clients
+117 - Can be deployed as a web service
+118 - Enables server-to-client notifications
+CHANGE replace old 157-164 target 120-123
+120 **Use when**:
+121 - Serving multiple clients simultaneously
+122 - Deploying as a cloud service
+123 - Integration with web applications
+CHANGE replace old 166-166 target 125-125
+125 ### stdio
+CHANGE replace old 168-174 target 127-127
+127 **Best for**: Local integrations, command-line tools
+CHANGE delete old 180-180 target 133-132
+CHANGE replace old 184-185 target 136-136
+136 - Integrating with desktop applications
+CHANGE replace old 188-188 target 139-139
+139 **Note**: stdio servers should NOT log to stdout (use stderr for logging)
+CHANGE replace old 190-190 target 141-141
+141 ### Transport Selection
+CHANGE replace old 192-228 target 143-148
+143 | Criterion | stdio | Streamable HTTP |
+144 |-----------|-------|-----------------|
+145 | **Deployment** | Local | Remote |
+146 | **Clients** | Single | Multiple |
+147 | **Complexity** | Low | Medium |
+148 | **Real-time** | No | Yes |
+CHANGE replace old 232-319 target 152-152
+152 ## Security Best Practices
+CHANGE replace old 323-325 target 156-156
+156 **OAuth 2.1**:
+CHANGE delete old 329-330 target 160-159
+CHANGE replace old 332-332 target 161-161
+161 **API Keys**:
+CHANGE delete old 336-336 target 165-164
+CHANGE replace old 338-338 target 166-166
+166 ### Input Validation
+CHANGE delete old 340-340 target 168-167
+CHANGE replace old 347-347 target 174-175
+174 ### Error Handling
+175 
+CHANGE replace old 353-353 target 181-181
+181 ### DNS Rebinding Protection
+CHANGE replace old 355-364 target 183-186
+183 For streamable HTTP servers running locally:
+184 - Enable DNS rebinding protection
+185 - Validate the `Origin` header on all incoming connections
+186 - Bind to `127.0.0.1` rather than `0.0.0.0`
+CHANGE replace old 368-368 target 190-190
+190 ## Tool Annotations
+CHANGE replace old 370-374 target 192-201
+192 Provide annotations to help clients understand tool behavior:
+193 
+194 | Annotation | Type | Default | Description |
+195 |-----------|------|---------|-------------|
+196 | `readOnlyHint` | boolean | false | Tool does not modify its environment |
+197 | `destructiveHint` | boolean | true | Tool may perform destructive updates |
+198 | `idempotentHint` | boolean | false | Repeated calls with same args have no additional effect |
+199 | `openWorldHint` | boolean | true | Tool interacts with external entities |
+200 
+201 **Important**: Annotations are hints, not security guarantees. Clients should not make security-critical decisions based solely on annotations.
+CHANGE replace old 378-378 target 205-205
+205 ## Error Handling
+CHANGE replace old 380-384 target 207-227
+207 - Use standard JSON-RPC error codes
+208 - Report tool errors within result objects (not protocol-level errors)
+209 - Provide helpful, specific error messages with suggested next steps
+210 - Don't expose internal implementation details
+211 - Clean up resources properly on errors
+212 
+213 Example error handling:
+214 ```typescript
+215 try {
+216   const result = performOperation();
+217   return { content: [{ type: "text", text: result }] };
+218 } catch (error) {
+219   return {
+220     isError: true,
+221     content: [{
+222       type: "text",
+223       text: `Error: ${error.message}. Try using filter='active_only' to reduce results.`
+224     }]
+225   };
+226 }
+227 ```
+CHANGE replace old 388-388 target 231-231
+231 ## Testing Requirements
+CHANGE replace old 390-394 target 233-239
+233 Comprehensive testing should cover:
+234 
+235 - **Functional testing**: Verify correct execution with valid/invalid inputs
+236 - **Integration testing**: Test interaction with external systems
+237 - **Security testing**: Validate auth, input sanitization, rate limiting
+238 - **Performance testing**: Check behavior under load, timeouts
+239 - **Error handling**: Ensure proper error reporting and cleanup
+CHANGE replace old 398-398 target 243-243
+243 ## Documentation Requirements
+CHANGE delete old 405-915 target 250-249

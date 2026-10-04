@@ -9,7 +9,7 @@ import { runPromptfoo, summarizeOutput, writeRunArtifacts } from '../src/runner.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..', 'patterns');
 const resultsRoot = path.join(__dirname, '..', 'results');
-const picked = loadPatterns(root).filter((p) => p.id === 145);
+const picked = loadPatterns(root).filter((p) => p.caseId === '145-iron-law');
 const yamlStr = generatePromptfooConfig({
   patterns: picked,
   config: { ...defaultConfig, runs: 1 },

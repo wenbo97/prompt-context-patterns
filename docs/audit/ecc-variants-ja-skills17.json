@@ -1,0 +1,23 @@
+[
+  {
+    "path": "docs/ja-JP/skills/frontend-patterns/SKILL.md",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "reason": "Full645line actual purpose/method-prose/sectionroles read: Reactcomposition/hooks/forms/motion/error-boundary/a11y softwarecookbook, no independent prompting/controlmethod. Current activation/origin boundary omitted, runtime/implementation/performance library claims scoped without audit/fixes; no UI/codeactions."
+  },
+  {
+    "path": "docs/ja-JP/skills/frontend-slides/STYLE_PRESETS.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full333line essential actual oneviewport/no-scroll/contentdensity/splitwhenfull/viewportchecklist+testsize/directpresetselection/exceptions read. Shared observableartifactconstraint/contextpreset routing; styles/fonts/moodcatalog/CSSimplementation excludeddomain data, overflowhidden itself not proof contentfits. Exact presetnames/sourcefieldvalues preserved, no render/UI/generationactions."
+  },
+  {
+    "path": "docs/ja-JP/skills/gateguard/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full125line actual English gatebody/factprompts read: DENY→specific importer/publicsymbol/schema/userinstructionfacts→retry, writecaller/existingpurpose and destructive scope/rollback/routinecommand purpose differentiated. Japanese description incorrectly labels general endpointaccess while bodypre-editfactgate. Experimental2ABscoreclaims/selfevaluationalwaysfails/no competitors unverified; factclaims not evidence actualinvestigation or sourcehostenforcement, no hooks/tools installed/run."
+  },
+  {
+    "path": "docs/ja-JP/skills/github-ops/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full144line actual English triage/readduplicates/CIcause-before-rerun/review/readiness/release/alert instructions+shell read. User-authorized dependencymerge neverauto preserved, sourceCLIlabels/age/SLA/plannedrelease commands not permission or currentliveproof. FrozenMarchfilter/exampletag marketingstatus not verified; actualexactcommit/requestscope required. No gh/network/comment/releases/merge performed."
+  }
+]

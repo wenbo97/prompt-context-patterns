@@ -1,0 +1,132 @@
+[
+  {
+    "path": "docs/es/rules/golang/coding-style.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete Simplified Chinese method prose, predicates, pointers and shell examples plus corresponding complete canonical method text; semantically equivalent for these fields. Same go/mod/sum path scope/common pointer, gofmt/goimports, consumer-small-interface and contextual error policy plus golang-patterns router. Application code conventions excluded from new prompt pattern. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality. Final idioms description is mistranslated as idiomas (languages), without changing the target skill identifier.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/golang/hooks.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete Simplified Chinese method prose, predicates, pointers and shell examples plus corresponding complete canonical method text; semantically equivalent for these fields. Same scoped after-edit formatter/vet/staticcheck mapping and common hook pointer. Event prose is not actual registration or enforcement proof. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/es/rules/golang/patterns.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete Simplified Chinese method prose, predicates, pointers and shell examples plus corresponding complete canonical method text; semantically equivalent for these fields. Same functional options, consumer interface and constructor injection with golang-patterns router. Domain Go implementations excluded; no agent mechanism added. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/golang/security.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete Simplified Chinese method prose, predicates, pointers and shell examples plus corresponding complete canonical method text; semantically equivalent for these fields. Same scope/common pointer, required-secret and gosec/context-timeout domain recipes. Tool-specific scanning example is not complete security or execution evidence. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/golang/testing.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete Simplified Chinese method prose, predicates, pointers and shell examples plus corresponding complete canonical method text; semantically equivalent for these fields. Same scope/common pointer, table-driven standard runner, race/coverage commands and golang-testing router. Actual race detection applicability/results must be verified per project; no new prompt mechanism. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/python/coding-style.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same py/pyi scope/common pointer, PEP8/types, immutable DTO examples and format/import/lint tools with Python router. Domain implementation recipes excluded; no new agent method. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality. Final idioms description is mistranslated as idiomas (languages), without changing the target skill identifier.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/python/hooks.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same scoped after-edit formatter/typechecker and print reminder. Host settings/tool availability must be established separately; reminder is not enforcement. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/es/rules/python/patterns.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same protocols/dataclass DTO/context-manager/lazy-generator language examples plus Python router. Domain code examples excluded from prompt-pattern catalog. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/python/security.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same scope, required-secret/scanner and Django-conditional reference. bandit command on src is illustrative scan coverage, not whole-repository or runtime safety proof. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/python/testing.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same pytest runner, example src coverage and test categorization with python-testing router. Wrong project source target can invalidate measurement; no new method. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/typescript/coding-style.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same four TS/JS paths, explicit public types/local inference, unknown narrowing, named React props, JSDoc/runtime parity, immutable update/error/schema and logging policy. Language implementation examples excluded; shallow spread is not deep immutability. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/typescript/hooks.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same after-edit formatter/tsc/reminder and modified-files Stop audit. Reminder versus actual blocking must be distinguished; source registration/config prose not runtime proof. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/es/rules/typescript/patterns.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same common pointer and domain TS response/React debounce/repository code recipes; no additional prose mechanism. Application implementations excluded from agent catalog. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/typescript/security.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same required-secret domain example and security-reviewer router. Both canonical and translation call a reviewer agent a skill; capability type must be verified before invocation, not invented. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/typescript/testing.md",
+    "reason": "Complete Spanish method prose/path predicates/common and skill pointers/shell commands read and semantically compared to previously fully read current canonical counterpart. Read complete translated and canonical method prose, all path predicates, resource pointers and shell/XML examples; semantic comparison recorded. Same scoped Playwright critical-flow runner and e2e-runner role pointer. Domain tool selection is a frozen project default, not available/tested capability proof. No material method-control/reference delta; programming-language application examples explicitly excluded domain detail, not assumed translated-body equality.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/rules/README.md",
+    "reason": "Read complete Spanish rules overview and compare to fully read canonical index. Wholesale condensed rewrite inventories common/Go/Python/TS topics and declares common/language/path-based behavior, but omits actual install commands, whole-directory hierarchy warning, ECC-owned user/project namespace and specific-over-general precedence/new-language authoring policy. Auto-loaded/applied statement needs actual installed host proof. No complete index equivalence or new method; canonical owner reference is prose code path, not verified installation.",
+    "existing_ids": [
+      23,
+      114,
+      172,
+      177
+    ]
+  }
+]

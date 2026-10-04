@@ -1,0 +1,92 @@
+[
+  {
+    "repo": "obra/superpowers",
+    "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+    "url": "https://github.com/obra/superpowers",
+    "stars": 294518,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 229,
+    "pattern_count": 31
+  },
+  {
+    "repo": "mattpocock/skills",
+    "commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+    "url": "https://github.com/mattpocock/skills",
+    "stars": 274789,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 172,
+    "pattern_count": 9
+  },
+  {
+    "repo": "affaan-m/ECC",
+    "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+    "url": "https://github.com/affaan-m/ECC",
+    "stars": 271437,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 4212,
+    "pattern_count": 9
+  },
+  {
+    "repo": "multica-ai/andrej-karpathy-skills",
+    "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "stars": 216601,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 9,
+    "pattern_count": 0
+  },
+  {
+    "repo": "anthropics/skills",
+    "commit": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+    "url": "https://github.com/anthropics/skills",
+    "stars": 179423,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 430,
+    "pattern_count": 20
+  },
+  {
+    "repo": "garrytan/gstack",
+    "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+    "url": "https://github.com/garrytan/gstack",
+    "stars": 134811,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 2656,
+    "pattern_count": 1
+  },
+  {
+    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "commit": "09170eec67eefd46a7ae85de61b40c194020f997",
+    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "stars": 132596,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 682,
+    "pattern_count": 0
+  },
+  {
+    "repo": "addyosmani/agent-skills",
+    "commit": "9d0c60d406b454a78ccc0a175b19932047aa4dac",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "stars": 100569,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 208,
+    "pattern_count": 0
+  },
+  {
+    "repo": "Leonxlnx/taste-skill",
+    "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "stars": 92092,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 66,
+    "pattern_count": 0
+  },
+  {
+    "repo": "ComposioHQ/awesome-claude-skills",
+    "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "stars": 76376,
+    "stars_observed_at": "2026-10-03T04:00:12.267841+00:00",
+    "tracked_files": 1142,
+    "pattern_count": 2
+  }
+]

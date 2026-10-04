@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/zh-CN/examples/CLAUDE.md",
+    "reason": "Full 109-line project context template read: project placeholder, source tree, actual command pointers, response/error contract, env/testing/security/git gates. All 14 programming lines exactly equal to fully-reviewed canonical body after blank removal; no new agent mechanism. Limits retained: generic immutable/800-line/80% thresholds are project preferences, prompt-defense prose is not runtime enforcement, optional envelope fields permit inconsistent states. Fixed fields and CLI paths remain untranslated. No template applied."
+  },
+  {
+    "path": "docs/zh-CN/examples/django-api-CLAUDE.md",
+    "reason": "Full method-bearing 308-line example read: explicit Python/Django stack, architecture/source tree, authentication/serializer/service boundaries, actual unit/integration/ECC command lanes. All 111 domain programming lines exact canonical match, reused canonical semantic review rather than duplicate code authorship. Shared behavior-bound acceptance/context pointers. Canonical defects remain: stock select-for-update appears before atomic scope, service quantity/active validation incomplete, notification enqueue needs transaction/outbox handling, force-authenticate bypasses JWT and serializer differs expected total. Claimed real-world is not observed deployment trace."
+  },
+  {
+    "path": "docs/zh-CN/examples/go-microservice-CLAUDE.md",
+    "reason": "Full method prose and all shell/context examples read across 267 lines; 97 domain programming lines match canonical reviewed example exactly. Explicit context propagation/error-domain/interface/test/race lanes preserve shared boundary mechanism. Precheck/create is not atomic uniqueness, error-only tests omit state expectations, error text may leak internal context, Password domain field needs protected DTO. Blanket 50-line rule and claimed real-world are not generic quality/empirical proof; no source commands run."
+  },
+  {
+    "path": "docs/zh-CN/examples/laravel-api-CLAUDE.md",
+    "reason": "Full method prose/JSON/schema/path template read across 311 lines; 147 PHP domain code lines equal canonical full review. Explicit request DTO vs derived fields, owner policy, service/controller/resource/queue and two transport acceptance styles retain shared contracts. Declared policy is not called in shown create path; queued mail does not define idempotency or unknown delivery; indexing every filter is a preference not measured need. Source example is not current runtime or production evidence."
+  },
+  {
+    "path": "docs/zh-CN/examples/rust-api-CLAUDE.md",
+    "reason": "Full 285-line method-bearing context/CLI/path/error/security/test prose read; 104 Rust domain code lines equal canonical reviewed blocks. Retains public DTO/domain errors, actual HTTP/database test lane and source-grounded architecture. Debug-all risks secret disclosure, duplicate-email precheck is not atomic, sqlx automatic rollback claim requires actual API verification and blanket anyhow prohibition conflicts with AppError wrapper. Literal SQL $1 is driver syntax, not universal invocation behavior. No compile/test run."
+  },
+  {
+    "path": "docs/zh-CN/examples/saas-nextjs-CLAUDE.md",
+    "reason": "Full 166-line translated example method prose/context/ECC commands read; 27 TS programming lines equal canonical reviewed blocks. Retains explicit auth-vs-session, server-owned prices, source paths and distinct billing/webhook E2E transitions. Stated 3-project/100-call quota absent from createProject implementation; error.flatten conflicts string-error type; webhook duplicate/order contract absent. Example prices/stack/platform claims not current verified facts or actual deployed trace; no financial action."
+  },
+  {
+    "path": "docs/zh-CN/examples/user-CLAUDE.md",
+    "reason": "Full 118-line translated global preference template read against canonical full review. Retains modular rule links, actual specialist roster, personal privacy, test/git preferences and explicit personal-memory versus project-owned docs/no duplicate knowledge. Translation roster still ~/.claude/agents while canonical notes warn plugin-qualified current scope. Fixed keys/paths preserved; always-delegate/security/80%/small-file directives are sample preferences, not current audit instructions or verified host enforcement. No new method."
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "path": "docs/zh-CN/contexts/dev.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Development mode prioritizes working/correct/clean output, code-first explanation order, atomic commits and changes-followed-by-tests with edit/write/build/search tool preferences. This is a context specialization of task-mode routing; it does not authorize unrequested writes or establish a test result.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/zh-CN/contexts/research.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Research mode uses question→source exploration→hypothesis→evidence→finding sequence, clarification and incremental notes, and findings before recommendations. Named web/explorer tools are conditional host capabilities, not proof that they exist; unclear understanding is not a measured gate.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/zh-CN/contexts/review.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Review mode uses complete contextual reading, severity-ranked issues with fix suggestions, explicit logic/edge/error/security/performance/readability/test checklist and file-grouped findings. This prompt alone does not enforce read-only capability or establish vulnerability absence.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/contexts/dev.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Development mode prioritizes working/correct/clean output, code-first explanation order, atomic commits and changes-followed-by-tests with edit/write/build/search tool preferences. This is a context specialization of task-mode routing; it does not authorize unrequested writes or establish a test result.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/contexts/research.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Research mode uses question→source exploration→hypothesis→evidence→finding sequence, clarification and incremental notes, and findings before recommendations. Named web/explorer tools are conditional host capabilities, not proof that they exist; unclear understanding is not a measured gate.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/contexts/review.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Review mode uses complete contextual reading, severity-ranked issues with fix suggestions, explicit logic/edge/error/security/performance/readability/test checklist and file-grouped findings. This prompt alone does not enforce read-only capability or establish vulnerability absence.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/contexts/dev.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Development mode prioritizes working/correct/clean output, code-first explanation order, atomic commits and changes-followed-by-tests with edit/write/build/search tool preferences. This is a context specialization of task-mode routing; it does not authorize unrequested writes or establish a test result.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/contexts/research.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Research mode uses question→source exploration→hypothesis→evidence→finding sequence, clarification and incremental notes, and findings before recommendations. Named web/explorer tools are conditional host capabilities, not proof that they exist; unclear understanding is not a measured gate.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/es/contexts/review.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Review mode uses complete contextual reading, severity-ranked issues with fix suggestions, explicit logic/edge/error/security/performance/readability/test checklist and file-grouped findings. This prompt alone does not enforce read-only capability or establish vulnerability absence.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/tr/contexts/dev.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Development mode prioritizes working/correct/clean output, code-first explanation order, atomic commits and changes-followed-by-tests with edit/write/build/search tool preferences. This is a context specialization of task-mode routing; it does not authorize unrequested writes or establish a test result.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/tr/contexts/research.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Research mode uses question→source exploration→hypothesis→evidence→finding sequence, clarification and incremental notes, and findings before recommendations. Named web/explorer tools are conditional host capabilities, not proof that they exist; unclear understanding is not a measured gate.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  },
+  {
+    "path": "docs/tr/contexts/review.md",
+    "reason": "Read entire translated context and canonical counterpart; complete method semantic/structural equivalence, only language/spacing changes. Review mode uses complete contextual reading, severity-ranked issues with fix suggestions, explicit logic/edge/error/security/performance/readability/test checklist and file-grouped findings. This prompt alone does not enforce read-only capability or establish vulnerability absence.",
+    "existing_ids": [
+      3,
+      20,
+      53
+    ]
+  }
+]

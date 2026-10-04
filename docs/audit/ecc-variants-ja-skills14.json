@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/ja-JP/skills/documentation-lookup/SKILL.md",
+    "reason": "Full77line actual resolverlibraryname+taskquery→selectedsourceidentity/version→docsquery→bounded3calluncertainty/sourceversioncitation and examples read. Same version-groundedcontext/capabilityrouter; benchmark/reputation proxies not quality calibration, fetchedtextnot agentauthority and actualtoolsneeded. Current provider/API/runtime claims scoped, no MCPcalls.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/email-ops/SKILL.md",
+    "reason": "Read full121line essential Englishbody and complete currentcanonical methoddelta. Exactaccount/recipient/thread/action/bodyscope→draft→actualSentstoreverification→drafted/blocked/awaitingverified states and no improvise secondtransport retained. Material omission: entire canonical inbound-mail untrusted section, mailcannotchoose recipient/send/rule/forwarding/linkauth and triage-not-executionboundary absent. Metadata translated but Englishbodynotsemanticallyequivalent; no mailbox/messages/actions.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/error-handling/SKILL.md",
+    "reason": "Read full376line method-purpose/prose/types-vs-strings/user-vs-developer/publicerrorcontract/retry/readback checklist. Software TypeScript/Python/Go errorhandling reference, no independent prompt/contextmethod beyond shared typedfailure principle already canonical. Implementation/safety/logpolicy/runtimecost claims scoped out instead auditingcode, no scripts/erroractions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/evm-token-decimals/SKILL.md",
+    "reason": "Full130line actualpurpose/prose/chain-addressidentity/exactmath/runtimequery/requery and visiblefallback rules read. Domain blockchain normalization/cache accounting, not independent agentpromptmethod; shared identity/liveproof noted as comparison only. Financial/token/API/runtime implementation scoped out, no queries/funds/keys or numericfactsverified.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]

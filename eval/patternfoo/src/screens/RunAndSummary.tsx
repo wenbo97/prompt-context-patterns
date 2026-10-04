@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import path from 'node:path';
 import { Box, Text, useInput, useApp } from 'ink';
-import { generatePromptfooConfig } from '../configGen.js';
+import { generateCaseConfigs } from '../configGen.js';
 import { runPromptfoo, summarizeOutput, writeRunArtifacts, openPromptfooView } from '../runner.js';
 import type { LoadedPattern } from '../patterns.js';
 import type { UserConfig } from '../persistedConfig.js';
@@ -16,13 +17,16 @@ export default function RunAndSummary({ patterns, config, resultsRoot }: Props) 
   useEffect(() => {
     (async () => {
       try {
-        const yamlStr = generatePromptfooConfig({ patterns, config });
-        const { yamlPath, outPath } = writeRunArtifacts(resultsRoot, yamlStr);
-        const out = await runPromptfoo({
-          configYamlPath: yamlPath, outputJsonPath: outPath,
-          onStdout: (c) => setLog(prev => (prev + c).slice(-2000)),
-        });
-        setSummary(summarizeOutput(out));
+        const combined = new Map<string, { pass: number; fail: number }>();
+        for (const run of generateCaseConfigs(patterns, config)) {
+          const { yamlPath, outPath } = writeRunArtifacts(path.join(resultsRoot, run.caseId), run.yaml);
+          const out = await runPromptfoo({
+            configYamlPath: yamlPath, outputJsonPath: outPath,
+            onStdout: (c) => setLog(prev => (prev + c).slice(-2000)),
+          });
+          for (const [label, stats] of summarizeOutput(out)) combined.set(`${run.caseId} · ${label}`, stats);
+        }
+        setSummary(combined);
       } catch (e) { setError(String(e)); }
     })();
   }, []);

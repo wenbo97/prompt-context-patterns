@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<div class="page-layout">{% include topic-nav.html %}<section><span class="eyebrow">{{ page.category_key | escape }}</span><h1>{{ page.title | escape }}</h1><div class="card-grid">{% assign active = site.data.patterns | where: 'status', 'active' | where: 'category', page.category_key %}{% for p in active %}{% include pattern-card.html pattern=p %}{% endfor %}</div></section></div>

@@ -1,0 +1,5 @@
+---
+layout: default
+---
+<span class="eyebrow">{% if page.lang == 'zh' %}文章与实验记录{% else %}ARTICLES AND EXPERIMENT RECORDS{% endif %}</span><h1>{{ page.title | escape }}</h1><p class="lead">{% if page.lang == 'zh' %}文章保留发布时的历史语境；修订说明和当前模式目录帮助你区分旧观察与新版方法。{% else %}Articles preserve their historical setting. Revision notes and the current catalog separate past observations from current methods.{% endif %}</p>
+<ul class="post-list">{% for post in site.posts %}{% if post.lang == page.lang %}<li><span class="post-meta">{{ post.date | date: '%Y-%m-%d' }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2><p>{{ post.excerpt | strip_html | truncate: 180 }}</p></li>{% endif %}{% endfor %}</ul>

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "docs/ja-JP/CODE_OF_CONDUCT.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read entire localized human community conduct/impact ladder, privacy, representation and attribution policy. This governs human moderation and does not specify an agent prompt/context/tool mechanism; excluded from pattern extraction, not from tracked coverage."
+  },
+  {
+    "path": "docs/ja-JP/SPONSORING.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsorship pricing/benefit/scope, adoption/reporting metric list and business-metrics pointer. Human commercial/marketing document without an agent method; no current pricing, faster delivery or reliability claim inferred. Pointer targets untranslated business docs outside this partition."
+  },
+  {
+    "path": "docs/ja-JP/SPONSORS.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsor tiers, adoption narrative and directory. Human marketing/commercial acknowledgement without a prompt/context/tool mechanism; excluded from pattern extraction. Adoption/support/weekly-release claims and prices are frozen narration, not measured efficacy or current facts. Older February-sync prices/benefits differ from newer canonical/Spanish table; not treated as current sponsorship recommendation."
+  },
+  {
+    "path": "docs/zh-CN/CODE_OF_CONDUCT.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read entire localized human community conduct/impact ladder, privacy, representation and attribution policy. This governs human moderation and does not specify an agent prompt/context/tool mechanism; excluded from pattern extraction, not from tracked coverage. Report-contact sentence leaves email blank; do not invent a destination."
+  },
+  {
+    "path": "docs/zh-CN/SPONSORING.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsorship pricing/benefit/scope, adoption/reporting metric list and business-metrics pointer. Human commercial/marketing document without an agent method; no current pricing, faster delivery or reliability claim inferred. Pointer targets untranslated business docs outside this partition."
+  },
+  {
+    "path": "docs/zh-CN/SPONSORS.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsor tiers, adoption narrative and directory. Human marketing/commercial acknowledgement without a prompt/context/tool mechanism; excluded from pattern extraction. Adoption/support/weekly-release claims and prices are frozen narration, not measured efficacy or current facts. Older February-sync prices/benefits differ from newer canonical/Spanish table; not treated as current sponsorship recommendation."
+  },
+  {
+    "path": "docs/es/CODE_OF_CONDUCT.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read entire localized human community conduct/impact ladder, privacy, representation and attribution policy. This governs human moderation and does not specify an agent prompt/context/tool mechanism; excluded from pattern extraction, not from tracked coverage."
+  },
+  {
+    "path": "docs/es/SPONSORING.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsorship pricing/benefit/scope, adoption/reporting metric list and business-metrics pointer. Human commercial/marketing document without an agent method; no current pricing, faster delivery or reliability claim inferred. Pointer targets untranslated business docs outside this partition."
+  },
+  {
+    "path": "docs/es/SPONSORS.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsor tiers, adoption narrative and directory. Human marketing/commercial acknowledgement without a prompt/context/tool mechanism; excluded from pattern extraction. Adoption/support/weekly-release claims and prices are frozen narration, not measured efficacy or current facts. Spanish version has named sponsor/historic pricing and May14 update unlike older February sibling copies; this is content drift, not an extra method."
+  },
+  {
+    "path": "docs/tr/CODE_OF_CONDUCT.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read entire localized human community conduct/impact ladder, privacy, representation and attribution policy. This governs human moderation and does not specify an agent prompt/context/tool mechanism; excluded from pattern extraction, not from tracked coverage."
+  },
+  {
+    "path": "docs/tr/SPONSORING.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsorship pricing/benefit/scope, adoption/reporting metric list and business-metrics pointer. Human commercial/marketing document without an agent method; no current pricing, faster delivery or reliability claim inferred. Pointer targets untranslated business docs outside this partition."
+  },
+  {
+    "path": "docs/tr/SPONSORS.md",
+    "disposition": "excluded",
+    "depth": "full-nonpattern-text",
+    "reason": "Read full sponsor tiers, adoption narrative and directory. Human marketing/commercial acknowledgement without a prompt/context/tool mechanism; excluded from pattern extraction. Adoption/support/weekly-release claims and prices are frozen narration, not measured efficacy or current facts. Older February-sync prices/benefits differ from newer canonical/Spanish table; not treated as current sponsorship recommendation."
+  }
+]

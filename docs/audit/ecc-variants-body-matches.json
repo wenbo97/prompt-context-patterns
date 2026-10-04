@@ -1,0 +1,226 @@
+[
+  {
+    "path": "docs/ja-JP/skills/dotnet-patterns/SKILL.md",
+    "counterpart": "skills/dotnet-patterns/SKILL.md",
+    "body_hash": "cf881c19176b3481c42d06a560c2d17aa1f74856a2865b90d3348d0d2250fbdb",
+    "wrapper": "---\nname: dotnet-patterns\ndescription: C#と.NET言語固有のパターン、規約、依存性注入、async/await、およびロバストで保守可能な.NETアプリケーション構築のためのベストプラクティス。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: dotnet-patterns\ndescription: Idiomatic C# and .NET patterns, conventions, dependency injection, async/await, and best practices for building robust, maintainable .NET applications. Use when writing or reviewing C# / .NET code — DI, async, or general conventions.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/e2e-testing/SKILL.md",
+    "counterpart": "skills/e2e-testing/SKILL.md",
+    "body_hash": "d91871ab36a8f7f5fba47d229f79ca3a6e5112bf67f37326fada4b29e078d50f",
+    "wrapper": "---\nname: e2e-testing\ndescription: Playwright E2Eテストパターン、Page Object Model、設定、CI/CD統合、アーティファクト管理、および不安定なテスト戦略。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: e2e-testing\ndescription: Playwright E2E testing patterns, Page Object Model, configuration, CI/CD integration, artifact management, and flaky test strategies. Use when writing Playwright tests, structuring page objects, or fixing flaky E2E runs in CI.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/ecc-guide/SKILL.md",
+    "counterpart": "skills/ecc-guide/SKILL.md",
+    "body_hash": "d6b0bdc0a05d8a29fbd86c364d0e17f401e287b6b88e51ff3d73d315baa4e196",
+    "wrapper": "---\nname: ecc-guide\ndescription: ECC の現在のエージェント、スキル、コマンド、フック、ルール、インストールプロファイル、およびプロジェクトオンボーディングをガイドしています。ライブリポジトリサーフェスを読んでから回答するようユーザーをガイドします。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: ecc-guide\ndescription: Answer questions about ECC by reading the live repo surface — agents, skills, commands, hooks, rules, install profiles, and docs — instead of memory. Use when the user asks what ECC includes, how to install or reset it, which skill or command fits a task, or how project onboarding works.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/ecc-tools-cost-audit/SKILL.md",
+    "counterpart": "skills/ecc-tools-cost-audit/SKILL.md",
+    "body_hash": "6931fd122234e8afe9435cc3c22a5bf6b374e44ceedc6d0bcba2df3a5ea07f9e",
+    "wrapper": "---\nname: ecc-tools-cost-audit\ndescription: ECC ツール、エージェント、スキル、および実装のコスト監査を実施します。プロンプト入力トークンを分析して、計算効率を定量化します。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: ecc-tools-cost-audit\ndescription: Evidence-first ECC Tools burn and billing audit workflow. Use when investigating runaway PR creation, quota bypass, premium-model leakage, duplicate jobs, or GitHub App cost spikes in the ECC Tools repo.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/energy-procurement/SKILL.md",
+    "counterpart": "skills/energy-procurement/SKILL.md",
+    "body_hash": "0f5bb58472657c53fa2b0a62910ccb45deb1fba83a0550c5499bb0e0a2f04e9b",
+    "wrapper": "---\nname: energy-procurement\ndescription: 電気とガス調達、料金最適化、需要料金管理、再生可能エネルギーPPA評価、およびマルチファシリティーエネルギー戦略のための符号化された専門知識。\n  Codified expertise for electricity and gas procurement, tariff optimization,\n  demand charge management, renewable PPA evaluation, and multi-facility energy\n  cost management. Informed by energy procurement managers with 15+ years\n  experience at large commercial and industrial consumers. Includes market\n  structure analysis, hedging strategies, load profiling, and sustainability\n  reporting frameworks. Use when procuring energy, optimizing tariffs, managing\n  demand charges, evaluating PPAs, or developing energy strategies.\nlicense: Apache-2.0\nversion: 1.0.0\nhomepage: https://github.com/affaan-m/ECC\norigin: ECC\nmetadata:\n  author: evos\n  clawdbot:\n    emoji: \"\"\n---",
+    "canonical_wrapper": "---\nname: energy-procurement\ndescription: \"Procure electricity and natural gas for commercial and industrial facilities: tariff and rate-schedule optimization, demand-charge mitigation, supplier RFPs, fixed/index/block-and-index hedging, renewable PPA and REC evaluation, and sustainability reporting. Use when procuring energy, optimizing utility tariffs, managing demand charges, evaluating PPAs, or building energy budgets and hedge strategies.\"\nlicense: Apache-2.0\nhomepage: https://github.com/affaan-m/ECC\nmetadata:\n  version: 1.0.0\n  origin: ECC\n  author: evos\n  clawdbot:\n    emoji: \"\"\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/enterprise-agent-ops/SKILL.md",
+    "counterpart": "skills/enterprise-agent-ops/SKILL.md",
+    "body_hash": "899dc7b3f721e076812463927ec6162919d0c25936bc4c0952c8784b15ac09b5",
+    "wrapper": "---\nname: enterprise-agent-ops\ndescription: オブザーバビリティ、セキュリティ境界、およびライフサイクル管理を備えた長寿命エージェントワークロードを運用します。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: enterprise-agent-ops\ndescription: Operational controls for long-lived or cloud-hosted agent systems — runtime lifecycle (start, pause, stop, restart), observability (logs, metrics, traces), least-privilege safety scopes and kill switches, and rollout/rollback change management with audit logs and success/cost metrics. Use when running production agent fleets on PM2, systemd, or containers that need monitoring, incident response, or deployment gates.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/foundation-models-on-device/SKILL.md",
+    "counterpart": "skills/foundation-models-on-device/SKILL.md",
+    "body_hash": "cf482f783f40ff936a9ea1cb0043aef803749208dbeda52e6195f2f2f7336880",
+    "wrapper": "---\nname: foundation-models-on-device\ndescription: デバイス上基盤モデルの実装パターン、量子化、最適化、およびプライバシーを考慮した推論。\n---",
+    "canonical_wrapper": "---\nname: foundation-models-on-device\ndescription: Apple FoundationModels framework for on-device LLM — text generation, guided generation with @Generable, tool calling, and snapshot streaming in iOS 26+. Use when adding on-device LLM features with Apple FoundationModels on iOS 26+.\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/frontend-design-direction/SKILL.md",
+    "counterpart": "skills/frontend-design-direction/SKILL.md",
+    "body_hash": "3469c1dd75228f92ababb812a6948069378cea29ef2792d598a14b2306ebecdd",
+    "wrapper": "---\nname: frontend-design-direction\ndescription: フロントエンド設計の方向性、美的原則、および一貫した設計言語実装。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: frontend-design-direction\ndescription: Set an ECC-specific frontend design direction for production UI work. Use when building or improving websites, dashboards, applications, components, landing pages, visual tools, or any web UI that needs stronger product-specific design judgment.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/frontend-slides/SKILL.md",
+    "counterpart": "skills/frontend-slides/SKILL.md",
+    "body_hash": "cc9297ed0036595bbe302fe72925a71ffcca67b683c1a4c51ffb182b185980bf",
+    "wrapper": "---\nname: frontend-slides\ndescription: フロントエンドプレゼンテーション、デモンストレーション、およびスライド構成のためのパターンとベストプラクティス。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: frontend-slides\ndescription: Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/fsharp-testing/SKILL.md",
+    "counterpart": "skills/fsharp-testing/SKILL.md",
+    "body_hash": "d159d04bf1c0feb7e090f093fea98770014f2a357a9d5ccdf53385373b95401a",
+    "wrapper": "---\nname: fsharp-testing\ndescription: F#テストフレームワーク、プロパティベーステスト、および関数型アプローチ。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: fsharp-testing\ndescription: F# testing patterns with xUnit, FsUnit, Unquote, FsCheck property-based testing, integration tests, and test organization best practices. Use when writing F# tests with xUnit, FsUnit, Unquote, or FsCheck.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/gan-style-harness/SKILL.md",
+    "counterpart": "skills/gan-style-harness/SKILL.md",
+    "body_hash": "08174e5fe49367802cbc0b377acf6ba5368edde0d53c154438fde3d7fe2942aa",
+    "wrapper": "---\nname: gan-style-harness\ndescription: GAN（生成的敵対ネットワーク）スタイルの評価ハーネス、画像生成パターン、および品質メトリクス。\norigin: ECC-community\ntools: Read, Write, Edit, Bash, Grep, Glob, Task\n---",
+    "canonical_wrapper": "---\nname: gan-style-harness\ndescription: \"GAN-inspired Generator-Evaluator agent harness for building high-quality applications autonomously. Based on Anthropic's March 2026 harness design paper. Use when a feature should be built autonomously through generator and evaluator iteration until it clears a quality bar.\"\nmetadata:\n  origin: ECC-community\ntools: Read, Write, Edit, Bash, Grep, Glob, Task\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/git-workflow/SKILL.md",
+    "counterpart": "skills/git-workflow/SKILL.md",
+    "body_hash": "0aa3dccbf88f5f09ef2685c6cc31d226ce5e0d5b951ee691567651e67cae9462",
+    "wrapper": "---\nname: git-workflow\ndescription: Gitワークフロー、ブランチ戦略、コミットメッセージ規約、およびプルリクエストプロセス。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: git-workflow\ndescription: Git workflow patterns including branching strategies, commit conventions, keeping history clean and readable, tidying local commits before merging, merge vs rebase, conflict resolution, and collaborative development best practices for teams of all sizes. Use when choosing a branching strategy, writing commit conventions, cleaning up history before a pull request, deciding merge versus rebase, or resolving conflicts.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/google-workspace-ops/SKILL.md",
+    "counterpart": "skills/google-workspace-ops/SKILL.md",
+    "body_hash": "103bc2b0891a3c097e8d67a994db838306ad651d74592f171f351a0714c13651",
+    "wrapper": "---\nname: google-workspace-ops\ndescription: Google Workspace API操作、Sheets自動化、Gmail統合、およびドキュメント管理。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: google-workspace-ops\ndescription: Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents. Use when the user needs to find, summarize, edit, migrate, or clean up Google Workspace assets without dropping to raw tool calls.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-cdss-patterns/SKILL.md",
+    "counterpart": "skills/healthcare-cdss-patterns/SKILL.md",
+    "body_hash": "75a5e6990f97f80657bb39ca79a9dae92bc894de13486d8554aa4c584398ff3b",
+    "wrapper": "---\nname: healthcare-cdss-patterns\ndescription: 臨床意思決定支援システム（CDSS）パターン、医学的推論、およびエビデンスベースの実装。\norigin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\nversion: \"1.0.0\"\n---",
+    "canonical_wrapper": "---\nname: healthcare-cdss-patterns\ndescription: Clinical Decision Support System (CDSS) development patterns. Drug interaction checking, dose validation, clinical scoring (NEWS2, qSOFA), alert severity classification, and integration into EMR workflows. Use when building clinical decision support — drug interaction checks, dose validation, clinical scoring, or alert severity.\nmetadata:\n  version: \"1.0.0\"\n  origin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-emr-patterns/SKILL.md",
+    "counterpart": "skills/healthcare-emr-patterns/SKILL.md",
+    "body_hash": "673f40e91d2fc3486ea50dcf4ed1a3c40b07ff76bf7eadc0546c8d684e11da9a",
+    "wrapper": "---\nname: healthcare-emr-patterns\ndescription: 電子医療記録（EMR）パターン、相互運用性、およびHL7/FHIR統合。\norigin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\nversion: \"1.0.0\"\n---",
+    "canonical_wrapper": "---\nname: healthcare-emr-patterns\ndescription: EMR/EHR development patterns for healthcare applications. Clinical safety, encounter workflows, prescription generation, clinical decision support integration, and accessibility-first UI for medical data entry. Use when building EMR or EHR features such as encounter workflows, prescription generation, or clinical data entry UI.\nmetadata:\n  version: \"1.0.0\"\n  origin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-eval-harness/SKILL.md",
+    "counterpart": "skills/healthcare-eval-harness/SKILL.md",
+    "body_hash": "9a3d08b81c23c5bf2669a9e9d26524e9d9c5d926ba5c0f1e6518e5484ff6e260",
+    "wrapper": "---\nname: healthcare-eval-harness\ndescription: ヘルスケアAIモデル評価ハーネス、臨床メトリクス、およびレギュレーション遵守の検証。\norigin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\nversion: \"1.0.0\"\n---",
+    "canonical_wrapper": "---\nname: healthcare-eval-harness\ndescription: Patient safety evaluation harness for healthcare application deployments. Automated test suites for CDSS accuracy, PHI exposure, clinical workflow integrity, and integration compliance. Blocks deployments on safety failures. Use when a healthcare deployment must be gated on patient-safety tests for CDSS accuracy, PHI exposure, and workflow integrity.\nmetadata:\n  version: \"1.0.0\"\n  origin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/healthcare-phi-compliance/SKILL.md",
+    "counterpart": "skills/healthcare-phi-compliance/SKILL.md",
+    "body_hash": "a19596773c94d46de8e490b3c9f4a72c4eae31ea7c2d4b29db7aa36e28d4f3a3",
+    "wrapper": "---\nname: healthcare-phi-compliance\ndescription: 保護医療情報（PHI）コンプライアンス、HIPAA準拠、およびデータセキュリティ。\norigin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\nversion: \"1.0.0\"\n---",
+    "canonical_wrapper": "---\nname: healthcare-phi-compliance\ndescription: \"Protected Health Information (PHI) and PII compliance patterns for healthcare applications: data classification, row-level access control, tamper-proof audit trails, schema tagging, and common leak vectors such as logs, URLs, and browser storage. Use when code touches patient or clinician data, when implementing HIPAA or GDPR access controls, or when auditing a healthcare system for data exposure.\"\nmetadata:\n  version: \"1.0.0\"\n  origin: Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/hermes-imports/SKILL.md",
+    "counterpart": "skills/hermes-imports/SKILL.md",
+    "body_hash": "e5301ada62b30d3ba88d18537b001edab4ff01a823270540807f71a3113770a4",
+    "wrapper": "---\nname: hermes-imports\ndescription: Hermesデータインポート、マッピング、変換、およびデータインテグリティ検証。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: hermes-imports\ndescription: Convert local Hermes operator workflows into sanitized ECC skills and release-pack artifacts. Use when preparing a Hermes workflow for public ECC reuse without leaking private workspace state, credentials, or local-only paths.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/hexagonal-architecture/SKILL.md",
+    "counterpart": "skills/hexagonal-architecture/SKILL.md",
+    "body_hash": "f5f6710a39207d9b41c6fc6d34e13b673280bbde12cee72f1d399d9b1f030a71",
+    "wrapper": "---\nname: hexagonal-architecture\ndescription: ヘキサゴナルアーキテクチャ（ポート・アダプタパターン）、境界の分離、および外部依存関係の管理。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: hexagonal-architecture\ndescription: Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services. Use when introducing or refactoring toward Ports and Adapters, or when domain logic has become entangled with I/O.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/hipaa-compliance/SKILL.md",
+    "counterpart": "skills/hipaa-compliance/SKILL.md",
+    "body_hash": "71ac25172f9c2eddedbee198e7779800fd1dec3fe5990b0af29dadfb7b8b2d78",
+    "wrapper": "---\nname: hipaa-compliance\ndescription: HIPAA準拠実装、セキュリティ対策、監査ログ、およびデータ保護戦略。\norigin: ECC direct-port adaptation\nversion: \"1.0.0\"\n---",
+    "canonical_wrapper": "---\nname: hipaa-compliance\ndescription: HIPAA-specific entrypoint for healthcare privacy and security work. Use when a task is explicitly framed around HIPAA, PHI handling, covered entities, BAAs, breach posture, or US healthcare compliance requirements.\nmetadata:\n  version: \"1.0.0\"\n  origin: ECC direct-port adaptation\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-network-readiness/SKILL.md",
+    "counterpart": "skills/homelab-network-readiness/SKILL.md",
+    "body_hash": "76dc366a13befcac23033286a6ef23f9283828efcf26871e2809aadc2b200652",
+    "wrapper": "---\nname: homelab-network-readiness\ndescription: ホームラボネットワーク準備、セキュリティ評価、パフォーマンステスト、および展開準備。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: homelab-network-readiness\ndescription: Readiness checklist for homelab VLAN segmentation, local DNS filtering (Pi-hole, AdGuard Home), and WireGuard-style remote access. Use when planning or reviewing home network changes — splitting a flat network into trusted, IoT, guest, or management VLANs, moving DHCP to a local resolver, or adding VPN access — before changing router, firewall, DHCP, or VPN configuration.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-network-setup/SKILL.md",
+    "counterpart": "skills/homelab-network-setup/SKILL.md",
+    "body_hash": "550fc7b73ebe3c8c6e0882ca0c050474200cf59e9cdfd2a8548defba03d428da",
+    "wrapper": "---\nname: homelab-network-setup\ndescription: ホームラボネットワーク基盤設定、デバイス設定、接続性、およびネットワークセグメンテーション。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: homelab-network-setup\ndescription: Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, and common beginner mistakes. Use when planning or fixing a home or homelab network — gateway, switch, AP, IP ranges, DHCP, DNS, or cabling.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-pihole-dns/SKILL.md",
+    "counterpart": "skills/homelab-pihole-dns/SKILL.md",
+    "body_hash": "dbc36ff3ee056c5867a3dc7bac123c7ef36ab01605c79ea616bbcb0933df7e61",
+    "wrapper": "---\nname: homelab-pihole-dns\ndescription: ホームラボ用Pi-hole DNS設定、広告ブロック、プライバシー、およびカスタムドメイン解決。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: homelab-pihole-dns\ndescription: Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting broken DNS resolution on a home network. Use when the task explicitly involves Pi-hole — installing it, managing blocklists, configuring DoH or DHCP, adding local DNS records, or diagnosing DNS resolution with Pi-hole in the path.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-vlan-segmentation/SKILL.md",
+    "counterpart": "skills/homelab-vlan-segmentation/SKILL.md",
+    "body_hash": "ecc3dce2c25f006c682f932c6aae65a05eaf16b4f88142a58e09b55dee5e5649",
+    "wrapper": "---\nname: homelab-vlan-segmentation\ndescription: ホームラボVLANセグメンテーション、ネットワーク分離、アクセス制御、およびトラフィック管理。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: homelab-vlan-segmentation\ndescription: Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — including switch trunk config, firewall rules, and wireless SSID mapping. Use when splitting a home network into IoT, guest, trusted, and server VLANs on UniFi, pfSense/OPNsense, or MikroTik.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/homelab-wireguard-vpn/SKILL.md",
+    "counterpart": "skills/homelab-wireguard-vpn/SKILL.md",
+    "body_hash": "c768abc037f2af8ca18a82534a9880a943743c99405ce219fbff58f0f43df8fd",
+    "wrapper": "---\nname: homelab-wireguard-vpn\ndescription: ホームラボWireGuard VPN設定、リモートアクセス、キー管理、およびエンドツーエンド暗号化。\norigin: community\n---",
+    "canonical_wrapper": "---\nname: homelab-wireguard-vpn\ndescription: WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients. Use when setting up WireGuard for remote access to a home network, or deciding between split and full tunnel routing.\nmetadata:\n  origin: community\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/hookify-rules/SKILL.md",
+    "counterpart": "skills/hookify-rules/SKILL.md",
+    "body_hash": "9a2280b45f02178a11916c74f5309ae99c9d8d8e54a6940b1caa8f6c4f17b819",
+    "wrapper": "---\nname: hookify-rules\ndescription: 自動フック実装、イベントドリブン実行、およびルール駆動ワークフロー。\n---",
+    "canonical_wrapper": "---\nname: hookify-rules\ndescription: Create and configure hookify rules — markdown files with YAML frontmatter that match bash, file, prompt, or stop events by regex or conditions and show warn/block messages to the agent. Use when creating a hookify rule, writing hook rule syntax, configuring hookify, or adding pattern guardrails such as blocking dangerous commands, .env edits, or debug code.\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/inventory-demand-planning/SKILL.md",
+    "counterpart": "skills/inventory-demand-planning/SKILL.md",
+    "body_hash": "6f8640337445c4d3a6aff239fbe2689db0d82a91d3a1976e5f7b4613f2bec7f1",
+    "wrapper": "---\nname: inventory-demand-planning\ndescription: 在庫管理、需要予測、補充戦略、およびサプライチェーン最適化。\n  Codified expertise for demand forecasting, safety stock optimization,\n  replenishment planning, and promotional lift estimation at multi-location\n  retailers. Informed by demand planners with 15+ years experience managing\n  hundreds of SKUs. Includes forecasting method selection, ABC/XYZ analysis,\n  seasonal transition management, and vendor negotiation frameworks.\n  Use when forecasting demand, setting safety stock, planning replenishment,\n  managing promotions, or optimizing inventory levels.\nlicense: Apache-2.0\nversion: 1.0.0\nhomepage: https://github.com/affaan-m/ECC\norigin: ECC\nmetadata:\n  author: evos\n  clawdbot:\n    emoji: \"\"\n---",
+    "canonical_wrapper": "---\nname: inventory-demand-planning\ndescription: \"Codified demand planning expertise for multi-location retailers: demand forecasting method selection, ABC/XYZ segmentation, safety stock and reorder-point optimization, promotional lift and post-promo dip estimation, and seasonal transition and markdown timing. Use when forecasting demand, setting safety stock, planning replenishment, managing promotions, or optimizing inventory levels.\"\nlicense: Apache-2.0\nhomepage: https://github.com/affaan-m/ECC\nmetadata:\n  version: 1.0.0\n  origin: ECC\n  author: evos\n  clawdbot:\n    emoji: \"\"\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/investor-materials/SKILL.md",
+    "counterpart": "skills/investor-materials/SKILL.md",
+    "body_hash": "d4073fdcaaada8f999bf793e7e70560b38e390e305ace037d9c5564e17ec477d",
+    "wrapper": "---\nname: investor-materials\ndescription: 投資家向けマテリアル、ピッチデック、財務プレゼンテーション、およびビジネス概要。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: investor-materials\ndescription: Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials. Use when the user needs investor-facing documents, projections, use-of-funds tables, milestone plans, or materials that must stay internally consistent across multiple fundraising assets.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/investor-outreach/SKILL.md",
+    "counterpart": "skills/investor-outreach/SKILL.md",
+    "body_hash": "8e291d195ed3bd7e726c977d1dd32a58d07d76c940fa8bd4471228836e6f3001",
+    "wrapper": "---\nname: investor-outreach\ndescription: 投資家へのアウトリーチ、関係構築、ファンドレイジング戦略、およびパイプラインマネジメント。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: investor-outreach\ndescription: Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user wants outreach to angels, VCs, strategic investors, or accelerators and needs concise, personalized, investor-facing messaging.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/kotlin-testing/SKILL.md",
+    "counterpart": "skills/kotlin-testing/SKILL.md",
+    "body_hash": "ed305615ee8277095a002b154b558f565c9a1d47c921a9fe99975aac26c7a968",
+    "wrapper": "---\nname: kotlin-testing\ndescription: Kotlinテストフレームワーク、アサーション、モック、およびコルーチンテスト。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: kotlin-testing\ndescription: Kotlin testing patterns with Kotest, MockK, coroutine testing, property-based testing, and Kover coverage. Follows TDD methodology with idiomatic Kotlin practices. Use when writing Kotlin tests with Kotest or MockK, or testing coroutines and checking coverage.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/laravel-patterns/SKILL.md",
+    "counterpart": "skills/laravel-patterns/SKILL.md",
+    "body_hash": "c4d79eff31a92e29e8e9a45f4b0fe88a473e88e7691420736c152b977ff9759d",
+    "wrapper": "---\nname: laravel-patterns\ndescription: Laravel言語固有のパターン、Eloquent ORM、ミドルウェア、およびサービスコンテナ。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: laravel-patterns\ndescription: Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources for production apps. Use when building or reviewing Laravel apps — controllers, Eloquent, service layers, queues, or API resources.\nmetadata:\n  origin: ECC\n---"
+  },
+  {
+    "path": "docs/ja-JP/skills/laravel-plugin-discovery/SKILL.md",
+    "counterpart": "skills/laravel-plugin-discovery/SKILL.md",
+    "body_hash": "ed3f8b277c011f719bfe006469adc1dd77964ae21acd744bc534721c2597f893",
+    "wrapper": "---\nname: laravel-plugin-discovery\ndescription: Laravel プラグイン検出、パッケージ管理、依存関係解決、およびサービスプロバイダ統合。\norigin: ECC\n---",
+    "canonical_wrapper": "---\nname: laravel-plugin-discovery\ndescription: Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, or assess Laravel/PHP compatibility.\nmetadata:\n  origin: ECC\n---"
+  }
+]

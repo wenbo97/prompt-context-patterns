@@ -1,33 +1,23 @@
-# patternfoo
+# Patternfoo
 
-A/B-test prompt patterns from the catalog using promptfoo + an Ink TUI.
+Select active catalog methods with runnable evaluation cases. The directory comes from canonical metadata rather than a fixed155-item list. Each case has a case_id and explicit pattern_ids; historic008/017 folder names are not catalog identities.
 
-## Run
+## Setup
+
+Run npm install --legacy-peer-deps --omit=peer in this directory for the TUI and static tests. Install a compatible promptfoo CLI explicitly before a model experiment. Configure provider, judge and endpoint in the TUI; configuration stays in ~/.patternfoo/config.json.
 
 ```bash
-cd eval/patternfoo
-npm install
+npm test
+npm run build
 npm start
 ```
 
-Configure provider + API endpoint on first run; saved to `~/.patternfoo/config.json`.
+Selecting several methods runs each matched case once. Each case has its own A/B pair, scenarios, rubric and result directory; cases are not cross-multiplied. Provider calls are opt-in and are not part of static blog checks.
 
-## Add a pattern
+## Add a case
 
-Create a directory under `patterns/NNN-slug/` with:
-- `meta.yaml` (id, name, category, hypothesis, status: ready|todo)
-- `prompt-a.md` (baseline) and `prompt-b.md` (with pattern)
-- `scenarios.yaml` (promptfoo `tests:` block)
-- `rubric.md` (llm-rubric grading)
+Create patterns/<case-id>/ containing meta.yaml, prompt-a.md, prompt-b.md, scenarios.yaml and rubric.md. Metadata requires case_id, nonempty pattern_ids, name, category, hypothesis and status ready|todo. Identifiers use letters, digits and hyphens. Link active canonical methods; resolve merged identities during migration.
 
-The TUI auto-discovers it on next launch.
+Examples are not guaranteed winners. Preserve raw outputs and configuration before reporting measured results. Promptfoo exit100 denotes failed assertions, so results remain available; invocation failures are reported separately.
 
-## Reset
-
-If a promptfoo upgrade leaves a SQLite schema mismatch (errors like "no such column" on eval), delete the local promptfoo database:
-
-```bash
-rm ~/.promptfoo/promptfoo.db
-```
-
-It will be recreated on the next eval run.
+[Promptfoo CLI documentation](https://www.promptfoo.dev/docs/usage/command-line/) describes repeats, cache behavior and evaluation failure codes.

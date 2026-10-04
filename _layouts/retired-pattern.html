@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% assign p = site.data.patterns | where: 'id', page.pattern_id | first %}
+<section class="prose-page"><span class="record-id">P{{ p.id }}</span><h1>{% if page.lang == 'zh' %}{% if p.status == 'merged' %}模式已合并{% else %}模式已撤下{% endif %}{% else %}{% if p.status == 'merged' %}Pattern merged{% else %}Pattern withdrawn{% endif %}{% endif %}</h1>
+<p>{% if page.lang == 'zh' %}{{ p.reason_zh | escape }}{% else %}{{ p.reason_en | escape }}{% endif %}</p>
+{% if p.status == 'merged' %}{% if page.lang == 'zh' %}{% assign suffix = '-zh' %}{% else %}{% assign suffix = '' %}{% endif %}{% capture target %}/catalog/patterns/{{ p.merged_into }}{{ suffix }}/{% endcapture %}<a class="button" href="{{ target | relative_url }}">{% if page.lang == 'zh' %}查看合并后的方法{% else %}Read the active method{% endif %}</a>{% endif %}
+<p><a href="{{ '/catalog/browse/' | relative_url }}">{% if page.lang == 'zh' %}返回当前目录{% else %}Browse the current catalog{% endif %}</a></p></section>

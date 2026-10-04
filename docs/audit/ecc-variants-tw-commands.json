@@ -1,0 +1,74 @@
+[
+  {
+    "path": "docs/zh-TW/commands/build-fix.md",
+    "reason": "Full29line one-error-context-cause-fix→samebuild rerun and3attempt/newerror/userpause stop read. Short TypeScript/npm-only variant omits canonical project detection/dependency order/architecture+missingdependency boundaries; bounded repair mechanism retained, CLI runtime detail scoped."
+  },
+  {
+    "path": "docs/zh-TW/commands/checkpoint.md",
+    "reason": "Full74line checkpoint/log/comparison/status and bounded cleanup template read. Core snapshot comparison retained; HEAD log not exact stash/dirty identity and baseline metrics not stored. Literal verbs/paths preserved, localized report names no parser claim; no git action."
+  },
+  {
+    "path": "docs/zh-TW/commands/code-review.md",
+    "reason": "Full40line old local diff→risk checklist→location/description/fix→severity gate read. Omits canonical PR/base/fullfiles/actualfailure-proof modes; fixed50/800/TODO severity lacks task evidence. Localized severity headings, no demonstrated native block or current review run."
+  },
+  {
+    "path": "docs/zh-TW/commands/e2e.md",
+    "reason": "Full115line short journey/POM/browser/artifact/condition/flake/source locator method read. Omits canonical worked oracle/repeat evidence/PMX explicit testnet restrictions beyond general no production; preserves actual outcome/isolated artifact intent. Root command retired to e2e-testing, runtime browser setup scoped; no run/upload."
+  },
+  {
+    "path": "docs/zh-TW/commands/eval.md",
+    "reason": "Full120line concrete criteria→separate capability/regression attempts/baseline→report/list/clean template read. Same shared eval method; fixed90/100 and illustrative67/100 not observed evidence, old retired alias and omitted containment/bound invocation outcome remain. All templates localized yet metric notation preserved."
+  },
+  {
+    "path": "docs/zh-TW/commands/go-build.md",
+    "reason": "Full81line actual scope/commands/minimalfix-rebuild/3attemptstop/source router read. Worked example omitted versus canonical but mechanism retained; missingdependency/architecture boundary explicit. No build/mod mutation, domain API details scoped."
+  },
+  {
+    "path": "docs/zh-TW/commands/go-review.md",
+    "reason": "Full87line diff/static/domain-check/report/severity gate read. Worked findings omitted versus147line canonical, no concrete failure proof; instrumented build vs actual race execution distinction retained as limitation. Literal names/CLI retained; language implementation scoped, no run."
+  },
+  {
+    "path": "docs/zh-TW/commands/go-test.md",
+    "reason": "Full132line method plus actual table/parallel/cleanup snippets read. Causal-red/minimalgreen/behavior/independent cleanup retained but concrete validator teaching case absent. Test template placeholder assertion is not actual oracle;100/90/80 policy not observed result, no test run."
+  },
+  {
+    "path": "docs/zh-TW/commands/learn.md",
+    "reason": "Full70line cause/context/solution/trigger draft-confirm-save read. Same legacy evidence-to-skill teaching template; flat learned/name.md lacks current discovery/root/slug/frontmatter/collision/taint contract. Historical session source not authority; no memory/skill write."
+  },
+  {
+    "path": "docs/zh-TW/commands/orchestrate.md",
+    "reason": "Full140line role sequences/exact handoff fields/final report/independent parallel checks read. Shared artifact handoff and ownership known; omits newer seeded worktree/operator snapshot/approval/telemetry block, worked feature example removed. Recommendations distinct actual release authority, alias retired."
+  },
+  {
+    "path": "docs/zh-TW/commands/plan.md",
+    "reason": "Full113line assumptions requirements/deps/risks/phases/confirmation and complete notification worked template read. Same scoped plan-before-action contract, source estimates/reliability not factual evidence. English frontmatter/names preserved and user session authorization overrides teaching gate; no plan write."
+  },
+  {
+    "path": "docs/zh-TW/commands/refactor-clean.md",
+    "reason": "Full28line detector→risk→propose→baseline→singledelete→test→rollback/readback read. Short variant omits canonical dynamic/external consumer/history checks; unused tests not intrinsically SAFE. Bounded verified cleanup retained with incomplete absence evidence, no deletion."
+  },
+  {
+    "path": "docs/zh-TW/commands/setup-pm.md",
+    "reason": "Full80line literal JSON/CLI/env/config/lock/firstavailable precedence read. Same explicit override/detected capability method; disable-model-invocation preserved, runtime install/code details scoped, no config writes."
+  },
+  {
+    "path": "docs/zh-TW/commands/tdd.md",
+    "reason": "Full100line interface/causal-red/minimalgreen/refactor/recheck/coverage and behavior-mock contract read. Short variant removes worked code/oracle and test-type detail while method retained. Retired alias/80–100 policy not empirical guarantee; no tests."
+  },
+  {
+    "path": "docs/zh-TW/commands/test-coverage.md",
+    "reason": "Full27line coverage-read→actual untested paths→unit/integration/E2E→rerun/beforeafter method read. npm-only and lacks canonical fixture/isolation/full-suite/branch-priority contract,80% threshold not behavior correctness. No generated tests/run."
+  },
+  {
+    "path": "docs/zh-TW/commands/update-codemaps.md",
+    "reason": "Full17line source imports/exports→compact architecture/backend/frontend/data→diffpercentage/freshness/report read. Short variant differs current indexeddomain/source pointers/generator scheme;30% threshold/mtime not semantic proof or permission requirement. No docs write."
+  },
+  {
+    "path": "docs/zh-TW/commands/update-docs.md",
+    "reason": "Full31line package/env code-owned reference→CONTRIB/RUNBOOK→90daycue/diff read. Omits current preserve handwritten/generated boundaries/requested-file guard and other API/export sources. Packagejson comments unspecified parser,mtime not proof; no docs write."
+  },
+  {
+    "path": "docs/zh-TW/commands/verify.md",
+    "reason": "Full59line build/type/lint/test/log/git and mode/report template read. Secrets result requested without scan step like PT, unlike Korean; current retired shim→verification-loop strongest localonly/pipefail/unavailable distinctions omitted. No actual validation run."
+  }
+]

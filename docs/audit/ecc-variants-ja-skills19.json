@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/ja-JP/skills/jira-integration/SKILL.md",
+    "reason": "Full302line actual MCP/RESTcapabilityfallback/schema+credentialscope→readissue/deps→testablerole-action-result/edgecriteria→currenttransitionlookup→state/evidencereport and complete commenttemplates/shell read. Same typedcapability/currentstates/observableacceptance method; sourcecomment/update/rotate operations not currenttaskauthorization, readonlyreport not nativepermissionproof. JiraAPI/runtime details scoped, no creds/API/messages.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/jpa-patterns/SKILL.md",
+    "reason": "Full141line actual domainpurpose/prose/entity-fetch-transactions-pagination/index-cache-migration/testreference read. Specific JavaHibernate/SpringDB cookbook, no independent agentmethod beyond known contract/sourcepattern. Activation/origin absent, API/version/performance/loggingrecipes scoped out, no DB or Javaexecution.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/knowledge-ops/SKILL.md",
+    "reason": "Full154line actual live-repo/codevsarchive ownership/activeexecution facthome/scopedmemory layers→classify→searchdedupe→canonicalhome→index/minimummeaningfulsync/report gates read. Same sourcefactowner/progressive context methods; sourcealwayswriteCCmemory/MCPduplicatechoices canconflict singlehome, exportedlogs/remoteGit pushes require actualtaskscope. Retrievednotesnotinstructionauthority; no private memory/sync/messages/commitperformed.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/kotlin-coroutines-flows/SKILL.md",
+    "reason": "Full284line purpose/prose/structuredscopehierarchy/independentfault-supervisor/Flowcancel-cleanup/platformreference read. Domain Kotlincoroutine/UIstream/testing guide, no independent agentprompt/controlmethod beyond generic typedfailure/contextscope; currentAPI/platform/runtime exampleimplementation scoped not audited or efficacyclaimed, no builds/threads/tests.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]

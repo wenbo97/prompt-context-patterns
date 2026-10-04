@@ -1,0 +1,50 @@
+[
+  {
+    "path": "docs/ko-KR/agents/architect.md",
+    "reason": "Full211line role/tools/body and complete ADR/example template read against canonical220line review. Read-only capabilities and current-state→requirements→contracts→alternatives/consequences preserved, prompt-defense baseline omitted. ADR Accepted/example latency100k and growth ladder are source constructions, not deployment evidence; domain architecture details scoped out, no new variant."
+  },
+  {
+    "path": "docs/ko-KR/agents/build-error-resolver.md",
+    "reason": "Full114line prompt/tool scope/diagnostic shell/recovery/report read against canonical123line review. Minimal build-only fixes/required rerun/scope handoffs preserved, baseline guard omitted; repeated-until-build has no explicit trial budget in this agent. rm lock/cache recovery and5%diff target conflict minimal artifact intent, kept as source caveat without further upstream audit. No actions."
+  },
+  {
+    "path": "docs/ko-KR/agents/code-reviewer.md",
+    "reason": "Full237line actual changed+surrounding code review, confidence filters, report/project-guide/addendum read (repaired131–168 output). Current323line canonical adds concrete exact-line/input-state/outcome/existing-guards evidence gate and permits zero findings; Korean80%self-rating lacks those requirements. Retains context/project preference/filter/issue grouping but later fixed size/memo severities tension; no calibrated confidence or native enforcement claim."
+  },
+  {
+    "path": "docs/ko-KR/agents/database-reviewer.md",
+    "reason": "Full87line tools, observed-query→schema→permissions checklist/report instructions read against canonical100line review. Baseline guard absent; same domain-specific evidence-guided routing and Supabase adaptation credit. No independent new agent mechanism,10x/always-index and broad assurance unverified; DB diagnostics/implementation scoped out and not executed."
+  },
+  {
+    "path": "docs/ko-KR/agents/doc-updater.md",
+    "reason": "Full107line prompt/context map template, actual source/module/data-flow extraction and link/example verification read against canonical116line review. Baseline guard absent; source-owned generated view/compact locators/handwritten link context preserved. Date/count/compiles do not prove semantic freshness, source generators not executed."
+  },
+  {
+    "path": "docs/ko-KR/agents/e2e-runner.md",
+    "reason": "Full103line prompt/CLI/actual journey/assertions/artifacts/fallback/flake policy read against canonical116line review. Baseline guard omitted; retains observable-state waits and independent fixtures, no architecture-only feature equivalence claim. Fixed3–5/95%/5%/<10min are source policy, skip/quarantine critical tests must not silently satisfy acceptance; no browser or upload."
+  },
+  {
+    "path": "docs/ko-KR/agents/go-build-resolver.md",
+    "reason": "Full92line task scope, shell diagnostics, cause/fix variants, bounded3attempts/stops/report read against canonical103line review. Baseline guard omitted; minimal fix+same-build rerun retained. Optional failedlint mislabeled notinstalled, tidy/cache state writes are not mere diagnostic reads; Go implementation detail scoped out, no execution."
+  },
+  {
+    "path": "docs/ko-KR/agents/go-reviewer.md",
+    "reason": "Full74line scoped diff/static inspection and concrete category/report/gate read against canonical85line review. Baseline guard absent; staged/base/source artifact binding less explicit. Blanket MUST/critical style versus defect proof retained as limits, actual tools/capability not established from names; language recipes scoped out."
+  },
+  {
+    "path": "docs/ko-KR/agents/planner.md",
+    "reason": "Full209line read-only role, assumption+constraint/current-code/file-action-why-dependency-risk plan, complete Stripe worked example and independently mergeable phase template read against221line canonical review. Baseline guard missing; core self-contained phased plan method retained. Example prices/estimates/test coverage not requirements or observed proof; no plan written/executed."
+  },
+  {
+    "path": "docs/ko-KR/agents/refactor-cleaner.md",
+    "reason": "Full85line detectors/risk classification/reference-history/public-API checks/one-category test-build-commit loop read against canonical94line review. Baseline guard omitted; conservative skip/owned change boundary retained as source recommendation. SAFE lexical absence not proof of all dynamic consumers, no code removal or installation."
+  },
+  {
+    "path": "docs/ko-KR/agents/security-reviewer.md",
+    "reason": "Full104line tool role, scan/high-risk areas/pattern report, context-before-flag false positives and emergency sequence read against canonical117line review. Baseline guard omitted; evidence/permission principles retained without claiming checklist guarantees security. Notification/rotation source instructions not authorized current actions, no message/scanner executed; domain recipes scoped out."
+  },
+  {
+    "path": "docs/ko-KR/agents/tdd-guide.md",
+    "reason": "Full101line prompt, project-native Node/Python/Go commands, causal-red/minimalgreen/behavior assertions/isolated mocks and capability-regression/pass@ versus pass^ addendum read against canonical100line review. Baseline guard absent but extra language-neutral command examples present.80%/10000/fixedcounts are task policies not observed improvements, mock tests distinct from real integrations; no code/test action."
+  }
+]

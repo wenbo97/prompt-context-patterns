@@ -27,22 +27,24 @@ export function runPromptfoo(opts: RunOptions): Promise<PromptfooOutput> {
     const child = spawn('npx', ['promptfoo', 'eval', '-c', opts.configYamlPath, '-o', opts.outputJsonPath], {
       stdio: ['ignore', 'pipe', 'pipe'],
       shell: process.platform === 'win32',
+      windowsHide: true,
     });
     child.stdout.on('data', (b) => opts.onStdout?.(b.toString()));
     child.stderr.on('data', (b) => opts.onStdout?.(b.toString()));
     child.on('exit', (code) => {
-      if (code !== 0) return reject(new Error(`promptfoo exited ${code}`));
+      if (code !== 0 && code !== 100) return reject(new Error(`promptfoo exited ${code}`));
       try {
         const parsed = JSON.parse(fs.readFileSync(opts.outputJsonPath, 'utf8')) as PromptfooOutput;
         resolve(parsed);
       } catch (e) { reject(e); }
     });
+    child.on('error', reject);
   });
 }
 
 export function openPromptfooView(): void {
   spawn('npx', ['promptfoo', 'view', '--port', '15500'], {
-    detached: true, stdio: 'ignore', shell: process.platform === 'win32',
+    detached: true, stdio: 'ignore', shell: process.platform === 'win32', windowsHide: true,
   }).unref();
 }
 

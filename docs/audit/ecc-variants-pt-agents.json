@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/pt-BR/agents/architect.md",
+    "reason": "Full80line method prompt read against canonical220line review: preserves read-only role/current-state→requirements→API contracts→trade-offs. Ends after cache principle; omits ADR template, system-design verification, explicit examples/boundaries and canonical baseline guard. No equivalence claim for omitted contract, domain scale recipes excluded.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/build-error-resolver.md",
+    "reason": "Full80line prompt/shell/cause-fix/body read against123line canonical review. Preserves narrow build-only minimal changes and same-tsc rerun; stops in priority table, omits success proof, scope handoffs, recovery and guard baseline. No bounded completion contract in truncated variant; no build/install action.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/code-reviewer.md",
+    "reason": "Full86line method body read; context/diff/full-file/callers/filter/consolidate retained,80%selfconfidence is not calibrated. Omits current concrete failure-proof/zero-findings gates and ends after checklist without report/severity-action/project-guide contract. Literal tool names preserved but localized severity tokens differ; no parser behavior claimed. Essential source contrast read; domain snippets scoped out.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/database-reviewer.md",
+    "reason": "Full91line agent method/commands/reference read against100line canonical review. Source query evidence→schema→RLS/checklist and actual postgres-patterns/database-migrations router retained, baseline guard absent. Domain SQL/index/10x mechanics scoped out; named diagnostics not executed or effectiveness evidence.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/doc-updater.md",
+    "reason": "Full99line prompt/map template and actual extract/update/verify method read against116line canonical review. Source ownership/map roles/link/example checking retained, baseline guard absent; ends at When to Update heading with no trigger clauses. Timestamp alone not current proof; source paths/commands retained but not invoked.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/e2e-runner.md",
+    "reason": "Full99line agent method/template/CLI body read. Goal journeys→observable condition/isolated test→repeated artifact/flake reporting retained, current baseline guard and final scope caveats absent. Vendor auto-wait claim and95%/5%/10min heuristic not evidence; fallback must be actually available. Domain browser setup excluded, no screenshot/run/upload.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/go-build-resolver.md",
+    "reason": "Full80line actual command/repair/stop prompt read against103line canonical review. Unique translation change command-v preflight separates missing staticcheck from lint failure; golangci still conflates. Ends after two stop clauses, omits architecture-scope stop and final report; baseline guard absent. Refers same minimal causal fix loop, no runtime audit/execution.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/go-reviewer.md",
+    "reason": "Full76line method/tools/report gates and explicit golang-patterns route read against85line canonical review. Diff/static domain checks retained; baseline guard omitted, contextual defect-evidence not added.50line/critical style are source rules not task quality proof; API recipes excluded.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/planner.md",
+    "reason": "Full81line read-only prompt and nested phase/file-action-why-dependency-risk/test template read against221line canonical review. Stops after test strategy, omits risks/success acceptance/full worked example/independently mergeable phases and baseline. Core requirements/currentcode/dependencies preserved but cannot claim equivalent self-contained launch plan; no artifact write.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/refactor-cleaner.md",
+    "reason": "Full85line prompt and all verification/batch/report/risk methods read against94line canonical review. Conservative public/dynamic-reference/history before deletion, tests-build per batch retained; baseline guard omitted. Domain detector CLI implementation scoped out, static no-reference not exhaustive absence; no removal.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/security-reviewer.md",
+    "reason": "Full108line scan/context-before-flag/method/report/emergency/lower-privilege and explicit security-review detailed-ref route read against117line canonical review. Baseline guard omitted, core checklist/finding-context retained. Notification/rotation not current task authority, domain vulnerability rules scoped out and no scanner/message executed.",
+    "review_kind": "difference-review"
+  },
+  {
+    "path": "docs/pt-BR/agents/tdd-guide.md",
+    "reason": "Full80line prompt and all causal-red/minimalgreen/isolated behavioral assertion/quality method plus tdd-workflow route read against100line canonical review. Baseline and capability-regression/pass@/pass^ addendum missing; fixed npm routing instead project-native generalization.80% coverage is source acceptance preference not task improvement proof, no tests run.",
+    "review_kind": "difference-review"
+  }
+]

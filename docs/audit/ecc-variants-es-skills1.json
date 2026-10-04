@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/es/skills/api-design/SKILL.md",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "reason": "Full523line method-purpose prose, typed JSON/HTTP contrasts and checklist read: REST resources/status/envelope/pagination/filter/auth/ratelimit/version reference. These are software API contract recipes, not independent prompt/context/orchestration methods; exact skill trigger preserved. Implementation snippets/API correctness/performance/production claims scoped out, no endpoints executed or new card."
+  },
+  {
+    "path": "docs/es/skills/backend-patterns/SKILL.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full556line method-purpose prose and actual current routing clauses433–435 read. Explicit sharedstore/gateway/platform quota boundary replaces old inprocess sample; api-design owns HTTP contract and security-review abuse inspection. Distinct domain responsibilities/context pointers retained; repository/service/cache/SQL implementation scoped out without upstream runtime audit, no efficacy/native enforcement claim."
+  },
+  {
+    "path": "docs/es/skills/coding-standards/SKILL.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full549line method/context/rule prose read. Actual11–37 declares sharedfloor and routes framework instructions to frontend/backend/api-design, shortest rule pointerrules/common/coding-style; narrowed trigger and exclusions preserve scope-routing method. KISS/YAGNI/minimum complexity existing teaching cards; detailed TypeScript/React/API examples scoped out, no universal quality/effectiveness or runtime claim."
+  }
+]

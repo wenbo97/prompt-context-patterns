@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/zh-CN/skills/iterative-retrieval/SKILL.md",
+    "depth": "full-semantic-and-method-code",
+    "reason": "Read all translated prose/agent prompts/examples and canonical counterpart, plus all54 method-bearing JavaScript lines (not excluded as domain code). Same dispatch→evaluate→gap/terminology/pattern refinement→bounded cycle, relevance reason/gap record, low-score exclusion, cumulative best-context and early-return predicate. Code exactly retains canonical English comments and controls; manual install agent-directory pointer is current. Source score cutoffs/three-files/three-cycles are heuristics, not calibrated relevance or evidence completeness. Excluding tests can lose behavioral context, early return can omit earlier relevant files, and low relevance can change with new gaps; max-cycle return needs an explicit incomplete state. Prototype helper names have no implementation here. No new variant mechanism or retrieval/agent execution.",
+    "candidate_keys": [
+      "ecc-iterative-gap-retrieval"
+    ],
+    "existing_ids": [
+      23,
+      36,
+      41,
+      100,
+      175
+    ]
+  },
+  {
+    "path": "docs/ja-JP/skills/iterative-retrieval/SKILL.md",
+    "depth": "full-semantic-and-method-code",
+    "reason": "Read all translated prose/agent prompts/examples and canonical counterpart, plus all54 method-bearing JavaScript lines (not excluded as domain code). Same dispatch→evaluate→gap/terminology/pattern refinement→bounded cycle, relevance reason/gap record, low-score exclusion, cumulative best-context and early-return predicate. Complete translated JS comment delta preserves controls/symbols; activation section omitted and older ~/.claude/agents pointer replaces current install-conditional router. Source score cutoffs/three-files/three-cycles are heuristics, not calibrated relevance or evidence completeness. Excluding tests can lose behavioral context, early return can omit earlier relevant files, and low relevance can change with new gaps; max-cycle return needs an explicit incomplete state. Prototype helper names have no implementation here. No new variant mechanism or retrieval/agent execution.",
+    "candidate_keys": [
+      "ecc-iterative-gap-retrieval"
+    ],
+    "existing_ids": [
+      23,
+      36,
+      41,
+      100,
+      175
+    ]
+  },
+  {
+    "path": "docs/ko-KR/skills/iterative-retrieval/SKILL.md",
+    "depth": "full-semantic-and-method-code",
+    "reason": "Read all translated prose/agent prompts/examples and canonical counterpart, plus all54 method-bearing JavaScript lines (not excluded as domain code). Same dispatch→evaluate→gap/terminology/pattern refinement→bounded cycle, relevance reason/gap record, low-score exclusion, cumulative best-context and early-return predicate. All54 programming lines match canonical after blank-line exclusion; source agent-directory pointer is older unqualified ~/.claude/agents. Source score cutoffs/three-files/three-cycles are heuristics, not calibrated relevance or evidence completeness. Excluding tests can lose behavioral context, early return can omit earlier relevant files, and low relevance can change with new gaps; max-cycle return needs an explicit incomplete state. Prototype helper names have no implementation here. No new variant mechanism or retrieval/agent execution.",
+    "candidate_keys": [
+      "ecc-iterative-gap-retrieval"
+    ],
+    "existing_ids": [
+      23,
+      36,
+      41,
+      100,
+      175
+    ]
+  },
+  {
+    "path": "docs/zh-TW/skills/iterative-retrieval/SKILL.md",
+    "depth": "full-semantic-and-method-code",
+    "reason": "Read all translated prose/agent prompts/examples and canonical counterpart, plus all54 method-bearing JavaScript lines (not excluded as domain code). Same dispatch→evaluate→gap/terminology/pattern refinement→bounded cycle, relevance reason/gap record, low-score exclusion, cumulative best-context and early-return predicate. Complete translated JS comment delta preserves controls/symbols; activation section omitted and older ~/.claude/agents pointer replaces current install-conditional router. Source score cutoffs/three-files/three-cycles are heuristics, not calibrated relevance or evidence completeness. Excluding tests can lose behavioral context, early return can omit earlier relevant files, and low relevance can change with new gaps; max-cycle return needs an explicit incomplete state. Prototype helper names have no implementation here. No new variant mechanism or retrieval/agent execution.",
+    "candidate_keys": [
+      "ecc-iterative-gap-retrieval"
+    ],
+    "existing_ids": [
+      23,
+      36,
+      41,
+      100,
+      175
+    ]
+  }
+]

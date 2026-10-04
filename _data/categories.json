@@ -1,0 +1,56 @@
+[
+  {
+    "key": "prompt",
+    "name_en": "Prompt design",
+    "name_zh": "提示词设计",
+    "count": 8
+  },
+  {
+    "key": "context",
+    "name_en": "Context management",
+    "name_zh": "上下文管理",
+    "count": 12
+  },
+  {
+    "key": "workflow",
+    "name_en": "Workflow control",
+    "name_zh": "工作流控制",
+    "count": 26
+  },
+  {
+    "key": "orchestration",
+    "name_en": "Agent orchestration",
+    "name_zh": "Agent 编排",
+    "count": 11
+  },
+  {
+    "key": "tools",
+    "name_en": "Tool use",
+    "name_zh": "工具使用",
+    "count": 16
+  },
+  {
+    "key": "output",
+    "name_en": "Output contracts",
+    "name_zh": "输出契约",
+    "count": 6
+  },
+  {
+    "key": "evaluation",
+    "name_en": "Evaluation & feedback",
+    "name_zh": "评测与反馈",
+    "count": 20
+  },
+  {
+    "key": "safety",
+    "name_en": "Safety & trust",
+    "name_zh": "安全与信任",
+    "count": 13
+  },
+  {
+    "key": "skill-authoring",
+    "name_en": "Skill authoring",
+    "name_zh": "技能编写",
+    "count": 10
+  }
+]

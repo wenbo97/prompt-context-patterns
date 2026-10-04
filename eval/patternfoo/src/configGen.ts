@@ -10,11 +10,13 @@ export interface GenInput {
 }
 
 export function generatePromptfooConfig({ patterns, config }: GenInput): string {
+  if (patterns.length !== 1) throw new Error('Generate one evaluation case per config to preserve scenario isolation');
   const prompts: string[] = [];
   const tests: any[] = [];
   for (const p of patterns) {
-    prompts.push(`file://${p.absDir}/prompt-a.md`);
-    prompts.push(`file://${p.absDir}/prompt-b.md`);
+    const promptRoot = p.absDir.replace(/\\/g, '/');
+    prompts.push(`file://${promptRoot}/prompt-a.md`);
+    prompts.push(`file://${promptRoot}/prompt-b.md`);
     const rubric = fs.readFileSync(path.join(p.absDir, 'rubric.md'), 'utf8');
     const scenarios = yaml.load(fs.readFileSync(path.join(p.absDir, 'scenarios.yaml'), 'utf8')) as any[];
     for (const s of scenarios) {
@@ -23,6 +25,7 @@ export function generatePromptfooConfig({ patterns, config }: GenInput): string 
           ? { ...a, value: rubric }
           : a,
       );
+      if (!assert.some((a: any) => a?.type === 'llm-rubric')) assert.push({ type: 'llm-rubric', value: rubric });
       tests.push({ ...s, assert });
     }
   }
@@ -36,9 +39,7 @@ export function generatePromptfooConfig({ patterns, config }: GenInput): string 
     prompts,
     tests,
     defaultTest: {
-      assert: patterns.length === 1
-        ? [{ type: 'llm-rubric', value: fs.readFileSync(path.join(patterns[0].absDir, 'rubric.md'), 'utf8') }]
-        : [],
+      assert: [],
       options: {
         repeat: config.runs,
         provider: {
@@ -49,4 +50,8 @@ export function generatePromptfooConfig({ patterns, config }: GenInput): string 
     },
   };
   return yaml.dump(doc, { lineWidth: 200 });
+}
+
+export function generateCaseConfigs(patterns: LoadedPattern[], config: UserConfig): Array<{ caseId: string; yaml: string }> {
+  return patterns.map(pattern => ({ caseId: pattern.caseId, yaml: generatePromptfooConfig({ patterns: [pattern], config }) }));
 }

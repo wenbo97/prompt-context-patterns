@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/ja-JP/skills/golang-patterns/SKILL.md",
+    "reason": "Full674line actual domain-purpose/prose/interface/error/concurrency/value/options/tooling/refs read. Goimplementationguide with no independent agentprompt/contextmethod beyond known scope/minimumcomplexity principles; originabsent. Library/code/runtime/performance claims excluded by actualpurpose under revisedtask, no build/mod/format actions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/golang-testing/SKILL.md",
+    "reason": "Full959line method-purpose/prose/nativecommands plus essential causalRED20–45/variantbenchmark536–563/negative-positiveoracles890–940 read. Material bodyrewrite versus canonical720line: expanded transport/DB/buildtag/container/separateparallel/testhelpers but no canonicalGolden section, benchmarksunusedconstantresult not outcomeproof. Known behavioralacceptance/isolation/typederrors retained; vacuous illustrativemock examples and coveragepolicy not measuredquality. OtherGoAPI/runtimeimplementation scoped out; no tests/benchmarks.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/ios-icon-gen/SKILL.md",
+    "reason": "Full157line actual capabilitybranch internetIconify vs macOSofflineSFsymbols→inspectexistingstyle/size→search→preview→sameoutputschema→verify@2x/buildreadback method+CLI read. Same sourceexemplar/hostcapability/observableartifactgate; relative$SKILL_DIR scriptlocators no JA support copies, sourcevendorcounts not currentproof. Imageconversion/runtimeAPI implementation scoped and no scripts/assetsgenerated.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/java-coding-standards/SKILL.md",
+    "reason": "Full138line actual purpose/prose/null/types/exception/style/layout/deterministictest rules read. Domain Java/Spring conventions without independent agentmethod; activation/originmetadata missing vs newer source. Runtime/API/code/policy recommendations scoped out, necessarycomplexity/callerobservableprinciples alreadycaptured and no Javaactions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]

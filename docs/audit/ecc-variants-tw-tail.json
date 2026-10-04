@@ -1,0 +1,20 @@
+[
+  {
+    "path": "docs/zh-TW/CONTRIBUTING.md",
+    "depth": "full-method-comparison-marketing-scoped",
+    "reason": "Full191line source method/templates read: narrow component scope/name↔file, role/tools/description, skillwhen/how/examples and test-beforePR. Older short contributor permits single.md skills and no required SKILLfrontmatter, omitted current activation/anti-pattern/relatedrefs/adaptation/guardedrendering and host sync. JSON hook description conflicts newer sidecar-only schema; source installer/marketing/community process scoped out, no new method or publication."
+  },
+  {
+    "path": "docs/zh-TW/README.md",
+    "depth": "full-method-comparison-marketing-scoped",
+    "reason": "Full482line method projection read: component scopes/conditional context/causal-red/tasklocators/PM override-firstavailable and pluginnamespace preserved. Older flat rules/*.md/manualhookcopy versus current resolved/ECCnamespace/hierarchy installer; explicit do-notduplicate hook registration321–323 useful but rawmanualgraph still not resolved. Current guided165–235/version/host/memory boundaries absent; retired aliases/15+30+20+ and200k→70k catalog claims unverified. Runtime setup/marketing scoped, no install/scanner/execution."
+  },
+  {
+    "path": "docs/zh-TW/TERMINOLOGY.md",
+    "depth": "full-method-text",
+    "reason": "Read all104line glossary and actual preserve product/code/acronym principle92–98. Equivalent localization-symbol-integrity evidence, comments may localize while variable/function/interface symbols retained. Editorial pending/confirmed/yearplaceholder not actual runtime state, no new mechanism. Term data scoped out.",
+    "candidate_keys": [
+      "ecc-variants-localization-symbol-integrity"
+    ]
+  }
+]

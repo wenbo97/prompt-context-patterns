@@ -1,76 +1,51 @@
-# Prompt, Context & Agent Orchestration Patterns
+# Prompt and Context Engineering Reference
 
-Practical patterns for writing stable AI prompts, engineering context, and orchestrating agents — backed by reproducible A/B tests.
+Reusable methods extracted from real agent skills. Every active pattern has a concise description, concrete use case, same-task bad/good examples, observable expectations, limits and provenance.
 
-**Blog:** [https://wenbo97.github.io/prompt-context-patterns/](https://wenbo97.github.io/prompt-context-patterns/)
+Current directory: **122** active methods, **69** with located source instances, **53** labelled Source unconfirmed. Merged and withdrawn identities remain reachable and are not counted as active.
 
-All content is bilingual (English + 中文).
+[中文](README-zh.md)
 
-## What's Here
+## Local preview
 
-```
-_posts/                Blog articles (each post has a -zh sibling)
-_layouts/              Custom Jekyll layouts (default, home, post)
-assets/main.scss       Warm-gray theme (Source Serif 4 + Noto Serif SC)
-_includes/header.html  Site nav
-
-catalog/               206 prompt patterns for AI agent development
-  categories/          Patterns grouped by function
-  techniques/          Deep-dive technique guides
-  standards/           Review frameworks
-  catalog-index.md     EN index · catalog-index-zh.md  ZH index
-
-eval/                  A/B test scripts and results
-  decision-tree-ab/
-    prompt-prose*.md   Prose-style prompts (control)
-    prompt-tree*.md    Decision-tree prompts (test)
-    run.sh             Test runner
-    analyze.py         Result parser
-    results/           Raw outputs (gitignored)
-```
-
-## Articles
-
-| Topic | English | 中文 | A/B Test |
-|-------|---------|------|----------|
-| Decision Tree pattern | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/decision-tree-pattern/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/decision-tree-pattern-zh/) | `eval/decision-tree-ab/` |
-| Prompt engineering patterns | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/prompt-engineering-patterns/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/04/19/prompt-engineering-patterns-zh/) | — |
-| **155-pattern catalog** | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/05/26/prompt-pattern-catalog/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/05/26/prompt-pattern-catalog-zh/) | — |
-| **2026-07 harvest (+51 → 206)** | [Read](https://wenbo97.github.io/prompt-context-patterns/2026/07/08/harvest-2026-07/) | [阅读](https://wenbo97.github.io/prompt-context-patterns/2026/07/08/harvest-2026-07-zh/) | — |
-
-## Local Preview
-
-Requires Ruby 3.x + Bundler (Windows: `winget install RubyInstallerTeam.RubyWithDevKit.3.3`).
+Requires Node20+, Ruby3.3 and Bundler.
 
 ```bash
-bundle install                              # first time only
-bundle exec jekyll serve --livereload       # http://127.0.0.1:4000/prompt-context-patterns/
+npm ci
+bundle install
+npm run generate
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```
 
-GitHub Pages rebuilds automatically on push to `master`.
+The isolated Windows copy can use `scripts/preview.ps1` with its local Ruby installation. Preview: http://127.0.0.1:4000/prompt-context-patterns/ .
 
-## Run the A/B Tests Yourself
+## Content and evidence
 
-Requires [Claude Code CLI](https://claude.ai/code).
+- [_data/patterns.json](_data/patterns.json): authoritative metadata and editorial dispositions.
+- [_patterns/](_patterns/): independent bilingual bodies.
+- [Editorial criteria](methodology/index.md): usefulness and provenance are separate.
+- [Legacy audit](docs/audit/legacy-review.md): retention, merge and withdrawal reasons.
+- [Source research](docs/research/open-source-skills-top10.md): repositories and frozen revisions.
+
+Pinned commit links establish observed instances, not earliest invention. Teaching examples are independently constructed, not measured model outputs. Historical articles retain dates and fixtures; unsupported numbers without raw outputs are corrected.
+
+## Verification and maintenance
 
 ```bash
-bash eval/decision-tree-ab/run.sh           # 5 runs per scenario, default model
-bash eval/decision-tree-ab/run.sh 10 haiku  # 10 runs with haiku
-python3 eval/decision-tree-ab/analyze.py    # parse results
+npm test
+npm run check
+npm run check:generated
+bundle exec ruby tests/liquid-literals.rb
+bundle exec jekyll build
+npm run check:links
+npm run test:e2e
+npm --prefix eval/patternfoo ci --legacy-peer-deps --omit=peer
+npm --prefix eval/patternfoo test
+npm --prefix eval/patternfoo run build
 ```
 
-Three scenarios are tested:
-- **Simple** — clear input, exact rule match
-- **Ambiguous** — input doesn't match any rule exactly
-- **Complex** — 10 overlapping rules with mixed signals
-
-## Conventions
-
-- All text files use CRLF line endings (enforced via `.gitattributes`)
-- Chinese posts use `-zh` filename suffix and add `lang: zh` to front matter
-- The `home` layout auto-pairs EN/ZH posts by slug — no manual index editing needed
-- `eval/decision-tree-ab/results/` is gitignored — test outputs stay local
+Build checks do not call models. Real A/B evaluations run explicitly through [Patternfoo](eval/patternfoo/README.md). Legacy runners retain historical fixtures; missing raw outputs are not represented as revalidated results. Text files use CRLF.
 
 ## License
 
-MIT
+This project uses MIT. Referenced files retain their own licensing scope; citations do not assign one license to an entire source corpus.

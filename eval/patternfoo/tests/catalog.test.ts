@@ -1,17 +1,15 @@
 import { describe, it, expect } from 'vitest';
-import { catalog, TOP10 } from '../src/catalog.js';
+import { catalog, catalogFromRecords } from '../src/catalog.js';
 
 describe('catalog', () => {
-  it('contains exactly 155 patterns', () => {
-    expect(catalog.length).toBe(155);
+  it('reads active records and real names without assuming a fixed catalog length', () => {
+    expect(catalogFromRecords([
+      { id: 207, status: 'active', name_en: 'Bounded retry' },
+      { id: 8, status: 'active', name_en: 'Confirmation gates' },
+      { id: 17, status: 'removed', name_en: 'Retired' },
+    ])).toEqual([{ id: 8, name: 'Confirmation gates' }, { id: 207, name: 'Bounded retry' }]);
   });
-  it('ids are unique and 1..155', () => {
-    const ids = catalog.map(p => p.id).sort((a, b) => a - b);
-    expect(ids[0]).toBe(1);
-    expect(ids[ids.length - 1]).toBe(155);
-    expect(new Set(ids).size).toBe(155);
-  });
-  it('TOP10 lists the 10 MVP-runnable pattern ids', () => {
-    expect(TOP10).toEqual([6, 8, 17, 100, 103, 145, 146, 148, 151, 152]);
+  it('has unique canonical identities', () => {
+    expect(new Set(catalog.map(p => p.id)).size).toBe(catalog.length);
   });
 });

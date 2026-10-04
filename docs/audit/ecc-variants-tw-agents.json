@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/zh-TW/agents/architect.md",
+    "reason": "Full211line method/ADR/template read against canonical220line reviewed body. Read-only state→requirements→contracts→alternative tradeoffs/consequences and design checklist preserved; guard baseline missing. ADR/status/date source construction, fixedRedislatency/growth/optimality statements scoped marketing/domain without adopting outcome proof.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/build-error-resolver.md",
+    "reason": "Full300line actual minimal error-context-cause-fix/rerun and complete report template read. Longer historical type/code samples vs current123line; explicit source boundaries/handoffs preserved but baseline guard omitted and repeat-until-success lacks trial limit. Report5%/devserver success are requested evidence not execution. Domain type correction recipes excluded, no buildrun.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/code-reviewer.md",
+    "reason": "Full104line changedfile→checklist→priority/example/report/gate read. Older variant omits canonical staged-context/full-file-callers/confidence filters/concrete failure proof/zero findings; project customization retained. Fixed50/800/memo/emoji severity not task defect evidence, no host enforcement.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/database-reviewer.md",
+    "reason": "Full378line method prose/diagnostic context and evidence/report/checklists read. More domain indexes/RLS/performance recipes than current100line source; actual query plan vs estimates and least privilege preserved, guard baseline missing.100–1000x/5–20x/O1 impact data unverified and implementation excluded; malformed Supabase source link not invention proof.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/doc-updater.md",
+    "reason": "Full310line source-fact ownership/AST entrypoints/module/data-flow map and complete actual example/README/update schedule/verification templates read. Same canonical method with longer constructed project names; guard baseline omitted. Paths/link existence/compiles/timestamps are separate evidence, date not semantic freshness, no docs generated.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/e2e-runner.md",
+    "reason": "Full303line method text and all procedural POM/wait/flake/artifact code read. Snapshot-ref UI state→goal journey/assertions→actual conditions→repeat/trace/report retained; baseline guard missing, old after-action waiter/networkidle/skipCI recipes limited and not accepted current testproof. Constructed95/5/<10min not results; browser APIs/runtime setup scoped, no run/upload.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/go-build-resolver.md",
+    "reason": "Full368line method purpose/errorcause/scope/read-surgicalfix→samebuild/rerun→3attempts/architecturestop→actualreport read. Longer GoAPIexamples than canonical103; baseline omitted, config/cache/module changes not innocent evidence reads. Literal CLI/no-nolint policy preserved, domain implementation scoped, no execution.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/go-reviewer.md",
+    "reason": "Full267line method/context/source version/preference/finding-locator/example/report read. Diff-scoped inspection and actual moduleversion grounding retained; guard baseline omitted, go build-race not active race workload. English IDs preserved, domain implementation and prestige Google-quality heuristic excluded; no run.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/planner.md",
+    "reason": "Full119line readonly requirementassumptions/current-source/file-action-why-dependency-risk/acceptance template read. Omits current221line worked Stripe and independently mergeable value phases, guard baseline missing; actual risks/success slots retained unlike PT truncated81. Names/paths preserved, fixedsize preferences not evidence, no plan write.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/refactor-cleaner.md",
+    "reason": "Full273line reference/publicAPI/historyrisk→smallbatch test/readback/rollback and deletion-log provenance template read. Stronger explicit never-remove project list and evidence ledger, compared current94line common cleanup; baseline guard omitted. Lexical absence/policySAFE not allconsumers proof, source45KB/2300lines illustrative. No deletion/revert/publication.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/security-reviewer.md",
+    "reason": "Full378line methodpurpose/risk-priority/scan/context/leastauthority/report file-impact-PoC-fix-refs template read; embedded report JavaScript slots retained. Longer domainrecipes than canonical117, baseline/contextfalsepositive/emergency current clauses absent. Security checklists not evidence no vulnerabilities; API/crypto implementations scoped without audit/fixes/messages.",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/zh-TW/agents/tdd-guide.md",
+    "reason": "Full280line behavioral RED→minimalGREEN→refactor/rerun plus essential test/oracle/mocks/fixture code read. Same task acceptance and independent setup, longer oldsearch examples vs current100line; capability/regression/pass@/pass^ addendum and baseline guard missing.600ms sleep not condition assurance,80%sourcepolicy not observed improvements. Runtime framework detail scoped, no tests.",
+    "depth": "full-method-difference-domain-scoped"
+  }
+]

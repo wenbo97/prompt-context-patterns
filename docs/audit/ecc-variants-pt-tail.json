@@ -1,0 +1,58 @@
+[
+  {
+    "path": "docs/pt-BR/examples/CLAUDE.md",
+    "reason": "Read all method/context/rule/task/CLI prose;14domaincode lines verified exact canonical match. Same scoped project template with constraints/source-tree/test/security/git acceptance; generic preferences not empirical enforcement. Verified essential-method equivalence; API implementation scoped out.",
+    "depth": "verified-method-equivalence-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/examples/django-api-CLAUDE.md",
+    "reason": "Read full308line method projection, literal source/stack/error/auth/service/transport-test/ECC workflow slots;111programminglines exact canonical reviewed blocks. Essential context and boundary method equivalent, preserved known source caveats from canonical note; no separate Django correctness audit/run.",
+    "depth": "verified-method-equivalence-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/examples/go-microservice-CLAUDE.md",
+    "reason": "Read full267line context/interface/error/source-tree/CLI/test lanes and compare97exact code lines. Same project-scoped prompts and boundary contracts; runtime/DB/concurrency domain recipes excluded, no native behavior proof.",
+    "depth": "verified-method-equivalence-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/examples/rust-api-CLAUDE.md",
+    "reason": "Read full285line method prose/actual paths/typed domain error and transport-testing context;104code lines verified exact canonical blocks. Known same essential context method; ownership/library details scoped out without claiming current API/deployment correctness.",
+    "depth": "verified-method-equivalence-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/examples/saas-nextjs-CLAUDE.md",
+    "reason": "Read full166line project rules/source/identity-price/webhook/E2E and explicit CLI template;27code lines exact canonical match. Equivalent essential source-grounded task context; quotas/stack/deployment marketing excluded and constructed real-world label not observed trace.",
+    "depth": "verified-method-equivalence-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/examples/user-CLAUDE.md",
+    "reason": "Read complete109line personal privacy/modular references/role selection/test-git and private-memory versus project-owned doc facts. Anonymizar logs preserves redact intent, unlike Korean delete wording. Template preferences not current task authority; actual method equivalent to reviewed canonical, runtime roster/version scoped.",
+    "depth": "verified-method-equivalence-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/TERMINOLOGY.md",
+    "reason": "Read complete102line glossary/principles94–100: literal products/languages/acronyms/code names preserved, explanatory comments translated, first-use expansion. Equivalent localization-symbol-integrity support, term statuses are editorial not runtime. Catalog data scoped out.",
+    "depth": "full-method-comparison-marketing-scoped",
+    "candidate_keys": [
+      "ecc-variants-localization-symbol-integrity"
+    ]
+  },
+  {
+    "path": "docs/pt-BR/CONTRIBUTING.md",
+    "reason": "Full426line method and actual expression matcher grammar read. Narrow skill/name/usage and agent role/tools/boundaries→understand/execute/verify→input/action/output templates retained; current activation-first/anti-pattern/related-source/adaptation/folded-description contract omitted. PT removes full hook recipes but retains obsolete exit1-as-block/matcher grammar. Community SLA/marketing/install runtime scoped; no source execution.",
+    "depth": "full-method-comparison-marketing-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/pt-BR/README.md",
+    "reason": "Read entire529line method projection and installation/router/schema clauses. PM override→actual availability fallback, scoped roles/causal-red/context-method catalog retained. New release titles coexist old28/116/59 and retired tdd/e2e names; plugin-plusmanual installer can duplicate full surfaces and lacks current165–235 reviewed universal multi-harness preflight/channel/host exclusions. Marketing/catalog/runtime recipes scoped out; no empirical improvement or installed native parity inferred.",
+    "depth": "full-method-comparison-marketing-scoped",
+    "candidate_keys": []
+  }
+]

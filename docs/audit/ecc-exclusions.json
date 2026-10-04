@@ -1,0 +1,1211 @@
+[
+  {
+    "path": "assets/hero.png",
+    "hash": "235dd6c33ccd852512206ed0b96820519ee6bbeccf2ce3151979b625e7363f2c",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "4264c7db7f8124c825a4f9f01a36e3a39b5f7d88",
+      "bytes": 141333,
+      "content_sha256": "235dd6c33ccd852512206ed0b96820519ee6bbeccf2ce3151979b625e7363f2c",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        2400,
+        1350
+      ]
+    }
+  },
+  {
+    "path": "assets/images/ecc-logo.png",
+    "hash": "d592b3f54936713ef1a22abcfba197bc5b4cfe1e89c5297864d3d7781885b388",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "ef6e8ac86031a0bbcaa6dbfb142060be39104494",
+      "bytes": 100717,
+      "content_sha256": "d592b3f54936713ef1a22abcfba197bc5b4cfe1e89c5297864d3d7781885b388",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        512,
+        512
+      ]
+    }
+  },
+  {
+    "path": "assets/images/guides/longform-guide.png",
+    "hash": "c2c60642367d1cb745a6a9cd3f299a21587629e0f01f00471b7c05add612f621",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "14f869fdeb24780b4b05214348df54614c9ad249",
+      "bytes": 40996,
+      "content_sha256": "c2c60642367d1cb745a6a9cd3f299a21587629e0f01f00471b7c05add612f621",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1200,
+        675
+      ]
+    }
+  },
+  {
+    "path": "assets/images/guides/security-guide.png",
+    "hash": "391479116ef60042aa6e7ec130419c2323204bc4f85cd0edbddf1054263317d9",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "273a40b82caa1101ca12f8dcded30cbcb04d83ef",
+      "bytes": 1198271,
+      "content_sha256": "391479116ef60042aa6e7ec130419c2323204bc4f85cd0edbddf1054263317d9",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  },
+  {
+    "path": "assets/images/guides/shorthand-guide.png",
+    "hash": "19be1ca59561e80d88b44d67e8ba4a4a2bd54972552e3053f0c2d0d63028ca2e",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "1d7b2eb22931a65d8e74d9a8343adefab4fa1bb4",
+      "bytes": 37974,
+      "content_sha256": "19be1ca59561e80d88b44d67e8ba4a4a2bd54972552e3053f0c2d0d63028ca2e",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1200,
+        675
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/01-header.png",
+    "hash": "07d3cdeb509b1f924c4f9a9bf3f51ca74337953fb1b4ac0e3657e86f7be4d54b",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "a687334f47b6f08336b60509aba48b0b3509734d",
+      "bytes": 5690873,
+      "content_sha256": "07d3cdeb509b1f924c4f9a9bf3f51ca74337953fb1b4ac0e3657e86f7be4d54b",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        3063,
+        1226
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/02-shortform-reference.png",
+    "hash": "fbc457f31f7c94b3d428be6d10af919cdd6651f8e12279fb7a193cbc1b581f3a",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "7d3d319183a1985576690b6e2c0800913660114b",
+      "bytes": 462574,
+      "content_sha256": "fbc457f31f7c94b3d428be6d10af919cdd6651f8e12279fb7a193cbc1b581f3a",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1098,
+        832
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/03-session-storage.png",
+    "hash": "7f11246be6f5cbec8b9b96017b44a543b47619267d1c951fa464d0a80eb31f38",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "f74b5e94adc6a3164c5f29b6fba09cd82338d979",
+      "bytes": 66393,
+      "content_sha256": "7f11246be6f5cbec8b9b96017b44a543b47619267d1c951fa464d0a80eb31f38",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        724,
+        358
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/03b-session-storage-alt.png",
+    "hash": "af9136d4d9d8fab92483243a9fceeea1ef07c8f47fdadfa553ea3ad9ad27e130",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "5b232cd32fe05bfea0f88f218bd7300c1440b90e",
+      "bytes": 184699,
+      "content_sha256": "af9136d4d9d8fab92483243a9fceeea1ef07c8f47fdadfa553ea3ad9ad27e130",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1198,
+        716
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/04-model-selection.png",
+    "hash": "50381a3c0420ce4532cd48e508bc4b17483a40f4136e3356c7e8286973e98b66",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "e1913e7f0f24c3f7d4f81d0c554204ab47207b8b",
+      "bytes": 327509,
+      "content_sha256": "50381a3c0420ce4532cd48e508bc4b17483a40f4136e3356c7e8286973e98b66",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1190,
+        484
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/05-pricing-table.png",
+    "hash": "e05d0fb97f28220ad51465441c673e8603e185427825f8e7594efeedf7a5dd06",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "4bc47e7630bcbc360337a91f5674104f31a59442",
+      "bytes": 187745,
+      "content_sha256": "e05d0fb97f28220ad51465441c673e8603e185427825f8e7594efeedf7a5dd06",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1190,
+        362
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/06-mgrep-benchmark.png",
+    "hash": "429689f7847147146d8a765c13c4804f9b689cefe50e65dc7835dd2b05d11284",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "b6110482eb67d6d1ffbcb0690729b24fc316dddf",
+      "bytes": 586538,
+      "content_sha256": "429689f7847147146d8a765c13c4804f9b689cefe50e65dc7835dd2b05d11284",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1190,
+        756
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/07-boris-parallel.png",
+    "hash": "def58c76ed3acf56e0f961634e490939082fad5ba657737df2a4b1d9cbf584e2",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "ee4dd12b53cc7b57f09cfce09425db6a53728f39",
+      "bytes": 446483,
+      "content_sha256": "def58c76ed3acf56e0f961634e490939082fad5ba657737df2a4b1d9cbf584e2",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1164,
+        1014
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/08-two-terminals.png",
+    "hash": "beb4ce83f6c39e875a04d0ac15b05884332672210c032ed3dcb80e412890fa78",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "09b05059ac04303c5be3d0392c38ed661333ade5",
+      "bytes": 783967,
+      "content_sha256": "beb4ce83f6c39e875a04d0ac15b05884332672210c032ed3dcb80e412890fa78",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1164,
+        956
+      ]
+    }
+  },
+  {
+    "path": "assets/images/longform/09-25k-stars.png",
+    "hash": "a1b6dfbfcb03ce6fa94c520114e02451c09e1aad5d0dbbb277053075a40ff11f",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "3d2115f4a167babffe2f1d8ce3a0979602df668f",
+      "bytes": 534643,
+      "content_sha256": "a1b6dfbfcb03ce6fa94c520114e02451c09e1aad5d0dbbb277053075a40ff11f",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1364,
+        776
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/attack-chain.png",
+    "hash": "12b265c96db4536d6c3006666e9a55583c8132745c4f94d5be8282376b052617",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "e7c60650424f4301e10a1e51d9f1f8170cbd77a6",
+      "bytes": 973344,
+      "content_sha256": "12b265c96db4536d6c3006666e9a55583c8132745c4f94d5be8282376b052617",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1408,
+        768
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/attack-vectors.png",
+    "hash": "12b265c96db4536d6c3006666e9a55583c8132745c4f94d5be8282376b052617",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "e7c60650424f4301e10a1e51d9f1f8170cbd77a6",
+      "bytes": 973344,
+      "content_sha256": "12b265c96db4536d6c3006666e9a55583c8132745c4f94d5be8282376b052617",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1408,
+        768
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/ghostyy-overflow.jpeg",
+    "hash": "cecce2acf79d8fe3d8fa04af9e36c3eb5b635481b2fc93f1bafbb543b1633bbf",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "00aa26e4ebda71a9c5429dd63d129cd96901932a",
+      "bytes": 345558,
+      "content_sha256": "cecce2acf79d8fe3d8fa04af9e36c3eb5b635481b2fc93f1bafbb543b1633bbf",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/security/observability.png",
+    "hash": "1e5f1d9d31c0cdd5c9180f79df650788dcbbbb39425edf7f88d479982d1565ea",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "63d2cbc88bc8f79eca7f1caf5c02106149d587e1",
+      "bytes": 1393409,
+      "content_sha256": "1e5f1d9d31c0cdd5c9180f79df650788dcbbbb39425edf7f88d479982d1565ea",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1376,
+        768
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/sandboxing-brain.png",
+    "hash": "bf2181cc69e606ac7c49831b20b2a531145c683919b578779c37179503dbc1f4",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "143b277f75f788af93a25ab26aa0da77cb8a6d44",
+      "bytes": 84153,
+      "content_sha256": "bf2181cc69e606ac7c49831b20b2a531145c683919b578779c37179503dbc1f4",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1920,
+        968
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/sandboxing-comparison.png",
+    "hash": "a56db90ec0e1fc31d78865c143944748263fea257eb6bf3fb9338d35b8c5834d",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "515738d585f237e882a6ee7e6fdff42fffcd66ca",
+      "bytes": 1093950,
+      "content_sha256": "a56db90ec0e1fc31d78865c143944748263fea257eb6bf3fb9338d35b8c5834d",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1408,
+        768
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/sandboxing.png",
+    "hash": "a56db90ec0e1fc31d78865c143944748263fea257eb6bf3fb9338d35b8c5834d",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "515738d585f237e882a6ee7e6fdff42fffcd66ca",
+      "bytes": 1093950,
+      "content_sha256": "a56db90ec0e1fc31d78865c143944748263fea257eb6bf3fb9338d35b8c5834d",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1408,
+        768
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/sanitization-utility.png",
+    "hash": "34649cb01241e78c972839ac87d83c52936682d3e1d87b3db8851ccfde10362a",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "6ebf46355be1f615a0d1617c80aa2e6cb20cb22f",
+      "bytes": 398089,
+      "content_sha256": "34649cb01241e78c972839ac87d83c52936682d3e1d87b3db8851ccfde10362a",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/sanitization.png",
+    "hash": "91bb77eb97275b3dc1b9bdd540d58d98fc811c3a81184002952b5986a1d9bd5e",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "a733e8019288b4e2dc6d530b17597c11b31755d3",
+      "bytes": 1094365,
+      "content_sha256": "91bb77eb97275b3dc1b9bdd540d58d98fc811c3a81184002952b5986a1d9bd5e",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1408,
+        768
+      ]
+    }
+  },
+  {
+    "path": "assets/images/security/security-guide-header.png",
+    "hash": "97837f8790edc57d0a3dc34e58033e3141dc9f09ba465277204e742bed678bec",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "da33283353844b135e9fd15d207d50b86efdb3f9",
+      "bytes": 672382,
+      "content_sha256": "97837f8790edc57d0a3dc34e58033e3141dc9f09ba465277204e742bed678bec",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1192,
+        852
+      ]
+    }
+  },
+  {
+    "path": "assets/images/shortform/00-header.png",
+    "hash": "dff947d2ef877eaded14f967ccbfafa2f971ec8b19a23ca2c23c79a98d551218",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "bbde49bcebc08946ba6180ad067544a71093f21d",
+      "bytes": 1066093,
+      "content_sha256": "dff947d2ef877eaded14f967ccbfafa2f971ec8b19a23ca2c23c79a98d551218",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1952,
+        822
+      ]
+    }
+  },
+  {
+    "path": "assets/images/shortform/01-hackathon-tweet.png",
+    "hash": "eb0a032f22c7b8f0e0dccdf7a326f2c396989b1e30914e11b4400e2b357f4503",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "8cb8fbb0d62bcd991cd6b6d41e521c9209e3948f",
+      "bytes": 1181423,
+      "content_sha256": "eb0a032f22c7b8f0e0dccdf7a326f2c396989b1e30914e11b4400e2b357f4503",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1124,
+        1088
+      ]
+    }
+  },
+  {
+    "path": "assets/images/shortform/02-chaining-commands.jpeg",
+    "hash": "9f0d0c11077945286251a55116bd832dbea48e658467e9f69e419952b8db86ee",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "27ee138178da607b7a0367a9414bf226f11906ff",
+      "bytes": 37754,
+      "content_sha256": "9f0d0c11077945286251a55116bd832dbea48e658467e9f69e419952b8db86ee",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/03-posttooluse-hook.png",
+    "hash": "859199b62795df580233e48b5468b29d309cfc064cfef390c47cae82c9a7efef",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "5de935879f022fb000ac598dc1ca16384ba861d3",
+      "bytes": 31165,
+      "content_sha256": "859199b62795df580233e48b5468b29d309cfc064cfef390c47cae82c9a7efef",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        652,
+        156
+      ]
+    }
+  },
+  {
+    "path": "assets/images/shortform/04-supabase-mcp.jpeg",
+    "hash": "ffde926324afcf1a8e5b359819a052b8cc8eb68520163f2cf3cd9ef031e55f67",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "1b64c3abb49fd0ec5949ed760fac2e52891e6b4b",
+      "bytes": 20381,
+      "content_sha256": "ffde926324afcf1a8e5b359819a052b8cc8eb68520163f2cf3cd9ef031e55f67",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/05-plugins-interface.jpeg",
+    "hash": "3b4c7d5ba35fc88850d3cc123e39eafda27342183c0ab862aebf0059e6940bdc",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "a6e99d210b80191a72463785ab5234442ffafca4",
+      "bytes": 60327,
+      "content_sha256": "3b4c7d5ba35fc88850d3cc123e39eafda27342183c0ab862aebf0059e6940bdc",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/06-marketplaces-mgrep.jpeg",
+    "hash": "72373c93ee0765bd0a234250211e65f583429bcc2f5398411b276a19faae3464",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "08c68373ef2c739b07dea79ccb6257ff3c044f26",
+      "bytes": 58953,
+      "content_sha256": "72373c93ee0765bd0a234250211e65f583429bcc2f5398411b276a19faae3464",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/07-tmux-video.mp4",
+    "hash": "d94a41debdbee5ff90544673fb0bc30af91fd93f7e95e570623d43517b6156ed",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual MP4 signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "637b382191e606efb23604430918699293ee75a9",
+      "bytes": 516057,
+      "content_sha256": "d94a41debdbee5ff90544673fb0bc30af91fd93f7e95e570623d43517b6156ed",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/08-github-pr-review.jpeg",
+    "hash": "3b2fdc3cc7c04c9a04c458cb3e86600f990937cb7e24d8cd7f3220001819ca31",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "a42d1dba4ec4aa4b8e0501db58094fc8837697f6",
+      "bytes": 64777,
+      "content_sha256": "3b2fdc3cc7c04c9a04c458cb3e86600f990937cb7e24d8cd7f3220001819ca31",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/09-zed-editor.jpeg",
+    "hash": "8d6f045acb2fdfc4e4e7d0e13bfa01c0faafde87dcebda046a70d08c54d75184",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "539bd17c0a0e1e0c7ad1764e6b72f3c1b55cd8fc",
+      "bytes": 138974,
+      "content_sha256": "8d6f045acb2fdfc4e4e7d0e13bfa01c0faafde87dcebda046a70d08c54d75184",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/10-vscode-extension.jpeg",
+    "hash": "fc6632cd7d5b465f34c353d42b25142daf737b0e6ec0e742c063b65c2ea2ed8d",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "9e831a866dbd47bbbfe782817b5719128dcf6299",
+      "bytes": 218492,
+      "content_sha256": "fc6632cd7d5b465f34c353d42b25142daf737b0e6ec0e742c063b65c2ea2ed8d",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/shortform/11-statusline.jpeg",
+    "hash": "f86cc59b145c7cb24b56712b80ab2d9b8025475b75fb2ef61939d124e87f7358",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual JPEG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "d1a31565b949edb3544e306c8d7c5a3f557331da",
+      "bytes": 12875,
+      "content_sha256": "f86cc59b145c7cb24b56712b80ab2d9b8025475b75fb2ef61939d124e87f7358",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/images/sponsors/coderabbit.png",
+    "hash": "ac6aef3486e62d7c77bd2de6b73a5a6a9992e8e7fb699f029132fde3d16f12c0",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "15a10cb1b859870e3435cb90f89900a57b12aaa5",
+      "bytes": 11807,
+      "content_sha256": "ac6aef3486e62d7c77bd2de6b73a5a6a9992e8e7fb699f029132fde3d16f12c0",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        240,
+        240
+      ]
+    }
+  },
+  {
+    "path": "assets/images/sponsors/greptile.png",
+    "hash": "ad3e8ede34167a43663fda32740557d6082a094b7261f06c1ffd7a12f328d9a0",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "10c0a5a78e21a6e12ddc1b96d990a1076ecd03f5",
+      "bytes": 9741,
+      "content_sha256": "ad3e8ede34167a43663fda32740557d6082a094b7261f06c1ffd7a12f328d9a0",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        367,
+        420
+      ]
+    }
+  },
+  {
+    "path": "assets/images/sponsors/ito-transparent-light.png",
+    "hash": "fe5a7314db24ec6fc659bb2e4f543dd14e811658e59147502ed9cb22762bdff2",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "796ce019969998c7d35fa158f7772d74e696b406",
+      "bytes": 476033,
+      "content_sha256": "fe5a7314db24ec6fc659bb2e4f543dd14e811658e59147502ed9cb22762bdff2",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1797,
+        1097
+      ]
+    }
+  },
+  {
+    "path": "assets/images/sponsors/ito-transparent.png",
+    "hash": "b2b71d832b1d351191cc85c6a56eaa3d4f96777563f0586f25141829ea3bd88a",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "505ac558cd22db01f6c7b9f117d0d3bc0136da9d",
+      "bytes": 689077,
+      "content_sha256": "b2b71d832b1d351191cc85c6a56eaa3d4f96777563f0586f25141829ea3bd88a",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        1797,
+        1097
+      ]
+    }
+  },
+  {
+    "path": "assets/images/sponsors/moonshot-dark.png",
+    "hash": "aa2fb55932c6611213edb924d90ab526e639086dd81f7820f574a1da1f0ea052",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "5fde6d2360466c363ba53b55d2d0a78002575f79",
+      "bytes": 2778,
+      "content_sha256": "aa2fb55932c6611213edb924d90ab526e639086dd81f7820f574a1da1f0ea052",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        238,
+        96
+      ]
+    }
+  },
+  {
+    "path": "assets/images/sponsors/moonshot.png",
+    "hash": "b298625e96f771f34988633181976e3fe7d7721479218c4c8f1e1372d64d2062",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: brand/sponsor or guide illustration. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "19c30c631caeec20a95994ed8837c1526ecaf5a6",
+      "bytes": 2677,
+      "content_sha256": "b298625e96f771f34988633181976e3fe7d7721479218c4c8f1e1372d64d2062",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        238,
+        96
+      ]
+    }
+  },
+  {
+    "path": "docs/design/assets/plan-canvas-demo.png",
+    "hash": "7ae455e61130b005488fd7f4077e5b80fe243d7859ad1faf2e2b2a670372a27e",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual PNG signature and content identity: plan-canvas visual demo asset. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "39d8fde1f6bf248b2f334bd142ae823cef9767ee",
+      "bytes": 1161797,
+      "content_sha256": "7ae455e61130b005488fd7f4077e5b80fe243d7859ad1faf2e2b2a670372a27e",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        3417,
+        1471
+      ]
+    }
+  },
+  {
+    "path": "docs/releases/2.1.0/assets/ecc-plan-canvas-demo.gif",
+    "hash": "ac7027209e9519295ce3869efe93eaec8284a7f3bad0ccc0728f1cd06ead33e4",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual GIF signature and content identity: plan-canvas visual demo asset. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "0a74e847c8517463c581fee956cc0b53b2d6f19e",
+      "bytes": 715272,
+      "content_sha256": "ac7027209e9519295ce3869efe93eaec8284a7f3bad0ccc0728f1cd06ead33e4",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim.",
+      "dimensions": [
+        960,
+        600
+      ]
+    }
+  },
+  {
+    "path": "docs/releases/2.1.0/assets/ecc-plan-canvas-demo.mp4",
+    "hash": "b975ad03c6d5196bbd0d322ad4ab3ea52a6a4945ba17e70dbc70efce4e51b3ea",
+    "classification": "visual-supporting-asset",
+    "disposition": "excluded",
+    "reason": "Inspected actual MP4 signature and content identity: plan-canvas visual demo asset. Excluded from textual skill/prompt/context mechanism extraction; no claim of visual/OCR review, executable workflow, measured efficacy or original behavioral trace is made. Accompanying textual guides and implementations remain separately reviewed or pending.",
+    "proof": {
+      "blob": "24b187ce6c2b2491cceeb32b48abce6d88c98275",
+      "bytes": 438847,
+      "content_sha256": "b975ad03c6d5196bbd0d322ad4ab3ea52a6a4945ba17e70dbc70efce4e51b3ea",
+      "inspection": "Binary format signature and container metadata; no OCR or visual-semantic claim."
+    }
+  },
+  {
+    "path": "assets/ecc-icon.svg",
+    "hash": "af666d5adfbe6566faa7cdade74bca42cc0bfc611e8aff8c25a9d3df22ac227d",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "0a8b73b131c1e9862b8c7022ca1a63d846864ac2",
+      "hash": "af666d5adfbe6566faa7cdade74bca42cc0bfc611e8aff8c25a9d3df22ac227d",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "viewBox": "0 0 128 128",
+        "role": "img",
+        "aria-labelledby": "title"
+      },
+      "element_types": [
+        "path",
+        "rect",
+        "svg",
+        "title"
+      ],
+      "text_nodes": [
+        "ECC"
+      ]
+    }
+  },
+  {
+    "path": "assets/hero.svg",
+    "hash": "08a0590ab4d53f7dcf00f9f6068f266a01dc2dfe7a9fee3c9179d9b4dee85bed",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "13a4059fe5db4c7b53e376cbff59bed2e7b4e55e",
+      "hash": "08a0590ab4d53f7dcf00f9f6068f266a01dc2dfe7a9fee3c9179d9b4dee85bed",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "width": "2400",
+        "height": "1350",
+        "viewBox": "0 0 2400 1350",
+        "role": "img",
+        "aria-labelledby": "t"
+      },
+      "element_types": [
+        "circle",
+        "defs",
+        "g",
+        "line",
+        "linearGradient",
+        "path",
+        "pattern",
+        "radialGradient",
+        "rect",
+        "stop",
+        "svg",
+        "text",
+        "title",
+        "tspan"
+      ],
+      "text_nodes": [
+        "ECC — the agent harness operating system",
+        "ECC",
+        "/",
+        "affaan-m/ECC",
+        "v2.0.0 · Jun 2026",
+        "V2.0 · THE SYSTEM, NOT THE CONFIGS",
+        "The operating",
+        "system for",
+        "AI",
+        "agent harnesses.",
+        "Skills, instincts, memory, security scanning, and research-",
+        "first development — a complete system,",
+        "not a config pack",
+        "RUNS ACROSS",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode",
+        "Gemini",
+        "Zed",
+        "Copilot",
+        "SKILLS",
+        "261",
+        "agent-harness-constr…",
+        "context-budget",
+        "continuous-agent-loop",
+        "agentic-os",
+        "autonomous-loops",
+        "mcp-server-patterns",
+        "ai-regression-testing",
+        "agent-eval",
+        "content-hash-cache-p…",
+        "bun-runtime",
+        "codebase-onboarding",
+        "nextjs-turbopack",
+        "+ 249 more",
+        "AGENTS",
+        "64",
+        "harness-optimizer",
+        "code-reviewer",
+        "code-architect",
+        "code-simplifier",
+        "gan-planner",
+        "gan-generator",
+        "gan-evaluator",
+        "e2e-runner",
+        "build-error-resolver",
+        "a11y-architect",
+        "database-reviewer",
+        "doc-updater",
+        "+ 52 more",
+        "COMMANDS",
+        "84",
+        "/harness-audit",
+        "/code-review",
+        "/feature-dev",
+        "/checkpoint",
+        "/gan-design",
+        "/evolve",
+        "/hookify",
+        "/santa-loop",
+        "/security-scan",
+        "/skill-create",
+        "/model-route",
+        "/quality-gate",
+        "+ 72 more",
+        "409",
+        "CATALOG",
+        "7",
+        "HARNESSES",
+        "ECC 2.0α",
+        "RUST PLANE",
+        "MIT",
+        "NPM:",
+        "ECC-UNIVERSAL",
+        "· AGENTSHIELD"
+      ]
+    }
+  },
+  {
+    "path": "assets/images/community/discord.svg",
+    "hash": "d376697cb26eeee761d4e6950a884426c7d51143af1db0ca972d173dfc315bb8",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "afd2765d57a2da6f922cf213ed5b2595ae48edfb",
+      "hash": "d376697cb26eeee761d4e6950a884426c7d51143af1db0ca972d173dfc315bb8",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "role": "img",
+        "viewBox": "0 0 24 24"
+      },
+      "element_types": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "text_nodes": [
+        "Discord"
+      ]
+    }
+  },
+  {
+    "path": "assets/images/community/ecc-tools-mark.svg",
+    "hash": "2347b41847a3dbd4399241ca658c435df6db115f0f67eefade5be22d5968e96e",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "e318b6674071c2b703ba27c2c3227d3e959fa52d",
+      "hash": "2347b41847a3dbd4399241ca658c435df6db115f0f67eefade5be22d5968e96e",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "aria-hidden": "true",
+        "viewBox": "0 0 96 96",
+        "fill": "none"
+      },
+      "element_types": [
+        "circle",
+        "defs",
+        "linearGradient",
+        "path",
+        "rect",
+        "stop",
+        "svg"
+      ],
+      "text_nodes": []
+    }
+  },
+  {
+    "path": "assets/images/community/heart.svg",
+    "hash": "40143ebcde7cf0c7b0870f35b9e2b15f95f09d98bd4f0706132b75afef775622",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "d92a607402a9423467eff510660a4cf2fd871568",
+      "hash": "40143ebcde7cf0c7b0870f35b9e2b15f95f09d98bd4f0706132b75afef775622",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "role": "img",
+        "viewBox": "0 0 64 64"
+      },
+      "element_types": [
+        "path",
+        "svg",
+        "title"
+      ],
+      "text_nodes": [
+        "Support ECC"
+      ]
+    }
+  },
+  {
+    "path": "assets/images/sponsors/atlascloud-dark.svg",
+    "hash": "9941aaa0fbcf1d5a1c622ad3382476e5daf99a1efbd07ca3e2efc68834fdd97a",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "56be9cb4b57287222b9da9fff41990b5c95a00c2",
+      "hash": "9941aaa0fbcf1d5a1c622ad3382476e5daf99a1efbd07ca3e2efc68834fdd97a",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "width": "163",
+        "height": "26",
+        "viewBox": "0 0 163 26",
+        "fill": "none"
+      },
+      "element_types": [
+        "path",
+        "svg"
+      ],
+      "text_nodes": []
+    }
+  },
+  {
+    "path": "assets/images/sponsors/atlascloud.svg",
+    "hash": "f935e02b287d4571aca6ae5950829fff8905f909d2a1b00579cbfc5d6e2f6bad",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "a16d2025d9d9128c933c12c047d1688620b5de08",
+      "hash": "f935e02b287d4571aca6ae5950829fff8905f909d2a1b00579cbfc5d6e2f6bad",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "width": "163",
+        "height": "26",
+        "viewBox": "0 0 163 26",
+        "fill": "none"
+      },
+      "element_types": [
+        "path",
+        "svg"
+      ],
+      "text_nodes": []
+    }
+  },
+  {
+    "path": "assets/images/sponsors/moonshot.svg",
+    "hash": "e15425da3274436f2203cfe532e8194965cbc2602c49baf60e320fe3c6f76b08",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "29bceeade815f614243aab40799b01bd428ca595",
+      "hash": "e15425da3274436f2203cfe532e8194965cbc2602c49baf60e320fe3c6f76b08",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "width": "180",
+        "height": "180",
+        "viewBox": "0 0 180 180",
+        "fill": "none"
+      },
+      "element_types": [
+        "path",
+        "rect",
+        "svg"
+      ],
+      "text_nodes": []
+    }
+  },
+  {
+    "path": "assets/images/sponsors/serpapi-logo-dark-mode.svg",
+    "hash": "ffb4bf295244b9578672dab0b0b76653e01feb13e8cf69156bcc7c810fe23804",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "f46a1d5dee4eb1c03e93d595e2f036e799e9f981",
+      "hash": "ffb4bf295244b9578672dab0b0b76653e01feb13e8cf69156bcc7c810fe23804",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "width": "1764",
+        "height": "439",
+        "viewBox": "0 0 1764 439",
+        "fill": "none",
+        "version": "1.1",
+        "id": "svg5"
+      },
+      "element_types": [
+        "defs",
+        "linearGradient",
+        "path",
+        "stop",
+        "svg"
+      ],
+      "text_nodes": []
+    }
+  },
+  {
+    "path": "assets/images/sponsors/serpapi-logo-light-mode.svg",
+    "hash": "d58c9e1220fccb16a3ba061fe32ff70e1a9bb1651e20da07233d666e5c0d1aa2",
+    "classification": "vector-brand-asset",
+    "disposition": "excluded",
+    "reason": "Inspected complete XML structure and text nodes: vector icon/logo/hero rendering with geometry, style, clipping and brand labels, without a script element. Excluded from agent instruction/workflow extraction as presentation data; not a claim of visual-quality or sanitization verification.",
+    "proof": {
+      "blob": "fa40068133c63fabe60280fa1666de74bae31b23",
+      "hash": "d58c9e1220fccb16a3ba061fe32ff70e1a9bb1651e20da07233d666e5c0d1aa2",
+      "root_tag": "{http://www.w3.org/2000/svg}svg",
+      "attributes": {
+        "width": "1764",
+        "height": "439",
+        "viewBox": "0 0 1764 439",
+        "fill": "none",
+        "version": "1.1",
+        "id": "svg5"
+      },
+      "element_types": [
+        "defs",
+        "linearGradient",
+        "path",
+        "stop",
+        "svg"
+      ],
+      "text_nodes": []
+    }
+  },
+  {
+    "path": "assets/star-history-data.tsv",
+    "hash": "bd80f30be28529e6657df0352a0f7cac80ff9b7d5bfff5ba7839ce4888f5e243",
+    "classification": "historical-chart-data",
+    "disposition": "excluded",
+    "reason": "Inspected complete two-column TSV structure: timestamp/star-count observations without a header row. Historical repository chart data, not skill/prompt/context/workflow instructions. No current popularity ranking, measured skill quality or causal efficacy is inferred from the time series.",
+    "proof": {
+      "blob": "dcc0ab5679a3925f5172011a3a9494c8036490cc",
+      "hash": "bd80f30be28529e6657df0352a0f7cac80ff9b7d5bfff5ba7839ce4888f5e243",
+      "rows": 35,
+      "first_row": [
+        "2026-01-18T02:10:37Z",
+        "1"
+      ],
+      "column_counts": [
+        2
+      ]
+    }
+  },
+  {
+    "path": "ecc2/Cargo.lock",
+    "hash": "8d271eac473ddf767004f86762cfe0c94f5727d7342a6179b8663dd3bbcd9236",
+    "classification": "generated-dependency-lock",
+    "disposition": "excluded",
+    "reason": "Inspected generated-lock header, complete parsed structure/entry fields and fixed content identity. Values describe dependency versions, resolutions, integrity, feature/platform metadata or executable entry paths; no agent-facing prompt, skill workflow or evaluation contract is authored here. Excluded as dependency-resolution data; no package security, successful install or current API behavior is inferred. Package scripts and installer/hook contracts are separate sources.",
+    "proof": {
+      "blob": "67258a66700494baf49e36a3e21b085f860c3f12",
+      "hash": "8d271eac473ddf767004f86762cfe0c94f5727d7342a6179b8663dd3bbcd9236",
+      "bytes": 79954,
+      "header": [
+        "# This file is automatically @generated by Cargo.",
+        "# It is not intended for manual editing.",
+        "version = 4",
+        "",
+        "[[package]]"
+      ],
+      "root_keys": [
+        "version",
+        "package"
+      ],
+      "package_count": 331,
+      "package_field_names": [
+        "checksum",
+        "dependencies",
+        "name",
+        "source",
+        "version"
+      ]
+    }
+  },
+  {
+    "path": "package-lock.json",
+    "hash": "c5a1610655ada847c7aa7e3e1eff287146babed59a67462b72a02b93ad8a8fe8",
+    "classification": "generated-dependency-lock",
+    "disposition": "excluded",
+    "reason": "Inspected generated-lock header, complete parsed structure/entry fields and fixed content identity. Values describe dependency versions, resolutions, integrity, feature/platform metadata or executable entry paths; no agent-facing prompt, skill workflow or evaluation contract is authored here. Excluded as dependency-resolution data; no package security, successful install or current API behavior is inferred. Package scripts and installer/hook contracts are separate sources.",
+    "proof": {
+      "blob": "dfed63d2b926b4aa345f4d55e17049f7d87d5e1c",
+      "hash": "c5a1610655ada847c7aa7e3e1eff287146babed59a67462b72a02b93ad8a8fe8",
+      "bytes": 107679,
+      "header": [
+        "{",
+        "  \"name\": \"ecc-universal\",",
+        "  \"version\": \"2.2.3\",",
+        "  \"lockfileVersion\": 3,",
+        "  \"requires\": true,"
+      ],
+      "root_keys": [
+        "name",
+        "version",
+        "lockfileVersion",
+        "requires",
+        "packages"
+      ],
+      "package_count": 218,
+      "package_field_names": [
+        "bin",
+        "cpu",
+        "dependencies",
+        "dev",
+        "devDependencies",
+        "engines",
+        "funding",
+        "hasInstallScript",
+        "integrity",
+        "license",
+        "name",
+        "optional",
+        "optionalDependencies",
+        "os",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "resolved",
+        "version",
+        "workspaces"
+      ]
+    }
+  },
+  {
+    "path": "yarn.lock",
+    "hash": "5aade3b24b671bb3bd0768e0a864c607560d69e6d3b966fd261d1feeca0aa8f9",
+    "classification": "generated-dependency-lock",
+    "disposition": "excluded",
+    "reason": "Inspected generated-lock header, complete parsed structure/entry fields and fixed content identity. Values describe dependency versions, resolutions, integrity, feature/platform metadata or executable entry paths; no agent-facing prompt, skill workflow or evaluation contract is authored here. Excluded as dependency-resolution data; no package security, successful install or current API behavior is inferred. Package scripts and installer/hook contracts are separate sources.",
+    "proof": {
+      "blob": "7b566ee073cb4e42a156248e3fe80a33e4234b4a",
+      "hash": "5aade3b24b671bb3bd0768e0a864c607560d69e6d3b966fd261d1feeca0aa8f9",
+      "bytes": 80053,
+      "header": [
+        "# This file is generated by running \"yarn install\" inside your project.",
+        "# Manual changes might be lost - proceed with caution!",
+        "",
+        "__metadata:",
+        "  version: 8"
+      ],
+      "entry_field_names": [
+        "bin",
+        "cacheKey",
+        "checksum",
+        "conditions",
+        "dependencies",
+        "dependenciesMeta",
+        "languageName",
+        "linkType",
+        "peerDependencies",
+        "peerDependenciesMeta",
+        "resolution",
+        "version"
+      ]
+    }
+  }
+]

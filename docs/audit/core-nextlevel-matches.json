@@ -1,0 +1,1828 @@
+[
+  {
+    "path": ".claude/skills/ui-styling/LICENSE.txt",
+    "hash": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "artifacts-builder/LICENSE.txt",
+      "hash": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "artifacts-builder/LICENSE.txt",
+      "hash": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "classification": "license",
+      "disposition": "analyzed",
+      "reason": "Local license boundary recorded independently of repository popularity and availability. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Complexity trigger separates simple and multi-component artifacts; helper initialization and single-file bundling centralize deterministic work. Optional testing is a source preference, not proof quality checks are unnecessary."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/ArsenalSC-OFL.txt",
+    "hash": "8ddd61b18ba2c0d0dbe4a691cf5f1a0673f473d02fa0546e67ee88c006aeff6e",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+      "hash": "8ddd61b18ba2c0d0dbe4a691cf5f1a0673f473d02fa0546e67ee88c006aeff6e",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+      "hash": "8ddd61b18ba2c0d0dbe4a691cf5f1a0673f473d02fa0546e67ee88c006aeff6e",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "7a87a0c469fedc802e3acef550db9a728f621275984b46c6c51e731d7212520a",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/ArsenalSC-Regular.ttf",
+    "hash": "65e6f89df58f68fd905b3add34a79dd6106aa3b3044df0dad9676fff53d504b9",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/ArsenalSC-Regular.ttf",
+      "hash": "65e6f89df58f68fd905b3add34a79dd6106aa3b3044df0dad9676fff53d504b9",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/ArsenalSC-Regular.ttf",
+      "hash": "49f1106e7051ef193a67de5e9c140eceafbb4f116cf61e3008caf7f971eab4b4",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "65e6f89df58f68fd905b3add34a79dd6106aa3b3044df0dad9676fff53d504b9",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/BigShoulders-Bold.ttf",
+    "hash": "b43bcd198b9fdf717dd42aa61a34dba32e01aceaeae659d689afd0ca52c37ea2",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/BigShoulders-Bold.ttf",
+      "hash": "b43bcd198b9fdf717dd42aa61a34dba32e01aceaeae659d689afd0ca52c37ea2",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/BigShoulders-Bold.ttf",
+      "hash": "c1a5240bb0f86c3308a5b348e2201e212047e41053a598c5dcc8249000bf6404",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "b43bcd198b9fdf717dd42aa61a34dba32e01aceaeae659d689afd0ca52c37ea2",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/BigShoulders-OFL.txt",
+    "hash": "fbc746aabf0eb1847dfd92e2efc4596d79fa897d60b8e64062a22f585508fb3f",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/BigShoulders-OFL.txt",
+      "hash": "fbc746aabf0eb1847dfd92e2efc4596d79fa897d60b8e64062a22f585508fb3f",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/BigShoulders-OFL.txt",
+      "hash": "fbc746aabf0eb1847dfd92e2efc4596d79fa897d60b8e64062a22f585508fb3f",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "9ce6294be745093338c51e62d7efaddbf32b90ac9a7ffde8a12ce92e0413fe25",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/BigShoulders-Regular.ttf",
+    "hash": "18a879fc71978a4447150705caf880a9da3860083c259fd29e6dc03057b6842a",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/BigShoulders-Regular.ttf",
+      "hash": "18a879fc71978a4447150705caf880a9da3860083c259fd29e6dc03057b6842a",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/BigShoulders-Regular.ttf",
+      "hash": "55196ec8288ef3ddb0938aafafd34deae2fd410f0a762983fbb3da8112b59fb4",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "18a879fc71978a4447150705caf880a9da3860083c259fd29e6dc03057b6842a",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Boldonse-OFL.txt",
+    "hash": "45cc82ab4032273c0924025ffcf8f0665a68e1a5955e3f7247e5daf1deeb1326",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Boldonse-OFL.txt",
+      "hash": "45cc82ab4032273c0924025ffcf8f0665a68e1a5955e3f7247e5daf1deeb1326",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Boldonse-OFL.txt",
+      "hash": "45cc82ab4032273c0924025ffcf8f0665a68e1a5955e3f7247e5daf1deeb1326",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "f5fe122e06e26a0277b07d6f6d171a60156aef5fe138281538498cee767b6bd4",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Boldonse-Regular.ttf",
+    "hash": "cc2e540604565c0f90a7d8d46194a2f42fc9c45512cd2e39bf03b50eb68c35a4",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Boldonse-Regular.ttf",
+      "hash": "cc2e540604565c0f90a7d8d46194a2f42fc9c45512cd2e39bf03b50eb68c35a4",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Boldonse-Regular.ttf",
+      "hash": "1c4a0270c3e1b06c7fb375addb82a1fc7c6f8cecd639428404b1dc47e0fa1797",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "cc2e540604565c0f90a7d8d46194a2f42fc9c45512cd2e39bf03b50eb68c35a4",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/BricolageGrotesque-Bold.ttf",
+    "hash": "a737b146fe0d77ffe8a86e3cd16700dd431d3b1e420d4fd80e142cd68a1cb50d",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/BricolageGrotesque-Bold.ttf",
+      "hash": "a737b146fe0d77ffe8a86e3cd16700dd431d3b1e420d4fd80e142cd68a1cb50d",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/BricolageGrotesque-Bold.ttf",
+      "hash": "e12255e483d6535214c6c9904601f601a5975490a9c092e3f5d630c2235ceb07",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a737b146fe0d77ffe8a86e3cd16700dd431d3b1e420d4fd80e142cd68a1cb50d",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/BricolageGrotesque-OFL.txt",
+    "hash": "0e4f4eb8534bc66a76aca13dd19c1f9731b2008866b29ccff182b764649df9b4",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt",
+      "hash": "0e4f4eb8534bc66a76aca13dd19c1f9731b2008866b29ccff182b764649df9b4",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt",
+      "hash": "0e4f4eb8534bc66a76aca13dd19c1f9731b2008866b29ccff182b764649df9b4",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a093964b3ca71526ae129d0d5f39bc9dba905ae5ebeb72d741bb0d4ed2d5d5b0",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/BricolageGrotesque-Regular.ttf",
+    "hash": "972a6d098c9867ae131d0ea99e221e63976b11a19d4b931c2c7ace525674e4f6",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/BricolageGrotesque-Regular.ttf",
+      "hash": "972a6d098c9867ae131d0ea99e221e63976b11a19d4b931c2c7ace525674e4f6",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/BricolageGrotesque-Regular.ttf",
+      "hash": "f78fac7f41711df69b32be2de69444f1e23c0663b58145b094c3c276dbd81e9b",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "972a6d098c9867ae131d0ea99e221e63976b11a19d4b931c2c7ace525674e4f6",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/CrimsonPro-Bold.ttf",
+    "hash": "48f191e38355c8db100eb3ce157c20f9302a3b9a37b44a660f77ecfce3986609",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/CrimsonPro-Bold.ttf",
+      "hash": "48f191e38355c8db100eb3ce157c20f9302a3b9a37b44a660f77ecfce3986609",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/CrimsonPro-Bold.ttf",
+      "hash": "2d4718d4b170dad504c9cd1d345ed6daa2037a61b8394edb8ec98e054c383efd",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "48f191e38355c8db100eb3ce157c20f9302a3b9a37b44a660f77ecfce3986609",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/CrimsonPro-Italic.ttf",
+    "hash": "52318db3526b644e6efa60be0b3ca5a50e40fbe8bd026c261e0aa206f0772267",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/CrimsonPro-Italic.ttf",
+      "hash": "52318db3526b644e6efa60be0b3ca5a50e40fbe8bd026c261e0aa206f0772267",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/CrimsonPro-Italic.ttf",
+      "hash": "3b46fdca62b25eec690251b6cff441772ae31c22e433137777a335644b80f89c",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "52318db3526b644e6efa60be0b3ca5a50e40fbe8bd026c261e0aa206f0772267",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/CrimsonPro-OFL.txt",
+    "hash": "35680d14547b6748b6f362a052a46d22764ce5eccf96e18b74f567bb2ee58114",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/CrimsonPro-OFL.txt",
+      "hash": "35680d14547b6748b6f362a052a46d22764ce5eccf96e18b74f567bb2ee58114",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/CrimsonPro-OFL.txt",
+      "hash": "35680d14547b6748b6f362a052a46d22764ce5eccf96e18b74f567bb2ee58114",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "fd2bc485bc16b876b09f97ab0a218092c0c78f533be0d7750aca9e9df9e3ab7b",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/CrimsonPro-Regular.ttf",
+    "hash": "48fad08cb1917a7b2f2c6fe5135d6c07743a6663cf7631ec4481108aaf081422",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/CrimsonPro-Regular.ttf",
+      "hash": "48fad08cb1917a7b2f2c6fe5135d6c07743a6663cf7631ec4481108aaf081422",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/CrimsonPro-Regular.ttf",
+      "hash": "7de1cd52d6d54615fdb69b52d9a7173a14cf90fda51193e63c21f7a3b025f734",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "48fad08cb1917a7b2f2c6fe5135d6c07743a6663cf7631ec4481108aaf081422",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/DMMono-OFL.txt",
+    "hash": "bfe7842fcb88323e2981e24710c25202677385a8c75fb6a87217b275a0247ae3",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/DMMono-OFL.txt",
+      "hash": "bfe7842fcb88323e2981e24710c25202677385a8c75fb6a87217b275a0247ae3",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/DMMono-OFL.txt",
+      "hash": "bfe7842fcb88323e2981e24710c25202677385a8c75fb6a87217b275a0247ae3",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "0f2c192cfa63e591f680392d1792ff06e52a76ef81f70841ccb0b36c11b61826",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/DMMono-Regular.ttf",
+    "hash": "f98ada968dc3b6b2c08d3f5caaf266977df0bfe0929372b93df5a06cf2ace450",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/DMMono-Regular.ttf",
+      "hash": "f98ada968dc3b6b2c08d3f5caaf266977df0bfe0929372b93df5a06cf2ace450",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/DMMono-Regular.ttf",
+      "hash": "b3fd5c1a1c96a0cebc6cd469311668395cadb23603f4dbd4291b5f14cec02506",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "f98ada968dc3b6b2c08d3f5caaf266977df0bfe0929372b93df5a06cf2ace450",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/EricaOne-OFL.txt",
+    "hash": "e0de629968b52255548d5fafcf30b24ff9edae0eda362380755a75816404d0fa",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/EricaOne-OFL.txt",
+      "hash": "e0de629968b52255548d5fafcf30b24ff9edae0eda362380755a75816404d0fa",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/EricaOne-OFL.txt",
+      "hash": "e0de629968b52255548d5fafcf30b24ff9edae0eda362380755a75816404d0fa",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "cb7900ec9382f84f51ec5c79b6cddd9c17892bc3a2e90bfb74d6d710bdabf5fd",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/EricaOne-Regular.ttf",
+    "hash": "db1d89e80e33a8a01beaaac7a85df582857d24a43f1e181461aa7ff5d701476a",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/EricaOne-Regular.ttf",
+      "hash": "db1d89e80e33a8a01beaaac7a85df582857d24a43f1e181461aa7ff5d701476a",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/EricaOne-Regular.ttf",
+      "hash": "d67605ea59e9517e64e9605347fa9af52ea69ffe02d886b8d0d4c82c6617fce6",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "db1d89e80e33a8a01beaaac7a85df582857d24a43f1e181461aa7ff5d701476a",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/GeistMono-Bold.ttf",
+    "hash": "75c0828d5c1ee44b9ef9f4df577bf41595ec362e2ea3f1e558590c9e92c7949d",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/GeistMono-Bold.ttf",
+      "hash": "75c0828d5c1ee44b9ef9f4df577bf41595ec362e2ea3f1e558590c9e92c7949d",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/GeistMono-Bold.ttf",
+      "hash": "eef613c65959c1da33844519b6618d3538f73f2acee11852c740aeab43943128",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "75c0828d5c1ee44b9ef9f4df577bf41595ec362e2ea3f1e558590c9e92c7949d",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/GeistMono-OFL.txt",
+    "hash": "6a873c900f584109b13ae0aaf81d6e3cf0a68751a216b03f7b6c68d547057bb4",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/GeistMono-OFL.txt",
+      "hash": "6a873c900f584109b13ae0aaf81d6e3cf0a68751a216b03f7b6c68d547057bb4",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/GeistMono-OFL.txt",
+      "hash": "6a873c900f584109b13ae0aaf81d6e3cf0a68751a216b03f7b6c68d547057bb4",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "0acca17d633ecc7180aa12d8a60a95889d87a439cb83884597ff278046743dcb",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/GeistMono-Regular.ttf",
+    "hash": "a55c1b51cda4afeab9e471e7947b85a20f7c8831d7e6b1470c1b7fbdc0f0f15e",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/GeistMono-Regular.ttf",
+      "hash": "a55c1b51cda4afeab9e471e7947b85a20f7c8831d7e6b1470c1b7fbdc0f0f15e",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/GeistMono-Regular.ttf",
+      "hash": "fe89052276341a4b7d129fbd5cbc662d58a262ebcb86211febbc995239b6403d",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a55c1b51cda4afeab9e471e7947b85a20f7c8831d7e6b1470c1b7fbdc0f0f15e",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Gloock-OFL.txt",
+    "hash": "c0a3f3125ac491ef3d1f09f401be4834c646562f647e44f2bcbc49f0466c656d",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Gloock-OFL.txt",
+      "hash": "c0a3f3125ac491ef3d1f09f401be4834c646562f647e44f2bcbc49f0466c656d",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Gloock-OFL.txt",
+      "hash": "c0a3f3125ac491ef3d1f09f401be4834c646562f647e44f2bcbc49f0466c656d",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "e5a3c37f36d4484c7818fad6953828f74168cc1218421c913006c84fd4d14c14",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Gloock-Regular.ttf",
+    "hash": "e86b4ce66dbd3f1f83eee8db99ec96e0da1128c3f53df0e9b3b7472025dfe960",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Gloock-Regular.ttf",
+      "hash": "e86b4ce66dbd3f1f83eee8db99ec96e0da1128c3f53df0e9b3b7472025dfe960",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Gloock-Regular.ttf",
+      "hash": "6ab68728c9d8c594f155efe321e50173ef06efd078c13127afde2ba950f48537",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "e86b4ce66dbd3f1f83eee8db99ec96e0da1128c3f53df0e9b3b7472025dfe960",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexMono-Bold.ttf",
+    "hash": "dbd2a2fb024579438d6400a84e57579bfd2dbe67c306c8fd9fde92a61e4f2eea",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexMono-Bold.ttf",
+      "hash": "dbd2a2fb024579438d6400a84e57579bfd2dbe67c306c8fd9fde92a61e4f2eea",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexMono-Bold.ttf",
+      "hash": "d6d9540b21204b9400c55413e7005a9d238e172ccd78734537f15a0ab57ad42e",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "dbd2a2fb024579438d6400a84e57579bfd2dbe67c306c8fd9fde92a61e4f2eea",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexMono-OFL.txt",
+    "hash": "5294ce778857e1eb02e830b6ab06435537d38f43055327e73d03a2d4d57d5123",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexMono-OFL.txt",
+      "hash": "5294ce778857e1eb02e830b6ab06435537d38f43055327e73d03a2d4d57d5123",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexMono-OFL.txt",
+      "hash": "5294ce778857e1eb02e830b6ab06435537d38f43055327e73d03a2d4d57d5123",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "0fc74640fdcd67c036e1fced58d7e4478897a333cd92b981115a3e324337577f",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexMono-Regular.ttf",
+    "hash": "ab08018ccd276b79fb2c636bb95b9c543598f9d50505fe92506fcb4dae7810cd",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexMono-Regular.ttf",
+      "hash": "ab08018ccd276b79fb2c636bb95b9c543598f9d50505fe92506fcb4dae7810cd",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexMono-Regular.ttf",
+      "hash": "069d68d4678927437b95ace92c0b86b09661aaa688c809d11f5c6756f27434ef",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "ab08018ccd276b79fb2c636bb95b9c543598f9d50505fe92506fcb4dae7810cd",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-Bold.ttf",
+    "hash": "b8d294e9b5c5a0940f167c3ced0f7ef2e3f57082ca3ff096ef30e86e26c1c159",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-Bold.ttf",
+      "hash": "b8d294e9b5c5a0940f167c3ced0f7ef2e3f57082ca3ff096ef30e86e26c1c159",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-Bold.ttf",
+      "hash": "bc1481b06fcb17faa5a7d929bf860ec2fe93da543500c83b0306fb129dee811b",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "b8d294e9b5c5a0940f167c3ced0f7ef2e3f57082ca3ff096ef30e86e26c1c159",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+    "hash": "da64b75f4284f53e7b5c71fa190a35b8bf3494fe19f1804c81c3a53340bca570",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+      "hash": "da64b75f4284f53e7b5c71fa190a35b8bf3494fe19f1804c81c3a53340bca570",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+      "hash": "73311157847ff632aab23a39c3473d09dcf4c2bc0519829e9abb15a615afa886",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "da64b75f4284f53e7b5c71fa190a35b8bf3494fe19f1804c81c3a53340bca570",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-Italic.ttf",
+    "hash": "b11f1048745e715a55c9d837b3f10226ca3d78867b7db7251ddad8f98dcf0f38",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-Italic.ttf",
+      "hash": "b11f1048745e715a55c9d837b3f10226ca3d78867b7db7251ddad8f98dcf0f38",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-Italic.ttf",
+      "hash": "7276577827a16ffaa01fdef931aac1a90c99aa797932abb9bb77c11e8aa2223e",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "b11f1048745e715a55c9d837b3f10226ca3d78867b7db7251ddad8f98dcf0f38",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/IBMPlexSerif-Regular.ttf",
+    "hash": "77cd233a2af8dc6b1022faea3bb3b01f3c75af68bcf530cb6aeb15982ff3dbb7",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-Regular.ttf",
+      "hash": "77cd233a2af8dc6b1022faea3bb3b01f3c75af68bcf530cb6aeb15982ff3dbb7",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/IBMPlexSerif-Regular.ttf",
+      "hash": "6681a9aaccb2aa4aa75e2b71f58889d0eb4c5019e8cb2167f824818bb19cbea8",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "77cd233a2af8dc6b1022faea3bb3b01f3c75af68bcf530cb6aeb15982ff3dbb7",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSans-Bold.ttf",
+    "hash": "444f85bf1c4b0e1ce1ca624f6be54bcd832207714ccaf4ea99ee531341683bdf",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSans-Bold.ttf",
+      "hash": "444f85bf1c4b0e1ce1ca624f6be54bcd832207714ccaf4ea99ee531341683bdf",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSans-Bold.ttf",
+      "hash": "ca513ab91610dd9cc2d7438023555d7cf8855f17b862d307010e775b0677853d",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "444f85bf1c4b0e1ce1ca624f6be54bcd832207714ccaf4ea99ee531341683bdf",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSans-BoldItalic.ttf",
+    "hash": "3762f6cef95d6039489ad5ba5787d4c30f17a1ad01e9ac3c816ed69692722a68",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSans-BoldItalic.ttf",
+      "hash": "3762f6cef95d6039489ad5ba5787d4c30f17a1ad01e9ac3c816ed69692722a68",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSans-BoldItalic.ttf",
+      "hash": "9b57d3611b735e3cb76cbd6eeca30a91e3eb8f6be2fa614336ec5ca38e2c983f",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "3762f6cef95d6039489ad5ba5787d4c30f17a1ad01e9ac3c816ed69692722a68",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSans-Italic.ttf",
+    "hash": "78e85858e371b2cb4e18f617c10f0f937c0e12a0887ffee98555b24ed305b3a7",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSans-Italic.ttf",
+      "hash": "78e85858e371b2cb4e18f617c10f0f937c0e12a0887ffee98555b24ed305b3a7",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSans-Italic.ttf",
+      "hash": "0d5966a0e0c3823c628d87b5728de142234cad3e19b068568c1e0bd9edd4b131",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "78e85858e371b2cb4e18f617c10f0f937c0e12a0887ffee98555b24ed305b3a7",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSans-OFL.txt",
+    "hash": "bf4dc6d13a8cccd4807133c77a1ee9619a16b92cb23322258725ab6731c2f6e5",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSans-OFL.txt",
+      "hash": "bf4dc6d13a8cccd4807133c77a1ee9619a16b92cb23322258725ab6731c2f6e5",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSans-OFL.txt",
+      "hash": "bf4dc6d13a8cccd4807133c77a1ee9619a16b92cb23322258725ab6731c2f6e5",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "6c98bea402c5bfed70c42c0d6fcc6a31ea793979537d1becf4a5dae65a26a34f",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSans-Regular.ttf",
+    "hash": "a22cb26e48fd79bcb01bf2fc92d36785474dce36d9c544ab0a8868c2657c4a87",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSans-Regular.ttf",
+      "hash": "a22cb26e48fd79bcb01bf2fc92d36785474dce36d9c544ab0a8868c2657c4a87",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSans-Regular.ttf",
+      "hash": "1b434340ab6ccd4a456f7f971ae5929de551d109b7333691ab0dece67541958b",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a22cb26e48fd79bcb01bf2fc92d36785474dce36d9c544ab0a8868c2657c4a87",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSerif-Italic.ttf",
+    "hash": "9c86e4d5a47b50224a2463a9eca8535835257c8e85c470c2c6b454b1af6f046e",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSerif-Italic.ttf",
+      "hash": "9c86e4d5a47b50224a2463a9eca8535835257c8e85c470c2c6b454b1af6f046e",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSerif-Italic.ttf",
+      "hash": "bd4d5d260dbfdf0be1ad07a348d77d6e74c305fe5dda320870599df2c1807afa",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "9c86e4d5a47b50224a2463a9eca8535835257c8e85c470c2c6b454b1af6f046e",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/InstrumentSerif-Regular.ttf",
+    "hash": "56ac3be03ac3ba283196b3e77850ab2ffcf56cfb6fd3212c5620109a972f8c99",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/InstrumentSerif-Regular.ttf",
+      "hash": "56ac3be03ac3ba283196b3e77850ab2ffcf56cfb6fd3212c5620109a972f8c99",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/InstrumentSerif-Regular.ttf",
+      "hash": "c01a6caeeeb245d236ec73ac93f8a8a4b3b22dba9487fc89605ba2fd8f8d2235",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "56ac3be03ac3ba283196b3e77850ab2ffcf56cfb6fd3212c5620109a972f8c99",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Italiana-OFL.txt",
+    "hash": "8373b11312ace78c4cec2e8f9f6aa9f2330601107dac7bcf899c6f2dbd40c5a5",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Italiana-OFL.txt",
+      "hash": "8373b11312ace78c4cec2e8f9f6aa9f2330601107dac7bcf899c6f2dbd40c5a5",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Italiana-OFL.txt",
+      "hash": "8373b11312ace78c4cec2e8f9f6aa9f2330601107dac7bcf899c6f2dbd40c5a5",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "3edefd97c07108eb7151fa6ed58fc7ce79bb697fc1fc50a1da25398d54cdf588",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Italiana-Regular.ttf",
+    "hash": "15c4dd6ab8cf4a29ba8826f65edcbe2f6c266c557d34d081f25072dfd5605fd2",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Italiana-Regular.ttf",
+      "hash": "15c4dd6ab8cf4a29ba8826f65edcbe2f6c266c557d34d081f25072dfd5605fd2",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Italiana-Regular.ttf",
+      "hash": "c2a3e0e6ba43a2a412a30c1c06f1367d784b102dcc4a8e3469efa5d66516f901",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "15c4dd6ab8cf4a29ba8826f65edcbe2f6c266c557d34d081f25072dfd5605fd2",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/JetBrainsMono-Bold.ttf",
+    "hash": "a2349098b9e45419e7bf0e2958d6c4937a049dded37387b08be725be4c7615f3",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/JetBrainsMono-Bold.ttf",
+      "hash": "a2349098b9e45419e7bf0e2958d6c4937a049dded37387b08be725be4c7615f3",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/JetBrainsMono-Bold.ttf",
+      "hash": "547af4496d16af0dcbf29a408d3389a2cb4230fb9c5c03c08a83568f318f58f0",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a2349098b9e45419e7bf0e2958d6c4937a049dded37387b08be725be4c7615f3",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/JetBrainsMono-OFL.txt",
+    "hash": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/JetBrainsMono-OFL.txt",
+      "hash": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/JetBrainsMono-OFL.txt",
+      "hash": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "4d9694c4844a13ea377458c3f98c90d2bf83d3c214612dcae2b7808406520708",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/JetBrainsMono-Regular.ttf",
+    "hash": "b6b1ff4ddefe36d7f2a6174e1d001cab374e594519ee9049af028d577b64c5f5",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/JetBrainsMono-Regular.ttf",
+      "hash": "b6b1ff4ddefe36d7f2a6174e1d001cab374e594519ee9049af028d577b64c5f5",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/JetBrainsMono-Regular.ttf",
+      "hash": "1c7c5eaa3476d5db2698636b4e9e9167012c9b234211206aa982a7a20ea689ee",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "b6b1ff4ddefe36d7f2a6174e1d001cab374e594519ee9049af028d577b64c5f5",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Jura-Light.ttf",
+    "hash": "c891a381df056b2c4dfe85841e911bf45da0890fa21a7b2692cbe5ea1f505e1e",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Jura-Light.ttf",
+      "hash": "c891a381df056b2c4dfe85841e911bf45da0890fa21a7b2692cbe5ea1f505e1e",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Jura-Light.ttf",
+      "hash": "c300a11b99ad1fd5b5f211a3ca8639e2ad458a433838629df436ee1f63a01d56",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "c891a381df056b2c4dfe85841e911bf45da0890fa21a7b2692cbe5ea1f505e1e",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Jura-Medium.ttf",
+    "hash": "c72965cb732a92872643819fd1734128238583cc36b116313859137a51d3368a",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Jura-Medium.ttf",
+      "hash": "c72965cb732a92872643819fd1734128238583cc36b116313859137a51d3368a",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Jura-Medium.ttf",
+      "hash": "dd246d7c63e2fb3791554b2f594e0f05b6c09fa6bd04e8596badf18c3e2a47cd",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "c72965cb732a92872643819fd1734128238583cc36b116313859137a51d3368a",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Jura-OFL.txt",
+    "hash": "eaf9bdb675f6d87e5feb88199ab3ea581d3bd2082f426e384fa9c394576d7260",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Jura-OFL.txt",
+      "hash": "eaf9bdb675f6d87e5feb88199ab3ea581d3bd2082f426e384fa9c394576d7260",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Jura-OFL.txt",
+      "hash": "eaf9bdb675f6d87e5feb88199ab3ea581d3bd2082f426e384fa9c394576d7260",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "707f27f18ff5c786e2b41f44873201b34c3a3694ca6ea4aa24cbb52cbd46fbc2",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/LibreBaskerville-OFL.txt",
+    "hash": "55959eef5b0c3b2e3c1c7631b8ff0f9447d75de20f29cfa7db5bcfb026763343",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/LibreBaskerville-OFL.txt",
+      "hash": "55959eef5b0c3b2e3c1c7631b8ff0f9447d75de20f29cfa7db5bcfb026763343",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/LibreBaskerville-OFL.txt",
+      "hash": "55959eef5b0c3b2e3c1c7631b8ff0f9447d75de20f29cfa7db5bcfb026763343",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "3624eddd4c8f8a908130a417ae7cd089c9da69899c4e0ca1a5217d0a6fae16fd",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/LibreBaskerville-Regular.ttf",
+    "hash": "2101302538d9e88adb679031c04623e4578b5745e89566284fd2c508d79acae0",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/LibreBaskerville-Regular.ttf",
+      "hash": "2101302538d9e88adb679031c04623e4578b5745e89566284fd2c508d79acae0",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/LibreBaskerville-Regular.ttf",
+      "hash": "08d69e72e844addd7dee63163bb0910d5f87fef7a23662b2a60b153e6cfa41e8",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "2101302538d9e88adb679031c04623e4578b5745e89566284fd2c508d79acae0",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Lora-Bold.ttf",
+    "hash": "7d74015e950c2fb66519c7295b8155621d22200ae2ca2a4c6b43ce3c490cac87",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Lora-Bold.ttf",
+      "hash": "7d74015e950c2fb66519c7295b8155621d22200ae2ca2a4c6b43ce3c490cac87",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Lora-Bold.ttf",
+      "hash": "db32572de53f5917eb5fe9c7bde4166726415cb692dd2a7a6b6b22f6411fb678",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "7d74015e950c2fb66519c7295b8155621d22200ae2ca2a4c6b43ce3c490cac87",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Lora-BoldItalic.ttf",
+    "hash": "152f87e71f5ddb60d5c57ecd9132807c947e65c42977193c9164e7c5a6690081",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Lora-BoldItalic.ttf",
+      "hash": "152f87e71f5ddb60d5c57ecd9132807c947e65c42977193c9164e7c5a6690081",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Lora-BoldItalic.ttf",
+      "hash": "69c4909589527ca5cab6415d999bce83586ebbf27833c18d0a4d47f9e487f053",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "152f87e71f5ddb60d5c57ecd9132807c947e65c42977193c9164e7c5a6690081",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Lora-Italic.ttf",
+    "hash": "be627e595184e8afe521f08da0607eee613f1997d423bc8dadc5798995581377",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Lora-Italic.ttf",
+      "hash": "be627e595184e8afe521f08da0607eee613f1997d423bc8dadc5798995581377",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Lora-Italic.ttf",
+      "hash": "3d6ea752e353a5464f2d2c654cc4e112bf83854ac49d8e5d6852c0a4945eea27",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "be627e595184e8afe521f08da0607eee613f1997d423bc8dadc5798995581377",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Lora-OFL.txt",
+    "hash": "62e37a82d3f1ef2a70712885fa8b3144b65fd144d8e748d6196b690a354d792c",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Lora-OFL.txt",
+      "hash": "62e37a82d3f1ef2a70712885fa8b3144b65fd144d8e748d6196b690a354d792c",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Lora-OFL.txt",
+      "hash": "62e37a82d3f1ef2a70712885fa8b3144b65fd144d8e748d6196b690a354d792c",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "41cf75bf229a1435b7df209ac7419622516eff7e8cab79260fb0fb9b1cc8ced2",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Lora-Regular.ttf",
+    "hash": "7ed00e7c9cdf16ab7e2fd2361fe45d4f0b61263cd60aae398b27b7ee08108827",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Lora-Regular.ttf",
+      "hash": "7ed00e7c9cdf16ab7e2fd2361fe45d4f0b61263cd60aae398b27b7ee08108827",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Lora-Regular.ttf",
+      "hash": "f74ebb36425c0e371c0e640a0809cd88d78800e66afea4cd8ce25c05ecb105f2",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "7ed00e7c9cdf16ab7e2fd2361fe45d4f0b61263cd60aae398b27b7ee08108827",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/NationalPark-Bold.ttf",
+    "hash": "69ac4c301c4a7233c6e602d12a92c54d7967b575f4449951c45ce773f7acff53",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/NationalPark-Bold.ttf",
+      "hash": "69ac4c301c4a7233c6e602d12a92c54d7967b575f4449951c45ce773f7acff53",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/NationalPark-Bold.ttf",
+      "hash": "fc5f0d5b43775f74160bcca076f6e97fc0b21a5d67e45a9204f283a0b7694d93",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "69ac4c301c4a7233c6e602d12a92c54d7967b575f4449951c45ce773f7acff53",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/NationalPark-OFL.txt",
+    "hash": "81c6c71d83b5b45d7344f96df12bb4a2477a5b092a9144757ee1d0f50f855175",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/NationalPark-OFL.txt",
+      "hash": "81c6c71d83b5b45d7344f96df12bb4a2477a5b092a9144757ee1d0f50f855175",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/NationalPark-OFL.txt",
+      "hash": "81c6c71d83b5b45d7344f96df12bb4a2477a5b092a9144757ee1d0f50f855175",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "29618a33c9871519e77e75f7db9df6ba894b9f2208d97975ba419d3f6e46d9f7",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/NationalPark-Regular.ttf",
+    "hash": "a477338b7e18308d476650dfe31235ef86a883572665e56ffb5fb80f82009b58",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/NationalPark-Regular.ttf",
+      "hash": "a477338b7e18308d476650dfe31235ef86a883572665e56ffb5fb80f82009b58",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/NationalPark-Regular.ttf",
+      "hash": "a03c60955ada1e6e69d53159275f951cec5ed9b61c05b2c80c591d8d85b9b050",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a477338b7e18308d476650dfe31235ef86a883572665e56ffb5fb80f82009b58",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/NothingYouCouldDo-OFL.txt",
+    "hash": "7c2a6970584ddad04919816163746f83b378078015899b18468b40f05e9ce128",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/NothingYouCouldDo-OFL.txt",
+      "hash": "7c2a6970584ddad04919816163746f83b378078015899b18468b40f05e9ce128",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/NothingYouCouldDo-OFL.txt",
+      "hash": "7c2a6970584ddad04919816163746f83b378078015899b18468b40f05e9ce128",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "179d94a7a42ce98cc0ef2bfad604b77e9b0a9cc03e6a9ae8844844e3028d04b2",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/NothingYouCouldDo-Regular.ttf",
+    "hash": "d866f985896d3280f4fce72db7e17302c24a0c1fdb0699b6b5ed3af14f944d57",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/NothingYouCouldDo-Regular.ttf",
+      "hash": "d866f985896d3280f4fce72db7e17302c24a0c1fdb0699b6b5ed3af14f944d57",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/NothingYouCouldDo-Regular.ttf",
+      "hash": "8b5ab5e25bc5e87d3df06545066c3d01c2f913cffd6f3e3bc6cf55e6bd7fcbac",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "d866f985896d3280f4fce72db7e17302c24a0c1fdb0699b6b5ed3af14f944d57",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Outfit-Bold.ttf",
+    "hash": "6654b93d21301ec61887d3cedd6c11d9df1b1dfb63f9cf45ac7995f6e2235ab1",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Outfit-Bold.ttf",
+      "hash": "6654b93d21301ec61887d3cedd6c11d9df1b1dfb63f9cf45ac7995f6e2235ab1",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Outfit-Bold.ttf",
+      "hash": "4732b3133a7b2e21ba32c80507abb25a8c1f9383c8e8a34e9e5178d22c4620d8",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "6654b93d21301ec61887d3cedd6c11d9df1b1dfb63f9cf45ac7995f6e2235ab1",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Outfit-OFL.txt",
+    "hash": "1945b62cd76da9a3051a1660dde72afaa64ffc2666d30e7a78356d651653ba2f",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Outfit-OFL.txt",
+      "hash": "1945b62cd76da9a3051a1660dde72afaa64ffc2666d30e7a78356d651653ba2f",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Outfit-OFL.txt",
+      "hash": "1945b62cd76da9a3051a1660dde72afaa64ffc2666d30e7a78356d651653ba2f",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "8fc6af31312082959cc8297b30e04d94ff457faecc9fb0aeeb8906bf448f20e6",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Outfit-Regular.ttf",
+    "hash": "f24945365147c9e783e91d8649959b59be6b00c9ee4ecd2f6b33afbb2dd871fe",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Outfit-Regular.ttf",
+      "hash": "f24945365147c9e783e91d8649959b59be6b00c9ee4ecd2f6b33afbb2dd871fe",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Outfit-Regular.ttf",
+      "hash": "185cc50b55940120bf60365ca7014fb4fbf8a7708c61ec3fd1c67ac8b4705c00",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "f24945365147c9e783e91d8649959b59be6b00c9ee4ecd2f6b33afbb2dd871fe",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/PixelifySans-Medium.ttf",
+    "hash": "38397504f71c122b03d234ea6f55118e3d5bdbddffd82bedddbd7755d3b3be82",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/PixelifySans-Medium.ttf",
+      "hash": "38397504f71c122b03d234ea6f55118e3d5bdbddffd82bedddbd7755d3b3be82",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/PixelifySans-Medium.ttf",
+      "hash": "6a13b080eded887c547eb8fa3920c9d6df5010369b33a84da631c0c4df81fd73",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "38397504f71c122b03d234ea6f55118e3d5bdbddffd82bedddbd7755d3b3be82",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/PixelifySans-OFL.txt",
+    "hash": "7f54d1d9f1ae1ba9f2722f978145f90324fea34ca3c2304b3a29cfa96ac6037e",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/PixelifySans-OFL.txt",
+      "hash": "7f54d1d9f1ae1ba9f2722f978145f90324fea34ca3c2304b3a29cfa96ac6037e",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/PixelifySans-OFL.txt",
+      "hash": "7f54d1d9f1ae1ba9f2722f978145f90324fea34ca3c2304b3a29cfa96ac6037e",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "34b5d28aebcb26adae3e1fb74842b5c6a3915fb721036ea2b3444f18954331dd",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/PoiretOne-OFL.txt",
+    "hash": "2eaf541f7eb8b512e4c757a5212060abf5b6edfef230e9d7640bf736b315c33a",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/PoiretOne-OFL.txt",
+      "hash": "2eaf541f7eb8b512e4c757a5212060abf5b6edfef230e9d7640bf736b315c33a",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/PoiretOne-OFL.txt",
+      "hash": "2eaf541f7eb8b512e4c757a5212060abf5b6edfef230e9d7640bf736b315c33a",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "26f2bc9434e40e75d2378fd9a8125c16f5ee1d0e7bbdf14daabd7109f7d87a6d",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/PoiretOne-Regular.ttf",
+    "hash": "9cf265b139648b36b6c0afdfeb0bf27f7e66db9a16094bc40f644d8da05bc318",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/PoiretOne-Regular.ttf",
+      "hash": "9cf265b139648b36b6c0afdfeb0bf27f7e66db9a16094bc40f644d8da05bc318",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/PoiretOne-Regular.ttf",
+      "hash": "1dbc4b72f367639acb4a04e97cc81a7700b9cf55ad80d8a1e89942fd5fa3ea88",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "9cf265b139648b36b6c0afdfeb0bf27f7e66db9a16094bc40f644d8da05bc318",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/RedHatMono-Bold.ttf",
+    "hash": "7ef48353f4be5ddb90f000f6fad48f2b62b3e8c27d9818d8d45ff46c201065e0",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/RedHatMono-Bold.ttf",
+      "hash": "7ef48353f4be5ddb90f000f6fad48f2b62b3e8c27d9818d8d45ff46c201065e0",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/RedHatMono-Bold.ttf",
+      "hash": "d445b3b97ce81cdedd4a04f68474220fe957af797ab2739814259d6ad6bd03bc",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "7ef48353f4be5ddb90f000f6fad48f2b62b3e8c27d9818d8d45ff46c201065e0",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/RedHatMono-OFL.txt",
+    "hash": "435fbfb7e66988b2a06686a4cb966faec733f35d8fe100a1601573c27f3e0bb8",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/RedHatMono-OFL.txt",
+      "hash": "435fbfb7e66988b2a06686a4cb966faec733f35d8fe100a1601573c27f3e0bb8",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/RedHatMono-OFL.txt",
+      "hash": "435fbfb7e66988b2a06686a4cb966faec733f35d8fe100a1601573c27f3e0bb8",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "3f7ee3287416a0a1b2f90f4230306098268efa63504fa12d6436acd994a69b68",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/RedHatMono-Regular.ttf",
+    "hash": "452fe826871b37539f5212b20c87cf30f82f58dd2741f1c96edd1dcbdc0db6b4",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/RedHatMono-Regular.ttf",
+      "hash": "452fe826871b37539f5212b20c87cf30f82f58dd2741f1c96edd1dcbdc0db6b4",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/RedHatMono-Regular.ttf",
+      "hash": "20ada53a462f4b275befeba28d33d3ad61dfa0c3c74d329a4907dd13a6d4b34c",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "452fe826871b37539f5212b20c87cf30f82f58dd2741f1c96edd1dcbdc0db6b4",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Silkscreen-OFL.txt",
+    "hash": "6b849745119bbe85ec01fd080c9cd50234da9f52ac6e48b55d1a424a0c4d7ca9",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Silkscreen-OFL.txt",
+      "hash": "6b849745119bbe85ec01fd080c9cd50234da9f52ac6e48b55d1a424a0c4d7ca9",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Silkscreen-OFL.txt",
+      "hash": "6b849745119bbe85ec01fd080c9cd50234da9f52ac6e48b55d1a424a0c4d7ca9",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "b841352f14bfc3e79b872ede3c05aa49ba816218a53cb2a07c6624ccf38a2ea1",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Silkscreen-Regular.ttf",
+    "hash": "49567408600809e25147e9225ac4f37f410e2df45a750696c45027531fb65f1b",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Silkscreen-Regular.ttf",
+      "hash": "49567408600809e25147e9225ac4f37f410e2df45a750696c45027531fb65f1b",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Silkscreen-Regular.ttf",
+      "hash": "33af376bb308a0bd084df4919684ea9e927e75df142cc23ccbf35211c01e9f21",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "49567408600809e25147e9225ac4f37f410e2df45a750696c45027531fb65f1b",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/SmoochSans-Medium.ttf",
+    "hash": "dd76e6e77cce82f827a8654cd906e9ce58f3aaf78adda63c4a7f655b8ecb41f0",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/SmoochSans-Medium.ttf",
+      "hash": "dd76e6e77cce82f827a8654cd906e9ce58f3aaf78adda63c4a7f655b8ecb41f0",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/SmoochSans-Medium.ttf",
+      "hash": "a0c4029c2b8391c28fbdaf39bd0abbe1475bb4bdb3a23f2a3f0a90c78ff1ae32",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "dd76e6e77cce82f827a8654cd906e9ce58f3aaf78adda63c4a7f655b8ecb41f0",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/SmoochSans-OFL.txt",
+    "hash": "74c9c4eb88e891483e1b7bc54780b452cbf4f4df66d4e71881d7569aa2130749",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/SmoochSans-OFL.txt",
+      "hash": "74c9c4eb88e891483e1b7bc54780b452cbf4f4df66d4e71881d7569aa2130749",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/SmoochSans-OFL.txt",
+      "hash": "74c9c4eb88e891483e1b7bc54780b452cbf4f4df66d4e71881d7569aa2130749",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "ed57f8cd1429e35d68ad4b3edb44b142e2245467a2f537bf05044ee015447438",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Tektur-Medium.ttf",
+    "hash": "52bbe8c9b057b3d2da4eeace31a524b1ea26a1375ae34319cf6900ccc57a4c82",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Tektur-Medium.ttf",
+      "hash": "52bbe8c9b057b3d2da4eeace31a524b1ea26a1375ae34319cf6900ccc57a4c82",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Tektur-Medium.ttf",
+      "hash": "3edc4febae38a55385a3762b6fdfa166a3bcc1fafeaaaac6fced1f815fecf540",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "52bbe8c9b057b3d2da4eeace31a524b1ea26a1375ae34319cf6900ccc57a4c82",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Tektur-OFL.txt",
+    "hash": "3f1466cb5438f31782eeb6e895f3a655bc4d090e24263e331f555357d1cb734e",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Tektur-OFL.txt",
+      "hash": "3f1466cb5438f31782eeb6e895f3a655bc4d090e24263e331f555357d1cb734e",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Tektur-OFL.txt",
+      "hash": "3f1466cb5438f31782eeb6e895f3a655bc4d090e24263e331f555357d1cb734e",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "360ef927fe156e4c7d8d7b1900375594f7db95fc3e04c1f0ce8cbbc55bc76eb8",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/Tektur-Regular.ttf",
+    "hash": "162e1b36c4718c5b051b36c971ad7e50d341944f35618f480422ebbe72988f98",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/Tektur-Regular.ttf",
+      "hash": "162e1b36c4718c5b051b36c971ad7e50d341944f35618f480422ebbe72988f98",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/Tektur-Regular.ttf",
+      "hash": "517df63adfe836b3e0d00857e0d9557b9a6735f021e7ac51fd2372562f9ce6a5",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "162e1b36c4718c5b051b36c971ad7e50d341944f35618f480422ebbe72988f98",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/WorkSans-Bold.ttf",
+    "hash": "240d125fc9f8561363dc1ea3f513501253bd70942f41468f48f0b0cafb0c82e2",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/WorkSans-Bold.ttf",
+      "hash": "240d125fc9f8561363dc1ea3f513501253bd70942f41468f48f0b0cafb0c82e2",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/WorkSans-Bold.ttf",
+      "hash": "32f15f939e7e5edd77c0f8a256bdfe1076fd802884d7f49fb81a81bdf1302c3e",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "240d125fc9f8561363dc1ea3f513501253bd70942f41468f48f0b0cafb0c82e2",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/WorkSans-BoldItalic.ttf",
+    "hash": "a5b2cad813df0aaa7d16621f2e93b5117c25e9bc788bc9a3ad218e9d6348ce34",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/WorkSans-BoldItalic.ttf",
+      "hash": "a5b2cad813df0aaa7d16621f2e93b5117c25e9bc788bc9a3ad218e9d6348ce34",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/WorkSans-BoldItalic.ttf",
+      "hash": "1e409f09d11434eeeb79a68a8239d77eb083c0c6dce0ce6d83537556b4ea84aa",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "a5b2cad813df0aaa7d16621f2e93b5117c25e9bc788bc9a3ad218e9d6348ce34",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/WorkSans-Italic.ttf",
+    "hash": "6b7f7002e0b0c8b261fe878658ef5551e3e59d9f6b609b04efb90dde1e2c1ada",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/WorkSans-Italic.ttf",
+      "hash": "6b7f7002e0b0c8b261fe878658ef5551e3e59d9f6b609b04efb90dde1e2c1ada",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/WorkSans-Italic.ttf",
+      "hash": "a4dc3037aa62ff55e9e53fdbb24cfc8e7fd235038c9c1e831e3dc28568f33a44",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "6b7f7002e0b0c8b261fe878658ef5551e3e59d9f6b609b04efb90dde1e2c1ada",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/WorkSans-OFL.txt",
+    "hash": "ace8c22a3326318b54e67c3691857929634205533f454a70ef5a3473ddb2e2ba",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/WorkSans-OFL.txt",
+      "hash": "ace8c22a3326318b54e67c3691857929634205533f454a70ef5a3473ddb2e2ba",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/WorkSans-OFL.txt",
+      "hash": "ace8c22a3326318b54e67c3691857929634205533f454a70ef5a3473ddb2e2ba",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "4f8cbaf2a5494148a8064db9b5eb7c23a0f9098683244803b11c0eec857b81a9",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/WorkSans-Regular.ttf",
+    "hash": "e67985a843df0d3cdee51a3d0f329eb1774a344ad9ff0c9ab923751f1577e2a4",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/WorkSans-Regular.ttf",
+      "hash": "e67985a843df0d3cdee51a3d0f329eb1774a344ad9ff0c9ab923751f1577e2a4",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/WorkSans-Regular.ttf",
+      "hash": "eea5beda84b9484adcf8510becb24713241906f597d803de8976d929b1ee4de4",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "e67985a843df0d3cdee51a3d0f329eb1774a344ad9ff0c9ab923751f1577e2a4",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/YoungSerif-OFL.txt",
+    "hash": "cdcb8039606b40a027a6d24586ec62d5fe29c701343d82a048c829cb28a3dd28",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/YoungSerif-OFL.txt",
+      "hash": "cdcb8039606b40a027a6d24586ec62d5fe29c701343d82a048c829cb28a3dd28",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/YoungSerif-OFL.txt",
+      "hash": "cdcb8039606b40a027a6d24586ec62d5fe29c701343d82a048c829cb28a3dd28",
+      "classification": "asset-license",
+      "disposition": "excluded",
+      "reason": "Font-specific attribution/OFL; no fonts are reused in this harvest. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "0f15fb928a39deedb71e9198dbeece4403f827561b0cdbcff450aacbcf772212",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": ".claude/skills/ui-styling/canvas-fonts/YoungSerif-Regular.ttf",
+    "hash": "f8dc08f77abad753a00670af70756a8ace938e5c3f0b770f4f4c2071c4bd8fc6",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "canvas-design/canvas-fonts/YoungSerif-Regular.ttf",
+      "hash": "f8dc08f77abad753a00670af70756a8ace938e5c3f0b770f4f4c2071c4bd8fc6",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "canvas-design/canvas-fonts/YoungSerif-Regular.ttf",
+      "hash": "5dfa8e229e1baaf9a486e65deaa51c4770a1052a442f66b74b8c0daf93006f8e",
+      "classification": "binary-asset",
+      "disposition": "excluded",
+      "reason": "Bundled font, showcase or component archive; asset data has no prompt procedure and is not copied. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "f8dc08f77abad753a00670af70756a8ace938e5c3f0b770f4f4c2071c4bd8fc6",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Philosophy precedes canvas; minimal text, bounded layout and refinement are concrete checks. Repeated craftsmanship rhetoric and invented user complaint are not extracted as guarantees."
+    }
+  },
+  {
+    "path": "cli/assets/skills/ui-styling/LICENSE.txt",
+    "hash": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+    "canonical": {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+      "path": "artifacts-builder/LICENSE.txt",
+      "hash": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "proof": "Git-blob SHA-256 equality at both frozen trees"
+    },
+    "review": {
+      "path": "artifacts-builder/LICENSE.txt",
+      "hash": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "classification": "license",
+      "disposition": "analyzed",
+      "reason": "Local license boundary recorded independently of repository popularity and availability. No independent new mechanism beyond the owning skill conclusion.",
+      "candidate_keys": [],
+      "raw_hash": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e",
+      "hash_kind": "sha256-lf-normalized-content",
+      "semantic_conclusion": "Complexity trigger separates simple and multi-component artifacts; helper initialization and single-file bundling centralize deterministic work. Optional testing is a source preference, not proof quality checks are unnecessary."
+    }
+  }
+]

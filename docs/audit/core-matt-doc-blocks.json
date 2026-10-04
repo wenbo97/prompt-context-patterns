@@ -1,0 +1,72 @@
+[
+  {
+    "path": "docs/engineering/implement.md",
+    "start": 89,
+    "end": 91,
+    "duplicate_block_of": {
+      "path": "docs/engineering/grill-with-docs.md",
+      "start": 78,
+      "end": 80
+    }
+  },
+  {
+    "path": "docs/engineering/pr.md",
+    "start": 79,
+    "end": 79,
+    "duplicate_block_of": {
+      "path": "docs/engineering/code-review.md",
+      "start": 96,
+      "end": 96
+    }
+  },
+  {
+    "path": "docs/engineering/retro.md",
+    "start": 72,
+    "end": 74,
+    "duplicate_block_of": {
+      "path": "docs/engineering/grill-with-docs.md",
+      "start": 78,
+      "end": 80
+    }
+  },
+  {
+    "path": "docs/engineering/retro.md",
+    "start": 81,
+    "end": 81,
+    "duplicate_block_of": {
+      "path": "docs/engineering/code-review.md",
+      "start": 96,
+      "end": 96
+    }
+  },
+  {
+    "path": "docs/engineering/tdd.md",
+    "start": 90,
+    "end": 92,
+    "duplicate_block_of": {
+      "path": "docs/engineering/grill-with-docs.md",
+      "start": 78,
+      "end": 80
+    }
+  },
+  {
+    "path": "docs/engineering/to-spec.md",
+    "start": 77,
+    "end": 79,
+    "duplicate_block_of": {
+      "path": "docs/engineering/grill-with-docs.md",
+      "start": 78,
+      "end": 80
+    }
+  },
+  {
+    "path": "docs/engineering/to-tickets.md",
+    "start": 95,
+    "end": 97,
+    "duplicate_block_of": {
+      "path": "docs/engineering/grill-with-docs.md",
+      "start": 78,
+      "end": 80
+    }
+  }
+]

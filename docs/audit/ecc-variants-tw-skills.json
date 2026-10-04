@@ -1,0 +1,81 @@
+[
+  {
+    "path": "docs/zh-TW/skills/backend-patterns/SKILL.md",
+    "reason": "Read complete587line method prose/purpose/section structure: domain backend API/repository/service/cache/retry/auth/queue/log recipes with activation section and origin metadata missing versus canonical. Literal skill name/description preserved, older local limiter remains as domain example, not fleet enforcement. Known bounded/specific-example mechanism only; implementation correctness/performance scoped out, no code run.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/clickhouse-io/SKILL.md",
+    "reason": "Full434line prose/purpose/structure reviewed: OLAP MergeTree/schema/query/aggregation/ETL/CDC and monitoring reference, no independent prompt/context method beyond task-domain routing. Explicit activation/origin absent from newer canonical; SQL/client implementation and speed claims scoped out by actual use, no queries or new card.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/coding-standards/SKILL.md",
+    "reason": "Read full520line method-bearing prose and literal examples/context tree. KISS/YAGNI/task-needed complexity and concrete code contrasts already captured; explicit canonical activation/origin missing. Domain variable/hooks/API/lint implementation excluded; universal50/800/immutable standards source preferences, no measured outcome.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/frontend-patterns/SKILL.md",
+    "reason": "Read all645line method prose/section purpose: domain React composition/custom-hooks/state/forms/motion/error-boundary/accessibility reference. Newer canonical activation/origin omitted, exact loader name retained. No independent agent mechanism among body clauses; UI/library implementation scoped out without comprehensive audit or claim performance proof.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/golang-patterns/SKILL.md",
+    "reason": "Full674line method prose plus shell/YAML/context references read: domain Go values/errors/interfaces/concurrency/options/tool conventions; retains task activation but origin absent. No independent agent control method, implementation/API recommendations scoped out; actual CLI availability/efficacy not inferred.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/golang-testing/SKILL.md",
+    "reason": "Full710line procedural prose/actual commands/criteria read plus essential Golden oracle287–328: known expected file→exact bytes compare, explicit update mode replaces oracle before check. Causal RED/behavior/public-interface/independent cleanup benchmark already captured; blind update is not acceptance proof. Generated exclusion snippet absent versus canonical; branch targets/source policy not empirical effectiveness, remaining GoAPI details scoped.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/postgres-patterns/SKILL.md",
+    "reason": "Read full146line activation/query-type-index/anti-pattern/config-reference purpose. Domain PostgreSQL RLS/UPSERT/cursor/queue/tuning catalog, no independent prompt mechanism beyond actual database-reviewer pointer. Malformed Supabase link/English description/origin omission recorded, not invention proof; SQL/runtime/performance detail scoped out.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/project-guidelines-example/SKILL.md",
+    "reason": "Full352line method/context/tree/templates and essential LLM schema/tool-output154–187/transport/UI test242–290 read. Known project-scoped source context, typed output through named provide_analysis and validation, explicit test/deployment gates; source modelclaude-sonnet-5 and production label not verified runtime. No root skill counterpart, current template moved to docs/examples; stale .md skill pointers349–351. Domain React/FastAPI/deployment recipes scoped out, no skill/model execution.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/security-review/SKILL.md",
+    "reason": "Full494line checklist/method/source boundaries read plus actual SQL contrast110–138. Same explicit task-trigger and constraint→check contract, but invocation substitution warning/driver-specific current prose omitted while literal$1 preserved. Origin absent; broad guarantees and checklist/CSRF/header/library correctness scoped out, no scan/auth action. Existing invocation-literal-boundary comparison only.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped",
+    "candidate_keys": [
+      "ecc-variants-invocation-literal-boundary"
+    ]
+  },
+  {
+    "path": "docs/zh-TW/skills/security-review/cloud-infrastructure-security.md",
+    "reason": "Full361line method-purpose prose plus YAML/JSON/shell policies read: domain IAM/network/rotation/CI/log/WAF/backup checklist, no new agent context/control method. Uses trufflehog@main and lifecycle install:npmci unlike current reviewed deps:install/pinned source; compliance90day/assertions not proof. Domain cloud runtime/security implementation scoped out and no cloud calls.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/zh-TW/skills/tdd-workflow/SKILL.md",
+    "reason": "Full409line causal-red/green/refactor/behavior-vs-implementation/isolated-fixture method text, CLI/context/mock slots read. Same known TDD acceptance; canonical concrete Bun example missing, JSON uses coverageThresholds plural unlike actual canonical singular interface. Fixed80/50ms/100% source policies not observed quality; routine domain test implementation scoped out, no tests run.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped",
+    "candidate_keys": []
+  }
+]

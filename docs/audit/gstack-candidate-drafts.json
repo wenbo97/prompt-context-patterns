@@ -1,0 +1,930 @@
+[
+  {
+    "key": "gstack-phase-local-review-coverage",
+    "name_en": "Phase-local review coverage",
+    "name_zh": "按阶段记录审查覆盖",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Bind each review result to its phase and current input instead of carrying earlier success forward.",
+        "scenario": "A plan changes after strategy review, before engineering review.",
+        "mechanism": "Capture the input revision for each phase; record each reviewer as completed, unavailable, disabled or skipped. Advance only after the applicable phase result is consumed.",
+        "bad": "Review this amended plan. Strategy passed yesterday, so mark all review phases complete.",
+        "good": "Review plan revision R2. Record strategy, design and engineering separately with input revision, reviewer, findings and coverage status. Yesterday's strategy result covers R1 only. If engineering did not run, report unavailable rather than clean.",
+        "why": "The second prompt binds conclusions to the actual work reviewed and exposes missing review voices.",
+        "expected": "The report identifies R2 engineering as complete only with its own result; the R1 strategy receipt stays historical.",
+        "boundaries": "A revision receipt proves input identity, not a correct review. Equivalent unchanged inputs may reuse evidence when explicitly verified."
+      },
+      "zh": {
+        "description": "把每次审查绑定到具体阶段和当前输入，避免沿用早先的成功状态。",
+        "scenario": "策略审查之后，计划又发生修改，尚需工程审查。",
+        "mechanism": "为每个阶段记录输入版本，并分别标明审查者已完成、不可用、关闭或跳过；消费当前阶段的结果后才推进。",
+        "bad": "审核这份修改后的计划。昨天策略审查通过了，把所有阶段都标为完成。",
+        "good": "审核计划版本 R2。分别记录策略、设计和工程阶段的输入版本、审查者、发现及覆盖状态。昨天的策略结果只覆盖 R1。工程审查未运行时，写不可用，不能写无问题。",
+        "why": "后者将结论绑定到实际审核的工作，并展示缺失的审查覆盖。",
+        "expected": "只有取得 R2 自己的工程审查结果，才把该阶段标为完成；R1 回执保留为历史。",
+        "boundaries": "版本回执只能证明输入身份，不能证明审查正确。明确核实输入未变时，可以复用等价证据。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "autoplan/SKILL.md",
+        "start_line": 619,
+        "end_line": 665,
+        "section": "Sequential Execution — MANDATORY",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-accepted-obligation-amendment",
+    "name_en": "Accepted-obligation amendment ledger",
+    "name_zh": "保留已接受义务的修订记录",
+    "category": "context",
+    "tags": [
+      "context",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Carry accepted requirements into later revisions while preserving the amendment history.",
+        "scenario": "Design review adds an accessibility obligation to a plan that engineering will revise.",
+        "mechanism": "Separate the current implementation plan from immutable review history. Record accepted obligations with their source revision; a new phase adds a new checkpoint instead of replaying old replacements.",
+        "bad": "Rewrite the plan for engineering. Keep only the latest reviewer's suggestions.",
+        "good": "Revise the plan for engineering. Retain the accepted keyboard-access requirement from design review R1. Record new amendments under R2, leaving the R1 source and decision unchanged. If a requirement conflicts, identify it as unresolved rather than silently dropping it.",
+        "why": "Later context compression no longer discards earlier commitments or misattributes their source.",
+        "expected": "The revised plan still includes keyboard access; both R1 and R2 amendment records retain their actual decisions.",
+        "boundaries": "History is evidence rather than permanent authority. Explicit later user decisions can supersede an obligation and must be recorded."
+      },
+      "zh": {
+        "description": "把已接受的要求带入后续版本，同时保留修订历史。",
+        "scenario": "设计审查新增了无障碍要求，之后工程审查还要修改计划。",
+        "mechanism": "将当前实施计划与不可改写的审查历史分开。为已接受义务记录来源版本；新阶段创建新检查点，不重放旧替换操作。",
+        "bad": "为工程审查重写计划，只保留最新审查者的建议。",
+        "good": "修订工程计划。保留设计审查 R1 中已接受的键盘操作要求。把新改动记录在 R2 下，不改写 R1 的来源和决定。若有要求冲突，标为未解决，不能悄悄删除。",
+        "why": "后续压缩上下文时，先前承诺和来源不会因重写丢失。",
+        "expected": "新计划仍包含键盘操作要求，R1 与 R2 都保留各自真实的修订决定。",
+        "boundaries": "历史是证据，不是永久权限。用户后续明确修改要求时，应记录其取代关系。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "autoplan/SKILL.md",
+        "start_line": 666,
+        "end_line": 705,
+        "section": "What \"Auto-Decide\" Means",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-pending-question-transport",
+    "name_en": "Pending-question delivery state",
+    "name_zh": "问题送达与待答状态",
+    "category": "workflow",
+    "tags": [
+      "workflow",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Distinguish an unanswered delivered question from a transport failure before retrying.",
+        "scenario": "A clarification tool returns no answer after it may have shown the question.",
+        "mechanism": "Track whether delivery could have occurred. Retry only a confirmed pre-delivery failure; keep a possibly delivered question pending and resume from its actual answer.",
+        "bad": "The clarification call returned no value. Ask the same question again and assume the default if it stays empty.",
+        "good": "The clarification call returned no value. Check its delivery status. If the user may already have seen it, keep that question pending and continue only independent work. Retry once only if the call failed before delivery. An empty result does not select the default.",
+        "why": "Duplicate questions and invented approval are avoided by treating delivery and decision as different events.",
+        "expected": "A possibly delivered question has one pending identity and no recorded answer until an actual reply arrives.",
+        "boundaries": "This depends on trustworthy transport metadata. Without it, retain uncertainty; elapsed time alone does not answer a required question."
+      },
+      "zh": {
+        "description": "重试前区分已经送达但未回答的问题与传输失败。",
+        "scenario": "澄清工具没有返回答案，但问题可能已经展示给用户。",
+        "mechanism": "记录是否可能已送达。只有确认送达前失败才重试；可能已送达的问题保持待答，收到真实答案后从该点继续。",
+        "bad": "澄清调用没有返回值，重新问一遍；仍为空就采用默认选项。",
+        "good": "澄清调用没有返回值。核对送达状态：用户可能已看到时，保留这一待答问题，只继续不依赖答案的工作。只有确定送达前失败，才重试一次。空结果不能代表选择默认项。",
+        "why": "把送达与决定视为不同事件，能避免重复提问和虚构批准。",
+        "expected": "可能已送达的问题只有一个待答身份；真实回复到达前不记录答案。",
+        "boundaries": "需要可信的传输状态信息。信息不足时保留不确定性；时间过去不能代替必需的回答。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "plan-eng-review/SKILL.md",
+        "start_line": 132,
+        "end_line": 155,
+        "section": "When AskUserQuestion is unavailable or a call fails",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-grant-narrowing-revocation",
+    "name_en": "Revoke the prior grant when narrowing access",
+    "name_zh": "缩小权限时撤销旧授权",
+    "category": "safety",
+    "tags": [
+      "safety",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Narrow an existing agent grant without leaving its old broader credential usable.",
+        "scenario": "A browser agent should keep read access after its write permission is withdrawn.",
+        "mechanism": "Resolve the same principal identity, revoke its previous broader session, issue the narrower grant and verify the old credential is rejected. Creating a second principal does not revoke the first.",
+        "bad": "Give agent audit-bot a new read-only token. Leave its existing token alone.",
+        "good": "Reduce audit-bot to read-only under the same principal identity. Revoke its prior write-capable session, issue the narrower grant and verify the old token cannot write. Record the reconnect requirement and the resulting scopes.",
+        "why": "The new token no longer coexists with an active broader token for the same agent.",
+        "expected": "The new session permits reads, denies writes, and the previous credential is rejected.",
+        "boundaries": "Prompt text cannot enforce permissions. The service must implement revocation and scope checks; browser JavaScript access can exceed apparently read-only named commands."
+      },
+      "zh": {
+        "description": "缩小现有 Agent 权限时，避免旧的宽权限凭据继续可用。",
+        "scenario": "浏览器 Agent 撤销写权限后，还需保留读取能力。",
+        "mechanism": "定位同一主体，撤销先前宽权限会话，再签发较窄授权，并验证旧凭据被拒绝。新建第二个主体不会撤销第一个。",
+        "bad": "为 audit-bot 再发一个只读令牌，原令牌保持原样。",
+        "good": "在同一主体身份下，把 audit-bot 降为只读。撤销原写权限会话，签发较窄授权，核对旧令牌不能再写入。记录重新连接要求与最终权限范围。",
+        "why": "同一个 Agent 不会同时保留新的窄授权和有效的旧宽授权。",
+        "expected": "新会话可以读、不能写，旧凭据被拒绝。",
+        "boundaries": "提示词不能强制权限。服务端必须执行撤销和范围检查；浏览器 JavaScript 能力可能超过名称看似只读的命令。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "pair-agent/SKILL.md",
+        "start_line": 658,
+        "end_line": 689,
+        "section": "What the remote agent can do",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-owned-terminal-cleanup",
+    "name_en": "Owner-token terminal cleanup",
+    "name_zh": "按所有权令牌执行收尾清理",
+    "category": "workflow",
+    "tags": [
+      "workflow",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Release only temporary state created and still owned by the current operation.",
+        "scenario": "An investigation acquires a scoped lock, then another session replaces it at the same path.",
+        "mechanism": "Retain the acquisition token. On termination, atomically compare ownership and release only a matching lock; preserve a replacement and report cleanup failure.",
+        "bad": "When the investigation ends, delete the lock file at its known path.",
+        "good": "Retain the lock token returned when this investigation acquired it. On completion or abort, call compare-and-release with that token. If ownership changed, preserve the replacement. Report cleanup errors; never fall back to deleting the path.",
+        "why": "A pathname can be reused; the ownership token distinguishes this operation's state from a later replacement.",
+        "expected": "A matching owned lock is released; a replacement at the same path remains intact.",
+        "boundaries": "Requires an atomic ownership-aware helper. Abrupt process death may prevent cleanup and needs explicit recovery."
+      },
+      "zh": {
+        "description": "只释放由当前操作创建且仍由它持有的临时状态。",
+        "scenario": "调查取得一个范围锁后，另一会话在同一路径替换了该锁。",
+        "mechanism": "保留获取时返回的所有权令牌。结束时原子比较所有权，仅释放匹配锁；保留替换状态，报告清理失败。",
+        "bad": "调查结束时，删除已知路径的锁文件。",
+        "good": "保留本次调查获取锁时返回的令牌。完成或中止时，使用该令牌比较并释放。所有权已变则保留替换锁；清理失败要报告，不能改为直接删除路径。",
+        "why": "路径可以被复用；令牌能区分本次操作的状态与后来替换的状态。",
+        "expected": "匹配本次所有权的锁被释放，同路径的新锁保留。",
+        "boundaries": "依赖原子的所有权检查辅助程序。进程被强制结束时可能无法清理，需要明确恢复流程。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "investigate/SKILL.md",
+        "start_line": 512,
+        "end_line": 531,
+        "section": "Scope Lock",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-comparable-coverage-trends",
+    "name_en": "Comparable-coverage trend reporting",
+    "name_zh": "按可比覆盖范围报告趋势",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Compare result trends only when the covered checks and measurement conditions match.",
+        "scenario": "A dashboard score rises after the failing linter is omitted from the next run.",
+        "mechanism": "Record executed and unavailable checks. Compare like-for-like check sets and unchanged measurement definitions; report changed coverage separately rather than interpreting the aggregate delta as improvement.",
+        "bad": "Yesterday scored 6 and today scored 9. Say code quality improved by 3 points; ignore that today skipped lint.",
+        "good": "Compare yesterday and today with their check sets and scoring definitions. Today omitted lint, so mark coverage changed and do not claim a composite improvement. Show comparable per-check results and the reason lint was unavailable.",
+        "why": "Removing a difficult measurement cannot manufacture an apparent quality gain.",
+        "expected": "The report states that the aggregate scores are not comparable and identifies the omitted check.",
+        "boundaries": "Identical check names alone are insufficient when fixtures, tool versions or thresholds changed. Composite weights remain a local heuristic, not a validated quality metric."
+      },
+      "zh": {
+        "description": "只有覆盖检查和测量条件一致时，才比较结果趋势。",
+        "scenario": "下一轮检查省略了失败的 linter，仪表盘总分随之升高。",
+        "mechanism": "记录已运行和不可用检查。按相同检查集合与测量定义比较；覆盖变化单独报告，不能把总分差解释为质量改善。",
+        "bad": "昨天 6 分，今天 9 分，写质量提高 3 分，不必提今天跳过 lint。",
+        "good": "比较两轮的检查集合与计分定义。今天未做 lint，应标为覆盖变化，不宣称总分改善。展示可比的单项结果与 lint 不可用的原因。",
+        "why": "省略困难的测量不会再制造表面上的质量增长。",
+        "expected": "报告明确总分不可直接比较，并指出省略的检查。",
+        "boundaries": "检查名称相同也不够；样本、工具版本或阈值变化同样影响可比性。总分权重是本地启发式，不是已验证的质量指标。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "health/SKILL.md",
+        "start_line": 659,
+        "end_line": 725,
+        "section": "Step 6: Trend Analysis + Recommendations",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-independent-completion-witness",
+    "name_en": "Independent completion witness",
+    "name_zh": "独立的完成证据见证",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Separate externally witnessed behavior from completion claims made by the code being evaluated.",
+        "scenario": "An untrusted application prints a passing test summary while the evaluator checks an authorization repair.",
+        "mechanism": "Keep the behavioral oracle and authenticated evidence outside the target-controlled process. Bind it to the tested snapshot and assertion; retain the project runner result as self-reported unless its completion is independently witnessed.",
+        "bad": "The application printed all tests passed and exited zero. Mark the authorization repair verified.",
+        "good": "Assess the authorization repair on snapshot S2. Use an isolated external verifier for the unchanged cross-tenant denial assertion and legitimate-access control. Record its authenticated results separately from the application's test summary. Without the external witness, keep runtime assurance unconfirmed; do not upgrade a printed pass to proof.",
+        "why": "The target cannot gain stronger assurance merely by controlling its own reporter output.",
+        "expected": "The report separates externally witnessed assertions from self-reported project-test completion and identifies any missing witness.",
+        "boundaries": "A second process alone is not a trust boundary when the target can alter its oracle or evidence. This mechanism requires isolation and provenance; it does not authenticate every project test."
+      },
+      "zh": {
+        "description": "把外部见证的行为与被评估代码自己报告的完成状态分开。",
+        "scenario": "评估授权修复时，不可信应用打印了一段全部测试通过的摘要。",
+        "mechanism": "将行为判定和认证证据放在目标无法控制的进程外，绑定测试快照与断言。项目测试运行器的结果仍标为自行报告，除非其完成也得到独立见证。",
+        "bad": "应用打印全部测试通过并正常退出，把授权修复标为已验证。",
+        "good": "评估快照 S2 的授权修复。使用隔离的外部验证器运行未修改的跨租户拒绝断言及合法访问对照，将其认证结果与应用测试摘要分开记录。缺少外部见证时，运行时保证仍未确认，不能把打印的通过声明升级为证明。",
+        "why": "目标不能仅凭控制自己的结果输出，就取得更强的保证。",
+        "expected": "报告分别列出外部见证断言与自行报告的项目测试完成状态，并指出缺失的见证。",
+        "boundaries": "如果目标能修改判定逻辑或证据，另起进程也不构成信任边界。此机制依赖隔离与来源验证，不能认证每个项目测试。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "cso/SKILL.md",
+        "start_line": 129,
+        "end_line": 153,
+        "section": "Phase 12: Evidence rubric and independent challenge",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-proven-run-codification",
+    "name_en": "Codify a proven run with replay",
+    "name_zh": "通过重放固化已成功流程",
+    "category": "skill-authoring",
+    "tags": [
+      "skill-authoring",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Turn an accepted successful interaction trace into a deterministic reusable procedure, then verify replay against its accepted evidence.",
+        "scenario": "A browser extraction worked once and should become a reusable read-only tool.",
+        "mechanism": "Preserve the successful command sequence and accepted input/output snapshot. Separate pure parsing from browser I/O, discard failed exploratory commands, and replay exact-value assertions before installing the procedure.",
+        "bad": "Write a scraper from whatever you remember. Include all selectors tried; call it ready if it returns an object.",
+        "good": "Codify the accepted extraction trace only. Keep the successful navigation sequence, isolate pure parsing, and replay the accepted HTML snapshot. Assert the expected item identities, order and fields against the accepted result. Install only after replay passes; record the snapshot date and live-site freshness separately.",
+        "why": "A working trace is preserved as a reproducible procedure instead of a loose narrative and a shape-only smoke test.",
+        "expected": "Replay yields the accepted identities and field values; failed selector attempts do not appear in the installed procedure.",
+        "boundaries": "Fixture success covers that snapshot, not future site HTML. Changed live input needs renewed validation; generated code and captured content remain untrusted until reviewed."
+      },
+      "zh": {
+        "description": "把已接受的成功交互轨迹变成确定的可复用流程，并用当时的证据验证重放。",
+        "scenario": "一次浏览器提取已成功，现在希望固化为可复用只读工具。",
+        "mechanism": "保留成功命令序列和已接受的输入输出快照，将纯解析与浏览器 I/O 分开，排除失败探索命令，安装前重放并检查确切值。",
+        "bad": "凭记忆写抓取程序，把试过的选择器都放进去；返回对象就算完成。",
+        "good": "只固化已接受的提取轨迹。保留成功导航序列，隔离纯解析逻辑，重放当时的 HTML 快照，并对照已接受结果检查条目身份、顺序和字段。重放通过才安装；另记快照日期与实时页面新鲜度。",
+        "why": "成功轨迹成为可复现流程，而不是松散叙述加只检查结构的冒烟测试。",
+        "expected": "重放得到已接受的条目身份和字段值，失败选择器不进入安装后的流程。",
+        "boundaries": "快照测试仅覆盖当时输入，不能保证未来页面。实时输入变化时要重新验证；生成代码及抓取内容仍需审核。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "skillify/SKILL.md",
+        "start_line": 477,
+        "end_line": 521,
+        "section": "Step 3 — Synthesize script.ts (D2)",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-overlapping-await-schedules",
+    "name_en": "Review both overlapping completion orders",
+    "name_zh": "审查重叠异步操作的完成顺序",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Test a shared-state invariant across competing asynchronous operations, rather than reviewing each operation alone.",
+        "scenario": "A delayed refresh and a save both update the same editor document.",
+        "mechanism": "Name the caller boundary and invariant; draw a combined schedule, pause at relevant awaits, exercise both completion orders, then inspect a fresh consumer. Exclude an order only with a concrete prevention mechanism.",
+        "bad": "Review refresh and save separately. Their final assignments are atomic, so conclude the editor is race-free.",
+        "good": "Review refresh and save together. Invariant: a delayed refresh must not overwrite a newer saved document. Pause refresh before its result is applied, complete save, resume refresh, then read the document from a fresh consumer. Also exercise the reverse completion order. Record the version checks or cancellation mechanism that prevents a violating schedule, and test it with controlled gates.",
+        "why": "Atomic assignments do not establish ordering across awaits; the combined schedule exposes stale-result overwrites.",
+        "expected": "The review records both relevant orders and checks the fresh document against the stated invariant.",
+        "boundaries": "This covers the named shared-state boundaries, not every possible interleaving. Controlled schedules require suitable instrumentation and cannot replace production contract evidence."
+      },
+      "zh": {
+        "description": "围绕共享状态不变量检查相互竞争的异步操作，而不只分别审核每个操作。",
+        "scenario": "延迟刷新与保存操作都会更新同一编辑器文档。",
+        "mechanism": "明确调用边界与不变量，绘制合并时序，在相关 await 处暂停，覆盖两种完成顺序，再由新消费者检查状态。排除某种顺序必须指出具体阻止机制。",
+        "bad": "分别审核刷新与保存，它们的最终赋值是原子的，因此判定没有竞态。",
+        "good": "一起审核刷新与保存。不变量：延迟刷新不能覆盖较新的已保存文档。先暂停刷新结果应用，完成保存，再恢复刷新，由新消费者读取文档；再检查相反完成顺序。记录阻止违规时序的版本检查或取消机制，并用受控关卡验证。",
+        "why": "原子赋值不能证明跨 await 的执行顺序；合并时序能暴露旧结果覆盖新状态。",
+        "expected": "审核记录两种相关顺序，并将新读取的文档状态与不变量比较。",
+        "boundaries": "只覆盖所声明的共享状态边界，不能证明所有交错都安全。受控时序需要适当观测点，也不能取代生产契约证据。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "plan-ceo-review/sections/review-sections.md",
+        "start_line": 185,
+        "end_line": 205,
+        "section": "Section 4: Data Flow & Interaction Edge Cases",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-evidence-channel-consistency",
+    "name_en": "Keep claims within the observed channel",
+    "name_zh": "让结论保持在已观测的证据通道内",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Preserve a finding's evidence limits in every summary and proposed regression assertion.",
+        "scenario": "A browser probe captures an error-shaped console message, but no uncaught-exception evidence.",
+        "mechanism": "Separate observed output, expected contract, confirmation and hypothesis. Derive one conservative finding statement from the observation, repeat its qualifications in summaries, and propose tests on the channel actually observed.",
+        "bad": "The console printed Error: quota. Headline: the app crashes. Add an exception-only test; mention that the cause was not checked in a footnote.",
+        "good": "Observed: the console logged Error: quota once. No uncaught exception or crash was observed. Use that same bounded claim in the headline, summary and conclusion. A proposed regression must capture the console-message channel; keep the crash hypothesis separate and unconfirmed until a suitable probe establishes it.",
+        "why": "A qualified detail cannot excuse a stronger headline, and an assertion on another channel may miss the original behavior.",
+        "expected": "Every report section retains the observed-once/console-only limits, and the proposed assertion detects that message.",
+        "boundaries": "This checks claim consistency, not causation. Logging can still accompany a real crash; more evidence may justify a stronger later claim."
+      },
+      "zh": {
+        "description": "在所有摘要与拟议回归断言中保留发现的证据边界。",
+        "scenario": "浏览器探测记录了一个形似错误的控制台消息，但没有未捕获异常的证据。",
+        "mechanism": "分开记录观测输出、预期契约、确认状态与假设。按观测生成一个保守事实句，摘要保留相同限定，拟议测试使用真正被观测的通道。",
+        "bad": "控制台打印 Error: quota，标题写应用崩溃。添加只监听异常的测试，在脚注中提一下原因尚未核对。",
+        "good": "观测：控制台打印 Error: quota 一次，未观测到未捕获异常或崩溃。标题、摘要和结论使用这一有界事实。拟议回归检查应捕获控制台消息通道；适当探测确认前，崩溃只保留为单独的未确认假设。",
+        "why": "正文中的限定不能弥补更强的标题；另一个通道的断言也可能漏掉原行为。",
+        "expected": "所有章节保留仅一次、仅控制台消息的边界，拟议断言能检测该消息。",
+        "boundaries": "只检查结论一致性，不能证明因果。日志也可能伴随真实崩溃；进一步证据可支持后续更强的结论。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "qa-only/sections/reporting.md",
+        "start_line": 10,
+        "end_line": 60,
+        "section": "Establish each finding once; Assemble and check every repetition before writing",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-context-load-ledgers",
+    "name_en": "Budget context by when it loads",
+    "name_zh": "按加载时机分账计算上下文",
+    "category": "context",
+    "tags": [
+      "context",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Measure always-loaded metadata separately from the full content eagerly loaded for one invocation.",
+        "scenario": "A skill pack shortens each entry file but forces the same long reference to be read at startup.",
+        "mechanism": "Inventory discovery metadata, full front matter and invocation content including mandatory references. Count each ledger with a declared tokenizer or labelled estimate; compare complete consumed inputs rather than entry-file size alone.",
+        "bad": "Our entry file fell from 20 KB to 2 KB. Claim a 90% context saving even though every invocation must read the 18 KB reference.",
+        "good": "Audit the same skill pack before and after. Report discovery metadata, full front matter and per-invocation eager content as separate ledgers, including the mandatory 18 KB reference. Label byte-based token estimates. The entry is shorter, but do not claim an eager-context reduction unless the complete loaded total fell.",
+        "why": "Moving text into a forced reference changes its location without removing it from the model input.",
+        "expected": "The audit shows which sessions pay each cost and exposes any unchanged eager total.",
+        "boundaries": "Actual loading varies by host and runtime. Estimates are not tokenizer measurements, and smaller context alone does not prove equal task quality."
+      },
+      "zh": {
+        "description": "把常驻元数据与单次调用必须加载的全文分别计算。",
+        "scenario": "Skill 包缩短了入口文件，却要求启动时读取同一份长参考资料。",
+        "mechanism": "分别盘点发现用元数据、完整 front matter 和包含必读参考的调用内容。使用声明过的 tokenizer 或标明估算方法，比较完整消费输入，而不只比较入口大小。",
+        "bad": "入口从 20 KB 缩到 2 KB。每次仍须读 18 KB 参考，也宣称上下文减少 90%。",
+        "good": "审核同一个 Skill 包改动前后：分别报告发现元数据、完整 front matter 和单次调用的必读内容，把 18 KB 参考计入。按字节估算 token 时明确标注。入口更短，但只有完整加载总量下降，才能声称调用上下文减少。",
+        "why": "把文本移到强制参考只改变位置，没有把它移出模型输入。",
+        "expected": "账目显示每种会话承担的成本，并暴露未下降的必读总量。",
+        "boundaries": "实际加载依赖宿主与运行时。估算不等于 tokenizer 实测；上下文更小也不能证明任务质量相同。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "CLAUDE.md",
+        "start_line": 180,
+        "end_line": 211,
+        "section": "SKILL.md workflow",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-predeclared-trial-verdict",
+    "name_en": "Predeclare trials and verdict rules",
+    "name_zh": "预先确定试验次数与判定规则",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Fix a stochastic evaluation panel before seeing outcomes and retain every planned attempt.",
+        "scenario": "A prompt evaluation has two passing trials and one failed safety contract.",
+        "mechanism": "Declare trial count, acceptable stochastic variation and nonwaivable contracts before execution. Keep failures and missing trials in the result; repeat only as a separately identified experiment after a concrete change.",
+        "bad": "Run three trials. If one fails, keep sampling until three pass, then report a perfect result.",
+        "good": "Before running this fixture, declare three trials and the acceptance rule. Keep all three outcomes. An occasional wording difference may follow the declared majority rule, but any forbidden write fails the safety contract. A missing trial means incomplete. Do not add samples after seeing a failure to replace it.",
+        "why": "A fixed panel prevents favorable outcomes from silently replacing the original experiment.",
+        "expected": "The result includes all three attempts and separately identifies the contract failure or missing coverage.",
+        "boundaries": "Three trials and majority voting are only example policies. Choose sample size and thresholds for the actual risk; passing a small panel does not establish a population reliability rate."
+      },
+      "zh": {
+        "description": "看到结果之前固定随机评估的试验面板，并保留所有计划内尝试。",
+        "scenario": "提示词评估中两轮通过，一轮违反安全契约。",
+        "mechanism": "运行前声明次数、允许的随机变化和不可豁免契约。失败与缺失轮次都保留；具体修改后的重跑作为另一个有身份的实验记录。",
+        "bad": "先运行三轮，有失败就继续采样，凑齐三轮通过后报告全通过。",
+        "good": "运行此 fixture 前声明三轮及判定规则，保留三轮全部结果。偶发措辞差异可按事先声明的多数规则判定，但任一次禁止写入都使安全契约失败。缺一轮即覆盖不完整，不能看到失败后增补样本替换。",
+        "why": "固定面板能防止有利结果悄悄替换原实验。",
+        "expected": "结果包含全部三次尝试，并单独标明契约失败或覆盖缺失。",
+        "boundaries": "三轮与多数投票只是示例策略。次数和阈值须依据实际风险确定；小面板通过不能证明总体可靠率。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "CONTRIBUTING.md",
+        "start_line": 239,
+        "end_line": 273,
+        "section": "Test tiers",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-behavior-versus-intervention-benefit",
+    "name_en": "Separate behavior success from intervention benefit",
+    "name_zh": "区分行为通过与干预收益",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Report whether the requested behavior works separately from whether an added instruction improves it.",
+        "scenario": "Both the baseline and a new prompt overlay solve every fixture correctly.",
+        "mechanism": "Keep behavior acceptance and matched ON/OFF comparison as separate outcomes. Preserve the same task, runtime and measurement definition; report saturated baselines, regressions and incomplete comparisons explicitly.",
+        "bad": "The overlay arm solved all cases. Conclude that adding this instruction improves correctness by 20%.",
+        "good": "Run the same declared fixture in baseline and overlay arms. Report behavior acceptance for each arm, then the complete comparative measurements. If both solve every case, mark the baseline saturated and no demonstrated marginal benefit. Preserve any increased resource cost rather than folding it into a pass.",
+        "why": "Successful execution establishes the behavior observed, while causal improvement requires a discriminating comparison.",
+        "expected": "The report shows behavior passing in both arms and no measured correctness improvement; any cost regression remains visible.",
+        "boundaries": "An ON/OFF comparison still needs controlled conditions and an adequate sampling design. A saturated fixture cannot distinguish a beneficial intervention; a free harness test verifies the instrument rather than live model efficacy."
+      },
+      "zh": {
+        "description": "分别报告目标行为是否可用，以及新增指令是否改善该行为。",
+        "scenario": "基线与新提示 overlay 都正确完成了每个 fixture。",
+        "mechanism": "将行为验收与配对 ON/OFF 比较分开。保持相同任务、运行时和测量定义，明确报告基线已达上限、退化或比较不完整。",
+        "bad": "overlay 组完成全部案例，因此判定新指令让正确率提高 20%。",
+        "good": "在基线与 overlay 两组运行同一份预先声明的 fixture。先报告各组行为验收，再展示完整比较。两组都全对时，标明基线已达上限，没有证据显示额外收益。资源成本增加也要保留，不能并入通过状态。",
+        "why": "执行成功说明观测行为成立；干预带来的改善需要能区分两组的比较。",
+        "expected": "报告两组行为都通过且没有实测正确率改善，成本退化仍可见。",
+        "boundaries": "ON/OFF 比较仍需控制条件和适当采样。已达上限的 fixture 无法区分有效干预；免费 harness 测试验证测量工具，不代表真实模型收益。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "docs/OVERLAY_BENCHMARK_CONTRACT.md",
+        "start_line": 14,
+        "end_line": 72,
+        "section": "Blocking checks; Comparative research results",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-unanchored-parallel-proposals",
+    "name_en": "Draft independently before comparing proposals",
+    "name_zh": "比较前独立形成方案",
+    "category": "orchestration",
+    "tags": [
+      "orchestration",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Generate alternatives from the same brief without exposing one contributor's proposed answer to the others.",
+        "scenario": "A team wants independent design directions for the same reading application.",
+        "mechanism": "Save the parent's draft privately, give each contributor the same constraints and task, withhold other answers until return, then compare completed proposals with attribution and product-specific reasons.",
+        "bad": "Here is my preferred design. Ask two reviewers for independent directions that confirm it.",
+        "good": "Prepare one brief for the reading application with audience, constraints and success criteria. Save your own direction separately. Give that identical brief to each contributor without your preferred answer or another proposal. Await actual results, then compare the available directions and explain each adopted choice by the brief.",
+        "why": "Withholding the proposed answer reduces anchoring and makes differences interpretable against a shared task.",
+        "expected": "Each proposal has the same declared input brief and a separate source; missing proposals remain unavailable.",
+        "boundaries": "Shared models or training can still yield correlated proposals. Agreement is neither a vote nor permission, and intentionally different reviewer questions limit direct comparison."
+      },
+      "zh": {
+        "description": "从同一份 brief 生成替代方案，其他参与者形成答案前不展示任何人的优选方案。",
+        "scenario": "团队需要针对同一个阅读应用提出独立设计方向。",
+        "mechanism": "单独保存主 Agent 草稿，给各参与者相同约束和任务，返回前隐藏其他答案；之后按产品需求比较已完成方案并保留来源。",
+        "bad": "这是我喜欢的设计，让两位审查者提出确认它的独立方向。",
+        "good": "为阅读应用准备一份包含受众、约束和成功条件的 brief，另存你的设计。给每位参与者同一份 brief，不提供优选答案或他人的方案。等待实际结果后，比较可用方向，并按 brief 解释采用每项选择的原因。",
+        "why": "隐藏预选答案能减少锚定，使差异可以围绕同一任务解释。",
+        "expected": "各方案具有相同的声明输入和独立来源，缺失方案明确标为不可用。",
+        "boundaries": "共同模型或训练仍可能造成相关结果。共识不是投票或授权；若审查问题有意不同，直接比较也受到限制。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "design-consultation/sections/proposal-and-preview.md",
+        "start_line": 98,
+        "end_line": 121,
+        "section": "Independent proposals, then synthesis; Design Outside Voices (independent)",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-canonicalize-before-authorization",
+    "name_en": "Canonicalize aliases before authorizing",
+    "name_zh": "先规范化别名再检查权限",
+    "category": "tools",
+    "tags": [
+      "tools",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Apply capability checks to the canonical operation rather than its alternate spelling.",
+        "scenario": "A read-only tool adapter accepts setContent as an alias of a write operation.",
+        "mechanism": "Resolve supported aliases to one canonical operation before policy lookup, dispatch and auditing. Reject unknown forms instead of routing them through an unchecked fallback.",
+        "bad": "Deny load-html to read-only callers, but send setContent directly to its handler without checking that policy.",
+        "good": "Resolve setContent, setcontent and set-content to canonical load-html first. Apply the same write-scope check before dispatch under any spelling. Log the requested spelling and canonical operation, and reject unsupported aliases.",
+        "why": "Alternate spelling cannot create a second route around the capability boundary.",
+        "expected": "Every supported alias is denied for the read-only token and dispatched only with the required write capability.",
+        "boundaries": "This depends on enforcement in the adapter. A broad generic evaluation tool may still reach the same effect and needs its own policy; string normalization does not establish intent or permission."
+      },
+      "zh": {
+        "description": "对规范化后的操作检查能力权限，而不只检查某一种拼写。",
+        "scenario": "只读工具适配器把 setContent 当作写操作的别名接受。",
+        "mechanism": "先把支持的别名解析为一个规范操作，再查权限、分发和记录。未知形式应拒绝，不能进入未检查的备用分支。",
+        "bad": "只读调用者不能使用 load-html，但 setContent 直接进入处理函数，不检查对应权限。",
+        "good": "先把 setContent、setcontent 和 set-content 统一为 load-html。任何拼写都在分发前执行相同的写权限检查；同时记录原拼写与规范操作，拒绝不支持的别名。",
+        "why": "不同拼写不会形成绕过能力边界的第二条路径。",
+        "expected": "只读令牌下，每个受支持别名都被拒绝；取得必需写能力后才分发。",
+        "boundaries": "依赖适配器中的实际强制检查。通用执行工具仍可能达到相同效果，需要单独策略；字符串规范化不能证明意图或授权。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "BROWSER.md",
+        "start_line": 687,
+        "end_line": 698,
+        "section": "Domain-skills",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-target-qualified-readback",
+    "name_en": "Verify a save against the selected target",
+    "name_zh": "在所选目标中回读验证保存",
+    "category": "context",
+    "tags": [
+      "context",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Verify persisted context in the intended account, source and storage target before reporting a successful save.",
+        "scenario": "A context tool returns success after writing a design decision to a different selected corpus.",
+        "mechanism": "Capture the effective target before the write, use that same target for a fresh readback, and compare the returned substantive content. Keep command success and verified target content as separate outcomes.",
+        "bad": "The save command exited zero. Report that the decision is available in the team corpus without reading it back.",
+        "good": "Save this decision in the authorized team corpus. Record the effective account, source and storage target; do not infer the engine from a source pin. Read the saved page back from that same target and compare its title and decision content. If the target changed, the read failed or the content differs, retain the decision and report the save as unverified.",
+        "why": "A successful command can reach an unintended corpus; target identity and matching readback expose that mismatch.",
+        "expected": "The report identifies the verified target and matching content, or names an unverified save without losing the local decision.",
+        "boundaries": "A fresh readback does not prove crash durability, replication or future retrieval ranking. Trustworthy target metadata and read semantics are required; the operation remains limited to the user-authorized destination."
+      },
+      "zh": {
+        "description": "报告保存成功前，在预期账号、来源与存储目标中验证持久化上下文。",
+        "scenario": "上下文工具写入另一份已选择语料后，仍返回成功。",
+        "mechanism": "写入前记录实际目标，使用相同目标新回读，并比较返回的实质内容。命令成功与目标内容验证分开记录。",
+        "bad": "保存命令退出码为零，不回读就报告团队语料中已可用。",
+        "good": "把此决定保存到已授权的团队语料。记录实际账号、来源与存储目标，不根据来源 pin 推断存储引擎。从同一目标回读，比较标题与决定内容。目标变了、读取失败或内容不符时，保留本地决定并报告保存尚未验证。",
+        "why": "成功命令也可能写入错误语料；目标身份与匹配回读能暴露此差异。",
+        "expected": "报告给出已核对的目标与内容，或明确保存未验证，同时保留本地决定。",
+        "boundaries": "新回读不能证明崩溃后的持久性、复制状态或未来检索排序。需要可信目标元数据与读取语义，操作始终限于用户授权的目的地。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "docs/gbrain-write-surfaces.md",
+        "start_line": 12,
+        "end_line": 33,
+        "section": "What lands where",
+        "license": "MIT",
+        "role": "observed-example"
+      },
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "docs/gbrain-write-surfaces.md",
+        "start_line": 55,
+        "end_line": 82,
+        "section": "§Save Template (agent reads this when actually saving)",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  },
+  {
+    "key": "gstack-source-first-obligation-audit",
+    "name_en": "Audit from the complete source inventory",
+    "name_zh": "从完整来源清单审核义务保留",
+    "category": "evaluation",
+    "tags": [
+      "evaluation",
+      "evidence-boundary"
+    ],
+    "disposition": "active",
+    "reason_en": "A concrete mechanism with a matched teaching contrast; cross-corpus consolidation remains pending.",
+    "reason_zh": "具体机制与同任务对照已齐全；跨仓库合并待最终审核。",
+    "content": {
+      "en": {
+        "description": "Start a preservation audit from every source obligation, then map it into the retained report. A correct retained subset is not complete coverage.",
+        "scenario": "A review has twelve independent obligations. Its summary preserves eight, omits four and claims that all concerns were preserved.",
+        "mechanism": "Enumerate the complete final source inventory, map each distinct problem and necessary remedy to retained text, and independently check disposition, recurrence and count units. Continue the other audit axes when one fails.",
+        "bad": "Check the eight concerns in this summary against the review. If they are accurate, mark preservation complete.",
+        "good": "Audit this twelve-finding review and its eight-concern summary. Begin with all twelve source findings. Map each separate obligation and necessary remedy to a summary passage; list any missing counterpart. Also check the claimed disposition, recurrence and fixed/remaining count units, even if coverage already fails. Merge only identical obligations, retaining their source references.",
+        "why": "Starting with the complete source exposes omissions that subset verification cannot see. Separate audit axes prevent an early failure from concealing a second inconsistency.",
+        "expected": "The report identifies the four omitted obligations and reports the other audit outcomes independently; eight accurate entries cannot yield complete preservation.",
+        "boundaries": "The twelve/eight numbers are teaching fixtures, not measured efficacy. Paraphrases can preserve obligations; matching counts or words alone cannot. Semantic judgments need evidence and may remain uncertain."
+      },
+      "zh": {
+        "description": "从每一项来源义务开始审核，再映射到保留的报告；保留子集准确不代表覆盖完整。",
+        "scenario": "审查含十二项独立义务，摘要保留八项、漏掉四项，却声称全部保留。",
+        "mechanism": "列出最终来源的完整清单，把每个独立问题及必需补救映射到保留文本；分别审核处置、复发与计数单位。一个轴失败后仍继续其他轴。",
+        "bad": "把摘要中的八项关注点与原审查对照；都准确就标为保留完整。",
+        "good": "审核这份十二项发现的原审查与八项摘要。从原始十二项开始，为每个独立义务及必需补救寻找摘要中的对应段落，列出缺项。即使覆盖已经失败，也分别检查声称的处置、复发及已修复/剩余的计数单位。只有相同义务才合并，同时保留来源引用。",
+        "why": "完整来源能暴露仅核对保留子集时看不到的遗漏；分开审核各轴，避免首次失败遮住第二种不一致。",
+        "expected": "报告指出四项遗漏义务，并单独给出其他审核结论；八项内容准确不能变成保留完整。",
+        "boundaries": "十二与八是教学样例，不是效果测量。改写可以保留义务；数量或词语相同都不能单独证明覆盖。语义判断需要证据，必要时保留不确定。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 1,
+      "boundaries": 1
+    },
+    "sources": [
+      {
+        "repo": "garrytan/gstack",
+        "commit": "f30b7b788a210d217ea3125bf3001b29cbc2a463",
+        "path": "test/helpers/office-hours-completion.ts",
+        "start_line": 404,
+        "end_line": 435,
+        "section": "validateOfficeHoursReviewPreservation",
+        "license": "MIT",
+        "role": "observed-example"
+      }
+    ]
+  }
+]

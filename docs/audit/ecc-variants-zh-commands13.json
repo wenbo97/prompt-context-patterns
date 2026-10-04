@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/zh-CN/commands/prp-commit.md",
+    "reason": "Full 115-line translated workflow and all shell fragments reviewed against canonical full-source note: status/no-change stop; natural-language file scope; blank stages all; cached stat; one-line imperative commit; hash/files readback. No new mechanism beyond bounded artifact publication. Preserve source limits: broad add-A/pre-staged unrelated work and except-tests reset may change others' index; non-NUL xargs and raw path interpolation mishandle filenames; cached stat does not prove exact reviewed content or validation. No git action executed."
+  },
+  {
+    "path": "docs/zh-CN/commands/prp-pr.md",
+    "reason": "Full 188-line translated workflow including nested PR template and CLI snippets compared against canonical full-source note: branch/base/ahead/existing-PR gates, template selection, artifacts, push/rebase, create/readback. Legacy PRP alias differs in attribution/artifact focus, not mechanism. Moving or stale base and two-dot comparison do not bind a merge-base review; dirty warning is not exact committed-artifact proof; force-with-lease still rewrites published history; interpolated body is not shell-safe and swallowed CI errors are not absent/passing checks. No publication performed."
+  },
+  {
+    "path": "docs/zh-CN/commands/santa-loop.md",
+    "reason": "Full 180-line translated two-reviewer loop compared with 208-line canonical review: full scoped files plus rubric, external CLI-presence check, temporary prompt, same-family fallback warning, both-PASS conjunction, fresh bounded three rounds, push after success. Translation omits current private umask/trap/exit-preserving cleanup and stronger invocation-failure boundaries. CLI presence does not establish auth/usable capability; failed/malformed/empty review is unavailable, never PASS; provider diversity does not prove error independence; criticism needs evidence before fixing. Fixed model quality and effectiveness claims unverified; no tool/reviewer/git invoked."
+  },
+  {
+    "path": "docs/zh-CN/commands/prp-implement.md",
+    "reason": "Full 394-line translated plan executor with all nested task, validation, report and process-management fragments reviewed against canonical 385-line note: detect PM, read MIRROR/IMPORTS/GOTCHA, branch gate, narrow tasks and five validation levels, bounded readiness, preserve test exit, report evidence, mark PRD and archive. Rebase failure swallowed while claiming sync, typecheck after every incomplete multi-file step, unowned health endpoint, missing interruption trap/descendant cleanup/request deadline, archive collision/scope and self-confidence limits remain. Optional skipped validation must differ from PASS; following exemplars does not justify copying bugs. No code/process/git/archive action executed."
+  },
+  {
+    "path": "docs/zh-CN/commands/prp-plan.md",
+    "reason": "Full 506-line translated plan generator read including nested Markdown template: eligible PRD dependencies, clarify ambiguity, eight source categories/five execution-data-state-contract traces, primary version-grounded docs, before-after UX, bounded alternatives, exact snippets and self-contained action/mirror/import/gotcha/validate task acceptance. Chinese template localizes structural ACTION/MIRROR/IMPORTS/GOTCHA/VALIDATE labels whereas sibling executor names English labels: record interface drift, not asserted parser failure. Plan creation marks phase in-progress before implementation; no-pending is not proof all phases complete. Capture-everything/no-future-search and numerical single-pass confidence are unverified/staleness-sensitive. No artifact authored."
+  },
+  {
+    "path": "docs/zh-CN/commands/prp-prd.md",
+    "reason": "Full 453-line translated eight-phase PRD process and entire nested artifact template compared against canonical 447-line full review: problem evidence vs hypotheses, JTBD/non-users, feasibility with real code traces, MVP/non-goals, measurable acceptance, risks/decision log and dependency phases. Declared literal status grammar pending/in-progress/complete conflicts with translated table status 待定 and localized PARALLEL cells: a source-consumer contract risk; no executing parser claimed. Parallel phases still require independent contracts/resources; one quote or question gate does not validate market demand; draft evidence/unknowns must stay visible. No user interview, external message, PRD write or empirical claim performed."
+  }
+]

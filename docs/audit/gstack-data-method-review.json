@@ -1,0 +1,100 @@
+{
+  "lib/cso/images/build-inputs.json": [
+    {
+      "field": "$.reviewMethod",
+      "sha256": "a9d639a053baef4305ea3449cb979801ca09983b6ad4612e786145fc9d5e8a3d",
+      "chars": 139,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "lib/cso/scanner-images/build-inputs.json": [
+    {
+      "field": "$.instructions",
+      "sha256": "b8edd534862ccc98b4957c401d9a196b671fe2c3bd14e6113ffe6614fc723b8f",
+      "chars": 555,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/autoplan-amend-input-77.json": [
+    {
+      "field": "$.specDispatch.input.prompt",
+      "sha256": "359ef3cc9faad49aa42f2a18dc542ce638ddb0cde1f34f79e874a941213d8c4c",
+      "chars": 2194,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/autoplan-dual-false-positive-6bd.json": [
+    {
+      "field": "$.events[4].message.content[0].input.prompt",
+      "sha256": "389e732b4196d0738883d2fbe87a0050a1dead9d9739589e2e687822467a554e",
+      "chars": 2046,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    },
+    {
+      "field": "$.sourceBoundB176.attempts[0].events[2].message.content[0].input.prompt",
+      "sha256": "eb6cfe08fbc8f355235ac6bc8c3293916a2509dbffa25ef5ea02cb530ec0ee5b",
+      "chars": 947,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    },
+    {
+      "field": "$.sourceBoundB176.attempts[1].events[2].message.content[0].input.prompt",
+      "sha256": "3b19e27beed9e535d802bf325f4356bf1af7f0b600d40c3aade2a9ac6b378411",
+      "chars": 947,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/autoplan-method-read-aa-events.json": [
+    {
+      "field": "$.events[16].input.prompt",
+      "sha256": "9357af33ef608e14282d27a29bf7ce8a9f09267215c634036f5d4b4af83bda16",
+      "chars": 999,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/autoplan-phase-consumption-491.json": [
+    {
+      "field": "$.events[8].input.prompt",
+      "sha256": "63efd84d01939d6e692af7c4597a74554d10cb4aa5d2e1a8b035cc8ead8e7a46",
+      "chars": 989,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/outside-async-task-m-events.json": [
+    {
+      "field": "$.events[2].attachment.prompt",
+      "sha256": "61892278a8bbfc634531cbd9b78868a53e8eacd6a3478c9d0cc6026bac4becb8",
+      "chars": 448,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/outside-background-ai.json": [
+    {
+      "field": "$.events[2].attachment.prompt",
+      "sha256": "0d571fd4d4d100f873ccb3d3e5ccfaa4c166451f96df0efc6e9532133999cea7",
+      "chars": 468,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/ship-coverage-audit-af.json": [
+    {
+      "field": "$.rows[2].result.transcript[17].message.content[0].input.prompt",
+      "sha256": "bd26b878c88cd5e4e9f900e739122601d34626408aec1bdbde050ac7ac5b468c",
+      "chars": 3775,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    },
+    {
+      "field": "$.rows[2].result.toolCalls[8].input.prompt",
+      "sha256": "bd26b878c88cd5e4e9f900e739122601d34626408aec1bdbde050ac7ac5b468c",
+      "chars": 3775,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ],
+  "test/fixtures/webfetch-permission.json": [
+    {
+      "field": "$.input.prompt",
+      "sha256": "9f424e9e2b447c0769f996c26f2638977aeb27df7c7baa2f2d26d36d0fb361ea",
+      "chars": 276,
+      "review": "Complete field read. Pinned review-input contract, historical test instruction or notification; no historical test success inferred."
+    }
+  ]
+}
