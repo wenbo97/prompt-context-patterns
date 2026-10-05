@@ -7,11 +7,11 @@ if (host) {
     en: { title: 'Find a method', intro: 'Search use cases in either language. Filter methods by theme, source repository and provenance.', search: 'Search patterns and use cases', clear: 'Clear search', reset: 'Clear filters',
       category: 'Theme', repo: 'Source repository', trace: 'Source status', traceable: 'Source instance located', untraced: 'Source unconfirmed', loading: 'Loading patterns…',
       error: 'Pattern data could not be loaded.', retry: 'Try again', static: 'Open the static index', empty: 'No active patterns are available.', noResults: 'No methods match these conditions.',
-      count: (n,total,shown) => `${n} matching · ${shown} shown · ${total} active patterns`, more: 'Load30 more', scenario: 'Use case', detail: 'Read method', english: 'English', chinese: '中文' },
-    zh: { title: '查找方法', intro: '可以用中文或英文搜索使用场景，再按主题、来源仓库和追溯状态筛选。', search: '搜索模式与使用场景', clear: '清空搜索', reset: '清空筛选',
-      category: '主题', repo: '来源仓库', trace: '来源状态', traceable: '已定位原文实例', untraced: '来源未确认', loading: '正在加载模式…',
-      error: '未能加载模式数据。', retry: '重试', static: '打开静态索引', empty: '当前没有有效模式。', noResults: '没有符合条件的方法。',
-      count: (n,total,shown) => `匹配 ${n} 个 · 已显示 ${shown} 个 · 共 ${total} 个有效模式`, more: '再加载30个', scenario: '使用场景', detail: '阅读方法', english: 'English', chinese: '中文' },
+      count: (n,total,shown) => `${n} matching · ${shown} shown · ${total} active patterns`, more: 'Load 30 more', scenario: 'Use case', detail: 'Read method', english: 'English', chinese: '中文' },
+    zh: { title: '搜索方法', intro: '输入想解决的问题，或搜索中英文术语。', search: '搜索名称、用途或英文术语', clear: '清除', reset: '重置筛选',
+      category: '分类', repo: '来源仓库', trace: '原文', traceable: '有原文链接', untraced: '来源未确认', loading: '正在加载…',
+      error: '目录加载失败，请重试或打开完整目录。', retry: '重新加载', static: '查看完整目录', empty: '当前没有可浏览的方法。', noResults: '没有找到相关方法。试试其他关键词，或重置筛选。',
+      count: (n,total,shown) => n === total ? `${total} 个方法，已显示 ${shown} 个` : `找到 ${n} 个方法，已显示 ${shown} 个`, more: '再显示 30 个', scenario: '适用场景', detail: '查看详情', english: 'English', chinese: '中文' },
   };
   let remembered = 'en'; try { remembered = localStorage.getItem('pcp-language') || 'en'; } catch (_) {}
   let state = readState(location.href, remembered); let rows = []; let fuse = null; let request = 0; let composing = false; let available = false;
@@ -59,7 +59,12 @@ if (host) {
         button.setAttribute('data-label-en', labels.get(value)[0]); button.setAttribute('data-label-zh', labels.get(value)[1]);
         button.addEventListener('click', () => { state[key].has(value) ? state[key].delete(value) : state[key].add(value); state.limit = 30; commit(); render(); }); buttons.append(button);
       }
-      group.append(buttons); el('pb-facets').append(group);
+      group.append(buttons);
+      if (key === 'repo') {
+        const disclosure = element('details', null, 'repository-filter'); disclosure.open = state.repo.size > 0;
+        const summary = element('summary'); summary.setAttribute('data-i18n-en', 'Filter by source repository'); summary.setAttribute('data-i18n-zh', '按来源仓库筛选');
+        disclosure.append(summary, group); el('pb-facets').append(disclosure);
+      } else el('pb-facets').append(group);
     }
   }
   function render() {
@@ -72,7 +77,9 @@ if (host) {
     for (const p of shown) {
       const item = element('li', null, 'pattern-card'); item.append(element('span', `P${p.id}`, 'record-id'));
       const heading = element('h2'); const anchor = element('a', p[`name_${state.lang}`]); anchor.href = base + `/catalog/patterns/${p.id}${state.lang === 'zh' ? '-zh' : ''}/`; heading.append(anchor); item.append(heading);
-      const meta = element('div', null, 'meta-line'); meta.append(element('span', p[`category_${state.lang}`] || p.category));
+      if (state.lang === 'zh') { const english = element('p', p.name_en, 'english-name'); english.lang = 'en'; item.append(english); }
+      const meta = element('div', null, 'meta-line'); const category = element('a', p[`category_${state.lang}`] || p.category);
+      category.href = base + `/topics/${p.category}${state.lang === 'zh' ? '-zh' : ''}/`; meta.append(category);
       if (p.trace_status === 'untraced') meta.append(element('span', t().untraced, 'badge untraced')); item.append(meta);
       item.append(element('p', p[`summary_${state.lang}`]));
       const scenario = element('p', `${t().scenario}: ${p[`scenario_${state.lang}`]}`, 'scenario'); item.append(scenario); el('pb-list').append(item);

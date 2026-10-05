@@ -2,7 +2,7 @@
 layout: "topic"
 lang: "zh"
 category_key: "evaluation"
-title: "评测与反馈"
+title: "测试与评估"
 permalink: "/topics/evaluation-zh/"
 alternate_url: "/topics/evaluation/"
 ---

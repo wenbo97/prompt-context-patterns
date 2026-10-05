@@ -38,16 +38,16 @@ const idMap = fs.existsSync(path.join(ROOT, 'docs/audit/new-id-map.json')) ? rea
 for (const lang of ['en', 'zh']) {
   const zh = lang === 'zh';
   const indexUrl = zh ? '/catalog/catalog-index-zh/' : '/catalog/catalog-index/';
-  const title = zh ? '模式总索引' : 'Complete pattern index';
+  const title = zh ? '方法总目录' : 'Complete pattern index';
   const oldIndexAnchors = legacy.routes.find(r => r.url === indexUrl)?.anchors ?? [];
   const indexAliases = oldIndexAnchors.filter(id => !['nav-trigger', 'main', 'quick-reference-table'].includes(id))
     .map(id => `<span id="${html(id)}"></span>`).join('\n');
-  const table = ['| ID | ' + (zh ? '模式' : 'Pattern') + ' | ' + (zh ? '主题' : 'Theme') + ' | ' + (zh ? '来源状态' : 'Source status') + ' |', '| --- | --- | --- | --- |',
-    ...active.map(p => `| ${p.id} | ${link(patternPath(p.id, lang), p[`name_${lang}`])} | ${CATEGORY_LABELS[p.category][zh ? 1 : 0]} | ${p.trace_status === 'traceable' ? (zh ? '已定位原文实例' : 'Located source instance') : (zh ? '来源未确认' : 'Source unconfirmed')} |`)];
-  emit(`catalog/catalog-index${zh ? '-zh' : ''}.md`, fm({ layout: 'default', lang, title, permalink: indexUrl, alternate_url: zh ? '/catalog/catalog-index/' : '/catalog/catalog-index-zh/' }) +
-    `# ${title}\n\n${active.length} ${zh ? '个已完成编辑审核的模式。' : 'editorially reviewed methods.'}\n\n` +
+  const table = ['| ID | ' + (zh ? '方法' : 'Pattern') + ' | ' + (zh ? '分类' : 'Theme') + ' | ' + (zh ? '来源状态' : 'Source status') + ' |', '| --- | --- | --- | --- |',
+    ...active.map(p => `| ${p.id} | ${link(patternPath(p.id, lang), p[`name_${lang}`])}${zh ? `<br><span class="english-name" lang="en">${html(p.name_en)}</span>` : ''} | ${link(`/topics/${p.category}${zh ? '-zh' : ''}/`, CATEGORY_LABELS[p.category][zh ? 1 : 0])} | ${p.trace_status === 'traceable' ? (zh ? '可查看原文' : 'Located source instance') : (zh ? '来源未确认' : 'Source unconfirmed')} |`)];
+  emit(`catalog/catalog-index${zh ? '-zh' : ''}.md`, fm({ layout: 'catalog-index', lang, title, permalink: indexUrl, alternate_url: zh ? '/catalog/catalog-index/' : '/catalog/catalog-index-zh/' }) +
+    `# ${title}\n\n${active.length} ${zh ? '个方法，按编号排列。点击分类可查看同类方法。' : 'editorially reviewed methods.'}\n\n` +
     link(`/catalog/browse/${zh ? '?lang=zh' : ''}`, zh ? '搜索与筛选' : 'Search and filter') + '\n\n<a id="quick-reference-table"></a>\n\n' + table.join('\n') + '\n\n' + indexAliases + '\n');
-  emit(`catalog/index${zh ? '-zh' : ''}.md`, fm({ layout: 'catalog', lang, title: zh ? '按主题查找方法' : 'Find a method by theme', permalink: zh ? '/catalog/index-zh/' : '/catalog/', alternate_url: zh ? '/catalog/' : '/catalog/index-zh/' }));
+  emit(`catalog/index${zh ? '-zh' : ''}.md`, fm({ layout: 'catalog', lang, title: zh ? '按分类查找方法' : 'Find a method by theme', permalink: zh ? '/catalog/index-zh/' : '/catalog/', alternate_url: zh ? '/catalog/' : '/catalog/index-zh/' }));
   for (const category of CATEGORIES) emit(`topics/${category}${zh ? '-zh' : ''}.md`, fm({ layout: 'topic', lang, category_key: category,
     title: CATEGORY_LABELS[category][zh ? 1 : 0], permalink: `/topics/${category}${zh ? '-zh' : ''}/`, alternate_url: `/topics/${category}${zh ? '' : '-zh'}/` }));
   emit(`sources/index${zh ? '-zh' : ''}.md`, fm({ layout: 'sources', lang, title: zh ? '来源与固定版本' : 'Sources and frozen revisions',

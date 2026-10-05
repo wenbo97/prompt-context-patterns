@@ -16,7 +16,7 @@ test('search, facets, language and loaded results survive detail navigation and 
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   await page.goto('catalog/browse/');
   await expect(page.locator('#pb-list > li')).toHaveCount(30);
-  await page.getByRole('button', { name: 'Load30 more' }).click();
+  await page.getByRole('button', { name: 'Load 30 more' }).click();
   await expect(page.locator('#pb-list > li')).toHaveCount(60);
   await expect(page).toHaveURL(/limit=60/);
   await page.locator('#pb-lang [data-lang=zh]').click();
@@ -72,7 +72,7 @@ test('data failure provides retry and a usable static index', async ({ page }) =
 test('an empty catalog is localized and distinct from no search matches', async ({ page }) => {
   await page.route('**/assets/patterns.json', route => route.fulfill({ contentType: 'application/json', body: '[]' }));
   await page.goto('catalog/browse/?lang=zh');
-  await expect(page.locator('#pb-empty')).toHaveText('当前没有有效模式。');
+  await expect(page.locator('#pb-empty')).toHaveText('当前没有可浏览的方法。');
   await expect(page.locator('#browser-error')).toBeHidden();
   await expect(page.locator('#pb-list > li')).toHaveCount(0);
   await expect(page.locator('#load-more')).toBeHidden();
@@ -109,4 +109,37 @@ for (const width of [375, 768, 1280]) test(`reading surfaces are accessible at${
   }
   fs.mkdirSync('.tools/qa', { recursive: true });
   await page.goto(''); await page.screenshot({ path: `.tools/qa/home-${width}.png`, fullPage: true });
+});
+
+
+test('localized category navigation and source versions lead to their exact targets', async ({ page }) => {
+  const catalog = JSON.parse(fs.readFileSync('_data/patterns.json', 'utf8'));
+  const first = catalog.find(pattern => pattern.id === 1);
+  await page.goto('catalog/catalog-index-zh/');
+  const row = page.locator('tbody tr').first();
+  await expect(row.locator('.english-name')).toHaveText(first.name_en);
+  const category = row.locator('td').nth(2).getByRole('link');
+  await expect(category).toHaveAttribute('href', `/prompt-context-patterns/topics/${first.category}-zh/`);
+  await category.click();
+  await expect(page).toHaveURL(new RegExp(`topics/${first.category}-zh/`));
+  await page.goto('catalog/patterns/1-zh/');
+  await expect(page.locator('.pattern-heading .english-name')).toHaveText(first.name_en);
+  await expect(page.locator('.source-version')).toHaveCount(first.sources.filter(source => source.commit).length);
+  for (const [index, source] of first.sources.filter(source => source.commit).entries()) {
+    const version = page.locator('.source-version').nth(index);
+    await expect(version).toHaveAttribute('href', source.url);
+    await expect(version.locator('code')).toHaveText(source.commit.slice(0, 12));
+    expect(source.url).toContain(`/blob/${source.commit}/`);
+  }
+  await expect(page.getByRole('heading', { name: '反例', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '改进写法', exact: true })).toBeVisible();
+  await page.goto('catalog/browse/?lang=zh');
+  await expect(page.locator('#pb-list > li')).toHaveCount(30);
+  await expect(page.locator('#pb-list .english-name').first()).toHaveText(first.name_en);
+  await expect(page.locator('.repository-filter')).not.toHaveAttribute('open');
+  await page.locator('.repository-filter summary').click();
+  await expect(page.locator('[data-facet=repo]')).toBeVisible();
+  await page.locator('[data-facet=repo] button').first().click();
+  await expect(page).toHaveURL(/repo=/);
+  await expect(page.locator('[data-facet=repo] button').first()).toHaveAttribute('aria-pressed', 'true');
 });

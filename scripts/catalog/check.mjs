@@ -13,7 +13,7 @@ for (const p of catalog.filter(p => p.status === 'active')) for (const lang of [
   if (!fs.existsSync(file)) { errors.push(`${p.id}/${lang}: body missing`); continue; }
   const body = fs.readFileSync(file, 'utf8');
   for (const heading of lang === 'en' ? ['Use case', 'Mechanism', 'Bad example', 'Good example', 'Why the change matters', 'Observable expectation', 'Limits'] :
-    ['使用场景', '机制', 'Bad example', 'Good example', '差异说明', '可检查的结果', '适用边界']) {
+    ['使用场景', '具体做法', '反例', '改进写法', '为什么这样改', '如何验证', '适用边界']) {
     if (!body.includes(`## ${heading}`)) errors.push(`${p.id}/${lang}: missing ${heading}`);
   }
   if (!body.includes(`pattern_id: ${p.id}\r\n`) || !body.includes(`lang: ${lang}\r\n`)) errors.push(`${p.id}/${lang}: body identity mismatch`);

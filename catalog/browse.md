@@ -5,7 +5,7 @@ permalink: /catalog/browse/
 alternate_url: /catalog/browse/?lang=zh
 ---
 <div id="pattern-browser" data-baseurl="{{ site.baseurl }}">
-  <span class="eyebrow" data-i18n-en="PATTERN CATALOG" data-i18n-zh="模式目录">PATTERN CATALOG</span><h1 id="browser-title">Find a method</h1><p id="browser-intro" class="lead">Search use cases in either language.</p>
+  <h1 id="browser-title">Find a method</h1><p id="browser-intro" class="lead">Search use cases in either language.</p>
   <div class="catalog-toolbar"><label class="search-label" id="search-label" for="pb-search">Search patterns and use cases</label><div class="search-row"><input id="pb-search" type="search" autocomplete="off" spellcheck="false"><button class="button secondary" id="clear-search" type="button">Clear search</button></div>
     <div class="meta-line" id="pb-lang" role="group" aria-label="Language"><button class="lang-button" type="button" data-lang="en" aria-pressed="true">English</button><button class="lang-button" type="button" data-lang="zh" aria-pressed="false">中文</button></div>
     <div id="pb-facets"></div>

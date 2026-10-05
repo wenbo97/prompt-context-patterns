@@ -7,10 +7,10 @@ export const CATEGORIES = ['prompt', 'context', 'workflow', 'orchestration', 'to
 export const CRITERIA = ['scenario', 'mechanism', 'contrast', 'observable', 'boundaries'];
 export const CATEGORY_LABELS = {
   prompt: ['Prompt design', '提示词设计'], context: ['Context management', '上下文管理'],
-  workflow: ['Workflow control', '工作流控制'], orchestration: ['Agent orchestration', 'Agent 编排'],
-  tools: ['Tool use', '工具使用'], output: ['Output contracts', '输出契约'],
-  evaluation: ['Evaluation & feedback', '评测与反馈'], safety: ['Safety & trust', '安全与信任'],
-  'skill-authoring': ['Skill authoring', '技能编写'],
+  workflow: ['Workflow control', '任务流程'], orchestration: ['Agent orchestration', '多 Agent 协作'],
+  tools: ['Tool use', '工具调用'], output: ['Output contracts', '输出格式与约束'],
+  evaluation: ['Evaluation & feedback', '测试与评估'], safety: ['Safety & trust', '安全与权限'],
+  'skill-authoring': ['Skill authoring', 'Skill 编写'],
 };
 export const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 export function protectLiquid(text) {

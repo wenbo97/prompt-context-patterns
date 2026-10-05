@@ -69,12 +69,12 @@ const errors = validateCatalog(patterns); if (errors.length) throw new Error(err
 writeText('_data/patterns.json', JSON.stringify(patterns.sort((a, b) => a.id - b.id), null, 2) + '\n');
 const titles = {
   en: ['Use case', 'Mechanism', 'Bad example', 'Good example', 'Why the change matters', 'Observable expectation', 'Limits'],
-  zh: ['使用场景', '机制', 'Bad example', 'Good example', '差异说明', '可检查的结果', '适用边界'],
+  zh: ['使用场景', '具体做法', '反例', '改进写法', '为什么这样改', '如何验证', '适用边界'],
 };
 for (const p of patterns.filter(p => p.status === 'active')) for (const lang of ['en', 'zh']) {
   const c = content.get(p.id)[lang]; const heads = titles[lang];
   const header = `---\nlayout: pattern\npattern_id: ${p.id}\nlang: ${lang}\npermalink: ${patternPath(p.id, lang)}\nalternate_url: ${patternPath(p.id, lang === 'en' ? 'zh' : 'en')}\n---\n\n`;
-  const teaching = lang === 'zh' ? '> 以下为独立教学构造，未声称是实际模型输出或已测得的性能。' : '> Independent teaching constructions, not observed model outputs or measured performance.';
+  const teaching = lang === 'zh' ? '> 以下示例用于说明方法，不是模型实测结果。' : '> Independent teaching constructions, not observed model outputs or measured performance.';
   const body = `${teaching}\n\n## ${heads[0]}\n\n${c.scenario}\n\n## ${heads[1]}\n\n${c.mechanism}\n\n## ${heads[2]}\n\n\`\`\`text\n${c.bad}\n\`\`\`\n\n## ${heads[3]}\n\n\`\`\`text\n${c.good}\n\`\`\`\n\n## ${heads[4]}\n\n${c.why}\n\n## ${heads[5]}\n\n${c.expected}\n\n## ${heads[6]}\n\n${c.boundaries}\n`;
   writeText(`_patterns/${p.id}.${lang}.md`, header + protectLiquid('\n' + body) + '\n');
 }

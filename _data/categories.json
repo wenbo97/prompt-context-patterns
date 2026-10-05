@@ -14,43 +14,43 @@
   {
     "key": "workflow",
     "name_en": "Workflow control",
-    "name_zh": "工作流控制",
+    "name_zh": "任务流程",
     "count": 56
   },
   {
     "key": "orchestration",
     "name_en": "Agent orchestration",
-    "name_zh": "Agent 编排",
+    "name_zh": "多 Agent 协作",
     "count": 19
   },
   {
     "key": "tools",
     "name_en": "Tool use",
-    "name_zh": "工具使用",
+    "name_zh": "工具调用",
     "count": 43
   },
   {
     "key": "output",
     "name_en": "Output contracts",
-    "name_zh": "输出契约",
+    "name_zh": "输出格式与约束",
     "count": 10
   },
   {
     "key": "evaluation",
     "name_en": "Evaluation & feedback",
-    "name_zh": "评测与反馈",
+    "name_zh": "测试与评估",
     "count": 73
   },
   {
     "key": "safety",
     "name_en": "Safety & trust",
-    "name_zh": "安全与信任",
+    "name_zh": "安全与权限",
     "count": 26
   },
   {
     "key": "skill-authoring",
     "name_en": "Skill authoring",
-    "name_zh": "技能编写",
+    "name_zh": "Skill 编写",
     "count": 20
   }
 ]
