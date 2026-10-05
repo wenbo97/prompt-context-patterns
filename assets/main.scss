@@ -61,7 +61,7 @@ p { max-width: 78ch; }
 .theme-card h3 { margin: 8px 0; }
 .theme-card p,.pattern-card p,.source-card p { font-size: 14px; color: $muted; }
 .pattern-card h2,.pattern-card h3 { margin: 8px 0; font-size: 1.12rem; }
-.pattern-card h2 a,.pattern-card h3 a { color: $text; text-decoration: none; }
+.pattern-card h2 a,.pattern-card h3 a { color: $brand; text-decoration: underline; }
 .pattern-card h2 a:hover,.pattern-card h3 a:hover { color: $brand; text-decoration: underline; }
 .badge { display: inline-flex; align-items: center; border: 1px solid $border; border-radius: 4px; padding: 2px 7px; font: 12px/1.5 $body; color: $muted; background: $canvas; }
 .badge.untraced { border-style: dashed; color: $text; }
@@ -151,3 +151,9 @@ img { max-width: 100%; height: auto; }
 .complete-index th:nth-child(2) { width: 44%; }
 .complete-index th:nth-child(3),.complete-index th:nth-child(4) { width: 24%; }
 @media (max-width: 767px) { .complete-index table { font-size: 13px; } .complete-index .english-name { font-size: 12px; } }
+
+/* Expand the native detail link; category links remain independent targets. */
+.linked-card { position: relative; }
+.linked-card .pattern-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.linked-card .meta-line a { position: relative; z-index: 1; }
+.linked-card:hover,.linked-card:focus-within { border-color: $brand; }

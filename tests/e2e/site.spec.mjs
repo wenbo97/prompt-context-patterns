@@ -101,7 +101,7 @@ test('static fallback and old fragment entry remain usable without JavaScript', 
 
 for (const width of [375, 768, 1280]) test(`reading surfaces are accessible at${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
-  for (const route of ['', 'catalog/browse/', 'catalog/patterns/23/', 'sources/', ...integratedReadingRoutes]) {
+  for (const route of ['', 'catalog/browse/', 'catalog/patterns/23/', 'sources/', 'topics/prompt-zh/', ...integratedReadingRoutes]) {
     await page.goto(route); if (route.includes('browse')) await expect(page.locator('#pb-list > li')).toHaveCount(30);
     const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(results.violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => n.target) }))).toEqual([]);
@@ -142,4 +142,49 @@ test('localized category navigation and source versions lead to their exact targ
   await page.locator('[data-facet=repo] button').first().click();
   await expect(page).toHaveURL(/repo=/);
   await expect(page.locator('[data-facet=repo] button').first()).toHaveAttribute('aria-pressed', 'true');
+});
+
+
+test('topic cards open details from title, English name and blank area without losing category navigation', async ({ page }) => {
+  const route = 'topics/prompt-zh/';
+  const cardFor = id => page.locator('.pattern-card').filter({
+    has: page.locator('.record-id', { hasText: new RegExp(`^P${id}$`) }),
+  });
+  for (const id of [6, 25]) {
+    for (const target of ['title', 'english', 'blank']) {
+      await page.goto(route);
+      const card = cardFor(id);
+      if (target === 'title') await card.locator('h3 a').click();
+      else if (target === 'english') {
+        const box = await card.locator('.english-name').boundingBox();
+        await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      }
+      else {
+        const box = await card.boundingBox();
+        await page.mouse.click(box.x + box.width / 2, box.y + box.height - 10);
+      }
+      await expect(page).toHaveURL(new RegExp(`/catalog/patterns/${id}-zh/`), { timeout: 2000 });
+    }
+  }
+  await page.goto(route);
+  const card = cardFor(6);
+  await card.locator('h3 a').focus();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/catalog\/patterns\/6-zh\//);
+  await page.goto(route);
+  await cardFor(6).locator('.meta-line a').click();
+  await expect(page).toHaveURL(/topics\/prompt-zh\//);
+});
+
+
+test('topic card hit areas work at mobile width without JavaScript', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 375, height: 900 } });
+  const page = await context.newPage();
+  await page.goto('http://127.0.0.1:4000/prompt-context-patterns/topics/prompt-zh/');
+  const card = page.locator('.pattern-card').filter({ has: page.locator('.record-id', { hasText: /^P25$/ }) });
+  await card.scrollIntoViewIfNeeded();
+  const box = await card.boundingBox();
+  await page.mouse.click(box.x + box.width / 2, box.y + box.height - 10);
+  await expect(page).toHaveURL(/catalog\/patterns\/25-zh\//);
+  await context.close();
 });

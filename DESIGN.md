@@ -27,4 +27,6 @@ Body: Inter, Noto Sans SC, system-ui, sans-serif. Code: JetBrains Mono, ui-monos
 
 Desktop: a 1180px site shell; detail pages use a centered 780px reading column without a sidebar. Search results use compact single-column rows. Source-repository filters use a native disclosure; categories and source status stay visible. Pattern paragraphs cap at approximately 78 characters; comparison examples can use the full main column. Historical posts use the same centered reading measure. The complete index keeps explicit ID/title/category/status column widths to avoid vertical Chinese wrapping. Below 768px use one column and natural document scrolling. Mobile bad/good examples stack in that order.
 
+Card titles use the link color and an underline so their action remains visible. Shared grid cards extend the detail hit area across the card while preserving the category link.
+
 Pattern numbers communicate stable identity, not rank or evidence strength. Provenance badges use words and borders rather than color alone. Loading, empty, no-results and error states reserve space and provide a useful next action. Visible focus, WCAG 2.2 AA contrast, 200% zoom and reduced-motion support are required.
