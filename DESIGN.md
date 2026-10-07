@@ -25,6 +25,8 @@ Runtime ownership: shared SCSS tokens in assets/main.scss. This document mirrors
 
 Body: Inter, Noto Sans SC, system-ui, sans-serif. Code: JetBrains Mono, ui-monospace, monospace. Body size 16px, line height 1.8. A light theme only. Code and bilingual long text wrap without hiding content.
 
+Cloudflare production sets `external_fonts: false` in its deployment override. The shared layout omits Google Fonts requests and the same SCSS font stacks use fonts installed on the device, falling back to system-ui and ui-monospace. This deployment variant reduces external dependencies for mainland and overseas readers; it does not change colors, type sizes, layout or interaction ownership.
+
 The shared pattern, historical-article and prose reading owners use overflow-wrap: anywhere so unbroken technical identifiers and reference paths remain visible inside the column. Ordinary words keep their natural wrapping; this rule does not clip or hide overflow.
 
 ## Layout and states

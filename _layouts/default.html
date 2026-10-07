@@ -20,8 +20,8 @@
   <meta property="og:type" content="article"><meta property="og:title" content="{{ page_title | escape }}"><meta property="og:description" content="{{ page_description | escape }}"><meta property="og:url" content="{{ canonical | absolute_url }}">
   <meta name="google-site-verification" content="{{ site.google_site_verification }}">
   <meta name="msvalidate.01" content="16475672FB4F5E9165B614DFF8F69409">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  {% if site.external_fonts != false %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   {% feed_meta %}
 </head>

@@ -1,16 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, readJson, writeText } from './lib.mjs';
+import { readJson, writeText } from './lib.mjs';
+import { readSiteConfig } from './site-config.mjs';
 
-const site = path.join(ROOT, '_site'); const pages = [];
+const { origin, baseurl, siteDirectory: site, reportDirectory } = readSiteConfig();
+const pages = [];
 function walk(dir) { for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
   const file = path.join(dir, item.name); if (item.isDirectory()) walk(file); else if (item.name.endsWith('.html')) pages.push(file);
 } }
 if (!fs.existsSync(site)) throw new Error('Build Jekyll before checking rendered links');
 walk(site);
-const config = fs.readFileSync(path.join(ROOT, '_config.yml'), 'utf8');
-const baseurl = /^baseurl:\s*(.*)$/m.exec(config)?.[1].trim().replace(/^['"]|['"]$/g, '') || '';
-const origin = /^url:\s*(.*)$/m.exec(config)?.[1].trim().replace(/^['"]|['"]$/g, '') || 'https://wenbo97.github.io';
 const ids = new Map(); const errors = [];
 const decode = s => s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
 for (const file of pages) {
@@ -48,6 +47,6 @@ for (const route of [...legacy.routes, ...(legacy.post_routes ?? [])]) {
   else for (const id of route.anchors) if (!ids.get(target)?.has(id)) errors.push(`Legacy anchor missing: ${route.url}#${id}`);
 }
 const report = { generated_at: new Date().toISOString(), html_pages: pages.length, rendered_links_checked: checked, errors };
-writeText('docs/audit/rendered-links.json', JSON.stringify(report, null, 2) + '\n');
+writeText(path.join(reportDirectory, 'rendered-links.json'), JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ pages: pages.length, checked, errors: errors.length }));
 if (errors.length) { console.error(errors.slice(0, 40).join('\n')); process.exitCode = 1; }

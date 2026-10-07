@@ -4,11 +4,9 @@ import crypto from 'node:crypto';
 import { ROOT, readJson, writeText, patternPath, resolvePattern } from './lib.mjs';
 import { readPage, validateSite } from './site-output.mjs';
 import { validatePatternDates } from './content-metadata.mjs';
+import { readSiteConfig, legacySitePath } from './site-config.mjs';
 
-const site = path.join(ROOT, '_site');
-const config = fs.readFileSync(path.join(ROOT, '_config.yml'), 'utf8');
-const baseurl = /^baseurl:\s*(.*)$/m.exec(config)[1].trim();
-const origin = /^url:\s*(.*)$/m.exec(config)[1].trim();
+const { origin, baseurl, siteDirectory: site, reportDirectory } = readSiteConfig();
 const files = [];
 function walk(dir) {
   for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -54,10 +52,10 @@ for (const route of readJson('docs/audit/legacy-heading-targets.json').routes) {
   }
 }
 const migrations = legacy.original_patterns.flatMap(old => ['en', 'zh'].map(lang => {
-  const oldUrl = new URL(old[`detail_${lang}`], origin);
+  const oldUrl = new URL(old[`detail_${lang}`], 'https://wenbo97.github.io');
   const target = resolvePattern(old.id, catalog);
   const targetUrl = origin + baseurl + patternPath(target.id, lang);
-  const oldPageUrl = oldUrl.origin + oldUrl.pathname;
+  const oldPageUrl = origin + baseurl + legacySitePath(oldUrl.pathname);
   const page = byUrl.get(oldPageUrl) ?? byUrl.get(oldPageUrl + '/');
   const anchor = decodeURIComponent(oldUrl.hash.slice(1));
   if (!page || !page.ids.includes(anchor)) errors.push(`Legacy pattern anchor missing: ${oldUrl.href}`);
@@ -85,8 +83,9 @@ report.robots_check = { scope: 'Built project artifact text only; not live host-
   host_root_url: `${origin}/robots.txt`, published_artifact_url: `${origin}${baseurl}/robots.txt`,
   host_root_verified: false, notes: baseurl ? ['Subdirectory robots.txt is not the host robots file; verify the host root after release or submit the sitemap through existing properties.'] : [] };
 report.legacy_heading_mappings_checked = headingMappingsChecked;
-writeText('docs/audit/site-output-2026-10-06.json', JSON.stringify(report, null, 2) + '\n');
-writeText('.tools/polish-2026-10-06/site-manifest.json', JSON.stringify({ ...report, origin, baseurl,
+writeText(path.join(reportDirectory, 'site-output-2026-10-06.json'), JSON.stringify(report, null, 2) + '\n');
+const manifest = reportDirectory === 'docs/audit' ? '.tools/polish-2026-10-06/site-manifest.json' : path.join(reportDirectory, 'site-manifest.json');
+writeText(manifest, JSON.stringify({ ...report, origin, baseurl,
   shared_asset_hash: assetHash.digest('hex'), pages, migrations }, null, 2) + '\n');
 console.log(JSON.stringify({ ...report, errors: errors.slice(0, 20), error_count: errors.length }));
 if (errors.length) process.exitCode = 1;

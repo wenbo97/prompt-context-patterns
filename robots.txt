@@ -1,4 +1,8 @@
+---
+layout: null
+sitemap: false
+---
 User-agent: *
 Allow: /
 
-Sitemap: https://wenbo97.github.io/prompt-context-patterns/sitemap.xml
+Sitemap: {{ '/sitemap.xml' | absolute_url }}

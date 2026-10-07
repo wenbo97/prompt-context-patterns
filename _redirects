@@ -1,0 +1,5 @@
+# Accept old project prefixes copied onto the new domain.
+# Requests to wenbo97.github.io still require a separate GitHub-side migration.
+/prompt-context-patterns / 301
+/prompt-context-patterns/ / 301
+/prompt-context-patterns/* /:splat 301

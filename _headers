@@ -1,0 +1,5 @@
+# The temporary workers.dev host is a preview, not the public search entry.
+https://:worker.:account.workers.dev/*
+  X-Robots-Tag: noindex
+https://:version.:worker.:account.workers.dev/*
+  X-Robots-Tag: noindex

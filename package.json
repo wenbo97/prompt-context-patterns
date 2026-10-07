@@ -16,10 +16,14 @@
     "check:site": "node scripts/catalog/check-site.mjs",
     "check:dates": "bundle exec ruby tests/sitemap-dates.rb",
     "test:e2e": "playwright test",
+    "build:cloudflare": "bundle exec jekyll build --config _config.yml,_config.cloudflare.yml",
+    "check:cloudflare": "node scripts/deployment/cloudflare.mjs check",
+    "test:e2e:cloudflare": "node scripts/deployment/cloudflare.mjs e2e",
     "preview": "bundle exec jekyll serve --host 127.0.0.1 --port 4000"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.63.0",
+    "yaml": "2.9.1"
   }
 }

@@ -4,6 +4,7 @@ require 'rexml/document'
 require 'json'
 
 root = File.expand_path('..', __dir__)
+config_files = ENV.fetch('JEKYLL_CONFIG', '_config.yml').split(',').map { |file| File.join(root, file.strip) }
 patterns = JSON.parse(File.read(File.join(root, '_data/patterns.json'), encoding: 'utf-8'))
 active_paths = patterns.select { |row| row['status'] == 'active' }.flat_map do |row|
   ["/catalog/patterns/#{row['id']}/", "/catalog/patterns/#{row['id']}-zh/"]
@@ -11,7 +12,7 @@ end
 
 Dir.mktmpdir('pattern-sitemap-dates-') do |directory|
   results = ['2001-01-01 12:00:00 +0000', '2002-02-02 12:00:00 +0000'].each_with_index.map do |time, index|
-    config = Jekyll.configuration('source' => root, 'destination' => File.join(directory, index.to_s),
+    config = Jekyll.configuration('config' => config_files, 'source' => root, 'destination' => File.join(directory, index.to_s),
                                   'time' => time, 'quiet' => true, 'future' => true)
     Jekyll::Site.new(config).process
     xml = REXML::Document.new(File.read(File.join(config['destination'], 'sitemap.xml')))

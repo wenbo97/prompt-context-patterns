@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
+import { base } from './site-settings.mjs';
 
 test('stable three-digit IDs remain readable on both complete indexes at all widths', async ({ page }) => {
   for (const width of [375, 768, 1280]) {
@@ -70,7 +71,7 @@ test('legacy numbered subheadings retain their parent method and global headings
   await expect(page).toHaveURL(/\/catalog\/index-zh\/$/);
   const context = await browser.newContext({ javaScriptEnabled: false });
   const staticPage = await context.newPage();
-  await staticPage.goto('http://127.0.0.1:4000/prompt-context-patterns/' + route);
+  await staticPage.goto(base + route);
   await expect(staticPage.locator('[id="5-步-eval-流程"] a')).toHaveAttribute('href', /\/patterns\/119-zh\/$/);
   await expect(staticPage.locator('[id="跨领域观察"] a')).toHaveAttribute('href', /\/catalog\/index-zh\/$/);
   await context.close();
@@ -97,7 +98,7 @@ test('detail navigation uses existing bilingual anchors and stays usable on narr
 test('detail navigation remains native when JavaScript is disabled', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 375, height: 900 } });
   const page = await context.newPage();
-  await page.goto('http://127.0.0.1:4000/prompt-context-patterns/catalog/patterns/23-zh/');
+  await page.goto(base + 'catalog/patterns/23-zh/');
   await page.getByRole('navigation', { name: '本页导航' }).getByRole('link', { name: '验证', exact: true }).press('Enter');
   await expect(page.locator('[id="如何验证"]')).toBeInViewport();
   await context.close();

@@ -11,6 +11,7 @@ vendor/
 .bundle/
 node_modules/
 .tools/
+.wrangler/
 premium-audit.json
 playwright-report/
 test-results/

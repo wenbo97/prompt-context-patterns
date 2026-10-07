@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
+import { base, baseurl } from './site-settings.mjs';
 
 // Exercise integrated content as well as the established reference page.
 const additions = JSON.parse(fs.readFileSync('_data/patterns.json', 'utf8'))
@@ -92,9 +93,9 @@ test('Chinese composition does not commit incomplete search text', async ({ page
 
 test('static fallback and old fragment entry remain usable without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false }); const page = await context.newPage();
-  await page.goto('http://127.0.0.1:4000/prompt-context-patterns/catalog/browse/');
+  await page.goto(base + 'catalog/browse/');
   await expect(page.locator('noscript a').first()).toHaveAttribute('href', /catalog-index/);
-  await page.goto('http://127.0.0.1:4000/prompt-context-patterns/catalog/categories/patterns-execution-control/#pattern-8-confirmation-gates--human-in-the-loop');
+  await page.goto(base + 'catalog/categories/patterns-execution-control/#pattern-8-confirmation-gates--human-in-the-loop');
   await expect(page.locator('[id="pattern-8-confirmation-gates--human-in-the-loop"] a')).toHaveAttribute('href', /patterns\/8/);
   await context.close();
 });
@@ -119,7 +120,7 @@ test('localized category navigation and source versions lead to their exact targ
   const row = page.locator('tbody tr').first();
   await expect(row.locator('.english-name')).toHaveText(first.name_en);
   const category = row.locator('td').nth(2).getByRole('link');
-  await expect(category).toHaveAttribute('href', `/prompt-context-patterns/topics/${first.category}-zh/`);
+  await expect(category).toHaveAttribute('href', `${baseurl}/topics/${first.category}-zh/`);
   await category.click();
   await expect(page).toHaveURL(new RegExp(`topics/${first.category}-zh/`));
   await page.goto('catalog/patterns/1-zh/');
@@ -180,7 +181,7 @@ test('topic cards open details from title, English name and blank area while cur
 test('topic card hit areas work at mobile width without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 375, height: 900 } });
   const page = await context.newPage();
-  await page.goto('http://127.0.0.1:4000/prompt-context-patterns/topics/prompt-zh/');
+  await page.goto(base + 'topics/prompt-zh/');
   const card = page.locator('.pattern-card').filter({ has: page.locator('.record-id', { hasText: /^P25$/ }) });
   await card.scrollIntoViewIfNeeded();
   const box = await card.boundingBox();

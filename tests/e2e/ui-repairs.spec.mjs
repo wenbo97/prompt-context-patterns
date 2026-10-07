@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
+import { base, siteOrigin, siteDirectory } from './site-settings.mjs';
 
 const patterns = JSON.parse(fs.readFileSync('_data/patterns.json', 'utf8'));
 const active = patterns.filter(pattern => pattern.status === 'active');
-const base = 'http://127.0.0.1:4000/prompt-context-patterns/';
 const titleOf = file => /^title:\s*(.+)$/m.exec(fs.readFileSync(file, 'utf8'))[1].trim().replace(/^["']|["']$/g, '');
 const center = async locator => {
   await locator.scrollIntoViewIfNeeded();
@@ -163,7 +163,6 @@ test('bad and good examples have explicit red and green markers without JavaScri
 });
 
 test('built pages preserve external-link policy and every bilingual example marker', () => {
-  const siteOrigin = 'https://wenbo97.github.io';
   const misses = [];
   const inspect = directory => {
     for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -183,10 +182,10 @@ test('built pages preserve external-link policy and every bilingual example mark
       }
     }
   };
-  inspect('_site');
+  inspect(siteDirectory);
   expect(misses).toEqual([]);
   for (const p of active) for (const suffix of ['', '-zh']) {
-    const html = fs.readFileSync(`_site/catalog/patterns/${p.id}${suffix}/index.html`, 'utf8');
+    const html = fs.readFileSync(`${siteDirectory}/catalog/patterns/${p.id}${suffix}/index.html`, 'utf8');
     const classes = [...html.matchAll(/<(?:pre|div)\b[^>]*class="([^"]*)"/g)].flatMap(match => match[1].split(/\s+/));
     expect(classes, `P${p.id}${suffix} examples`).toContain('example--bad');
     expect(classes, `P${p.id}${suffix} examples`).toContain('example--good');

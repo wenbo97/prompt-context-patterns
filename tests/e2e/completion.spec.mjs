@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { baseurl } from './site-settings.mjs';
 
 const messages = {
   en: { loading: 'Loading patterns…', error: 'Pattern data could not be loaded.', retry: 'Try again', html: 'en', index: '/catalog/catalog-index/' },
@@ -33,7 +34,7 @@ for (const initial of ['en', 'zh']) test(`failed data feedback switches from ${i
   await page.locator(`#pb-lang [data-lang=${next}]`).click();
   await expect(page.locator('#error-text')).toHaveText(messages[next].error);
   await expect(page.locator('#retry-load')).toHaveText(messages[next].retry);
-  await expect(page.locator('#static-index')).toHaveAttribute('href', '/prompt-context-patterns' + messages[next].index);
+  await expect(page.locator('#static-index')).toHaveAttribute('href', baseurl + messages[next].index);
   await page.goBack();
   await expect(page.locator('#error-text')).toHaveText(messages[initial].error);
   await page.goForward();
@@ -65,7 +66,7 @@ for (const status of ['loading', 'error']) test(`Back restores remembered langua
     await page.goBack();
     await expect(page.locator('html')).toHaveAttribute('lang', messages.zh.html);
     await expect(feedback).toHaveText(messages.zh[status === 'error' ? 'error' : 'loading']);
-    await expect(page.locator('#static-index')).toHaveAttribute('href', '/prompt-context-patterns' + messages.zh.index);
+    await expect(page.locator('#static-index')).toHaveAttribute('href', baseurl + messages.zh.index);
     await page.goForward();
     await expect(page.locator('html')).toHaveAttribute('lang', messages.en.html);
     await expect(feedback).toHaveText(messages.en[status === 'error' ? 'error' : 'loading']);

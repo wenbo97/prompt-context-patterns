@@ -1,0 +1,8 @@
+url: https://patternnotes.dev
+baseurl: ''
+destination: .tools/cloudflare-site
+audit_report_directory: .tools/cloudflare-audit
+external_fonts: false
+include:
+  - _headers
+  - _redirects

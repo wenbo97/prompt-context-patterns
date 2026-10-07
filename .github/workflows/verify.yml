@@ -2,6 +2,10 @@ name: Verify reviewed catalog
 
 on:
   workflow_call:
+    inputs:
+      cloudflare:
+        type: boolean
+        default: false
   pull_request:
   push:
     branches: [master, 'rebuild/**']
@@ -13,6 +17,9 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+      JEKYLL_CONFIG: ${{ inputs.cloudflare && '_config.yml,_config.cloudflare.yml' || '_config.yml' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,12 +42,21 @@ jobs:
       - run: bundle exec ruby tests/liquid-literals.rb
       - run: npm --prefix eval/patternfoo test
       - run: npm --prefix eval/patternfoo run build
-      - run: bundle exec jekyll build
+      - run: bundle exec jekyll build --config "$JEKYLL_CONFIG"
       - run: npm run check:links
       - run: npm run check:site
       - run: npm run check:dates
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - if: ${{ inputs.cloudflare }}
+        run: npm run check:cloudflare
+      - if: ${{ inputs.cloudflare }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-site
+          path: .tools/cloudflare-site
+          include-hidden-files: true
+          if-no-files-found: error
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -48,4 +64,5 @@ jobs:
           path: |
             docs/audit/catalog-validation.json
             docs/audit/rendered-links.json
+            .tools/cloudflare-audit/
             test-results/
