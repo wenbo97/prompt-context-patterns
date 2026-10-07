@@ -59,5 +59,7 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-155-plugin-lifecycle-state-machine-插件生命周期状态机" data-target="{{ '/catalog/patterns/155-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/155-zh/' | relative_url }}">pattern-155-plugin-lifecycle-state-machine-插件生命周期状态机 → 停用旧能力时提供迁移路径</a></li>
 <li id="正面示例-15" data-target="{{ '/catalog/patterns/155-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/155-zh/' | relative_url }}">正面示例-15 → 停用旧能力时提供迁移路径</a></li>
 <li id="反面示例-15" data-target="{{ '/catalog/patterns/155-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/155-zh/' | relative_url }}">反面示例-15 → 停用旧能力时提供迁移路径</a></li>
+<li id="pattern-153-marketplace-source-type-polymorphism-sha-pinned" data-target="{{ '/catalog/patterns/153-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/153-zh/' | relative_url }}">pattern-153-marketplace-source-type-polymorphism-sha-pinned → 锁定不同来源的安装版本</a></li>
+<li id="pattern-155-plugin-lifecycle-state-machine" data-target="{{ '/catalog/patterns/155-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/155-zh/' | relative_url }}">pattern-155-plugin-lifecycle-state-machine → 停用旧能力时提供迁移路径</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

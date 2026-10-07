@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 {% assign zh = false %}{% if page.lang == 'zh' %}{% assign zh = true %}{% endif %}
-{% assign record = site.data.patterns | where: 'id', page.pattern_id | first %}
+{% assign record = nil %}{% if page.pattern_id %}{% assign record = site.data.patterns | where: 'id', page.pattern_id | first %}{% endif %}
 {% assign page_title = page.title | default: site.title %}{% assign page_description = page.description | default: site.description %}
-{% if record %}{% if zh %}{% assign page_title = record.name_zh %}{% assign page_description = record.summary_zh %}{% else %}{% assign page_title = record.name_en %}{% assign page_description = record.summary_en %}{% endif %}{% endif %}
+{% if record %}{% if zh %}{% assign page_title = record.name_zh | default: page_title %}{% assign page_description = record.summary_zh | default: record.reason_zh | default: page_description %}{% else %}{% assign page_title = record.name_en | default: page_title %}{% assign page_description = record.summary_en | default: record.reason_en | default: page_description %}{% endif %}{% endif %}
 {% assign canonical = page.canonical_url | default: page.url %}
 {% assign alternate = page.alternate_url %}
 {% if alternate == nil and page.layout == 'post' %}
@@ -16,7 +16,7 @@
   <meta name="description" content="{{ page_description | escape }}">
   <link rel="canonical" href="{{ canonical | absolute_url }}">
   {% if page.robots %}<meta name="robots" content="{{ page.robots | escape }}">{% endif %}
-  {% if alternate %}<link rel="alternate" hreflang="{% if zh %}zh-CN{% else %}en{% endif %}" href="{{ page.url | absolute_url }}"><link rel="alternate" hreflang="{% if zh %}en{% else %}zh-CN{% endif %}" href="{{ alternate | absolute_url }}">{% endif %}
+  {% if alternate and page.hreflang != false %}<link rel="alternate" hreflang="{% if zh %}zh-CN{% else %}en{% endif %}" href="{{ page.url | absolute_url }}"><link rel="alternate" hreflang="{% if zh %}en{% else %}zh-CN{% endif %}" href="{{ alternate | absolute_url }}">{% endif %}
   <meta property="og:type" content="article"><meta property="og:title" content="{{ page_title | escape }}"><meta property="og:description" content="{{ page_description | escape }}"><meta property="og:url" content="{{ canonical | absolute_url }}">
   <meta name="google-site-verification" content="{{ site.google_site_verification }}">
   <meta name="msvalidate.01" content="16475672FB4F5E9165B614DFF8F69409">
@@ -29,6 +29,6 @@
   <a class="skip-link" href="#main" data-i18n-en="Skip to content" data-i18n-zh="跳到正文">{% if zh %}跳到正文{% else %}Skip to content{% endif %}</a>
   {% include header.html %}
   <main id="main"><div class="wrapper">{{ content }}</div></main>
-  <footer class="site-footer"><div class="wrapper footer-inner"><span data-i18n-en="Prompt &amp; Context Patterns · Use cases, contrasts, limits and evidence" data-i18n-zh="Prompt &amp; Context Patterns · 场景、对照、边界与证据">Prompt &amp; Context Patterns · {% if zh %}场景、对照、边界与证据{% else %}Use cases, contrasts, limits and evidence{% endif %}</span><a href="https://github.com/wenbo97/prompt-context-patterns">GitHub</a></div></footer>
+  <footer class="site-footer"><div class="wrapper footer-inner"><span data-i18n-en="Prompt &amp; Context Patterns · Use cases, contrasts, limits and evidence" data-i18n-zh="Prompt &amp; Context Patterns · 场景、对照、边界与证据">Prompt &amp; Context Patterns · {% if zh %}场景、对照、边界与证据{% else %}Use cases, contrasts, limits and evidence{% endif %}</span><a href="https://github.com/wenbo97/prompt-context-patterns" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
 </body>
 </html>

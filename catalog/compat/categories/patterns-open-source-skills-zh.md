@@ -117,18 +117,18 @@ canonical_url: "/catalog/index-zh/"
 <li id="生效原因--模型恰好加载正确的文档子集python-用户构建简单分类器加载-100-行typescript-用户构建自主-agent-加载-400-行两者都不加载完整的-2000-行语料库" data-target="{{ '/catalog/patterns/100-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/100-zh/' | relative_url }}">生效原因--模型恰好加载正确的文档子集python-用户构建简单分类器加载-100-行typescript-用户构建自主-agent-加载-400-行两者都不加载完整的-2000-行语料库 → 按需展开详细内容</a></li>
 <li id="pattern-119-eval-driven-skill-improvement-loop" data-target="{{ '/catalog/patterns/119-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/119-zh/' | relative_url }}">pattern-119-eval-driven-skill-improvement-loop → 通过评测迭代 Skill</a></li>
 <li id="概念-19" data-target="{{ '/catalog/patterns/119-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/119-zh/' | relative_url }}">概念-19 → 通过评测迭代 Skill</a></li>
-<li id="5-步-eval-流程" data-target="{{ '/catalog/patterns/5-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/5-zh/' | relative_url }}">5-步-eval-流程 → 为 Agent 指定角色和职责</a></li>
-<li id="反面示例手动抽查" data-target="{{ '/catalog/patterns/5-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/5-zh/' | relative_url }}">反面示例手动抽查 → 为 Agent 指定角色和职责</a></li>
-<li id="生效原因--评估套件捕获手动测试遗漏的回退多-agent-架构executorgraderanalyzer防止自我评估偏差" data-target="{{ '/catalog/patterns/5-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/5-zh/' | relative_url }}">生效原因--评估套件捕获手动测试遗漏的回退多-agent-架构executorgraderanalyzer防止自我评估偏差 → 为 Agent 指定角色和职责</a></li>
+<li id="5-步-eval-流程" data-target="{{ '/catalog/patterns/119-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/119-zh/' | relative_url }}">5-步-eval-流程 → 通过评测迭代 Skill</a></li>
+<li id="反面示例手动抽查" data-target="{{ '/catalog/patterns/119-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/119-zh/' | relative_url }}">反面示例手动抽查 → 通过评测迭代 Skill</a></li>
+<li id="生效原因--评估套件捕获手动测试遗漏的回退多-agent-架构executorgraderanalyzer防止自我评估偏差" data-target="{{ '/catalog/patterns/119-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/119-zh/' | relative_url }}">生效原因--评估套件捕获手动测试遗漏的回退多-agent-架构executorgraderanalyzer防止自我评估偏差 → 通过评测迭代 Skill</a></li>
 <li id="pattern-120-non-anthropic-provider-guard" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">pattern-120-non-anthropic-provider-guard → 明确 Skill 的触发条件</a></li>
 <li id="概念-20" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">概念-20 → 明确 Skill 的触发条件</a></li>
 <li id="正面示例提供商检测--提前退出" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">正面示例提供商检测--提前退出 → 明确 Skill 的触发条件</a></li>
 <li id="反面示例无提供商检查" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">反面示例无提供商检查 → 明确 Skill 的触发条件</a></li>
 <li id="生效原因--带有自动检测agent-无需依赖用户知道-skill-何时适用提前退出防止模型尝试不适合的转换避免浪费-token-并产出错误输出" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">生效原因--带有自动检测agent-无需依赖用户知道-skill-何时适用提前退出防止模型尝试不适合的转换避免浪费-token-并产出错误输出 → 明确 Skill 的触发条件</a></li>
-<li id="跨领域观察" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">跨领域观察 → 明确 Skill 的触发条件</a></li>
-<li id="各仓库的模式分布" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">各仓库的模式分布 → 明确 Skill 的触发条件</a></li>
-<li id="质量梯度" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">质量梯度 → 明确 Skill 的触发条件</a></li>
-<li id="设计哲学差异" data-target="{{ '/catalog/patterns/13-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/13-zh/' | relative_url }}">设计哲学差异 → 明确 Skill 的触发条件</a></li>
+<li id="跨领域观察" data-target="{{ '/catalog/index-zh/' | relative_url }}"><a href="{{ '/catalog/index-zh/' | relative_url }}">跨领域观察 → 当前目录</a></li>
+<li id="各仓库的模式分布" data-target="{{ '/catalog/index-zh/' | relative_url }}"><a href="{{ '/catalog/index-zh/' | relative_url }}">各仓库的模式分布 → 当前目录</a></li>
+<li id="质量梯度" data-target="{{ '/catalog/index-zh/' | relative_url }}"><a href="{{ '/catalog/index-zh/' | relative_url }}">质量梯度 → 当前目录</a></li>
+<li id="设计哲学差异" data-target="{{ '/catalog/index-zh/' | relative_url }}"><a href="{{ '/catalog/index-zh/' | relative_url }}">设计哲学差异 → 当前目录</a></li>
 <li id="pattern-143-pre-set-catalog-with-generate-on-the-fly-fallback" data-target="{{ '/catalog/patterns/143-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/143-zh/' | relative_url }}">pattern-143-pre-set-catalog-with-generate-on-the-fly-fallback → 优先使用预设，缺少时再生成</a></li>
 <li id="pattern-143-pre-set-catalog-with-generate-on-the-fly-fallback预设目录--即时生成兜底" data-target="{{ '/catalog/patterns/143-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/143-zh/' | relative_url }}">pattern-143-pre-set-catalog-with-generate-on-the-fly-fallback预设目录--即时生成兜底 → 优先使用预设，缺少时再生成</a></li>
 <li id="概念-21" data-target="{{ '/catalog/patterns/143-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/143-zh/' | relative_url }}">概念-21 → 优先使用预设，缺少时再生成</a></li>

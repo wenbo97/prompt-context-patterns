@@ -4,13 +4,13 @@ layout: default
 {% assign zh = false %}{% if page.lang == 'zh' %}{% assign zh = true %}{% endif %}
 {% if zh %}{% assign suffix = '-zh' %}{% assign catalog_url = '/catalog/index-zh/' %}{% else %}{% assign suffix = '' %}{% assign catalog_url = '/catalog/' %}{% endif %}
 <section class="hero">
-  <div><span class="eyebrow">{% if zh %}提示词 · 上下文 · Agent 工作流{% else %}PROMPTS · CONTEXT · AGENT WORKFLOWS{% endif %}</span><h1>{% if zh %}找到方法。看懂差异。核对出处。{% else %}Find the method.<br>See the difference.<br>Check the source.{% endif %}</h1>
-  <p class="lead">{% if zh %}从公开的 Agent Skills 中整理的实用方法。每篇说明适合什么任务、怎么写、为什么这样写，并提供原文链接。{% else %}An engineering reference extracted from real skills. Each method starts with a use case, then shows contrasting examples, limits and provenance.{% endif %}</p>
+  <div><span class="eyebrow">{% if zh %}提示词 · 上下文 · Agent 工作流{% else %}PROMPTS · CONTEXT · AGENT WORKFLOWS{% endif %}</span><h1>{% if zh %}<span>提示词与上下文方法</span><span>具体做法与对照示例</span>{% else %}<span>Prompt &amp; context patterns</span><span>Steps and examples</span>{% endif %}</h1>
+  <p class="lead">{% if zh %}整理公开 Agent Skills 中的实用方法，结合具体任务、操作步骤和正反例说明如何应用，并提供检查方法、适用边界与原文链接。{% else %}Practical methods from public agent skills, explained through tasks, instructions and contrasting examples, with checks, limits and links to the source.{% endif %}</p>
   <div class="hero-actions"><a class="button" href="{{ '/catalog/browse/' | relative_url }}{% if zh %}?lang=zh{% endif %}">{% if zh %}搜索方法{% else %}Find a pattern{% endif %}</a><a class="button secondary" href="{{ catalog_url | relative_url }}">{% if zh %}按分类阅读{% else %}Read by theme{% endif %}</a></div></div>
   <div class="hero-demo" aria-label="{% if zh %}同一任务的两种写法{% else %}Same-task teaching comparison{% endif %}">
     <div class="demo-row"><span class="eyebrow">{% if zh %}场景{% else %}USE CASE{% endif %}</span><p>{% if zh %}需要找出配置修改为何没有生效。{% else %}Find why a configuration change had no effect.{% endif %}</p></div>
-    <div class="demo-row"><span class="eyebrow">{% if zh %}反例 · 缺少线索{% else %}BAD · MISSING EVIDENCE{% endif %}</span><p><code>{% if zh %}配置坏了。帮我修好。{% else %}The configuration is broken. Fix it.{% endif %}</code></p></div>
-    <div class="demo-row"><span class="eyebrow">{% if zh %}改进 · 明确下一步{% else %}GOOD · BOUNDED NEXT STEP{% endif %}</span><p><code>{% if zh %}读取加载器和配置文件，报告实际使用的路径。先定位差异，再提出改动。{% else %}Read the loader and config. Report the path actually loaded. Locate the mismatch before proposing a change.{% endif %}</code></p></div>
+    <div class="demo-row example--bad"><span class="eyebrow">{% if zh %}反例 · 缺少线索{% else %}BAD · MISSING EVIDENCE{% endif %}</span><p><code>{% if zh %}配置坏了。帮我修好。{% else %}The configuration is broken. Fix it.{% endif %}</code></p></div>
+    <div class="demo-row example--good"><span class="eyebrow">{% if zh %}改进 · 明确下一步{% else %}GOOD · BOUNDED NEXT STEP{% endif %}</span><p><code>{% if zh %}读取加载器和配置文件，报告实际使用的路径。先定位差异，再提出改动。{% else %}Read the loader and config. Report the path actually loaded. Locate the mismatch before proposing a change.{% endif %}</code></p></div>
   </div>
 </section>
 <section><div class="section-heading"><h2>{% if zh %}按分类查找{% else %}Choose a theme from your problem{% endif %}</h2><span class="post-meta">{{ site.data.catalog_stats.active }} {% if zh %}个方法{% else %}active entries{% endif %}</span></div>

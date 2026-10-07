@@ -31,5 +31,7 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-148-反表演性同意词汇禁令" data-target="{{ '/catalog/patterns/148-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/148-zh/' | relative_url }}">pattern-148-反表演性同意词汇禁令 → 避免空泛附和</a></li>
 <li id="正面示例-6" data-target="{{ '/catalog/patterns/148-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/148-zh/' | relative_url }}">正面示例-6 → 避免空泛附和</a></li>
 <li id="反面示例-6" data-target="{{ '/catalog/patterns/148-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/148-zh/' | relative_url }}">反面示例-6 → 避免空泛附和</a></li>
+<li id="pattern-145-iron-law-inviolable-rule-framing" data-target="{{ '/catalog/patterns/145-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/145-zh/' | relative_url }}">pattern-145-iron-law-inviolable-rule-framing → 让必须验证的要求足够明确</a></li>
+<li id="pattern-148-anti-performative-agreement-vocabulary-ban" data-target="{{ '/catalog/patterns/148-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/148-zh/' | relative_url }}">pattern-148-anti-performative-agreement-vocabulary-ban → 避免空泛附和</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

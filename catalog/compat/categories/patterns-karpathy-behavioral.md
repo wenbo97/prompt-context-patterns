@@ -17,8 +17,8 @@ canonical_url: "/catalog/"
 <li id="pattern-k4-goal-driven-execution-verify-per-step" data-target="{{ '/catalog/patterns/289/' | relative_url }}"><a href="{{ '/catalog/patterns/289/' | relative_url }}">pattern-k4-goal-driven-execution-verify-per-step → Reformulate tasks as observable goals</a></li>
 <li id="meta-pattern-k5-narrate-the-llms-mistake-path" data-target="{{ '/catalog/patterns/25/' | relative_url }}"><a href="{{ '/catalog/patterns/25/' | relative_url }}">meta-pattern-k5-narrate-the-llms-mistake-path → Few-Shot Examples</a></li>
 <li id="karpathy-style-negative-example-more-effective" data-target="{{ '/catalog/patterns/25/' | relative_url }}"><a href="{{ '/catalog/patterns/25/' | relative_url }}">karpathy-style-negative-example-more-effective → Few-Shot Examples</a></li>
-<li id="adoption-checklist" data-target="{{ '/catalog/patterns/25/' | relative_url }}"><a href="{{ '/catalog/patterns/25/' | relative_url }}">adoption-checklist → Few-Shot Examples</a></li>
-<li id="summary-table" data-target="{{ '/catalog/patterns/25/' | relative_url }}"><a href="{{ '/catalog/patterns/25/' | relative_url }}">summary-table → Few-Shot Examples</a></li>
+<li id="adoption-checklist" data-target="{{ '/catalog/' | relative_url }}"><a href="{{ '/catalog/' | relative_url }}">adoption-checklist → Current catalog</a></li>
+<li id="summary-table" data-target="{{ '/catalog/' | relative_url }}"><a href="{{ '/catalog/' | relative_url }}">summary-table → Current catalog</a></li>
 <li id="pattern-k6-goal-reformulation-to-verifiable-test" data-target="{{ '/catalog/patterns/289/' | relative_url }}"><a href="{{ '/catalog/patterns/289/' | relative_url }}">pattern-k6-goal-reformulation-to-verifiable-test → Reformulate tasks as observable goals</a></li>
 <li id="reformulation-table" data-target="{{ '/catalog/patterns/289/' | relative_url }}"><a href="{{ '/catalog/patterns/289/' | relative_url }}">reformulation-table → Reformulate tasks as observable goals</a></li>
 <li id="procedure" data-target="{{ '/catalog/patterns/289/' | relative_url }}"><a href="{{ '/catalog/patterns/289/' | relative_url }}">procedure → Reformulate tasks as observable goals</a></li>

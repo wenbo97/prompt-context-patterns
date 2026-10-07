@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name_en": "YAML Frontmatter Metadata",
-    "name_zh": "Skill 元信息（YAML frontmatter）",
+    "name_en": "Name a Skill and describe when to use it",
+    "name_zh": "写清 Skill 的名称和触发条件",
     "status": "active",
     "category": "skill-authoring",
-    "summary_en": "Declare a skill's identity and activation conditions in machine-readable metadata.",
-    "summary_zh": "在 Skill 文件开头写明名称和用途，让支持这种格式的 Agent 能识别并调用它。",
+    "summary_en": "Describe a Skill’s task and activation conditions, then distinguish metadata parsing from host selection checks.",
+    "summary_zh": "在 Skill 元信息中说明任务与触发条件，再分别检查格式解析和宿主选择。",
     "tags": [
       "legacy-reviewed",
       "teaching-example",
@@ -322,8 +322,8 @@
     "name_zh": "关键操作前确认授权",
     "status": "active",
     "category": "safety",
-    "summary_en": "Place human approval at a concrete authorization boundary.",
-    "summary_zh": "在需要用户授权的具体步骤前停下来确认。",
+    "summary_en": "Prepare a reviewable operation, check authorization for its concrete consequences, then execute and verify its state.",
+    "summary_zh": "先准备可审阅的操作，再核对授权是否覆盖具体后果，最后执行并确认状态。",
     "tags": [
       "legacy-reviewed",
       "teaching-example",
@@ -1102,8 +1102,8 @@
     "name_zh": "按需读取参考文件",
     "status": "active",
     "category": "context",
-    "summary_en": "Point to a precise reference or asset and state when it must be loaded.",
-    "summary_zh": "提供准确的资料路径，并说明应该在任务的哪一步读取。",
+    "summary_en": "Load a named reference at the step that needs it, match an explicit key and cite the record; keep missing-data work pending.",
+    "summary_zh": "在需要资料的步骤读取指定文件，按明确的键查找并引用记录；缺失时保持未完成。",
     "tags": [
       "legacy-reviewed",
       "teaching-example",
@@ -2144,6 +2144,18 @@
     "trace_status": "traceable",
     "origin_status": "unknown",
     "sources": [
+      {
+        "repo": "mattpocock/skills",
+        "commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+        "path": "skills/engineering/code-review/SKILL.md",
+        "start_line": 6,
+        "end_line": 11,
+        "section": "Independent Standards and Spec contexts",
+        "license": "MIT",
+        "license_path": "LICENSE",
+        "role": "observed-example",
+        "url": "https://github.com/mattpocock/skills/blob/d81f3a183412e71a5b1e84ca21bc1a35eea03a60/skills/engineering/code-review/SKILL.md#L6-L11"
+      },
       {
         "repo": "affaan-m/ECC",
         "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
@@ -3207,7 +3219,7 @@
     "name_zh": "协调者只分工，不直接处理数据",
     "status": "active",
     "category": "safety",
-    "summary_en": "Minimize sensitive data before it reaches model context.",
+    "summary_en": "Delegate raw data access to bounded roles and keep the orchestrator focused on coordination and minimal results.",
     "summary_zh": "让协调 Agent 分配任务和汇总结果，由专门角色读取和修改数据。",
     "tags": [
       "legacy-reviewed",
@@ -4133,7 +4145,7 @@
     "name_zh": "明确哪些字段可以修改",
     "status": "active",
     "category": "output",
-    "summary_en": "Replace recurring vague wording using an explicit, domain-aware style table.",
+    "summary_en": "Declare editable fields and contextual substitutions while preserving protected facts and identifiers.",
     "summary_zh": "列出可修改字段及允许的替换方式，保护不能改动的内容。",
     "tags": [
       "legacy-reviewed",
@@ -8659,7 +8671,7 @@
     "status": "active",
     "category": "evaluation",
     "summary_en": "Distinguish tool presence, feasible execution and observed execution in reports.",
-    "summary_zh": "明确工具是否执行、是否成功，以及是否完成了实际任务。",
+    "summary_zh": "区分工具是否存在、可运行及实际运行，并另记执行结果和任务覆盖。",
     "tags": [
       "legacy-reviewed",
       "teaching-example",
@@ -11505,9 +11517,9 @@
     "key": "composio-truncation-with-continuation",
     "status": "active",
     "name_en": "Explicit continuation contract",
-    "name_zh": "为未完成的任务写清续接位置",
-    "summary_en": "Represent incomplete work with an explicit continuation state: an opaque service cursor for API records, or a self-authored pointer to the next complete generated unit.",
-    "summary_zh": "分页任务保存服务游标，生成任务记录下一完整单元的位置。",
+    "name_zh": "写清未完成任务的续接位置",
+    "summary_en": "Preserve service cursors for paginated APIs and complete-unit boundaries for generated documents; distinguish partial results from completion.",
+    "summary_zh": "接口分页原样保存服务游标，文档续写记录最后完整单元，明确区分部分结果与完成。",
     "category": "context",
     "tags": [
       "context",
@@ -16473,15 +16485,15 @@
         "repo": "mattpocock/skills",
         "commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
         "path": "skills/engineering/codebase-design/SKILL.md",
-        "line_start": 77,
-        "line_end": 100,
-        "section": "Deletion probe before abstraction",
+        "line_start": 62,
+        "line_end": 65,
+        "section": "Principles: the deletion test",
         "license": "MIT",
         "license_path": "LICENSE",
         "role": "observed-example",
-        "url": "https://github.com/mattpocock/skills/blob/d81f3a183412e71a5b1e84ca21bc1a35eea03a60/skills/engineering/codebase-design/SKILL.md#L77-L100",
-        "start_line": 77,
-        "end_line": 100
+        "url": "https://github.com/mattpocock/skills/blob/d81f3a183412e71a5b1e84ca21bc1a35eea03a60/skills/engineering/codebase-design/SKILL.md#L62-L65",
+        "start_line": 62,
+        "end_line": 65
       }
     ],
     "related_ids": [],
@@ -17518,9 +17530,9 @@
     "key": "core-nextlevel-persisted-design-overrides",
     "status": "active",
     "name_en": "Persist a master design system with page-specific overrides",
-    "name_zh": "集中保存全局设计规则",
-    "summary_en": "Keep shared design rules in one project master and persist page-specific deviations separately for later retrieval.",
-    "summary_zh": "共享规则只维护一份，页面特有的差异另外记录，方便后续读取。",
+    "name_zh": "保存全局设计规则与页面差异",
+    "summary_en": "Maintain shared rules once and store page deviations separately, with explicit override, inheritance and missing-file handling.",
+    "summary_zh": "共享规则集中维护，页面只保存差异；读取时明确覆盖、继承和文件缺失的处理。",
     "category": "workflow",
     "tags": [
       "workflow",
@@ -21102,9 +21114,9 @@
     "key": "gstack-persona-grounded-peer-benchmarking",
     "status": "active",
     "name_en": "Persona-grounded peer benchmarking",
-    "name_zh": "按目标用户的真实旅程比较同类产品",
-    "summary_en": "Compare developer journeys only after naming the persona and the path from documented start to first understood useful result; keep estimated and unknown times explicit.",
-    "summary_zh": "先确定用户角色，再比较从文档入口到首次有效结果的路径，标明估计和未知用时。",
+    "name_zh": "按用户旅程比较同类产品",
+    "summary_en": "Define the persona and journey boundaries before comparing steps and evidence; retain estimates, unknowns and pending target choices.",
+    "summary_zh": "先确定用户和起止边界，再比较步骤与证据；估算、未知和待选择目标分别记录。",
     "category": "evaluation",
     "tags": [
       "developer-experience",

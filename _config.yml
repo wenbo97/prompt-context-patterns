@@ -56,6 +56,7 @@ exclude:
   - README.md
   - README-zh.md
   - premium-ui.json
+  - premium-audit.json
   - catalog/categories
   - catalog/techniques
   - catalog/standards

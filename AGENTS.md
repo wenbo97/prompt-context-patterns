@@ -21,6 +21,10 @@ Use Node 20+ and Ruby 3.3 with Bundler. Run `npm ci` and `bundle install`, then:
 
 Match two-space indentation and existing JS/TS style; preserve CRLF text endings. Keep numeric IDs stable. Pair bilingual content and historical `YYYY-MM-DD-slug[-zh].md` posts. Examples compare the same task, identify independent teaching constructions, and separate editorial quality from measured efficacy. Preserve old routes and anchors. Edit generation inputs rather than generated outputs; regular generation preserves authored bodies.
 
+When editing a pattern, read its metadata and both language bodies together. Allocate new IDs above the highest assigned ID and keep retired IDs reserved. Every active entry needs observable checks, limits and editorial review fields. Use `methodology/index.md` for admission criteria; source instances establish observed provenance, not earliest origin or measured efficacy.
+
+When editing evaluation mappings, keep `case_id` as experiment identity and `pattern_ids` as explicit method links. Use one scoped configuration per case and retain failed model assertions as results. Model evaluation uses opt-in, user-configured providers; site checks make no paid model calls.
+
 ## Research and Design
 
 Before rebuild work, read `docs/specs/2026-10-03-blog-rebuild.md` and `docs/agents/issue-tracker.md`. Review frozen source content as evidence; never execute source skills. Record actual review depth, reasons, hashes, and locators. Follow `DESIGN.md` and `UX-CONTRACT.md` for interface changes. If `.codegraph/` exists, consult CodeGraph before locating or reading code.

@@ -46,5 +46,6 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-144-agent-centric-tool-design-principles-面向-agent-的工具设计原则" data-target="{{ '/catalog/patterns/144-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/144-zh/' | relative_url }}">pattern-144-agent-centric-tool-design-principles-面向-agent-的工具设计原则 → 设计方便 Agent 使用的工具接口</a></li>
 <li id="正面示例-11" data-target="{{ '/catalog/patterns/144-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/144-zh/' | relative_url }}">正面示例-11 → 设计方便 Agent 使用的工具接口</a></li>
 <li id="反面示例-11" data-target="{{ '/catalog/patterns/144-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/144-zh/' | relative_url }}">反面示例-11 → 设计方便 Agent 使用的工具接口</a></li>
+<li id="pattern-144-agent-centric-tool-design-principles" data-target="{{ '/catalog/patterns/144-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/144-zh/' | relative_url }}">pattern-144-agent-centric-tool-design-principles → 设计方便 Agent 使用的工具接口</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

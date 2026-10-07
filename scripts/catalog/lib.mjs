@@ -12,6 +12,17 @@ export const CATEGORY_LABELS = {
   evaluation: ['Evaluation & feedback', '测试与评估'], safety: ['Safety & trust', '安全与权限'],
   'skill-authoring': ['Skill authoring', 'Skill 编写'],
 };
+export const CATEGORY_DESCRIPTIONS = {
+  prompt: ['Write instructions with explicit goals, useful constraints and same-task examples.', '通过明确目标、必要约束和同任务示例，写出可执行的提示词。'],
+  context: ['Select, retrieve and preserve the information needed to carry out a task.', '选择、读取和保存执行任务所需的资料，处理缺失信息与上下文续接。'],
+  workflow: ['Organize work into concrete steps, decisions, completion conditions and handoffs.', '把任务拆成具体步骤、判断和完成条件，说明未完成工作如何续接。'],
+  orchestration: ['Coordinate agents through clear responsibilities, inputs, boundaries and shared results.', '明确各个 Agent 的职责、输入、工作边界和结果交接方式。'],
+  tools: ['Choose and use tools with explicit inputs, inspectable results and failure handling.', '说明工具的选择条件、调用输入、结果检查和失败处理。'],
+  output: ['Specify output structures, required fields and checks that make results usable.', '约定结果的结构、必要字段和检查方式，让输出可读取、可使用。'],
+  evaluation: ['Design checks, compare results and use evidence to revise instructions or systems.', '设计检查与对照，根据可核对的结果改进指令或系统。'],
+  safety: ['Set permission, evidence and trust boundaries before consequential actions.', '在关键操作前明确授权范围、证据要求与不可信输入的处理边界。'],
+  'skill-authoring': ['Author discoverable skills with clear triggers, reusable instructions and maintainable references.', '写清 Skill 的触发条件、执行指令和参考资料，支持发现、复用与维护。'],
+};
 export const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 export function protectLiquid(text) {
   return '{% raw %}' + text.replace(/{%-?\s*endraw\s*-?%}/g,
@@ -86,12 +97,17 @@ export function validateCatalog(patterns) {
   return errors;
 }
 export function patternPath(id, lang = 'en') { return `/catalog/patterns/${id}${lang === 'zh' ? '-zh' : ''}/`; }
+export function scenarioText(section) {
+  // Search cards show the opening task, not supporting tables and fenced fixtures.
+  return section.trim().split(/\n\s*\n/)[0].replace(/`([^`]+)`/g, '$1')
+    .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1').replace(/\*\*([^*]+)\*\*/g, '$1').trim();
+}
 export function scenarioFromBody(id, lang) {
   const file = path.join(ROOT, '_patterns', `${id}.${lang}.md`);
   if (!fs.existsSync(file)) return '';
   const body = fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
   const heading = lang === 'zh' ? '使用场景' : 'Use case';
-  return (body.match(new RegExp(`^## ${heading}\\n+([\\s\\S]*?)(?=^## |(?![\\s\\S]))`, 'm'))?.[1] ?? '').trim();
+  return scenarioText(body.match(new RegExp(`^## ${heading}\\n+([\\s\\S]*?)(?=^## |(?![\\s\\S]))`, 'm'))?.[1] ?? '');
 }
 export function makeBrowserRecords(patterns, getScenario = scenarioFromBody) {
   return patterns.filter((p) => p.status === 'active').sort((a, b) => a.id - b.id).map((p) => ({

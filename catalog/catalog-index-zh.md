@@ -2,6 +2,7 @@
 layout: "catalog-index"
 lang: "zh"
 title: "方法总目录"
+description: "按稳定编号浏览 306 个方法，查看双语详情、分类和原文状态。"
 permalink: "/catalog/catalog-index-zh/"
 alternate_url: "/catalog/catalog-index/"
 ---
@@ -16,7 +17,7 @@ alternate_url: "/catalog/catalog-index/"
 
 | ID | 方法 | 分类 | 来源状态 |
 | --- | --- | --- | --- |
-| 1 | [Skill 元信息（YAML frontmatter）]({{ '/catalog/patterns/1-zh/' | relative_url }})<br><span class="english-name" lang="en">YAML Frontmatter Metadata</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 1 | [写清 Skill 的名称和触发条件]({{ '/catalog/patterns/1-zh/' | relative_url }})<br><span class="english-name" lang="en">Name a Skill and describe when to use it</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
 | 2 | [按阶段推进任务]({{ '/catalog/patterns/2-zh/' | relative_url }})<br><span class="english-name" lang="en">Phased/Stepped Execution</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
 | 3 | [先选择工作模式]({{ '/catalog/patterns/3-zh/' | relative_url }})<br><span class="english-name" lang="en">Workflow Mode Branching</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
 | 4 | [$ARGUMENTS 调用参数]({{ '/catalog/patterns/4-zh/' | relative_url }})<br><span class="english-name" lang="en">$ARGUMENTS Variable</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 来源未确认 |
@@ -155,7 +156,7 @@ alternate_url: "/catalog/catalog-index/"
 | 221 | [文件整理时保留撤销记录]({{ '/catalog/patterns/221-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep an undo ledger for file operations</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
 | 222 | [构造参数前读取 schema 引用]({{ '/catalog/patterns/222-zh/' | relative_url }})<br><span class="english-name" lang="en">Resolve schema references before arguments</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
 | 223 | [操作前明确选择目标组织]({{ '/catalog/patterns/223-zh/' | relative_url }})<br><span class="english-name" lang="en">Bind actions to the selected tenant</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
-| 224 | [为未完成的任务写清续接位置]({{ '/catalog/patterns/224-zh/' | relative_url }})<br><span class="english-name" lang="en">Explicit continuation contract</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 224 | [写清未完成任务的续接位置]({{ '/catalog/patterns/224-zh/' | relative_url }})<br><span class="english-name" lang="en">Explicit continuation contract</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
 | 225 | [先判断指令来自谁]({{ '/catalog/patterns/225-zh/' | relative_url }})<br><span class="english-name" lang="en">Identify the actor before inferring intent</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
 | 226 | [同时考虑正常使用和滥用场景]({{ '/catalog/patterns/226-zh/' | relative_url }})<br><span class="english-name" lang="en">Abuse cases beside intended use cases</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
 | 227 | [按承诺的交付类型评分]({{ '/catalog/patterns/227-zh/' | relative_url }})<br><span class="english-name" lang="en">Grade the declared artifact kind</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
@@ -254,7 +255,7 @@ alternate_url: "/catalog/catalog-index/"
 | 320 | [在真实环境中比较设计方案]({{ '/catalog/patterns/320-zh/' | relative_url }})<br><span class="english-name" lang="en">Compare structural variants in shared context</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
 | 321 | [用不同约束探索不同方案]({{ '/catalog/patterns/321-zh/' | relative_url }})<br><span class="english-name" lang="en">Differentiated design briefs</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
 | 322 | [区分工具目录和项目目录]({{ '/catalog/patterns/322-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep tool roots separate from project roots</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
-| 323 | [集中保存全局设计规则]({{ '/catalog/patterns/323-zh/' | relative_url }})<br><span class="english-name" lang="en">Persist a master design system with page-specific overrides</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 323 | [保存全局设计规则与页面差异]({{ '/catalog/patterns/323-zh/' | relative_url }})<br><span class="english-name" lang="en">Persist a master design system with page-specific overrides</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
 | 324 | [复用界面建议前先核对适用性]({{ '/catalog/patterns/324-zh/' | relative_url }})<br><span class="english-name" lang="en">Verify a retrieved UI recommendation before reuse</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
 | 325 | [分别检查隐私和证据完整性]({{ '/catalog/patterns/325-zh/' | relative_url }})<br><span class="english-name" lang="en">Check privacy and evidence usefulness separately</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
 | 326 | [记录决策理由和改错成本]({{ '/catalog/patterns/326-zh/' | relative_url }})<br><span class="english-name" lang="en">Record reversible decisions with their rationale and cost</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
@@ -318,7 +319,7 @@ alternate_url: "/catalog/catalog-index/"
 | 384 | [用独立证据确认任务完成]({{ '/catalog/patterns/384-zh/' | relative_url }})<br><span class="english-name" lang="en">Independent completion witness</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
 | 385 | [检查异步操作的不同完成顺序]({{ '/catalog/patterns/385-zh/' | relative_url }})<br><span class="english-name" lang="en">Review both overlapping completion orders</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
 | 386 | [只清理本次仍拥有的临时状态]({{ '/catalog/patterns/386-zh/' | relative_url }})<br><span class="english-name" lang="en">Owner-token terminal cleanup</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
-| 387 | [按目标用户的真实旅程比较同类产品]({{ '/catalog/patterns/387-zh/' | relative_url }})<br><span class="english-name" lang="en">Persona-grounded peer benchmarking</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 387 | [按用户旅程比较同类产品]({{ '/catalog/patterns/387-zh/' | relative_url }})<br><span class="english-name" lang="en">Persona-grounded peer benchmarking</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
 | 388 | [试验前固定次数和判定规则]({{ '/catalog/patterns/388-zh/' | relative_url }})<br><span class="english-name" lang="en">Predeclare trials and verdict rules</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
 | 389 | [把成功操作整理成可重放流程]({{ '/catalog/patterns/389-zh/' | relative_url }})<br><span class="english-name" lang="en">Codify a proven run with replay</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
 | 390 | [在指定目标中回读确认保存]({{ '/catalog/patterns/390-zh/' | relative_url }})<br><span class="english-name" lang="en">Verify a save against the selected target</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |

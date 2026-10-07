@@ -48,5 +48,6 @@ canonical_url: "/catalog/index-zh/"
 <li id="反面示例-10" data-target="{{ '/catalog/patterns/132-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/132-zh/' | relative_url }}">反面示例-10 → 用 Hook 自动执行生命周期动作</a></li>
 <li id="变体-aprompt-型-hook让-llm-决定" data-target="{{ '/catalog/patterns/132-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/132-zh/' | relative_url }}">变体-aprompt-型-hook让-llm-决定 → 用 Hook 自动执行生命周期动作</a></li>
 <li id="变体-b路径触发的-just-in-time-安全提醒" data-target="{{ '/catalog/patterns/132-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/132-zh/' | relative_url }}">变体-b路径触发的-just-in-time-安全提醒 → 用 Hook 自动执行生命周期动作</a></li>
+<li id="pattern-123-reversibility--blast-radius-permission-model" data-target="{{ '/catalog/patterns/123-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/123-zh/' | relative_url }}">pattern-123-reversibility--blast-radius-permission-model → 按授权范围评估操作风险</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

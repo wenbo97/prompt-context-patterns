@@ -3,6 +3,9 @@ layout: default
 title: Browse patterns
 permalink: /catalog/browse/
 alternate_url: /catalog/browse/?lang=zh
+hreflang: false
+description: "Search bilingual method names and use cases, then filter by theme, source repository and provenance."
+last_modified_at: 2026-10-06
 ---
 <div id="pattern-browser" data-baseurl="{{ site.baseurl }}">
   <h1 id="browser-title">Find a method</h1><p id="browser-intro" class="lead">Search use cases in either language.</p>

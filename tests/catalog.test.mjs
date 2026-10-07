@@ -1,6 +1,12 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { validateCatalog, resolvePattern, sourceUrl, makeBrowserRecords } from '../scripts/catalog/lib.mjs';
+import { validateCatalog, resolvePattern, sourceUrl, makeBrowserRecords, scenarioText } from '../scripts/catalog/lib.mjs';
+
+test('search scenarios retain the opening task without leaking Markdown teaching fixtures', () => {
+  const section = 'Route the `billing-api` review to its **owner** using [the table](owners.md).\n\nReference material:\n\n```text\nbilling-api | payments\n```';
+  assert.equal(scenarioText(section), 'Route the billing-api review to its owner using the table.');
+  assert.equal(scenarioText(''), '');
+});
 
 const active = (id = 1) => ({ id, status: 'active', name_en: 'Bounded retrieval', name_zh: '有界检索',
   summary_en: 'Fill the evidence gap before acting.', summary_zh: '行动前补齐证据缺口。',

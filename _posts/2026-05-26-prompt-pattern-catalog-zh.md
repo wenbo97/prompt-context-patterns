@@ -4,7 +4,8 @@ title: "155个模式目录：历史收录与当前审核"
 date: 2026-05-26
 categories: [patterns, catalog]
 lang: zh
-last_modified_at: 2026-10-03
+last_modified_at: 2026-10-06
+description: "了解历史方法目录的组织方式，通过保留的引用访问当前方法。"
 ---
 
 <span id="为什么做这个"></span>

@@ -25,5 +25,6 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-146-rationalization-prevention-table合理化预防表" data-target="{{ '/catalog/patterns/146-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/146-zh/' | relative_url }}">pattern-146-rationalization-prevention-table合理化预防表 → 提前列出常见借口与反驳</a></li>
 <li id="正面示例-4" data-target="{{ '/catalog/patterns/146-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/146-zh/' | relative_url }}">正面示例-4 → 提前列出常见借口与反驳</a></li>
 <li id="反面示例-4" data-target="{{ '/catalog/patterns/146-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/146-zh/' | relative_url }}">反面示例-4 → 提前列出常见借口与反驳</a></li>
+<li id="pattern-146-rationalization-prevention-table" data-target="{{ '/catalog/patterns/146-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/146-zh/' | relative_url }}">pattern-146-rationalization-prevention-table → 提前列出常见借口与反驳</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

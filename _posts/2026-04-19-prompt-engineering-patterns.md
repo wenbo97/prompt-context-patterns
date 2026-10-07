@@ -4,7 +4,8 @@ title: "Prompt engineering: observable instructions and useful contrasts"
 date: 2026-04-19
 categories: [prompt-engineering, patterns]
 lang: en
-last_modified_at: 2026-10-03
+last_modified_at: 2026-10-06
+description: "Review historical prompt structures, their teaching examples and the limits of the recorded comparisons."
 ---
 
 <span id="core-principle-reduce-conditional-entropy"></span>

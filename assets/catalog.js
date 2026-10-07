@@ -14,7 +14,7 @@ if (host) {
       count: (n,total,shown) => n === total ? `${total} 个方法，已显示 ${shown} 个` : `找到 ${n} 个方法，已显示 ${shown} 个`, more: '再显示 30 个', scenario: '适用场景', detail: '查看详情', english: 'English', chinese: '中文' },
   };
   let remembered = 'en'; try { remembered = localStorage.getItem('pcp-language') || 'en'; } catch (_) {}
-  let state = readState(location.href, remembered); let rows = []; let fuse = null; let request = 0; let composing = false; let available = false;
+  let state = readState(location.href, remembered); let rows = []; let fuse = null; let request = 0; let composing = false; let loadState = 'loading';
   const element = (tag, value, className) => { const node = document.createElement(tag); if (value != null) node.textContent = value; if (className) node.className = className; return node; };
   const t = () => text[state.lang];
   function commit(push = true) {
@@ -36,6 +36,9 @@ if (host) {
     el('clear-search').textContent = t().clear; el('clear-filters').textContent = t().reset;
     el('load-more').textContent = t().more; el('retry-load').textContent = t().retry;
     el('static-index').textContent = t().static; el('static-index').href = base + `/catalog/catalog-index${state.lang === 'zh' ? '-zh' : ''}/`;
+    el('browser-error').hidden = loadState !== 'error';
+    el('error-text').textContent = loadState === 'error' ? t().error : '';
+    if (loadState !== 'ready') el('pb-count').textContent = loadState === 'loading' ? t().loading : '';
     for (const button of el('pb-lang').querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.dataset.lang === state.lang));
     for (const group of el('pb-facets').querySelectorAll('fieldset')) {
       const key = group.dataset.facet; group.querySelector('legend').textContent = t()[key];
@@ -68,7 +71,7 @@ if (host) {
     }
   }
   function render() {
-    localize(); if (!available) return;
+    localize(); if (loadState !== 'ready') return;
     const ranked = state.q.trim() && fuse ? fuse.search(state.q.trim()).map(result => result.item) : null;
     const results = filterRows(rows, state, ranked); const shown = results.slice(0, state.limit);
     el('pb-count').textContent = t().count(results.length, rows.length, shown.length);
@@ -88,16 +91,16 @@ if (host) {
   }
   async function load() {
     const seq = ++request; const controller = new AbortController(); const timeout = setTimeout(() => controller.abort(), 15000);
-    el('browser-error').hidden = true; el('pb-count').textContent = t().loading; localize();
+    loadState = 'loading'; render();
     try {
       const response = await fetch(base + '/assets/patterns.json', { signal: controller.signal }); if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json(); if (!Array.isArray(data) || data.some(p => !Number.isInteger(p.id) || !Array.isArray(p.repos))) throw new Error('Invalid catalog data');
-      if (seq !== request) return; rows = data; available = true;
+      if (seq !== request) return; rows = data; loadState = 'ready';
       fuse = typeof window.Fuse === 'function' ? new window.Fuse(rows, { includeScore: true, threshold: .35, ignoreLocation: true,
         keys: ['name_en', 'name_zh', 'summary_en', 'summary_zh', 'scenario_en', 'scenario_zh', 'tags'] }) : null;
       buildFacets(); commit(false); render();
     } catch (_) {
-      if (seq !== request) return; available = false; el('pb-count').textContent = ''; el('browser-error').hidden = false; el('error-text').textContent = t().error; localize();
+      if (seq !== request) return; loadState = 'error'; render();
     } finally { clearTimeout(timeout); }
   }
   el('pb-search').value = state.q;
@@ -111,5 +114,6 @@ if (host) {
   el('retry-load').addEventListener('click', load);
   for (const button of el('pb-lang').querySelectorAll('button')) button.addEventListener('click', () => { state.lang = button.dataset.lang; commit(); render(); });
   window.addEventListener('popstate', () => { state = readState(location.href); el('pb-search').value = state.q; render(); });
-  load();
+  // Preserve the effective initial locale in this entry before any pushed change.
+  commit(false); load();
 }

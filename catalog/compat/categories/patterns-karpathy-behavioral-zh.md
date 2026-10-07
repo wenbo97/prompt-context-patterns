@@ -17,8 +17,8 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-k4-goal-driven-execution-verify-per-step" data-target="{{ '/catalog/patterns/289-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/289-zh/' | relative_url }}">pattern-k4-goal-driven-execution-verify-per-step → 把模糊任务改成可验证目标</a></li>
 <li id="meta-pattern-k5-narrate-the-llms-mistake-path" data-target="{{ '/catalog/patterns/25-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/25-zh/' | relative_url }}">meta-pattern-k5-narrate-the-llms-mistake-path → 用少量示例说明做法</a></li>
 <li id="karpathy-风格负面示例效果更强" data-target="{{ '/catalog/patterns/25-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/25-zh/' | relative_url }}">karpathy-风格负面示例效果更强 → 用少量示例说明做法</a></li>
-<li id="采纳检查清单" data-target="{{ '/catalog/patterns/25-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/25-zh/' | relative_url }}">采纳检查清单 → 用少量示例说明做法</a></li>
-<li id="汇总表" data-target="{{ '/catalog/patterns/25-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/25-zh/' | relative_url }}">汇总表 → 用少量示例说明做法</a></li>
+<li id="采纳检查清单" data-target="{{ '/catalog/index-zh/' | relative_url }}"><a href="{{ '/catalog/index-zh/' | relative_url }}">采纳检查清单 → 当前目录</a></li>
+<li id="汇总表" data-target="{{ '/catalog/index-zh/' | relative_url }}"><a href="{{ '/catalog/index-zh/' | relative_url }}">汇总表 → 当前目录</a></li>
 <li id="pattern-k6-goal-reformulation-to-verifiable-test目标重写为可验证测试" data-target="{{ '/catalog/patterns/289-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/289-zh/' | relative_url }}">pattern-k6-goal-reformulation-to-verifiable-test目标重写为可验证测试 → 把模糊任务改成可验证目标</a></li>
 <li id="重写表" data-target="{{ '/catalog/patterns/289-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/289-zh/' | relative_url }}">重写表 → 把模糊任务改成可验证目标</a></li>
 <li id="步骤" data-target="{{ '/catalog/patterns/289-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/289-zh/' | relative_url }}">步骤 → 把模糊任务改成可验证目标</a></li>

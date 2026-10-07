@@ -13,6 +13,8 @@
     "sources:restore": "node scripts/catalog/sources.mjs --restore",
     "check:generated": "node scripts/catalog/generate.mjs --check",
     "check:links": "node scripts/catalog/check-links.mjs",
+    "check:site": "node scripts/catalog/check-site.mjs",
+    "check:dates": "bundle exec ruby tests/sitemap-dates.rb",
     "test:e2e": "playwright test",
     "preview": "bundle exec jekyll serve --host 127.0.0.1 --port 4000"
   },

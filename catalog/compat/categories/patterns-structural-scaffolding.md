@@ -10,9 +10,9 @@ canonical_url: "/catalog/"
 
 <div data-compat><h1>Content has moved</h1><p>Old addresses and sections still resolve. Follow a link to the reviewed content.</p><ul class="compat-list">
 <li id="category-1-structural-scaffolding" data-target="{{ '/catalog/' | relative_url }}"><a href="{{ '/catalog/' | relative_url }}">category-1-structural-scaffolding → Current catalog</a></li>
-<li id="pattern-1-yaml-frontmatter-metadata-block" data-target="{{ '/catalog/patterns/1/' | relative_url }}"><a href="{{ '/catalog/patterns/1/' | relative_url }}">pattern-1-yaml-frontmatter-metadata-block → YAML Frontmatter Metadata</a></li>
-<li id="positive-example" data-target="{{ '/catalog/patterns/1/' | relative_url }}"><a href="{{ '/catalog/patterns/1/' | relative_url }}">positive-example → YAML Frontmatter Metadata</a></li>
-<li id="negative-example" data-target="{{ '/catalog/patterns/1/' | relative_url }}"><a href="{{ '/catalog/patterns/1/' | relative_url }}">negative-example → YAML Frontmatter Metadata</a></li>
+<li id="pattern-1-yaml-frontmatter-metadata-block" data-target="{{ '/catalog/patterns/1/' | relative_url }}"><a href="{{ '/catalog/patterns/1/' | relative_url }}">pattern-1-yaml-frontmatter-metadata-block → Name a Skill and describe when to use it</a></li>
+<li id="positive-example" data-target="{{ '/catalog/patterns/1/' | relative_url }}"><a href="{{ '/catalog/patterns/1/' | relative_url }}">positive-example → Name a Skill and describe when to use it</a></li>
+<li id="negative-example" data-target="{{ '/catalog/patterns/1/' | relative_url }}"><a href="{{ '/catalog/patterns/1/' | relative_url }}">negative-example → Name a Skill and describe when to use it</a></li>
 <li id="pattern-2-phasedstepped-execution-flow" data-target="{{ '/catalog/patterns/2/' | relative_url }}"><a href="{{ '/catalog/patterns/2/' | relative_url }}">pattern-2-phasedstepped-execution-flow → Phased/Stepped Execution</a></li>
 <li id="positive-example-1" data-target="{{ '/catalog/patterns/2/' | relative_url }}"><a href="{{ '/catalog/patterns/2/' | relative_url }}">positive-example-1 → Phased/Stepped Execution</a></li>
 <li id="negative-example-1" data-target="{{ '/catalog/patterns/2/' | relative_url }}"><a href="{{ '/catalog/patterns/2/' | relative_url }}">negative-example-1 → Phased/Stepped Execution</a></li>

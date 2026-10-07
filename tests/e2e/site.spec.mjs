@@ -145,7 +145,7 @@ test('localized category navigation and source versions lead to their exact targ
 });
 
 
-test('topic cards open details from title, English name and blank area without losing category navigation', async ({ page }) => {
+test('topic cards open details from title, English name and blank area while current category tags stay inert', async ({ page }) => {
   const route = 'topics/prompt-zh/';
   const cardFor = id => page.locator('.pattern-card').filter({
     has: page.locator('.record-id', { hasText: new RegExp(`^P${id}$`) }),
@@ -172,7 +172,7 @@ test('topic cards open details from title, English name and blank area without l
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/catalog\/patterns\/6-zh\//);
   await page.goto(route);
-  await cardFor(6).locator('.meta-line a').click();
+  await cardFor(6).locator('.category-tag').click();
   await expect(page).toHaveURL(/topics\/prompt-zh\//);
 });
 

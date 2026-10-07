@@ -6,6 +6,8 @@ $text: #0F172A;
 $muted: #475569;
 $brand: #1D4ED8;
 $border: #CBD5E1;
+$example-bad: #B91C1C;
+$example-good: #15803D;
 $body: "Inter", "Noto Sans SC", system-ui, sans-serif;
 $mono: "JetBrains Mono", ui-monospace, monospace;
 * { box-sizing: border-box; }
@@ -17,7 +19,7 @@ html { scroll-padding-top: 100px; scrollbar-gutter: stable; }
 ::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active { background: $brand; }
 @media (forced-colors: active) { * { scrollbar-color: auto; } }
 body { margin: 0; color: $text; background: $canvas; font: 16px/1.8 $body; }
-a { color: $brand; text-underline-offset: .2em; overflow-wrap: anywhere; }
+a { color: $brand; text-underline-offset: .2em; overflow-wrap: anywhere; display: inline-block; max-width: 100%; vertical-align: top; }
 a:hover { text-decoration-thickness: 2px; }
 button,input { font: inherit; }
 button { cursor: pointer; }
@@ -42,10 +44,16 @@ h3 { font-size: 1.13rem; }
 p { max-width: 78ch; }
 .eyebrow,.record-id { font: 500 12px/1.5 $mono; letter-spacing: .07em; text-transform: uppercase; color: $muted; }
 .lead { font-size: 1rem; color: $muted; max-width: 64ch; }
-.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; padding: 12px 0 46px; border-bottom: 1px solid $border; }
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start; padding: 12px 0 46px; border-bottom: 1px solid $border; }
+.hero h1 { max-width: none; font-size: clamp(1.65rem,3vw,2.25rem); }
+.hero h1 > span { display: block; }
 .hero-demo { background: $surface; border: 1px solid $border; border-radius: 10px; overflow: hidden; box-shadow: 0 12px 30px rgba(15,23,42,.045); }
-.demo-row { padding: 16px 22px; border-bottom: 1px solid $border; }
-.demo-row:last-child { border-bottom: 0; border-left: 4px solid $brand; }
+.demo-row { padding: 16px 22px; border-bottom: 1px solid $border; border-left: 4px solid transparent; }
+.demo-row:last-child { border-bottom: 0; }
+.demo-row.example--bad { border-left-color: $example-bad; }
+.demo-row.example--good { border-left-color: $example-good; }
+.demo-row.example--bad .eyebrow { color: $example-bad; }
+.demo-row.example--good .eyebrow { color: $example-good; }
 .demo-row p { margin: 6px 0; font-size: 14px; }
 .demo-row code { font-size: 13px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
@@ -78,7 +86,8 @@ p { max-width: 78ch; }
 .pattern-content h2 { border-top: 1px solid $border; padding-top: 22px; }
 .pattern-content h2:first-child { border-top: 0; }
 .pattern-content pre { border-left: 3px solid $border; }
-.pattern-content h2[id='改进写法'] + div pre, .pattern-content h2[id='改进写法'] + pre, .pattern-content h2[id='good-example'] + div pre, .pattern-content h2[id='good-example'] + pre { border-left-color: $brand; }
+.pattern-content pre.example--bad,.pattern-content .example--bad pre { border-left-color: $example-bad; }
+.pattern-content pre.example--good,.pattern-content .example--good pre { border-left-color: $example-good; }
 .evidence-panel { background: $surface; border: 1px solid $border; border-radius: 8px; padding: 24px; margin-top: 36px; }
 .evidence-panel li { margin: 14px 0; }
 .evidence-panel code { font-size: 12px; }
@@ -122,8 +131,13 @@ img { max-width: 100%; height: auto; }
 
 /* Reading and browsing share a quiet document hierarchy. */
 .pattern-page { max-width: 780px; margin: auto; }
+.pattern-page,.post,.prose-page { overflow-wrap: anywhere; }
 .pattern-heading h1 { font-size: clamp(1.65rem,3vw,2rem); margin-bottom: 8px; }
 .pattern-heading .lead { margin: 16px 0; }
+.pattern-toc { margin: 24px 0; padding: 12px 0; border-top: 1px solid $border; border-bottom: 1px solid $border; }
+.pattern-toc-label { font-size: 12px; color: $muted; }
+.pattern-toc ul { display: flex; flex-wrap: wrap; gap: 4px 14px; list-style: none; margin: 4px 0 0; padding: 0; }
+.pattern-toc a { display: inline-block; padding: 4px 0; font-size: 13px; }
 .english-name { font-size: 13px; color: $muted; margin: 4px 0 10px; letter-spacing: 0; }
 .pattern-content h2 { font-size: 1.2rem; border: 0; padding: 0; margin: 28px 0 10px; }
 .pattern-content p { margin: 10px 0; }
@@ -132,7 +146,10 @@ img { max-width: 100%; height: auto; }
 .evidence-panel { border: 0; border-top: 1px solid $border; border-radius: 0; padding: 18px 0 0; margin-top: 32px; }
 .evidence-panel h2 { margin: 0 0 14px; font-size: 1.2rem; }
 .evidence-panel ul { padding-left: 20px; }
-.source-version { font-size: 13px; }
+.evidence-panel li > a { display: inline-block; max-width: 100%; vertical-align: top; }
+.source-version { font-size: 13px; min-height: 28px; padding: 2px 0; }
+.source-card h2 a { display: block; }
+.guide-references a { display: inline-block; max-width: 100%; vertical-align: top; }
 .browser-results .pattern-card { border: 0; border-bottom: 1px solid $border; border-radius: 0; padding: 20px 0; }
 .browser-results .pattern-card h2 { font-size: 1.2rem; margin: 4px 0; }
 .browser-results .pattern-card p { max-width: 90ch; margin: 6px 0; }
@@ -148,12 +165,14 @@ img { max-width: 100%; height: auto; }
 .post-content h2 { font-size: 1.2rem; margin: 28px 0 10px; }
 .complete-index table { table-layout: fixed; }
 .complete-index th:first-child { width: 8%; }
+.complete-index th:first-child,.complete-index td:first-child { white-space: nowrap; }
 .complete-index th:nth-child(2) { width: 44%; }
 .complete-index th:nth-child(3),.complete-index th:nth-child(4) { width: 24%; }
-@media (max-width: 767px) { .complete-index table { font-size: 13px; } .complete-index .english-name { font-size: 12px; } }
+.complete-index td:nth-child(2) > a { display: block; }
+@media (max-width: 767px) { .complete-index table { font-size: 13px; } .complete-index th:first-child { width: 12%; } .complete-index th:nth-child(2) { width: 40%; } .complete-index .english-name { font-size: 12px; } }
 
-/* Expand the native detail link; category links remain independent targets. */
+/* Expand the detail link while category links and current-topic tags stay independent. */
 .linked-card { position: relative; }
 .linked-card .pattern-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.linked-card .meta-line a { position: relative; z-index: 1; }
+.linked-card .meta-line a,.linked-card .category-tag { position: relative; z-index: 1; }
 .linked-card:hover,.linked-card:focus-within { border-color: $brand; }

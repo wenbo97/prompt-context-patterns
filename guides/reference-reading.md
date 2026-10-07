@@ -4,6 +4,8 @@ title: Make reference reading observable
 permalink: /guides/reference-reading/
 alternate_url: /guides/reference-reading-zh/
 lang: en
+description: "Make task-specific reference reading observable through explicit triggers, file locations, evidence and missing-input handling."
+last_modified_at: 2026-10-06
 ---
 # Make reference reading observable
 
@@ -22,3 +24,4 @@ The improved instruction states the trigger, the file, required evidence and mis
 Keep rules needed by every branch near the action. Route branch-specific material through explicit read conditions. Use a script for deterministic checks when its interface and failure behavior are known, and verify actual results rather than treating the script's existence as proof.
 
 [Conditional reference pointers]({{ '/catalog/patterns/23/' | relative_url }}) · [Progressive disclosure]({{ '/catalog/patterns/100/' | relative_url }}) · [Artifact evidence]({{ '/catalog/patterns/26/' | relative_url }})
+{: .guide-references}

@@ -38,5 +38,6 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-147-入口宣告-skill-协议announce-skill-on-entry" data-target="{{ '/catalog/patterns/9-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/9-zh/' | relative_url }}">pattern-147-入口宣告-skill-协议announce-skill-on-entry → 报告进展与最终结果</a></li>
 <li id="正面示例-10" data-target="{{ '/catalog/patterns/9-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/9-zh/' | relative_url }}">正面示例-10 → 报告进展与最终结果</a></li>
 <li id="反面示例-3" data-target="{{ '/catalog/patterns/9-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/9-zh/' | relative_url }}">反面示例-3 → 报告进展与最终结果</a></li>
+<li id="pattern-147-announce-skill-on-entry-protocol" data-target="{{ '/catalog/patterns/9-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/9-zh/' | relative_url }}">pattern-147-announce-skill-on-entry-protocol → 报告进展与最终结果</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

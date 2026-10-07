@@ -4,7 +4,8 @@ title: "Decision-tree prompts: historical fixtures and limits"
 date: 2026-04-19
 categories: [patterns, decision-tree]
 lang: en
-last_modified_at: 2026-10-03
+last_modified_at: 2026-10-06
+description: "Read the historical decision-tree instruction fixture and its known experimental evidence limits."
 ---
 
 <span id="the-problem"></span>

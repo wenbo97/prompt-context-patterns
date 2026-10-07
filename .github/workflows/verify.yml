@@ -37,6 +37,8 @@ jobs:
       - run: npm --prefix eval/patternfoo run build
       - run: bundle exec jekyll build
       - run: npm run check:links
+      - run: npm run check:site
+      - run: npm run check:dates
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4

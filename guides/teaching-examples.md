@@ -4,6 +4,8 @@ title: Construct a useful bad/good pair
 permalink: /guides/teaching-examples/
 alternate_url: /guides/teaching-examples-zh/
 lang: en
+description: "Build useful bad/good instruction comparisons around the same task, inputs, concrete defect and observable check."
+last_modified_at: 2026-10-06
 ---
 # Construct a useful bad/good pair
 
@@ -20,3 +22,4 @@ Good: `Return JSON with category in billing|technical|feedback|other and a short
 Expected: parse the JSON and validate category membership. This checks the output contract; it does not establish semantic classification accuracy. Evaluate accuracy with representative labelled requests separately.
 
 [Output contracts]({{ '/catalog/patterns/14/' | relative_url }}) · [Editorial criteria]({{ '/methodology/' | relative_url }})
+{: .guide-references}

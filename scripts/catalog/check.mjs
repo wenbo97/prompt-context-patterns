@@ -5,6 +5,7 @@ import { ROOT, readJson, validateCatalog, writeText } from './lib.mjs';
 import { REVIEW_KINDS, validateFileOutcome } from './review-coverage.mjs';
 import { sourceRoot, sourceLineCount } from './sources.mjs';
 import { validateDecisions } from './decisions.mjs';
+import { shanghaiDate, validateContentDate } from './content-metadata.mjs';
 
 const allowPending = process.argv.includes('--allow-pending'); const verifySources = process.argv.includes('--sources');
 const catalog = readJson('_data/patterns.json'); const errors = validateCatalog(catalog);
@@ -12,6 +13,7 @@ for (const p of catalog.filter(p => p.status === 'active')) for (const lang of [
   const file = path.join(ROOT, '_patterns', `${p.id}.${lang}.md`);
   if (!fs.existsSync(file)) { errors.push(`${p.id}/${lang}: body missing`); continue; }
   const body = fs.readFileSync(file, 'utf8');
+  errors.push(...validateContentDate(body, shanghaiDate()).map(error => `${p.id}/${lang}: ${error}`));
   for (const heading of lang === 'en' ? ['Use case', 'Mechanism', 'Bad example', 'Good example', 'Why the change matters', 'Observable expectation', 'Limits'] :
     ['使用场景', '具体做法', '反例', '改进写法', '为什么这样改', '如何验证', '适用边界']) {
     if (!body.includes(`## ${heading}`)) errors.push(`${p.id}/${lang}: missing ${heading}`);

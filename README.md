@@ -42,6 +42,8 @@ npm run check:generated
 bundle exec ruby tests/liquid-literals.rb
 bundle exec jekyll build
 npm run check:links
+npm run check:site
+npm run check:dates
 npm run test:e2e
 npm --prefix eval/patternfoo ci --legacy-peer-deps --omit=peer
 npm --prefix eval/patternfoo test
@@ -49,6 +51,8 @@ npm --prefix eval/patternfoo run build
 ```
 
 Build checks do not call models. Real A/B evaluations run explicitly through [Patternfoo](eval/patternfoo/README.md). Legacy runners retain historical fixtures; missing raw outputs are not represented as revalidated results. Text files use CRLF.
+
+Authored last_modified_at records the actual content update date (Asia/Shanghai, YYYY-MM-DD). Update it with relevant title, summary or body changes; generation and builds never refresh it automatically. Ordinary descriptions belong to authored front matter or generator inputs.
 
 ## License
 

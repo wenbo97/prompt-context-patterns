@@ -2,7 +2,7 @@
 {% capture sources_url %}/sources{{ suffix }}/{% endcapture %}{% capture method_url %}/methodology{{ suffix }}/{% endcapture %}{% capture blog_url %}/blog{{ suffix }}/{% endcapture %}
 <header class="site-header"><span id="nav-trigger" hidden aria-hidden="true"></span><div class="wrapper header-inner">
   {% if page.lang == 'zh' %}{% assign home_url = '/index-zh/' %}{% else %}{% assign home_url = '/' %}{% endif %}
-  <a class="brand" href="{{ home_url | relative_url }}" data-url-en="{{ '/' | relative_url }}" data-url-zh="{{ '/index-zh/' | relative_url }}"><span class="brand-mark" aria-hidden="true">[p]</span><span data-i18n-en="Pattern Reference" data-i18n-zh="模式参考手册">{% if page.lang == 'zh' %}模式参考手册{% else %}Pattern Reference{% endif %}</span></a>
+  <a class="brand" href="{{ home_url | relative_url }}" data-url-en="{{ '/' | relative_url }}" data-url-zh="{{ '/index-zh/' | relative_url }}"><span class="brand-mark" aria-hidden="true">[p]</span><span data-i18n-en="Pattern Reference" data-i18n-zh="方法参考手册">{% if page.lang == 'zh' %}方法参考手册{% else %}Pattern Reference{% endif %}</span></a>
   <nav class="site-nav" aria-label="{% if page.lang == 'zh' %}主要导航{% else %}Main navigation{% endif %}">
     <a href="{{ browse_url | relative_url }}" data-i18n-en="Browse" data-i18n-zh="搜索方法" data-url-en="{{ '/catalog/browse/' | relative_url }}" data-url-zh="{{ '/catalog/browse/?lang=zh' | relative_url }}">{% if page.lang == 'zh' %}搜索方法{% else %}Browse{% endif %}</a>
     <a href="{{ catalog_url | relative_url }}" data-i18n-en="Themes" data-i18n-zh="主题" data-url-en="{{ '/catalog/' | relative_url }}" data-url-zh="{{ '/catalog/index-zh/' | relative_url }}">{% if page.lang == 'zh' %}主题{% else %}Themes{% endif %}</a>

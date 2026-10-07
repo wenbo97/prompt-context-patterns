@@ -1,4 +1,6 @@
 .claude/
+CLAUDE.md
+blog-cc-dev.cmd
 .mcp.json
 
 # Jekyll
@@ -9,6 +11,7 @@ vendor/
 .bundle/
 node_modules/
 .tools/
+premium-audit.json
 playwright-report/
 test-results/
 

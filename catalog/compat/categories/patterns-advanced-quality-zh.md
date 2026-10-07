@@ -48,5 +48,6 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-149-pressure-scenario-tdd-for-skill-authoring-用压力场景-tdd-来编写-skill" data-target="{{ '/catalog/patterns/149-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/149-zh/' | relative_url }}">pattern-149-pressure-scenario-tdd-for-skill-authoring-用压力场景-tdd-来编写-skill → 用压力场景测试 Skill</a></li>
 <li id="正面示例-11" data-target="{{ '/catalog/patterns/149-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/149-zh/' | relative_url }}">正面示例-11 → 用压力场景测试 Skill</a></li>
 <li id="反面示例-11" data-target="{{ '/catalog/patterns/149-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/149-zh/' | relative_url }}">反面示例-11 → 用压力场景测试 Skill</a></li>
+<li id="pattern-149-pressure-scenario-tdd-for-skill-authoring" data-target="{{ '/catalog/patterns/149-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/149-zh/' | relative_url }}">pattern-149-pressure-scenario-tdd-for-skill-authoring → 用压力场景测试 Skill</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

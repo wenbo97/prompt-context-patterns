@@ -4,7 +4,8 @@ title: "决策树提示词：历史样例与实验边界"
 date: 2026-04-19
 categories: [patterns, decision-tree]
 lang: zh
-last_modified_at: 2026-10-03
+last_modified_at: 2026-10-06
+description: "阅读决策树指令的历史样例，了解实验报告中可核对的材料与证据限制。"
 ---
 
 <span id="问题"></span>

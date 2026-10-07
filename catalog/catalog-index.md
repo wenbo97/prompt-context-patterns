@@ -2,6 +2,7 @@
 layout: "catalog-index"
 lang: "en"
 title: "Complete pattern index"
+description: "Browse 306 methods by stable ID, with bilingual details, themes and source status."
 permalink: "/catalog/catalog-index/"
 alternate_url: "/catalog/catalog-index-zh/"
 ---
@@ -16,7 +17,7 @@ alternate_url: "/catalog/catalog-index-zh/"
 
 | ID | Pattern | Theme | Source status |
 | --- | --- | --- | --- |
-| 1 | [YAML Frontmatter Metadata]({{ '/catalog/patterns/1/' | relative_url }}) | [Skill authoring]({{ '/topics/skill-authoring/' | relative_url }}) | Located source instance |
+| 1 | [Name a Skill and describe when to use it]({{ '/catalog/patterns/1/' | relative_url }}) | [Skill authoring]({{ '/topics/skill-authoring/' | relative_url }}) | Located source instance |
 | 2 | [Phased/Stepped Execution]({{ '/catalog/patterns/2/' | relative_url }}) | [Workflow control]({{ '/topics/workflow/' | relative_url }}) | Located source instance |
 | 3 | [Workflow Mode Branching]({{ '/catalog/patterns/3/' | relative_url }}) | [Workflow control]({{ '/topics/workflow/' | relative_url }}) | Located source instance |
 | 4 | [$ARGUMENTS Variable]({{ '/catalog/patterns/4/' | relative_url }}) | [Skill authoring]({{ '/topics/skill-authoring/' | relative_url }}) | Source unconfirmed |

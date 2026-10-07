@@ -4,6 +4,8 @@ title: 写出有用的对照示例
 permalink: /guides/teaching-examples-zh/
 alternate_url: /guides/teaching-examples/
 lang: zh
+description: "围绕同一任务和输入设计正反例，解释具体缺陷、改进动作与可检查结果。"
+last_modified_at: 2026-10-06
 ---
 # 写出有用的对照示例
 
@@ -20,3 +22,4 @@ lang: zh
 可检查结果：解析 JSON 并验证 category 枚举。它检查输出格式与规则，不证明语义分类正确。分类准确性应另用有标注的代表性请求评估。
 
 [输出格式与规则]({{ '/catalog/patterns/14-zh/' | relative_url }}) · [编辑标准]({{ '/methodology-zh/' | relative_url }})
+{: .guide-references}

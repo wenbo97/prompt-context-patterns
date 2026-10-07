@@ -4,6 +4,8 @@ title: Editorial criteria and provenance
 permalink: /methodology/
 alternate_url: /methodology-zh/
 lang: en
+description: "Learn the editorial admission criteria, source labels and distinction between teaching examples and measured model results."
+last_modified_at: 2026-10-06
 ---
 # Editorial criteria and provenance
 

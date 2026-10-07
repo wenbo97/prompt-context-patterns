@@ -1,8 +1,8 @@
 # 提示词与上下文工程参考
 
-从真实技能中提炼可迁移的方法。每个有效模式包含简短介绍、使用场景、同任务正反例、可检查结果、适用边界与来源状态。
+从公开技能中提炼可复用的方法。每篇说明使用场景、操作步骤、同任务正反例、检查方法、适用边界与原文状态。
 
-当前目录：**306** 个有效模式；**272** 个已定位原文实例；**34** 个带来源未确认标签。合并和撤下条目保留兼容入口，不计入有效数量。
+当前目录：**306** 个有效方法；**272** 个可查看原文实例；**34** 个带来源未确认标签。合并和撤下条目保留兼容入口，不计入有效数量。
 
 [English](README.md)
 
@@ -42,6 +42,8 @@ npm run check:generated
 bundle exec ruby tests/liquid-literals.rb
 bundle exec jekyll build
 npm run check:links
+npm run check:site
+npm run check:dates
 npm run test:e2e
 npm --prefix eval/patternfoo ci --legacy-peer-deps --omit=peer
 npm --prefix eval/patternfoo test
@@ -49,6 +51,8 @@ npm --prefix eval/patternfoo run build
 ```
 
 构建检查不调用模型。真实 A/B 评测通过 [Patternfoo](eval/patternfoo/README.md) 显式运行。旧评测脚本留作历史样例；原始输出缺失时不宣称实验已复核。所有文本采用 CRLF。
+
+正文的 last_modified_at 使用实际内容修改日期（Asia/Shanghai，YYYY-MM-DD）。修改对应语言的标题、摘要或正文时同步维护；正常生成和构建不自动刷新日期。普通页面的摘要写在正文元信息或对应生成输入中。
 
 ## 许可证
 

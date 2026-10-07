@@ -4,7 +4,8 @@ title: "提示词工程：可观察的指令与有效对照"
 date: 2026-04-19
 categories: [prompt-engineering, patterns]
 lang: zh
-last_modified_at: 2026-10-03
+last_modified_at: 2026-10-06
+description: "回顾提示词结构与对照写法，区分教学示例和历史比较中的已知结果。"
 ---
 
 <span id="核心原则降低不确定性"></span>

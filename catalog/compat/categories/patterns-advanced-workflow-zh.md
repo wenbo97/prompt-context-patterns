@@ -49,5 +49,7 @@ canonical_url: "/catalog/index-zh/"
 <li id="pattern-154-self-looping-stop-hook-ralph-loop-自循环-stop-hook" data-target="{{ '/catalog/patterns/154-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/154-zh/' | relative_url }}">pattern-154-self-looping-stop-hook-ralph-loop-自循环-stop-hook → 用 Stop Hook 继续循环任务</a></li>
 <li id="正面示例-12" data-target="{{ '/catalog/patterns/154-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/154-zh/' | relative_url }}">正面示例-12 → 用 Stop Hook 继续循环任务</a></li>
 <li id="反面示例-12" data-target="{{ '/catalog/patterns/154-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/154-zh/' | relative_url }}">反面示例-12 → 用 Stop Hook 继续循环任务</a></li>
+<li id="pattern-150-continuous-execution-mandate" data-target="{{ '/catalog/patterns/150-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/150-zh/' | relative_url }}">pattern-150-continuous-execution-mandate → 持续推进已授权的任务</a></li>
+<li id="pattern-154-self-looping-stop-hook-ralph-loop" data-target="{{ '/catalog/patterns/154-zh/' | relative_url }}"><a href="{{ '/catalog/patterns/154-zh/' | relative_url }}">pattern-154-self-looping-stop-hook-ralph-loop → 用 Stop Hook 继续循环任务</a></li>
 </ul></div>
 <script src="{{ '/assets/compat.js' | relative_url }}"></script>

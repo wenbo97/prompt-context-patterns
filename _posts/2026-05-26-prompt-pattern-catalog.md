@@ -4,7 +4,8 @@ title: "The 155-pattern catalog: historical collection and current review"
 date: 2026-05-26
 categories: [patterns, catalog]
 lang: en
-last_modified_at: 2026-10-03
+last_modified_at: 2026-10-06
+description: "Follow the historical catalog organization and find the reviewed methods through its preserved references."
 ---
 
 <span id="why-this-exists"></span>
