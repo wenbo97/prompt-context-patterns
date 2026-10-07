@@ -1,0 +1,101 @@
+[
+  {
+    "path": "docs/ja-JP/rules/common/agents.md",
+    "reason": "Complete Japanese semantic comparison: plugin namespace, resource router, task routing, independent parallel reviews and diverse lenses retained. Omits current Rust/HarmonyOS roster rows and delegation result-collection/depth/completion contract. No new mechanism; spawning a child alone is not task completion.",
+    "existing_ids": [
+      18,
+      33,
+      36,
+      127
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/code-review.md",
+    "reason": "Complete semantic comparison retains CI/conflict/base pre-review gate and severity/report/router workflow. Security trigger translates use-agent without canonical STOP. Hard 800-line rule omits current soft source-role exception; HIGH warning versus other role blocking remains source inconsistency. Domain checklists and source numeric thresholds are not calibrated proof.",
+    "existing_ids": [
+      53,
+      86,
+      151
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/coding-style.md",
+    "reason": "Complete semantic comparison retains immutable contrast, schema boundary validation, explicit errors and completion checklist; omits canonical KISS/DRY/YAGNI, language-dependent naming and soft source-size/test/generated exceptions. No distinct prompt method from domain style policy.",
+    "existing_ids": [
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/development-workflow.md",
+    "reason": "Complete Japanese semantic equivalent includes repository-first reuse, version-grounded primary docs, registry search, dependency planning, RED/GREEN, code review and final CI/conflict/base pre-review gate. Source 80% defaults and mandatory named agents are frozen project assumptions, not efficacy or live capability evidence.",
+    "candidate_keys": [
+      "ecc-research-before-building",
+      "ecc-version-grounded-docs",
+      "ecc-causal-red-gate"
+    ],
+    "existing_ids": [
+      18,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/git-workflow.md",
+    "reason": "Complete comparison preserves full-history/triple-dot PR summary, commit format and explicit user attribution choice, but embeds older feature/TDD/review workflow instead of canonical router to separate development-workflow. This duplication can drift; TODO tests are planned rather than observed validation.",
+    "existing_ids": [
+      126,
+      175
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/hooks.md",
+    "reason": "Complete Japanese semantic comparison: Complete semantic equivalent of event routing, trusted-plan permission caution and progress-list feedback; actual TodoWrite/allowedTools availability and callback enforcement are host-specific. No skill prose can establish runtime permission isolation.",
+    "existing_ids": [
+      69,
+      123,
+      138
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/patterns.md",
+    "reason": "Complete Japanese semantic comparison: Complete comparison preserves research/parallel option assessment/verified skeleton iteration and repository-interface/API-envelope domain recipes. Domain architecture recipes excluded from new prompt-method authorship; no source guarantees that search or cloning yields a proven secure foundation.",
+    "candidate_keys": [
+      "ecc-research-before-building"
+    ],
+    "existing_ids": [
+      33
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/performance.md",
+    "reason": "Complete semantic comparison retains complexity model tiers, context headroom, multiple critique lenses and incremental build verification. Pins Haiku4.5/Sonnet5/Opus5 where canonical uses generic families. 90% capability, one-third cost, last20% and 31,999 default are unverified source assertions, not current vendor facts.",
+    "candidate_keys": [
+      "ecc-model-tier-routing",
+      "ecc-budget-inventory"
+    ],
+    "existing_ids": [
+      35,
+      33,
+      41
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/security.md",
+    "reason": "Complete Japanese semantic comparison: Complete semantic equivalent of secret/boundary-input checklist, startup required-secret validation and stop/remediation/credential-rotation protocol. Domain security checklist excluded from new prompt mechanism; CSRF/rate-limit applies by threat model, not every application indiscriminately.",
+    "existing_ids": [
+      53,
+      123,
+      151
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/common/testing.md",
+    "reason": "Complete Japanese semantic comparison: Complete translated workflow preserves behavior-first intended failure, minimal pass, refactor, test isolation and permission to correct a wrong test. Omits current Arrange-Act-Assert and descriptive behavioral test-name examples. Fixed 80% and mandatory all test types are source project defaults, not universal adequacy proof.",
+    "candidate_keys": [
+      "ecc-causal-red-gate"
+    ],
+    "existing_ids": [
+      53,
+      25
+    ]
+  }
+]

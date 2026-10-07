@@ -1,0 +1,38 @@
+[
+  {
+    "path": "docs/ja-JP/skills/cpp-coding-standards/SKILL.md",
+    "reason": "Read all49line role/activation/domainprinciples/coreguideline/rulepointer/ownership reference. Specific C++RAII/types/immutability/APIstyle, shortvariant omits currentdetailedsourceguidelines; no independent prompt/contextmethod beyond taskactivation. Standards/API/domain implementation scoped out, no universal correctness guarantee or codeaction.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/cpp-testing/SKILL.md",
+    "reason": "Full322line essential scope/exclusions/causalRED-minimumGREEN/independentfixture/actualcondition-waits/seed/cleanup/assertprecondition and focused-to-full test flow read. Shared known behavior acceptance/preserved gate, originmetadata absent. CMake/sanitizer/libraryimplementation and concrete domain fixture code scoped as purpose, no compile/tests/effectiveness claimed.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/crosspost/SKILL.md",
+    "reason": "Full111line actual sourceversion/brandvoiceowner/canonicalVOICEPROFILE/platformconstraint/draftgap/qualitygate read. Source-derived context reuse preserved but newer canonical fetched/derivedsource taint and exact audience/destination/timing/releasereview boundary omitted; postingorder does not grant current externalactionauthority. Platformmarketing preferences scoped and no posts/messages.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/csharp-testing/SKILL.md",
+    "reason": "Full321line testpurpose/AAA/typedoracles/independentfixtures/nativeintegration/behaviorvsimplementation/no shared mutablestate/cancellation/waitbound and specific testfilter source lanes read. Same existing evidenceand-isolatedacceptance methods, not new language-patterncards; xUnit/API/runtime testimplementation scoped, no frameworkcorrectness audit/testrun.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/customer-billing-ops/SKILL.md",
+    "reason": "Full140line actual identity→subscription/invoicecurrentstate→caseclassification→least scopedrelief→separateproductgap→reason/action/followupreport read. Same evidence-before-action/scopedreadback methods; refund described as reversible is source overclaim, identitylookup not authorization and actual actionrequires scopes/current userrequest. DomainStripe/contract/financialrecommendations not adopted or audited, no refunds/messages.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/customs-trade-compliance/SKILL.md",
+    "reason": "Read all46line operational rolecontext/task/workflow/HSdomain/example data; Apache2declared. Trade-compliance persona and legalclassification/screening practice, no independent agentmethod beyond generic role/scope.15year expertise/tariff/regionlegalclaims source constructions and not verified advice; shortvariant omits deeper evidence/escalation refs, no transactions/regulatoryactions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]

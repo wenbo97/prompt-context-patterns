@@ -1,0 +1,105 @@
+[
+  {
+    "path": "docs/zh-CN/skills/eval-harness/SKILL.md",
+    "reason": "Read complete translated eval skill, all fenced grader prompts/definitions/reports/shell commands and current canonical text. Retains pre-defined capability/regression/baseline evals, code/model/human graders, attempt-success versus all-trials-success distinction, versioned artifacts and staged report. ProductEvals rule-grader, overfit/cost-latency/flaky-checker and release-artifact sections retained. All six omit current LocalFrameworkUtilities and refusal of candidate execution absent reviewed OS containment, including receipt/static-warning-versus-promotion proof boundary. No safe execution implied. grep presence is not behavior; echo FAIL can still exit zero. Example pass@ percentages/90%/100% thresholds are targets or fabricated reports, not empirical model reliability; repeated independent-trial evidence is required. Chinese example translates report command verb at L211 unlike canonical literal report; absent verified localized grammar, do not claim command equivalence.",
+    "candidate_keys": [
+      "ecc-eval-before-build",
+      "ecc-reliability-metrics",
+      "ecc-protected-acceptance",
+      "ecc-live-state-proof",
+      "ecc-variants-localization-symbol-integrity"
+    ],
+    "existing_ids": [
+      52,
+      53,
+      119,
+      175,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/skills/eval-harness/SKILL.md",
+    "reason": "Read complete translated eval skill, all fenced grader prompts/definitions/reports/shell commands and current canonical text. Retains pre-defined capability/regression/baseline evals, code/model/human graders, attempt-success versus all-trials-success distinction, versioned artifacts and staged report. Older version omits activation section and ProductEvals rule-grader/overfit/cost-latency/flaky-checker/extra artifact guidance. All six omit current LocalFrameworkUtilities and refusal of candidate execution absent reviewed OS containment, including receipt/static-warning-versus-promotion proof boundary. No safe execution implied. grep presence is not behavior; echo FAIL can still exit zero. Example pass@ percentages/90%/100% thresholds are targets or fabricated reports, not empirical model reliability; repeated independent-trial evidence is required.",
+    "candidate_keys": [
+      "ecc-eval-before-build",
+      "ecc-reliability-metrics",
+      "ecc-protected-acceptance",
+      "ecc-live-state-proof"
+    ],
+    "existing_ids": [
+      52,
+      53,
+      119,
+      175,
+      177
+    ]
+  },
+  {
+    "path": "docs/es/skills/eval-harness/SKILL.md",
+    "reason": "Read complete translated eval skill, all fenced grader prompts/definitions/reports/shell commands and current canonical text. Retains pre-defined capability/regression/baseline evals, code/model/human graders, attempt-success versus all-trials-success distinction, versioned artifacts and staged report. Condensed version omits full authentication worked example, ProductEvals framing/rule-grader list and minimal release-artifact layout, but retains retry/reliability and overfit/cost/flaky-checker anti-patterns. All six omit current LocalFrameworkUtilities and refusal of candidate execution absent reviewed OS containment, including receipt/static-warning-versus-promotion proof boundary. No safe execution implied. grep presence is not behavior; echo FAIL can still exit zero. Example pass@ percentages/90%/100% thresholds are targets or fabricated reports, not empirical model reliability; repeated independent-trial evidence is required.",
+    "candidate_keys": [
+      "ecc-eval-before-build",
+      "ecc-reliability-metrics",
+      "ecc-protected-acceptance",
+      "ecc-live-state-proof"
+    ],
+    "existing_ids": [
+      52,
+      53,
+      119,
+      175,
+      177
+    ]
+  },
+  {
+    "path": "docs/ko-KR/skills/eval-harness/SKILL.md",
+    "reason": "Read complete translated eval skill, all fenced grader prompts/definitions/reports/shell commands and current canonical text. Retains pre-defined capability/regression/baseline evals, code/model/human graders, attempt-success versus all-trials-success distinction, versioned artifacts and staged report. ProductEvals rule-grader, overfit/cost-latency/flaky-checker and release-artifact sections retained. All six omit current LocalFrameworkUtilities and refusal of candidate execution absent reviewed OS containment, including receipt/static-warning-versus-promotion proof boundary. No safe execution implied. grep presence is not behavior; echo FAIL can still exit zero. Example pass@ percentages/90%/100% thresholds are targets or fabricated reports, not empirical model reliability; repeated independent-trial evidence is required.",
+    "candidate_keys": [
+      "ecc-eval-before-build",
+      "ecc-reliability-metrics",
+      "ecc-protected-acceptance",
+      "ecc-live-state-proof"
+    ],
+    "existing_ids": [
+      52,
+      53,
+      119,
+      175,
+      177
+    ]
+  },
+  {
+    "path": "docs/tr/skills/eval-harness/SKILL.md",
+    "reason": "Read complete translated eval skill, all fenced grader prompts/definitions/reports/shell commands and current canonical text. Retains pre-defined capability/regression/baseline evals, code/model/human graders, attempt-success versus all-trials-success distinction, versioned artifacts and staged report. ProductEvals rule-grader, overfit/cost-latency/flaky-checker and release-artifact sections retained. All six omit current LocalFrameworkUtilities and refusal of candidate execution absent reviewed OS containment, including receipt/static-warning-versus-promotion proof boundary. No safe execution implied. grep presence is not behavior; echo FAIL can still exit zero. Example pass@ percentages/90%/100% thresholds are targets or fabricated reports, not empirical model reliability; repeated independent-trial evidence is required.",
+    "candidate_keys": [
+      "ecc-eval-before-build",
+      "ecc-reliability-metrics",
+      "ecc-protected-acceptance",
+      "ecc-live-state-proof"
+    ],
+    "existing_ids": [
+      52,
+      53,
+      119,
+      175,
+      177
+    ]
+  },
+  {
+    "path": "docs/zh-TW/skills/eval-harness/SKILL.md",
+    "reason": "Read complete translated eval skill, all fenced grader prompts/definitions/reports/shell commands and current canonical text. Retains pre-defined capability/regression/baseline evals, code/model/human graders, attempt-success versus all-trials-success distinction, versioned artifacts and staged report. Older version omits activation section and ProductEvals rule-grader/overfit/cost-latency/flaky-checker/extra artifact guidance. All six omit current LocalFrameworkUtilities and refusal of candidate execution absent reviewed OS containment, including receipt/static-warning-versus-promotion proof boundary. No safe execution implied. grep presence is not behavior; echo FAIL can still exit zero. Example pass@ percentages/90%/100% thresholds are targets or fabricated reports, not empirical model reliability; repeated independent-trial evidence is required.",
+    "candidate_keys": [
+      "ecc-eval-before-build",
+      "ecc-reliability-metrics",
+      "ecc-protected-acceptance",
+      "ecc-live-state-proof"
+    ],
+    "existing_ids": [
+      52,
+      53,
+      119,
+      175,
+      177
+    ]
+  }
+]

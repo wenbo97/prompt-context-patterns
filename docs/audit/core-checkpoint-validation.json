@@ -1,0 +1,17 @@
+{
+  "status": "checkpoint-valid",
+  "overall_status": "in_progress",
+  "complete_repositories": [
+    "obra/superpowers",
+    "multica-ai/andrej-karpathy-skills"
+  ],
+  "candidates": 41,
+  "checks": [
+    "inventory coverage",
+    "completed repository no-pending",
+    "candidate references",
+    "UTF-8 bilingual content",
+    "rubric gates",
+    "frozen source commit/path/line/url"
+  ]
+}

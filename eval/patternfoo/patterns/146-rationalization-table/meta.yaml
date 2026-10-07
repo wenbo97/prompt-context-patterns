@@ -1,4 +1,5 @@
-id: 146
+case_id: 146-rationalization-table
+pattern_ids: [146]
 name: Rationalization-Prevention Table
 category: quality-and-feedback
 hypothesis: Pre-enumerating common excuse phrases helps the model recognize and refuse them mid-output.

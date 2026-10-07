@@ -1,4 +1,6 @@
 .claude/
+CLAUDE.md
+blog-cc-dev.cmd
 .mcp.json
 
 # Jekyll
@@ -6,7 +8,12 @@ _site/
 .jekyll-cache/
 .sass-cache/
 vendor/
-Gemfile.lock
+.bundle/
+node_modules/
+.tools/
+premium-audit.json
+playwright-report/
+test-results/
 
 # Local only
 media/
@@ -16,3 +23,7 @@ eval/harvest-2026-07/
 superpowers/
 
 .playwright-mcp/
+
+# Generated Python reader caches
+__pycache__/
+*.py[cod]

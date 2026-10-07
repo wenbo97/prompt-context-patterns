@@ -1,0 +1,15 @@
+[
+  "legacy-command-shims/README.md",
+  "legacy-command-shims/commands/rules-distill.md",
+  "legacy-command-shims/commands/tdd.md",
+  "legacy-command-shims/commands/agent-sort.md",
+  "legacy-command-shims/commands/docs.md",
+  "legacy-command-shims/commands/eval.md",
+  "legacy-command-shims/commands/context-budget.md",
+  "legacy-command-shims/commands/e2e.md",
+  "legacy-command-shims/commands/prompt-optimize.md",
+  "legacy-command-shims/commands/verify.md",
+  "legacy-command-shims/commands/devfleet.md",
+  "legacy-command-shims/commands/claw.md",
+  "legacy-command-shims/commands/orchestrate.md"
+]

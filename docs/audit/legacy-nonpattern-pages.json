@@ -1,0 +1,448 @@
+[
+  {
+    "path": "catalog/techniques/anti-laziness-zh.md",
+    "decision": "rewrite",
+    "reason": "Its eight defenses overlap reference pointers, scripts, isolation and validation; numerical skip-rate examples have no reproducible local outputs.",
+    "recommendation": "Describe observable reference-skipping, not model motivation. Consolidate into #23/#100/#104/#42/#51/#119, use explicit read evidence, and remove claims that scripts or subagents eliminate failure or provide perfect safety.",
+    "language": "zh",
+    "reviewed_sha256": "4fbdb976b2ac50eef543bcdc30d82ef9e04135f18db76e0c32c281c774d99352",
+    "line_count": 330,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "| 确定性操作（XML 解析、格式验证、标记检测） | **捆绑脚本**，不是 prompt | 100% 确定性，零即兴发挥面。 |",
+      "> \"基线（916行版本）：0%跳过率，92%格式正确。新版本（450行）：12%跳过率，78%格式正确。→ 拒绝此重构；定位哪个提取导致了回退。\"",
+      "- [ ] 任何高风险路径的指标回退不超过 2-3%"
+    ]
+  },
+  {
+    "path": "catalog/techniques/anti-laziness.md",
+    "decision": "rewrite",
+    "reason": "Its eight defenses overlap reference pointers, scripts, isolation and validation; numerical skip-rate examples have no reproducible local outputs.",
+    "recommendation": "Describe observable reference-skipping, not model motivation. Consolidate into #23/#100/#104/#42/#51/#119, use explicit read evidence, and remove claims that scripts or subagents eliminate failure or provide perfect safety.",
+    "language": "en",
+    "reviewed_sha256": "f94b2b2612108dd23c6bd691b347afb6f053d8d6b5418e8f7d029f198732fa8a",
+    "line_count": 318,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "| Deterministic operations (XML parsing, format validation, marker detection) | **Bundled scripts**, not prompt | 100% deterministic, zero improvisation surface. |",
+      "> \"Baseline (916-line version): 0% skip rate, 92% format-correct. New version (450 lines): 12% skip rate, 78% format-correct. → Reject this refactor; isolate which extraction caused the regression.\"",
+      "- [ ] No metric regression > 2–3% on any high-risk path"
+    ]
+  },
+  {
+    "path": "catalog/techniques/branching-stability-zh.md",
+    "decision": "rewrite",
+    "reason": "The practical routing examples are useful, but the reported five-run outputs are not available; branch-stability labels overgeneralize.",
+    "recommendation": "Preserve routing fixtures and unknown branch; remove unsupported 5/5 findings or mark them historical reported observations with raw outputs unavailable. Separate shape/schema enforcement from branch structure and link #3/#20/#51/#152.",
+    "language": "zh",
+    "reviewed_sha256": "af342f4af2b94cfd99b81345807afaf52a8bde87d63d5aaf96a902ed77f904e6",
+    "line_count": 108,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "catalog/techniques/branching-stability.md",
+    "decision": "rewrite",
+    "reason": "The practical routing examples are useful, but the reported five-run outputs are not available; branch-stability labels overgeneralize.",
+    "recommendation": "Preserve routing fixtures and unknown branch; remove unsupported 5/5 findings or mark them historical reported observations with raw outputs unavailable. Separate shape/schema enforcement from branch structure and link #3/#20/#51/#152.",
+    "language": "en",
+    "reviewed_sha256": "47a7ffdd4bfa763826ca1bc1db2f73b55323e4e8a4a22d530126303b4b7e067b",
+    "line_count": 108,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "catalog/techniques/good-vs-bad-template-zh.md",
+    "decision": "rewrite",
+    "reason": "Specific contracts are useful, but the static csproj example overclaims deterministic behavior and hardcodes domain rules that are not universal.",
+    "recommendation": "Turn it into the editorial teaching-example template: same task and known facts, concrete failure, improved action, observable result and boundary. Replace XML/attention causal assertions and universal package assumptions; distinguish static checks from build verification.",
+    "language": "zh",
+    "reviewed_sha256": "31863ccc9c86047e9ea64cc71afef494da5ac7b43d365bbfc3036ecff39d1f08",
+    "line_count": 306,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "<!-- last_tested: 2026-03-25 -->"
+    ]
+  },
+  {
+    "path": "catalog/techniques/good-vs-bad-template.md",
+    "decision": "rewrite",
+    "reason": "Specific contracts are useful, but the static csproj example overclaims deterministic behavior and hardcodes domain rules that are not universal.",
+    "recommendation": "Turn it into the editorial teaching-example template: same task and known facts, concrete failure, improved action, observable result and boundary. Replace XML/attention causal assertions and universal package assumptions; distinguish static checks from build verification.",
+    "language": "en",
+    "reviewed_sha256": "78572bf08d2c42ec57f28db9f916ea75bf0cc58ab39399652ffce5d0f144cae6",
+    "line_count": 306,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "<!-- last_tested: 2026-03-25 -->"
+    ]
+  },
+  {
+    "path": "catalog/techniques/reference-skip-playbook-zh.md",
+    "decision": "rewrite",
+    "reason": "Eleven solution shapes are worthwhile variants but duplicate the anti-laziness page and make unsupported guarantees about attention and hooks.",
+    "recommendation": "Keep one reference-reading guide with a trace-based diagnosis, conditional pointer, inline essential rule, script interface and actual validation. Treat naked-hop/pre-satisfaction/optional framing as hypotheses to test. Remove perfect-determinism claims and retain host-specific hooks as scoped examples.",
+    "language": "zh",
+    "reviewed_sha256": "c48c2d8624d213ae19991db6e8f90ca2b0bc8b958694e79fa7b15e31b31be99c",
+    "line_count": 544,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "100% 确定性。没有 prompt 级即兴发挥的可能。"
+    ]
+  },
+  {
+    "path": "catalog/techniques/reference-skip-playbook.md",
+    "decision": "rewrite",
+    "reason": "Eleven solution shapes are worthwhile variants but duplicate the anti-laziness page and make unsupported guarantees about attention and hooks.",
+    "recommendation": "Keep one reference-reading guide with a trace-based diagnosis, conditional pointer, inline essential rule, script interface and actual validation. Treat naked-hop/pre-satisfaction/optional framing as hypotheses to test. Remove perfect-determinism claims and retain host-specific hooks as scoped examples.",
+    "language": "en",
+    "reviewed_sha256": "272cbb5baca142afd1560c68be58f699f5f14c7141c3e7e9203666abc9dbcb88",
+    "line_count": 544,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "100% deterministic. No prompt-level improvisation possible."
+    ]
+  },
+  {
+    "path": "catalog/techniques/skill-architecture-zh.md",
+    "decision": "rewrite",
+    "reason": "Packaging observations are useful, but historical repository counts and quantitative prevalence lack a frozen coverage ledger; the text still addresses another migration plugin.",
+    "recommendation": "Use frozen source inventory for current counts and repository-specific licenses. Replace plugin-specific names and instructions with generic packaging guidance, and link #1/#13/#19/#23/#100/#109/#190. Do not call Anthropic document skills open source or infer efficacy from their complexity.",
+    "language": "zh",
+    "reviewed_sha256": "989d8d2fd3405fb7643375f3aac6982b874eba9d448ec7cee3ff7535b6a38313",
+    "line_count": 386,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "- 社区精选 skill：32 个独立 + 832 个 Composio skill，`CONTRIBUTING.md`",
+      "| `license` 字段 | 15/17 个 skill 包含 | 约10% 包含 |",
+      "| 正文大小 | 30-590 行 | 30-500 行 |",
+      "| **How to Use**（步骤） | 关键——提供执行路径 | 约90% 的 skill |",
+      "| **Example**（已填充） | 高——锚定输出格式 | 约65% 的 skill |",
+      "| **When to Use**（范围） | 中——防止误激活 | 约40% 的 skill |",
+      "| **Tips**（陷阱） | 中——防止常见错误 | 约50% 的 skill |",
+      "| **What This Skill Does** | 低——与 description 冗余 | 约30% 的 skill |",
+      "832 个 skill 使用几乎相同的模板，只有 3 个变量：",
+      "Composio 通过模板化达到 832 个 skill。但通用 skill 质量低——不提供领域特定指导。列出具体工具和陷阱的丰富变体（如 `googledocs-automation`）明显更有用。",
+      "| **Skill 数量** | 17 | 32 独立 + 832 模板 | 21 skill + 3 agent + 4 command |"
+    ]
+  },
+  {
+    "path": "catalog/techniques/skill-architecture.md",
+    "decision": "rewrite",
+    "reason": "Packaging observations are useful, but historical repository counts and quantitative prevalence lack a frozen coverage ledger; the text still addresses another migration plugin.",
+    "recommendation": "Use frozen source inventory for current counts and repository-specific licenses. Replace plugin-specific names and instructions with generic packaging guidance, and link #1/#13/#19/#23/#100/#109/#190. Do not call Anthropic document skills open source or infer efficacy from their complexity.",
+    "language": "en",
+    "reviewed_sha256": "c1d4b93fa60d264e4ae6e07d947d71039de400a998c9ccb666e4dfb96ba3c331",
+    "line_count": 386,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "- Community curated skills: 32 unique + 832 Composio skills, `CONTRIBUTING.md`",
+      "| `license` field | 15/17 skills include it | ~10% include it |",
+      "| Body size | 30-590 lines | 30-500 lines |",
+      "| **How to Use** (steps) | Critical — provides the execution path | ~90% of skills |",
+      "| **Example** (populated) | High — grounds the output format | ~65% of skills |",
+      "| **When to Use** (scope) | Medium — prevents mis-activation | ~40% of skills |",
+      "| **Tips** (pitfalls) | Medium — prevents common errors | ~50% of skills |",
+      "| **What This Skill Does** | Low — redundant with description | ~30% of skills |",
+      "832 skills use a near-identical template with only 3 variables:",
+      "Composio achieved 832 skills by templating. But the generic skills are low-quality — they provide no domain-specific guidance. The enriched variants (like `googledocs-automation`) that list specific tools and pitfalls are significantly more useful.",
+      "| **Skills count** | 17 | 32 unique + 832 template | 21 skills + 3 agents + 4 commands |"
+    ]
+  },
+  {
+    "path": "catalog/techniques/token-level-techniques-zh.md",
+    "decision": "rewrite",
+    "reason": "Useful structure and example techniques are mixed with invented attention distributions and deterministic-behavior claims.",
+    "recommendation": "Keep task-level guidance and examples; remove illustrative probabilities presented as observed behavior, hidden-chain-of-thought recipes, universal XML superiority and attention-position explanations without experimental support. Link #3/#14/#25/#100/#152; retain vendor advice only as vendor-scoped guidance.",
+    "language": "zh",
+    "reviewed_sha256": "5d2e7a45f57f39ce1f52c8cfa5a101b0706f6f93bfdc1ac9872d4f93eb3273cc",
+    "line_count": 469,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "每次模型生成 token 时，它面对一组候选项，每个有一个概率。如果概率均匀分布（如10个候选项各10%），模型在\"犹豫\"——高熵。如果一个候选项占90%其余可忽略，模型\"确定\"——低熵。",
+      "\"use defaults, execute\" token **紧邻游标**。无需回溯任何位置。模型几乎100%确定下一步做什么 → **极低熵 → 确定性行为**。",
+      "use arguments, execute:  35%",
+      "use defaults, execute:   30%",
+      "ask user:                25%",
+      "other:                   10%",
+      "use defaults, execute:   92%",
+      "use arguments, execute:   5%",
+      "other:                    3%"
+    ]
+  },
+  {
+    "path": "catalog/techniques/token-level-techniques.md",
+    "decision": "rewrite",
+    "reason": "Useful structure and example techniques are mixed with invented attention distributions and deterministic-behavior claims.",
+    "recommendation": "Keep task-level guidance and examples; remove illustrative probabilities presented as observed behavior, hidden-chain-of-thought recipes, universal XML superiority and attention-position explanations without experimental support. Link #3/#14/#25/#100/#152; retain vendor advice only as vendor-scoped guidance.",
+    "language": "en",
+    "reviewed_sha256": "40b4fcec0d216a358e1b0bfbd5ebbc849a49bf73ba3ae25d208ab1c8294b68b7",
+    "line_count": 469,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "Every time the model generates a token, it faces a set of candidates, each with a probability. If probabilities are spread evenly (e.g., 10 candidates at 10% each), the model is \"hesitating\" — that's high entropy. If one candidate sits at 90% and the rest are negligible, the model is \"certain\" — that's low entropy.",
+      "The tokens \"use defaults, execute\" are **right next to the cursor**. No need to look back anywhere. The model is nearly 100% certain what to do next → **very low entropy → deterministic behavior**.",
+      "use arguments, execute:  35%",
+      "use defaults, execute:   30%",
+      "ask user:                25%",
+      "other:                   10%",
+      "use defaults, execute:   92%",
+      "use arguments, execute:   5%",
+      "other:                    3%"
+    ]
+  },
+  {
+    "path": "catalog/standards/quality-standards-zh.md",
+    "decision": "rewrite",
+    "reason": "The page contains orphaned command/rule references from a separate migration plugin, fixed line/token quotas and claims that forks always start fresh.",
+    "recommendation": "Replace with project editorial rules and maintained source policy. Require concrete scenarios, paired examples, observation/origin separation, bilingual completeness and checkable links. Vendor up-to-30-percent advice is a vendor-reported complex-long-context result, not a general project guarantee.",
+    "language": "zh",
+    "reviewed_sha256": "b5f0939c0f6a5e72fa28604b2569d2c2828387919f593ccaa575d08c005e4652",
+    "line_count": 373,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "**为什么有效：** Anthropic 测试显示，查询放在长上下文提示词末尾能将响应质量提升最多 30%。对本插件，将参考数据（包映射、项目映射、错误表）放在顶部，决策逻辑放在底部，能产生更准确的分类。",
+      "**为什么有效：** Claude Code 内部的防护栏平均每条 47 token — 精确且有针对性。长散文段落在上下文压力下会被略读。表格和列表能被可靠解析。",
+      "2. 每条防护栏控制在 30-60 token",
+      "| **散文段落防护栏** | Agent 从表格/列表中可靠提取规则；会略读散文 | Agent 错过了埋在段落中的\"不要添加包到 common group\"规则 | 每行一条规则的表格或列表。每条 30-60 token。 |",
+      "| **长数据在前，查询在后** | 查询放在长上下文提示词末尾能将响应质量提升最多 30%（Anthropic 测试） | 包映射、项目映射、错误表放顶部；决策逻辑放后面 |",
+      "Claude Code 的行为防护栏平均每条 **47 token**。本插件应遵循相同的经济原则：",
+      "| 单条防护栏规则 | 30-60 token | 足够精确以消除歧义，足够短以在上下文压力下存活 |",
+      "| Agent 角色声明 | 15-30 token | 一句话。\"You are a {role} that {responsibility}.\" |"
+    ]
+  },
+  {
+    "path": "catalog/standards/quality-standards.md",
+    "decision": "rewrite",
+    "reason": "The page contains orphaned command/rule references from a separate migration plugin, fixed line/token quotas and claims that forks always start fresh.",
+    "recommendation": "Replace with project editorial rules and maintained source policy. Require concrete scenarios, paired examples, observation/origin separation, bilingual completeness and checkable links. Vendor up-to-30-percent advice is a vendor-reported complex-long-context result, not a general project guarantee.",
+    "language": "en",
+    "reviewed_sha256": "7450a9cfd3e8635096d858f72df1749b8f047e07ac227375dcaad5714d3cf1dc",
+    "line_count": 373,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "**Why it works:** Anthropic testing shows queries at the end of long-context prompts improve response quality by up to 30%. For this plugin, putting reference data (package maps, project maps, error tables) at the top and decision logic at the bottom produces more accurate classifications.",
+      "**Why it works:** Claude Code's internal guardrails average 47 tokens each — precise and surgical. Long prose paragraphs are skimmed under context pressure. Tables and lists are parsed reliably.",
+      "2. Keep each guardrail to 30–60 tokens",
+      "| **Guardrails as prose paragraphs** | Agents extract rules from tables/lists reliably; they skim prose | Agent misses the \"do not add packages to common group\" rule buried in a paragraph | One rule per table row or bullet. 30–60 tokens each. |",
+      "| **Long data at the top, query at the bottom** | Queries at the end of long-context prompts improve response quality by up to 30% (Anthropic testing) | Put package maps, project maps, error tables near the top; put decision logic after |",
+      "Claude Code's behavioral guardrails average **47 tokens each**. This plugin should follow the same economy:",
+      "| Single guardrail rule | 30–60 tokens | Precise enough to be unambiguous, short enough to survive context pressure |",
+      "| Agent role statement | 15–30 tokens | One sentence. \"You are a {role} that {responsibility}.\" |"
+    ]
+  },
+  {
+    "path": "catalog/standards/review-checklist-zh.md",
+    "decision": "rewrite",
+    "reason": "Its evidence structure is useful, but several review checks treat heuristics as universal obligations and enforce unverifiable effects.",
+    "recommendation": "Review against project editorial rules and original task separately. Remove mandatory XML, chain-of-thought exposure, fixed skill size thresholds and invented 30-percent/5-percent deviations. Check source pins, claims, fixtures, authorization scope and actual validator outcomes.",
+    "language": "zh",
+    "reviewed_sha256": "8933d47174696be0cdd371b863ab25b4f030a1847c52a836ddbca7994c8080b2",
+    "line_count": 208,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "4. **收益** — 修改后行为带来什么具体改进。指出具体结果：\"防止 agent 应用错误的缓存修复\"或\"消除 P0 分类中 50% 的误报率\"。回答：\"修改后什么会变好？\"每个修复必须证明其存在价值——如果无法陈述具体收益，该问题不值得报告。",
+      "| **查询下方的长数据** | 参考数据（包映射、错误表）放在使用它的决策逻辑之后 | Anthropic 测试：长上下文 prompt 末尾的查询将响应质量提高多达 30%。对于加载 package-map.md 或 project-map-list.md 的 skill，将数据放在决策步骤之前可提高分类准确性。 | P2 |",
+      "| **冗长护栏（>60 token）** | 单条护栏规则超过 60 token | 引用 Claude Code System Prompts：平均护栏 47 token。长规则稀释影响力。如果规则需要 >60 token，可能是两条规则或包含不必要解释。 | P2 |",
+      "| **散文分支而非决策树** | 多路径决策用\"if X then Y, if Z then W\"散文描述而非可视 `├─ YES →` / `└─ NO →` 树 | 散文将条件分散在句子中——注意力在多个位置稀释。树将条件和动作在 token 序列中相邻放置，集中注意力产生确定性行为。运行10次：散文约30%偏差，树约5%。 | P2 |"
+    ]
+  },
+  {
+    "path": "catalog/standards/review-checklist.md",
+    "decision": "rewrite",
+    "reason": "Its evidence structure is useful, but several review checks treat heuristics as universal obligations and enforce unverifiable effects.",
+    "recommendation": "Review against project editorial rules and original task separately. Remove mandatory XML, chain-of-thought exposure, fixed skill size thresholds and invented 30-percent/5-percent deviations. Check source pins, claims, fixtures, authorization scope and actual validator outcomes.",
+    "language": "en",
+    "reviewed_sha256": "8ad5ff6e58349983f15193960c44db2fb4f4d5c8c4c173caf8af09ba794c98de",
+    "line_count": 208,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "4. **Benefit** — What concrete improvement the changed behavior provides. Name the specific outcome: \"Prevents agent from applying wrong cached fix\" or \"Eliminates 50% false positive rate in P0 classification.\" This answers: \"What gets better after the change?\" Every fix must justify its existence — if you cannot state a concrete benefit, the issue is not worth reporting.",
+      "| **Long data below query** | Reference data (package maps, error tables) placed AFTER the decision logic that uses it | Anthropic testing: queries at the end of long-context prompts improve response quality by up to 30%. For skills loading package-map.md or project-map-list.md, placing the data above the decision steps improves classification accuracy. | P2 |",
+      "| **Verbose guardrails (>60 tokens)** | Single guardrail rule exceeding 60 tokens | Per Claude Code System Prompts: the average guardrail is 47 tokens. Long rules dilute impact. If a rule needs >60 tokens, it may be two rules or include unnecessary explanation. | P2 |",
+      "| **Prose branching instead of decision tree** | Multi-path decisions described as \"if X then Y, if Z then W\" prose instead of visual `├─ YES →` / `└─ NO →` trees | Prose scatters conditions across a sentence — attention dilutes across multiple positions. A tree places condition and action adjacent in the token sequence, concentrating attention and producing deterministic behavior. Run 10 times: prose ~30% deviation, tree ~5%. | P2 |"
+    ]
+  },
+  {
+    "path": "_posts/2026-04-19-decision-tree-pattern-zh.md",
+    "decision": "revise-historical",
+    "reason": "The 20-run numeric results cannot be recomputed because raw outputs are absent; action enums and explicit schema also change between prompt variants.",
+    "recommendation": "Keep date, fixtures and the motivation for output-contract tests. Remove numerical superiority claims or explicitly label them previously reported/unverified. Explain confounding: literal action strings differ, so the result cannot isolate tree-versus-prose format. Link current #14/#20/#152 and Patternfoo.",
+    "language": "zh",
+    "reviewed_sha256": "442252d5f90c9cd8fc16da6c234558c388bf1011a9644f425d59c52e687a9ccc",
+    "line_count": 140,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "自然语言的次要措施可复现性是 **0%** — 每一次运行都憋出一个全新的句子。"
+    ]
+  },
+  {
+    "path": "_posts/2026-04-19-decision-tree-pattern.md",
+    "decision": "revise-historical",
+    "reason": "The 20-run numeric results cannot be recomputed because raw outputs are absent; action enums and explicit schema also change between prompt variants.",
+    "recommendation": "Keep date, fixtures and the motivation for output-contract tests. Remove numerical superiority claims or explicitly label them previously reported/unverified. Explain confounding: literal action strings differ, so the result cannot isolate tree-versus-prose format. Link current #14/#20/#152 and Patternfoo.",
+    "language": "en",
+    "reviewed_sha256": "b98f35ce2781a148a1541daf2b5b7cf9b1e0f659843064bb432c33d07ef046a8",
+    "line_count": 142,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "Prose managed **0% reproducibility** on secondary actions. Every single run came back with a unique sentence."
+    ]
+  },
+  {
+    "path": "_posts/2026-04-19-prompt-engineering-patterns-zh.md",
+    "decision": "revise-historical",
+    "reason": "The article reproduces fabricated token probabilities and overstates transformer attention mechanisms as guarantees.",
+    "recommendation": "Retain date and practical prompt-structure examples; replace causal/quantitative explanations with bounded hypotheses and links to the current catalog and cited primary vendor guidance.",
+    "language": "zh",
+    "reviewed_sha256": "9cbe3c8b9c3d3fa649b7079cb5b2a39ce52efa0796b15bc1b1a86b88eaf2442c",
+    "line_count": 350,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "_posts/2026-04-19-prompt-engineering-patterns.md",
+    "decision": "revise-historical",
+    "reason": "The article reproduces fabricated token probabilities and overstates transformer attention mechanisms as guarantees.",
+    "recommendation": "Retain date and practical prompt-structure examples; replace causal/quantitative explanations with bounded hypotheses and links to the current catalog and cited primary vendor guidance.",
+    "language": "en",
+    "reviewed_sha256": "b8ef004af2ca96cf79ad994a6fdd1bdc34f590fdba0764c7aecc6ee1ec139f6d",
+    "line_count": 474,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": [
+      "Every time the model generates a token, it's choosing among candidates, each with its own probability. If those probabilities are spread evenly — say, 10 candidates at 10% each — the model is \"hesitating,\" and that's high entropy. If one candidate sits at 90% and the rest barely register, the model is \"certain,\" and that's low entropy.",
+      "The tokens \"use defaults, execute\" are **right next to the cursor** — there's nothing to look back for. The model is almost 100% sure what comes next → **very low entropy → deterministic behavior**.",
+      "use arguments, execute:  35%",
+      "use defaults, execute:   30%",
+      "ask user:                25%",
+      "other:                   10%",
+      "use defaults, execute:   92%",
+      "use arguments, execute:   5%",
+      "other:                    3%"
+    ]
+  },
+  {
+    "path": "_posts/2026-05-26-prompt-pattern-catalog-zh.md",
+    "decision": "revise-historical",
+    "reason": "The claimed at-least-three-independent-plugins admission rule conflicts with many single-source catalog entries; example IDs 23 and 45 do not match actual catalog identities.",
+    "recommendation": "Preserve the historical release description with a revision note; remove unrecoverable 500-plus production-corpus and prevalence assertions, fix examples to #41 and relevant current review/gate entries, and route readers to the current source/audit methodology.",
+    "language": "zh",
+    "reviewed_sha256": "c88a9788e6acef02d510560baa5b5d3376e229e02f7ebeff545bd6d1fc8cfa6c",
+    "line_count": 146,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "_posts/2026-05-26-prompt-pattern-catalog.md",
+    "decision": "revise-historical",
+    "reason": "The claimed at-least-three-independent-plugins admission rule conflicts with many single-source catalog entries; example IDs 23 and 45 do not match actual catalog identities.",
+    "recommendation": "Preserve the historical release description with a revision note; remove unrecoverable 500-plus production-corpus and prevalence assertions, fix examples to #41 and relevant current review/gate entries, and route readers to the current source/audit methodology.",
+    "language": "en",
+    "reviewed_sha256": "a8ae7a9e407a86edcba44b3ad3859db9085374edd1fcaa4ba836637a02317a0b",
+    "line_count": 145,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "_posts/2026-07-08-harvest-2026-07-zh.md",
+    "decision": "revise-historical",
+    "reason": "The historical 51 names exist, but confidence labels are not calibrated efficacy; no-change source claims lack recorded old/new SHAs and the malicious-credential criterion is oversimplified.",
+    "recommendation": "Keep 155-to-206 as a historical catalog change, point to decisions for all IDs, remove unstored commit-comparison claims, and distinguish suspicious routing from confirmed malicious intent. Show current canon through generated links, not a permanent total.",
+    "language": "zh",
+    "reviewed_sha256": "b34f701dae74b952b7f4e75cc0583ac004cdf1626e62b4d5b3d3d458ea48b4ff",
+    "line_count": 44,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "_posts/2026-07-08-harvest-2026-07.md",
+    "decision": "revise-historical",
+    "reason": "The historical 51 names exist, but confidence labels are not calibrated efficacy; no-change source claims lack recorded old/new SHAs and the malicious-credential criterion is oversimplified.",
+    "recommendation": "Keep 155-to-206 as a historical catalog change, point to decisions for all IDs, remove unstored commit-comparison claims, and distinguish suspicious routing from confirmed malicious intent. Show current canon through generated links, not a permanent total.",
+    "language": "en",
+    "reviewed_sha256": "18f6d997452956ed15316acc18b60be8d5904a98457f453268d6b52ed7081348",
+    "line_count": 43,
+    "review_method": "full-text structural and claim audit; bilingual companion checked for matching remediation",
+    "unsupported_numeric_claims": []
+  },
+  {
+    "path": "catalog/README.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "en",
+    "reviewed_sha256": "e1703959d58395a3023f607a628de52f326a6e2a866efe8e538e64aea68103aa",
+    "line_count": 78,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/README-zh.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "zh",
+    "reviewed_sha256": "f3e4ac09aa7a1e9b92c2d6bf3f2580540fe24a4d3e7c619165550297d1c478ae",
+    "line_count": 78,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/catalog-index.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "en",
+    "reviewed_sha256": "c65ede7e63962fdbd0d7bc63d25a78aea2ef52f1b9557bc333306f1db71fb104",
+    "line_count": 378,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/catalog-index-zh.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "zh",
+    "reviewed_sha256": "257b641db44182e80fe4df03601c66064e6b7189b506ec910a3caac11f551db9",
+    "line_count": 379,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/index.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "en",
+    "reviewed_sha256": "1ae76bdc436a1721976253aa2ec40b79d1990c82bb61ee9777207d12f3c25db7",
+    "line_count": 70,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/browse.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "en",
+    "reviewed_sha256": "9c0311cd2f1f7351d004a65434b847aca8aab63c692309bca5084f81c3055ea0",
+    "line_count": 28,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/patterns-156-206.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "en",
+    "reviewed_sha256": "cc9d172ff95e49bba5b1e13608f1cc9960e47b10735d1457906f305976f8ef06",
+    "line_count": 27,
+    "review_method": "metadata and route audit"
+  },
+  {
+    "path": "catalog/patterns-156-206-zh.md",
+    "decision": "regenerate",
+    "reason": "Duplicated counts, taxonomy and hand-maintained detail links drift from the actual canonical corpus.",
+    "recommendation": "Generate from active canonical metadata with stable routes, bilingual pairs, explicit merged/withdrawn aliases and source-state filters; never count compatibility pages as active patterns.",
+    "language": "zh",
+    "reviewed_sha256": "2c12f712d2462d06322cbac8cb5ff08036f9675a94af47e6190efe2384fc92c8",
+    "line_count": 27,
+    "review_method": "metadata and route audit"
+  }
+]

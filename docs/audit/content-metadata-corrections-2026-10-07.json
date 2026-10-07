@@ -1,0 +1,23 @@
+[
+  {
+    "id": 68,
+    "field": "summary_en",
+    "before": "Minimize sensitive data before it reaches model context.",
+    "after": "Delegate raw data access to bounded roles and keep the orchestrator focused on coordination and minimal results.",
+    "reason": "Align bilingual summary with the existing method identity and reviewed seven-section bodies; no provenance or score change."
+  },
+  {
+    "id": 89,
+    "field": "summary_en",
+    "before": "Replace recurring vague wording using an explicit, domain-aware style table.",
+    "after": "Declare editable fields and contextual substitutions while preserving protected facts and identifiers.",
+    "reason": "Align bilingual summary with the existing method identity and reviewed seven-section bodies; no provenance or score change."
+  },
+  {
+    "id": 175,
+    "field": "summary_zh",
+    "before": "明确工具是否执行、是否成功，以及是否完成了实际任务。",
+    "after": "区分工具是否存在、可运行及实际运行，并另记执行结果和任务覆盖。",
+    "reason": "Align bilingual summary with the existing method identity and reviewed seven-section bodies; no provenance or score change."
+  }
+]

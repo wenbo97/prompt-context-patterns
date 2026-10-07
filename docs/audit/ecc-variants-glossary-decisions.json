@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/de-DE/GLOSSARY.md",
+    "depth": "full-semantic-text",
+    "reason": "Read entire terminology table and surrounding translation policy. Explicit literal ECC surface/directory/command identity and YAML field-name preservation form localization symbol-integrity guidance; translated generic technical nouns remain flexible. Definitions are a glossary, not claimed runtime activation. New independently authored teaching example only; no source instruction executed.",
+    "candidate_keys": [
+      "ecc-variants-localization-symbol-integrity"
+    ]
+  },
+  {
+    "path": "docs/pl/GLOSSARY.md",
+    "depth": "full-semantic-text",
+    "reason": "Read entire terminology table and surrounding translation policy. Explicit literal ECC surface/directory/command identity and YAML field-name preservation form localization symbol-integrity guidance; translated generic technical nouns remain flexible. Definitions are a glossary, not claimed runtime activation. New independently authored teaching example only; no source instruction executed.",
+    "candidate_keys": [
+      "ecc-variants-localization-symbol-integrity"
+    ]
+  }
+]

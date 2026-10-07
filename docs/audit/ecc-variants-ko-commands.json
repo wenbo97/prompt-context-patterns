@@ -1,0 +1,74 @@
+[
+  {
+    "path": "docs/ko-KR/commands/build-fix.md",
+    "reason": "Full68line translated instructions: actual project-build detection, dependency-ordered diagnostics, minimal one-error fix→rebuild, three-attempt/architecture/dependency stop and concrete report. Matches canonical reviewed repair method; Python compileall now has dot unlike old CN. Command outputs not executed; language build/API details scoped out."
+  },
+  {
+    "path": "docs/ko-KR/commands/checkpoint.md",
+    "reason": "Full79line template and log shell read: verify→stash/commit→named checkpoint then comparison and bounded list cleanup. Same checkpoint method; HEAD-only log cannot identify a stash/dirty snapshot or historical test metrics, so declared comparison fields require actual evidence. Symbolic values and CLI verbs preserved, no git action."
+  },
+  {
+    "path": "docs/ko-KR/commands/code-review.md",
+    "reason": "Full40line old local-uncommitted review list/report/gate read against canonical detailed current review note. Omits current PR/mode/base/full-file/context/validation and evidence-before-report gates; fixed50/800/TODO labels are not proven HIGH defects. Review protocol retained only as legacy source example, no automatic commit enforcement or model run."
+  },
+  {
+    "path": "docs/ko-KR/commands/e2e.md",
+    "reason": "Full334line body and entire nested teaching test/report example read. Scenario→POM→actual browser run→artifacts→flake report retained; current root command retired to e2e-testing. Source3passed/70%/9.1s are authored example outputs. Post-action response waiter/empty-title comparison and nonfixed counts show limited oracle, no unrelated runtime audit; production test prohibition retained. No browser/upload/test executed."
+  },
+  {
+    "path": "docs/ko-KR/commands/eval.md",
+    "reason": "Full120line define→concrete capability/regression criteria→attempt ledger→report/list/clean template read. Shared eval criteria and separate capability pass@k vs all-pass regression; root alias retired to eval-harness. Fixed90%/100% and example67/100 not observed evaluations; baseline/multiple-run identity and containment must remain explicit rather than accepting checkboxes. No evaluations run."
+  },
+  {
+    "path": "docs/ko-KR/commands/go-build.md",
+    "reason": "Full183line prompt and nested diagnostic/minimal fix/rebuild/example source read. Preserves one-error/trial bounded stops and separate build/vet/lint lanes; runtime language conversion details scoped out. Example Atoi discards error and success output is constructed, not captured. No mod/build action."
+  },
+  {
+    "path": "docs/ko-KR/commands/go-review.md",
+    "reason": "Full148line review/body/example/report read: diff scope→static tools→domain risk categories→evidence locations→approval criteria. Same reviewed canonical mechanism; fixed severity policies are source conventions, go build-race is instrumented build not executed race test and shared map example needs actual write premise. Domain API implementation excluded from independent method cards; no tool run."
+  },
+  {
+    "path": "docs/ko-KR/commands/go-test.md",
+    "reason": "Full268line body including nested interface/tests/implementation/output and separate helper snippets read. Causal-red/table oracle/minimal green/independent cleanup retained; panic stub is setup failure rather than business expectation, coverage100 is source example. Exact CLI/names retained, Go email/API choices scoped out, no test run."
+  },
+  {
+    "path": "docs/ko-KR/commands/learn.md",
+    "reason": "Full70line cause/context/solution/example/activation draft and confirm/save workflow read. Omits current guarded taint-aware writes, configured root/exact slug, valid standard SKILL directory/frontmatter and collision rules; flat learned/name.md may not discover. Existing evidence-to-skill method retained with omission note; no memory read/write or skill installed."
+  },
+  {
+    "path": "docs/ko-KR/commands/orchestrate.md",
+    "reason": "Full172line sequential role chain, exact handoff/context/findings/modified-files/questions, final aggregation and independent parallel reviewer template read. Shared explicit artifact handoff and DAG independence; current alias retired. Recommender SHIP not publication authority; arbitrary clear/mandatory stages not universal, actual provider capability needs separate proof. No agents started."
+  },
+  {
+    "path": "docs/ko-KR/commands/plan.md",
+    "reason": "Full113line requirements→deps/risks/phases→explicit confirmation and full notification example read. Same approved planning contract; source invented time estimates and reliability guarantee need real evidence. Role/CLI locators preserved but user can supersede source confirmation rule, source not instructions for this audit."
+  },
+  {
+    "path": "docs/ko-KR/commands/refactor-clean.md",
+    "reason": "Full80line actual detection-classification→baseline→one deletion→test→rollback and dynamic/string/external-consumer checks read. Preserves bounded cleanup and uncertainty skip; git checkout whole-file rollback can erase preexisting edits,80% similarity not semantic equivalence. This is source limitation not implementation fix; no deletion/restore performed."
+  },
+  {
+    "path": "docs/ko-KR/commands/setup-pm.md",
+    "reason": "Full80line actual precedence/env/config/lock fallback and literal JSON/commands read. Shared explicit override versus detection; disable-model-invocation retained. Hardcoded npm fallback differs README first-available; package name/presence not usable runtime proof. Installation/API details scoped out, no config write."
+  },
+  {
+    "path": "docs/ko-KR/commands/tdd.md",
+    "reason": "Full326line complete scaffold/test/green/refactor/example output read. Same causal-red/behavior acceptance; root retired shim. Refactor adds per-component clamps changing negative/future input behavior outside three tests; claimed100% not recorded run, business scoring example not financial recommendation. No code/tests run."
+  },
+  {
+    "path": "docs/ko-KR/commands/test-coverage.md",
+    "reason": "Full74line detect→read actual report→branch/error/edge gaps→project fixtures→isolated tests→full rerun/report read. Shared gap-targeted evaluation,80% policy not correctness; independent test setup retained and all external mocks do not establish integration behavior. No test generation/run."
+  },
+  {
+    "path": "docs/ko-KR/commands/update-codemaps.md",
+    "reason": "Full79line entrypoint/data path discovery, compressed source locators, domain docs/index and metadata template read. Shared generated view/source pointers; file-path classification and1000token/mtime/counts not executable behavior evidence. Exact generator command needs real file availability, no docs written."
+  },
+  {
+    "path": "docs/ko-KR/commands/update-docs.md",
+    "reason": "Full89line code-owned fact source→scripts/env/API docs→generated boundary preserve handwritten→stale flag/report read. Preserves document fact ownership and requested-file boundary,90day heuristic is review cue not actual stale proof. Translation language/meta retained; no files created."
+  },
+  {
+    "path": "docs/ko-KR/commands/verify.md",
+    "reason": "Full63line fixed build/type/lint/test/security/log/git sequence and quick/full modes/report read. Shared evidence checklist; retired to verification-loop, omits current local-only/pipefail/required-output and unavailable-vs-pass handling. Named checks/ready labels require actual executions, no source commands run."
+  }
+]

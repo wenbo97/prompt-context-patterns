@@ -1,0 +1,149 @@
+CHANGE insert old 14-13 target 14-14
+14 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
+CHANGE insert old 15-14 target 16-16
+16 import express from "express";
+CHANGE delete old 16-16 target 18-17
+CHANGE replace old 29-31 target 30-45
+30 server.registerTool(
+31   "tool_name",
+32   {
+33     title: "Tool Display Name",
+34     description: "What the tool does",
+35     inputSchema: { param: z.string() },
+36     outputSchema: { result: z.string() }
+37   },
+38   async ({ param }) => {
+39     const output = { result: `Processed: ${param}` };
+40     return {
+41       content: [{ type: "text", text: JSON.stringify(output) }],
+42       structuredContent: output // Modern pattern for structured data
+43     };
+44   }
+45 );
+CHANGE insert old 43-42 target 57-61
+57 
+58 **IMPORTANT - Use Modern APIs Only:**
+59 - **DO use**: `server.registerTool()`, `server.registerResource()`, `server.registerPrompt()`
+60 - **DO NOT use**: Old deprecated APIs such as `server.tool()`, `server.setRequestHandler(ListToolsRequestSchema, ...)`, or manual handler registration
+61 - The `register*` methods provide better type safety, automatic schema handling, and are the recommended approach
+CHANGE replace old 207-208 target 226-242
+226       // Prepare structured output
+227       const output = {
+228         total,
+229         count: users.length,
+230         offset: params.offset,
+231         users: users.map((user: any) => ({
+232           id: user.id,
+233           name: user.name,
+234           email: user.email,
+235           ...(user.team ? { team: user.team } : {}),
+236           active: user.active ?? true
+237         })),
+238         has_more: total > params.offset + users.length,
+239         ...(total > params.offset + users.length ? {
+240           next_offset: params.offset + users.length
+241         } : {})
+242       };
+CHANGE insert old 210-209 target 244-245
+244       // Format text representation based on requested format
+245       let textContent: string;
+CHANGE replace old 211-215 target 247-248
+247         const lines = [`# User Search Results: '${params.query}'`, "",
+248           `Found ${total} users (showing ${users.length})`, ""];
+CHANGE replace old 219-221 target 252-252
+252           if (user.team) lines.push(`- **Team**: ${user.team}`);
+CHANGE replace old 224-226 target 255-255
+255         textContent = lines.join("\n");
+CHANGE replace old 228-248 target 257-257
+257         textContent = JSON.stringify(output, null, 2);
+CHANGE replace old 252-255 target 261-262
+261         content: [{ type: "text", text: textContent }],
+262         structuredContent: output // Modern pattern for structured data
+CHANGE replace old 698-699 target 705-706
+705 // For stdio (local):
+706 async function runStdio() {
+CHANGE delete old 705-705 target 712-711
+CHANGE delete old 707-708 target 713-712
+CHANGE replace old 710-711 target 714-714
+714   console.error("MCP server running via stdio");
+CHANGE replace old 714-718 target 717-755
+717 // For streamable HTTP (remote):
+718 async function runHTTP() {
+719   if (!process.env.EXAMPLE_API_KEY) {
+720     console.error("ERROR: EXAMPLE_API_KEY environment variable is required");
+721     process.exit(1);
+722   }
+723 
+724   const app = express();
+725   app.use(express.json());
+726 
+727   app.post('/mcp', async (req, res) => {
+728     const transport = new StreamableHTTPServerTransport({
+729       sessionIdGenerator: undefined,
+730       enableJsonResponse: true
+731     });
+732     res.on('close', () => transport.close());
+733     await server.connect(transport);
+734     await transport.handleRequest(req, res, req.body);
+735   });
+736 
+737   const port = parseInt(process.env.PORT || '3000');
+738   app.listen(port, () => {
+739     console.error(`MCP server running on http://localhost:${port}/mcp`);
+740   });
+741 }
+742 
+743 // Choose transport based on environment
+744 const transport = process.env.TRANSPORT || 'stdio';
+745 if (transport === 'http') {
+746   runHTTP().catch(error => {
+747     console.error("Server error:", error);
+748     process.exit(1);
+749   });
+750 } else {
+751   runStdio().catch(error => {
+752     console.error("Server error:", error);
+753     process.exit(1);
+754   });
+755 }
+CHANGE replace old 780-780 target 817-817
+817 ### Transport Options
+CHANGE replace old 782-782 target 819-846
+819 The TypeScript SDK supports two main transport mechanisms:
+820 
+821 #### Streamable HTTP (Recommended for Remote Servers)
+822 
+823 ```typescript
+824 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
+825 import express from "express";
+826 
+827 const app = express();
+828 app.use(express.json());
+829 
+830 app.post('/mcp', async (req, res) => {
+831   // Create new transport for each request (stateless, prevents request ID collisions)
+832   const transport = new StreamableHTTPServerTransport({
+833     sessionIdGenerator: undefined,
+834     enableJsonResponse: true
+835   });
+836 
+837   res.on('close', () => transport.close());
+838 
+839   await server.connect(transport);
+840   await transport.handleRequest(req, res, req.body);
+841 });
+842 
+843 app.listen(3000);
+844 ```
+845 
+846 #### stdio (For Local Integrations)
+CHANGE delete old 786-786 target 850-849
+CHANGE replace old 788-797 target 851-852
+851 const transport = new StdioServerTransport();
+852 await server.connect(transport);
+CHANGE replace old 800-803 target 855-857
+855 **Transport selection:**
+856 - **Streamable HTTP**: Web services, remote access, multiple clients
+857 - **stdio**: Command-line tools, local development, subprocess integration
+CHANGE replace old 892-892 target 946-946
+946 - [ ] Appropriate transport configured (stdio or streamable HTTP)

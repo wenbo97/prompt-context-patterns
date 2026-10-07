@@ -1,0 +1,54 @@
+[
+  {
+    "path": "docs/zh-CN/skills/videodb/SKILL.md",
+    "reason": "Full translated modality/task/output router, local refs, setup shell, timestamp bounds, timeout/async/error recovery and all Python method/API examples read against canonical review. Distinguishes absent/auth/plan-limited/no-match; no actual SDK availability or capabilities inferred. Broad Exception+id regex can misclassify unrelated errors; partial JSONL silently skipped and recent-event helper uses receipt unix_ts not source observation time, with no session filter. Source state-directory override differs some reference /tmp/default paths; private screen/audio/source outputs remain untrusted. No package, capture, model or external upload executed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/capture.md",
+    "reason": "Fully read translated/canonical capture-client lifetime, permission/channel discovery, session-active prerequisite, exported-result observation and producer-stop/wait-export/observer-stop order plus shell. Same drain-completion-before-stopping-observer mechanism retained; event must match current session and bounded failure/timeout path, not any stale exported marker. /tmp/PID recipes differ SKILL private-state layout; overwrite does not prevent PID reuse/race, no process launched or killed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/capture-reference.md",
+    "reason": "Full translated lifecycle table/JSON payloads, persistence/shell/path semantics, permission/channel/state model and all Python examples read against canonical review. Session/stream identity, configured storage versus observed export and final observer drain remain separate. Python reader/ID load hardcodes Path.home state path despite documented VIDEODB_EVENTS_DIR/XDG alternatives; malformed/missing/schema events unhandled and unfiltered receipt time not underlying content time. Lifecycle diagram/property labels not runtime proof, no SDK/capture executed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/api-reference.md",
+    "disposition": "excluded",
+    "depth": "full-method-screen-domain-exclusion",
+    "reason": "Full VideoDB connection/collection/transcode/media/timeline/search/meeting/state/enum/exception prose and tables read (repaired clipped audio L244–254). Python SDK API exemplars excluded as domain reference. No unique prompt/context mechanism beyond source identity/version/typed-state already recorded; role/status/default/latency/plan-support statements are frozen API descriptions, not current call/permission or playback evidence. Editor pointer explicitly routes to canonical hierarchy."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/rtstream.md",
+    "reason": "Full translated connect/start/index/observe/stop/export/search workflow and local pointers read against canonical review. Tiny SDK connect/session-get APIs excluded as domain detail. Existing producer/observer lifecycle and explicit source state retained; connection/record start does not guarantee permitted capture, indexed completeness or finished export, no new variant mechanism."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/rtstream-reference.md",
+    "reason": "Full translated SDK/schema/state/batching/event/alert/WebSocket prose, all JSON examples and all Python examples including structured visual prompt and full pipeline read against canonical review. Same provided-media context/typed-output/event observation; Return-valid-JSON prompt is not schema/semantic validation, confidence0.95/under1s and tier labels unverified. Sleeps are examples not event completion, next-page branch is stub and no-result is scoped provider outcome rather than proof no action items exist. No capture/alert/transmission performed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/use-cases.md",
+    "disposition": "excluded",
+    "depth": "full-method-screen-domain-exclusion",
+    "reason": "Full eleven media/capture/search/monitor/moderation/format/share use-case families and workflow table read. Domain capability examples without independently new agent method; instant-hundreds-hours/alloperationsURL/moderation detection are unverified product claims. Recording/sharing/monitoring require actual authorized source/output scope and capabilities; no examples executed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/generative.md",
+    "reason": "Full translated media/type/context/data return/tier prose plus all Python examples including transcript+derived-scene prompt, truncation and JSON contract read against canonical review. Explicit collection LLM does not auto-access video useful; content must be fetched/provided and typed output validated. Scene-analysis example iterates index_scenes result as scenes while API reference says str index ID, so characters/fallbacks are not actual visual evidence. Raw/derived transcript trust omitted,2000char prefix loses coverage, tiers/better-prompt efficacy unverified. No generation/upload executed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/search.md",
+    "reason": "Full translated index-first/target-index/modality/metadata/result/time-span/collection limits/error notes plus all Python examples read against canonical review. Same context selection and typed no-match versus failure distinction; catches only intended provider no-match, broad Exception+id regex can incorrectly recover another error as existing index.0.3threshold not relevance probability, sampled visual descriptions/ASR not exhaustive reality, indexing-idempotence/cache/currentplan facts unverified. No search/index executed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/streaming.md",
+    "disposition": "excluded",
+    "depth": "full-method-screen-domain-exclusion",
+    "reason": "Full HLS prerequisites/source/timeline/search/audio/conditional/event-recap prose, example-section inventory and final playback/cache/asset constraints read. Python media composition implementations excluded as domain API; no new prompt/context mechanism. Instant/no-wait headline conflicts first-request compilation caveat, signed URL and configured caching not verified playback, correct target source/privacy still required. No playback/service call executed."
+  },
+  {
+    "path": "docs/zh-CN/skills/videodb/reference/editor.md",
+    "disposition": "excluded",
+    "depth": "full-method-screen-domain-exclusion",
+    "reason": "Full timeline/assets/time bounds/style/audio/image/caption/two-distinct-APIs/limitations/absolute-overlay constraints prose and tables read. Python SDK media composition API examples excluded as domain implementation; no separate prompt/context method. Inline reorder does not move absolute overlays, negative/NaN/None bounds need actual validation, source non-destructive/instant/no-render claims not inspected runtime proof. No media edited or uploaded."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "docs/ko-KR/examples/CLAUDE.md",
+    "reason": "Full109line context template read;14API-code lines exact canonical match. Project/stack/file pointers, task rules, test/security/git contracts preserved as constructed reusable template; native enforcement/80% fixed preferences not proved. No new translated mechanism, domain API code scoped out.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/examples/django-api-CLAUDE.md",
+    "reason": "Full method prose and complete actual code delta read across308line context template. Same task/stack/source pointers/transport-testing lanes; Korean moves stock lock inside transaction whereas canonical example had it before. This domain repair is recorded as observed delta, no duplicate prompt card or comprehensive Django audit; test/production claims unverified.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/examples/go-microservice-CLAUDE.md",
+    "reason": "Full method/context/path/CLI template read, complete97line programming delta only localized comments. Literal interface/command/placeholders preserved; verified method equivalent to canonical source-grounded project context, with domain API implementation excluded. No runtime proof/benchmark.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/examples/rust-api-CLAUDE.md",
+    "reason": "Full291line method-bearing template and complete programming deltas read. Retains role/source tree/transport acceptance/error exposure boundary; Korean changes anyhow Internal to typed sqlx/stdIO variants, actual code differs and not marked duplicate. Domain implementation excluded from pattern method authoring, no compile/runtime claims.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/examples/saas-nextjs-CLAUDE.md",
+    "reason": "Full166line source context/rules/commands/E2E scenario template read;27programminglines exact canonical match. Server-owned identity/prices and subscription transitions preserve known mechanism; frozen quota/prices/runtime not observed proof. Domain implementation excluded, no payment or API calls.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/examples/statusline.json",
+    "reason": "Read all19line JSON including entire embedded shell command. Different from current reviewed canonical bridge: renders user/cwd/branch/context/model/time/todo count directly from stdin/transcript grep, no bridge imports/actual cost metrics. Observation/display only; file/text count not completed-work/control evidence. Actual command not executed, styling/runtime details scoped out.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/examples/user-CLAUDE.md",
+    "reason": "Full109line global preference/project-doc ownership template read. Personal vs project facts and no duplicate knowledge retained; Korean63 translates redact logs as delete logs, material data-retention change versus canonical. Record inaccurate action wording, never invoke as audit instruction. Literal identifiers/paths preserved, role roster drift as canonical note; no deletion/write.",
+    "candidate_keys": []
+  },
+  {
+    "path": "docs/ko-KR/TERMINOLOGY.md",
+    "reason": "Full104line term glossary and actual translation principles90–98 read: preserve products/acronyms/code variable/function names, translate explanatory comments, expand first mention. Equivalent support for localization-symbol-integrity, current symbols not inferred from glossary; status labels are glossary review state not runtime state. No new method, historical term catalog scoped out.",
+    "candidate_keys": [
+      "ecc-variants-localization-symbol-integrity"
+    ]
+  }
+]

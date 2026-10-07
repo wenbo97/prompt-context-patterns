@@ -1,0 +1,20 @@
+{
+  "original_repository": "D:\\Projects\\prompt-context-patterns",
+  "isolated_repository": "D:\\Projects\\prompt-context-patterns-refresh",
+  "branch": "rebuild/skills-catalog",
+  "removed_trailer_commits": 8,
+  "commit_map": {
+    "611793ed159d18eb457bc73477fec5db776a0417": "e81fbc8e3ff9fc3b55322b7c25c66744c25796ee",
+    "7c5457e1f7748e8f5087360aeb4ad5ced09ba842": "5925346834896260cca5943ab24dd28cec939e78",
+    "8e71cc4c691727cf66e34b6cc381746918448f9f": "7960b34cd939264266af7439f5a528bfcc6b725e",
+    "8f770987bd1ede5e7eceff88955cca033be7b3d7": "610a97bb8fea8b3cb0c6424d269b66224a244231",
+    "b2c47c44374c13e1cf13bf50fd2b775d17ebe32d": "9cf3632c5cea5a6de5c96649a883fe6c68c689b3",
+    "b483b576d03e40b486fcb12aeacb6a6666cf46a1": "f0faaa24c2ec51d9dc99843f98406a2924810f0b",
+    "b69211885aad287100937640357b9c9aa9b5d10b": "2d089fe38f5ea538e72f5dcf846a9ed4676d0edd",
+    "cab01a07db3bdae2fc0984fd38d5260e300da276": "d78b53a741fa39f382ac2028220625825d0faa67",
+    "e98721ba9f3ca5bf848858f6fcc6f3537902a66f": "4caf48ffa0a2d6eba4f763092bf8c9103a5e97d8",
+    "eed1503a8081030077a7d1224d0e24a50681ff6d": "9456091c44d796918745eaecad9d1ee9e726b244"
+  },
+  "tree_author_and_dates_preserved": true,
+  "original_and_remote_unchanged": true
+}

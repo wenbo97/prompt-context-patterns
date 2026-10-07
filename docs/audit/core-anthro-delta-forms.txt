@@ -1,0 +1,4 @@
+Private reading cache: .tools/core-reading-cache/core-anthro-delta-forms.txt
+Source-available source text is kept only in the ignored cache.
+Public provenance: core-anthro-deltas.json contains frozen paths, commits, exact unchanged/changed line spans, review status and the cache hash.
+Independent findings and examples are in harvest-core.json and harvest-core.md.

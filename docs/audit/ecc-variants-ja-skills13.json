@@ -1,0 +1,38 @@
+[
+  {
+    "path": "docs/ja-JP/skills/django-celery/SKILL.md",
+    "reason": "Read complete72line actual domain-purpose/scheduler/worker/task/failuremonitoring source prose and shell. CeleryDjango infrastructure/code recipes, no independent prompt/context mechanism; shortbody references unspecified deeper docs versus fullcanonical. API/deployment/runtime/delivery assurances scoped out, no worker/schedule/emailactions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/django-patterns/SKILL.md",
+    "reason": "Full733line domain-purpose/prose/contexttree/sectionroles/reference table read. Software DjangoORM/DRF/services/caches/signals/middleware cookbook rather than independent agentmethod; activation retained/origin absent. Library/code/production/performance details explicitlyscoped out without upstreamcorrectness audit, no softwarechanges/queries.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/django-security/SKILL.md",
+    "reason": "Full592line actual purpose/activation/securityoperationsections/final checklist read. Domain Djangoauth/RBAC/SQL/XSS/CSRF/upload/API/headers/logging configuration reference, no independent prompting/controlmethod beyondgeneric trigger/checklist. Origin absent and legacyimplementation/standards/prodassurances scoped out, no scans/deviceactions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/django-tdd/SKILL.md",
+    "reason": "Read full728line essential method-purpose/prose/nativecommands/quality and causalREDGREENREFACTOR17–33 testexample. Currentbehavior/independentfixtures/publicinterface/realtestDB/permissions and known acceptance methods retained. Explicit onlydomainclient/factory/mocksimplementation excluded; force_authenticate is bypass not realauthproof and nomigrationslane not migrationvalidation,80/90policy not measuredresult. No test/database action.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/django-verification/SKILL.md",
+    "reason": "Full460line actual phasedprompt/env→code→migrations→tests→security→assets/config/log/schema→exactdiff/report/checklist read including full nested report and shell. Same named evidence checklist; sourcecontains format/auditfix/migrate/createadmin/clearassets mutations and unboundedtail so mustremain scopedactualtask, schemaJSONsyntax not APItruth. Report247/87/examplechecks constructed; deployready no guarantee, remainingDjango/runtimeimplementation excluded and noexecution.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/docker-patterns/SKILL.md",
+    "reason": "Read all93line actual Dockerimage/layer/nonroot/secret/health/network/volume purpose-prose/compose config. Deployment/runtimeguidance with no independent prompt/contextmethod; shortvariant endsatgeneralchecklist. Container/config not verified OScontainment/productionreadiness, demoDBsecretsourceplaceholder. Implementation/security/performance scoped out, no containers/scriptsrun.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]

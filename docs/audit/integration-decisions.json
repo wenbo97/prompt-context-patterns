@@ -1,0 +1,2099 @@
+{
+  "composio-async-terminal-state": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Save job ID, poll status within a task budget, retrieve output after completion, and report pending/failed states honestly. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保存任务 ID，在任务预算内轮询；完成后获取产物，并如实报告等待或失败。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-audience-purpose-calibration": {
+    "status": "merged",
+    "reason_en": "Merge into #83 (Audience-Purpose Content Calibration): Identify audience/purpose, prioritize company impact and omit irrelevant implementation detail. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#83（受众-目的内容校准）：明确受众和目的，优先公司层面影响，去除无关实现细节。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 83
+  },
+  "composio-baseline-preserving-edit-oracle": {
+    "status": "merged",
+    "reason_en": "Merge into #176 (Differential Baseline-Equivalence Oracle): Record the baseline, apply the new isolated change, revert only that change in a check view and compare remaining content to the baseline. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#176（差分基线等价性判据）：保存基线，独立应用新修改；验证视图只撤回本次修改，再与基线比较。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 176
+  },
+  "composio-bounded-artifact-validation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Generate, measure actual bytes/dimensions, report the failing constraint, adjust a relevant parameter and remeasure. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：生成后测量真实字节及尺寸，指出失败条件，调整相关参数并重测。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-capability-branch-routing": {
+    "status": "merged",
+    "reason_en": "Merge into #20 (Intent Classification): Inspect whether interactive fields exist, then follow field-ID filling or visual placement according to the result. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#20（意图分类）：检查交互字段是否存在，再按结果选择字段 ID 填写或视觉定位。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 20
+  },
+  "composio-catalog-with-generated-fallback": {
+    "status": "merged",
+    "reason_en": "Merge into #143 (Pre-Set Catalog with Generate-On-The-Fly Fallback): Present relevant presets, read the selected specification and apply consistently; create/review a new specification only if no preset fits. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#143（预置目录 + 即时生成回退）：展示相关预设，加载选定规格并统一应用；没有适合预设时再生成并评审新规格。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 143
+  },
+  "composio-checkpoint-bulk-progress": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Chunk within service limits, record successful item IDs and continuation state, then resume unresolved work only. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：按服务上限分块，保存成功 ID 与续页状态，只继续处理未解决项。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-collaborative-section-drafting": {
+    "status": "merged",
+    "reason_en": "Merge into #106 (Section-by-Section Collaborative Drafting): Draft one section, review clarity/evidence/flow with concrete edits, capture feedback and continue. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#106（逐节协作起草）：先写一个章节，具体评审清晰度、证据与衔接，记录反馈后继续。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 106
+  },
+  "composio-creative-philosophy": {
+    "status": "merged",
+    "reason_en": "Merge into #101 (Creative Philosophy Scaffolding): Write a concise philosophy for hierarchy, color, space and rhythm, then use it to guide the canvas. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#101（创作理念脚手架）：先简要说明层级、色彩、空间和节奏，再据此创作画布。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 101
+  },
+  "composio-delta-token-sync": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Complete an initial snapshot, persist its sync token, request changes on the next run and apply additions/updates/deletions before advancing the token. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：完成初始快照，保存同步令牌；下次请求变更，应用新增、修改和删除后再推进令牌。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-discover-connect-execute": {
+    "status": "merged",
+    "reason_en": "Merge into #109 (Composio 3-Step SaaS Integration): Search the specific task, inspect returned schemas, confirm ACTIVE connection, then execute with the same session. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#109（Composio 三步 SaaS 集成）：按具体任务检索，阅读返回的 schema，确认 ACTIVE 连接，再在同一会话执行。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 109
+  },
+  "composio-error-directed-recovery": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect service error details; repair credentials/permissions for auth failures, arguments for validation, backoff for throttling, and accept documented empty results. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：结合服务错误详情判断：授权问题修凭据，参数问题修输入，限流退避，规定的空结果正常处理。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-eval-feedback-improvement": {
+    "status": "merged",
+    "reason_en": "Merge into #119 (Eval-Driven Skill Improvement Loop): Inspect failed task traces, compare expected/actual answers, identify description/payload/error problems and rerun affected tasks after fixes. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#119（评测驱动的技能改进循环）：检查失败轨迹、预期及实际答案，找出描述、返回量或错误处理问题，修复后复跑相关任务。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 119
+  },
+  "composio-fresh-version-update": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Read immediately before writing, send the returned version, and re-read/reconcile on conflict. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：紧邻写入前读取，携带返回版本；冲突时重读并协调。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-helper-blackbox": {
+    "status": "merged",
+    "reason_en": "Merge into #104 (Helper Script as Black Box): Inspect help, invoke the supported interface, and read source only for a concrete customization need. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#104（辅助脚本当黑盒）：查看帮助，按接口调用；存在具体定制需求时再读源码。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 104
+  },
+  "composio-intent-reference-routing": {
+    "status": "merged",
+    "reason_en": "Merge into #100 (Progressive Disclosure Architecture): Classify the type, load its named file, and apply that file’s audience and format rules. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#100（渐进式披露架构）：识别类型，加载具名文件，遵守该文件的受众和格式。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "composio-managed-helper-lifecycle": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Track started processes, bound readiness waiting, propagate the test result, and clean up in a finally block. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：记录启动进程，限制等待时间，传播测试结果，用 finally 清理。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-metadata-capability-selection": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: List accessible models, inspect capability metadata and select a compatible identifier; handle missing identifiers explicitly. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：列出可访问模型，检查能力元数据，再选择兼容标识；缺失标识需明确处理。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-pagination-completion": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Accumulate pages until the documented terminal cursor; record page count, record count and any failure/cap. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：循环读取至规定的终止游标，记录页数、记录数及失败或上限。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-per-item-batch-status": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect each item’s status/error, separate completed/failed/missing items, then retry only appropriate failures. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查每项状态及错误，区分完成、失败和缺失，再按类别处理失败项。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-persist-expiring-output": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect output lifetime, download or persist through an authorized durable destination, verify content and record the durable path. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查产物寿命，按授权下载或持久化到约定位置，验证内容并记录长期路径。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-pilot-fixed-extraction-contract": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Fix schema and null/error rules, test representative pages, inspect results and only scale after the contract is usable. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：固定 schema 与空值/错误规则，测试代表性页面，检查结果后再扩展。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-progressive-disclosure": {
+    "status": "merged",
+    "reason_en": "Merge into #100 (Progressive Disclosure Architecture): Keep discovery metadata short, load core instructions on activation, and load only references needed by the selected branch. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#100（渐进式披露架构）：保留简短发现信息，触发后加载核心流程，分支确定后加载所需参考。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "composio-refinement-pass": {
+    "status": "merged",
+    "reason_en": "Merge into #28 (Self-Critique): Inspect the draft, reduce collisions, adjust spacing and hierarchy, then recheck. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#28（自我批判）：检查初稿，减少冲突，调整间距与层级，再复查。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 28
+  },
+  "composio-rendered-reconnaissance": {
+    "status": "merged",
+    "reason_en": "Merge into #103 (Reconnaissance-Then-Action): Navigate, wait for the actual target UI, inspect DOM/screenshot and act on the discovered selector. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#103（先侦察后行动）：导航后等待目标界面，检查 DOM 或截图，再对发现的选择器操作。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 103
+  },
+  "composio-replace-versus-patch": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect tool semantics; use append for additions or read/merge/full payload for a replacement endpoint. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查工具语义；增加内容使用 append，整份替换接口则先读、合并、再提交完整内容。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-resolve-scoped-identities": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: List the intended parent, resolve task ID inside that parent and pass both identifiers. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先找到目标父级，再在其中解析任务 ID，提交两者。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-reversible-file-operation-ledger": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Prepare a mapping, preserve original data, resolve conflicts and record each completed move/copy. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先建立映射，保留原始数据，解决名称冲突，逐项记录完成的移动或复制。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-runtime-trace-first": {
+    "status": "merged",
+    "reason_en": "Merge into #26 (Evidence Chain / Proof-of-Work): Fetch the specific trace, inspect available tools, actual arguments and returned results, then propose a supported cause. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#26（证据链 / 工作量证明）：获取对应轨迹，检查当时工具、真实参数及返回结果，再提出有依据的原因。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 26
+  },
+  "composio-schema-reference-expansion": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Fetch the full schema, inspect required fields/types, then construct and validate arguments. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：展开引用，检查必填字段及类型，再构造并校验参数。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-secret-bearing-composite": {
+    "status": "merged",
+    "reason_en": "Merge into #11 (Sensitive Data Redaction): Classify the complete URI as sensitive, redact embedded credentials and expose only needed non-secret metadata. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#11（敏感数据脱敏）：把完整连接 URI 判为敏感，遮蔽凭据，只展示必要非秘密元数据。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 11
+  },
+  "composio-stable-external-key-upsert": {
+    "status": "merged",
+    "reason_en": "Merge into #73 (Resumable Idempotent Actions): Separate stable natural entity identity from stable operation retry identity and require receiver enforcement Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#73（可恢复的幂等操作）：区分稳定实体自然键与稳定操作重试身份，并要求接收端执行约束。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 73
+  },
+  "composio-stable-readonly-evaluation": {
+    "status": "merged",
+    "reason_en": "Merge into Use an independent, mutation-sensitive oracle: Use fixed historical inputs and independently verified expected answers, with no cross-task mutations Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至使用独立且对错误敏感的判据：使用固定历史输入和独立验证的预期答案，避免任务间写入污染。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-independent-mutation-sensitive-oracle"
+  },
+  "composio-tenant-bound-routing": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: List connections, match the intended organization and include its tenant_id in subsequent calls. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：列出连接并匹配目标组织，后续调用显式带 tenant_id。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-tool-metadata-is-not-authorization": {
+    "status": "merged",
+    "reason_en": "Merge into #123 (Scoped Authorization and Action Risk): Treat tool hints as descriptive metadata while checking the concrete operation effects and current permission Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#123（授权范围与操作风险）：把工具提示视为描述元数据，仍检查具体效果和当前权限。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 123
+  },
+  "composio-truncation-with-continuation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: For API records, pass through the service-issued cursor unchanged and report returned count, known total/remaining count, and truncated/completion state truthfully. For generated output, stop after a complete unit and state the actual completed count, known total or unknown total, and the next unit label; resume there without repeating prior units. These are distinct contracts: an authored unit pointer is not an API token. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：API 记录：原样传递服务签发的游标，并如实报告返回数、已知总数/剩余数及截断/完成状态。生成内容：在完整单元后停止，报告实际完成数、已知总数或总数未知，以及下一单元标签；从该处续写且不重复。两类契约不同：自写单元指针不是 API 令牌。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-unavailable-capability": {
+    "status": "merged",
+    "reason_en": "Merge into #173 (Capability-Absent Anti-Fabrication Fallback): Report the requested capability as unavailable in this discovery, show evidence and offer explicit alternatives. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#173（能力缺失时的反捏造回退）：报告本次发现未找到请求能力，列出依据，并明确给出替代选择。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 173
+  },
+  "composio-validate-before-package": {
+    "status": "merged",
+    "reason_en": "Merge into #51 (Schema Validation Gate): Verify the required entry file, frontmatter and naming rules, abort on errors, then package. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#51（Schema 校验门）：验证入口文件、frontmatter 和命名规则，错误时终止，通过后再打包。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 51
+  },
+  "composio-verified-randomness-claim": {
+    "status": "rejected",
+    "reason_en": "Reject the claim: its contrast does not establish a verified, reusable efficacy mechanism. Keep the audit record, not an active method.",
+    "reason_zh": "拒绝该主张：其对照未建立可核验且可复用的效果机制；保留审计记录，不收录为有效方法。",
+    "reviewed_at": "2026-10-05"
+  },
+  "composio-visible-action-confirmation": {
+    "status": "merged",
+    "reason_en": "Merge into #8 (Confirmation Gates): Inspect read-only data; before sending a message or marking it seen, identify the actual effect and obtain the required authorization. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#8（确认门）：只读查看；发送消息或标记已读前指出具体副作用，并取得所需授权。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 8
+  },
+  "composio-workflow-tool-design": {
+    "status": "merged",
+    "reason_en": "Merge into #144 (Agent-Centric Tool Design Principles): Model the complete booking workflow, provide clear constraints/output and return corrections the agent can act on. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#144（以 Agent 为中心的工具设计原则）：围绕完整预约流程，提供清晰约束及输出，并返回代理可采取的纠正动作。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 144
+  },
+  "core-actor-provenance-before-intent": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Establish record meanings and parent/child relationships, then attribute intent only to records proven to be human-typed. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：先确认记录语义及父子关系，只把证明为人类输入的记录用于意图归因。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-abuse-case-neighbor": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Name writer, asset and boundary; ask how the intended action can be misused and turn that into a testable failure scenario. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：说明写者资产边界，问预期动作如何被滥用，再变成可测失败场景。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-activation-not-outcome": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #192 (No-Op Test (Behavior-vs-Default Pruning)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #192（空操作测试（相对默认剪枝））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 192
+  },
+  "core-addy-artifact-kind-grading": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Execution cases require real fixture work and tool traces; dialogue cases grade conversational turns only when that is the actual deliverable. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：执行例需真实夹具与工具轨迹；仅真正对话交付才按轮次评分。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-assumption-priority": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Validate dealbreakers before implementation, important adjustable bets next and secondary optimizations after the core is supported. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：实施前验致命点，再验可调重要赌注，核心有支持后才次要优化。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-atomic-claim-payload": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Use an atomic uniqueness gate before execution; reject a reused key whose canonical payload differs, and define in-flight duplicate behavior. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：执行前原子唯一门控；同键规范载荷不同则拒绝，明确运行中重复行为。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-cache-response-inputs": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Inventory tenant, viewer permissions, locale and feature state; state staleness/invalidation explicitly and reject reuse across unmatched response contexts. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：清点租户、查看者权限、地区及功能状态，明确陈旧失效策略，不跨不匹配背景复用。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-cached-reading-relevance": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Record both source version and transformation question; reuse a derived reading only when it covers the new task, otherwise refetch or rederive from raw content. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：同时记录来源版本与变换问题；派生解读覆盖新任务才复用，否则重取或按原文重新解读。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-capability-verbs": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #171 (Action-Verb Tool Abstraction); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #171（动作动词式工具抽象）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 171
+  },
+  "core-addy-check-lifecycle-cost": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Name each check target, lifecycle phase and cost budget; reuse existing evidence rather than running the same unchanged suite twice. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：为每检查命名目标、阶段和成本，复用已有证据，不重复跑未变整套。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-check-tristate": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #175 (Tool-Ran Tri-State Provenance); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #175（工具运行三态溯源）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 175
+  },
+  "core-addy-consumer-parser-validation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Test the serialized artifact against the consumer grammar or a strict reference parser; retain accepted/rejected controls and explicit unsupported boundaries. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：按消费者语法或严格参考解析器验序列化产物，保留合法非法对照及未支持边界。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-derived-path-ownership": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Resolve symlinks, require a strict descendant of an allowed root and prior authenticated ownership evidence; refuse without broader fallback and address check/use races. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：解符号链接，要求允许根的严格后代与事先认证所有权，拒绝且不扩大回退，并处理检查使用竞争。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-derived-validator-binding": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #178 (Derivation-Order Staleness Check); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #178（派生顺序陈旧检查）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 178
+  },
+  "core-addy-exemption-authority": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Keep reviewed exemption policy outside the unit, require an owned reason and use exact own-membership checks rather than inherited object keys. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：经审豁免政策在单元外，须负责人理由，用确切自有成员而非继承对象键。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-failed-attempt-memory": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Record idea, baseline/result, verdict and reason; consult that ledger before retrying the same proposal. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：记录想法、基准结果、结论理由，下次相同提案先查台账。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-grade-id-binding": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Require one unique result per canonical expectation ID, retain canonical text and derive counts; reject missing/duplicate IDs or inconsistent integer summaries. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：每规范ID一个唯一结果，保留规范文字并派生计数，拒缺失重复ID或冲突整数摘要。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-guard-quality-bar": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Compare baseline thresholds, skipped/deleted tests, removed assertions, suppressions, stubs and new exceptions; require explained scoped exceptions. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：比较基准阈值、跳过删除测试、移除断言、抑制、桩和新例外，例外须解释且限定。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-hypothesis-versus-verdict": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Ask whether the artifact is known or must be found; preserve independent judgments for verdicts, and require falsifiable evidence exchange before investigative convergence. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：先问产物已知还是待找；判断保留独立性，调查收敛前交换可证伪证据。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-install-before-execution-gate": {
+    "status": "merged",
+    "reason_en": "Reviewing pinned lifecycle scripts before enabling install effects is a concrete application of #67 whole-payload pre-install review.",
+    "reason_zh": "启用安装副作用前审阅固定版本的生命周期脚本，是 #67 完整载荷安装前审阅的具体应用。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 67
+  },
+  "core-addy-installed-reference-closure": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: List mandatory references and resolve them from the containing artifact under the shipped/handed-off layout; package or remap missing dependencies. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：清点必需参考，从所在产物在交付布局解析；缺依赖则打包或改映射。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-intent-stable-key": {
+    "status": "merged",
+    "reason_en": "Identity allocated once per intent and reused across retries is already the invariant in #73.",
+    "reason_zh": "按意图分配一次身份并在重试中复用，已是 #73 的核心不变量。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 73
+  },
+  "core-addy-leaf-orchestration": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Distinguish reusable process, reviewer perspective and user-facing command; choose direct invocation for one lens and flat fan-out plus main merge for independent lenses. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：区别可复用流程、评审视角、面向用户命令；单视角直调，多独立视角扁平分发主合并。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-measured-ratchet": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Record metric value, measurement conditions, allowed direction and tolerance; compare equivalent runs and update improved baselines. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：记录值、条件、允许方向及容差，比较等价运行，改善时更新基准。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-mode-evidence-provenance": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Select mode from available artifacts, label every populated value with its source kind, and leave unmeasured fields explicitly unmeasured. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：按可用产物选模式，各值标来源类型，未测字段明确未测。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-noise-aware-intervention": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Keep command, workload and budget constant; repeat measurements, preserve correctness gates and decide against the observed noise range. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：固定命令负载预算，重复测量，保留正确性门，再按噪声范围决定。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-nonvacuous-negative-route": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Name the correct neighboring skill and require it to outrank the rejected candidate with nonzero match. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：命名正确相邻技能，并要求非零匹配且排序高于被拒候选。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-one-router": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Detect the actual host discovery capability and choose one active routing authority; keep reusable skills available on demand. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：检测真实发现能力，只选一个有效路由权威，技能按需可用。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-opaque-projection": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Preserve original bytes and identity, edit only the intended projection, then reconstruct and verify protected content and changed surroundings before applying. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：保留原字节身份，仅编辑指定投影，应用前重建并验受护内容与周边变化。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-question-to-signal": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Name diagnostic questions first, then map each to an event, aggregate or path trace; omit signals with no declared use. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：先命名诊断问题，再映事件、聚合或路径轨迹，无用途信号省略。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-reconcile-reviewer": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Check contract misread first, then actionable defect, accepted tradeoff and context-caused noise; fix the contract before repeating review when it caused the error. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：先查契约误读，再查可行动缺陷、接受权衡、背景噪声；契约致误则先修契约再评审。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-safe-artifact-channel": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Write the full artifact/contract prompt to a file and feed stdin; verify the tool and use a read-only execution boundary. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：完整产物契约提示写文件，经标准输入传递；验证工具并用只读边界。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-task-and-standing-bar": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Keep per-task acceptance distinct from reusable quality/integration/operational gates and check both before completion. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：每任务验收与可复用质量集成运维门分开，完成前两者都核。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-unknown-effect": {
+    "status": "merged",
+    "reason_en": "Persisting uncertain delivery and reconciling the same identity before retry is the timeout recovery already taught in #73.",
+    "reason_zh": "保留交付不确定性并先核对同一身份再重试，已是 #73 的超时恢复流程。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 73
+  },
+  "core-addy-verification-invalidation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Record command, artifact revision and scope; invalidate evidence on an edit affecting that check, not on nervousness alone. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：记录命令、产物修订和范围；影响检查的编辑使证据失效，而非仅因不安。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-addy-verify-instrumentation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Use an authorized isolated test to induce an error/event, trace its identifier and verify structured fields, labels, propagation and alert delivery. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：在已授权隔离测试诱发错误事件，追身份并核结构字段标签传播与报警送达。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-absolute-stream-deadline": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Start a non-resetting wall-clock budget for the case; classify expiry as a timeout, release local capacity, cap retries, and retain the underlying-operation identity. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：案例开始时设置不重置的时间预算；到期标为超时，释放本地容量，限制重试并保留远程操作身份。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-answer-key-isolation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Give it the realistic symptom and allowed fixture; keep gold labels and grader data outside its accessible environment, remove leftover trial state, and check its actual access paths. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：只给真实症状和允许夹具；答案标签与评分数据放在可访问环境外，清理前次状态，检查实际访问路径。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-assertion-challenge": {
+    "status": "merged",
+    "reason_en": "Merge into Use an independent, mutation-sensitive oracle: Challenge the assertion with a plausible wrong output and require sensitivity to the actual defect Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至使用独立且对错误敏感的判据：用似乎合理的错误输出挑战断言，并要求其对实际缺陷敏感。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-independent-mutation-sensitive-oracle"
+  },
+  "core-anthro-attempt-result-coherence": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Key durable results by case and repetition; checkpoint completed invocations, record failed attempts separately with class and usage, and resume only missing scorable results. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：按案例与重复次数保存结果；完成调用及时落盘，失败尝试另记类别与用量，只补跑缺少可评分结果的槽位。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-build-score-variance": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Rebuild the unchanged baseline independently, score each build with the same query design, and preserve build identity in candidate comparisons; estimate uncertainty at the levels where randomness occurs. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：独立重建未改动基线，对每次构建使用相同查询设计，候选比较保留构建身份；在随机性实际发生的层级估计不确定性。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-complete-envelope": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Store the full envelope with typed blocks and matching identities; extract text for display while returning the unchanged required state on continuation. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：完整保存类型化块和匹配身份；显示时抽取文字，续跑时按契约返回未修改的必要状态。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-concrete-discernment": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Answer the task first; point a brief follow-up at the exact assumption, its evidence source and missing context. If verification was requested, perform it inline instead. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先完成任务；简短追问明确假设、证据与缺失背景。已要求核验时在正文完成。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-contract-projection": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Maintain the original validator, derive a compatible wire schema, and validate the returned data against every removed constraint before downstream use. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保留原验证器，派生兼容传输模式；下游使用前核验被移除的每项约束。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-coordinate-provenance": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Record page identity, source dimensions, units and origin; convert pixel coordinates to the common page system, then apply the consumer’s origin transform and inspect the result. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：记录页身份、来源尺寸、单位和原点；先把像素转换为统一页坐标，再按消费者原点转换并检查结果。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-criterion-regrade": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Version the new criterion, regrade frozen outputs for baseline and all candidates, retain old-versus-new comparisons, and reconsider the winner if rankings change. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：版本化新标准，对基线和全部候选的冻结输出重评，保留新旧比较；排名变化时重新考虑赢家。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-definition-run": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Create or update the definition in setup, persist its identity and version, and create runs that explicitly reference the approved version; treat live-run overrides separately. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：设置阶段创建或更新定义，保存身份与版本；运行明确引用获批版本，实时运行覆盖另行记录。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-deterministic-executor": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Map call sites to responsibilities; implement fixed normalization and arithmetic in code, then send only ambiguous descriptions and needed context to the judgment step. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：逐个调用点映射职责；代码实现固定归一与算术，只把有歧义描述和所需上下文交给判断步骤。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-document-reader-test": {
+    "status": "merged",
+    "reason_en": "Merge into #107 (Reader Testing with Sub-Agent): Give a fresh reader only the guide and a realistic question; compare its answer with the intended result, record ambiguity and revise the responsible section. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#107（子 Agent 读者测试）：给新读者仅提供指南和真实问题；比较答案与预期，记录歧义并修改对应章节。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 107
+  },
+  "core-anthro-drift-control": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Record the environment and artifact fingerprints; rerun the unchanged control under current conditions, rebuilding any stochastic intermediate artifact, then compare the candidate in that same setting. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：记录环境和产物指纹；在当前条件重跑未改动对照，重建随机中间产物，再在相同设置比较候选。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-environment-answer": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Start each trial in an isolated fixture, run hidden behavioral checks on the resulting diff and state, detect no-op success claims, and inspect process evidence only for declared constraints. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：每次从隔离夹具开始，对最终差异和状态做隐藏行为检查，检测空操作成功声明，仅对规定过程约束查看轨迹。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-error-directed": {
+    "status": "merged",
+    "reason_en": "Merge into Recover according to failure class: Inspect service error details; repair credentials/permissions for auth failures, arguments for validation, backoff for throttling, and accept documented empty results. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至按失败类别选择恢复动作：结合服务错误详情判断：授权问题修凭据，参数问题修输入，限流退避，规定的空结果正常处理。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "composio-error-directed-recovery"
+  },
+  "core-anthro-existing-108": {
+    "status": "merged",
+    "reason_en": "Merge into #108 (Blind A/B Comparison): Matched inputs and blinded labels reduce direct expectation cues. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#108（盲 A/B 对比）：相同输入和隐藏标签减少直接的预期暗示。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 108
+  },
+  "core-anthro-existing-116": {
+    "status": "merged",
+    "reason_en": "Merge into #116 (Preserve Computation in Editable Artifacts): A formula encodes the relationship that a hardcoded result loses. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#116（可编辑产物保留计算关系）：公式保留硬编码结果会丢失的关系。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 116
+  },
+  "core-anthro-existing-119": {
+    "status": "merged",
+    "reason_en": "Merge into #119 (Eval-Driven Skill Improvement Loop): A preserved suite tests behavioral change rather than the author's impression. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#119（评测驱动的技能改进循环）：保留的案例集检查行为变化，不依作者印象。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 119
+  },
+  "core-anthro-existing-183": {
+    "status": "merged",
+    "reason_en": "Merge into #183 (Untrusted-Content-as-Markup Escaping): Encoding follows the receiving parser; different contexts require different protections. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#183（不可信内容当作标记转义）：编码依接收解析器而定，不同上下文需要不同保护。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 183
+  },
+  "core-anthro-frozen-comparison-reference": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Save the baseline output for each case once; compare every candidate against those files, track judge and case versions, and add a second reference if the first saturates. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：每个案例保存基线输出一次；所有候选与这些文件比较，跟踪评分器与案例版本；旧参考饱和时增加第二参考。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-gap-free-event-reconnect": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Open the live stream first, fetch and process available history, then consume the live tail. Gate event side effects on unseen IDs, but evaluate terminal or idle-stop conditions for every live event, including duplicates. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先打开实时流，再读取并处理可取得的历史记录，最后消费实时尾流。仅让未见过的ID触发副作用；每个实时事件仍要检查终态或空闲停止条件，包括重复事件。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-gold-origin": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Label reference origin, verify factual criteria independently, and choose rubric or blind comparison when multiple valid outputs exist. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：标明参考来源，独立核验事实标准；有多个正确输出时使用量规或盲比较。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-heldout-channel": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Pass only training cases and history to the reviser; use the reserved results for candidate selection, label that set validation, and reserve a fresh final test for an unbiased final estimate. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：修订器只接收训练案例与历史；预留结果用于候选选择，标为验证集，再留新的最终测试。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-instruction-function": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Determine which consumer sees each field and when; keep routing intent in trigger metadata, accurate mechanics in tool contracts and the workflow in its loaded playbook. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：确定字段由谁在何时读取；触发元数据保留路由意图，工具契约保留准确机制，加载的指南保留工作流。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-intent-catalog": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Classify learning intent, fetch the catalog, check its freshness and URL scope, then copy a strongly matching entry; use an observed hub fallback if unavailable. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：辨别学习意图，读取目录并检查新鲜度和网址范围，复制强匹配条目；不可用时使用已知入口。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-joint-confirm": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Freeze the complete selected tuple and the comparison basis; confirm quality, cost and required behavioral conditions together rather than adding the favorable stage results. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：冻结完整配置与比较依据，同时确认质量、成本和所需行为，不把各阶段有利结果相加。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-optimization-layer-triage": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Read representative traces and artifacts; separate missing knowledge, wrong grading, unavailable wiring, unreachable content and ordinary variability, then target the evidenced layer. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：读取代表轨迹和产物，区分知识缺失、评分错误、接线不可用、内容不可达与普通变异，再针对有证据的层。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-real-entry-evaluation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Call the actual test-mode entry point; mock only unsafe external dependencies, preserve context/retry/tool wiring, and record the served configuration and a complete pilot result. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：调用真实测试入口，只替换不安全外部依赖，保留上下文、重试和工具接线，记录实际配置和完整试点结果。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-revisitable-pruning": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Store the profile and context identity behind the decision, name the ordering assumptions, keep uncertain candidates deferred, and re-probe affected choices after recalibration or prompt changes. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保存决定依据的剖面与上下文身份，点名排序假设，不确定候选暂缓；校准或提示变化后重探受影响选择。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-scoped-instruction-conflict": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Identify the files, task and consumers each rule governs; preserve a justified narrower override, and resolve genuine same-scope contradictions from evidence and applicable authority. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：辨别各规则的文件、任务和消费者；保留合理的窄作用域覆盖，按证据和适用权限处理同作用域矛盾。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-stability-ordered-prefix": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Trace every assembly input; order stable global, session and turn content according to the host contract, place the cache boundary before the unique tail, and compare real payloads plus cache metrics. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：追踪每项组装输入，按宿主契约排序全局、会话和轮次内容，在唯一尾部前设置边界，并比较真实载荷与缓存指标。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-stream-commit-gate": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Accumulate the complete turn, inspect its termination state, reject refusal or cutoff, strictly parse available raw input, validate the contract, then apply the authorized effect. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：收集完整轮次，检查终止状态，拒绝拒绝响应或截断，严格解析可得原始输入并验证契约，再执行已授权副作用。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-anthro-typed-controlpoint": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Define a send-invoice operation with typed recipient and invoice identity; let the harness validate scope and perform its approval and audit checks before executing the effect. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：定义包含收件人与发票身份的发送操作；副作用执行前由宿主验证范围并执行审批和审计。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-backward-origin-tracing": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Inspect the effect’s actual directory value, identify its caller, follow the value through the call chain and verify the originating initialization/decision. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：检查真实目录值，找到调用者，沿调用链追踪值，并核验最初初始化或决策。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-behavioral-red-green-cycle": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Write the rejection assertion, observe the actual behavioral failure rather than setup error, implement the required rule and refactor only while the relevant checks remain green. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：写出拒绝断言，观察真实行为失败而非准备错误，实现必要规则，只在相关检查通过时重构。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-capability-sentinel-probe": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #177 (Capability Smoke-Test Over Presence-Check); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #177（能力冒烟测试优于存在检查）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 177
+  },
+  "core-counter-semantics-before-totals": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Record semantics, units and interval boundaries; difference cumulative values for the interval and preserve missing observations as unknown. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：记录语义、单位和区间边界；对累计值做差，并将缺失观察保留为未知。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-fragility-calibrated-specificity": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Permit judgment where multiple safe approaches exist; provide configurable procedure for bounded variation; pin sequence/arguments when a verified narrow path is required. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：多种安全路线可行时允许判断，有限变化提供可配置流程，只有已验证窄路径时固定顺序及参数。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-fresh-predicate-wait": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Observe the relevant state or event repeatedly within a time budget; return only when the actual predicate holds, otherwise report timeout. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：在时间预算内反复观察相关状态或事件，实际条件成立才返回，否则报告超时。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-independent-mutation-sensitive-oracle": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Use a hand-checked literal expected output and consider wrong quoting, missing field or wrong branch mutations. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：使用手工核对的字面预期，并考虑错误引用、字段缺失或分支错误。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-karpathy-assumption-disclosure": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Inspect what is known, list the consequential unknowns, present plausible interpretations and resolve only the decisions that change the implementation. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：检查已知信息，列出关键未知项，呈现合理解释，仅解决会改变实现的决策。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-karpathy-minimum-necessary-code": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Implement the actual calculation with its required input rules, and introduce strategy/configuration layers only when a real use case needs them. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：实现真实计算与必要输入规则；只有实际用例需要时才引入策略或配置层。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-karpathy-observable-goals": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: State the invalidation behavior, reproduce it with a failing oracle, implement the change and verify that the same oracle plus relevant regressions pass. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：明确会话失效行为，用失败判据复现，再实现修改并验证原判据及相关回归通过。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-karpathy-surgical-edit": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Change the email defect, retain surrounding style and behavior, remove only newly unused code and report unrelated findings separately. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：修改邮件缺陷，保留周边风格和行为，仅删除新增无用代码，并单独报告无关发现。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-approximation-provenance": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Use authoritative packages when required; otherwise label the visual inspiration and approximation without claiming official API status. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：要求官方实现时用权威包，否则标明灵感和近似，不声称官方接口。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-artifact-invariant-variation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Write a common design bible before generating the set; distinguish invariant palette/type/navigation from allowed layout and emphasis changes. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：生成前写共同设计约定；区别固定颜色字级导航与允许布局重点变化。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-capability-intent": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #173 (Capability-Absent Anti-Fabrication Fallback); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #173（能力缺失时的反捏造回退）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 173
+  },
+  "core-leon-contextual-rule-precedence": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Declare default, triggering condition and override condition together; carry the selected interpretation through the whole artifact. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：默认、触发条件和覆盖条件同处声明，选择贯穿产物。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-continuation-cursor": {
+    "status": "merged",
+    "reason_en": "A complete-unit stop, truthful partial count and exact continuation cursor share the explicit partial-output continuation contract.",
+    "reason_zh": "在完整单元处停止、报告真实部分数量并给出准确游标，与明确部分输出的续接契约机制相同。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "composio-truncation-with-continuation"
+  },
+  "core-leon-declared-design-read": {
+    "status": "merged",
+    "reason_en": "Making the inferred design interpretation visible and resolving consequential divergence instantiates the same disclosed-assumption decision method.",
+    "reason_zh": "公开推断的设计解释并解决会改变实现的分歧，应用的是同一关键假设公开与决策机制。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-karpathy-assumption-disclosure"
+  },
+  "core-leon-flow-state-carry": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: For each successor name the preceding action/navigation and the state carried into it. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：每个后继说明前动作或导航及携带状态。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-mock-precision": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Inspect every displayed number; retain sourced values, label samples and remove invented precision presented as fact. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：检查每个数字，有源保留，样例标注，去除以事实呈现的虚构精度。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-motivation-gate": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Require a reason tied to hierarchy, narrative, feedback or state change; omit effects with only decorative rationale. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：理由关联层级、叙事、反馈或状态变化，纯装饰理由则省略。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-readable-units": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Count requested units, give each a readable artifact, and add detail views only where inspection is uncertain. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：清点所需单元，各有可读产物，不明确处才加细节视图。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-redesign-contract": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Detect preserve versus overhaul, record brand/content/routes/tracking/accessibility, then apply focused visual changes within that contract. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：区别保留与大改，记录品牌内容路由跟踪可访问，再在契约内做聚焦视觉变化。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-semantic-token-contract": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Pair a human description with a machine-usable value and where it applies, then use the same vocabulary throughout the handoff. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：人类描述配机器可用值及适用处，交接中词汇一致。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-specimen-before-translation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Inspect readable text, relative typography, spacing, colors, components and uncertainties; implement against that extracted contract. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：检查可读文字、相对字体、间距、颜色、组件及未知点；按抽取契约实现。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-leon-tool-run-provenance": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #175 (Tool-Ran Tri-State Provenance); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #175（工具运行三态溯源）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 175
+  },
+  "core-leon-unsubstantiated-laziness": {
+    "status": "rejected",
+    "reason_en": "Quantitative causal efficacy claims lack directly locatable primary citations and reproducible evaluation details; not admitted.",
+    "reason_zh": "关于模型懒惰及该指令改善效果的解释没有独立验证，不能据此准入。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-anti-cue-evaluation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Make option lengths and formatting comparable, then give feedback based on the tested skill. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：选项长度格式可比，再按所测技能提供反馈。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-branch-trigger-pointer": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #100 (Progressive Disclosure Architecture); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #100（渐进式披露架构）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "core-matt-counterexample-guardrail": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Observe pass on allowed input, fail on a temporary forbidden input, and pass after removal. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：允许输入通过，临时禁止输入失败，移除后再通过。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-deletion-probe": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Trace caller obligations after hypothetical deletion; retain hidden reusable behavior and collapse pure pass-through layers. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：追踪假想删除后的调用责任；保留隐藏的可复用行为，合并纯转发层。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-durable-contract": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: State current/desired behavior, independently testable acceptance criteria, interface names and exclusions. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：明确当前/目标行为、独立可测验收、接口名和排除项。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-environment-truth": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Reference inspectable config/help for scripts and paths; document only unwritten conventions or expensive lookups. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：脚本路径查配置或帮助，只记录隐含约定或昂贵查询。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-evidence-learning-memory": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Record demonstrated use, explicit prior-knowledge depth or corrected misconceptions; supersede contrary records instead of erasing history. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：记实际运用、明确先验深度或纠正误解；相反记录以取代标记保留历史。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-existing-189": {
+    "status": "rejected",
+    "reason_en": "Retired legacy entry remains retired: the source causal claims about pretraining and attention are unverified. The narrower defined-vocabulary mechanism overlaps active #194 and does not justify a separate publication.",
+    "reason_zh": "重复关键词本身不构成有证据的可迁移机制；不恢复已移除的旧记录。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-existing-190": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #190 (Invocation Economics (Context vs Cognitive Load)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #190（调用经济学（上下文载荷 vs 认知载荷））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 190
+  },
+  "core-matt-existing-191": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #100 (Progressive Disclosure Architecture); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #100（渐进式披露架构）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "core-matt-existing-192": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #192 (No-Op Test (Behavior-vs-Default Pruning)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #192（空操作测试（相对默认剪枝））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 192
+  },
+  "core-matt-existing-193": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #193 (Two-Axis Completion Criterion (Checkable + Exhaustive)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #193（双轴完成判据（可判定 + 穷尽））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 193
+  },
+  "core-matt-existing-194": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #194 (Controlled Vocabulary with Banned Synonyms); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #194（受控词表 + 禁用近义词）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 194
+  },
+  "core-matt-existing-195": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #25 (Few-Shot Examples); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #25（少样本示例）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 25
+  },
+  "core-matt-existing-196": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #106 (Section-by-Section Collaborative Drafting); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #106（逐节协作起草）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 106
+  },
+  "core-matt-existing-197": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #197 (Fog of War (Frontier Planning)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #197（战争迷雾（前沿规划））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 197
+  },
+  "core-matt-existing-198": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #198 (Two-Axis Orthogonal Review (No Cross-Axis Reranking)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #198（双轴正交评审（不跨轴重排））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 198
+  },
+  "core-matt-existing-199": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #8 (Confirmation Gates); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #8（确认门）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 8
+  },
+  "core-matt-existing-200": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #3 (Workflow Mode Branching); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #3（工作流模式分支）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 3
+  },
+  "core-matt-existing-201": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #201 (Absence-of-Seam as a Finding); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #201（无接缝本身即发现）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 201
+  },
+  "core-matt-existing-202": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #202 (Feedback-Loop-Before-Hypothesis Gate); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #202（反馈回路先于假设的门）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 202
+  },
+  "core-matt-existing-203": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #8 (Confirmation Gates); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #8（确认门）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 8
+  },
+  "core-matt-existing-204": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #204 (Static-Trace Verification When Execution Is Unsafe); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #204（执行不安全时的静态追踪验证）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 204
+  },
+  "core-matt-existing-205": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #128 (Context Compaction Survival); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #128（上下文压缩幸存）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 128
+  },
+  "core-matt-existing-206": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #206 (ADR-Worthiness Triple Gate); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #206（ADR 值不值三重门）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 206
+  },
+  "core-matt-expand-contract-tickets": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Introduce both forms, migrate callers in bounded batches, and remove the old form only after all callers migrate. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：新旧形式并存，分批迁移调用者，全部迁完才删旧形式。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-fixture-intent": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Use explicit fixture constructors for partial, invalid and exact shapes instead of erasing all types with the same cast. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：部分、非法和完整形状分别用明确构造器，不统一强制擦除类型。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-frontier-integration": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Compute readiness from what has landed on the integration branch; dispatch that frontier and merge one result at a time. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：按集成分支已落地任务计算就绪前沿，调度该前沿并逐项合并。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-mechanical-enforcement": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Inspect existing checks, repair their wiring first, then encode fixed patterns in the cheapest local guardrail. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：先检查现有检查并修接线，再用最便宜本地护栏编码固定模式。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-observations-not-secrets": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #11 (Sensitive Data Redaction); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #11（敏感数据脱敏）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 11
+  },
+  "core-matt-pr-consequence-brief": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Show before/after evidence, name one-way effects and identify affected callers or users. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：展示前后证据，列不可逆影响及受影响调用者用户。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-prototype-question": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Distinguish logic/state from visual uncertainty; minimize setup, use scratch state and preserve the question and verdict. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：区别逻辑状态与视觉问题，最小启动成本，使用临时状态并保存问题和结论。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-question-frontier": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Treat answers and factual explorations as prerequisite nodes; unresolved nodes block only their dependents. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：答案和事实探索均为依赖节点，未定节点仅阻塞下游。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-question-owner-gap": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Interview recipient/context and required return, map every required fact to one fillable question ordered by decision importance. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：询问接收人背景和所需答复，每个所需事实映射成一个可填问题并按决策重要度排序。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-reference-colocation": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Separate ordered steps from reference, disclose branch-specific reference, and group each concept under one heading. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：区分步骤与参考，分支参考按需披露，每概念同一标题组织。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-rejection-memory": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Match by concept, ask whether rationale still holds, and keep rejections distinct from built features and temporary deferrals. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：按概念匹配，复核理由仍成立，并区别已实现与临时推迟。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-repitch-premise": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Restate the decision in shared nouns and supply the premise the reader lacks, then trim redundancy. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：用共享名词重述决定，补读者缺失前提，再删冗余。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-stateful-write-reread": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Read current disk contents before each append or targeted rewrite; keep the input corpus separate. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：每次追加或定向改写先重读磁盘；原材料单独保存。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-substitution-calibration": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Distinguish in-process, local-substitutable, remote-owned and true external dependencies before choosing real stand-ins, ports or mocks. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：先区别进程内、本地可替代、远端自有和真正外部，再选真实替身、端口或模拟。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-ui-comparison-context": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Vary structure through a shareable selector on one route while retaining host navigation, density and read-only data. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：同一路由通过可分享选择器变结构，保留导航、密度和只读数据。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-matt-varied-interface-briefs": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Give each independent designer a different optimization objective, a shared vocabulary and the same required output schema. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：独立设计者各有优化目标，共享词汇与输出结构。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-nextlevel-existing-116": {
+    "status": "merged",
+    "reason_en": "Merge into #116 (Preserve Computation in Editable Artifacts): A formula encodes the relationship that a hardcoded result loses. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#116（可编辑产物保留计算关系）：公式保留硬编码结果会丢失的关系。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 116
+  },
+  "core-nextlevel-existing-173": {
+    "status": "merged",
+    "reason_en": "Merge into #173 (Capability-Absent Anti-Fabrication Fallback): The fallback keeps useful work distinct from fabricated execution. Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#173（能力缺失时的反捏造回退）：回退保留有用工作，并与虚构执行区分。。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 173
+  },
+  "core-nextlevel-path-roots": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Name both roots; invoke the installed helper by its resolved path without changing the project cwd, and resolve its inputs and outputs according to the helper contract. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：明确两种根；使用解析后的工具绝对路径执行，保持项目cwd，按契约解析输入输出。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-nextlevel-persisted-design-overrides": {
+    "status": "active",
+    "reason_en": "Retain the durable sparse-delta retrieval contract: a project master plus page-only deviations, explicit field precedence and missing-page fallback. This differs from aesthetic exception selection and from assembling prompt adapters; the teaching fixture resolves the source's underspecified merge semantics without claiming upstream runtime verification.",
+    "reason_zh": "保留持久化稀疏差异的检索契约：项目主文件、只含页面偏差的文件、明确字段优先级与缺页回退。它区别于审美例外选择和提示适配器拼装；教学用例补全源文档未说明的合并语义，不声称核验了上游运行行为。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-nextlevel-query-fit-contract": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Choose the smallest applicable search mode, express one intent with two to five terms, then verify the result's domain/category and top item's identity and applicability. Retry once when needed, label any fallback, and do not persist unverified output. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：选择最小适用搜索模式，用2至5个词表达一个意图；随后核对结果的领域/类别以及首条内容的身份和适用性。必要时只重试一次，标明回退结果，并且不保存未经核验的输出。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05",
+    "related_ids": [
+      143,
+      51
+    ]
+  },
+  "core-nextlevel-social-asset-output-loop": {
+    "status": "merged",
+    "reason_en": "The transferable check is the same generate/inspect-correct/remeasure loop against declared delivery constraints. Keep exact-size render, asset-readiness and export evidence as a domain variant; concept approval and generic production phases do not require a second identity.",
+    "reason_zh": "可迁移核验仍是围绕声明交付约束的生成、检查修正与重新测量循环。保留目标尺寸渲染、素材就绪与导出证据这一领域变体；创意批准及通用生产阶段不另建身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "composio-bounded-artifact-validation"
+  },
+  "core-plan-interface-preflight": {
+    "status": "merged",
+    "reason_en": "Producer/consumer signature reconciliation is the same shared task-interface contract and compatibility check as #167.",
+    "reason_zh": "生产者与消费者的签名核对，与 #167 的共享任务接口契约和兼容性检查机制相同。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 167
+  },
+  "core-plan-owned-resumption-ledger": {
+    "status": "merged",
+    "reason_en": "Plan identity, commit-backed resume state and sibling isolation refine the durable-state resumption contract already in #70.",
+    "reason_zh": "计划身份、提交支持的恢复状态和同级隔离细化了 #70 已有的持久状态恢复契约。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 70
+  },
+  "core-privacy-and-evidence-export-checks": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Audit all exported files for sensitive values, then resolve each finding to included evidence; reconcile files and verify the final archive matches the reviewed set. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：审核全部导出文件的敏感值，再把各发现对应到随包证据，协调文件并验证压缩包与审核集合一致。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-reversible-ruling-ledger": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Resolve within authorized reversible scope using the spec, record the ruling and its rework cost, carry it to affected briefs and expose it in the final report. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：在已授权可逆范围内按规格解决，记录判断及返工代价，同步相关说明并在最终报告披露。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-stable-redaction-linkage": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Map the value to one stable placeholder in every copy, preserve source markers and log only placeholder/category/count. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：在各副本中映射到同一占位符，保留来源标记，日志只写占位符、类别和数量。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "core-superpowers-bounded-review-loop": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #41 (Loop Prevention with Max Iterations); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #41（最大迭代次数防循环）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 41
+  },
+  "core-superpowers-continuous-execution": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #150 (Continuous Execution Mandate); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #150（连续执行强制令）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 150
+  },
+  "core-superpowers-cost-model-routing": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #35 (Cost-Optimized Model Routing); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #35（成本优化模型路由）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 35
+  },
+  "core-superpowers-existing-156": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #156 (No-Pre-Judging Reviewer Dispatch); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #156（不预判的评审派发）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 156
+  },
+  "core-superpowers-existing-158": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #158 (Plan-Mandated Defect Is Still a Finding); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #158（计划强制的缺陷仍是问题）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 158
+  },
+  "core-superpowers-existing-160": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #160 (Reviewer Does Not Re-Run the Implementer's Tests); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #160（评审不重跑实现者的测试）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 160
+  },
+  "core-superpowers-existing-161": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #35 (Cost-Optimized Model Routing); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #35（成本优化模型路由）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 35
+  },
+  "core-superpowers-existing-162": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #70 (State File as Sole Continuity); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #70（状态文件为唯一连续性）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 70
+  },
+  "core-superpowers-existing-163": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #36 (Handoff Context Protocol); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #36（交接上下文协议）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 36
+  },
+  "core-superpowers-existing-164": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #164 (Batch Remediation: One Fixer for All Findings); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #164（批量修复：一个修复者处理全部问题）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 164
+  },
+  "core-superpowers-existing-166": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #166 (Verbatim Global-Constraints Block); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #166（逐字全局约束块）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 166
+  },
+  "core-superpowers-harness-reference-routing": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #100 (Progressive Disclosure Architecture); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #100（渐进式披露架构）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "core-superpowers-helper-help-contract": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #104 (Helper Script as Black Box); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #104（辅助脚本当黑盒）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 104
+  },
+  "core-superpowers-iron-law-framing": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #145 (Evidence-Bound Verification Rule); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #145（以证据约束的验证规则）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 145
+  },
+  "core-superpowers-precise-context": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #36 (Handoff Context Protocol); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #36（交接上下文协议）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 36
+  },
+  "core-superpowers-pressure-tdd": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #149 (Pressure-Scenario TDD for Skill Authoring); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #149（技能创作的压力场景 TDD）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 149
+  },
+  "core-superpowers-progressive-reference-context": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #100 (Progressive Disclosure Architecture); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #100（渐进式披露架构）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "core-superpowers-proof-before-claim": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #26 (Evidence Chain / Proof-of-Work); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #26（证据链 / 工作量证明）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 26
+  },
+  "core-superpowers-rationalization-table": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #146 (Rationalization-Prevention Table); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #146（防合理化借口表）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 146
+  },
+  "core-superpowers-review-task-size": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #165 (Reviewer-Gate Task Right-Sizing); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #165（以评审门定任务粒度）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 165
+  },
+  "core-superpowers-skill-announcement": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #9 (Progress Feedback); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #9（进度反馈）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 9
+  },
+  "core-superpowers-task-interfaces": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #167 (Per-Task Interfaces Block (Consumes/Produces)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #167（任务级接口契约块）的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 167
+  },
+  "core-superpowers-two-axis-completion": {
+    "status": "merged",
+    "reason_en": "Same procedure and decision boundary as #193 (Two-Axis Completion Criterion (Checkable + Exhaustive)); retain this immutable occurrence as source enrichment without allocating another identity.",
+    "reason_zh": "与 #193（双轴完成判据（可判定 + 穷尽））的流程及决策边界相同；保留该固定版本出现位置补充来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 193
+  },
+  "core-time-qualified-source-provenance": {
+    "status": "active",
+    "reason_en": "Admit the distinct procedure: Use captured bodies/archives for historical claims, current checkout for present observations, and label unresolved version fields explicitly. Matched teaching examples and limits support editorial admission, not measured efficacy.",
+    "reason_zh": "保留独立流程：历史主张使用捕获正文或归档，当前观察使用现有检出，未解决版本字段明确标注。 同任务教学对照和边界支持编辑准入，不代表已测得效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-adaptive-saturation-interview": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Paraphrase the answer, ask a why or concrete-example probe, and close the topic only when repeated probes add no information. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：复述回答，追问原因或具体例子，只有重复探问不添信息时才收束。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-all-reviewer-conjunction": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Provide the original spec and exact artifact to isolated reviews, combine required verdicts with AND, repair supported blockers and rereview the changed artifact within a bounded cycle. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：将原规范及精确产物交隔离审核，必需结论取 AND，修有证据阻塞，再有限轮次重审新产物。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-assigned-diversity": {
+    "status": "merged",
+    "reason_en": "Merge into Differentiated design briefs: Assign genuinely different design constraints before parallel proposals Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至差异化设计简报：并行提案前分配实际不同的设计约束。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-matt-varied-interface-briefs"
+  },
+  "ecc-atomic-budget-admission": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Check-and-reserve under the authoritative shared budget boundary before enqueue; reconcile the reservation against actual completion. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：在权威共享预算边界内完成检查加预留，再入队；完成后与实际用量对账。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-atomic-learning": {
+    "status": "merged",
+    "reason_en": "Merge into #95 (Mandatory Self-Learning After Failure): Retain a bounded evidence-backed lesson rather than universalizing one failure Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#95（失败后强制自学习）：保留有证据且有边界的经验，不把单次失败普遍化。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 95
+  },
+  "ecc-audience-separation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Resolve destination from trusted adapter identity, require scoped participation, classify output for its audience, and recheck the delivery grant at transport. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：用可信适配器身份解析目标，要求范围内参与许可，按受众分类输出，并在传输前再查授权。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-behavior-delta-pruning": {
+    "status": "merged",
+    "reason_en": "Merge into #192 (No-Op Test (Behavior-vs-Default Pruning)): Compare deletion variants on fixed behavior cases before pruning instructions Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#192（空操作测试（相对默认剪枝））：裁剪指令前用固定行为用例比较删除变体。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 192
+  },
+  "ecc-behavior-evidence-anchors": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect implementation and callers; record a stable requirement ID, enforcing function, entities and any existing test. Rename the label while retaining the ID; omit unsupported metadata rather than inventing an enforcement point. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查实现及调用，记录稳定需求 ID、执行函数、实体和现有测试；改标题保留 ID，无法支持的元数据不猜。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-behavior-path-parity": {
+    "status": "merged",
+    "reason_en": "Merge into #176 (Differential Baseline-Equivalence Oracle): Compare alternate paths on the same declared behavior and fixture Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#176（差分基线等价性判据）：用相同声明行为与固定用例比较不同路径。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 176
+  },
+  "ecc-blocking-gate-override": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Define blocker conditions in advance; retain the score while assigning blocked readiness when any applicable blocker is present. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：预先定义阻塞条件；保留分数，任一适用阻塞存在即标未就绪。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-bounded-optimization": {
+    "status": "merged",
+    "reason_en": "Merge into Noise-aware intervention comparison: Compare one bounded intervention on the same workload while preserving correctness and noise evidence Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至考虑噪声的干预比较：在同一负载上比较一次有界干预，同时保留正确性与噪声证据。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-addy-noise-aware-intervention"
+  },
+  "ecc-budget-inventory": {
+    "status": "merged",
+    "reason_en": "Merge into Budget context by when it loads: Separate always-loaded and invocation-loaded content in a measured inventory Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至按加载时机分账计算上下文：实测清单区分常驻内容与调用时内容。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "gstack-context-load-ledgers"
+  },
+  "ecc-causal-red-gate": {
+    "status": "merged",
+    "reason_en": "Merge into Prove behavioral RED before minimal GREEN: Confirm RED is caused by the intended behavior rather than an unrelated setup failure Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至先证明行为失败，再实现最小通过：确认 RED 源于目标行为，而非无关环境故障。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-behavioral-red-green-cycle"
+  },
+  "ecc-cleanup-pass": {
+    "status": "merged",
+    "reason_en": "Merge into #28 (Self-Critique): Run named omission and unnecessary-scaffold checks on the completed draft Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#28（自我批判）：对完成稿运行具名遗漏与多余脚手架检查。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 28
+  },
+  "ecc-compositional-base-slots": {
+    "status": "merged",
+    "reason_en": "Merge into #133 (Compositional Prompt Assembly): Assemble an invariant base with explicit variable slots and check the rendered combinations Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#133（组合式提示词装配）：用显式变量槽组装固定基础，并检查渲染组合。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 133
+  },
+  "ecc-conditioned-not-independent": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Record what evidence and target values the reviewer saw; use an independent measurement or held-out test for corroboration. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：记录审核者看过哪些证据和目标值，用独立测量或留出测试取得佐证。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-content-addressed-processing": {
+    "status": "merged",
+    "reason_en": "Merge into Cache keys encode response-changing inputs: Include every response-changing input in the content/cache identity Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至缓存键包含改变响应的输入：在内容与缓存身份中纳入所有会改变结果的输入。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-addy-cache-response-inputs"
+  },
+  "ecc-cross-skill-distillation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Cross-read candidate skills and current rules; require repeated evidence, behavior change and violation risk; merge semantic duplicates and keep narrow recipes local. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：跨读技能和现有规则，要求重复证据、行为变化与违规风险，合并语义重复，狭窄步骤留本地。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-cumulative-snapshot-accounting": {
+    "status": "merged",
+    "reason_en": "Merge into Establish counter semantics before totals: Identify cumulative versus incremental units before aggregation Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至汇总前确认计数器语义：汇总前识别累计与增量单位。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-counter-semantics-before-totals"
+  },
+  "ecc-decision-enabling-audit": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: For merge, name target and transferable section; for retire, identify defect and replacement; for improve, specify the section and required change. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：合并说明目标与可迁内容；撤下指出缺陷与替代；改进指定小节和所需变更。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-delegated-trust-label": {
+    "status": "merged",
+    "reason_en": "Merge into #10 (Prompt Injection Defense): Carry untrusted declarative facts without promoting source instructions into delegated authority Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#10（提示注入防御）：传递不可信事实时，不把来源指令提升为被委派权限。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 10
+  },
+  "ecc-delegation-result-collection": {
+    "status": "merged",
+    "reason_en": "Merge into #193 (Two-Axis Completion Criterion (Checkable + Exhaustive)): Validate every delegated scope and actual result before declaring exhaustive completion Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#193（双轴完成判据（可判定 + 穷尽））：宣称穷尽完成前验证每个委派范围及实际结果。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 193
+  },
+  "ecc-detection-vs-intervention-benefit": {
+    "status": "merged",
+    "reason_en": "Merge into Separate behavior success from intervention benefit: Evaluate detector validity separately from a controlled trial of intervention outcomes Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至区分行为通过与干预收益：把检测器有效性与干预结果的对照试验分别评估。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "gstack-behavior-versus-intervention-benefit"
+  },
+  "ecc-deterministic-fallback": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Parse known structures, validate required fields, retain raw text, escalate failed or uncertain records, and revalidate model repairs. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：解析已知结构，校验必需字段，保留原文，升级失败或疑难记录，并再校验模型修复。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-doc-fact-ownership": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Choose the canonical status owner; keep architectural rules in their own owner and replace repeated facts elsewhere with links. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：确定状态事实的权威归属，架构规则归其自身文档，其他处改为链接。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-drain-before-observer-stop": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Stop the producer, wait for the current run’s terminal export or explicit failure within a bounded deadline, record the outcome, then stop the event listener. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先停止生产者，再在有界期限内等当前运行的终态导出或明确失败，记录结果后停止监听器。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-eligibility-before-scoring": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Resolve the metadata needed for eligibility, filter against configured hard constraints, then score only eligible records. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先获得资格所需元数据，按硬约束过滤，再给合格项评分。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-eval-before-build": {
+    "status": "merged",
+    "reason_en": "Merge into #119 (Eval-Driven Skill Improvement Loop): Freeze representative cases and the comparison criterion before revision Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#119（评测驱动的技能改进循环）：修订前冻结代表性用例与比较标准。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 119
+  },
+  "ecc-evidence-promotion": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Compare compatible triggers and actions across projects, retain evidence and scope, and downgrade or withhold promotion on contradictory corrections. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：比较兼容的触发与行动，保留证据和范围；存在相反纠正时降低置信或暂缓提升。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-evidence-scorecard": {
+    "status": "merged",
+    "reason_en": "Merge into #27 (Scoring Rubrics): Anchor each score dimension to concrete evidence and its decision consequence Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#27（评分量规）：为每项分数绑定具体证据及决策后果。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 27
+  },
+  "ecc-exact-artifact-promotion": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Pack once from the intended revision, record its digest, test that archive, publish the same bytes to a staging lane and compare public integrity before promotion. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：按目标修订打包一次，记摘要，测该归档，暂存相同字节，公开完整性核对后再提升。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-fact-specific-preflight": {
+    "status": "merged",
+    "reason_en": "Merge into #167 (Per-Task Interfaces Block (Consumes/Produces)): Inspect exported contracts and actual consumers before editing a shared interface Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#167（任务级接口契约块）：修改共享接口前检查导出契约和实际消费者。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 167
+  },
+  "ecc-failure-capture": {
+    "status": "merged",
+    "reason_en": "Merge into #202 (Feedback-Loop-Before-Hypothesis Gate): Capture the actual failure signal before proposing hypotheses or another attempt Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#202（反馈回路先于假设的门）：提出假设或再次尝试前先收集实际失败信号。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 202
+  },
+  "ecc-failure-cost-metrics": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Name the affected decision and false-positive/false-negative costs; define relevant metrics, denominators and task-specific gates before inspecting candidate results. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：明确受影响决策、误报漏报代价，在看候选结果前定义相关指标、分母及任务门槛。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-fixed-context-scoring": {
+    "status": "merged",
+    "reason_en": "Merge into #42 (Agent Memory Isolation): Keep candidate judgments in isolated contexts with the same task and rubric Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#42（Agent 记忆隔离）：用相同任务和标准，在隔离上下文中分别判断候选。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 42
+  },
+  "ecc-golden-file-pointers": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Compare current exemplars across file anatomy, state flow, infrastructure and errors; resolve meaningful conflicts and cite the chosen model. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：比较文件结构、状态流、基础设施和错误处理，解决重要冲突，引用所选模型。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-grader-discrimination-check": {
+    "status": "merged",
+    "reason_en": "Merge into Use an independent, mutation-sensitive oracle: Require the independent grader to distinguish accepted reference from unchanged or deliberately wrong controls Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至使用独立且对错误敏感的判据：要求独立评分器区分已接受参考与未修改或故意错误对照。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-independent-mutation-sensitive-oracle"
+  },
+  "ecc-hashed-approval": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Hash the draft, rotate its revision on edits, and transactionally bind an authorized decision to immutable text and destination. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：草稿计算哈希，修改推进版本，授权决定事务性绑定不可变文本和目标。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-identifiable-calibration": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Use two distinct coordinate pairs per unknown axis or independently established parameters; solve the transform, test an additional anchor and invalidate it after relevant layout changes. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：每个未知轴用两个坐标不同的对应点，或独立已知参数；解变换，再用额外锚点校验，布局变化后作废。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-incomplete-recall-state": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect search diagnostics and preserve complete-empty, incomplete and found outcomes; repair the authorized scan before making absence claims. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查诊断，保留命中、完整空结果和不完整三种状态；修复允许范围内的扫描再判断不存在。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-incomplete-review-not-approval": {
+    "status": "merged",
+    "reason_en": "Merge into Same-Artifact All-Reviewer Gate: Require every applicable lane on the same revision; failed execution cannot become an empty clean result Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至同产物全审核通过门槛：要求同一修订上的每个适用评审维度完成，执行失败不能变成空的干净结果。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "ecc-all-reviewer-conjunction"
+  },
+  "ecc-independent-behavior-review": {
+    "status": "merged",
+    "reason_en": "Merge into #115 (QA Sub-Agent with Visual Verification): Inspect the actual rendered artifact and interaction independently from its author claim Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#115（带视觉验证的 QA 子 Agent）：独立检查实际渲染产物和交互，不继承作者的完成声明。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 115
+  },
+  "ecc-independent-stop-supervisor": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Before launch bind a supervisor to the current task/process group and the declared heartbeat deadline. Observe externally, use the authorized stop path on timeout, preserve logs and mark the task stalled for inspection rather than complete. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：启动前把监督器绑定当前任务及进程组和既定心跳期限；外部观察，超时用已授权停止路径，保留日志并标为阻塞待查而非完成。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-iterative-gap-retrieval": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Search broadly, assess each result against the task, list gaps, add discovered terminology, and stop at a bounded sufficient context set. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先广泛搜索，再评估结果与任务的关联，列出缺口，加入实际术语，在有限轮次内满足所需上下文。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-ja-agent-semantic-control-parity": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Extract canonical controls: required evidence, permitted action, stop/escalate trigger, scoring or acceptance threshold, and report fields. Map each to the translation as preserved, omitted, weakened or strengthened; inspect examples against the same conditions. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：逐条抽取原文控制语句：所需证据、允许动作、停止／升级触发条件、评分或验收阈值、报告字段。将译文对应项标为保留、省略、弱化或强化，并按相同条件核对示例。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05",
+    "related_ids": [
+      166,
+      47,
+      374
+    ]
+  },
+  "ecc-live-state-proof": {
+    "status": "merged",
+    "reason_en": "Merge into #175 (Tool-Ran Tri-State Provenance): Distinguish configured, attempted and verified state using inspected current receipts Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#175（工具运行三态溯源）：通过已检查的当前回执区分配置、尝试和已验证状态。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 175
+  },
+  "ecc-loss-aware-redaction": {
+    "status": "merged",
+    "reason_en": "Merge into Preserve linkage with stable redaction placeholders: Use stable opaque linkage and collision handling so redaction does not overwrite distinct evidence Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至用稳定遮蔽占位符保留关联：使用稳定不透明关联与冲突处理，防止脱敏覆盖不同证据。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-stable-redaction-linkage"
+  },
+  "ecc-measured-ratchet-ceiling": {
+    "status": "merged",
+    "reason_en": "Merge into Measured baseline ratchet: Lower the enforced ceiling only after measuring that all applicable code meets it Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至测量基准棘轮：只有实测确认适用代码全部满足后才降低执行上限。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-addy-measured-ratchet"
+  },
+  "ecc-measurement-unit-boundary": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Label persisted-byte categories and their complete total; obtain active token/headroom from the harness instead of converting byte share into a context claim. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：标明落盘字节分类和完整总量，活跃 token 与剩余空间另由运行时获取，不用字节占比替代。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-memory-current-state": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Verify present source state, record observation time, and mark superseded entries explicitly; keep historical reads distinguishable from active recall. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：核实当前来源状态，记录观察时间，显式标记旧条目已被替代；历史读取与当前检索分开。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-metamorphic-oracle": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Combine grounded examples with applicable invariants such as idempotence, permutation invariance and preservation of the declared record set. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保留有依据样例，再加适用的幂等、排列不变和记录集保留不变量。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-model-tier-routing": {
+    "status": "merged",
+    "reason_en": "Merge into #35 (Cost-Optimized Model Routing): Choose an available model by task capability, cost and uncertainty Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#35（成本优化模型路由）：按任务能力、成本与不确定性选择可用模型。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 35
+  },
+  "ecc-observation-time-provenance": {
+    "status": "merged",
+    "reason_en": "Merge into Qualify observations by when they were captured: Keep retrieval time separate from the source observation time and unknown freshness Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至按采集时间区分来源状态：区分获取时间、来源观察时间与未知新鲜度。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-time-qualified-source-provenance"
+  },
+  "ecc-ordered-final-state": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect state effects of each action, order reset before open or use one coherent transition, then verify the final visible state. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查每步状态效果，先重置后打开或用完整转移，再验证可见终态。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-out-of-band-observation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Use a separate observer to read bounded current transcript/status evidence, correlate pending calls with results and record timestamp and coverage; keep observation separate from stopping or controlling the worker. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：独立观察者读取有界当前轨迹或状态，关联待办调用与结果，记录时间和覆盖，并把观察与停止控制区分。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-paired-baseline-evaluation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Require unique explicit trial IDs, evaluate both revisions for every trial under the same conditions, preserve missing/error outcomes, and compute paired mean difference and win count using the full panel. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：要求明确唯一试验 ID，同条件下逐例评估两版，保留缺失和错误，再按完整试验组算配对均值差与胜出数。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-parallel-lane-ownership": {
+    "status": "merged",
+    "reason_en": "Merge into #127 (Parallel-Safe Step Identification): Parallelize independent stable reads while assigning one owner to conflicting writes Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#127（并行安全步骤识别）：并行执行独立稳定读取，为冲突写入指定唯一所有者。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 127
+  },
+  "ecc-phase-compaction": {
+    "status": "merged",
+    "reason_en": "Merge into #128 (Context Compaction Survival): Persist named task state before the lossy phase transition Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#128（上下文压缩幸存）：有损阶段切换前保存具名任务状态。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 128
+  },
+  "ecc-point-in-time-context": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Freeze the decision cutoff, distinguish event time from availability time, and exclude later resolutions or corrected records from the input context. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：固定决策截止点，区分事件时间与可得时间，从输入排除后续解决和纠正记录。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-prerequisite-failure-propagation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Keep not-yet-graded distinct from graded-failed; after initial grading, repeatedly demote passes resting on failed prerequisites until no dependent pass changes. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：区分未评分和已评分失败；初评后反复降低依赖失败前置的通过状态，直到不再改变。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-preserve-resource-layout": {
+    "status": "merged",
+    "reason_en": "Merge into Reference closure in the received artifact: Validate the received resource tree and its relative references, without flattening collisions Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至接收产物中的参考闭包：验证接收到的资源树及相对引用，避免扁平化冲突。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-addy-installed-reference-closure"
+  },
+  "ecc-preserved-dissent": {
+    "status": "merged",
+    "reason_en": "Merge into #50 (Adversarial Triad + Counterarguments): Retain attributable opposing evidence and its explicit disposition instead of averaging it away Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#50（对抗三方 + 反驳环节）：保留可归属的反对证据及明确处置，不将其平均掉。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 50
+  },
+  "ecc-protected-acceptance": {
+    "status": "merged",
+    "reason_en": "Merge into Review changes to the quality bar itself: Protect the acceptance contract from edits made merely to obtain a passing label Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至评审质量门槛自身变化：防止仅为获得通过标签而修改验收契约。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-addy-guard-quality-bar"
+  },
+  "ecc-raw-synthesis-separation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Capture attributable raw answers first, then synthesize convergences and divergences without editing the source statements. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先保存有归属的原始回答，再综合一致点和分歧，不修改原话。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-reliability-metrics": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Record individual results and report at-least-one success separately from all-trials success, keeping task and budget fixed. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保存每次结果，分别报告至少一次成功和全部成功，固定任务与预算。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-reputation-not-action-authority": {
+    "status": "merged",
+    "reason_en": "Merge into #123 (Scoped Authorization and Action Risk): Evaluate concrete current action effects and authority rather than inheriting permission from reputation Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#123（授权范围与操作风险）：评估当前具体操作的效果与权限，不从声誉继承许可。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 123
+  },
+  "ecc-research-before-building": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect local helpers, available registries and maintained source implementations; compare fit and choose adopt, extend, compose or build. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：读取本地辅助工具、可用注册源与维护实现，比较适配度，选择采用、扩展、组合或自建。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-retirement-context": {
+    "status": "merged",
+    "reason_en": "Merge into #155 (Capability Retirement with Migration Paths): Preserve retirement rationale, old identity and a discoverable replacement path Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#155（能力退役与迁移路径）：保留退出原因、旧身份和可发现的替代路径。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 155
+  },
+  "ecc-review-failure-proof": {
+    "status": "merged",
+    "reason_en": "Merge into #47 (Evidence-First Review): Prove a reachable trigger and failing propagation after checking existing guards Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#47（证据优先评审）：检查现有保护后，证明可达触发条件及失败传播。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 47
+  },
+  "ecc-same-bytes-evidence": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Use a stable snapshot or detect changes across probe/hash operations; key measurements by digest and reject conflicting occurrences. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：用稳定快照或检测 probe、hash 之间的变化；测量按摘要归属，重复冲突即拒。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-scoped-evidence-memory": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Search project/team scopes, request user scope explicitly, and treat recalled bodies as untrusted evidence to verify. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：搜索项目与团队范围，显式申请用户范围；把记忆正文当作待核实证据。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-self-event-recursion-guard": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Carry an explicit automated-run marker across child execution, check it at the capture entry point before creating metadata or scheduling more analysis, and preserve legitimate human events. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：子运行携带明确自动标记，捕获入口先检查，再创建元数据或排新分析；保留真实人工事件。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-semantic-completion-handshake": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Define a completion record emitted only after required reads/writes succeed; validate the current run’s exact record separately from exit status and retain inputs on incomplete work. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：仅在必要读写成功后发完成记录；单独校验本轮精确记录，不完整时保留输入。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-shared-boundary-contract": {
+    "status": "merged",
+    "reason_en": "Merge into #167 (Per-Task Interfaces Block (Consumes/Produces)): Check both sides of a producer/consumer contract before changing their shared interface Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#167（任务级接口契约块）：修改共享接口前检查生产者与消费者两端契约。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 167
+  },
+  "ecc-side-question-continuation": {
+    "status": "merged",
+    "reason_en": "Merge into #150 (Continuous Execution Mandate): Answer a side question while retaining the authorized task and respecting explicit steering Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#150（连续执行强制令）：回答旁支问题时保留已授权任务，并遵守明确转向。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 150
+  },
+  "ecc-slice-aware-gates": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Declare the relevant language slices and acceptance policy, retain each denominator and uncertainty, and block promotion when a required slice fails. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：预先声明语言分片与验收政策，保留各分母和不确定性；必需分片失败即阻塞提升。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-source-derived-profile": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Identify sentence rhythm, claim strength, transition and vocabulary norms; distinguish public/private registers and reuse the confirmed profile. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：识别句子节奏、主张强度、衔接与用词约定，区分公开和私人语域，复用已确认档案。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-structured-and-rendered-state": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Read scoped object transforms/geometry/contact state and inspect the corresponding rendered frame with the same scene/version identity. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：读取限定对象的变换、几何和接触状态，检查同场景同版本渲染帧。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-target-outcome-contract": {
+    "status": "merged",
+    "reason_en": "Merge into Validate measured artifact constraints: Compare observed artifact measurements with the actual requested acceptance constraint Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至验证可测量的产物约束：以实际请求的验收约束比较产物实测值。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "composio-bounded-artifact-validation"
+  },
+  "ecc-technical-vs-product-constraints": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect current technical behavior; obtain product limits from an authoritative brief or user; label unresolved limits as assumptions rather than business facts. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查技术行为；产品限制来自权威说明或用户；未定限制标假设而非业务事实。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-thin-vertical-slice": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Read locked decisions, choose one complete user path with its acceptance check, scaffold that path, evaluate it, then add the next slice. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：读取已定决策，选择一个完整路径及验收，先搭建和评测，再追加切片。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-trace-compliance": {
+    "status": "merged",
+    "reason_en": "Merge into #149 (Pressure-Scenario TDD for Skill Authoring): Exercise supportive, neutral and competing prompts and inspect actual ordered behavior traces Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#149（技能创作的压力场景 TDD）：执行支持、自然和竞争提示，并检查实际有序行为轨迹。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 149
+  },
+  "ecc-transient-retry": {
+    "status": "merged",
+    "reason_en": "Merge into Recover according to failure class: Retry only failures classified as transient under a bounded policy Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至按失败类别选择恢复动作：仅对已分类为暂时性失败执行有界重试。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "composio-error-directed-recovery"
+  },
+  "ecc-trigger-reference-loading": {
+    "status": "merged",
+    "reason_en": "Merge into #100 (Progressive Disclosure Architecture): Load an exact reference only for the selected task trigger Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#100（渐进式披露架构）：只按所选任务触发条件读取精确引用。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 100
+  },
+  "ecc-typed-launch-plan": {
+    "status": "merged",
+    "reason_en": "Merge into Pass review artifacts through inert input channels: Carry inert data through typed input channels rather than interpolating it into shell code Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至通过惰性输入通道传评审产物：通过带类型输入通道传递惰性数据，不插入 shell 代码。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_key": "core-addy-safe-artifact-channel"
+  },
+  "ecc-typed-tool-recovery": {
+    "status": "merged",
+    "reason_en": "Merge into #144 (Agent-Centric Tool Design Principles): Return typed outcome, artifact identity and an actionable recovery hint Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#144（以 Agent 为中心的工具设计原则）：返回带类型的结果、产物身份与可执行恢复提示。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 144
+  },
+  "ecc-unknown-delivery-hold": {
+    "status": "merged",
+    "reason_en": "Merge into #73 (Resumable Idempotent Actions): Keep unknown delivery distinct from confirmed failure and reconcile before replay Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#73（可恢复的幂等操作）：保留未知交付状态，与已确认失败区分，重放前先对账。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 73
+  },
+  "ecc-untrusted-source-data": {
+    "status": "merged",
+    "reason_en": "Merge into #10 (Prompt Injection Defense): Preserve the source trust label when transforming retrieved material into another prompt Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#10（提示注入防御）：把检索材料转入另一提示时保留来源信任标签。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 10
+  },
+  "ecc-validate-proposed-input": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Parse the proposed tool input, require the expected field and type, apply the policy to that content, and return a rejection through the verified pre-execution hook contract when it fails. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：解析拟执行工具输入，要求字段和类型正确，对该内容应用政策，失败时通过已验证的执行前 hook 契约拒绝。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-variants-invocation-literal-boundary": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect the rendered invocation with representative arguments. Protect colliding literals with a documented non-expanding reference or escape mechanism; if neither exists, explain binding in prose rather than corrupt the driver syntax. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：用代表性参数检查实际渲染的调用。通过已记录的不展开引用或转义机制保护冲突字面值；若都不可用，改用文字解释绑定，不破坏驱动语法。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-variants-localization-symbol-integrity": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: List the executable identifiers and schema keys first; translate prose around that literal set. Compare the localized parsed identity, invocation and reference target against the original. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先列出可执行标识符和元数据字段名，再翻译该集合之外的说明。将本地化后的解析身份、调用名和引用目标与原文逐项比较。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-variants-optional-capability-fault-isolation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Defer the optional import to its tool or contain startup failure in that subsystem. Keep unrelated registration alive, name the unavailable capability, contain diagnostic failures and permit a verified retry after repair. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：将可选 import 延迟到对应工具，或在该子系统初始化边界捕获失败。无关工具继续注册，明确不可用能力，隔离诊断失败，修复后允许经核查的重试。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "ecc-version-grounded-docs": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inspect the project version, resolve official documentation identity, retrieve the task-specific section, and cite its version while preserving uncertainty. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：检查项目版本，定位官方文档身份，读取任务小节，注明版本并保留不确定。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-accepted-obligation-amendment": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Separate the current implementation plan from immutable review history. Record accepted obligations with their source revision; a new phase adds a new checkpoint instead of replaying old replacements. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：将当前实施计划与不可改写的审查历史分开。为已接受义务记录来源版本；新阶段创建新检查点，不重放旧替换操作。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-behavior-versus-intervention-benefit": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Keep behavior acceptance and matched ON/OFF comparison as separate outcomes. Preserve the same task, runtime and measurement definition; report saturated baselines, regressions and incomplete comparisons explicitly. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：将行为验收与配对 ON/OFF 比较分开。保持相同任务、运行时和测量定义，明确报告基线已达上限、退化或比较不完整。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-canonicalize-before-authorization": {
+    "status": "merged",
+    "reason_en": "Merge into #134 (Tool-Constraint Boundaries): Resolve aliases before policy, dispatch and audit so spelling cannot bypass effect checks Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#134（工具约束边界）：在策略、派发和审计前解析别名，避免拼写绕过效果检查。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 134
+  },
+  "gstack-capability-tiered-instruction-digest": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Branch on host capability. Install the full suite where supported; otherwise offer a generated, byte-bounded digest of stable ethos, reuse rules and voice. Label it instruction-only, state which workflows require the full suite, include a visible version, and let the user copy it into a file the host actually reads without overwriting existing instructions. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：先按宿主能力分支：受支持的宿主安装完整套件；否则提供生成式、限制字节数的稳定准则摘要，涵盖行为原则、复用顺序和表达规范。标明它仅提供指令，指出完整工作流需要完整套件，显示版本，并让用户自行复制到宿主确实读取的文件；不要覆盖已有指令。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-comparable-coverage-trends": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Record executed and unavailable checks. Compare like-for-like check sets and unchanged measurement definitions; report changed coverage separately rather than interpreting the aggregate delta as improvement. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：记录已运行和不可用检查。按相同检查集合与测量定义比较；覆盖变化单独报告，不能把总分差解释为质量改善。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-context-load-ledgers": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Inventory discovery metadata, full front matter and invocation content including mandatory references. Count each ledger with a declared tokenizer or labelled estimate; compare complete consumed inputs rather than entry-file size alone. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：分别盘点发现用元数据、完整 front matter 和包含必读参考的调用内容。使用声明过的 tokenizer 或标明估算方法，比较完整消费输入，而不只比较入口大小。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-evidence-channel-consistency": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Separate observed output, expected contract, confirmation and hypothesis. Derive one conservative finding statement from the observation, repeat its qualifications in summaries, and propose tests on the channel actually observed. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：分开记录观测输出、预期契约、确认状态与假设。按观测生成一个保守事实句，摘要保留相同限定，拟议测试使用真正被观测的通道。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-grant-narrowing-revocation": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Resolve the same principal identity, revoke its previous broader session, issue the narrower grant and verify the old credential is rejected. Creating a second principal does not revoke the first. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：定位同一主体，撤销先前宽权限会话，再签发较窄授权，并验证旧凭据被拒绝。新建第二个主体不会撤销第一个。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-independent-completion-witness": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Keep the behavioral oracle and authenticated evidence outside the target-controlled process. Bind it to the tested snapshot and assertion; retain the project runner result as self-reported unless its completion is independently witnessed. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：将行为判定和认证证据放在目标无法控制的进程外，绑定测试快照与断言。项目测试运行器的结果仍标为自行报告，除非其完成也得到独立见证。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-overlapping-await-schedules": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Name the caller boundary and invariant; draw a combined schedule, pause at relevant awaits, exercise both completion orders, then inspect a fresh consumer. Exclude an order only with a concrete prevention mechanism. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：明确调用边界与不变量，绘制合并时序，在相关 await 处暂停，覆盖两种完成顺序，再由新消费者检查状态。排除某种顺序必须指出具体阻止机制。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-owned-terminal-cleanup": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Retain the acquisition token. On termination, atomically compare ownership and release only a matching lock; preserve a replacement and report cleanup failure. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保留获取时返回的所有权令牌。结束时原子比较所有权，仅释放匹配锁；保留替换状态，报告清理失败。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-pending-question-transport": {
+    "status": "merged",
+    "reason_en": "Merge into #73 (Resumable Idempotent Actions): Preserve uncertain delivery; retry only a confirmed pre-delivery failure and keep a possibly shown question pending until its actual answer Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#73（可恢复的幂等操作）：保留不确定交付；只重试已确认展示前失败的问题，可能已展示的问题须等待实际答复。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 73
+  },
+  "gstack-persona-grounded-peer-benchmarking": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Name the target developer, documented start, and first useful result. Record the product and inspected peers with their steps, time, evidence type, journey boundary, design choice, and source. Separate human onboarding from automated execution. Compare durations only when boundaries match; otherwise disclose the mismatch and compare design choices. Label estimates and unknowns, and do not infer that an unmentioned step takes no time. Ask the user to choose the target after the comparison, then carry that answer into later review. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：明确目标开发者、文档中的起点和首次有用结果。逐项记录本产品及查阅到的同类产品，包括操作步骤、时间、证据类型、旅程边界、设计选择和来源。把人工上手时间与自动执行时间分开。只有起止边界一致时才比较时长；否则说明差异，转而比较设计选择。估算与未知都要标记，不能把文档未提到某步骤当作耗时为零。完成比较后先请用户选择目标，再将答案带入后续审查。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-phase-local-review-coverage": {
+    "status": "merged",
+    "reason_en": "Merge into #32 (Hub-and-Spoke SDLC State Machine): Bind each phase transition to its actual input revision and reviewer coverage status Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#32（中心辐射式 SDLC 状态机）：将每个阶段转移绑定到实际输入修订与评审覆盖状态。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 32
+  },
+  "gstack-predeclared-trial-verdict": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Declare trial count, acceptable stochastic variation and nonwaivable contracts before execution. Keep failures and missing trials in the result; repeat only as a separately identified experiment after a concrete change. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：运行前声明次数、允许的随机变化和不可豁免契约。失败与缺失轮次都保留；具体修改后的重跑作为另一个有身份的实验记录。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-proven-run-codification": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Preserve the successful command sequence and accepted input/output snapshot. Separate pure parsing from browser I/O, discard failed exploratory commands, and replay exact-value assertions before installing the procedure. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：保留成功命令序列和已接受的输入输出快照，将纯解析与浏览器 I/O 分开，排除失败探索命令，安装前重放并检查确切值。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-source-first-obligation-audit": {
+    "status": "merged",
+    "reason_en": "Merge into #193 (Two-Axis Completion Criterion (Checkable + Exhaustive)): Start from the complete source obligation set and prove semantic retention rather than matching summary counts Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#193（双轴完成判据（可判定 + 穷尽））：从完整来源义务集出发，证明语义保留，而非仅匹配摘要计数。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 193
+  },
+  "gstack-target-qualified-readback": {
+    "status": "active",
+    "reason_en": "Retain the distinct procedure: Capture the effective target before the write, use that same target for a fresh readback, and compare the returned substantive content. Keep command success and verified target content as separate outcomes. Its matched-task contrast and explicit limits support editorial admission only.",
+    "reason_zh": "保留独立流程：写入前记录实际目标，使用相同目标新回读，并比较返回的实质内容。命令成功与目标内容验证分开记录。 同任务对照及明确边界支持编辑准入，未代表实测效果。",
+    "reviewed_at": "2026-10-05"
+  },
+  "gstack-unanchored-parallel-proposals": {
+    "status": "merged",
+    "reason_en": "Merge into #34 (Dual-Model Adversarial Planning): Withhold the parent and other proposals until independently drafted answers return Retain the pinned source occurrence without a second identity.",
+    "reason_zh": "合并至#34（双模型对抗规划）：独立草案返回前隐藏父级和其他提案。保留固定版本来源，不另分配身份。",
+    "reviewed_at": "2026-10-05",
+    "target_id": 34
+  }
+}

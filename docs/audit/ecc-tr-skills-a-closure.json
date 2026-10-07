@@ -1,0 +1,4714 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "partition": "Turkish skill paths A (fixed 17-path manifest)",
+  "source_manifest": ".tools/ecc-tr-skill-a.json",
+  "summary": {
+    "rows": 17,
+    "analyzed": 17,
+    "pending": 0,
+    "new_candidates": 0,
+    "existing_candidate_support": {
+      "ecc-metamorphic-oracle": [
+        "docs/tr/skills/kotlin-testing/SKILL.md"
+      ]
+    }
+  },
+  "candidate_additions": [],
+  "coverage_updates": [
+    {
+      "path": "docs/tr/skills/api-design/SKILL.md",
+      "counterpart": "skills/api-design/SKILL.md",
+      "hash": "cb6e3366c2470310568d0a1fae9071d17ede47802d3ec1370346079e15f1637e",
+      "blob": "42d4a50cdd175639715554cd499eefc62eb7b7c3",
+      "line_count": 524,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers the activation cases and REST resource naming, HTTP method/status semantics, response/error envelopes, offset and cursor pagination, filters/search/field selection, authentication/authorization, rate limits, versioning and TypeScript/Django/Go endpoint examples. All 24 Turkish code fences were displayed; 19/24 match the English block after removing translated full-line comments and trimming whitespace, with the five remaining examples displayed separately. Its domain recipes do not add a prompt/context-control mechanism. Cursor-by-id is not snapshot proof; sample defaults and compatibility claims remain illustrative.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/api-design/SKILL.md",
+          "blob": "42d4a50cdd175639715554cd499eefc62eb7b7c3",
+          "hash": "cb6e3366c2470310568d0a1fae9071d17ede47802d3ec1370346079e15f1637e"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              22,
+              22
+            ],
+            [
+              43,
+              43
+            ],
+            [
+              58,
+              58
+            ],
+            [
+              60,
+              60
+            ],
+            [
+              62,
+              68
+            ],
+            [
+              70,
+              70
+            ],
+            [
+              72,
+              72
+            ],
+            [
+              95,
+              95
+            ],
+            [
+              114,
+              114
+            ],
+            [
+              116,
+              116
+            ],
+            [
+              129,
+              129
+            ],
+            [
+              151,
+              151
+            ],
+            [
+              174,
+              174
+            ],
+            [
+              198,
+              198
+            ],
+            [
+              200,
+              200
+            ],
+            [
+              211,
+              212
+            ],
+            [
+              214,
+              214
+            ],
+            [
+              236,
+              237
+            ],
+            [
+              239,
+              239
+            ],
+            [
+              241,
+              246
+            ],
+            [
+              248,
+              248
+            ],
+            [
+              250,
+              250
+            ],
+            [
+              267,
+              267
+            ],
+            [
+              277,
+              277
+            ],
+            [
+              287,
+              287
+            ],
+            [
+              295,
+              295
+            ],
+            [
+              297,
+              297
+            ],
+            [
+              309,
+              309
+            ],
+            [
+              327,
+              327
+            ],
+            [
+              329,
+              329
+            ],
+            [
+              348,
+              348
+            ],
+            [
+              350,
+              355
+            ],
+            [
+              357,
+              357
+            ],
+            [
+              359,
+              359
+            ],
+            [
+              366,
+              367
+            ],
+            [
+              369,
+              369
+            ],
+            [
+              376,
+              377
+            ],
+            [
+              379,
+              379
+            ],
+            [
+              399,
+              399
+            ],
+            [
+              401,
+              401
+            ],
+            [
+              442,
+              442
+            ],
+            [
+              477,
+              477
+            ],
+            [
+              508,
+              508
+            ],
+            [
+              510,
+              510
+            ],
+            [
+              512,
+              523
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              25,
+              40
+            ],
+            [
+              46,
+              55
+            ],
+            [
+              75,
+              92
+            ],
+            [
+              98,
+              111
+            ],
+            [
+              119,
+              126
+            ],
+            [
+              132,
+              148
+            ],
+            [
+              154,
+              171
+            ],
+            [
+              177,
+              195
+            ],
+            [
+              203,
+              208
+            ],
+            [
+              217,
+              223
+            ],
+            [
+              227,
+              233
+            ],
+            [
+              253,
+              264
+            ],
+            [
+              270,
+              274
+            ],
+            [
+              280,
+              284
+            ],
+            [
+              290,
+              292
+            ],
+            [
+              300,
+              306
+            ],
+            [
+              312,
+              324
+            ],
+            [
+              332,
+              345
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              372,
+              373
+            ],
+            [
+              382,
+              396
+            ],
+            [
+              404,
+              439
+            ],
+            [
+              445,
+              474
+            ],
+            [
+              480,
+              505
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            524
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            524
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 24,
+          "canonical_blocks": 24,
+          "whole_line_comment_trimmed_block_matches": 19,
+          "raw_exact_block_matches": 9,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              45,
+              56
+            ],
+            [
+              74,
+              93
+            ],
+            [
+              216,
+              224
+            ],
+            [
+              299,
+              307
+            ],
+            [
+              381,
+              397
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/api-design/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/api-design/SKILL.md",
+          "blob": "655d730e64492b997bded91038c52f75398c5563",
+          "hash": "250e464413a13c0eb93cc73447b423df1f9aa8e4f80e5e68c41f895b2c33e352"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers the activation cases and REST resource naming, HTTP method/status semantics, response/error envelopes, offset and cursor pagination, filters/search/field selection, authentication/authorization, rate limits, versioning and TypeScript/Django/Go endpoint examples. All 24 Turkish code fences were displayed; 19/24 match the English block after removing translated full-line comments and trimming whitespace, with the five remaining examples displayed separately. Its domain recipes do not add a prompt/context-control mechanism. Cursor-by-id is not snapshot proof; sample defaults and compatibility claims remain illustrative.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/backend-patterns/SKILL.md",
+      "counterpart": "skills/backend-patterns/SKILL.md",
+      "hash": "1d7ac326064db15adc1cd7521d69126f33f5b5eb6a933269fdd97265b4bcb4b2",
+      "blob": "ff3da87a8cf627448ce96b03c7aadf3936bca352",
+      "line_count": 599,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers repository/service/middleware, query and N+1 handling, transaction/cache, error/retry, JWT/role checks, queues and structured logs. Its 16 blocks include a Turkish-only simple in-memory Map rate limiter (435-477): process-local state cannot enforce a shared limit across instances. English has 15 blocks and its canonical review requires shared-store rate limiting. This is a domain example and does not introduce an agent prompting method; retries, JWT casts and local queue acceptance remain framework-code examples, not execution evidence.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/backend-patterns/SKILL.md",
+          "blob": "ff3da87a8cf627448ce96b03c7aadf3936bca352",
+          "hash": "1d7ac326064db15adc1cd7521d69126f33f5b5eb6a933269fdd97265b4bcb4b2"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              21,
+              21
+            ],
+            [
+              23,
+              23
+            ],
+            [
+              38,
+              38
+            ],
+            [
+              72,
+              72
+            ],
+            [
+              101,
+              101
+            ],
+            [
+              129,
+              129
+            ],
+            [
+              131,
+              131
+            ],
+            [
+              148,
+              148
+            ],
+            [
+              168,
+              168
+            ],
+            [
+              206,
+              206
+            ],
+            [
+              208,
+              208
+            ],
+            [
+              242,
+              242
+            ],
+            [
+              264,
+              264
+            ],
+            [
+              266,
+              266
+            ],
+            [
+              316,
+              316
+            ],
+            [
+              346,
+              346
+            ],
+            [
+              348,
+              348
+            ],
+            [
+              388,
+              388
+            ],
+            [
+              431,
+              431
+            ],
+            [
+              433,
+              433
+            ],
+            [
+              479,
+              479
+            ],
+            [
+              481,
+              481
+            ],
+            [
+              534,
+              534
+            ],
+            [
+              536,
+              536
+            ],
+            [
+              598,
+              598
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              26,
+              35
+            ],
+            [
+              41,
+              69
+            ],
+            [
+              75,
+              98
+            ],
+            [
+              104,
+              126
+            ],
+            [
+              134,
+              145
+            ],
+            [
+              151,
+              165
+            ],
+            [
+              171,
+              203
+            ],
+            [
+              211,
+              239
+            ],
+            [
+              245,
+              261
+            ],
+            [
+              269,
+              313
+            ],
+            [
+              319,
+              343
+            ],
+            [
+              351,
+              385
+            ],
+            [
+              391,
+              428
+            ],
+            [
+              436,
+              476
+            ],
+            [
+              484,
+              531
+            ],
+            [
+              539,
+              595
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            599
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            562
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 16,
+          "canonical_blocks": 15,
+          "whole_line_comment_trimmed_block_matches": 12,
+          "raw_exact_block_matches": 0,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              25,
+              36
+            ],
+            [
+              150,
+              166
+            ],
+            [
+              268,
+              314
+            ],
+            [
+              435,
+              477
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/backend-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/backend-patterns/SKILL.md",
+          "blob": "1142d0a51de34808f8493bac40b68aa745dcd80e",
+          "hash": "9b983d0297a983110fdfda8dce55d19b750ca3e53ef155d75a3eff740d3874b8"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers repository/service/middleware, query and N+1 handling, transaction/cache, error/retry, JWT/role checks, queues and structured logs. Its 16 blocks include a Turkish-only simple in-memory Map rate limiter (435-477): process-local state cannot enforce a shared limit across instances. English has 15 blocks and its canonical review requires shared-store rate limiting. This is a domain example and does not introduce an agent prompting method; retries, JWT casts and local queue acceptance remain framework-code examples, not execution evidence.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/coding-standards/SKILL.md",
+      "counterpart": "skills/coding-standards/SKILL.md",
+      "hash": "af3d7c37c0bb66b056fc99d5386259b3ddc7519d35c5fd24d22141aa49347c7b",
+      "blob": "d47664db48d4e2240e0c1518f760819dabcf201c",
+      "line_count": 531,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers naming, immutability, errors/async/type safety, React state/rendering, API/input validation, file organization, comments, performance, AAA tests and code smells. The English canonical adds a Scope Boundaries section that the Turkish text lacks. The 25 Turkish examples were all displayed; 15/25 normalize to English blocks after translated full-line comments are removed. No separate prompt/context mechanism appears; examples do not establish runtime correctness.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/coding-standards/SKILL.md",
+          "blob": "d47664db48d4e2240e0c1518f760819dabcf201c",
+          "hash": "af3d7c37c0bb66b056fc99d5386259b3ddc7519d35c5fd24d22141aa49347c7b"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              22,
+              26
+            ],
+            [
+              28,
+              32
+            ],
+            [
+              34,
+              38
+            ],
+            [
+              40,
+              44
+            ],
+            [
+              46,
+              46
+            ],
+            [
+              48,
+              48
+            ],
+            [
+              62,
+              62
+            ],
+            [
+              76,
+              76
+            ],
+            [
+              92,
+              92
+            ],
+            [
+              118,
+              118
+            ],
+            [
+              134,
+              134
+            ],
+            [
+              155,
+              155
+            ],
+            [
+              157,
+              157
+            ],
+            [
+              191,
+              191
+            ],
+            [
+              213,
+              213
+            ],
+            [
+              226,
+              226
+            ],
+            [
+              238,
+              238
+            ],
+            [
+              240,
+              240
+            ],
+            [
+              254,
+              254
+            ],
+            [
+              283,
+              283
+            ],
+            [
+              314,
+              314
+            ],
+            [
+              316,
+              316
+            ],
+            [
+              337,
+              337
+            ],
+            [
+              346,
+              346
+            ],
+            [
+              348,
+              348
+            ],
+            [
+              366,
+              366
+            ],
+            [
+              391,
+              391
+            ],
+            [
+              393,
+              393
+            ],
+            [
+              409,
+              409
+            ],
+            [
+              426,
+              426
+            ],
+            [
+              441,
+              441
+            ],
+            [
+              443,
+              443
+            ],
+            [
+              459,
+              459
+            ],
+            [
+              472,
+              472
+            ],
+            [
+              474,
+              474
+            ],
+            [
+              476,
+              476
+            ],
+            [
+              491,
+              491
+            ],
+            [
+              516,
+              516
+            ],
+            [
+              530,
+              530
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              51,
+              59
+            ],
+            [
+              65,
+              73
+            ],
+            [
+              79,
+              89
+            ],
+            [
+              95,
+              115
+            ],
+            [
+              121,
+              131
+            ],
+            [
+              137,
+              152
+            ],
+            [
+              160,
+              188
+            ],
+            [
+              194,
+              210
+            ],
+            [
+              216,
+              223
+            ],
+            [
+              229,
+              235
+            ],
+            [
+              243,
+              251
+            ],
+            [
+              257,
+              280
+            ],
+            [
+              286,
+              311
+            ],
+            [
+              319,
+              334
+            ],
+            [
+              340,
+              343
+            ],
+            [
+              351,
+              363
+            ],
+            [
+              369,
+              388
+            ],
+            [
+              396,
+              406
+            ],
+            [
+              412,
+              423
+            ],
+            [
+              429,
+              438
+            ],
+            [
+              446,
+              456
+            ],
+            [
+              462,
+              469
+            ],
+            [
+              478,
+              488
+            ],
+            [
+              493,
+              513
+            ],
+            [
+              518,
+              527
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            531
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            551
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 25,
+          "canonical_blocks": 25,
+          "whole_line_comment_trimmed_block_matches": 15,
+          "raw_exact_block_matches": 0,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              78,
+              90
+            ],
+            [
+              215,
+              224
+            ],
+            [
+              242,
+              252
+            ],
+            [
+              285,
+              312
+            ],
+            [
+              318,
+              335
+            ],
+            [
+              339,
+              344
+            ],
+            [
+              368,
+              389
+            ],
+            [
+              395,
+              407
+            ],
+            [
+              445,
+              457
+            ],
+            [
+              461,
+              470
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/coding-standards/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/coding-standards/SKILL.md",
+          "blob": "051cccec47d1191129207aeadaf2a749c0b7c4e4",
+          "hash": "e80544c3d1eac5b14f22022146bd91a6b0ecc30e099cf5181894853aeb81dee1"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers naming, immutability, errors/async/type safety, React state/rendering, API/input validation, file organization, comments, performance, AAA tests and code smells. The English canonical adds a Scope Boundaries section that the Turkish text lacks. The 25 Turkish examples were all displayed; 15/25 normalize to English blocks after translated full-line comments are removed. No separate prompt/context mechanism appears; examples do not establish runtime correctness.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/database-migrations/SKILL.md",
+      "counterpart": "skills/database-migrations/SKILL.md",
+      "hash": "c82a2e39ae76d534160d3b39bbca3752e9689bacd4bc1d95583cd83ccbed6146",
+      "blob": "eba89570384421858750d2d297ba6db1feaf1ec2",
+      "line_count": 320,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers immutable migrations, realistic-data testing, safe PostgreSQL changes, batch backfill, Prisma/Drizzle/Django/golang-migrate and expand/migrate/contract. Compared with the English canonical, it omits the Kysely section and Django SeparateDatabaseAndState example. Its displayed timeline writes old and new columns before backfill (285-308); that ordering is explicit for this example, while no platform-wide zero-downtime guarantee is adopted. The 14/17 comment-stripped matching blocks have content hashes; all three differing blocks were displayed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/database-migrations/SKILL.md",
+          "blob": "eba89570384421858750d2d297ba6db1feaf1ec2",
+          "hash": "c82a2e39ae76d534160d3b39bbca3752e9689bacd4bc1d95583cd83ccbed6146"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              25
+            ],
+            [
+              27,
+              27
+            ],
+            [
+              29,
+              29
+            ],
+            [
+              31,
+              37
+            ],
+            [
+              39,
+              39
+            ],
+            [
+              41,
+              41
+            ],
+            [
+              55,
+              55
+            ],
+            [
+              68,
+              68
+            ],
+            [
+              70,
+              70
+            ],
+            [
+              86,
+              86
+            ],
+            [
+              98,
+              98
+            ],
+            [
+              127,
+              127
+            ],
+            [
+              129,
+              129
+            ],
+            [
+              145,
+              145
+            ],
+            [
+              162,
+              162
+            ],
+            [
+              164,
+              164
+            ],
+            [
+              177,
+              177
+            ],
+            [
+              179,
+              179
+            ],
+            [
+              192,
+              192
+            ],
+            [
+              207,
+              207
+            ],
+            [
+              209,
+              209
+            ],
+            [
+              225,
+              225
+            ],
+            [
+              251,
+              251
+            ],
+            [
+              253,
+              253
+            ],
+            [
+              269,
+              269
+            ],
+            [
+              281,
+              281
+            ],
+            [
+              283,
+              283
+            ],
+            [
+              300,
+              300
+            ],
+            [
+              310,
+              310
+            ],
+            [
+              312,
+              319
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              228,
+              248
+            ],
+            [
+              286,
+              297
+            ],
+            [
+              303,
+              307
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            320
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            430
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 17,
+          "canonical_blocks": 21,
+          "whole_line_comment_trimmed_block_matches": 14,
+          "raw_exact_block_matches": 3,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              227,
+              249
+            ],
+            [
+              285,
+              298
+            ],
+            [
+              302,
+              308
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/database-migrations/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/database-migrations/SKILL.md",
+          "blob": "92d6d693066783cb00c225244a690e851fdab8c1",
+          "hash": "dad2f1964295eee14a96e06213ce3f60992bbcdc1f37a50c828bbc2e1abd79dd"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers immutable migrations, realistic-data testing, safe PostgreSQL changes, batch backfill, Prisma/Drizzle/Django/golang-migrate and expand/migrate/contract. Compared with the English canonical, it omits the Kysely section and Django SeparateDatabaseAndState example. Its displayed timeline writes old and new columns before backfill (285-308); that ordering is explicit for this example, while no platform-wide zero-downtime guarantee is adopted. The 14/17 comment-stripped matching blocks have content hashes; all three differing blocks were displayed.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/deployment-patterns/SKILL.md",
+      "counterpart": "skills/deployment-patterns/SKILL.md",
+      "hash": "0e723faa061339aaba8ab471fa36f1fb63f01ba8b710fc979e6418735e59eb73",
+      "blob": "e421dda401fbd92b9d49bcc7c06d9198394d47ea",
+      "line_count": 428,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers rolling, blue-green and canary rollout diagrams, multi-stage images, CI stages, health and Kubernetes probes, twelve-factor configuration, rollback and launch checklists. It has the same 14-fence count as English; seven code examples normalize identically after comment lines are removed and the other seven were displayed. Probe timings and rollout thresholds are sample values, not guarantees. This is operational deployment guidance, not a prompt/context method; no deployment was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/deployment-patterns/SKILL.md",
+          "blob": "e421dda401fbd92b9d49bcc7c06d9198394d47ea",
+          "hash": "0e723faa061339aaba8ab471fa36f1fb63f01ba8b710fc979e6418735e59eb73"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              22,
+              22
+            ],
+            [
+              24,
+              24
+            ],
+            [
+              40,
+              42
+            ],
+            [
+              44,
+              44
+            ],
+            [
+              46,
+              46
+            ],
+            [
+              57,
+              59
+            ],
+            [
+              61,
+              61
+            ],
+            [
+              63,
+              63
+            ],
+            [
+              77,
+              79
+            ],
+            [
+              81,
+              81
+            ],
+            [
+              83,
+              83
+            ],
+            [
+              120,
+              120
+            ],
+            [
+              142,
+              142
+            ],
+            [
+              168,
+              168
+            ],
+            [
+              188,
+              188
+            ],
+            [
+              190,
+              190
+            ],
+            [
+              254,
+              254
+            ],
+            [
+              264,
+              264
+            ],
+            [
+              266,
+              266
+            ],
+            [
+              303,
+              303
+            ],
+            [
+              331,
+              331
+            ],
+            [
+              333,
+              333
+            ],
+            [
+              348,
+              348
+            ],
+            [
+              366,
+              366
+            ],
+            [
+              368,
+              368
+            ],
+            [
+              384,
+              384
+            ],
+            [
+              386,
+              390
+            ],
+            [
+              392,
+              392
+            ],
+            [
+              394,
+              394
+            ],
+            [
+              396,
+              401
+            ],
+            [
+              403,
+              408
+            ],
+            [
+              410,
+              414
+            ],
+            [
+              416,
+              421
+            ],
+            [
+              423,
+              427
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              27,
+              37
+            ],
+            [
+              49,
+              54
+            ],
+            [
+              66,
+              74
+            ],
+            [
+              171,
+              185
+            ],
+            [
+              257,
+              261
+            ],
+            [
+              306,
+              328
+            ],
+            [
+              336,
+              345
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            428
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            428
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 14,
+          "canonical_blocks": 14,
+          "whole_line_comment_trimmed_block_matches": 7,
+          "raw_exact_block_matches": 2,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              26,
+              38
+            ],
+            [
+              48,
+              55
+            ],
+            [
+              65,
+              75
+            ],
+            [
+              170,
+              186
+            ],
+            [
+              256,
+              262
+            ],
+            [
+              305,
+              329
+            ],
+            [
+              335,
+              346
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/deployment-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/deployment-patterns/SKILL.md",
+          "blob": "b9d279f8a99889b6f36db99b17b762374474dc99",
+          "hash": "b864abd1954570c4a469b7e1deb897e57858d25db2fd98d035ff7bca4a15b9b6"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers rolling, blue-green and canary rollout diagrams, multi-stage images, CI stages, health and Kubernetes probes, twelve-factor configuration, rollback and launch checklists. It has the same 14-fence count as English; seven code examples normalize identically after comment lines are removed and the other seven were displayed. Probe timings and rollout thresholds are sample values, not guarantees. This is operational deployment guidance, not a prompt/context method; no deployment was run.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/django-patterns/SKILL.md",
+      "counterpart": "skills/django-patterns/SKILL.md",
+      "hash": "e3831fd8beb1fa6de95d7797420f0af1dd8d28c2bf3dd2cae90b4d4b825f04c9",
+      "blob": "0efcdead0ebb635ed03a5eb61d6e8ee189d5c169",
+      "line_count": 735,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers project settings, model and QuerySet/manager patterns, serializers, ViewSets/actions, service-layer checkout/payment, cache, signals, middleware and ORM performance. It has the same 18-fence count as English; 15 Turkish examples that differ under comment-stripped comparison were displayed, with three blocks matching the canonical code after normalization. These are Django/DRF domain recipes; the payment/status, permission, cache and signal examples do not create a generic agent-control method, and source snippets were not executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/django-patterns/SKILL.md",
+          "blob": "0efcdead0ebb635ed03a5eb61d6e8ee189d5c169",
+          "hash": "e3831fd8beb1fa6de95d7797420f0af1dd8d28c2bf3dd2cae90b4d4b825f04c9"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              21
+            ],
+            [
+              53,
+              53
+            ],
+            [
+              153,
+              153
+            ],
+            [
+              155,
+              155
+            ],
+            [
+              228,
+              228
+            ],
+            [
+              268,
+              268
+            ],
+            [
+              298,
+              298
+            ],
+            [
+              300,
+              300
+            ],
+            [
+              383,
+              383
+            ],
+            [
+              442,
+              442
+            ],
+            [
+              474,
+              474
+            ],
+            [
+              532,
+              532
+            ],
+            [
+              534,
+              534
+            ],
+            [
+              547,
+              547
+            ],
+            [
+              556,
+              556
+            ],
+            [
+              573,
+              573
+            ],
+            [
+              591,
+              591
+            ],
+            [
+              593,
+              593
+            ],
+            [
+              627,
+              627
+            ],
+            [
+              629,
+              629
+            ],
+            [
+              661,
+              661
+            ],
+            [
+              663,
+              663
+            ],
+            [
+              683,
+              683
+            ],
+            [
+              700,
+              700
+            ],
+            [
+              719,
+              719
+            ],
+            [
+              721,
+              732
+            ],
+            [
+              734,
+              734
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              24,
+              50
+            ],
+            [
+              158,
+              225
+            ],
+            [
+              231,
+              265
+            ],
+            [
+              271,
+              295
+            ],
+            [
+              303,
+              380
+            ],
+            [
+              386,
+              439
+            ],
+            [
+              445,
+              471
+            ],
+            [
+              477,
+              529
+            ],
+            [
+              537,
+              544
+            ],
+            [
+              550,
+              553
+            ],
+            [
+              559,
+              570
+            ],
+            [
+              576,
+              588
+            ],
+            [
+              596,
+              624
+            ],
+            [
+              632,
+              658
+            ],
+            [
+              666,
+              680
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            735
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            735
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 18,
+          "canonical_blocks": 18,
+          "whole_line_comment_trimmed_block_matches": 3,
+          "raw_exact_block_matches": 2,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              23,
+              51
+            ],
+            [
+              157,
+              226
+            ],
+            [
+              230,
+              266
+            ],
+            [
+              270,
+              296
+            ],
+            [
+              302,
+              381
+            ],
+            [
+              385,
+              440
+            ],
+            [
+              444,
+              472
+            ],
+            [
+              476,
+              530
+            ],
+            [
+              536,
+              545
+            ],
+            [
+              549,
+              554
+            ],
+            [
+              558,
+              571
+            ],
+            [
+              575,
+              589
+            ],
+            [
+              595,
+              625
+            ],
+            [
+              631,
+              659
+            ],
+            [
+              665,
+              681
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/django-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/django-patterns/SKILL.md",
+          "blob": "9d30f4ea76c88646adf4eaed3924ccb9d52fc3aa",
+          "hash": "14abe2b635054dff872c07d4993057e614b48ac718c0431f1299931be7d69516"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers project settings, model and QuerySet/manager patterns, serializers, ViewSets/actions, service-layer checkout/payment, cache, signals, middleware and ORM performance. It has the same 18-fence count as English; 15 Turkish examples that differ under comment-stripped comparison were displayed, with three blocks matching the canonical code after normalization. These are Django/DRF domain recipes; the payment/status, permission, cache and signal examples do not create a generic agent-control method, and source snippets were not executed.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/docker-patterns/SKILL.md",
+      "counterpart": "skills/docker-patterns/SKILL.md",
+      "hash": "6d5f861235ee662e0ecdf0f56ba7889de64d3bee32b3be6bc6b94225523e1d06",
+      "blob": "a006123a5329b4cff3517861238d51819ba3f190",
+      "line_count": 365,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers local Compose, service DNS and network boundaries, volumes, container hardening, secret injection, dockerignore and debugging. It is materially shorter than the English canonical (16 vs 27 fenced blocks; 364 vs 520 source lines) and does not contain the English-only hardened installer fixture/copy contract. Eight differing Turkish examples were displayed and eight others matched after comment-line normalization. Container/build examples are domain guidance only; no images or commands were run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/docker-patterns/SKILL.md",
+          "blob": "a006123a5329b4cff3517861238d51819ba3f190",
+          "hash": "6d5f861235ee662e0ecdf0f56ba7889de64d3bee32b3be6bc6b94225523e1d06"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              21
+            ],
+            [
+              81,
+              81
+            ],
+            [
+              119,
+              119
+            ],
+            [
+              152,
+              152
+            ],
+            [
+              154,
+              154
+            ],
+            [
+              156,
+              156
+            ],
+            [
+              163,
+              163
+            ],
+            [
+              185,
+              185
+            ],
+            [
+              195,
+              195
+            ],
+            [
+              209,
+              209
+            ],
+            [
+              225,
+              225
+            ],
+            [
+              227,
+              227
+            ],
+            [
+              242,
+              242
+            ],
+            [
+              259,
+              259
+            ],
+            [
+              284,
+              284
+            ],
+            [
+              302,
+              302
+            ],
+            [
+              304,
+              304
+            ],
+            [
+              330,
+              330
+            ],
+            [
+              344,
+              344
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              24,
+              78
+            ],
+            [
+              158,
+              160
+            ],
+            [
+              166,
+              182
+            ],
+            [
+              188,
+              192
+            ],
+            [
+              212,
+              222
+            ],
+            [
+              245,
+              256
+            ],
+            [
+              262,
+              281
+            ],
+            [
+              307,
+              327
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            365
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            520
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 16,
+          "canonical_blocks": 27,
+          "whole_line_comment_trimmed_block_matches": 8,
+          "raw_exact_block_matches": 1,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              23,
+              79
+            ],
+            [
+              157,
+              161
+            ],
+            [
+              165,
+              183
+            ],
+            [
+              187,
+              193
+            ],
+            [
+              211,
+              223
+            ],
+            [
+              244,
+              257
+            ],
+            [
+              261,
+              282
+            ],
+            [
+              306,
+              328
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/docker-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/docker-patterns/SKILL.md",
+          "blob": "e60c1d20f7fe4502c099ec7a6bb306f1d492b7f4",
+          "hash": "2a880cf2f6401874151daa9bcc0eacd10cf79f5f48b97f98e93a877a8f3fd12b"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers local Compose, service DNS and network boundaries, volumes, container hardening, secret injection, dockerignore and debugging. It is materially shorter than the English canonical (16 vs 27 fenced blocks; 364 vs 520 source lines) and does not contain the English-only hardened installer fixture/copy contract. Eight differing Turkish examples were displayed and eight others matched after comment-line normalization. Container/build examples are domain guidance only; no images or commands were run.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/e2e-testing/SKILL.md",
+      "counterpart": "skills/e2e-testing/SKILL.md",
+      "hash": "4ec6e4e2302b466dd6725646e15b8df7173e07db07b9bebeaf5119ff25aeaa16",
+      "blob": "f51d33c22bb9ae2389265d2b6c0fe3808484956a",
+      "line_count": 327,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers Playwright test organization, page objects, assertions/config, flaky-test quarantine and causes, screenshots/traces/video, CI, reporting and wallet/financial flows. It has the same 16-fence structure as English; 15 blocks match after translated whole-line comments are removed and the Turkish report template (255-278) was displayed. Waits on observable conditions and failure-state distinctions are already part of the English canonical review; no browser or test execution was performed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/e2e-testing/SKILL.md",
+          "blob": "f51d33c22bb9ae2389265d2b6c0fe3808484956a",
+          "hash": "4ec6e4e2302b466dd6725646e15b8df7173e07db07b9bebeaf5119ff25aeaa16"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              32,
+              32
+            ],
+            [
+              67,
+              67
+            ],
+            [
+              100,
+              100
+            ],
+            [
+              139,
+              139
+            ],
+            [
+              141,
+              141
+            ],
+            [
+              155,
+              155
+            ],
+            [
+              162,
+              162
+            ],
+            [
+              164,
+              164
+            ],
+            [
+              173,
+              173
+            ],
+            [
+              182,
+              182
+            ],
+            [
+              193,
+              193
+            ],
+            [
+              195,
+              195
+            ],
+            [
+              203,
+              203
+            ],
+            [
+              215,
+              215
+            ],
+            [
+              225,
+              225
+            ],
+            [
+              253,
+              253
+            ],
+            [
+              280,
+              280
+            ],
+            [
+              302,
+              302
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              256,
+              277
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            327
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            327
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 16,
+          "canonical_blocks": 16,
+          "whole_line_comment_trimmed_block_matches": 15,
+          "raw_exact_block_matches": 7,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              255,
+              278
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/e2e-testing/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/e2e-testing/SKILL.md",
+          "blob": "f9ca797a1badc3a85352e14d31e6262dfde535bc",
+          "hash": "b0e00e7e17cb259101139900816c5528aed18dd10bcf5f9cb42cfc35baf8a755"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers Playwright test organization, page objects, assertions/config, flaky-test quarantine and causes, screenshots/traces/video, CI, reporting and wallet/financial flows. It has the same 16-fence structure as English; 15 blocks match after translated whole-line comments are removed and the Turkish report template (255-278) was displayed. Waits on observable conditions and failure-state distinctions are already part of the English canonical review; no browser or test execution was performed.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/frontend-patterns/SKILL.md",
+      "counterpart": "skills/frontend-patterns/SKILL.md",
+      "hash": "a3a63bf8898c5484568e8934dec008de2b97b43cc05275cf4333d973351b0df7",
+      "blob": "86c62520dd5a8245f1860d942ae2c6fb328358bc",
+      "line_count": 658,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers composition, compound/render-prop patterns, state and async hooks, reducers, memo/lazy/virtualized lists, forms, error boundaries, animation and accessibility. Its useQuery example (156-221) explicitly stores latest fetcher/options in refs to keep refetch stable; the canonical review notes this avoids a self-triggering effect but does not guard stale responses. The seven blocks differing after comment-stripped comparison were displayed; eight other blocks matched. These UI recipes add no independent prompt/context method, and the snippets do not prove complete accessibility or production behavior.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/frontend-patterns/SKILL.md",
+          "blob": "86c62520dd5a8245f1860d942ae2c6fb328358bc",
+          "hash": "a3a63bf8898c5484568e8934dec008de2b97b43cc05275cf4333d973351b0df7"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              21,
+              21
+            ],
+            [
+              23,
+              23
+            ],
+            [
+              51,
+              51
+            ],
+            [
+              101,
+              101
+            ],
+            [
+              135,
+              135
+            ],
+            [
+              137,
+              137
+            ],
+            [
+              154,
+              154
+            ],
+            [
+              223,
+              223
+            ],
+            [
+              251,
+              251
+            ],
+            [
+              253,
+              253
+            ],
+            [
+              306,
+              306
+            ],
+            [
+              308,
+              308
+            ],
+            [
+              333,
+              333
+            ],
+            [
+              357,
+              357
+            ],
+            [
+              401,
+              401
+            ],
+            [
+              403,
+              403
+            ],
+            [
+              478,
+              478
+            ],
+            [
+              526,
+              526
+            ],
+            [
+              528,
+              528
+            ],
+            [
+              580,
+              580
+            ],
+            [
+              582,
+              582
+            ],
+            [
+              623,
+              623
+            ],
+            [
+              657,
+              657
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              26,
+              48
+            ],
+            [
+              54,
+              98
+            ],
+            [
+              157,
+              220
+            ],
+            [
+              360,
+              398
+            ],
+            [
+              406,
+              475
+            ],
+            [
+              481,
+              523
+            ],
+            [
+              585,
+              620
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            658
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            657
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 15,
+          "canonical_blocks": 15,
+          "whole_line_comment_trimmed_block_matches": 8,
+          "raw_exact_block_matches": 1,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              25,
+              49
+            ],
+            [
+              53,
+              99
+            ],
+            [
+              156,
+              221
+            ],
+            [
+              359,
+              399
+            ],
+            [
+              405,
+              476
+            ],
+            [
+              480,
+              524
+            ],
+            [
+              584,
+              621
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/frontend-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/frontend-patterns/SKILL.md",
+          "blob": "a63977a8b0a8896217a884cdf9e6d49fc8771be6",
+          "hash": "a5b971eb9e74cd763c7e3308bfd888e0d9cf69f8b88477659889d77182479740"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers composition, compound/render-prop patterns, state and async hooks, reducers, memo/lazy/virtualized lists, forms, error boundaries, animation and accessibility. Its useQuery example (156-221) explicitly stores latest fetcher/options in refs to keep refetch stable; the canonical review notes this avoids a self-triggering effect but does not guard stale responses. The seven blocks differing after comment-stripped comparison were displayed; eight other blocks matched. These UI recipes add no independent prompt/context method, and the snippets do not prove complete accessibility or production behavior.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/golang-patterns/SKILL.md",
+      "counterpart": "skills/golang-patterns/SKILL.md",
+      "hash": "56e21fece4dac0b4197b6b3ab86c69481cf2dc2604cea8c3e1f59557b1c2f666",
+      "blob": "525a8ad30ae9c954e0b8d81734b0eb77a10bfa95",
+      "line_count": 676,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers useful zero values, errors, worker pools, context cancellation, graceful shutdown, errgroup, goroutine-leak avoidance, interfaces, packages, functional options, embedding, pooling and tooling. Nine non-matching examples were displayed and 17/26 code blocks matched after comment-line normalization. The safeFetch example (270-296) can return without closing its channel and fetch does not receive the caller context, consistent with the canonical limitation. This remains Go implementation guidance; no source code was run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/golang-patterns/SKILL.md",
+          "blob": "525a8ad30ae9c954e0b8d81734b0eb77a10bfa95",
+          "hash": "56e21fece4dac0b4197b6b3ab86c69481cf2dc2604cea8c3e1f59557b1c2f666"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              22,
+              22
+            ],
+            [
+              46,
+              46
+            ],
+            [
+              48,
+              48
+            ],
+            [
+              73,
+              73
+            ],
+            [
+              75,
+              75
+            ],
+            [
+              93,
+              93
+            ],
+            [
+              95,
+              95
+            ],
+            [
+              114,
+              114
+            ],
+            [
+              135,
+              135
+            ],
+            [
+              158,
+              158
+            ],
+            [
+              174,
+              174
+            ],
+            [
+              176,
+              176
+            ],
+            [
+              197,
+              197
+            ],
+            [
+              219,
+              219
+            ],
+            [
+              240,
+              240
+            ],
+            [
+              268,
+              268
+            ],
+            [
+              298,
+              298
+            ],
+            [
+              300,
+              300
+            ],
+            [
+              324,
+              324
+            ],
+            [
+              344,
+              344
+            ],
+            [
+              364,
+              364
+            ],
+            [
+              366,
+              366
+            ],
+            [
+              388,
+              388
+            ],
+            [
+              402,
+              402
+            ],
+            [
+              422,
+              422
+            ],
+            [
+              424,
+              424
+            ],
+            [
+              466,
+              466
+            ],
+            [
+              494,
+              494
+            ],
+            [
+              496,
+              496
+            ],
+            [
+              518,
+              518
+            ],
+            [
+              540,
+              540
+            ],
+            [
+              570,
+              570
+            ],
+            [
+              572,
+              572
+            ],
+            [
+              598,
+              598
+            ],
+            [
+              626,
+              626
+            ],
+            [
+              628,
+              637
+            ],
+            [
+              639,
+              639
+            ],
+            [
+              675,
+              675
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              51,
+              70
+            ],
+            [
+              161,
+              171
+            ],
+            [
+              243,
+              265
+            ],
+            [
+              271,
+              295
+            ],
+            [
+              369,
+              385
+            ],
+            [
+              391,
+              399
+            ],
+            [
+              427,
+              463
+            ],
+            [
+              469,
+              491
+            ],
+            [
+              642,
+              672
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            676
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            676
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 26,
+          "canonical_blocks": 26,
+          "whole_line_comment_trimmed_block_matches": 17,
+          "raw_exact_block_matches": 4,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              50,
+              71
+            ],
+            [
+              160,
+              172
+            ],
+            [
+              242,
+              266
+            ],
+            [
+              270,
+              296
+            ],
+            [
+              368,
+              386
+            ],
+            [
+              390,
+              400
+            ],
+            [
+              426,
+              464
+            ],
+            [
+              468,
+              492
+            ],
+            [
+              641,
+              673
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/golang-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/golang-patterns/SKILL.md",
+          "blob": "85e4b3f70bcf7186ab1070ca6108fdac6d7ee5a6",
+          "hash": "d643e354683167727cfeb76934855db988468cd15b3ca01db9a32db43902edf7"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers useful zero values, errors, worker pools, context cancellation, graceful shutdown, errgroup, goroutine-leak avoidance, interfaces, packages, functional options, embedding, pooling and tooling. Nine non-matching examples were displayed and 17/26 code blocks matched after comment-line normalization. The safeFetch example (270-296) can return without closing its channel and fetch does not receive the caller context, consistent with the canonical limitation. This remains Go implementation guidance; no source code was run.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/golang-testing/SKILL.md",
+      "counterpart": "skills/golang-testing/SKILL.md",
+      "hash": "59e3749fc1d77703a2dc4b16956b6a03675d828d56140bc743f205b24a7b1022",
+      "blob": "f8ea2abe6607dc0da8fd23220bffe83d4b764549",
+      "line_count": 721,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers RED/GREEN/REFACTOR, table tests, subtests/parallelism, t.Helper/t.Cleanup, golden files, interface mocks, benchmarks, fuzzing, coverage, HTTP handlers and CI. Five changed examples (including table error cases, parallel closure capture and cleanup) were displayed; 15/20 blocks match after comment-line normalization. The Turkish file adds no distinct prompt method beyond its English canonical; assertions/benchmarks/coverage thresholds remain unexecuted examples.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/golang-testing/SKILL.md",
+          "blob": "f8ea2abe6607dc0da8fd23220bffe83d4b764549",
+          "hash": "59e3749fc1d77703a2dc4b16956b6a03675d828d56140bc743f205b24a7b1022"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              21
+            ],
+            [
+              30,
+              30
+            ],
+            [
+              72,
+              72
+            ],
+            [
+              74,
+              74
+            ],
+            [
+              102,
+              102
+            ],
+            [
+              157,
+              157
+            ],
+            [
+              159,
+              159
+            ],
+            [
+              197,
+              197
+            ],
+            [
+              222,
+              222
+            ],
+            [
+              224,
+              224
+            ],
+            [
+              263,
+              263
+            ],
+            [
+              288,
+              288
+            ],
+            [
+              290,
+              290
+            ],
+            [
+              331,
+              331
+            ],
+            [
+              333,
+              333
+            ],
+            [
+              388,
+              388
+            ],
+            [
+              390,
+              390
+            ],
+            [
+              406,
+              406
+            ],
+            [
+              428,
+              428
+            ],
+            [
+              462,
+              462
+            ],
+            [
+              464,
+              464
+            ],
+            [
+              494,
+              494
+            ],
+            [
+              522,
+              522
+            ],
+            [
+              524,
+              524
+            ],
+            [
+              543,
+              543
+            ],
+            [
+              545,
+              550
+            ],
+            [
+              552,
+              552
+            ],
+            [
+              561,
+              561
+            ],
+            [
+              644,
+              644
+            ],
+            [
+              681,
+              681
+            ],
+            [
+              683,
+              690
+            ],
+            [
+              692,
+              697
+            ],
+            [
+              699,
+              699
+            ],
+            [
+              720,
+              720
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              24,
+              27
+            ],
+            [
+              105,
+              154
+            ],
+            [
+              200,
+              219
+            ],
+            [
+              227,
+              260
+            ],
+            [
+              393,
+              403
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            721
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            721
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 20,
+          "canonical_blocks": 20,
+          "whole_line_comment_trimmed_block_matches": 15,
+          "raw_exact_block_matches": 2,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              23,
+              28
+            ],
+            [
+              104,
+              155
+            ],
+            [
+              199,
+              220
+            ],
+            [
+              226,
+              261
+            ],
+            [
+              392,
+              404
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/golang-testing/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/golang-testing/SKILL.md",
+          "blob": "45ca4871b2e5c46891bead7f23efd094a66cb6b7",
+          "hash": "e3399562c58590dfcbd09bfcbf8f401120a2ded0418eb33bbfca6c697ac485ad"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers RED/GREEN/REFACTOR, table tests, subtests/parallelism, t.Helper/t.Cleanup, golden files, interface mocks, benchmarks, fuzzing, coverage, HTTP handlers and CI. Five changed examples (including table error cases, parallel closure capture and cleanup) were displayed; 15/20 blocks match after comment-line normalization. The Turkish file adds no distinct prompt method beyond its English canonical; assertions/benchmarks/coverage thresholds remain unexecuted examples.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/jpa-patterns/SKILL.md",
+      "counterpart": "skills/jpa-patterns/SKILL.md",
+      "hash": "88d95875af626af6de71f1fd9450debd43dad5f07c8d915a93bee3835ba642a8",
+      "blob": "ba5a1351b0167917a99bfdc0b4467b1577d2e1ee",
+      "line_count": 152,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers JPA entities/auditing, relationship and N+1 handling, repositories/projections, transactions, pagination, indexing/batching, HikariCP, cache, migrations and data-access testing. All ten code fences were displayed and their raw bodies exactly match the English canonical block multiset (10/10); Turkish prose is a domain-specific localization. No prompt/context mechanism or runtime framework claim is added.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/jpa-patterns/SKILL.md",
+          "blob": "ba5a1351b0167917a99bfdc0b4467b1577d2e1ee",
+          "hash": "88d95875af626af6de71f1fd9450debd43dad5f07c8d915a93bee3835ba642a8"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              46,
+              46
+            ],
+            [
+              53,
+              53
+            ],
+            [
+              60,
+              61
+            ],
+            [
+              68,
+              68
+            ],
+            [
+              79,
+              79
+            ],
+            [
+              89,
+              89
+            ],
+            [
+              91,
+              93
+            ],
+            [
+              105,
+              105
+            ],
+            [
+              112,
+              112
+            ],
+            [
+              114,
+              114
+            ],
+            [
+              116,
+              119
+            ],
+            [
+              121,
+              121
+            ],
+            [
+              123,
+              123
+            ],
+            [
+              131,
+              131
+            ],
+            [
+              136,
+              136
+            ],
+            [
+              138,
+              139
+            ],
+            [
+              141,
+              141
+            ],
+            [
+              143,
+              144
+            ],
+            [
+              146,
+              146
+            ],
+            [
+              148,
+              149
+            ],
+            [
+              151,
+              151
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              23,
+              43
+            ],
+            [
+              48,
+              50
+            ],
+            [
+              56,
+              57
+            ],
+            [
+              64,
+              65
+            ],
+            [
+              71,
+              76
+            ],
+            [
+              81,
+              86
+            ],
+            [
+              96,
+              102
+            ],
+            [
+              108,
+              109
+            ],
+            [
+              125,
+              128
+            ],
+            [
+              133,
+              133
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            152
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            152
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 10,
+          "canonical_blocks": 10,
+          "whole_line_comment_trimmed_block_matches": 10,
+          "raw_exact_block_matches": 10,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/jpa-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/jpa-patterns/SKILL.md",
+          "blob": "5c2f6425dd6f299f6ceb918f56673ad9fbeee8a8",
+          "hash": "bcdd45c5e435df259856b20aae47182209b0467b542eacfc7e32bcf452326839"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers JPA entities/auditing, relationship and N+1 handling, repositories/projections, transactions, pagination, indexing/batching, HikariCP, cache, migrations and data-access testing. All ten code fences were displayed and their raw bodies exactly match the English canonical block multiset (10/10); Turkish prose is a domain-specific localization. No prompt/context mechanism or runtime framework claim is added.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/kotlin-patterns/SKILL.md",
+      "counterpart": "skills/kotlin-patterns/SKILL.md",
+      "hash": "b21d77a1dabadf80841db28490208d07e4912b1ad5fd6074f8296547c11618ae",
+      "blob": "6ef0fd1e9fd609e393a438472002e494308b3778",
+      "line_count": 536,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers null safety, read-only/val data, expression bodies, data/sealed classes, scope and extension functions, structured concurrency/Flow, DSL and Gradle Kotlin DSL. It omits English sections/examples for coroutine cancellation/cleanup, delegation, sequences and collection operations; delegation/sequence appear only in the Turkish quick-reference list. Three differing examples were displayed and 15/18 blocks match after comment-line normalization. No distinct prompt method appears; list read-only types do not prove deep immutability.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/kotlin-patterns/SKILL.md",
+          "blob": "6ef0fd1e9fd609e393a438472002e494308b3778",
+          "hash": "b21d77a1dabadf80841db28490208d07e4912b1ad5fd6074f8296547c11618ae"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              21
+            ],
+            [
+              23,
+              23
+            ],
+            [
+              25,
+              25
+            ],
+            [
+              33,
+              33
+            ],
+            [
+              42,
+              42
+            ],
+            [
+              52,
+              52
+            ],
+            [
+              54,
+              54
+            ],
+            [
+              56,
+              56
+            ],
+            [
+              78,
+              78
+            ],
+            [
+              80,
+              80
+            ],
+            [
+              103,
+              103
+            ],
+            [
+              105,
+              105
+            ],
+            [
+              131,
+              131
+            ],
+            [
+              133,
+              133
+            ],
+            [
+              161,
+              161
+            ],
+            [
+              163,
+              163
+            ],
+            [
+              186,
+              186
+            ],
+            [
+              212,
+              212
+            ],
+            [
+              214,
+              214
+            ],
+            [
+              243,
+              243
+            ],
+            [
+              245,
+              245
+            ],
+            [
+              272,
+              272
+            ],
+            [
+              274,
+              274
+            ],
+            [
+              316,
+              316
+            ],
+            [
+              341,
+              341
+            ],
+            [
+              343,
+              343
+            ],
+            [
+              377,
+              377
+            ],
+            [
+              379,
+              379
+            ],
+            [
+              436,
+              436
+            ],
+            [
+              438,
+              438
+            ],
+            [
+              461,
+              461
+            ],
+            [
+              473,
+              473
+            ],
+            [
+              475,
+              491
+            ],
+            [
+              493,
+              493
+            ],
+            [
+              535,
+              535
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              59,
+              75
+            ],
+            [
+              83,
+              100
+            ],
+            [
+              496,
+              532
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            536
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            712
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 18,
+          "canonical_blocks": 25,
+          "whole_line_comment_trimmed_block_matches": 15,
+          "raw_exact_block_matches": 4,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              58,
+              76
+            ],
+            [
+              82,
+              101
+            ],
+            [
+              495,
+              533
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/kotlin-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/kotlin-patterns/SKILL.md",
+          "blob": "7b6baba881698144a3af501b64445a3ce7079710",
+          "hash": "e519234772a3697763ad484908d180c4c653439fea75a56c03440c272f9f0896"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers null safety, read-only/val data, expression bodies, data/sealed classes, scope and extension functions, structured concurrency/Flow, DSL and Gradle Kotlin DSL. It omits English sections/examples for coroutine cancellation/cleanup, delegation, sequences and collection operations; delegation/sequence appear only in the Turkish quick-reference list. Three differing examples were displayed and 15/18 blocks match after comment-line normalization. No distinct prompt method appears; list read-only types do not prove deep immutability.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/kotlin-testing/SKILL.md",
+      "counterpart": "skills/kotlin-testing/SKILL.md",
+      "hash": "0d693e3a42bce446ab9bf3c51a90149d1004f00f51cd5f504d3177df185a8fed",
+      "blob": "b9303c20a2c0795ab25b1d61e4c6269e6a5e8a08",
+      "line_count": 579,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers TDD, StringSpec/FunSpec/BehaviorSpec, matchers, MockK, runTest/Flow, Kover and Ktor, but omits English DescribeSpec, custom matchers, argument capture, spy/partial mocks, TestDispatcher, custom generators, data-driven tests and lifecycle sections. Its property examples (379-409) assert reverse involution, sort idempotence and serialization round-trip; these support existing candidate `ecc-metamorphic-oracle`, without a new candidate. The seven changed examples were displayed; 9/16 blocks match after comment-line normalization. Flow scheduler setup and framework behavior were not executed.",
+      "candidate_keys": [
+        "ecc-metamorphic-oracle"
+      ],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/kotlin-testing/SKILL.md",
+          "blob": "b9303c20a2c0795ab25b1d61e4c6269e6a5e8a08",
+          "hash": "0d693e3a42bce446ab9bf3c51a90149d1004f00f51cd5f504d3177df185a8fed"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              27
+            ],
+            [
+              29,
+              29
+            ],
+            [
+              31,
+              31
+            ],
+            [
+              40,
+              40
+            ],
+            [
+              96,
+              96
+            ],
+            [
+              98,
+              98
+            ],
+            [
+              116,
+              116
+            ],
+            [
+              142,
+              142
+            ],
+            [
+              184,
+              184
+            ],
+            [
+              186,
+              186
+            ],
+            [
+              234,
+              234
+            ],
+            [
+              236,
+              236
+            ],
+            [
+              268,
+              268
+            ],
+            [
+              296,
+              296
+            ],
+            [
+              298,
+              298
+            ],
+            [
+              329,
+              329
+            ],
+            [
+              375,
+              375
+            ],
+            [
+              377,
+              377
+            ],
+            [
+              411,
+              411
+            ],
+            [
+              413,
+              413
+            ],
+            [
+              441,
+              441
+            ],
+            [
+              459,
+              459
+            ],
+            [
+              461,
+              466
+            ],
+            [
+              468,
+              468
+            ],
+            [
+              505,
+              505
+            ],
+            [
+              533,
+              533
+            ],
+            [
+              535,
+              542
+            ],
+            [
+              544,
+              550
+            ],
+            [
+              552,
+              552
+            ],
+            [
+              578,
+              578
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              34,
+              37
+            ],
+            [
+              239,
+              265
+            ],
+            [
+              271,
+              293
+            ],
+            [
+              301,
+              326
+            ],
+            [
+              332,
+              372
+            ],
+            [
+              380,
+              408
+            ],
+            [
+              416,
+              438
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            579
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            825
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 16,
+          "canonical_blocks": 25,
+          "whole_line_comment_trimmed_block_matches": 9,
+          "raw_exact_block_matches": 4,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              33,
+              38
+            ],
+            [
+              238,
+              266
+            ],
+            [
+              270,
+              294
+            ],
+            [
+              300,
+              327
+            ],
+            [
+              331,
+              373
+            ],
+            [
+              379,
+              409
+            ],
+            [
+              415,
+              439
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/kotlin-testing/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/kotlin-testing/SKILL.md",
+          "blob": "18df9b22c6d06f03af588c8a1e6515c9346b30c1",
+          "hash": "13e39ad65e86e86c22fbdb6273bdc8d17d3784c221a8f08207a1e9e2e9c29a0a"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers TDD, StringSpec/FunSpec/BehaviorSpec, matchers, MockK, runTest/Flow, Kover and Ktor, but omits English DescribeSpec, custom matchers, argument capture, spy/partial mocks, TestDispatcher, custom generators, data-driven tests and lifecycle sections. Its property examples (379-409) assert reverse involution, sort idempotence and serialization round-trip; these support existing candidate `ecc-metamorphic-oracle`, without a new candidate. The seven changed examples were displayed; 9/16 blocks match after comment-line normalization. Flow scheduler setup and framework behavior were not executed.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/laravel-patterns/SKILL.md",
+      "counterpart": "skills/laravel-patterns/SKILL.md",
+      "hash": "81587b7fb2d3b1775e3d3ba656b70b51cb1f36ae9df488be0a0e30458dbea791",
+      "blob": "35bf222930cedee4cbb279de9e89cdf1fde3e3a7",
+      "line_count": 416,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers route/model binding, services/actions, Eloquent casts/scopes, eager loading, transactions, migrations, form validation, resources, queues/events/cache/config. Its sole block differing under comment-stripped matching is the translated project tree (35-64); the other 17/18 blocks match the English canonical under that comparison. Explicit scoped binding is paired with a reminder that binding is not authorization. No prompt/context method or framework execution is asserted.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/laravel-patterns/SKILL.md",
+          "blob": "35bf222930cedee4cbb279de9e89cdf1fde3e3a7",
+          "hash": "81587b7fb2d3b1775e3d3ba656b70b51cb1f36ae9df488be0a0e30458dbea791"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              25
+            ],
+            [
+              27,
+              27
+            ],
+            [
+              29,
+              29
+            ],
+            [
+              31,
+              31
+            ],
+            [
+              33,
+              33
+            ],
+            [
+              66,
+              66
+            ],
+            [
+              68,
+              68
+            ],
+            [
+              99,
+              99
+            ],
+            [
+              101,
+              101
+            ],
+            [
+              111,
+              111
+            ],
+            [
+              113,
+              113
+            ],
+            [
+              121,
+              121
+            ],
+            [
+              123,
+              125
+            ],
+            [
+              148,
+              148
+            ],
+            [
+              157,
+              157
+            ],
+            [
+              159,
+              159
+            ],
+            [
+              175,
+              175
+            ],
+            [
+              177,
+              177
+            ],
+            [
+              203,
+              203
+            ],
+            [
+              205,
+              205
+            ],
+            [
+              225,
+              225
+            ],
+            [
+              234,
+              234
+            ],
+            [
+              262,
+              262
+            ],
+            [
+              264,
+              265
+            ],
+            [
+              284,
+              284
+            ],
+            [
+              301,
+              301
+            ],
+            [
+              312,
+              312
+            ],
+            [
+              314,
+              314
+            ],
+            [
+              316,
+              318
+            ],
+            [
+              320,
+              320
+            ],
+            [
+              347,
+              347
+            ],
+            [
+              349,
+              349
+            ],
+            [
+              381,
+              381
+            ],
+            [
+              383,
+              383
+            ],
+            [
+              400,
+              400
+            ],
+            [
+              402,
+              404
+            ],
+            [
+              406,
+              406
+            ],
+            [
+              408,
+              410
+            ],
+            [
+              412,
+              412
+            ],
+            [
+              414,
+              415
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              36,
+              63
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            416
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            416
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 18,
+          "canonical_blocks": 18,
+          "whole_line_comment_trimmed_block_matches": 17,
+          "raw_exact_block_matches": 16,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              35,
+              64
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/laravel-patterns/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/laravel-patterns/SKILL.md",
+          "blob": "a3ce33fdfa0550f2ec9e5186d0924a2382e644bc",
+          "hash": "6fa9d96a7b944ef9775e2ecb93a56bc29d6219e34eb5af491792638fc5cb46b4"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers route/model binding, services/actions, Eloquent casts/scopes, eager loading, transactions, migrations, form validation, resources, queues/events/cache/config. Its sole block differing under comment-stripped matching is the translated project tree (35-64); the other 17/18 blocks match the English canonical under that comparison. Explicit scoped binding is paired with a reminder that binding is not authorization. No prompt/context method or framework execution is asserted.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/laravel-security/SKILL.md",
+      "counterpart": "skills/laravel-security/SKILL.md",
+      "hash": "6d458a250783b022c5e0ba3c75c2ac2267c2060a537927d12d1fcb89eaef809f",
+      "blob": "785f48badfa028aae51885584af0457f0e398ee6",
+      "line_count": 286,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide is an older, compact security overview (15 fences/285 lines vs English 32/948): config/session/auth/password/policies, validation, SQL/XSS/CSRF, uploads, throttling, secrets/casts, headers/CORS, redacted logs, dependencies and signed URLs. All 15 Turkish examples were displayed because none matched after comment-stripped hashing; it lacks substantial newer English material such as detailed API-auth, queue-security and expanded secret/storage controls. Signed URL creation is shown with signed middleware but no permission-before-mint flow. This is domain security guidance, not an independent agent method; no security behavior was tested.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/laravel-security/SKILL.md",
+          "blob": "785f48badfa028aae51885584af0457f0e398ee6",
+          "hash": "6d458a250783b022c5e0ba3c75c2ac2267c2060a537927d12d1fcb89eaef809f"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              21,
+              25
+            ],
+            [
+              27,
+              27
+            ],
+            [
+              29,
+              32
+            ],
+            [
+              34,
+              34
+            ],
+            [
+              36,
+              38
+            ],
+            [
+              40,
+              40
+            ],
+            [
+              42,
+              44
+            ],
+            [
+              46,
+              46
+            ],
+            [
+              57,
+              57
+            ],
+            [
+              59,
+              60
+            ],
+            [
+              73,
+              73
+            ],
+            [
+              75,
+              76
+            ],
+            [
+              82,
+              82
+            ],
+            [
+              91,
+              91
+            ],
+            [
+              93,
+              95
+            ],
+            [
+              97,
+              97
+            ],
+            [
+              99,
+              100
+            ],
+            [
+              102,
+              102
+            ],
+            [
+              104,
+              105
+            ],
+            [
+              111,
+              111
+            ],
+            [
+              113,
+              115
+            ],
+            [
+              117,
+              117
+            ],
+            [
+              119,
+              120
+            ],
+            [
+              122,
+              122
+            ],
+            [
+              129,
+              129
+            ],
+            [
+              131,
+              133
+            ],
+            [
+              159,
+              159
+            ],
+            [
+              161,
+              162
+            ],
+            [
+              177,
+              177
+            ],
+            [
+              179,
+              181
+            ],
+            [
+              183,
+              183
+            ],
+            [
+              185,
+              185
+            ],
+            [
+              193,
+              193
+            ],
+            [
+              195,
+              196
+            ],
+            [
+              198,
+              198
+            ],
+            [
+              223,
+              223
+            ],
+            [
+              225,
+              226
+            ],
+            [
+              245,
+              245
+            ],
+            [
+              247,
+              248
+            ],
+            [
+              260,
+              260
+            ],
+            [
+              262,
+              263
+            ],
+            [
+              265,
+              265
+            ],
+            [
+              267,
+              267
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              49,
+              54
+            ],
+            [
+              63,
+              70
+            ],
+            [
+              79,
+              79
+            ],
+            [
+              85,
+              88
+            ],
+            [
+              108,
+              108
+            ],
+            [
+              125,
+              126
+            ],
+            [
+              136,
+              149
+            ],
+            [
+              153,
+              156
+            ],
+            [
+              165,
+              174
+            ],
+            [
+              188,
+              190
+            ],
+            [
+              201,
+              220
+            ],
+            [
+              229,
+              242
+            ],
+            [
+              251,
+              257
+            ],
+            [
+              270,
+              276
+            ],
+            [
+              280,
+              284
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            286
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            948
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 15,
+          "canonical_blocks": 32,
+          "whole_line_comment_trimmed_block_matches": 0,
+          "raw_exact_block_matches": 0,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              48,
+              55
+            ],
+            [
+              62,
+              71
+            ],
+            [
+              78,
+              80
+            ],
+            [
+              84,
+              89
+            ],
+            [
+              107,
+              109
+            ],
+            [
+              124,
+              127
+            ],
+            [
+              135,
+              150
+            ],
+            [
+              152,
+              157
+            ],
+            [
+              164,
+              175
+            ],
+            [
+              187,
+              191
+            ],
+            [
+              200,
+              221
+            ],
+            [
+              228,
+              243
+            ],
+            [
+              250,
+              258
+            ],
+            [
+              269,
+              277
+            ],
+            [
+              279,
+              285
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/laravel-security/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/laravel-security/SKILL.md",
+          "blob": "25a185bc79b7999f6f1b76d6d83898e48c262987",
+          "hash": "0440ddff450c63a9338f15b765ec35486f3f3266b321e0b27128faa3c29784fe"
+        },
+        "content_role_and_conclusion": "The Turkish guide is an older, compact security overview (15 fences/285 lines vs English 32/948): config/session/auth/password/policies, validation, SQL/XSS/CSRF, uploads, throttling, secrets/casts, headers/CORS, redacted logs, dependencies and signed URLs. All 15 Turkish examples were displayed because none matched after comment-stripped hashing; it lacks substantial newer English material such as detailed API-auth, queue-security and expanded secret/storage controls. Signed URL creation is shown with signed middleware but no permission-before-mint flow. This is domain security guidance, not an independent agent method; no security behavior was tested.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    },
+    {
+      "path": "docs/tr/skills/laravel-tdd/SKILL.md",
+      "counterpart": "skills/laravel-tdd/SKILL.md",
+      "hash": "7a82f9a7354a1a81e4683fef4d6f6c55abadc9a6b05d28cbfc08b4f91f3d7aae",
+      "blob": "cba142e570bb45795997be0b1177057d1a867611",
+      "line_count": 284,
+      "disposition": "analyzed",
+      "depth": "full-turkish-method-prose-and-canonical-delta",
+      "reason": "The Turkish guide covers RED/GREEN/REFACTOR, unit/feature/integration choice, database isolation choices, PHPUnit/Pest selection, create/index/persistence/fake/auth/Gate/Inertia examples and coverage commands. It is shorter than the English canonical (11 fences/283 lines vs 19/675); all eleven Turkish examples differ under normalized hashing and were displayed. The concrete methods remain Laravel test recipes, not a distinct prompt/context technique; test behavior and framework defaults were not run or adopted as guarantees.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/skills/laravel-tdd/SKILL.md",
+          "blob": "cba142e570bb45795997be0b1177057d1a867611",
+          "hash": "7a82f9a7354a1a81e4683fef4d6f6c55abadc9a6b05d28cbfc08b4f91f3d7aae"
+        },
+        "actual_displayed_ranges": {
+          "non_fenced_nonblank_prose_lines": [
+            [
+              1,
+              5
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              22,
+              24
+            ],
+            [
+              26,
+              26
+            ],
+            [
+              28,
+              30
+            ],
+            [
+              32,
+              32
+            ],
+            [
+              34,
+              36
+            ],
+            [
+              38,
+              38
+            ],
+            [
+              40,
+              42
+            ],
+            [
+              44,
+              44
+            ],
+            [
+              46,
+              46
+            ],
+            [
+              48,
+              49
+            ],
+            [
+              51,
+              51
+            ],
+            [
+              53,
+              53
+            ],
+            [
+              78,
+              78
+            ],
+            [
+              103,
+              103
+            ],
+            [
+              126,
+              126
+            ],
+            [
+              148,
+              148
+            ],
+            [
+              150,
+              151
+            ],
+            [
+              157,
+              157
+            ],
+            [
+              159,
+              161
+            ],
+            [
+              163,
+              163
+            ],
+            [
+              185,
+              185
+            ],
+            [
+              187,
+              190
+            ],
+            [
+              212,
+              212
+            ],
+            [
+              223,
+              223
+            ],
+            [
+              225,
+              226
+            ],
+            [
+              228,
+              228
+            ],
+            [
+              230,
+              231
+            ],
+            [
+              233,
+              233
+            ],
+            [
+              235,
+              237
+            ],
+            [
+              239,
+              239
+            ],
+            [
+              241,
+              242
+            ],
+            [
+              244,
+              244
+            ],
+            [
+              253,
+              253
+            ],
+            [
+              255,
+              255
+            ],
+            [
+              283,
+              283
+            ]
+          ],
+          "example_body_read_ranges": [
+            [
+              56,
+              75
+            ],
+            [
+              81,
+              100
+            ],
+            [
+              106,
+              123
+            ],
+            [
+              129,
+              145
+            ],
+            [
+              154,
+              154
+            ],
+            [
+              166,
+              182
+            ],
+            [
+              193,
+              199
+            ],
+            [
+              203,
+              209
+            ],
+            [
+              215,
+              220
+            ],
+            [
+              247,
+              250
+            ],
+            [
+              258,
+              280
+            ]
+          ],
+          "example_range_note": "Each range identifies the body lines that were displayed; fence delimiters serve only as parser locators."
+        },
+        "file_parser_coverage": {
+          "turkish_full_source_lines_parsed": [
+            1,
+            284
+          ],
+          "canonical_full_source_lines_parsed": [
+            1,
+            675
+          ],
+          "parser": "All source lines structurally parsed for fenced-block boundaries and prose/code separation; this is not a displayed-read claim."
+        },
+        "code_block_comparison": {
+          "turkish_blocks": 11,
+          "canonical_blocks": 19,
+          "whole_line_comment_trimmed_block_matches": 0,
+          "raw_exact_block_matches": 0,
+          "normalization": "Block-body SHA-256 multiset comparison after dropping blank lines, trimming remaining lines, and removing full-line comments beginning //, # or --. This is identity screening only, not a semantic-equivalence claim.",
+          "unmatched_turkish_example_ranges": [
+            [
+              55,
+              76
+            ],
+            [
+              80,
+              101
+            ],
+            [
+              105,
+              124
+            ],
+            [
+              128,
+              146
+            ],
+            [
+              153,
+              155
+            ],
+            [
+              165,
+              183
+            ],
+            [
+              192,
+              200
+            ],
+            [
+              202,
+              210
+            ],
+            [
+              214,
+              221
+            ],
+            [
+              246,
+              251
+            ],
+            [
+              257,
+              281
+            ]
+          ],
+          "all_unmatched_turkish_examples_displayed": true
+        },
+        "prose_review_basis": "Every nonblank Turkish non-fenced prose/front-matter line in actual_displayed_ranges was displayed with its source line number. Content scope/deltas were checked against the persisted full-source English canonical review record below; no byte-equivalence claim is made for translated prose.",
+        "canonical_review_record": "docs/audit/harvest-ecc.json#coverage/skills/laravel-tdd/SKILL.md",
+        "canonical_review_depth": "full-source",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "skills/laravel-tdd/SKILL.md",
+          "blob": "15ccea11b7ef975901fa7816517261de75364ffb",
+          "hash": "505fa6c5caad022a5db0c359aebdcdcce1ad16e5863dc13ef862aec48cfa1628"
+        },
+        "content_role_and_conclusion": "The Turkish guide covers RED/GREEN/REFACTOR, unit/feature/integration choice, database isolation choices, PHPUnit/Pest selection, create/index/persistence/fake/auth/Gate/Inertia examples and coverage commands. It is shorter than the English canonical (11 fences/283 lines vs 19/675); all eleven Turkish examples differ under normalized hashing and were displayed. The concrete methods remain Laravel test recipes, not a distinct prompt/context technique; test behavior and framework defaults were not run or adopted as guarantees.",
+        "execution": "Static frozen-source text and hash comparison only. No upstream skills/scripts, commands, tests, builds, runtimes, providers, containers, browsers, framework services or external actions were executed."
+      }
+    }
+  ]
+}

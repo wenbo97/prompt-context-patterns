@@ -1,0 +1,15 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["assets", "_includes", "_layouts"],
+  "locale": "en/zh-CN",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Scrollbar"],
+  "requiredCommands": ["unit", "e2e", "build", "links"],
+  "commands": {
+    "unit": "npm test",
+    "e2e": "npm run test:e2e",
+    "build": "bundle exec jekyll build",
+    "links": "npm run check:links"
+  },
+  "evidence": {"failurePaths": "tests/e2e/site.spec.mjs"}
+}

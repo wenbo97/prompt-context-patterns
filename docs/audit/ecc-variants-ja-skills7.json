@@ -1,0 +1,38 @@
+[
+  {
+    "path": "docs/ja-JP/skills/bun-runtime/SKILL.md",
+    "reason": "Read entire70line method-purpose prose/CLI: domain Bun-vs-Node compatibility/runtime/package/build/test/migration and frozenlock choice, no independent prompting/control method beyond trigger. Named speeds/Vercel/dropin claims scoped unverified domain facts, actualCLI/library snippets not audited/run.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/canary-watch/SKILL.md",
+    "reason": "Full96line actual boundedmonitor/onepass/repeatedinterval-duration/staging-vs-production modes, baseline thresholds/separatecriticalwarninginfo/report read. Shared temporal observation/fixed-context comparison, newer canonical asset/SSE/scope permission and baseline-unavailable clauses absent. Notifications source optional not current authority; thresholds/report values constructed, no monitoring/webhook/messages.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/carrier-relationship-management/SKILL.md",
+    "reason": "Read all60line actual rolecontext/freightpartner-specific workflow/examples/price knowledge; Apache2declared. Operational logistics persona/domain RFP/negotiation/scorecard/compliance content, no new agentmethod beyond common role/constraints. Ends at empty scorecardheading/referencepromise;15year expertise/prices/60%/portfolio/thresholds not validated facts. No provider/legal/financial operations.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/cisco-ios-patterns/SKILL.md",
+    "reason": "Full92line role/method and actual config/purpose read. Readonlybaseline→exactcandidate→management/outofband+rollback→minimumapprovedchange→samebehaviorreadbackbeforepersist preserved, privacycollectonlyneeded sections explicit. Current fuller canonical reference/coverage omitted afterACLexample; devicecommand/runtime/mask facts scoped instead audited/executed. Same artifact/ownership/live-state methods.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/ck/SKILL.md",
+    "reason": "Full99line actual projectcontextJSONasowner/generatedMarkdownview, draftconfirm init/session facts/changedgoals/orderednextsteps and canonicalscript verbatimreadback/resume read. Same statefactowner/pointintimehandoff; shortvariant excludes later log/search/forget/help/currenterrorstate clauses. Verbatimstdout not nativeauth/truth or instructionauthority; script invocation capabilities/determinism claims unverified, no private state/commands.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/claude-devfleet/SKILL.md",
+    "reason": "Full69line projectmissionDAG→showplan→dispatch/status/report and exact capability table/context flow read. Same explicit dependency/ownership/handoff method but shortvariant says automaticmerge/auto-dispatch without current actual checks/error/authorization/providercapability limits; worktreesnotOScontainment. MCPconfiguration no runtimeproof, no missions/processes/merge executed.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  }
+]

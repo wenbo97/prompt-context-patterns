@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/zh-CN/skills/agentic-engineering/SKILL.md",
+    "reason": "Fully read translated and canonical method prose: measurable done criteria, risk-sized independent work, capability/regression evals, phase context boundaries, behavioral review and token/retry/result ledger retained. Fixed model roles and 15-minute examples are source heuristics, not measured optimal routing."
+  },
+  {
+    "path": "docs/zh-CN/skills/ai-first-engineering/SKILL.md",
+    "reason": "Fully read translated and canonical method prose: evaluation before workflow changes, stable typed boundaries, deterministic tests and security/data/failure/rollout review retained. No new variant mechanism; routing/model quality claims are illustrative and not empirical."
+  },
+  {
+    "path": "docs/zh-CN/skills/article-writing/SKILL.md",
+    "reason": "Fully read translated and canonical writing instructions. Translation performs its own reference-voice extraction while current canonical routes through brand-voice and reuses VOICE PROFILE, avoiding duplicate analysis. Evidence-first structure, no fabricated biography/customer metrics and factual/voice/output gates retained; preferred rhetoric is style, not proven performance."
+  },
+  {
+    "path": "docs/zh-CN/skills/automation-audit-ops/SKILL.md",
+    "reason": "Fully read translated and canonical inventory, state distinctions, evidence paths and output schema. Configured/authenticated/verified/stale/absent must not be conflated; read-only audit and concrete keep/merge/cut/fix-next after evidence retained. Referenced capabilities are routing pointers, not proof they are available or authorized to run."
+  }
+]

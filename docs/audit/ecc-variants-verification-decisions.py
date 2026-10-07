@@ -1,0 +1,11 @@
+"""Record complete six-locale verification loop semantic/delta comparisons."""
+import pathlib,json
+out=pathlib.Path(__file__).resolve().parent
+rows=[]
+for locale in ('zh-CN','ja-JP','es','tr','zh-TW','ko-KR'):
+    reason='Read all translated method prose, shell pipelines, phase report and checkpoint prompt against complete canonical text. Same build/type/lint/test/security/diff six-phase gate, failure-before-continuation, total/pass/fail/coverage report and phase-based recurring checks. All omit current type-check pipefail and npx --no-install, so truncated output can hide failures and a supposedly local check can resolve a package. '
+    if locale=='ko-KR':reason+='Korean diff review explicitly includes both unstaged and cached names instead of canonical HEAD~1 scope, a useful working-state coverage repair already exemplified by canonical code-reviewer, not a new variant method. '
+    else:reason+='HEAD~1 diff name scope does not necessarily match working/staged/PR task, and conflicts with unstaged git diff --stat. '
+    reason+='Build/lint/test pipelines still need preserved real command status; narrow grep with suppressed errors is not complete security proof. Fixed80%/15-minute/each-function thresholds and immediate hook detection are source defaults/claims, not measured benefit. No source check or package installation executed; no full safety equivalence claimed.'
+    rows.append({'path':f'docs/{locale}/skills/verification-loop/SKILL.md','reason':reason,'existing_ids':[41,53,119,159,175,177]})
+(out/'ecc-variants-verification-decisions.json').write_bytes((json.dumps(rows,ensure_ascii=False,indent=2)+'\n').replace('\n','\r\n').encode())

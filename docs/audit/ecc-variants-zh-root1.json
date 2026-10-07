@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/zh-CN/CHANGELOG.md",
+    "disposition": "excluded",
+    "depth": "full-content-historical-exclusion",
+    "reason": "Read entire 189-line translated release ledger. Historical component counts, issue credits and RC/GA/scaffold distinctions are catalog metadata, not independent reusable instructions or verified effectiveness. Current root top entries2.2.3/2.2.2 and memory-incomplete/schema-sidecar/offline-load changes absent from April RC translation. Their mechanism evidence belongs actual reviewed skill/runtime files, not release claims; no current distribution or empirical claim inferred."
+  },
+  {
+    "path": "docs/zh-CN/SECURITY.md",
+    "disposition": "excluded",
+    "depth": "full-content-policy-exclusion",
+    "reason": "Read all 53 translated policy lines and actual current canonical1–75. Repository support/contact/disclosure logistics, no distinct prompt pattern. Material stale operational data: CN lists1.8/1.9 and security@ alias/30-day promise while root names2.x/1.10/critical-only1.9, private advisory route and explicitly unmonitored security@ alias (L20),14-day conditional target. Source policy commitments not verified response times. No message/contact/scanner/installation performed; do not publish old translated address as current recommendation."
+  },
+  {
+    "path": "docs/zh-CN/CONTRIBUTING.md",
+    "reason": "Full 465-line translated contributor templates including nested Markdown/JSON/shell and matcher programming grammar read. Cross-read current skill contributor74–172 and hook258–330: translation omits activation/anti-pattern/related-skill slots, idea-vs-identity adaptation/no unvetted dependency policy, exact name/folded-description rendering contract; localizes agent name placeholder despite lower-case-hyphen spec. Current and CN both retain obsolete expression-style matcher and exit1-as-block examples, conflicting with current hooks README event matcher/exit2 protocol; sample fields are not verified registered behavior. Codex agents/openai.yaml-as-loader claim is a frozen source description, not demonstrated. Contributor test checkbox/500-line heuristic is not quality proof; broad gitadd/push code not executed."
+  }
+]

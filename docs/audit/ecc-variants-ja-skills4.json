@@ -1,0 +1,18 @@
+[
+  {
+    "path": "docs/ja-JP/skills/api-connector-builder/SKILL.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full120line repo-native role/scope→inspect two current exemplars→layout/config/auth/error/test/discovery map→needed integration surface→registration/test/docs complete→verify pattern checklist read. Same golden-source and smallest requested contract methods; do not cargo-cult stale exemplars boundary explicit. API implementation details excluded by purpose, direct-port credit source observation not original mechanism invention; no connector/code action."
+  },
+  {
+    "path": "docs/ja-JP/skills/api-design/SKILL.md",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "reason": "Full457line method-purpose prose/HTTP/JSONcontrasts/conditional pagination/version/checklist read: software REST resource/status/envelope/filter/auth/rate-limit API reference, no independent agent prompting/control mechanism beyond activation. Compared full canonical review, JA lacks additional Python/Go implementation; runtime/performance/standards details scoped instead audited, names/interfaces preserved and no endpointrun."
+  },
+  {
+    "path": "docs/ja-JP/skills/architecture-decision-records/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full179line actual ADRprompt/template/context/choice/rejected alternatives/consequences/risks/deciders/date/status and explicit lookup/capture/supersession lifecycle read. Preserves reviewed canonical decision ledger/owned fact/capabilityabsence methods; initialization and exact draft approval conditional for this source workflow, not audit authorization rule. Historical backfill marked, negative tradeoffs explicit; no fabricated prior reason or filewritten, originNygard source credit not independent earliest proof."
+  }
+]

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<span id="206-prompt-patterns-for-ai-agent-development"></span><span id="206-个-ai-agent-提示词模式"></span>
+<span class="eyebrow">{% if page.lang == 'zh' %}分类目录{% else %}THEME INDEX{% endif %}</span><h1>{{ page.title | escape }}</h1><p class="lead">{% if page.lang == 'zh' %}按方法用途分类。也可以在搜索页按来源仓库和原文链接筛选。{% else %}Themes describe what a method is for. Repository, platform and provenance are separate facets.{% endif %}</p>
+<span id="categories--分类"></span>
+<div class="card-grid">{% for category in site.data.categories %}{% if page.lang == 'zh' %}{% assign suffix = '-zh' %}{% assign name = category.name_zh %}{% else %}{% assign suffix = '' %}{% assign name = category.name_en %}{% endif %}{% capture target %}/topics/{{ category.key }}{{ suffix }}/{% endcapture %}<a class="theme-card" href="{{ target | relative_url }}"><span class="record-id">{{ category.key }}</span><h2>{{ name | escape }}</h2><p>{{ category.count }} {% if page.lang == 'zh' %}个方法{% else %}methods{% endif %} →</p></a>{% endfor %}</div>
+<span id="full-index--总索引"></span>{% if page.lang == 'zh' %}{% assign target = '/catalog/catalog-index-zh/' %}{% else %}{% assign target = '/catalog/catalog-index/' %}{% endif %}<p><a href="{{ target | relative_url }}">{% if page.lang == 'zh' %}查看完整目录{% else %}Complete static index{% endif %}</a></p>
+{% if page.lang == 'zh' %}{% assign guide_url = '/guides/reference-reading-zh/' %}{% assign method_url = '/methodology-zh/' %}{% else %}{% assign guide_url = '/guides/reference-reading/' %}{% assign method_url = '/methodology/' %}{% endif %}
+<span id="techniques--技巧"></span><p><a href="{{ guide_url | relative_url }}">{% if page.lang == 'zh' %}参考文件读取指南{% else %}Reference-reading guide{% endif %}</a></p>
+<span id="standards--标准"></span><p><a href="{{ method_url | relative_url }}">{% if page.lang == 'zh' %}收录与撤下标准{% else %}Admission and withdrawal criteria{% endif %}</a></p>

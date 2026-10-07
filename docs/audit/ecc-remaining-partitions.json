@@ -1,0 +1,76 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "source_report": "docs/audit/ecc-variants-state.json",
+  "pending_total": 0,
+  "status": "complete",
+  "partitions": [
+    {
+      "key": "ja-commands",
+      "owner_or_assignment": "review_ecc",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "ja-skills",
+      "owner_or_assignment": "review_ecc",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "ja-skills-external",
+      "owner_or_assignment": "review_anthropic",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "ja-support-docs",
+      "owner_or_assignment": "review_composio",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "ja-agents",
+      "owner_or_assignment": "review_anthropic",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "es-all",
+      "owner_or_assignment": "root_to_assign_between_composio_nextlevel",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "tr-all",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "unpaired-locale-readmes",
+      "owner_or_assignment": "review_nextlevel",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "tr-skills-a",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    },
+    {
+      "key": "tr-skills-b",
+      "status": "closed",
+      "row_count": 0,
+      "paths": []
+    }
+  ]
+}

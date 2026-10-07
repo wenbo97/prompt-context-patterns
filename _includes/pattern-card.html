@@ -1,0 +1,11 @@
+{% assign p = include.pattern %}
+{% if page.lang == 'zh' %}{% assign pattern_name = p.name_zh %}{% assign summary = p.summary_zh %}{% assign suffix = '-zh' %}{% else %}{% assign pattern_name = p.name_en %}{% assign summary = p.summary_en %}{% assign suffix = '' %}{% endif %}
+{% capture detail %}/catalog/patterns/{{ p.id }}{{ suffix }}/{% endcapture %}
+<article class="pattern-card linked-card">
+  <span class="record-id">P{{ p.id }}</span>
+  <h3><a class="pattern-link" href="{{ detail | relative_url }}">{{ pattern_name | escape }}</a></h3>
+  {% if page.lang == 'zh' %}<p class="english-name" lang="en">{{ p.name_en | escape }}</p>{% endif %}
+  {% capture topic_url %}/topics/{{ p.category }}{{ suffix }}/{% endcapture %}
+  <div class="meta-line">{% if page.category_key == p.category %}<span class="badge category-tag">{% include category-label.html key=p.category %}</span>{% else %}<a href="{{ topic_url | relative_url }}">{% include category-label.html key=p.category %}</a>{% endif %}{% if p.trace_status == 'untraced' %}<span class="badge untraced">{% if page.lang == 'zh' %}来源未确认{% else %}Source unconfirmed{% endif %}</span>{% endif %}</div>
+  <p>{{ summary | escape }}</p>
+</article>

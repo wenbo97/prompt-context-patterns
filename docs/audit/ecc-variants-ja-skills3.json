@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/ja-JP/skills/ai-first-engineering/SKILL.md",
+    "reason": "Full51line actual boundaries/stabletypedcontracts/deterministicacceptance and behavior-security-data-failure-rollout review focus read. Shared eval-first/observable-goal/interface methods, no new translation mechanism; broad team/effectiveness/hiring claims scoped judgment not empirical result.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/ai-regression-testing/SKILL.md",
+    "reason": "Full385line essential workflow/prompt/contrast read plus complete173programmingline deltas against reviewed canonical: differences translated comments/test labels, actual required-field/rollback oracles preserved. Two-path acceptance goal retained but source forcedsandbox checks only one lane and empty-partnerguard vacuous (canonical known limit), so no parity guarantee. Historical4occurrences/#1frequency/<1s/cannotrecur claims not adopted; implementation runtime not further audited/run.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/android-clean-architecture/SKILL.md",
+    "reason": "Full339line method-purpose prose/context-dependency graph read: domain Android/KMPUseCase/Repository/Room/SQLDelight/Ktor/DI/Gradle guidance, no independent agent control beyond trigger and known scoped reference routing. Domain API/code/architecture correctness excluded under revised scope, literal names/refs retained; no build or new card.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/angular-developer/SKILL.md",
+    "reason": "Full154line actual projectversion-first, requestedversion→existingCLI→fallback decision and conditional task reference router read. Same source-version/capability/contextscope methods; current failure of ngversion not logically proves absentinstall, defaultlatest/library claims need verification. references remain relative names, no local JA reference copies in assigned inventory, use explicit canonical router instead claiming translatedreference completeness. FrameworkAPI/code correctness scoped out, no tools run.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  }
+]

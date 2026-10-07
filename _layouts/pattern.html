@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% assign p = site.data.patterns | where: 'id', page.pattern_id | first %}
+{% if page.lang == 'zh' %}{% assign name = p.name_zh %}{% assign summary = p.summary_zh %}{% assign theme_suffix = '-zh' %}{% else %}{% assign name = p.name_en %}{% assign summary = p.summary_en %}{% assign theme_suffix = '' %}{% endif %}
+<div class="pattern-page">
+<article>
+  {% if page.lang == 'zh' %}{% assign browse_url = '/catalog/browse/?lang=zh' %}{% else %}{% assign browse_url = '/catalog/browse/' %}{% endif %}
+  <div class="breadcrumb"><a href="{{ browse_url | relative_url }}">{% if page.lang == 'zh' %}方法目录{% else %}Pattern catalog{% endif %}</a> / P{{ p.id }}</div>
+  <header class="pattern-heading"><span class="record-id">P{{ p.id }} · {% capture topic_url %}/topics/{{ p.category }}{{ theme_suffix }}/{% endcapture %}<a href="{{ topic_url | relative_url }}">{% include category-label.html key=p.category %}</a></span><h1>{{ name | escape }}</h1>{% if page.lang == 'zh' %}<p class="english-name" lang="en">{{ p.name_en | escape }}</p>{% endif %}<p class="lead">{{ summary | escape }}</p>
+    <div class="meta-line"><span class="badge">{% if page.lang == 'zh' %}编辑审核{% else %}Editorially reviewed{% endif %}</span>{% if p.trace_status == 'untraced' %}<span class="badge untraced">{% if page.lang == 'zh' %}来源未确认{% else %}Source unconfirmed{% endif %}</span>{% endif %}</div>
+  </header>
+  <nav class="pattern-toc" aria-label="{% if page.lang == 'zh' %}本页导航{% else %}On this page{% endif %}">
+    <span class="pattern-toc-label">{% if page.lang == 'zh' %}本页导航{% else %}On this page{% endif %}</span>
+    <ul>
+      {% if page.lang == 'zh' %}
+      <li><a href="#使用场景">场景</a></li><li><a href="#具体做法">做法</a></li><li><a href="#反例">反例</a></li><li><a href="#改进写法">改进写法</a></li><li><a href="#为什么这样改">原因</a></li><li><a href="#如何验证">验证</a></li><li><a href="#适用边界">边界</a></li>
+      {% else %}
+      <li><a href="#use-case">Use case</a></li><li><a href="#mechanism">Steps</a></li><li><a href="#bad-example">Bad example</a></li><li><a href="#good-example">Good example</a></li><li><a href="#why-the-change-matters">Why</a></li><li><a href="#observable-expectation">Check</a></li><li><a href="#limits">Limits</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+  <div class="pattern-content">{{ content }}</div>
+  <section class="evidence-panel" aria-labelledby="source-evidence"><h2 id="source-evidence">{% if page.lang == 'zh' %}原文与版本{% else %}Sources and evidence{% endif %}</h2>
+    {% if p.sources.size > 0 %}<ul>{% for source in p.sources %}<li><a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.repo | default: source.title | escape }} · {{ source.section | default: source.path | escape | markdownify | strip_html | strip }}</a><br>{% if source.commit %}<a class="source-version" href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer" title="{{ source.path | escape }} @ {{ source.commit | escape }}">{% if page.lang == 'zh' %}查看此版本的文件{% else %}File at this version{% endif %} <code>{{ source.commit | slice: 0, 12 | escape }}</code></a>{% endif %}<br><span class="post-meta">{{ source.license | escape }} · {% if page.lang == 'zh' %}公开实例；不代表最早出处{% else %}Observed instance; not proof of earliest origin{% endif %}</span></li>{% endfor %}</ul>
+    {% else %}<p>{% if page.lang == 'zh' %}暂未找到可链接的原文。本文示例由本站编写，用来说明方法。{% else %}Source text has not been located. This method meets the editorial criteria; its examples are independent teaching constructions.{% endif %}</p>{% endif %}
+    <p class="post-meta">{% if page.lang == 'zh' %}最早出处：{% if p.origin_status == 'confirmed' %}已确认{% else %}未确认{% endif %}。本文经过内容审核，未做模型效果测试。{% else %}Earliest provenance: {% if p.origin_status == 'confirmed' %}confirmed{% else %}unknown{% endif %}. Editorial review is separate from model evaluation.{% endif %}</p>
+    {% if page.lang == 'zh' %}{% assign method_url = '/methodology-zh/' %}{% else %}{% assign method_url = '/methodology/' %}{% endif %}<a href="{{ method_url | relative_url }}">{% if page.lang == 'zh' %}如何收录这些方法{% else %}Read the editorial criteria{% endif %}</a>
+  </section>
+  {% if p.related_ids.size > 0 %}<section><h2>{% if page.lang == 'zh' %}相关方法{% else %}Related methods{% endif %}</h2><ul>{% for id in p.related_ids %}{% assign related = site.data.patterns | where: 'id', id | first %}{% if related.status == 'active' %}{% capture target %}/catalog/patterns/{{ related.id }}{{ theme_suffix }}/{% endcapture %}<li><a href="{{ target | relative_url }}">{% if page.lang == 'zh' %}{{ related.name_zh | escape }}{% else %}{{ related.name_en | escape }}{% endif %}</a></li>{% endif %}{% endfor %}</ul></section>{% endif %}
+</article></div>

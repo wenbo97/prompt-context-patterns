@@ -1,379 +1,375 @@
-# 提示词模式目录 — 索引
-
-从 500+ 生产级 AI Agent 插件（2,293 个 SKILL.md 文件）、开源技能仓库和 Claude Code 系统提示词架构中提取的 **206 个提示词工程模式**目录（模式 1–155 在下方有完整写法；模式 156–206 来自 2026-07 收割，可在 **[模式浏览器]({{ site.baseurl }}/catalog/browse/)** 或静态 **[156–206 列表]({{ site.baseurl }}/catalog/patterns-156-206-zh)** 浏览，完整写法进行中）。原始 30 个模式（1-30）包含正面/反面示例。高级 61 个模式（31-91）通过对完整插件集合的深度研究发现。8 个补充模式（92-99）来自针对覆盖不足类别的定向扫描。21 个开源模式（100-120）提取自 Anthropic 官方技能仓库和 ComposioHQ 的 awesome-claude-skills 仓库。模式 121-142 涵盖 Claude Code 可组合系统提示词的平台级关注点。模式 143-155 来自 2026-05 跨 awesome-claude-skills + superpowers + claude-plugins-official + 内部实验 的收割。模式 156-206 来自 2026-07 跨 superpowers、claude-plugins-official、mattpocock/skills 的收割（新增了**技能创作**分类）。
-
-**数据来源：**
-提取自对 500+ 生产级 AI Agent 插件的分析，覆盖 DevOps、安全、迁移和事件响应领域。
-
-> **来源（模式 1-99）：** 聚合自 500+ 社区插件（社区插件市场）。这些模式来自对整个语料库的横向分析，而非任何单一具名插件，因此不提供逐条仓库出处。模式 100-155 在正文中提供具体的逐条出处。
-
-**提取日期：** 2026-04-13（原始 30 个），2026-04-14（高级 31-91），2026-04-15（开源 100-120），2026-04-24（平台 121-142），2026-05-26（收割 143-155）
-
+---
+layout: "catalog-index"
+lang: "zh"
+title: "方法总目录"
+description: "按稳定编号浏览 306 个方法，查看双语详情、分类和原文状态。"
+permalink: "/catalog/catalog-index-zh/"
+alternate_url: "/catalog/catalog-index/"
 ---
 
-## 如何使用本目录
-
-1. **构建新技能？** 扫描下方快速参考表，找到与你的场景相关的模式。
-2. **评审现有技能？** 检查它使用了哪些模式，遗漏了哪些。
-3. **学习提示词工程？** 按顺序阅读分类文件 — 从结构到编排到质量，层层递进。
-
-### 配套文件
-
-| 文件 | 涵盖内容 |
-|------|----------|
-| [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques-zh) | **理论** — 基于条件熵/注意力分布的 9 个基础技术 |
-| [template.md](/prompt-context-patterns/catalog/techniques/good-vs-bad-template-zh) | **深度分析** — 一个 BAD vs GOOD 对比，含逐行分析 |
-| **本目录（模式 1-30）** | **基础模式** — 30 个模式，含正面/反面示例 |
-| [patterns-advanced-orchestration.md](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh) | **高级** — 14 个 Agent 编排与多 Agent 模式（31-44） |
-| [patterns-advanced-quality.md](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh) | **高级** — 11 个质量、评审与评估模式（45-55） |
-| [patterns-advanced-safety.md](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh) | **高级** — 14 个安全、信任与合规模式（56-69） |
-| [patterns-advanced-workflow.md](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh) | **高级** — 11 个工作流、执行与自主性模式（70-80） |
-| [patterns-advanced-io-domain.md](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh) | **高级** — 11 个输入/输出、领域与通信模式（81-91） |
-| [patterns-gap-fills.md](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh) | **补充** — 8 个入职、生产力、迁移与创意模式（92-99） |
-| [patterns-open-source-skills.md](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh) | **开源** — 来自 Anthropic 官方 + 社区技能仓库的 21 个模式（100-120） |
-| [patterns-karpathy-behavioral.md](/prompt-context-patterns/catalog/categories/patterns-karpathy-behavioral-zh) | **行为** — 5 个 Karpathy 衍生模式：暴露假设、最小可行代码、精准修改、逐步验证、叙述错误路径 |
-| [patterns-claude-code-platform.md](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh) | **平台** — 12 个 Claude Code 平台模式：记忆、权限、调度、工具路由、Agent 调度（121-132） |
-| [patterns-claude-code-platform-extended.md](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh) | **平台扩展** — 10 个模式：组合装配、工具约束、安全监视器、团队协调、梦境记忆（133-142） |
-| [skill-architecture-patterns.md](/prompt-context-patterns/catalog/techniques/skill-architecture-zh) | **架构** — 技能打包、组合、子 Agent、市场、参考组织 |
-| [skill-reference-laziness-analysis.md](/prompt-context-patterns/catalog/techniques/anti-laziness-zh) | **深度分析** — 防止 Agent 在 Tier 3 参考读取中偷懒的 8 种策略，含风险分级决策框架 |
-| [reference-skip-playbook.md](/prompt-context-patterns/catalog/techniques/reference-skip-playbook-zh) | **深度分析** — 参考跳过问题的 11 种解决模式：3 种失败模式（裸跳转、预满足、可选框架）、决策矩阵、反模式 |
-
----
-
-## 快速参考表
-
-| # | 模式 | 分类 | 普及率 | 核心价值 |
-|---|------|------|--------|----------|
-| 1 | [YAML Frontmatter Metadata](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-1-yaml-frontmatter-metadata-block) | 结构 | ~100% | 平台级身份标识和工具权限 |
-| 2 | [Phased/Stepped Execution](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-2-phasedstepped-execution-flow) | 结构 | ~54% | 确定性排序，带阶段目标 |
-| 3 | [Workflow Mode Branching](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-3-workflow-mode-branching) | 结构 | ~5% | 同一技能服务不同受众 |
-| 4 | [$ARGUMENTS Variable](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-4-arguments-variable-pattern) | 结构 | ~7% | 解析带标志和选项的用户输入 |
-| 5 | [Persona/Role Assignment](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-5-personarole-assignment) | 执行 | ~9% | 设定专业水平和推理风格 |
-| 6 | [Negative Constraints](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-6-negative-constraints--prohibition-lists) | 执行 | ~18% | 防止已知的特定错误 |
-| 7 | [Interactive Flow Control](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-7-interactive--conversational-flow-control) | 执行 | ~2% | 每次一个问题，STOP and WAIT |
-| 8 | [Confirmation Gates](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-8-confirmation-gates--human-in-the-loop) | 执行 | ~4% | 高风险操作前需人工审批 |
-| 9 | [Progress Feedback](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-9-progress-feedback--status-reporting) | 执行 | ~2% | Step N/M 状态 + 退出码 |
-| 10 | [Prompt Injection Defense](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-10-prompt-injection-defense) | 安全 | <1% | 外部内容视为不可信数据 |
-| 11 | [Sensitive Data Redaction](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-11-sensitive-data-redaction) | 安全 | ~2% | 命名数据类型 + 替换模式 |
-| 12 | [Read-Only Boundary](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-12-read-only--safety-boundary-declaration) | 安全 | ~4% | 声明操作范围限制 |
-| 13 | [Activation Scope](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh#pattern-13-activation-scope-when-to-use--when-not-to-use) | 安全 | ~7% | When to Use / When NOT to Use + 重定向 |
-| 14 | [Structured Output Templates](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-14-structured-output-templates) | 输入/输出 | ~26% | 精确输出格式 + 填充示例 |
-| 15 | [Error Handling / Degradation](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-15-error-handling--graceful-degradation) | 输入/输出 | ~10% | 阶段特定的失败响应 |
-| 16 | [Configuration Persistence](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-16-configuration-persistence--first-time-setup) | 输入/输出 | ~4% | 检查-加载-设置-保存用户配置 |
-| 17 | [Cross-Platform Handling](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh#pattern-17-cross-platform-handling) | 输入/输出 | ~3% | 平台特定的工具和路径 |
-| 18 | [Multi-Agent Orchestration](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-18-multi-agent-orchestration--agent-topologies) | 编排 | ~2% | Agent 拓扑 + 共识评分 |
-| 19 | [Skill Composition](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-19-skill-composition--cross-skill-invocation) | 编排 | ~4% | 委托给已有技能（DRY） |
-| 20 | [Intent Classification](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-20-intent-classification--smart-routing) | 编排 | ~6% | 将输入路由到正确的子工作流 |
-| 21 | [Tool Routing Tables](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-21-tool-routing-tables) | 编排 | ~16% | 任务→工具映射 + "不用这些" |
-| 22 | [Deduplication / Consensus](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh#pattern-22-deduplication--consensus-algorithms) | 编排 | ~1% | 加权相似度 + 定义阈值 |
-| 23 | [Reference File Injection](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-23-reference-file--knowledge-base-injection) | 知识 | ~17% | 指向外部知识文件 |
-| 24 | [Domain Knowledge Embedding](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-24-domain-knowledge-embedding) | 知识 | ~22% | 内联 Schema、字段表、查询模板 |
-| 25 | [Few-Shot Examples](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-25-few-shot-examples) | 知识 | ~21% | 完整的输入/输出对 |
-| 26 | [Evidence Chain / Proof-of-Work](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh#pattern-26-evidence-chain--proof-of-work) | 知识 | ~5% | 可追溯结论 + 强制清单 |
-| 27 | [Scoring Rubrics](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-27-scoring-rubrics--quantitative-assessment) | 质量 | ~4% | 评分维度、分数范围、类别阈值 |
-| 28 | [Self-Critique](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-28-self-critique--quality-self-check) | 质量 | ~2% | 对抗性弱点识别 |
-| 29 | [Feedback Solicitation](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-29-feedback-solicitation) | 质量 | <1% | 按优先级分层的调查 + 会话去重 |
-| 30 | [Version Check](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-30-version-check--update-notification) | 质量 | <1% | 非阻塞更新通知 |
-
----
-
-## 高级模式快速参考表（31-80）
-
-通过对 500+ 插件的深度研究发现，按类别分组。
-
-### 第 8 类：高级 Agent 编排 (/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 31 | [Adversarial Persona Framing](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-31-adversarial-persona-framing) | 攻击者思维发现真正的 Bug，而非表面问题 |
-| 32 | [Hub-and-Spoke SDLC State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-32-hub-and-spoke-sdlc-state-machine) | 确定性推进开发生命周期 |
-| 33 | [M x N Cross-Model Consensus Grid](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-33-m-x-n-cross-model-consensus-grid) | 跨模型多样性捕捉幻觉 |
-| 34 | [Dual-Model Adversarial Planning](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-34-dual-model-adversarial-planning) | 独立计划减少单模型偏差 |
-| 35 | [Cost-Optimized Model Routing](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-35-cost-optimized-model-routing) | 按任务选择模型，节省 60%+ 成本 |
-| 36 | [Handoff Context Protocol](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-36-handoff-context-protocol) | Agent 间统一上下文传递 |
-| 37 | [Context Efficiency Rule](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-37-context-efficiency-rule-orchestrator-reads-nothing) | 编排器上下文保持清洁 |
-| 38 | [Complexity-Tiered Dispatch](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-38-complexity-tiered-dispatch) | 按任务复杂度匹配 Agent 管道 |
-| 39 | [Persistent Team with Message Board](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-39-persistent-team-with-message-board) | 状态文件实现跨 Agent 讨论 |
-| 40 | [Delegation to Cloud Agent](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-40-delegation-to-cloud-agent-via-work-item) | 工作项作为 Agent 分配机制 |
-| 41 | [Loop Prevention with Max Iterations](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-41-loop-prevention-with-max-iterations) | 硬性停止防止无限 Agent 循环 |
-| 42 | [Agent Memory Isolation](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-42-agent-memory-isolation) | 防止跨 Agent 影响和注入 |
-| 43 | [Sparse Git Worktree for Review](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-43-sparse-git-worktree-for-isolated-review) | Monorepo 安全的隔离文件访问 |
-| 44 | [Severity Promotion/Demotion by Area](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh#pattern-44-severity-promotiondemotion-by-area) | 将组织风险偏好编入提示词 |
-
-### 第 9 类：高级质量与评估 (/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 45 | [Directive-Based Review with on_fail](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-45-directive-based-review-with-on_fail-classification) | 每个维度三向分类：Pass/Review/Fail |
-| 46 | [Multi-Stage Repo Discovery Before Review](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-46-multi-stage-repo-discovery-before-review) | 评审校准到仓库惯例 |
-| 47 | [Evidence-First Review](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-47-evidence-first-review-demonstrate-dont-cite-rules) | "展示，而非引用规则" — 可操作的 Bug |
-| 48 | [Rule-Catalog Review (YAML)](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-48-rule-catalog-review-hierarchical-yaml) | 版本化、可审计、独立可更新的规则 |
-| 49 | [Blast Radius & Impact Formulas](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-49-blast-radius--on-call-impact-formulas) | 量化运维影响评分 |
-| 50 | [Adversarial Triad + Counterarguments](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-50-adversarial-triad-with-counterargument-phase) | 两轮评审消除群体思维 |
-| 51 | [Schema Validation Gate](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-51-schema-validation-gate) | 机器强制的输出格式合规 |
-| 52 | [LLM-as-Judge (8 Scenarios)](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-52-llm-as-judge-evaluation-scenarios-8-types) | 完整评估工具箱，含元评判 |
-| 53 | [Retrospective Quality Rubric](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-53-retrospective-quality-rubric-incident-postmortem) | 事后复盘的反模式/模式对 |
-| 54 | [Test Scaffolding + Convention Enforcement](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-54-test-scaffolding-with-convention-enforcement) | 完整测试生成 + 反模式表 |
-| 55 | [Smart Triage-Skip with Model Tracking](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-55-smart-triage-skip-with-model-tracking) | 防止重复分诊，支持模型升级 |
-
-### 第 10 类：高级安全与合规 (/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 56 | [MCP-Response-as-Data Guardrail](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-56-mcp-response-as-data-guardrail) | 防止基础设施细节泄露 |
-| 57 | [Prompt-Injection-as-Security-Finding](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-57-prompt-injection-as-security-finding) | 将攻击转化为可操作的评审发现 |
-| 58 | [Prosecutor-Defender-Judge Architecture](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-58-prosecutor-defender-judge-architecture) | 对抗性审计 + 准确性指标 |
-| 59 | [Rescue-Tag-Before-Destructive-Operation](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-59-rescue-tag-before-destructive-operation) | 所有破坏性操作自动创建撤销点 |
-| 60 | [Tiered Permission Model (RED/DEFER/GREEN)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-60-tiered-permission-model-red--defer--green) | 三级风险分类 + 预检分析 |
-| 61 | [Data Classification Matrix (4-Level)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-61-data-classification-matrix-4-level) | 明确的敏感度分类 + 工具特定规则 |
-| 62 | [XPIA Defense Model](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-62-xpia-defense-model-cross-plugin-injection-attack) | 跨插件注入攻击的四层防御 |
-| 63 | [Severity Rubric with Litmus Tests](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-63-severity-rubric-with-litmus-tests) | "凌晨 3 点你会叫人起来吗？" — 校准锚点 |
-| 64 | [Security Posture Delta Analysis](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-64-security-posture-delta-analysis) | 代码 + 基础设施关联分析真实风险 |
-| 65 | [Confidence-Gated Reporting](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-65-confidence-gated-reporting) | 非对称阈值：安全发现门槛更低 |
-| 66 | [System-Prompt Non-Disclosure](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-66-system-prompt-non-disclosure) | 禁止泄露 Agent 配置 |
-| 67 | [40-Point Skill Security Checklist](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-67-40-point-security-skill-review-checklist) | 插件市场的供应链防御 |
-| 68 | [Orchestrator-Only (No Direct Data)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-68-orchestrator-only-pattern-no-direct-data-processing) | LLM 永不接触原始 PII；由工具处理数据 |
-| 69 | [Policy-as-Data (Declarative YAML)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-69-policy-as-data-declarative-yaml-configs) | 合规规则与 Agent 代码解耦 |
-
-### 第 11 类：高级工作流与自主性 (/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 70 | [State File as Sole Continuity](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-70-state-file-as-sole-continuity-mechanism) | 桥接隔离的 Agent 上下文窗口 |
-| 71 | [Zero-Questions Triage](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-71-zero-questions-triage-maximum-autonomy) | 95 秒内完全自主分析 |
-| 72 | [Pull-Based Kanban Orchestration](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-72-pull-based-kanban-orchestration) | Agent 按亲和力拉取任务，范围蔓延时分叉 |
-| 73 | [Deployment State Machine (Idempotent)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-73-deployment-state-machine-statelessre-entrantidempotent) | 崩溃可恢复的无状态部署处理器 |
-| 74 | [Autonomous PR Feedback Resolution](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-74-autonomous-pr-feedback-resolution) | Agent 实现或驳回评审意见 |
-| 75 | [11-Phase Autonomous Dev Flow](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-75-11-phase-autonomous-development-flow) | 从任务到部署的端到端流程，带防护栏 |
-| 76 | [Staggered Burst Query + Rate Limits](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-76-staggered-burst-query-with-rate-limit-respect) | 跨服务器反并行防止级联故障 |
-| 77 | [Time-Boxed Investigation](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-77-time-boxed-investigation-with-partial-results) | 硬性时间预算 + 部分结果报告 |
-| 78 | [Deployment Override Knowledge Encoding](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-78-deployment-override-knowledge-encoding) | 完整 override 分类用于精准查询 |
-| 79 | [Incident Escalation Decision Matrix](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-79-incident-escalation-decision-matrix) | 严重级别和升级的量化阈值 |
-| 80 | [Scope Estimation Checkpoints](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-80-scope-estimation-and-re-estimation-checkpoints) | 在 25/50/75% 时重新估算，捕捉范围蔓延 |
-
-### 第 12 类：高级输入/输出与领域特化 (/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 81 | [NL to Relational Schema Decomposition](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-81-natural-language-to-relational-schema-decomposition) | 教模型推导 Schema，而非仅嵌入 |
-| 82 | [Chart Decision Tree + Anti-Pattern Guards](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-82-chart-decision-tree-with-anti-pattern-guards) | 数据形状到可视化 + 基数防护 |
-| 83 | [Audience-Purpose Content Calibration](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-83-audience-purpose-driven-content-calibration) | 输出格式/详细度由受众和目的驱动 |
-| 84 | [Socratic Investigation Loop](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-84-socratic-investigation-loop-with-active-research) | 主动研究 + 苏格拉底式提问引导发现 |
-| 85 | [Knowledge Base Index + Intent Routing](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-85-knowledge-base-index-with-intent-to-source-routing) | 两级检索：轻量索引 → 选择性深读 |
-| 86 | [Heuristic Scoring with Signal Detection](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-86-heuristic-scoring-with-signal-detection) | 机器可检测信号替代主观标签 |
-| 87 | [Eager Incremental Materialization](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-87-eager-incremental-materialization) | 对话过程中就创建产出物，而非结束后 |
-| 88 | [Data Shape to Query Pattern Detection](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-88-data-shape-to-query-pattern-detection) | 从数据列 + 查询文本推断可视化 |
-| 89 | [Writability Rules + Substitution Tables](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-89-writability-rules-and-linguistic-substitution-tables) | 完整的风格转换 + 检测启发式 |
-| 90 | [Cross-Platform Compatibility Matrix](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-90-cross-platform-surface-compatibility-matrix) | 来源/目标降级路径 + 有限重试 |
-| 91 | [Hub-Spoke Router with Overlap Resolution](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-91-hub-spoke-domain-router-with-overlap-resolution) | 多级特异性级联用于消歧 |
-
-### 第 13 类：补充 — 入职、生产力、迁移与创意 (/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 92 | [DAG Journey with Typed Gates](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-92-dag-journey-with-typed-gates) | 非线性入职 + 手动门控和回填 |
-| 93 | [Multi-Source Evidence Harvest + Goal Synthesis](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-93-multi-source-evidence-harvest-with-goal-aligned-synthesis) | 6+ 源并行采集 + 受众分层输出 |
-| 94 | [Promise Detection and KB Sync](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-94-promise-detection-and-knowledge-base-sync) | 从对话中提取隐含承诺 |
-| 95 | [Mandatory Self-Learning After Failure](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-95-mandatory-self-learning-after-failure-resolution) | 每次错误解决后知识库都会增长 |
-| 96 | [Risk-Ordered Batch Migration + Build-Verify](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-96-risk-ordered-batch-migration-with-build-verify-loops) | 批量迁移 + 相同错误签名回滚 |
-| 97 | [PII-Motivated Delivery Restriction](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-97-pii-motivated-delivery-restriction) | 绝对的交付渠道限制，不可覆盖 |
-| 98 | [Audience-Register Translation Review](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-98-audience-register-translation-review-with-matched-frameworks) | 工程师到高管的评审 + 匹配框架 |
-| 99 | [Automated Accessibility Post-Processing](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh#pattern-99-automated-accessibility-post-processing-pipeline) | 无障碍管道 + 25 项断言评估 |
-
-### 第 14 类：开源技能模式 (/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 100 | [Progressive Disclosure Architecture](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-100-progressive-disclosure-architecture) | 3 级上下文加载，最小化 token 浪费 |
-| 101 | [Creative Philosophy Scaffolding](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-101-creative-philosophy-scaffolding) | 强制先有概念深度，再执行视觉 |
-| 102 | [Mandatory Refinement Pass](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-102-mandatory-refinement-pass) | 自我施加的质量门控 + 情感锚定 |
-| 103 | [Reconnaissance-Then-Action](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-103-reconnaissance-then-action) | 先观察状态再行动，防止盲目交互 |
-| 104 | [Helper Script as Black Box](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-104-helper-script-as-black-box) | 脚本封装复杂性；模型先用 --help |
-| 105 | [Anti-Slop Design Guidelines](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-105-anti-slop-design-guidelines) | 命名 AI 反模式 + 具体替代方案 |
-| 106 | [Section-by-Section Collaborative Drafting](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-106-section-by-section-collaborative-drafting) | 迭代式逐段构建 + 用户审批 |
-| 107 | [Reader Testing with Sub-Agent](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-107-reader-testing-with-sub-agent) | 派生天真读者子 Agent 做新鲜视角评审 |
-| 108 | [Blind A/B Comparison](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-108-blind-ab-comparison) | 双盲技能评估消除偏见 |
-| 109 | [Composio 3-Step SaaS Integration](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-109-composio-3-step-saas-integration) | 通用 Search-Connect-Execute 适配任何 SaaS API |
-| 110 | [Algorithm-as-Domain Knowledge](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-110-algorithm-as-domain-knowledge) | 将实际系统内部机制嵌入提示词知识 |
-| 111 | [Clarifying Questions Before Action](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-111-clarifying-questions-before-action) | 行动前的定向参数收集提问 |
-| 112 | [Output Format with Populated Example](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-112-output-format-with-populated-example) | 完整真实输出，而非抽象 Schema |
-| 113 | [Multi-Workflow Routing by Input Type](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-113-multi-workflow-routing-by-input-type) | 同一技能按输入路由创建/读取/编辑 |
-| 114 | [Font/Asset Bundling with Directory Reference](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-114-fontasset-bundling-with-directory-reference) | 相对路径捆绑资源，无需下载 |
-| 115 | [QA Sub-Agent with Visual Verification](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-115-qa-sub-agent-with-visual-verification) | 派生子 Agent 截图并检查输出 |
-| 116 | [Never-Hardcode Financial Rules](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-116-never-hardcode-financial-rules) | 所有计算值必须使用公式 |
-| 117 | [Multi-Language SDK Routing](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-117-multi-language-sdk-routing) | 检测语言，仅加载对应语言的文档 |
-| 118 | [Surface Selection by Architecture](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-118-surface-selection-by-architecture) | 按需求路由到单次调用/工作流/Agent |
-| 119 | [Eval-Driven Skill Improvement Loop](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-119-eval-driven-skill-improvement-loop) | 提示词的 TDD：写测试 → 评分 → 改进 |
-| 120 | [Non-Anthropic Provider Guard](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-120-non-anthropic-provider-guard) | 导入非 Anthropic 生态时提前退出 |
-
-### 第 15-16 类：Claude Code 平台模式 (patterns-claude-code-platform*.md)
-
-| # | 模式 | 核心价值 |
-|---|------|----------|
-| 121 | [Typed Memory Taxonomy](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-121-typed-memory-taxonomy) | 四种记忆类型 + 不同写入触发器和过期规则 |
-| 122 | [Bidirectional Feedback Capture](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-122-bidirectional-feedback-capture) | 同时记录纠正和确认，防止行为漂移 |
-| 123 | [Reversibility x Blast-Radius](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-123-reversibility--blast-radius-permission-model) | 2x2 权限矩阵 + 非粘性审批 |
-| 124 | [Tool Preference with Hard Routing](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-124-tool-preference-hierarchy-with-hard-routing) | 有专用工具时禁用 shell 等效命令 |
-| 125 | [Cache-Aware Scheduling](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-125-cache-aware-scheduling) | 围绕 prompt cache TTL 死区调度延迟 |
-| 126 | [Agent Briefing Protocol](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-126-agent-briefing-protocol) | "像同事一样简报" + 永不委托理解 |
-| 127 | [Parallel-Safe Step Identification](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-127-parallel-safe-step-identification) | 为多步工作流标注并行性标记 |
-| 128 | [Context Compaction Survival](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-128-context-compaction-survival-protocol) | 上下文压缩时需保留的命名字段 |
-| 129 | [Non-Sticky Authorization](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-129-non-sticky-authorization-scope) | 审批限定在特定请求，而非操作类别 |
-| 130 | [Investigate Before Destroying](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-130-investigate-before-destroying) | 破坏性捷径前先调查根因 |
-| 131 | [Output Visibility Awareness](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-131-output-visibility-awareness) | 工具调用对用户不可见，用文本沟通 |
-| 132 | [Hook-Driven Automation](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh#pattern-132-hook-driven-automation-awareness) | Hook 反馈视为用户输入；适应，不重试 |
-| 133 | [Compositional Prompt Assembly](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-133-compositional-prompt-assembly) | 小型版本化片段条件组装 |
-| 134 | [Tool-Constraint Boundaries](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-134-tool-constraint-agent-boundaries) | 从 Agent 移除工具，而非仅指令禁止 |
-| 135 | [Fork vs Fresh Spawning](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-135-fork-vs-fresh-spawning-strategy) | 缓存共享 fork vs 独立 fresh Agent |
-| 136 | [Security Monitor Agent](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-136-security-monitor-agent-dedicated-threat-classifier) | 独立 Agent 评估每个动作的威胁模型 |
-| 137 | [Analysis-First Compaction](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-137-analysis-first-compaction) | 在分析标签中思考后再生成摘要 |
-| 138 | [Team Task Board](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-138-team-task-board-coordination) | 共享任务列表 + Agent 间异步消息 |
-| 139 | [Background Job Narration](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-139-background-job-narration-protocol) | 机器可解析的完成信号供分类器使用 |
-| 140 | [Autonomous Trust Calibration](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-140-autonomous-trust-calibration) | "管家而非发起者" — 按影响半径调整信任 |
-| 141 | [REPL as Tool Composition](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-141-repl-as-tool-composition-layer) | JavaScript 层实现工具调用的循环/分支 |
-| 142 | [Immutable Memory + Dream](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-142-immutable-memory-with-dream-consolidation) | 不可编辑的记忆文件 + 定期整合 Agent |
-
-### 第 17 类：Harvest 2026-05 模式（143-155）
-
-| # | 模式 | 分类文件 | 核心收益 |
-|---|------|---------|---------|
-| 143 | [Pre-Set Catalog with Generate-On-The-Fly Fallback](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh#pattern-143-pre-set-catalog-with-generate-on-the-fly-fallback) | open-source-skills | 精选选项优先；无合适项时生成兜底 |
-| 144 | [Agent-Centric Tool Design Principles](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh#pattern-144-agent-centric-tool-design-principles) | advanced-io-domain | 工作流非端点、上下文预算感知、可操作错误 |
-| 145 | [Iron-Law Inviolable Rule Framing](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-145-iron-law-inviolable-rule-framing) | execution-control | 规则 + 反漏洞子句 + 命名合理化免疫 |
-| 146 | [Rationalization-Prevention Table](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh#pattern-146-rationalization-prevention-table) | quality-and-feedback | 预列借口，让 Agent 在合理化形成时认出 |
-| 147 | [Announce-Skill-On-Entry Protocol](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh#pattern-147-announce-skill-on-entry-protocol) | claude-code-platform-extended | 单行纪律宣告作为软承诺装置 |
-| 148 | [Anti-Performative-Agreement Vocabulary Ban](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh#pattern-148-anti-performative-agreement-vocabulary-ban) | execution-control | 禁用短语清单 + 每条的替代行为 |
-| 149 | [Pressure-Scenario TDD for Skill Authoring](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh#pattern-149-pressure-scenario-tdd-for-skill-authoring) | advanced-quality | 用 Agent 合理化而非配合输入测试 skill |
-| 150 | [Continuous Execution Mandate](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-150-continuous-execution-mandate) | advanced-workflow | 任务间不插入 check-in；批准计划就是 check-in |
-| 151 | [HARD-GATE Block Tag](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-151-hard-gate-block-tag) | structural-scaffolding | 不可越过规则的视觉注意力锚 |
-| 152 | [DOT-Graph Decision Flow Embedded in Prompt](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh#pattern-152-dot-graph-decision-flow-embedded-in-prompt) | structural-scaffolding | Graphviz 状态机紧凑无歧义路由 |
-| 153 | [Marketplace Source-Type Polymorphism (SHA-Pinned)](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-153-marketplace-source-type-polymorphism-sha-pinned) | advanced-safety | 多源类型注册 + 强制完整性 pin |
-| 154 | [Self-Looping Stop Hook (Ralph Loop)](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh#pattern-154-self-looping-stop-hook-ralph-loop) | advanced-workflow | Stop-hook 再入 + DONE/BLOCKED 诚实纪律 |
-| 155 | [Plugin Lifecycle State Machine](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh#pattern-155-plugin-lifecycle-state-machine) | advanced-safety | active/deprecated/archived + 日落窗口 + replacedBy |
-
-
----
-
-## 分类文件
-
-<a id="cat-1"></a>
-### [第 1 类：结构脚手架](/prompt-context-patterns/catalog/categories/patterns-structural-scaffolding-zh)
-技能提示词的组织方式 — 承载一切的骨架。
-
-**模式：** YAML Frontmatter (1), Phased Execution (2), Workflow Mode Branching (3), $ARGUMENTS Variable (4)
-
-<a id="cat-2"></a>
-### [第 2 类：执行控制](/prompt-context-patterns/catalog/categories/patterns-execution-control-zh)
-如何引导 Agent 行为 — 人设、约束、交互模式和检查点。
-
-**模式：** Persona/Role Assignment (5), Negative Constraints (6), Interactive Flow Control (7), Confirmation Gates (8), Progress Feedback (9)
-
-<a id="cat-3"></a>
-### [第 3 类：安全与信任](/prompt-context-patterns/catalog/categories/patterns-safety-and-trust-zh)
-防止 Agent 造成伤害的防护栏 — 注入防御、数据脱敏、边界和范围。
-
-**模式：** Prompt Injection Defense (10), Sensitive Data Redaction (11), Read-Only Boundary (12), Activation Scope (13)
-
-<a id="cat-4"></a>
-### [第 4 类：输入/输出契约](/prompt-context-patterns/catalog/categories/patterns-input-output-contracts-zh)
-数据如何流入流出 — 输出模板、错误处理、配置和平台适配。
-
-**模式：** Structured Output Templates (14), Error Handling (15), Configuration Persistence (16), Cross-Platform (17)
-
-<a id="cat-5"></a>
-### [第 5 类：Agent 编排](/prompt-context-patterns/catalog/categories/patterns-agent-orchestration-zh)
-多个 Agent 如何协调 — 拓扑、技能组合、路由、工具映射和共识。
-
-**模式：** Multi-Agent Orchestration (18), Skill Composition (19), Intent Classification (20), Tool Routing Tables (21), Dedup/Consensus (22)
-
-<a id="cat-6"></a>
-### [第 6 类：知识与上下文](/prompt-context-patterns/catalog/categories/patterns-knowledge-and-context-zh)
-信息如何管理 — 参考文件、领域知识、示例和证据要求。
-
-**模式：** Reference File Injection (23), Domain Knowledge Embedding (24), Few-Shot Examples (25), Evidence Chain (26)
-
-<a id="cat-7"></a>
-### [第 7 类：质量与反馈](/prompt-context-patterns/catalog/categories/patterns-quality-and-feedback-zh)
-如何确保输出质量 — 评分标准、自我批评、反馈循环和版本管理。
-
-**模式：** Scoring Rubrics (27), Self-Critique (28), Feedback Solicitation (29), Version Check (30)
-
-<a id="cat-8"></a>
-### [第 8 类：高级 Agent 编排](/prompt-context-patterns/catalog/categories/patterns-advanced-orchestration-zh)
-生产级多 Agent 架构 — 状态机、共识网格、对抗性规划、成本优化路由、记忆隔离。
-
-**模式：** Adversarial Persona (31), Hub-and-Spoke State Machine (32), Cross-Model Consensus (33), Adversarial Planning (34), Model Routing (35), Handoff Context (36), Context Efficiency (37), Complexity Tiers (38), Message Board (39), Cloud Delegation (40), Loop Prevention (41), Memory Isolation (42), Sparse Worktree (43), Severity Promotion (44)
-
-<a id="cat-9"></a>
-### [第 9 类：高级质量与评估](/prompt-context-patterns/catalog/categories/patterns-advanced-quality-zh)
-深度评审架构 — 指令式评审、证据优先分析、对抗性三人组、LLM-as-judge、测试脚手架。
-
-**模式：** Directive Review (45), Repo Discovery (46), Evidence-First (47), Rule Catalog (48), Impact Formulas (49), Adversarial Triad (50), Schema Gate (51), LLM-as-Judge (52), Retro Rubric (53), Test Scaffolding (54), Triage Skip (55)
-
-<a id="cat-10"></a>
-### [第 10 类：高级安全与合规](/prompt-context-patterns/catalog/categories/patterns-advanced-safety-zh)
-生产级安全 — MCP 数据防护栏、XPIA 防御、控诉-辩护-裁判、数据分类、策略即数据。
-
-**模式：** MCP-Data Guardrail (56), Injection-as-Finding (57), Prosecutor-Defender-Judge (58), Rescue Tags (59), Tiered Permissions (60), Data Classification (61), XPIA Defense (62), Litmus Tests (63), Posture Delta (64), Confidence Gates (65), Non-Disclosure (66), Skill Security Checklist (67), Orchestrator-Only (68), Policy-as-Data (69)
-
-<a id="cat-11"></a>
-### [第 11 类：高级工作流与自主性](/prompt-context-patterns/catalog/categories/patterns-advanced-workflow-zh)
-规模化执行控制 — 状态文件、零提问分诊、看板编排、自主开发、事件响应。
-
-**模式：** State File Continuity (70), Zero-Questions (71), Kanban Pull (72), Deployment State Machine (73), PR Feedback Resolution (74), Autonomous Dev Flow (75), Burst Query (76), Time-Boxed Investigation (77), Override Knowledge (78), Escalation Matrix (79), Scope Checkpoints (80)
-
-<a id="cat-12"></a>
-### [第 12 类：高级输入/输出与领域特化](/prompt-context-patterns/catalog/categories/patterns-advanced-io-domain-zh)
-输入/输出转换、领域推理脚手架、可视化指令、交互式推理、风格转换和受众适配。
-
-**模式：** Schema Decomposition (81), Chart Decision Tree (82), Audience Calibration (83), Socratic Loop (84), KB Index Routing (85), Heuristic Scoring (86), Eager Materialization (87), Data Shape Detection (88), Writability Rules (89), Compatibility Matrix (90), Overlap Resolution Router (91)
-
-<a id="cat-13"></a>
-### [第 13 类：补充 — 入职、生产力、迁移与创意](/prompt-context-patterns/catalog/categories/patterns-gap-fills-zh)
-来自覆盖不足领域的模式：基于 DAG 的入职旅程、个人生产力、自学习迁移和创意输出无障碍。
-
-**模式：** DAG Journey (92), Evidence Harvest (93), Promise Detection (94), Self-Learning (95), Batch Migration (96), Delivery Restriction (97), Register Translation Review (98), A11y Post-Processing (99)
-
-<a id="cat-14"></a>
-### [第 14 类：开源技能模式](/prompt-context-patterns/catalog/categories/patterns-open-source-skills-zh)
-提取自 Anthropic 官方 Agent Skills 仓库（17 个技能）和 ComposioHQ 社区精选 awesome-claude-skills 仓库（32 个独立 + 832 个 Composio 模板技能）。涵盖渐进式披露、创意脚手架、视觉 QA、评估驱动改进、SaaS 集成模板和多语言 SDK 路由。
-
-**模式：** Progressive Disclosure (100), Creative Philosophy (101), Refinement Pass (102), Reconnaissance-Then-Action (103), Helper Script Black Box (104), Anti-Slop (105), Collaborative Drafting (106), Reader Testing (107), Blind A/B (108), SaaS Integration (109), Algorithm-as-Knowledge (110), Clarifying Questions (111), Populated Examples (112), Input-Type Routing (113), Asset Bundling (114), Visual QA (115), Never-Hardcode (116), Language Routing (117), Architecture Selection (118), Eval-Driven Loop (119), Provider Guard (120)
-
-**架构配套文件：** [skill-architecture-patterns.md](/prompt-context-patterns/catalog/techniques/skill-architecture-zh) — 技能打包、市场分组、参考文件组织、子 Agent 设计、脚本集成和跨仓库对比。
-
-<a id="cat-15"></a>
-### [第 15 类：Claude Code 平台模式](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-zh)
-提取自 Claude Code 系统提示词的模式 — 平台级关注点：记忆分类、权限模型、调度、工具路由、Agent 调度和上下文存活。
-
-**模式：** Typed Memory Taxonomy (121), Bidirectional Feedback Capture (122), Reversibility x Blast-Radius (123), Tool Preference with Hard Routing (124), Cache-Aware Scheduling (125), Agent Briefing Protocol (126), Parallel-Safe Step Identification (127), Context Compaction Survival (128), Non-Sticky Authorization (129), Investigate Before Destroying (130), Output Visibility Awareness (131), Hook-Driven Automation (132)
-
-<a id="cat-16"></a>
-### [第 16 类：Claude Code 平台模式 — 扩展](/prompt-context-patterns/catalog/categories/patterns-claude-code-platform-extended-zh)
-来自 Claude Code 可组合提示词系统的更深层架构模式：Agent 派生、安全分类、团队协调和记忆整合。
-
-**模式：** Compositional Prompt Assembly (133), Tool-Constraint Agent Boundaries (134), Fork vs Fresh Spawning (135), Security Monitor Agent (136), Analysis-First Compaction (137), Team Task Board Coordination (138), Background Job Narration (139), Autonomous Trust Calibration (140), REPL as Tool Composition Layer (141), Immutable Memory with Dream Consolidation (142)
-
----
-
-## 与基础技术的映射关系
-
-30 个模式如何对应 [prompt-engineering-for-skills.md](/prompt-context-patterns/catalog/techniques/token-level-techniques-zh) 中的 9 个基础技术：
-
-| 基础技术 | 应用该技术的模式 |
-|----------|-----------------|
-| **决策树** | Workflow Mode Branching (3), Intent Classification (20), Error Handling (15), Input-Type Routing (113), Language Routing (117), Architecture Selection (118) |
-| **锚定** | Domain Knowledge Embedding (24), Few-Shot Examples (25), Structured Output Templates (14), Populated Examples (112), Algorithm-as-Knowledge (110), Reconnaissance-Then-Action (103) |
-| **认知卸载** | Phased Execution (2), Evidence Chain (26), Scoring Rubrics (27), Helper Script Black Box (104), Collaborative Drafting (106), Eval-Driven Loop (119) |
-| **注意力局部性** | Negative Constraints (6), Reference File Injection (23), Tool Routing Tables (21), Progressive Disclosure (100) |
-| **指令-动作绑定** | Confirmation Gates (8), Interactive Flow Control (7), Progress Feedback (9), Clarifying Questions (111) |
-| **Schema 预设** | YAML Frontmatter (1), Structured Output Templates (14), Scoring Rubrics (27), Populated Examples (112) |
-| **负空间** | Negative Constraints (6), Activation Scope (13), Read-Only Boundary (12), Anti-Slop (105), Provider Guard (120), Never-Hardcode (116) |
-| **XML 语义边界** | Structured Output Templates (14), Few-Shot Examples (25), Domain Knowledge (24), Creative Philosophy (101) |
-| **带推理的示例** | Few-Shot Examples (25), Evidence Chain (26), Self-Critique (28), Blind A/B (108), Refinement Pass (102) |
-
----
-
-## 数据来源
-
-提取自对 500+ 生产级 AI Agent 插件的分析，覆盖 DevOps、安全、迁移和事件响应领域，以及 Anthropic 官方 Agent Skills 仓库（17 个技能）和 ComposioHQ 社区精选 awesome-claude-skills 仓库（32 个独立 + 832 个 Composio 模板技能）。
+# 方法总目录
+
+306 个方法，按编号排列。点击分类可查看同类方法。
+
+[搜索与筛选]({{ '/catalog/browse/?lang=zh' | relative_url }})
+
+<a id="quick-reference-table"></a>
+
+| ID | 方法 | 分类 | 来源状态 |
+| --- | --- | --- | --- |
+| 1 | [写清 Skill 的名称和触发条件]({{ '/catalog/patterns/1-zh/' | relative_url }})<br><span class="english-name" lang="en">Name a Skill and describe when to use it</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 2 | [按阶段推进任务]({{ '/catalog/patterns/2-zh/' | relative_url }})<br><span class="english-name" lang="en">Phased/Stepped Execution</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 3 | [先选择工作模式]({{ '/catalog/patterns/3-zh/' | relative_url }})<br><span class="english-name" lang="en">Workflow Mode Branching</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 4 | [$ARGUMENTS 调用参数]({{ '/catalog/patterns/4-zh/' | relative_url }})<br><span class="english-name" lang="en">$ARGUMENTS Variable</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 来源未确认 |
+| 5 | [为 Agent 指定角色和职责]({{ '/catalog/patterns/5-zh/' | relative_url }})<br><span class="english-name" lang="en">Persona/Role Assignment</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 来源未确认 |
+| 6 | [明确禁止事项与替代做法]({{ '/catalog/patterns/6-zh/' | relative_url }})<br><span class="english-name" lang="en">Negative Constraints</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 7 | [根据回答决定下一步]({{ '/catalog/patterns/7-zh/' | relative_url }})<br><span class="english-name" lang="en">Interactive Flow Control</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 8 | [关键操作前确认授权]({{ '/catalog/patterns/8-zh/' | relative_url }})<br><span class="english-name" lang="en">Confirmation Gates</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 9 | [报告进展与最终结果]({{ '/catalog/patterns/9-zh/' | relative_url }})<br><span class="english-name" lang="en">Progress Feedback</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 10 | [防止外部内容篡改指令]({{ '/catalog/patterns/10-zh/' | relative_url }})<br><span class="english-name" lang="en">Prompt Injection Defense</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 11 | [隐藏敏感数据]({{ '/catalog/patterns/11-zh/' | relative_url }})<br><span class="english-name" lang="en">Sensitive Data Redaction</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 12 | [明确只读操作范围]({{ '/catalog/patterns/12-zh/' | relative_url }})<br><span class="english-name" lang="en">Read-Only Boundary</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 13 | [明确 Skill 的触发条件]({{ '/catalog/patterns/13-zh/' | relative_url }})<br><span class="english-name" lang="en">Activation Scope</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 14 | [约定结构化输出格式]({{ '/catalog/patterns/14-zh/' | relative_url }})<br><span class="english-name" lang="en">Structured Output Templates</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 15 | [按错误恢复，必要时交付部分结果]({{ '/catalog/patterns/15-zh/' | relative_url }})<br><span class="english-name" lang="en">Error Handling / Degradation</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 16 | [保存并校验配置]({{ '/catalog/patterns/16-zh/' | relative_url }})<br><span class="english-name" lang="en">Configuration Persistence</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 来源未确认 |
+| 17 | [按平台选择兼容命令]({{ '/catalog/patterns/17-zh/' | relative_url }})<br><span class="english-name" lang="en">Cross-Platform Handling</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 18 | [协调多个 Agent]({{ '/catalog/patterns/18-zh/' | relative_url }})<br><span class="english-name" lang="en">Multi-Agent Orchestration</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 19 | [组合已有 Skill]({{ '/catalog/patterns/19-zh/' | relative_url }})<br><span class="english-name" lang="en">Skill Composition</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 来源未确认 |
+| 20 | [识别请求意图并选择流程]({{ '/catalog/patterns/20-zh/' | relative_url }})<br><span class="english-name" lang="en">Intent Classification</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 21 | [用路由表选择工具]({{ '/catalog/patterns/21-zh/' | relative_url }})<br><span class="english-name" lang="en">Tool Routing Tables</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 22 | [合并重复发现，保留实质差异]({{ '/catalog/patterns/22-zh/' | relative_url }})<br><span class="english-name" lang="en">Deduplication / Consensus</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 来源未确认 |
+| 23 | [按需读取参考文件]({{ '/catalog/patterns/23-zh/' | relative_url }})<br><span class="english-name" lang="en">Reference File Injection</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 24 | [在使用处提供领域知识]({{ '/catalog/patterns/24-zh/' | relative_url }})<br><span class="english-name" lang="en">Domain Knowledge Embedding</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 来源未确认 |
+| 25 | [用少量示例说明做法]({{ '/catalog/patterns/25-zh/' | relative_url }})<br><span class="english-name" lang="en">Few-Shot Examples</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 26 | [用证据支撑结论]({{ '/catalog/patterns/26-zh/' | relative_url }})<br><span class="english-name" lang="en">Evidence Chain / Proof-of-Work</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 27 | [制定具体的评分标准]({{ '/catalog/patterns/27-zh/' | relative_url }})<br><span class="english-name" lang="en">Scoring Rubrics</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 28 | [先检查自己的草稿]({{ '/catalog/patterns/28-zh/' | relative_url }})<br><span class="english-name" lang="en">Self-Critique</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 29 | [在合适的节点征求反馈]({{ '/catalog/patterns/29-zh/' | relative_url }})<br><span class="english-name" lang="en">Feedback Solicitation</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 30 | [检查已安装版本与可用版本]({{ '/catalog/patterns/30-zh/' | relative_url }})<br><span class="english-name" lang="en">Version Check</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 32 | [由中心协调开发流程]({{ '/catalog/patterns/32-zh/' | relative_url }})<br><span class="english-name" lang="en">Hub-and-Spoke SDLC State Machine</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 34 | [用两个模型互相质疑方案]({{ '/catalog/patterns/34-zh/' | relative_url }})<br><span class="english-name" lang="en">Dual-Model Adversarial Planning</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 35 | [按任务选择合适成本的模型]({{ '/catalog/patterns/35-zh/' | relative_url }})<br><span class="english-name" lang="en">Cost-Optimized Model Routing</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 36 | [交接任务时保留必要上下文]({{ '/catalog/patterns/36-zh/' | relative_url }})<br><span class="english-name" lang="en">Handoff Context Protocol</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 41 | [设置循环次数上限]({{ '/catalog/patterns/41-zh/' | relative_url }})<br><span class="english-name" lang="en">Loop Prevention with Max Iterations</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 42 | [隔离各 Agent 的工作记忆]({{ '/catalog/patterns/42-zh/' | relative_url }})<br><span class="english-name" lang="en">Agent Memory Isolation</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 43 | [在独立检出目录中评审]({{ '/catalog/patterns/43-zh/' | relative_url }})<br><span class="english-name" lang="en">Isolated Review Checkout</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 47 | [用证据说明评审发现]({{ '/catalog/patterns/47-zh/' | relative_url }})<br><span class="english-name" lang="en">Evidence-First Review</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 48 | [按 YAML 规则清单评审]({{ '/catalog/patterns/48-zh/' | relative_url }})<br><span class="english-name" lang="en">Rule-Catalog Review (YAML)</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 来源未确认 |
+| 50 | [让三方质疑并回应反对意见]({{ '/catalog/patterns/50-zh/' | relative_url }})<br><span class="english-name" lang="en">Adversarial Triad + Counterarguments</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 51 | [校验数据格式后再继续]({{ '/catalog/patterns/51-zh/' | relative_url }})<br><span class="english-name" lang="en">Schema Validation Gate</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 52 | [按明确标准评估模型]({{ '/catalog/patterns/52-zh/' | relative_url }})<br><span class="english-name" lang="en">Rubric-Based Model Evaluation</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 59 | [危险操作前保存恢复标记]({{ '/catalog/patterns/59-zh/' | relative_url }})<br><span class="english-name" lang="en">Rescue-Tag-Before-Destructive-Operation</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 来源未确认 |
+| 60 | [按风险划分操作权限]({{ '/catalog/patterns/60-zh/' | relative_url }})<br><span class="english-name" lang="en">Tiered Permission Model (RED/DEFER/GREEN)</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 来源未确认 |
+| 61 | [按数据级别决定可去往的目标]({{ '/catalog/patterns/61-zh/' | relative_url }})<br><span class="english-name" lang="en">Data Classification Matrix (4-Level)</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 来源未确认 |
+| 67 | [检查 Skill 的全部交付内容]({{ '/catalog/patterns/67-zh/' | relative_url }})<br><span class="english-name" lang="en">Whole-Payload Skill Review</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 68 | [协调者只分工，不直接处理数据]({{ '/catalog/patterns/68-zh/' | relative_url }})<br><span class="english-name" lang="en">Orchestrator-Only (No Direct Data)</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 来源未确认 |
+| 70 | [用状态文件接续任务]({{ '/catalog/patterns/70-zh/' | relative_url }})<br><span class="english-name" lang="en">State File as Sole Continuity</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 72 | [从看板领取依赖已满足的任务]({{ '/catalog/patterns/72-zh/' | relative_url }})<br><span class="english-name" lang="en">Pull-Based Kanban Orchestration</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 来源未确认 |
+| 73 | [让重试安全且可以恢复]({{ '/catalog/patterns/73-zh/' | relative_url }})<br><span class="english-name" lang="en">Resumable Idempotent Actions</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 74 | [核实并处理 PR 评审反馈]({{ '/catalog/patterns/74-zh/' | relative_url }})<br><span class="english-name" lang="en">Autonomous PR Feedback Resolution</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 76 | [错开批量查询并限制速率]({{ '/catalog/patterns/76-zh/' | relative_url }})<br><span class="english-name" lang="en">Staggered Burst Query + Rate Limits</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 77 | [为调查设置时间预算]({{ '/catalog/patterns/77-zh/' | relative_url }})<br><span class="english-name" lang="en">Time-Boxed Investigation</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 81 | [把自然语言需求拆成关系表结构]({{ '/catalog/patterns/81-zh/' | relative_url }})<br><span class="english-name" lang="en">NL to Relational Schema Decomposition</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 来源未确认 |
+| 83 | [按读者和目的调整内容]({{ '/catalog/patterns/83-zh/' | relative_url }})<br><span class="english-name" lang="en">Audience-Purpose Content Calibration</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 87 | [随处理进度逐步保存结果]({{ '/catalog/patterns/87-zh/' | relative_url }})<br><span class="english-name" lang="en">Eager Incremental Materialization</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 89 | [明确哪些字段可以修改]({{ '/catalog/patterns/89-zh/' | relative_url }})<br><span class="english-name" lang="en">Writability Rules + Substitution Tables</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 来源未确认 |
+| 92 | [按依赖顺序推进并检查阶段条件]({{ '/catalog/patterns/92-zh/' | relative_url }})<br><span class="english-name" lang="en">DAG Journey with Typed Gates</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 94 | [确认承诺后更新知识库]({{ '/catalog/patterns/94-zh/' | relative_url }})<br><span class="english-name" lang="en">Promise Detection and KB Sync</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 来源未确认 |
+| 95 | [失败后记录可复用的教训]({{ '/catalog/patterns/95-zh/' | relative_url }})<br><span class="english-name" lang="en">Mandatory Self-Learning After Failure</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 96 | [按风险分批迁移并验证构建]({{ '/catalog/patterns/96-zh/' | relative_url }})<br><span class="english-name" lang="en">Risk-Ordered Batch Migration + Build-Verify</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 100 | [按需展开详细内容]({{ '/catalog/patterns/100-zh/' | relative_url }})<br><span class="english-name" lang="en">Progressive Disclosure Architecture</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 101 | [先明确创作理念]({{ '/catalog/patterns/101-zh/' | relative_url }})<br><span class="english-name" lang="en">Creative Philosophy Scaffolding</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 103 | [先了解现状，再采取行动]({{ '/catalog/patterns/103-zh/' | relative_url }})<br><span class="english-name" lang="en">Reconnaissance-Then-Action</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 104 | [按接口使用辅助脚本]({{ '/catalog/patterns/104-zh/' | relative_url }})<br><span class="english-name" lang="en">Helper Script as Black Box</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 106 | [逐节协作写作]({{ '/catalog/patterns/106-zh/' | relative_url }})<br><span class="english-name" lang="en">Section-by-Section Collaborative Drafting</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 107 | [让新 Agent 试读文档]({{ '/catalog/patterns/107-zh/' | relative_url }})<br><span class="english-name" lang="en">Reader Testing with Sub-Agent</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 108 | [隐藏版本身份做 A/B 对比]({{ '/catalog/patterns/108-zh/' | relative_url }})<br><span class="english-name" lang="en">Blind A/B Comparison</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 109 | [Composio 三步接入 SaaS]({{ '/catalog/patterns/109-zh/' | relative_url }})<br><span class="english-name" lang="en">Composio 3-Step SaaS Integration</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 115 | [用 QA Agent 检查实际页面]({{ '/catalog/patterns/115-zh/' | relative_url }})<br><span class="english-name" lang="en">QA Sub-Agent with Visual Verification</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 116 | [让可编辑文件保留计算关系]({{ '/catalog/patterns/116-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve Computation in Editable Artifacts</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 119 | [通过评测迭代 Skill]({{ '/catalog/patterns/119-zh/' | relative_url }})<br><span class="english-name" lang="en">Eval-Driven Skill Improvement Loop</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 121 | [按用途分类保存记忆]({{ '/catalog/patterns/121-zh/' | relative_url }})<br><span class="english-name" lang="en">Typed Memory Taxonomy</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 来源未确认 |
+| 123 | [按授权范围评估操作风险]({{ '/catalog/patterns/123-zh/' | relative_url }})<br><span class="english-name" lang="en">Scoped Authorization and Action Risk</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 127 | [识别可以安全并行的步骤]({{ '/catalog/patterns/127-zh/' | relative_url }})<br><span class="english-name" lang="en">Parallel-Safe Step Identification</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 128 | [上下文压缩后仍能继续任务]({{ '/catalog/patterns/128-zh/' | relative_url }})<br><span class="english-name" lang="en">Context Compaction Survival</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 132 | [用 Hook 自动执行生命周期动作]({{ '/catalog/patterns/132-zh/' | relative_url }})<br><span class="english-name" lang="en">Hook-Driven Automation</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 133 | [按模块组装提示词]({{ '/catalog/patterns/133-zh/' | relative_url }})<br><span class="english-name" lang="en">Compositional Prompt Assembly</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 134 | [让所有工具路径遵守同一限制]({{ '/catalog/patterns/134-zh/' | relative_url }})<br><span class="english-name" lang="en">Tool-Constraint Boundaries</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 135 | [选择继承上下文或全新启动]({{ '/catalog/patterns/135-zh/' | relative_url }})<br><span class="english-name" lang="en">Fork vs Fresh Spawning</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 来源未确认 |
+| 141 | [在 REPL 中组合工具调用]({{ '/catalog/patterns/141-zh/' | relative_url }})<br><span class="english-name" lang="en">REPL as Tool Composition</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 143 | [优先使用预设，缺少时再生成]({{ '/catalog/patterns/143-zh/' | relative_url }})<br><span class="english-name" lang="en">Pre-Set Catalog with Generate-On-The-Fly Fallback</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 144 | [设计方便 Agent 使用的工具接口]({{ '/catalog/patterns/144-zh/' | relative_url }})<br><span class="english-name" lang="en">Agent-Centric Tool Design Principles</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 145 | [让必须验证的要求足够明确]({{ '/catalog/patterns/145-zh/' | relative_url }})<br><span class="english-name" lang="en">Evidence-Bound Verification Rule</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 146 | [提前列出常见借口与反驳]({{ '/catalog/patterns/146-zh/' | relative_url }})<br><span class="english-name" lang="en">Rationalization-Prevention Table</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 148 | [避免空泛附和]({{ '/catalog/patterns/148-zh/' | relative_url }})<br><span class="english-name" lang="en">Anti-Performative-Agreement Vocabulary Ban</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 149 | [用压力场景测试 Skill]({{ '/catalog/patterns/149-zh/' | relative_url }})<br><span class="english-name" lang="en">Pressure-Scenario TDD for Skill Authoring</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 150 | [持续推进已授权的任务]({{ '/catalog/patterns/150-zh/' | relative_url }})<br><span class="english-name" lang="en">Continuous Execution Mandate</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 151 | [写清前置条件和检查点]({{ '/catalog/patterns/151-zh/' | relative_url }})<br><span class="english-name" lang="en">Explicit Preconditions with Gate Markers</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 152 | [用 DOT 图描述提示词决策流程]({{ '/catalog/patterns/152-zh/' | relative_url }})<br><span class="english-name" lang="en">DOT-Graph Decision Flow Embedded in Prompt</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 153 | [锁定不同来源的安装版本]({{ '/catalog/patterns/153-zh/' | relative_url }})<br><span class="english-name" lang="en">Marketplace Source-Type Polymorphism (SHA-Pinned)</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 154 | [用 Stop Hook 继续循环任务]({{ '/catalog/patterns/154-zh/' | relative_url }})<br><span class="english-name" lang="en">Self-Looping Stop Hook (Ralph Loop)</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 155 | [停用旧能力时提供迁移路径]({{ '/catalog/patterns/155-zh/' | relative_url }})<br><span class="english-name" lang="en">Capability Retirement with Migration Paths</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 156 | [派发评审时不预设结论]({{ '/catalog/patterns/156-zh/' | relative_url }})<br><span class="english-name" lang="en">No-Pre-Judging Reviewer Dispatch</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 158 | [计划要求的缺陷也要报告]({{ '/catalog/patterns/158-zh/' | relative_url }})<br><span class="english-name" lang="en">Plan-Mandated Defect Is Still a Finding</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 159 | [默认只评审 diff，明确风险时例外]({{ '/catalog/patterns/159-zh/' | relative_url }})<br><span class="english-name" lang="en">Diff-Scoped Review with Named-Risk Escape Hatch</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 160 | [评审时复用有效测试证据]({{ '/catalog/patterns/160-zh/' | relative_url }})<br><span class="english-name" lang="en">Reviewer Does Not Re-Run the Implementer&#39;s Tests</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 164 | [由一个负责人统一修复评审问题]({{ '/catalog/patterns/164-zh/' | relative_url }})<br><span class="english-name" lang="en">Batch Remediation: One Fixer for All Findings</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 165 | [按评审要求划分任务大小]({{ '/catalog/patterns/165-zh/' | relative_url }})<br><span class="english-name" lang="en">Reviewer-Gate Task Right-Sizing</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 166 | [原样传递全局约束]({{ '/catalog/patterns/166-zh/' | relative_url }})<br><span class="english-name" lang="en">Verbatim Global-Constraints Block</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 167 | [声明每个任务的输入和输出]({{ '/catalog/patterns/167-zh/' | relative_url }})<br><span class="english-name" lang="en">Per-Task Interfaces Block (Consumes/Produces)</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 170 | [需要时再介绍可用能力]({{ '/catalog/patterns/170-zh/' | relative_url }})<br><span class="english-name" lang="en">Just-In-Time Capability Offer</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 来源未确认 |
+| 171 | [用动作描述能力，单独绑定工具]({{ '/catalog/patterns/171-zh/' | relative_url }})<br><span class="english-name" lang="en">Action-Verb Tool Abstraction</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 173 | [缺少能力时说明限制]({{ '/catalog/patterns/173-zh/' | relative_url }})<br><span class="english-name" lang="en">Capability-Absent Anti-Fabrication Fallback</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 174 | [只纳入实际可触达的变更]({{ '/catalog/patterns/174-zh/' | relative_url }})<br><span class="english-name" lang="en">Reachability-Scoped Delta</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 来源未确认 |
+| 175 | [区分工具执行的三种状态]({{ '/catalog/patterns/175-zh/' | relative_url }})<br><span class="english-name" lang="en">Tool-Ran Tri-State Provenance</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 176 | [与基线比较，检查行为是否等价]({{ '/catalog/patterns/176-zh/' | relative_url }})<br><span class="english-name" lang="en">Differential Baseline-Equivalence Oracle</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 177 | [实际试用能力，而不只检查存在]({{ '/catalog/patterns/177-zh/' | relative_url }})<br><span class="english-name" lang="en">Capability Smoke-Test Over Presence-Check</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 178 | [检查派生文件是否过期]({{ '/catalog/patterns/178-zh/' | relative_url }})<br><span class="english-name" lang="en">Derivation-Order Staleness Check</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 181 | [检查凭据是否流向正确的服务]({{ '/catalog/patterns/181-zh/' | relative_url }})<br><span class="english-name" lang="en">Cross-Service Credential-Routing Detection</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 来源未确认 |
+| 183 | [转义不可信内容中的标记]({{ '/catalog/patterns/183-zh/' | relative_url }})<br><span class="english-name" lang="en">Untrusted-Content-as-Markup Escaping</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 188 | [保留固定网址，改名时添加跳转]({{ '/catalog/patterns/188-zh/' | relative_url }})<br><span class="english-name" lang="en">Immutable-Slug Identity with Rename Redirect Map</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 来源未确认 |
+| 190 | [权衡调用成本与理解成本]({{ '/catalog/patterns/190-zh/' | relative_url }})<br><span class="english-name" lang="en">Invocation Economics (Context vs Cognitive Load)</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 192 | [检查指令是否改变默认行为]({{ '/catalog/patterns/192-zh/' | relative_url }})<br><span class="english-name" lang="en">No-Op Test (Behavior-vs-Default Pruning)</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 193 | [同时检查可验证性和完整性]({{ '/catalog/patterns/193-zh/' | relative_url }})<br><span class="english-name" lang="en">Two-Axis Completion Criterion (Checkable + Exhaustive)</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 194 | [统一术语，避免同义词混用]({{ '/catalog/patterns/194-zh/' | relative_url }})<br><span class="english-name" lang="en">Controlled Vocabulary with Banned Synonyms</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 197 | [只规划当前已知的部分]({{ '/catalog/patterns/197-zh/' | relative_url }})<br><span class="english-name" lang="en">Fog of War (Frontier Planning)</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 198 | [分别检查标准与需求]({{ '/catalog/patterns/198-zh/' | relative_url }})<br><span class="english-name" lang="en">Two-Axis Orthogonal Review (No Cross-Axis Reranking)</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 201 | [把缺少模块边界也作为问题]({{ '/catalog/patterns/201-zh/' | relative_url }})<br><span class="english-name" lang="en">Absence-of-Seam as a Finding</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 202 | [先建立反馈回路，再提出假设]({{ '/catalog/patterns/202-zh/' | relative_url }})<br><span class="english-name" lang="en">Feedback-Loop-Before-Hypothesis Gate</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 204 | [无法安全运行时追踪代码路径]({{ '/catalog/patterns/204-zh/' | relative_url }})<br><span class="english-name" lang="en">Static-Trace Verification When Execution Is Unsafe</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 206 | [判断是否值得记录 ADR]({{ '/catalog/patterns/206-zh/' | relative_url }})<br><span class="english-name" lang="en">ADR-Worthiness Triple Gate</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 207 | [等待异步任务真正完成]({{ '/catalog/patterns/207-zh/' | relative_url }})<br><span class="english-name" lang="en">Wait for a job’s terminal state</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 208 | [检查产物的实际尺寸和限制]({{ '/catalog/patterns/208-zh/' | relative_url }})<br><span class="english-name" lang="en">Validate measured artifact constraints</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 209 | [分批处理并保存进度]({{ '/catalog/patterns/209-zh/' | relative_url }})<br><span class="english-name" lang="en">Checkpoint partial bulk progress</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 210 | [用增量令牌同步变化]({{ '/catalog/patterns/210-zh/' | relative_url }})<br><span class="english-name" lang="en">Use delta tokens for recurring synchronization</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 211 | [按错误类型选择恢复方式]({{ '/catalog/patterns/211-zh/' | relative_url }})<br><span class="english-name" lang="en">Recover according to failure class</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 212 | [更新前读取当前版本号]({{ '/catalog/patterns/212-zh/' | relative_url }})<br><span class="english-name" lang="en">Read fresh version tokens before update</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 213 | [启动、等待并清理辅助进程]({{ '/catalog/patterns/213-zh/' | relative_url }})<br><span class="english-name" lang="en">Manage helper process lifetime</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 214 | [先查询当前可用的能力]({{ '/catalog/patterns/214-zh/' | relative_url }})<br><span class="english-name" lang="en">Choose capabilities from current metadata</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 215 | [确认分页数据已全部读取]({{ '/catalog/patterns/215-zh/' | relative_url }})<br><span class="english-name" lang="en">Prove paginated retrieval is complete</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 216 | [批量请求成功后仍检查每一项]({{ '/catalog/patterns/216-zh/' | relative_url }})<br><span class="english-name" lang="en">Validate per-item outcomes inside batch success</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 217 | [交付前保存临时文件]({{ '/catalog/patterns/217-zh/' | relative_url }})<br><span class="english-name" lang="en">Materialize expiring outputs before handoff</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 218 | [先用小样本验证抽取规则]({{ '/catalog/patterns/218-zh/' | relative_url }})<br><span class="english-name" lang="en">Pilot a fixed extraction contract</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 219 | [编辑前确认是替换还是局部更新]({{ '/catalog/patterns/219-zh/' | relative_url }})<br><span class="english-name" lang="en">Check replace semantics before editing</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 220 | [在正确范围内查询资源 ID]({{ '/catalog/patterns/220-zh/' | relative_url }})<br><span class="english-name" lang="en">Resolve opaque IDs within their scope</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 221 | [文件整理时保留撤销记录]({{ '/catalog/patterns/221-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep an undo ledger for file operations</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 222 | [构造参数前读取 schema 引用]({{ '/catalog/patterns/222-zh/' | relative_url }})<br><span class="english-name" lang="en">Resolve schema references before arguments</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 223 | [操作前明确选择目标组织]({{ '/catalog/patterns/223-zh/' | relative_url }})<br><span class="english-name" lang="en">Bind actions to the selected tenant</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 224 | [写清未完成任务的续接位置]({{ '/catalog/patterns/224-zh/' | relative_url }})<br><span class="english-name" lang="en">Explicit continuation contract</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 225 | [先判断指令来自谁]({{ '/catalog/patterns/225-zh/' | relative_url }})<br><span class="english-name" lang="en">Identify the actor before inferring intent</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 226 | [同时考虑正常使用和滥用场景]({{ '/catalog/patterns/226-zh/' | relative_url }})<br><span class="english-name" lang="en">Abuse cases beside intended use cases</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 227 | [按承诺的交付类型评分]({{ '/catalog/patterns/227-zh/' | relative_url }})<br><span class="english-name" lang="en">Grade the declared artifact kind</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 228 | [先验证决定方案成败的假设]({{ '/catalog/patterns/228-zh/' | relative_url }})<br><span class="english-name" lang="en">Validate kill assumptions before secondary preferences</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 229 | [原子认领任务并绑定原始内容]({{ '/catalog/patterns/229-zh/' | relative_url }})<br><span class="english-name" lang="en">Atomic claim with payload binding</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 230 | [缓存键包含所有影响结果的参数]({{ '/catalog/patterns/230-zh/' | relative_url }})<br><span class="english-name" lang="en">Cache keys encode response-changing inputs</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 231 | [数据是最新的，不代表答案仍适用]({{ '/catalog/patterns/231-zh/' | relative_url }})<br><span class="english-name" lang="en">Resource freshness versus reading relevance</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 232 | [按检查成本安排验证时机]({{ '/catalog/patterns/232-zh/' | relative_url }})<br><span class="english-name" lang="en">Place checks by feedback cost</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 233 | [用实际使用方验证产物]({{ '/catalog/patterns/233-zh/' | relative_url }})<br><span class="english-name" lang="en">Validate the consumer interpretation</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 234 | [删除前确认路径范围和所有权]({{ '/catalog/patterns/234-zh/' | relative_url }})<br><span class="english-name" lang="en">Resolve confinement and ownership before destruction</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 235 | [不能给自己免检]({{ '/catalog/patterns/235-zh/' | relative_url }})<br><span class="english-name" lang="en">Exemption authority outside the constrained unit</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 236 | [保留被否决方案的证据]({{ '/catalog/patterns/236-zh/' | relative_url }})<br><span class="english-name" lang="en">Retain rejected experiment evidence</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 237 | [按完整预期结果核对评分]({{ '/catalog/patterns/237-zh/' | relative_url }})<br><span class="english-name" lang="en">Bind grader results to the full expectation set</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 238 | [同时评审代码和通过标准]({{ '/catalog/patterns/238-zh/' | relative_url }})<br><span class="english-name" lang="en">Review changes to the quality bar itself</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 239 | [按调查问题选择协作方式]({{ '/catalog/patterns/239-zh/' | relative_url }})<br><span class="english-name" lang="en">Choose interaction by investigation shape</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 240 | [交接后仍能找到全部引用文件]({{ '/catalog/patterns/240-zh/' | relative_url }})<br><span class="english-name" lang="en">Reference closure in the received artifact</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 241 | [分清工作角色与协调入口]({{ '/catalog/patterns/241-zh/' | relative_url }})<br><span class="english-name" lang="en">Separate workflow, perspective and entry point</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 242 | [以实测基线逐步提高要求]({{ '/catalog/patterns/242-zh/' | relative_url }})<br><span class="english-name" lang="en">Measured baseline ratchet</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 243 | [区分不同类型的测量证据]({{ '/catalog/patterns/243-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve measurement source kinds</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 244 | [排除正常波动后再判断改进]({{ '/catalog/patterns/244-zh/' | relative_url }})<br><span class="english-name" lang="en">Noise-aware intervention comparison</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 245 | [反向路由测试也要去往正确 Skill]({{ '/catalog/patterns/245-zh/' | relative_url }})<br><span class="english-name" lang="en">Owned negative routing controls</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 246 | [避免重复设置路由层]({{ '/catalog/patterns/246-zh/' | relative_url }})<br><span class="english-name" lang="en">One active routing authority</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 247 | [通过引用编辑受保护内容]({{ '/catalog/patterns/247-zh/' | relative_url }})<br><span class="english-name" lang="en">Protected content through an editable projection</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 248 | [先确定要回答的问题，再设置监控]({{ '/catalog/patterns/248-zh/' | relative_url }})<br><span class="english-name" lang="en">Question-to-signal observability</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 249 | [先核实评审意见，再安排修复]({{ '/catalog/patterns/249-zh/' | relative_url }})<br><span class="english-name" lang="en">Ordered reconciliation of reviewer findings</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 250 | [用不会执行内容的方式传递评审材料]({{ '/catalog/patterns/250-zh/' | relative_url }})<br><span class="english-name" lang="en">Pass review artifacts through inert input channels</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 251 | [分别检查任务完成和项目就绪]({{ '/catalog/patterns/251-zh/' | relative_url }})<br><span class="english-name" lang="en">Task acceptance and standing readiness</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 252 | [条件没变化时复用验证结果]({{ '/catalog/patterns/252-zh/' | relative_url }})<br><span class="english-name" lang="en">Reuse verification until its assumptions change</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 253 | [验证监控通道本身能工作]({{ '/catalog/patterns/253-zh/' | relative_url }})<br><span class="english-name" lang="en">Verify the evidence channel itself</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 254 | [为流式任务设置总时限]({{ '/catalog/patterns/254-zh/' | relative_url }})<br><span class="english-name" lang="en">Use a deadline independent of stream activity</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 255 | [不让被测 Agent 接触标准答案]({{ '/catalog/patterns/255-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep answer keys outside agent reach</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 256 | [把评分和记录绑定到同一次尝试]({{ '/catalog/patterns/256-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep attempts, grades and traces coherent</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 257 | [区分生成波动与评分波动]({{ '/catalog/patterns/257-zh/' | relative_url }})<br><span class="english-name" lang="en">Separate build variance from scoring variance</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 258 | [保留完整的响应结构]({{ '/catalog/patterns/258-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve the complete protocol envelope</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 259 | [根据具体结论提出核验问题]({{ '/catalog/patterns/259-zh/' | relative_url }})<br><span class="english-name" lang="en">Concrete, intent-aware verification prompts</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 260 | [简化 schema 时保留完整业务校验]({{ '/catalog/patterns/260-zh/' | relative_url }})<br><span class="english-name" lang="en">Retain full validation beside a compatible schema</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 261 | [工具交接时保留坐标单位]({{ '/catalog/patterns/261-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve coordinate units through tool handoffs</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 262 | [评分规则变化后重新评估所有方案]({{ '/catalog/patterns/262-zh/' | relative_url }})<br><span class="english-name" lang="en">Regrade all variants after a criterion change</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 263 | [区分 Agent 定义版本与运行实例]({{ '/catalog/patterns/263-zh/' | relative_url }})<br><span class="english-name" lang="en">Separate definition versions from runs</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 264 | [确定性的步骤交给普通代码]({{ '/catalog/patterns/264-zh/' | relative_url }})<br><span class="english-name" lang="en">Move deterministic loop steps into code</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 265 | [条件变化后重新设置无改动对照]({{ '/catalog/patterns/265-zh/' | relative_url }})<br><span class="english-name" lang="en">Use fresh no-change controls after drift</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 266 | [检查 Agent 操作后的实际环境]({{ '/catalog/patterns/266-zh/' | relative_url }})<br><span class="english-name" lang="en">Grade the environment left by an agent</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 267 | [多轮比较使用同一组参考产物]({{ '/catalog/patterns/267-zh/' | relative_url }})<br><span class="english-name" lang="en">Freeze comparison references across rounds</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 268 | [断线重连时补齐遗漏事件]({{ '/catalog/patterns/268-zh/' | relative_url }})<br><span class="english-name" lang="en">Reconnect event streams without gaps</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 269 | [说明评测参考答案的来源]({{ '/catalog/patterns/269-zh/' | relative_url }})<br><span class="english-name" lang="en">Record the origin of evaluation references</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 270 | [修订提示词时隔离保留样本的反馈]({{ '/catalog/patterns/270-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep selection feedback out of revision prompts</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 271 | [按作用区分指令文本]({{ '/catalog/patterns/271-zh/' | relative_url }})<br><span class="english-name" lang="en">Classify text by its control function</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 272 | [按用户意图推荐当前可用资料]({{ '/catalog/patterns/272-zh/' | relative_url }})<br><span class="english-name" lang="en">Intent-matched, fresh catalog recommendations</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 273 | [确认最终组合配置能工作]({{ '/catalog/patterns/273-zh/' | relative_url }})<br><span class="english-name" lang="en">Confirm the selected configuration as a whole</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 274 | [优化无效时先定位失败层]({{ '/catalog/patterns/274-zh/' | relative_url }})<br><span class="english-name" lang="en">Classify the failing layer when optimization stalls</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 275 | [从真实应用入口进行评测]({{ '/catalog/patterns/275-zh/' | relative_url }})<br><span class="english-name" lang="en">Evaluate the real application entry point</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 276 | [保留被排除选项及其理由]({{ '/catalog/patterns/276-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep pruning assumptions and deferred choices</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 277 | [处理指令冲突前检查作用范围]({{ '/catalog/patterns/277-zh/' | relative_url }})<br><span class="english-name" lang="en">Check instruction scope before resolving conflicts</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 278 | [按稳定程度排列可缓存的上下文]({{ '/catalog/patterns/278-zh/' | relative_url }})<br><span class="english-name" lang="en">Assemble cached prefixes by stability</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 279 | [完整校验流式响应后再执行工具]({{ '/catalog/patterns/279-zh/' | relative_url }})<br><span class="english-name" lang="en">Validate the whole streamed turn before acting</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 280 | [把需要管控的动作定义成明确工具]({{ '/catalog/patterns/280-zh/' | relative_url }})<br><span class="english-name" lang="en">Promote opaque actions to typed control points</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 281 | [沿调用路径查找错误数据的起点]({{ '/catalog/patterns/281-zh/' | relative_url }})<br><span class="english-name" lang="en">Trace invalid data back to its origin</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 282 | [先确认测试因缺少目标行为而失败]({{ '/catalog/patterns/282-zh/' | relative_url }})<br><span class="english-name" lang="en">Prove behavioral RED before minimal GREEN</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 283 | [汇总前区分增量与累计计数]({{ '/catalog/patterns/283-zh/' | relative_url }})<br><span class="english-name" lang="en">Establish counter semantics before totals</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 284 | [按任务风险决定指令精度]({{ '/catalog/patterns/284-zh/' | relative_url }})<br><span class="english-name" lang="en">Calibrate instruction specificity to fragility</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 285 | [等待明确的就绪条件]({{ '/catalog/patterns/285-zh/' | relative_url }})<br><span class="english-name" lang="en">Wait on a fresh observable predicate</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 286 | [用独立且能发现错误的标准验证]({{ '/catalog/patterns/286-zh/' | relative_url }})<br><span class="english-name" lang="en">Use an independent, mutation-sensitive oracle</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 287 | [关键行动前说明不确定的假设]({{ '/catalog/patterns/287-zh/' | relative_url }})<br><span class="english-name" lang="en">Disclose consequential assumptions before acting</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 288 | [只实现当前需要的复杂度]({{ '/catalog/patterns/288-zh/' | relative_url }})<br><span class="english-name" lang="en">Implement only presently required complexity</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 289 | [把模糊任务改成可验证目标]({{ '/catalog/patterns/289-zh/' | relative_url }})<br><span class="english-name" lang="en">Reformulate tasks as observable goals</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 290 | [让每项修改都对应用户请求]({{ '/catalog/patterns/290-zh/' | relative_url }})<br><span class="english-name" lang="en">Make request-traceable surgical edits</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 291 | [区分官方实现与近似复刻]({{ '/catalog/patterns/291-zh/' | relative_url }})<br><span class="english-name" lang="en">Label implementation approximation provenance</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 292 | [保持统一身份，调整具体构图]({{ '/catalog/patterns/292-zh/' | relative_url }})<br><span class="english-name" lang="en">Lock invariants, vary composition</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 293 | [根据任务决定规则优先级]({{ '/catalog/patterns/293-zh/' | relative_url }})<br><span class="english-name" lang="en">Contextual rule precedence</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 294 | [页面之间要有动作和状态衔接]({{ '/catalog/patterns/294-zh/' | relative_url }})<br><span class="english-name" lang="en">Successor screens require an action and carried state</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 295 | [给看似真实的样例数据标明来源]({{ '/catalog/patterns/295-zh/' | relative_url }})<br><span class="english-name" lang="en">Provenance for precise-looking mock content</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 296 | [先说明效果的用途，再添加效果]({{ '/catalog/patterns/296-zh/' | relative_url }})<br><span class="english-name" lang="en">Behavioral motivation before adding effects</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 297 | [按检查需求拆分参考资料]({{ '/catalog/patterns/297-zh/' | relative_url }})<br><span class="english-name" lang="en">Match reference granularity to inspection needs</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 298 | [改版前盘点必须保留的行为]({{ '/catalog/patterns/298-zh/' | relative_url }})<br><span class="english-name" lang="en">Audit and preserve redesign contracts</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 299 | [交接设计变量的名称、值和用途]({{ '/catalog/patterns/299-zh/' | relative_url }})<br><span class="english-name" lang="en">Semantic token handoff contract</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 300 | [实现参考设计前先检查样本]({{ '/catalog/patterns/300-zh/' | relative_url }})<br><span class="english-name" lang="en">Inspect the specimen before translating it</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 301 | [避免版式泄露测试答案]({{ '/catalog/patterns/301-zh/' | relative_url }})<br><span class="english-name" lang="en">Remove presentation answer cues</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 302 | [主动验证保护规则能拦住违规]({{ '/catalog/patterns/302-zh/' | relative_url }})<br><span class="english-name" lang="en">Guardrail negative-control proof</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 303 | [删除抽象层，推演复杂度会去哪]({{ '/catalog/patterns/303-zh/' | relative_url }})<br><span class="english-name" lang="en">Deletion probe before abstraction</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 304 | [用稳定的行为约定交接 Agent 任务]({{ '/catalog/patterns/304-zh/' | relative_url }})<br><span class="english-name" lang="en">Durable behavioral agent contract</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 305 | [实时查询可执行的环境事实]({{ '/catalog/patterns/305-zh/' | relative_url }})<br><span class="english-name" lang="en">Environment as instruction source of truth</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 306 | [只把有证据的学习成果存入记忆]({{ '/catalog/patterns/306-zh/' | relative_url }})<br><span class="english-name" lang="en">Evidence-gated learning memory</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 307 | [用分阶段迁移保留兼容性]({{ '/catalog/patterns/307-zh/' | relative_url }})<br><span class="english-name" lang="en">Compatibility-preserving migration tickets</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 308 | [区分不完整样本与故意无效的输入]({{ '/catalog/patterns/308-zh/' | relative_url }})<br><span class="english-name" lang="en">Explicit partial and invalid fixture intent</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 309 | [并行执行就绪任务，逐个集成结果]({{ '/catalog/patterns/309-zh/' | relative_url }})<br><span class="english-name" lang="en">Dependency-ready integration frontier</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 310 | [机械规则交给检查工具，判断留给评审]({{ '/catalog/patterns/310-zh/' | relative_url }})<br><span class="english-name" lang="en">Mechanics to checks, judgment to review</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 311 | [按实际后果选择变更证据]({{ '/catalog/patterns/311-zh/' | relative_url }})<br><span class="english-name" lang="en">Consequence-aware change evidence</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 312 | [用一次性原型回答具体问题]({{ '/catalog/patterns/312-zh/' | relative_url }})<br><span class="english-name" lang="en">Question-shaped throwaway experiment</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 313 | [前提确定后再问下一轮问题]({{ '/catalog/patterns/313-zh/' | relative_url }})<br><span class="english-name" lang="en">Dependency-ready question rounds</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 314 | [找到真正掌握信息的人]({{ '/catalog/patterns/314-zh/' | relative_url }})<br><span class="english-name" lang="en">Question the knowledge owner through a send brief</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 315 | [把概念、规则与例外放在一起]({{ '/catalog/patterns/315-zh/' | relative_url }})<br><span class="english-name" lang="en">Co-locate concept rules and caveats</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 316 | [按概念记录被否决的方案]({{ '/catalog/patterns/316-zh/' | relative_url }})<br><span class="english-name" lang="en">Concept-scoped rejection memory</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 317 | [先补充前提，再压缩解释]({{ '/catalog/patterns/317-zh/' | relative_url }})<br><span class="english-name" lang="en">Repair the missing premise before shortening</span> | [输出格式与约束]({{ '/topics/output-zh/' | relative_url }}) | 可查看原文 |
+| 318 | [继续写共享文件前先重读]({{ '/catalog/patterns/318-zh/' | relative_url }})<br><span class="english-name" lang="en">Reread shared artifacts before incremental writes</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 319 | [按依赖类型选择验证替代方案]({{ '/catalog/patterns/319-zh/' | relative_url }})<br><span class="english-name" lang="en">Dependency-calibrated verification adapters</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 320 | [在真实环境中比较设计方案]({{ '/catalog/patterns/320-zh/' | relative_url }})<br><span class="english-name" lang="en">Compare structural variants in shared context</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 321 | [用不同约束探索不同方案]({{ '/catalog/patterns/321-zh/' | relative_url }})<br><span class="english-name" lang="en">Differentiated design briefs</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 322 | [区分工具目录和项目目录]({{ '/catalog/patterns/322-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep tool roots separate from project roots</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 323 | [保存全局设计规则与页面差异]({{ '/catalog/patterns/323-zh/' | relative_url }})<br><span class="english-name" lang="en">Persist a master design system with page-specific overrides</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 324 | [复用界面建议前先核对适用性]({{ '/catalog/patterns/324-zh/' | relative_url }})<br><span class="english-name" lang="en">Verify a retrieved UI recommendation before reuse</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 325 | [分别检查隐私和证据完整性]({{ '/catalog/patterns/325-zh/' | relative_url }})<br><span class="english-name" lang="en">Check privacy and evidence usefulness separately</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 326 | [记录决策理由和改错成本]({{ '/catalog/patterns/326-zh/' | relative_url }})<br><span class="english-name" lang="en">Record reversible decisions with their rationale and cost</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 327 | [用一致的脱敏占位符保留关联]({{ '/catalog/patterns/327-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve linkage with stable redaction placeholders</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 328 | [说明观察结果来自哪个时间点]({{ '/catalog/patterns/328-zh/' | relative_url }})<br><span class="english-name" lang="en">Qualify observations by when they were captured</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 329 | [围绕一个主题持续追问]({{ '/catalog/patterns/329-zh/' | relative_url }})<br><span class="english-name" lang="en">Probe-to-Saturation Interview</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 330 | [让所有评审者检查同一份产物]({{ '/catalog/patterns/330-zh/' | relative_url }})<br><span class="english-name" lang="en">Same-Artifact All-Reviewer Gate</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 331 | [入队前一次性预留预算]({{ '/catalog/patterns/331-zh/' | relative_url }})<br><span class="english-name" lang="en">Atomic Budget Admission Before Enqueue</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 332 | [区分阅读、参与和发送权限]({{ '/catalog/patterns/332-zh/' | relative_url }})<br><span class="english-name" lang="en">Audience, Participation and Delivery Separation</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 333 | [把行为要求绑定到执行点和测试]({{ '/catalog/patterns/333-zh/' | relative_url }})<br><span class="english-name" lang="en">Bind Behavioral Specs to Enforcement and Tests</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 334 | [先检查不能妥协的阻塞项]({{ '/catalog/patterns/334-zh/' | relative_url }})<br><span class="english-name" lang="en">Hard Blockers Override Aggregate Scores</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 335 | [知道答案后的描述不算独立验证]({{ '/catalog/patterns/335-zh/' | relative_url }})<br><span class="english-name" lang="en">Conditioned Description Is Not Independent Validation</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 336 | [从多个 Skill 中提炼可执行规则]({{ '/catalog/patterns/336-zh/' | relative_url }})<br><span class="english-name" lang="en">Cross-Skill Evidence Distillation</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 337 | [审计结论要能指导下一步]({{ '/catalog/patterns/337-zh/' | relative_url }})<br><span class="english-name" lang="en">Decision-Enabling Audit Reasons</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 338 | [先用确定性解析，再处理疑难项]({{ '/catalog/patterns/338-zh/' | relative_url }})<br><span class="english-name" lang="en">Deterministic Parse with Uncertain-Case Escalation</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 339 | [每条长期事实只由一处维护]({{ '/catalog/patterns/339-zh/' | relative_url }})<br><span class="english-name" lang="en">One Canonical Owner per Documentation Fact</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 340 | [收齐完成事件后再停止监听]({{ '/catalog/patterns/340-zh/' | relative_url }})<br><span class="english-name" lang="en">Drain Completion before Stopping the Observer</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 341 | [昂贵评分前先排除不合格项]({{ '/catalog/patterns/341-zh/' | relative_url }})<br><span class="english-name" lang="en">Eligibility Before Expensive Scoring</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 342 | [有足够证据后再推广经验规则]({{ '/catalog/patterns/342-zh/' | relative_url }})<br><span class="english-name" lang="en">Evidence-Gated Rule Promotion</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 343 | [发布的必须是实际验证过的版本]({{ '/catalog/patterns/343-zh/' | relative_url }})<br><span class="english-name" lang="en">Promote the Exact Verified Artifact</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 344 | [根据失败代价选择评测指标]({{ '/catalog/patterns/344-zh/' | relative_url }})<br><span class="english-name" lang="en">Choose Metrics from Failure Costs</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 345 | [用具体样例文件说明项目约定]({{ '/catalog/patterns/345-zh/' | relative_url }})<br><span class="english-name" lang="en">Golden-File Convention Pointers</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 346 | [让批准只对应具体草稿和目标]({{ '/catalog/patterns/346-zh/' | relative_url }})<br><span class="english-name" lang="en">Exact-Draft Epoch-Bound Approval</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 347 | [用独立参考点验证坐标校准]({{ '/catalog/patterns/347-zh/' | relative_url }})<br><span class="english-name" lang="en">Identifiable Calibration with a Holdout</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 348 | [区分没有匹配与检索未完成]({{ '/catalog/patterns/348-zh/' | relative_url }})<br><span class="english-name" lang="en">Empty-vs-Incomplete Recall</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 349 | [把停止监督放在工作任务之外]({{ '/catalog/patterns/349-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep the Stop Supervisor Outside the Worker</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 350 | [根据缺失信息逐步补充上下文]({{ '/catalog/patterns/350-zh/' | relative_url }})<br><span class="english-name" lang="en">Gap-Driven Iterative Retrieval</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 351 | [翻译时保留操作约束]({{ '/catalog/patterns/351-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve Behavioral Control Semantics Across Localization</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 352 | [说明测量到底统计了什么]({{ '/catalog/patterns/352-zh/' | relative_url }})<br><span class="english-name" lang="en">Measurement Unit and Scope Boundaries</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 353 | [复用记忆前检查时效和替代关系]({{ '/catalog/patterns/353-zh/' | relative_url }})<br><span class="english-name" lang="en">Recall Freshness and Supersession</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 354 | [检查相关输入之间的结果关系]({{ '/catalog/patterns/354-zh/' | relative_url }})<br><span class="english-name" lang="en">Related-Input Invariant Oracle</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 355 | [检查完整动作顺序和最终状态]({{ '/catalog/patterns/355-zh/' | relative_url }})<br><span class="english-name" lang="en">Ordered Actions and Final-State Audit</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 356 | [用独立路径观察卡住的任务]({{ '/catalog/patterns/356-zh/' | relative_url }})<br><span class="english-name" lang="en">Observe a Blocked Worker from a Separate Control Path</span> | [多 Agent 协作]({{ '/topics/orchestration-zh/' | relative_url }}) | 可查看原文 |
+| 357 | [用同一组试验比较候选和基线]({{ '/catalog/patterns/357-zh/' | relative_url }})<br><span class="english-name" lang="en">Compare Candidate and Baseline on the Same Trial Panel</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 358 | [只使用决策时点已知的信息]({{ '/catalog/patterns/358-zh/' | relative_url }})<br><span class="english-name" lang="en">Point-in-Time Context Admission</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 359 | [前置检查失败时撤销依赖它的通过结论]({{ '/catalog/patterns/359-zh/' | relative_url }})<br><span class="english-name" lang="en">Propagate Failed Prerequisites</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 360 | [分开保存原始证据与解释]({{ '/catalog/patterns/360-zh/' | relative_url }})<br><span class="english-name" lang="en">Raw Evidence and Synthesis Separation</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 361 | [区分重试后成功与每次都可靠]({{ '/catalog/patterns/361-zh/' | relative_url }})<br><span class="english-name" lang="en">Retry Success vs Repeated Reliability</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 362 | [先查已有方案，再决定是否自建]({{ '/catalog/patterns/362-zh/' | relative_url }})<br><span class="english-name" lang="en">Adopt-Extend-Compose-Build Decision</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 363 | [让证据对应同一份稳定内容]({{ '/catalog/patterns/363-zh/' | relative_url }})<br><span class="english-name" lang="en">Evidence Bound to the Same Stable Bytes</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 364 | [按当前项目和权限读取记忆]({{ '/catalog/patterns/364-zh/' | relative_url }})<br><span class="english-name" lang="en">Scope-Bound Evidence Memory</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 365 | [过滤由自动化自己产生的反馈事件]({{ '/catalog/patterns/365-zh/' | relative_url }})<br><span class="english-name" lang="en">Exclude Self-Generated Feedback Events</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 366 | [同时确认进程退出和任务完成]({{ '/catalog/patterns/366-zh/' | relative_url }})<br><span class="english-name" lang="en">Process Success and Semantic Completion Handshake</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 367 | [整体指标和重要子任务都要达标]({{ '/catalog/patterns/367-zh/' | relative_url }})<br><span class="english-name" lang="en">Aggregate and Slice Evaluation Gates</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 368 | [从真实文章提炼写作风格]({{ '/catalog/patterns/368-zh/' | relative_url }})<br><span class="english-name" lang="en">Reusable Source-Derived Voice Profile</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 369 | [结合结构化状态和页面证据]({{ '/catalog/patterns/369-zh/' | relative_url }})<br><span class="english-name" lang="en">Structured State and Rendered Evidence</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 370 | [区分代码现状与产品要求]({{ '/catalog/patterns/370-zh/' | relative_url }})<br><span class="english-name" lang="en">Technical Facts vs Product Constraints</span> | [提示词设计]({{ '/topics/prompt-zh/' | relative_url }}) | 可查看原文 |
+| 371 | [先完成一条小而完整的用户路径]({{ '/catalog/patterns/371-zh/' | relative_url }})<br><span class="english-name" lang="en">First Verifiable Vertical Slice</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 372 | [写入前校验拟修改的内容]({{ '/catalog/patterns/372-zh/' | relative_url }})<br><span class="english-name" lang="en">Validate the Proposed Mutation</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 373 | [保留调用模板中的示例字面值]({{ '/catalog/patterns/373-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve Literal Examples Across Invocation Templates</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 374 | [翻译说明时保留可执行标识符]({{ '/catalog/patterns/374-zh/' | relative_url }})<br><span class="english-name" lang="en">Preserve Executable Identifiers Across Localization</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 375 | [隔离可选能力的加载失败]({{ '/catalog/patterns/375-zh/' | relative_url }})<br><span class="english-name" lang="en">Isolate Optional Capability Loading Failures</span> | [工具调用]({{ '/topics/tools-zh/' | relative_url }}) | 可查看原文 |
+| 376 | [按具体版本查询文档]({{ '/catalog/patterns/376-zh/' | relative_url }})<br><span class="english-name" lang="en">Version-Grounded Documentation Retrieval</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 377 | [修订时保留已接受的要求]({{ '/catalog/patterns/377-zh/' | relative_url }})<br><span class="english-name" lang="en">Accepted-obligation amendment ledger</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 378 | [区分任务成功与新增指令的收益]({{ '/catalog/patterns/378-zh/' | relative_url }})<br><span class="english-name" lang="en">Separate behavior success from intervention benefit</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 379 | [为能力有限的宿主提供精简指令]({{ '/catalog/patterns/379-zh/' | relative_url }})<br><span class="english-name" lang="en">Capability-tiered instruction digest</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 380 | [只比较覆盖范围一致的趋势]({{ '/catalog/patterns/380-zh/' | relative_url }})<br><span class="english-name" lang="en">Comparable-coverage trend reporting</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 381 | [按加载时机分别计算上下文开销]({{ '/catalog/patterns/381-zh/' | relative_url }})<br><span class="english-name" lang="en">Budget context by when it loads</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+| 382 | [结论不能超出实际观察范围]({{ '/catalog/patterns/382-zh/' | relative_url }})<br><span class="english-name" lang="en">Keep claims within the observed channel</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 383 | [缩小权限时撤销旧的宽泛授权]({{ '/catalog/patterns/383-zh/' | relative_url }})<br><span class="english-name" lang="en">Revoke the prior grant when narrowing access</span> | [安全与权限]({{ '/topics/safety-zh/' | relative_url }}) | 可查看原文 |
+| 384 | [用独立证据确认任务完成]({{ '/catalog/patterns/384-zh/' | relative_url }})<br><span class="english-name" lang="en">Independent completion witness</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 385 | [检查异步操作的不同完成顺序]({{ '/catalog/patterns/385-zh/' | relative_url }})<br><span class="english-name" lang="en">Review both overlapping completion orders</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 386 | [只清理本次仍拥有的临时状态]({{ '/catalog/patterns/386-zh/' | relative_url }})<br><span class="english-name" lang="en">Owner-token terminal cleanup</span> | [任务流程]({{ '/topics/workflow-zh/' | relative_url }}) | 可查看原文 |
+| 387 | [按用户旅程比较同类产品]({{ '/catalog/patterns/387-zh/' | relative_url }})<br><span class="english-name" lang="en">Persona-grounded peer benchmarking</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 388 | [试验前固定次数和判定规则]({{ '/catalog/patterns/388-zh/' | relative_url }})<br><span class="english-name" lang="en">Predeclare trials and verdict rules</span> | [测试与评估]({{ '/topics/evaluation-zh/' | relative_url }}) | 可查看原文 |
+| 389 | [把成功操作整理成可重放流程]({{ '/catalog/patterns/389-zh/' | relative_url }})<br><span class="english-name" lang="en">Codify a proven run with replay</span> | [Skill 编写]({{ '/topics/skill-authoring-zh/' | relative_url }}) | 可查看原文 |
+| 390 | [在指定目标中回读确认保存]({{ '/catalog/patterns/390-zh/' | relative_url }})<br><span class="english-name" lang="en">Verify a save against the selected target</span> | [上下文管理]({{ '/topics/context-zh/' | relative_url }}) | 可查看原文 |
+
+<span id="提示词模式目录--索引"></span>
+<span id="如何使用本目录"></span>
+<span id="配套文件"></span>
+<span id="快速参考表"></span>
+<span id="高级模式快速参考表31-80"></span>
+<span id="第-8-类高级-agent-编排-prompt-context-patternscatalogcategoriespatterns-advanced-orchestration-zh"></span>
+<span id="第-9-类高级质量与评估-prompt-context-patternscatalogcategoriespatterns-advanced-quality-zh"></span>
+<span id="第-10-类高级安全与合规-prompt-context-patternscatalogcategoriespatterns-advanced-safety-zh"></span>
+<span id="第-11-类高级工作流与自主性-prompt-context-patternscatalogcategoriespatterns-advanced-workflow-zh"></span>
+<span id="第-12-类高级输入输出与领域特化-prompt-context-patternscatalogcategoriespatterns-advanced-io-domain-zh"></span>
+<span id="第-13-类补充--入职生产力迁移与创意-prompt-context-patternscatalogcategoriespatterns-gap-fills-zh"></span>
+<span id="第-14-类开源技能模式-prompt-context-patternscatalogcategoriespatterns-open-source-skills-zh"></span>
+<span id="第-15-16-类claude-code-平台模式-patterns-claude-code-platformmd"></span>
+<span id="第-17-类harvest-2026-05-模式143-155"></span>
+<span id="分类文件"></span>
+<span id="cat-1"></span>
+<span id="第-1-类结构脚手架"></span>
+<span id="cat-2"></span>
+<span id="第-2-类执行控制"></span>
+<span id="cat-3"></span>
+<span id="第-3-类安全与信任"></span>
+<span id="cat-4"></span>
+<span id="第-4-类输入输出契约"></span>
+<span id="cat-5"></span>
+<span id="第-5-类agent-编排"></span>
+<span id="cat-6"></span>
+<span id="第-6-类知识与上下文"></span>
+<span id="cat-7"></span>
+<span id="第-7-类质量与反馈"></span>
+<span id="cat-8"></span>
+<span id="第-8-类高级-agent-编排"></span>
+<span id="cat-9"></span>
+<span id="第-9-类高级质量与评估"></span>
+<span id="cat-10"></span>
+<span id="第-10-类高级安全与合规"></span>
+<span id="cat-11"></span>
+<span id="第-11-类高级工作流与自主性"></span>
+<span id="cat-12"></span>
+<span id="第-12-类高级输入输出与领域特化"></span>
+<span id="cat-13"></span>
+<span id="第-13-类补充--入职生产力迁移与创意"></span>
+<span id="cat-14"></span>
+<span id="第-14-类开源技能模式"></span>
+<span id="cat-15"></span>
+<span id="第-15-类claude-code-平台模式"></span>
+<span id="cat-16"></span>
+<span id="第-16-类claude-code-平台模式--扩展"></span>
+<span id="与基础技术的映射关系"></span>
+<span id="数据来源"></span>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { render } from 'ink';
 import path from 'node:path';
-import { catalog, TOP10 } from './catalog.js';
-import { loadPatterns } from './patterns.js';
+import { catalog } from './catalog.js';
+import { loadPatterns, casesForPatterns, readyPatternIds } from './patterns.js';
 import { loadUserConfig, saveUserConfig, type UserConfig } from './persistedConfig.js';
 import PatternList from './screens/PatternList.js';
 import Config from './screens/Config.js';
@@ -18,13 +18,12 @@ const App = () => {
   const [selected, setSelected] = useState<number[]>([]);
   const [config, setConfig] = useState<UserConfig>(loadUserConfig());
   const loaded = loadPatterns(ROOT);
-  const readySet = new Set(loaded.filter(p => p.status === 'ready').map(p => p.id));
+  const readySet = readyPatternIds(loaded);
 
   if (screen === 'list') {
     return (
       <PatternList
         catalog={catalog}
-        top10={TOP10}
         readySet={readySet}
         onConfirm={(ids) => { setSelected(ids); setScreen('config'); }}
       />
@@ -40,7 +39,7 @@ const App = () => {
   }
   return (
     <RunAndSummary
-      patterns={loaded.filter(p => selected.includes(p.id))}
+      patterns={casesForPatterns(loaded, selected)}
       config={config}
       resultsRoot={RESULTS}
     />

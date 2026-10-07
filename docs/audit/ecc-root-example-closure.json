@@ -1,0 +1,450 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "coverage_updates": [
+    {
+      "path": "docs/es/examples/CLAUDE.md",
+      "hash": "d66a46e21cd7017ac6c6a0075d5365d0ce5f537c9fdeaa883642037cd2845746",
+      "disposition": "analyzed",
+      "reason": "Complete project instruction template inspected: project/stack facts, modular organization, explicit coding/testing/security constraints, typed result shape, available workflow commands and Git policy. The universal file-size/coverage/no-mutation prescriptions are sample preferences, not proven cross-project requirements; Unicode/urgency checks are heuristics, not a reliable security boundary.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/examples/CLAUDE.md",
+          "blob": "8fda77b2095d123d78511f7ab3e6b70c143dae0e",
+          "hash": "d66a46e21cd7017ac6c6a0075d5365d0ce5f537c9fdeaa883642037cd2845746"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete project instruction template inspected: project/stack facts, modular organization, explicit coding/testing/security constraints, typed result shape, available workflow commands and Git policy. The universal file-size/coverage/no-mutation prescriptions are sample preferences, not proven cross-project requirements; Unicode/urgency checks are heuristics, not a reliable security boundary.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/es/examples/README.md",
+      "hash": "266e92fe903c566e79836e885ab3fa0d3d78930c21846ba189f26890e6f259f6",
+      "disposition": "excluded",
+      "reason": "Entire example directory guide inspected: distinguishes project instructions, global user preferences and status-line configuration, then gives copy/install snippets. Appending standalone JSON with cat does not establish a valid merged settings document. This is deployment/routing documentation for fully inspected examples, without another independently admitted method.",
+      "review_kind": "scoped-relevance",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/examples/README.md",
+          "blob": "4a315d625cf0056ee3f155774b7e875c4ac371c4",
+          "hash": "266e92fe903c566e79836e885ab3fa0d3d78930c21846ba189f26890e6f259f6"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Entire example directory guide inspected: distinguishes project instructions, global user preferences and status-line configuration, then gives copy/install snippets. Appending standalone JSON with cat does not establish a valid merged settings document. This is deployment/routing documentation for fully inspected examples, without another independently admitted method.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/es/examples/user-CLAUDE.md",
+      "hash": "8d0c0d8a48e1d632a51b3044c9063ac6341f88d0505dc5b526f76b9ae1976224",
+      "disposition": "analyzed",
+      "reason": "Complete global-preference example inspected: personal preferences and transient context versus team/project documentation, modular rule pointers, role directory, privacy and test-first workflow. Source-specific Zed shortcuts, fixed coverage/size thresholds and universal delegation preference are not adopted as repository rules. Documentation duplication avoidance is already represented by existing memory/current-state and scoped context candidates.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/es/examples/user-CLAUDE.md",
+          "blob": "7e2f8d62f3deb00fceccffb517911afde1138ff2",
+          "hash": "8d0c0d8a48e1d632a51b3044c9063ac6341f88d0505dc5b526f76b9ae1976224"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete global-preference example inspected: personal preferences and transient context versus team/project documentation, modular rule pointers, role directory, privacy and test-first workflow. Source-specific Zed shortcuts, fixed coverage/size thresholds and universal delegation preference are not adopted as repository rules. Documentation duplication avoidance is already represented by existing memory/current-state and scoped context candidates.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/CLAUDE.md",
+      "hash": "85cd4e5d9c3bb62c622fb9d02e718c829357e46fded200c757c7cf83b0851812",
+      "disposition": "analyzed",
+      "reason": "Complete project instruction template inspected: project/stack facts, modular organization, explicit coding/testing/security constraints, typed result shape, available workflow commands and Git policy. The universal file-size/coverage/no-mutation prescriptions are sample preferences, not proven cross-project requirements; Unicode/urgency checks are heuristics, not a reliable security boundary.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/CLAUDE.md",
+          "blob": "ec7af416b3057fb823ac8da6f99441c17175318f",
+          "hash": "85cd4e5d9c3bb62c622fb9d02e718c829357e46fded200c757c7cf83b0851812"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete project instruction template inspected: project/stack facts, modular organization, explicit coding/testing/security constraints, typed result shape, available workflow commands and Git policy. The universal file-size/coverage/no-mutation prescriptions are sample preferences, not proven cross-project requirements; Unicode/urgency checks are heuristics, not a reliable security boundary.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/django-api-CLAUDE.md",
+      "hash": "8ca07093fbb2e2ebe1b4fd46f1e417ef0b2ea6ea048214a40bc3601312d99797",
+      "disposition": "analyzed",
+      "reason": "Complete Django-specific context and examples inspected: ORM/read-write serialization, user-scoped queries, domain exceptions, service/view boundaries, tests and workflow routing. The order example acquires select_for_update before its atomic block and is not used as a correctness oracle; numeric token/cov/version preferences remain source-specific. Its context method is project facts plus explicit domain constraints, not a new prompt mechanism.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/django-api-CLAUDE.md",
+          "blob": "8dda92b6db345e87b48dd5a28bdbaca82b23ea4e",
+          "hash": "8ca07093fbb2e2ebe1b4fd46f1e417ef0b2ea6ea048214a40bc3601312d99797"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            308
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete Django-specific context and examples inspected: ORM/read-write serialization, user-scoped queries, domain exceptions, service/view boundaries, tests and workflow routing. The order example acquires select_for_update before its atomic block and is not used as a correctness oracle; numeric token/cov/version preferences remain source-specific. Its context method is project facts plus explicit domain constraints, not a new prompt mechanism.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/go-microservice-CLAUDE.md",
+      "hash": "36cb9e2bbb936a9a495dbe8729e97683d324279cb90e2355f4efed99fa51dc4b",
+      "disposition": "analyzed",
+      "reason": "Complete Go-specific context and examples inspected: context propagation, repository interface, injectable service dependencies, sentinel errors mapped to transport, table-driven tests and workflow commands. The find-before-create email check is not an atomic uniqueness guarantee; the sample test covers only successful and pre-existing-email paths. No distinct prompt/context mechanism beyond scoped project instructions.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/go-microservice-CLAUDE.md",
+          "blob": "20b0d43340694f5c9cc122d22f2cbed3407fac88",
+          "hash": "36cb9e2bbb936a9a495dbe8729e97683d324279cb90e2355f4efed99fa51dc4b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            267
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete Go-specific context and examples inspected: context propagation, repository interface, injectable service dependencies, sentinel errors mapped to transport, table-driven tests and workflow commands. The find-before-create email check is not an atomic uniqueness guarantee; the sample test covers only successful and pre-existing-email paths. No distinct prompt/context mechanism beyond scoped project instructions.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/harmonyos-app-CLAUDE.md",
+      "hash": "bf1220554ed6e395d03b419bdd48dd95e550089d1d61fd8afa636eb702e0fe22",
+      "disposition": "analyzed",
+      "reason": "Complete HarmonyOS project context inspected: V2 state and Navigation-only constraints, MVVM ownership, localized theme resources, compile checks and official API lookup when uncertain. These are explicit sample stack restrictions, not general correctness claims; version-grounded documentation and shared-boundary conventions already have candidates.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/harmonyos-app-CLAUDE.md",
+          "blob": "92c2a7290c1e50ee3e7b43c2106d57f2a8abb81b",
+          "hash": "bf1220554ed6e395d03b419bdd48dd95e550089d1d61fd8afa636eb702e0fe22"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            88
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete HarmonyOS project context inspected: V2 state and Navigation-only constraints, MVVM ownership, localized theme resources, compile checks and official API lookup when uncertain. These are explicit sample stack restrictions, not general correctness claims; version-grounded documentation and shared-boundary conventions already have candidates.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/laravel-api-CLAUDE.md",
+      "hash": "5ed51556c24adb8d8f8a761b9ea5470b4f8b8383c218ebcf53ffc8a0818925e5",
+      "disposition": "analyzed",
+      "reason": "Complete Laravel context and code examples inspected: typed input DTOs, authorization policies, domain exception mapping, response envelope, service/action separation, queued mail and concrete database assertions. Illustrative framework implementation is not executed or claimed production-ready; ownership and typed interface mechanisms are already represented.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/laravel-api-CLAUDE.md",
+          "blob": "7e67ecd95e3d8d3d9a679a9dfdb20da9d5c87761",
+          "hash": "5ed51556c24adb8d8f8a761b9ea5470b4f8b8383c218ebcf53ffc8a0818925e5"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            311
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete Laravel context and code examples inspected: typed input DTOs, authorization policies, domain exception mapping, response envelope, service/action separation, queued mail and concrete database assertions. Illustrative framework implementation is not executed or claimed production-ready; ownership and typed interface mechanisms are already represented.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/rust-api-CLAUDE.md",
+      "hash": "52375fc40e9fa29a3825a8714b4f54674f89d9d365a939fc501e02ea88cd4b31",
+      "disposition": "analyzed",
+      "reason": "Complete Rust context and examples inspected: typed errors/HTTP mapping, parameterized SQL, handler-service-repository layering, external-boundary tests and lint commands. Sequential duplicate-email checks are not concurrent uniqueness proof; sample library/version and deployment prescriptions are frozen domain choices. Preserve explicit domain instruction structure without adding another method ID.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/rust-api-CLAUDE.md",
+          "blob": "6c20e4aadcb63f54bc1d88025c5d220b3a51d8d6",
+          "hash": "52375fc40e9fa29a3825a8714b4f54674f89d9d365a939fc501e02ea88cd4b31"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            285
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete Rust context and examples inspected: typed errors/HTTP mapping, parameterized SQL, handler-service-repository layering, external-boundary tests and lint commands. Sequential duplicate-email checks are not concurrent uniqueness proof; sample library/version and deployment prescriptions are frozen domain choices. Preserve explicit domain instruction structure without adding another method ID.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/saas-nextjs-CLAUDE.md",
+      "hash": "eeca486fc73d0b3dc5e95ab78a4b2272cbbf84108de6de7ee0ec8b3eeffb3974",
+      "disposition": "analyzed",
+      "reason": "Complete SaaS context/example inspected: user-scoped storage, server-side identity and price authority, discriminated response, validation before mutation, environment secret separation and critical auth/billing journeys. Free-tier quotas and version/API guidance are illustrative frozen contracts; this is not verified billing/security guidance. Scoped input/authority and behavior-path candidates already cover its transferable methods.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/saas-nextjs-CLAUDE.md",
+          "blob": "51b631d7dc3ce68ef875fab24fd671c8ac88987e",
+          "hash": "eeca486fc73d0b3dc5e95ab78a4b2272cbbf84108de6de7ee0ec8b3eeffb3974"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            166
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete SaaS context/example inspected: user-scoped storage, server-side identity and price authority, discriminated response, validation before mutation, environment secret separation and critical auth/billing journeys. Free-tier quotas and version/API guidance are illustrative frozen contracts; this is not verified billing/security guidance. Scoped input/authority and behavior-path candidates already cover its transferable methods.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/examples/user-CLAUDE.md",
+      "hash": "9be67172bd26fe487751fb1f9bf08e67923826de5e61265cd1d5de2876777757",
+      "disposition": "analyzed",
+      "reason": "Complete global-preference example inspected: personal preferences and transient context versus team/project documentation, modular rule pointers, role directory, privacy and test-first workflow. Source-specific Zed shortcuts, fixed coverage/size thresholds and universal delegation preference are not adopted as repository rules. Documentation duplication avoidance is already represented by existing memory/current-state and scoped context candidates.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/examples/user-CLAUDE.md",
+          "blob": "8acd3dbb3f45290fa8d745c0e761af3d92e0761b",
+          "hash": "9be67172bd26fe487751fb1f9bf08e67923826de5e61265cd1d5de2876777757"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete global-preference example inspected: personal preferences and transient context versus team/project documentation, modular rule pointers, role directory, privacy and test-first workflow. Source-specific Zed shortcuts, fixed coverage/size thresholds and universal delegation preference are not adopted as repository rules. Documentation duplication avoidance is already represented by existing memory/current-state and scoped context candidates.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/hooks/README.md",
+      "hash": "6f1af6e36fd116d6896488ec7ac7fe6e8b162d1d89861fa7ad00b4193ea25eba",
+      "disposition": "analyzed",
+      "reason": "Entire hook contract/recipes inspected: pre-action blocking versus post-action inspection, stable memory lifecycle reference versus executable hook graph, install-time path rewriting, runtime profile/disable controls, character limits, async nonblocking semantics and stdin schema. Example stdout passthrough and exit-code descriptions are frozen host-specific contracts, not currently verified APIs; regex/filename-only recipes and swallowed formatter errors are not correctness guarantees. Existing typed hooks, profile, lifecycle and capability-failure candidates cover the mechanism.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/hooks/README.md",
+          "blob": "0e762b2f29993c41d6733f142e971c810e3e7a0f",
+          "hash": "6f1af6e36fd116d6896488ec7ac7fe6e8b162d1d89861fa7ad00b4193ea25eba"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            249
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Entire hook contract/recipes inspected: pre-action blocking versus post-action inspection, stable memory lifecycle reference versus executable hook graph, install-time path rewriting, runtime profile/disable controls, character limits, async nonblocking semantics and stdin schema. Example stdout passthrough and exit-code descriptions are frozen host-specific contracts, not currently verified APIs; regex/filename-only recipes and swallowed formatter errors are not correctness guarantees. Existing typed hooks, profile, lifecycle and capability-failure candidates cover the mechanism.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/ja-JP/plugins/README.md",
+      "hash": "3ee98adb4b99ab0af51d72d533ff2a80d137d5709a2b712f7d569baac5723dcf",
+      "disposition": "excluded",
+      "reason": "Entire plugin deployment guide inspected: marketplaces, install commands, role lists and cache paths. Includes a claud command typo and unverified relative search recommendation. Pure product installation/catalog guidance, no independent prompt or context method; commands are not executed.",
+      "review_kind": "scoped-relevance",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ja-JP/plugins/README.md",
+          "blob": "6f704d05efae91c9fafe3555124f10e0891d7cc0",
+          "hash": "3ee98adb4b99ab0af51d72d533ff2a80d137d5709a2b712f7d569baac5723dcf"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Entire plugin deployment guide inspected: marketplaces, install commands, role lists and cache paths. Includes a claud command typo and unverified relative search recommendation. Pure product installation/catalog guidance, no independent prompt or context method; commands are not executed.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/examples/CLAUDE.md",
+      "hash": "80c5cf03265cb94cbf405b128f5fc10a7e2aa51d049e684cd7c1b011a46a7371",
+      "disposition": "analyzed",
+      "reason": "Complete project instruction template inspected: project/stack facts, modular organization, explicit coding/testing/security constraints, typed result shape, available workflow commands and Git policy. The universal file-size/coverage/no-mutation prescriptions are sample preferences, not proven cross-project requirements; Unicode/urgency checks are heuristics, not a reliable security boundary.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/examples/CLAUDE.md",
+          "blob": "12a42d237cd58e60bac7aca1de4f33db53db984e",
+          "hash": "80c5cf03265cb94cbf405b128f5fc10a7e2aa51d049e684cd7c1b011a46a7371"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete project instruction template inspected: project/stack facts, modular organization, explicit coding/testing/security constraints, typed result shape, available workflow commands and Git policy. The universal file-size/coverage/no-mutation prescriptions are sample preferences, not proven cross-project requirements; Unicode/urgency checks are heuristics, not a reliable security boundary.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/examples/README.md",
+      "hash": "7d09ee2ecabe9dbff6df9f6517a3756f05b1697250a0c37d8562fbea7e251219",
+      "disposition": "excluded",
+      "reason": "Entire example directory guide inspected: distinguishes project instructions, global user preferences and status-line configuration, then gives copy/install snippets. Appending standalone JSON with cat does not establish a valid merged settings document. This is deployment/routing documentation for fully inspected examples, without another independently admitted method.",
+      "review_kind": "scoped-relevance",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/examples/README.md",
+          "blob": "0654a35716be4311ba7d4117753bcd6d82b311cc",
+          "hash": "7d09ee2ecabe9dbff6df9f6517a3756f05b1697250a0c37d8562fbea7e251219"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Entire example directory guide inspected: distinguishes project instructions, global user preferences and status-line configuration, then gives copy/install snippets. Appending standalone JSON with cat does not establish a valid merged settings document. This is deployment/routing documentation for fully inspected examples, without another independently admitted method.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/examples/statusline.json",
+      "hash": "8aa22fb136dded41e77beffb6f2462a1f2463b947aebe4489c8f90c75aea8a04",
+      "disposition": "excluded",
+      "reason": "Entire JSON command string and comments inspected: reads host input/transcript, derives cwd/model/context/task counts and Git dirty state, emits colored terminal status. This is display implementation, not a prompt or reasoning method; host-field availability and transcript regex counts are not validated state semantics. No shell command executed.",
+      "review_kind": "scoped-relevance",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/examples/statusline.json",
+          "blob": "aa7e99ae495a7a9ce167ff96d07ede4e42a510cf",
+          "hash": "8aa22fb136dded41e77beffb6f2462a1f2463b947aebe4489c8f90c75aea8a04"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            19
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Entire JSON command string and comments inspected: reads host input/transcript, derives cwd/model/context/task counts and Git dirty state, emits colored terminal status. This is display implementation, not a prompt or reasoning method; host-field availability and transcript regex counts are not validated state semantics. No shell command executed.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    },
+    {
+      "path": "docs/tr/examples/user-CLAUDE.md",
+      "hash": "d03f3fdf160f01dd4305221e0a4a4c977262762448fe39f5e887ae517c3d78d9",
+      "disposition": "analyzed",
+      "reason": "Complete global-preference example inspected: personal preferences and transient context versus team/project documentation, modular rule pointers, role directory, privacy and test-first workflow. Source-specific Zed shortcuts, fixed coverage/size thresholds and universal delegation preference are not adopted as repository rules. Documentation duplication avoidance is already represented by existing memory/current-state and scoped context candidates.",
+      "review_kind": "full-semantic",
+      "candidate_keys": [],
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/examples/user-CLAUDE.md",
+          "blob": "de5f0f3694331d177a41511e8bac1fe9a256c06c",
+          "hash": "d03f3fdf160f01dd4305221e0a4a4c977262762448fe39f5e887ae517c3d78d9"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "review_record": "docs/audit/ecc-root-example-closure.json",
+        "content_role_and_conclusion": "Complete global-preference example inspected: personal preferences and transient context versus team/project documentation, modular rule pointers, role directory, privacy and test-first workflow. Source-specific Zed shortcuts, fixed coverage/size thresholds and universal delegation preference are not adopted as repository rules. Documentation duplication avoidance is already represented by existing memory/current-state and scoped context candidates.",
+        "execution": "Static frozen source reading only; source commands were not executed."
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "editorial_note": "All 17 reserved bodies displayed in full without truncation and read. Samples provide host/project-specific context variants, not independent new admissions. Generic security/size/coverage prescriptions and framework sample correctness are not adopted as guarantees."
+}

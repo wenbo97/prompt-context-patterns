@@ -1,0 +1,15 @@
+[
+  {
+    "path": "docs/zh-CN/hooks/README.md",
+    "reason": "Full 220-line translated hook prose, actual inline JS, event schema and all JSON/shell recipes read against current canonical full method. Preserves pre-vs-post/warn-vs-block/async event distinction but omits current resolved/idempotent manual installer and schema-safe sidecar fingerprints (canon22–44), cap/fail-closed named recovery and context budgets (117–139). Material protocol regression: CN92 says stdout must output JSON, CN114–115 and recipes echo raw input; canonical162–165 requires empty no-op stdout and only explicit decision/context. Unbounded JSON input, swallowed formatter failures, Unix src-path test and filename-only test existence do not prove safety/quality. Runtime controls/enforcement are host-specific, no hooks installed/run.",
+    "candidate_keys": [
+      "ecc-variants-localization-symbol-integrity"
+    ]
+  },
+  {
+    "path": "docs/zh-CN/plugins/README.md",
+    "disposition": "excluded",
+    "depth": "full-content-domain-exclusion",
+    "reason": "Read all 89 lines including plugin CLI, marketplace catalog and exact disk paths. Pure installation/discovery inventory links to external explanation, with no distinct reusable prompt/context mechanism beyond existing host capability routing. Recommendations and claim mgrep superior are frozen marketing, not verified performance/current availability; installed name/path not runtime proof. Literal identifiers preserved; no plugin installed or external linked content adopted."
+  }
+]

@@ -1,4 +1,5 @@
-id: 6
+case_id: 006-negative-constraints
+pattern_ids: [6]
 name: Negative Constraints / Prohibited Actions
 category: execution-control
 hypothesis: Explicit prohibited-actions list reduces accidental policy violations vs an unbounded permissive instruction.

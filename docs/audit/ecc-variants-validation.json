@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "errors": [],
+  "total": 1791,
+  "counts": {
+    "analyzed": 1155,
+    "duplicate": 12,
+    "excluded": 149,
+    "pending": 475
+  },
+  "candidate_count": 3,
+  "source_commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "coverage_complete": false,
+  "note": "Validation checks data/evidence integrity; it does not replace semantic reading or execute source examples."
+}

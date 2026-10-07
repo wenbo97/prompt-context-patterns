@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-06T18:22:08.649Z",
+  "html_pages": 876,
+  "indexable_pages": 655,
+  "noindex_pages": 221,
+  "rendered_anchor_instances": 20753,
+  "legacy_pattern_mappings": 412,
+  "legacy_pages": 57,
+  "legacy_post_routes": 8,
+  "errors": [],
+  "robots_check": {
+    "scope": "Built project artifact text only; not live host-root enforcement",
+    "host_root_url": "https://wenbo97.github.io/robots.txt",
+    "published_artifact_url": "https://wenbo97.github.io/prompt-context-patterns/robots.txt",
+    "host_root_verified": false,
+    "notes": [
+      "Subdirectory robots.txt is not the host robots file; verify the host root after release or submit the sitemap through existing properties."
+    ]
+  },
+  "legacy_heading_mappings_checked": 1410
+}

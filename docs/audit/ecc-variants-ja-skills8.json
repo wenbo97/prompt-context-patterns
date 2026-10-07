@@ -1,0 +1,38 @@
+[
+  {
+    "path": "docs/ja-JP/skills/click-path-audit/SKILL.md",
+    "reason": "Full85line actual touchpoint→orderedcall/read-write-reset map→userpromisedfinalstate/asyncorder and concrete composemode reset example read. Same final-observable-state/caller-effect map as canonical; short variant ends after touchpointtemplate, omits later concrete risk checks/evidence. Trigger mistranslates missedbug as foundbug,54bugs story unsupported; no tracing/runtimeaudit executed.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/clickhouse-io/SKILL.md",
+    "reason": "Read full434line method-purpose prose/structure: OLAPschema/query/aggregation/ETL/CDC/monitoring references, no independent agent method beyond domainactivation (missing newer currentsection/origin). SQL/client/runtime/performance recommendations scoped out according actualsourcepurpose, not completeness/effectiveness proof; no database operations.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/code-tour/SKILL.md",
+    "reason": "Full57line actual artifact-only .tour/no sourceedit boundary, discoverybeforewriting, readerpersona/depth and filelineanchor method read. Short counterpart omits actual canonical selectedGitref/revision, fullJSONschema/linevalidation/order/gate; source disk location not chosenrevision proof. Same evidence-grounded contexttour idea, no tours/source modified.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/codebase-onboarding/SKILL.md",
+    "reason": "Full58line actual manifest/framework/entry/config/test evidence reconnaissance→modulemap→conventions→startercontext output read. Short canonical counterpart has more sourcepaths/live-state verification/outputguard clauses; this variant does not promise allfilesread and shallow signal not semanticcompletion. Known taskcontext/sourcegrounding, no onboardingartifact write.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/coding-standards/SKILL.md",
+    "reason": "Full527line method-purpose prose/rule/pathcontrasts read. KISS/YAGNI/avoid speculativegeneralization and concrete contrast retained; newer canonical narrowed sharedfloor/conditionalfrontendbackendrouter/activation/origin omitted. API/React/code implementation scoped under userrevisedtask, fixedimmutable/50line preferences not actualdefects or efficacy proof.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/compose-multiplatform-patterns/SKILL.md",
+    "reason": "Read full299line actualpurpose/prose/state-event-navigation/platform/theme/scope refs. Domain KotlinComposeUI patterns rather than independent agentmethod; activation and literalnames/relatedcanonicalrefs retained. APIversion/rendering/performance implementation scoped out, no compile/UI behavior claimed.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]

@@ -1,0 +1,206 @@
+{
+  "design/src/brief.ts": {
+    "hash": "8e958d6a806cf1cdc2ef1707580ea234d9586d017a2a1934630fdcfbbf437696",
+    "git_oid": "285ded8d56122fc132af56f9036290f906b5f246",
+    "bytes": 2370,
+    "conclusion": "Complete structured design brief and prompt builder read: goal/audience/style/elements/optional constraints/reference become a generation prompt; catalog taste exclusions are default preferences that explicit brief choices can override. Pixel-perfect/readable wording supplies intended constraints, not proof that rendered values or interactions are correct."
+  },
+  "test/fixtures/arm-benchmark/reference/bad-diff.patch": {
+    "hash": "6d4e6aed0c9f9048f316adee54746a5a27f7252effb02d0a00f350f71804cbd9",
+    "git_oid": "b470ff663a82de451ebfbfa6d02ad82849608406",
+    "bytes": 3520,
+    "conclusion": "Complete same-task counterexample patch read: bespoke calendar, event infrastructure and factory add complexity to a booking-date task; serves as the negative benchmark fixture, not a reusable verified implementation."
+  },
+  "test/fixtures/arm-benchmark/reference/good-diff.patch": {
+    "hash": "06d77e1e0d404dc1f1738618b2c4695c4e1f486a2c9912017b0d730e144e85a4",
+    "git_oid": "2a7d9e23ec13a39800a6202fcb5e70e7c2dd9164",
+    "bytes": 1194,
+    "conclusion": "Complete paired reference patch read: native required date input plus min constraint and existing submit handler instead of custom calendar machinery. Its UTC toISOString day can differ from local business date; retain platform-reuse mechanism without copying this as a timezone-correct recipe. Fixture contrast is not measured efficacy."
+  },
+  "bin/gstack-distill-free-text": {
+    "hash": "21990b7adf3a4f1b2195d906a589cc48068d52c9d2ad9a44897999475873dad9",
+    "git_oid": "86cbd8918ad144397ee8d8478fee308326b08d4e",
+    "bytes": 11587,
+    "conclusion": "Complete frozen extraction CLI body read: extract user-approved proposals and source quotes into structured decisions; confidence threshold is editorial and quotes are not authenticated by output shape. Missing proposal fallback, inferred source origin and unvalidated pricing bounds limit reliability. Only method/prompt relevance reviewed; no provider calls or upstream repairs."
+  },
+  "autoplan/sections/manifest.json": {
+    "hash": "f008408bb4178e8fa6b460b0d43aee45c8cf68e3d1f8997c5913efd5b3e75901",
+    "git_oid": "a1a4ee740e0618be47e140a4ceb5aa71b987b8d7",
+    "bytes": 2522,
+    "conclusion": "Complete passive section manifest read: 6 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "browse/sections/manifest.json": {
+    "hash": "9ddbdbcea477e2327990a4352884415a3bfcda5715573f9d7501dc5c11de884c",
+    "git_oid": "f8a906689536497b8b128f27bfdb9cd4087c9dd0",
+    "bytes": 827,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "codex/sections/manifest.json": {
+    "hash": "2c2e7b4eefed1d8f10ddf6873c7ea16bb70ef0484f1f7d7efa0a3741d2b42d9e",
+    "git_oid": "e5c5be9b94d9b849300171e5a1968ec4fd58c988",
+    "bytes": 1507,
+    "conclusion": "Complete passive section manifest read: 3 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "cso/sections/manifest.json": {
+    "hash": "39e6d84534657be2345cfbf6ed8821393480a208b7e784c655b017aa5b3081ee",
+    "git_oid": "1b463c8f57069152b6b10960f8db5b2e751f7a8d",
+    "bytes": 777,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "design-consultation/sections/manifest.json": {
+    "hash": "bdae65759579347ef0a81412a84b888421ed066340cde2a70633cd47daf160d3",
+    "git_oid": "a4c054c24adeb49f691c8a666ff99a838d85304b",
+    "bytes": 676,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "design-html/sections/manifest.json": {
+    "hash": "33311c0d45faff583f0de673da20b6372b1733aa6e7e511613a81f33593e389f",
+    "git_oid": "c452a68a36dc9d5f134882d9c2a9ca0ae601e905",
+    "bytes": 1448,
+    "conclusion": "Complete passive section manifest read: 3 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "design-shotgun/sections/manifest.json": {
+    "hash": "307ff8f1e96ce64ef89b1adaa7545da02507883950d227c63d3d2b4e91a8a98b",
+    "git_oid": "70a515964b1fc8c7d795940b7bddc1085c745a2c",
+    "bytes": 779,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "document-release/sections/manifest.json": {
+    "hash": "557365c18a58a3b81fb14e9dd5e27727a2f2e9f3c41d2f8df36716b0885e530b",
+    "git_oid": "26de3ba8cbfe9979170a93f9abecb5b04c604c78",
+    "bytes": 1050,
+    "conclusion": "Complete passive section manifest read: 2 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "land-and-deploy/sections/manifest.json": {
+    "hash": "46003f78b6a41b5ba16e18e91af2eef930a8735852305833458c98eb2476884a",
+    "git_oid": "610fb6d8ad2270cdd111ae03c5a337b6140440f8",
+    "bytes": 1247,
+    "conclusion": "Complete passive section manifest read: 3 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "office-hours/sections/manifest.json": {
+    "hash": "3f52f364582aa3c6740031d6919a1a2538889830d7ae8d870f4f79b8507f9021",
+    "git_oid": "fec89a51f7b76867b7f66f58c9dc1e4003ba1870",
+    "bytes": 1394,
+    "conclusion": "Complete passive section manifest read: 3 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "plan-ceo-review/sections/manifest.json": {
+    "hash": "fdf3f4614ec89cda92a1436cabd3279c39811114d44a5ae6d41e07bad6f2f957",
+    "git_oid": "21d5bea4f79a112239c3638ba07823faa9b8874a",
+    "bytes": 803,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "plan-design-review/sections/manifest.json": {
+    "hash": "8ecf45e52509ae3a014ed3b19b7508a8b580621e5ff3145eae562dd3b8696019",
+    "git_oid": "6bba91f24d1c8e0bd20bf8a0e92aed70e0d15afc",
+    "bytes": 574,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "plan-devex-review/sections/manifest.json": {
+    "hash": "853b85219b05502f41a96b180eb255578384671dc0a255d2fc3212151ff53d2d",
+    "git_oid": "cb6a2d8aed249a9274f3cfd7de68c80f83941edc",
+    "bytes": 547,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "plan-eng-review/sections/manifest.json": {
+    "hash": "cc1267307c035d7e4ab342ab7cf8c442e6e41dc7e2c321c6534b8305cd04b7f2",
+    "git_oid": "869fa8c0a59f050ccdea7e1494a9f1948d5aa17e",
+    "bytes": 623,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "qa-only/sections/manifest.json": {
+    "hash": "95a723ff26c4e1ced051b732e323b95705d101432a09f16c420a7ac9c28c5cd7",
+    "git_oid": "8d42b3df9afedb58f8fda6353e2ff973950dfcd7",
+    "bytes": 522,
+    "conclusion": "Complete passive section manifest read: 2 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "qa/sections/manifest.json": {
+    "hash": "01d75e66a44151c35ff25274b0684de23452872d345276612074701ee10da981",
+    "git_oid": "73074aa5b691736fd711d424c4b7c575e21ef922",
+    "bytes": 2393,
+    "conclusion": "Complete passive section manifest read: 7 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "retro/sections/manifest.json": {
+    "hash": "69fed7c5d40054447904358aaeeafa95f43777a8a8ffb8df2889fe7ede559ec8",
+    "git_oid": "34af06c19b067c3c236561027b5d4c564482df6e",
+    "bytes": 682,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "review/sections/manifest.json": {
+    "hash": "6e197dd04b0fd4c2b255e6235c84bc6f5725cdd7ff9a4a38d9bedf434015df2a",
+    "git_oid": "dfe33894de7c8924c62b152ecfa37e743fc16244",
+    "bytes": 1389,
+    "conclusion": "Complete passive section manifest read: 4 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "setup-gbrain/sections/manifest.json": {
+    "hash": "f70a67a0042d5b396734ae533ae4872da2087bed2408f54911247dfcc66439ff",
+    "git_oid": "de5265113c4f8d9c59697476468b6b3076885792",
+    "bytes": 2052,
+    "conclusion": "Complete passive section manifest read: 4 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "ship/sections/manifest.json": {
+    "hash": "f78d8bdec4b636bb1539e350c6b61e63f178c39e1433def6e34e968233214b4f",
+    "git_oid": "a3a56436136535a8bd527244102bf41e1c1253f6",
+    "bytes": 3006,
+    "conclusion": "Complete passive section manifest read: 11 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "spec/sections/manifest.json": {
+    "hash": "a8c4d10fa5081fa7dc97fbd7175f95ac95b9b0e28c1d2799c4da2e46306a5ff1",
+    "git_oid": "a443bf56ee418627b6a6a7cc86bea93b8d426118",
+    "bytes": 751,
+    "conclusion": "Complete passive section manifest read: 1 section IDs/files/titles and actual trigger clauses inspected against the already-reviewed skeleton/reference workflow. Registry descriptions do not grant runtime permission or prove section consumption; host/mode conditional reads remain in normative instructions. Historical eval-retirement notes are source assertions, not current execution evidence."
+  },
+  "test/fixtures/impeccable-antipatterns.json": {
+    "hash": "f3d3f89a4bff43a88a57cc2bae60bb04cd75462ea548649cccbee0f281b236a8",
+    "git_oid": "beeac29508cf024cd50891f3db019af445be71e2",
+    "bytes": 22701,
+    "conclusion": "Complete vendored 61-rule vocabulary read, including all descriptions/categories and upstream identity/license metadata. Separates subjective anti-default style preferences from testable visibility/contrast/layout criteria; font/color bans and numerical size/easing/spacing cutoffs are editorial/domain heuristics, not universal evidence of AI origin, accessibility compliance or performance. No standalone prompt/context pattern admitted for each UI rule; actual design goals and domain checks are covered by the reviewed design workflow."
+  },
+  "test/fixtures/module-size/resolver-snippets.ts.txt": {
+    "hash": "d7620a83d3df03440b9483d68a788b43ac22fd6537e1e37a608394a0f4323950",
+    "git_oid": "20ab2dd9ad11c5f17bc7128d38d3d8e3357b2106",
+    "bytes": 1770,
+    "conclusion": "Complete source-shaped counter fixture read: dashboard, private render-directory and escaped nested fences embedded in template literals; deliberately unbalanced prose braces exercise the size counter rather than supplying a separate runtime or workflow recommendation. No source execution."
+  },
+  "test/fixtures/review-army-overbuild.js": {
+    "hash": "8a94ba72f8179738e535ebcaef46d487b7f156a19f143c6fcc1223c94d81fc00",
+    "git_oid": "eecd8f5d96b2a04dd9f8677dacb2f537c8db1d6a",
+    "bytes": 1867,
+    "conclusion": "Complete planted negative review example read: custom date formatter, single-implementation abstract store and unused config illustrate platform reuse/speculative abstraction/dead settings. Planted labels do not prove equivalent locale/date behavior or observed model detection."
+  },
+  "test/fixtures/review-army-lean-complete.js": {
+    "hash": "aaa4515d11ff957c3f80d3388b5ec310ca57537a91dcce943708d4e3a3992b88",
+    "git_oid": "3810dfa1475bf215dbba12502a195973d1ea4688",
+    "bytes": 1126,
+    "conclusion": "Complete paired precision-control example read: bounded parsePort validates missing/non-integer/out-of-range cases and has a self-check. NO FINDINGS is the intended fixture label, not measured reviewer performance or exhaustive correctness assurance; retain necessary behavior when simplifying."
+  },
+  "test/fixtures/forcing-finding-seeds.ts": {
+    "hash": "a04d7a1b13269a82350f4ac89e6d4425b952e98e81338b6fc580aa7cc17dabd9",
+    "git_oid": "6a18bd0fe6dfa8f7791e11ca317b902f01c90e9e",
+    "bytes": 8537,
+    "conclusion": "Complete frozen fixture read. Six synthetic plan inputs encode a minimum review-finding floor, separate independent finding calls, and an option-split floor; comments tie each to specific regression contracts. They test calibration under controlled cases, not live review quality or measured efficacy. The underlying mechanisms are already represented by authored candidates for obligation handling and unbundled independent decisions; no separate candidate is warranted from these fixtures alone."
+  },
+  "test/fixtures/overlay-nudges.ts": {
+    "hash": "903723840a4d38d9774114396e97d25858ad89ff64b2d6d386cdd20078d87a7c",
+    "git_oid": "958193af1ebb923dfedf6e29ffd12ce9f1b9a287",
+    "bytes": 13983,
+    "conclusion": "Complete frozen fixture read. Overlay evaluations specify pinned model, trial count, concurrency, tool/turn constraints, concrete task prompts, task-correctness checks, permitted paths, and direction-specific metrics. `taskCorrect` and exact comparisons are separate from legacy relative `pass` predicates; the header states the comparator is research evidence, not a release gate. This directly supports the existing predeclared-verdict and behavior-versus-intervention-benefit candidates; it is calibration infrastructure, not independent evidence that any overlay improves behavior."
+  },
+  "test/fixtures/plan-decision-classification.ts": {
+    "hash": "1cdf5815632022b739ba4e24aa066ae1c7a27af10d4326ac1b1a1b3e4aa65707",
+    "git_oid": "152858fb0074827e01ad17204133b431bfd259f6",
+    "bytes": 17434,
+    "conclusion": "Complete frozen fixture read. Synthetic calls distinguish actionable current-plan findings, workflow routing, backlog items, and scope choices; expected target IDs and independent-decision counts reject bundled obligations, dropped findings, and changing already fixed policy while choosing test depth. It also separates payload refresh from graph caching and requires per-option decisions when scope choices are independent. This provides counterexample fixtures for existing obligation and unbundling candidates, not an additional standalone method."
+  },
+  "test/fixtures/devex-peer-comparison-classification.ts": {
+    "hash": "d45f309d8eb869d3f108c964d8a9e69d371b0c337ff090dec76df133f95b030c",
+    "git_oid": "0ea06782882498c197dcc1e3405a319b9f0f0794",
+    "bytes": 8687,
+    "conclusion": "Complete frozen fixture read. Synthetic frozen peer excerpts distinguish similar onboarding journeys from irrelevant scaffolds and hosted requirements, attach source references, label step-derived timing as reviewer estimates, and preserve unknown timings as unknown. Positive and negative fixtures reject name-only comparison and invented measured claims; the implication is tied to the selected developer persona and existing product capabilities. This is a distinct candidate for persona-relevant, source-grounded peer comparison with explicit measurement uncertainty; it is not observed product efficacy."
+  },
+  "test/redact-semantic-pass.eval.ts": {
+    "hash": "00b342fa6b53468d8b68927a822af1d8882127333e9b3c5d05e8352c813e3b11",
+    "git_oid": "203993586f88aa5077d447a876d9b79cce43a780",
+    "bytes": 4468,
+    "conclusion": "Complete frozen eval fixture read; its judge instruction explicitly brackets the backlog specification as data, says to ignore directives inside that data, enumerates five narrowly defined confidentiality risks, treats ordinary engineering changes as clean, and constrains output to a small JSON verdict. Paired flagged/clean examples plus an injection-shaped negative control support the rubric distinction. This is a paid, fail-soft evaluation prompt and test fixture, not proof of model reliability or a comprehensive security review. The delimiter and scoped-classification mechanism may overlap existing untrusted-input patterns; retain it for curation comparison rather than admitting a duplicate here."
+  }
+}

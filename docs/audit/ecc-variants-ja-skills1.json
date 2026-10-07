@@ -1,0 +1,33 @@
+[
+  {
+    "path": "docs/ja-JP/skills/README.md",
+    "depth": "full-method-difference-domain-scoped",
+    "reason": "Full109line actual skill-router/body-authoring template read. Directory/SKILL.md/name/description/examples/activation pointers preserved; newer activation-first/anti-pattern/relatedref/adaptation/rules-namespace and guardedpromotion contract absent. Declared automaticcontextload examples not observed capability proof; catalog metadata scoped, no new method."
+  },
+  {
+    "path": "docs/ja-JP/skills/accessibility/SKILL.md",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose",
+    "reason": "Full145line domain-purpose prose/actual platform branch diagram/role-state-focus checklist read. WCAG/ARIA/native component mapping, no distinct agent prompt mechanism beyond source-specific activation and conditional reference. Standard-number/compliance/platformAPI/implementation domain details scoped rather than audited or claimed verified; literal names/refs preserved."
+  },
+  {
+    "path": "docs/ja-JP/skills/agent-architecture-audit/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full256line actual prompt/schema read (repaired108–229 truncation) against main canonical full-source note. Scope entrypoint/model/time→source-log-config-memory evidence→symptom/mechanism/layer/rootcause/locator→ordered bounded fixes→typed report preserved. Prompt-only tools distinct actual runtime gates, hidden repair/transport paths explicit; 12layer universality/default-highrisk/selfconfidence not empirical evidence. oh-my-agent-check credit observed not earliest origin, no audit execution."
+  },
+  {
+    "path": "docs/ja-JP/skills/agent-eval/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full145line actual YAMLsame-task/pinnedcommit/files/prompt/test-grep-LLMjudge/freshworktree/trials and comparison template read against main canonical note. Same fixed-context reproducibility and separate cost/time/reliability method; worktree protects checkout not OSsecrets/process boundary, grep token not correctness.3/3/$0.12/45s constructed outputs, source install/reviewnot current task commands; no eval run."
+  },
+  {
+    "path": "docs/ja-JP/skills/agent-harness-construction/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full73line typed narrowaction/schema/stable status-summary-nextaction-artifact and errorcause/safe retry/stop contract read against canonical main review. Risk-dependent granularity/on-demand refs/logicalphasecompaction preserved; besthybrid/completion-improvement statement source recommendation without measured proof. No new method/capability enforcement, no runner action."
+  },
+  {
+    "path": "docs/ja-JP/skills/agent-introspection-debugging/SKILL.md",
+    "depth": "full-semantic-comparison",
+    "reason": "Full153line actual source-goal/error/tool/environment capture templates→failureclassification→one discriminating reversible check→small recovery→evidence-bearing success/partial/blocked report read against main canonical note. Actual capability/no fabricated reset and specific verification/learning/council/workspace routes preserved. Same failure-capture method, budgets/local state source assertions need evidence; no retry or process action."
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": 303,
+    "change": "Correct located source range within the same frozen file",
+    "before": {
+      "repo": "mattpocock/skills",
+      "commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "line_start": 77,
+      "line_end": 100,
+      "section": "Deletion probe before abstraction",
+      "license": "MIT",
+      "license_path": "LICENSE",
+      "role": "observed-example",
+      "url": "https://github.com/mattpocock/skills/blob/d81f3a183412e71a5b1e84ca21bc1a35eea03a60/skills/engineering/codebase-design/SKILL.md#L77-L100",
+      "start_line": 77,
+      "end_line": 100
+    },
+    "after": {
+      "repo": "mattpocock/skills",
+      "commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "line_start": 62,
+      "line_end": 65,
+      "section": "Principles: the deletion test",
+      "license": "MIT",
+      "license_path": "LICENSE",
+      "role": "observed-example",
+      "url": "https://github.com/mattpocock/skills/blob/d81f3a183412e71a5b1e84ca21bc1a35eea03a60/skills/engineering/codebase-design/SKILL.md#L62-L65",
+      "start_line": 62,
+      "end_line": 65
+    },
+    "reason": "Old range 77-100 describes dependency injection and interface relationships; the deletion test is explicit at line 63. Read lines 57-68 and preserve repo, commit and path.",
+    "status": "corrected"
+  },
+  {
+    "id": 42,
+    "change": "Add direct frozen evidence of independent reviewer contexts",
+    "before": [
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": "skills/continuous-learning-v2/SKILL.md",
+        "start_line": 287,
+        "end_line": 342,
+        "section": "Project-scoped instincts and learning",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/skills/continuous-learning-v2/SKILL.md#L287-L342"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": "skills/recsys-pipeline-architect/SKILL.md",
+        "start_line": 71,
+        "end_line": 76,
+        "section": "Candidate isolation",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/skills/recsys-pipeline-architect/SKILL.md#L71-L76"
+      }
+    ],
+    "added": {
+      "repo": "mattpocock/skills",
+      "commit": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "start_line": 6,
+      "end_line": 11,
+      "section": "Independent Standards and Spec contexts",
+      "license": "MIT",
+      "license_path": "LICENSE",
+      "role": "observed-example",
+      "url": "https://github.com/mattpocock/skills/blob/d81f3a183412e71a5b1e84ca21bc1a35eea03a60/skills/engineering/code-review/SKILL.md#L6-L11"
+    },
+    "reason": "Previously located ranges concern project/global memory and independent candidate scoring. Frozen code-review line 11 directly explains separate review contexts; same frozen corpus and repository MIT license inspected.",
+    "status": "enriched"
+  }
+]

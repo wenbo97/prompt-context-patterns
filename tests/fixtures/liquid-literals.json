@@ -1,0 +1,27 @@
+[
+  {
+    "name": "variable",
+    "original": "Before {{ value }} after",
+    "protected": "{% raw %}Before {{ value }} after{% endraw %}"
+  },
+  {
+    "name": "tag",
+    "original": "{% if available %}text{% endif %}",
+    "protected": "{% raw %}{% if available %}text{% endif %}{% endraw %}"
+  },
+  {
+    "name": "nested-raw",
+    "original": "{% raw %}{{ keep }}{% endraw %}",
+    "protected": "{% raw %}{% raw %}{{ keep }}{{% endraw %}{{ \"% endraw %\" }}{% raw %}}{% endraw %}"
+  },
+  {
+    "name": "trimmed-end",
+    "original": "Before {%- endraw -%} after",
+    "protected": "{% raw %}Before {{% endraw %}{{ \"%- endraw -%\" }}{% raw %}} after{% endraw %}"
+  },
+  {
+    "name": "Unicode",
+    "original": "中文 {{ 输入 }}与{% endraw %}",
+    "protected": "{% raw %}中文 {{ 输入 }}与{{% endraw %}{{ \"% endraw %\" }}{% raw %}}{% endraw %}"
+  }
+]

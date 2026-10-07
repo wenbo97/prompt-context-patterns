@@ -1,0 +1,594 @@
+{
+  "scope": "Audit range labels only; no new semantic review claim",
+  "count": 42,
+  "corrections": [
+    {
+      "repo": "obra/superpowers",
+      "path": ".gitattributes",
+      "previous_range": [
+        1,
+        19
+      ],
+      "corrected_range": [
+        1,
+        18
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "4702b23e09afad9638c184c8900b31af635673ba439c265ecc3d341efb54eaf8"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": ".github/FUNDING.yml",
+      "previous_range": [
+        1,
+        4
+      ],
+      "corrected_range": [
+        1,
+        3
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "2f9cdda7b1f3ea4be28bbcc3444c2c6512d7739589e6c5e72fd4f95950d3e7d4"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "previous_range": [
+        1,
+        6
+      ],
+      "corrected_range": [
+        1,
+        5
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "e955d428a9ac46ed35f407b6532d74d1dade217d89d9a4c7f6b05b72872a004a"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": ".gitignore",
+      "previous_range": [
+        1,
+        20
+      ],
+      "corrected_range": [
+        1,
+        19
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "30b79670d7359590a4f1798e99112d9298d8eed889042aba2ee9a1722dc06ebb"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "CODE_OF_CONDUCT.md",
+      "previous_range": [
+        1,
+        131
+      ],
+      "corrected_range": [
+        1,
+        130
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "5604db48bb38684df7b0816cc2a8b2659a9c7efcfb2fa17936e6b16b1ec79316"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/plans/2026-01-22-document-review-system.md",
+      "previous_range": [
+        1,
+        302
+      ],
+      "corrected_range": [
+        1,
+        301
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "92875a4d7db7acef7737ace512ed5a6ae29ab76aff421633276a4a824c5d5cf7"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/plans/2026-06-09-sdd-task-scoped-review-dispatch.md",
+      "previous_range": [
+        1,
+        775
+      ],
+      "corrected_range": [
+        1,
+        774
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "1597b91dbf9f8113533c6da8410607c5ac6c47db92b043a1284fff075b037aa8"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-01-22-document-review-system-design.md",
+      "previous_range": [
+        1,
+        137
+      ],
+      "corrected_range": [
+        1,
+        136
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "19dd839168b9e4a072985e8941aa3ae7cf9101357111620755d50dbeb1bea04b"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-02-19-visual-brainstorming-refactor-design.md",
+      "previous_range": [
+        1,
+        163
+      ],
+      "corrected_range": [
+        1,
+        162
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "f27d0f9c33cc4f34101fd676d48e73d6259e6cd4e1b3adc477ea81f4c7557af7"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-03-23-codex-app-compatibility-design.md",
+      "previous_range": [
+        1,
+        245
+      ],
+      "corrected_range": [
+        1,
+        244
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "f351216f0b8abb5f08a9209d71ec3c218c79b1ba9d6a1c68aec990ef00e31a53"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-04-06-worktree-rototill-design.md",
+      "previous_range": [
+        1,
+        342
+      ],
+      "corrected_range": [
+        1,
+        341
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "757ce61bbcd16dcb8f61fa69778ca7a3b1d26f7a11a0fcea3d302fd99a52ebae"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-05-06-lift-drill-into-evals-design.md",
+      "previous_range": [
+        1,
+        248
+      ],
+      "corrected_range": [
+        1,
+        247
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "fac3785f6f779bd899a6e93bcd60a934b4946ce4f7e8b6129d7910979650a6a1"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md",
+      "previous_range": [
+        1,
+        161
+      ],
+      "corrected_range": [
+        1,
+        160
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "08b6b77be0d3b95e1d19a3dc320b93bba52917ca9beb0084fd74ecd75c015b59"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace.md",
+      "previous_range": [
+        1,
+        197
+      ],
+      "corrected_range": [
+        1,
+        196
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "301328cb8dec833dc35e05e90b4c10a6e67ebd915b33a3a5d34f83927094815d"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-07-15-sdd-fix-loop-redesign-design.md",
+      "previous_range": [
+        1,
+        197
+      ],
+      "corrected_range": [
+        1,
+        196
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "9ed33fe2821fd9d61e198c03e0377a9151294737a6ea34074637c1eef98c1a06"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-07-30-codex-efficiency-fixes-design.md",
+      "previous_range": [
+        1,
+        253
+      ],
+      "corrected_range": [
+        1,
+        252
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "6a6f81dcea03ebb8ffa710536fc92faab285c7bc894430c3348eb0bfa3fea926"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "docs/superpowers/specs/2026-08-27-diagnosing-superpowers-design.md",
+      "previous_range": [
+        1,
+        531
+      ],
+      "corrected_range": [
+        1,
+        530
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "da21af32ea629de17c3221f08dc4825c0f26d7bea4902f217eba9e5caf7b966d"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "scripts/bump-version.sh",
+      "previous_range": [
+        1,
+        283
+      ],
+      "corrected_range": [
+        1,
+        282
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "fc96339dad5f54ffcef3393b28542dbe93ec168573c012d9c599603009e80006"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "scripts/lint-shell.sh",
+      "previous_range": [
+        1,
+        212
+      ],
+      "corrected_range": [
+        1,
+        211
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "aa34cc2dad4b130231bcf21fdd18f3f91e8fd7ab80d88a82a13e1395f32756f8"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "scripts/package-codex-plugin.sh",
+      "previous_range": [
+        1,
+        352
+      ],
+      "corrected_range": [
+        1,
+        351
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "2541617b86519273428d12d18a5f7ec852ac39cfdec74622c01ce71a504bb80d"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "scripts/sync-to-codex-plugin.sh",
+      "previous_range": [
+        1,
+        469
+      ],
+      "corrected_range": [
+        1,
+        468
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "d24c3a579f5d6759f08f8c1c9a7772caa6e937dcc124f1aae5fe0ffd1177ee24"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/scripts/frame-template.html",
+      "previous_range": [
+        1,
+        214
+      ],
+      "corrected_range": [
+        1,
+        213
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/scripts/helper.js",
+      "previous_range": [
+        1,
+        168
+      ],
+      "corrected_range": [
+        1,
+        167
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/scripts/server.cjs",
+      "previous_range": [
+        1,
+        724
+      ],
+      "corrected_range": [
+        1,
+        723
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/scripts/start-server.sh",
+      "previous_range": [
+        1,
+        210
+      ],
+      "corrected_range": [
+        1,
+        209
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/scripts/stop-server.sh",
+      "previous_range": [
+        1,
+        121
+      ],
+      "corrected_range": [
+        1,
+        120
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "skills/writing-skills/render-graphs.js",
+      "previous_range": [
+        1,
+        170
+      ],
+      "corrected_range": [
+        1,
+        169
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/brainstorm-server/package.json",
+      "previous_range": [
+        1,
+        11
+      ],
+      "corrected_range": [
+        1,
+        10
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "d785483894bfedbccf9731fd7ed52f959973f62dc9c42a8a7407fc7779d220c8"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/explicit-skill-requests/run-extended-multiturn-test.sh",
+      "previous_range": [
+        1,
+        114
+      ],
+      "corrected_range": [
+        1,
+        113
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "1004578e3ef68d6fda8646c9257d27dd4ca30c4c1bdc986a50fbcb929ea0934d"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/explicit-skill-requests/run-haiku-test.sh",
+      "previous_range": [
+        1,
+        145
+      ],
+      "corrected_range": [
+        1,
+        144
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "27b92722271fd25dfcad9b04e8c45b81e2a51a51005c3bcf13dd9d5a70567d01"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/explicit-skill-requests/run-multiturn-test.sh",
+      "previous_range": [
+        1,
+        144
+      ],
+      "corrected_range": [
+        1,
+        143
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "dc22f0b1ed0d367811ecf046c942430d15e87f4b8b2b4cc8260d60e00bee6ecb"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/explicit-skill-requests/run-test.sh",
+      "previous_range": [
+        1,
+        137
+      ],
+      "corrected_range": [
+        1,
+        136
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "841f1d014f231c84f441cc6b91f388cc3e9e788012e6d36f5e78406c1f4c9b49"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/kimi/run-tests.sh",
+      "previous_range": [
+        1,
+        7
+      ],
+      "corrected_range": [
+        1,
+        6
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "fb53a9ce91ae119146764ef2d55c63a5d20b86198e2ee08759fbae8194177ff0"
+    },
+    {
+      "repo": "obra/superpowers",
+      "path": "tests/opencode/test-session-bootstrap.sh",
+      "previous_range": [
+        1,
+        5
+      ],
+      "corrected_range": [
+        1,
+        4
+      ],
+      "commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "8dd9605232ac6030f052ab0102fcea6109dfe6a44e74a2bbe15fd6eb450fe7db"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": ".claude-plugin/marketplace.json",
+      "previous_range": [
+        1,
+        21
+      ],
+      "corrected_range": [
+        1,
+        20
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "669b9a23f5b46326946465198829ff6d35a9b7fd36abc6b4a2ef652f02e615e2"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": ".claude-plugin/plugin.json",
+      "previous_range": [
+        1,
+        20
+      ],
+      "corrected_range": [
+        1,
+        19
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "bc9ddf22f1025944447bf56197e35a65aef0f8921fc7e68c616d4599d3d8bbf4"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": ".github/FUNDING.yml",
+      "previous_range": [
+        1,
+        2
+      ],
+      "corrected_range": [
+        1,
+        1
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "38f3a3fac585c3c35d6ed2297baba8d2d22ea974fa9799f842771c2f7c42d916"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": "CHANGELOG.md",
+      "previous_range": [
+        1,
+        112
+      ],
+      "corrected_range": [
+        1,
+        111
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "55a81cbf8d45c5ca064b21d4ce61792e8d973c525cf2a65ee3e2c65f28b16f3b"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": "scripts/build-emil-sponsor-row.mjs",
+      "previous_range": [
+        1,
+        42
+      ],
+      "corrected_range": [
+        1,
+        41
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "4e48beb43439e2f1136d36c1c1a00554bd6136700812b7f7d4890d5f4972ed18"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": "scripts/convert-readme-assets-webp.mjs",
+      "previous_range": [
+        1,
+        143
+      ],
+      "corrected_range": [
+        1,
+        142
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "e3439bbef12845b07bb0475a34a9f4b8695a9db8d9621c40aebecb9d1dce9edd"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": "scripts/process-readme-buttons.mjs",
+      "previous_range": [
+        1,
+        109
+      ],
+      "corrected_range": [
+        1,
+        108
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "10090fe18260cea2b99306ad7b27e3ccfa7b907e6a25fe26960d988de0a38802"
+    },
+    {
+      "repo": "Leonxlnx/taste-skill",
+      "path": "scripts/process-sponsor-badge.mjs",
+      "previous_range": [
+        1,
+        84
+      ],
+      "corrected_range": [
+        1,
+        83
+      ],
+      "commit": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "hash": "31fe1016f562ab736ff7240d054ccb81592b23942e33f0885ca57c3d5c143996"
+    }
+  ]
+}

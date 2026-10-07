@@ -1,0 +1,22 @@
+[
+  {
+    "path": "docs/zh-CN/TROUBLESHOOTING.md",
+    "reason": "Read all 446 lines including complete Python project-registry lookup and shell archive/permission/cache/recovery snippets. Source-scoped diagnostic symptom→candidate-cause→inspect-before-change/backup/preserve lock intent already captured. CN lacks current Termux optional changed-store fault-isolation section; links ../../examples wrong level. Critical shared source limits: gzip failure still truncates observation file, date/base-name archive collision, concurrent observer writes, chmod go+rX exposes private state, grep/which/file presence is not runtime invocation proof and direct test input lacks actual hook envelope. Head sampling is not streaming or exhaustive analysis; CLAUDE_DEBUG/TIMEOUT/GUIs are unverified host claims. No recovery or private state access performed."
+  },
+  {
+    "path": "docs/zh-CN/the-security-guide.md",
+    "reason": "Full 206-line source prose, composed network YAML, telemetry JSON, shell-looking regex and all references read; current canonical kill-switch314–335/source trust and control paragraphs cross-read. Shared taint, least privilege, isolated execution, out-of-band heartbeat/process-group supervision and tool-call evidence; current root stronger lifecycle includes supervisor quarantine and scoped approval/memory boundaries omitted by old translation. Narrow container network flag is not universal egress/host-kernel safety; negative PID requires owned process-group/platform capability; Unicode stripping is not injection containment; fake risk0.98/intercepted trace not actual enforcement. Historical CVE/incidents/stars/12%/36%/84%/96.15%/437k and product-superiority claims remain unverified source narration, never efficacy evidence. No attack/scanner/process/network executed."
+  },
+  {
+    "path": "docs/zh-CN/the-shortform-guide.md",
+    "reason": "Full 432-line guide including prompt shorthand/context trees/JSON/hooks/CLI/worktree/configuration and all references read. Mechanisms already captured: scope-bound workflows, conditional tool exposure, modular context, permissions, distinct hook lifecycle and worktree ownership. Current exact canonical key paragraphs144–146 carry same 200k→70k/tool-count heuristics, not measured current context; matcher expressions and schematic hook string arrays are not native schema proof, sandbox claim too broad, latest npx/unverified packages not trusted installation. Context/name/source-pointer recipes preserve symbols; tool roster/model/editor/performance preferences historical, no universal 50% or superiority claim adopted. No configuration/install performed."
+  },
+  {
+    "path": "docs/zh-CN/the-longform-guide.md",
+    "reason": "Full 358-line guide and all prompt/shell examples read; canonical actual dynamic-context56–75, Stop81–101 and pass metrics160–170 cross-read. Shared scoped handoff with tried/untried/evidence, plan-before-clear, goal-aware bounded iterative retrieval, file stage contracts and minimum independent worktree concurrency already covered. CN164 says 至少k次 instead of exactly k attempts, corrupting pass@k definition. Source numerical91/97 inconsistent with independent p=.7 formula97.3/99.757 and no samples; canonical Stop-once-at-session-end conflicts actual after-response event and dynamic system injection can elevate untrusted memory. CLI cheaper/50% search/first-pass guarantee/90% routing remain unverified, scaffold versus research requires shared contract despite separate files. No model/CLI/worktree/eval run."
+  },
+  {
+    "path": "docs/zh-CN/the-openclaw-guide.md",
+    "reason": "Read all 471 lines across repaired output ranges, entire risk comparison, setup tree, mitigation sequence and bibliography. No current root original counterpart exists in Git path scan; only JA and CN translations. Retain source reading/source trust/least-agency/explicit permissions/integration blast-radius analysis as comparison to canonical security methods, not original attribution or current product recommendations. Broad shell→root implication invalid without privilege premise; multiple channels do not inherently lack isolation, SSH/single-entry/hosting do not guarantee safety, population malicious fraction does not imply fixed two bad among ten installed. 90% productivity/5% attack surface/42,665/93.4%/341/800/stars/CVE and personal narrative are unsupported empirical historical claims here; do not reproduce as validated evidence. No listed product audited/installed, external claim verified or source mitigation executed."
+  }
+]

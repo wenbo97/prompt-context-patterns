@@ -1,0 +1,30 @@
+from pathlib import Path
+import json
+n={'__name__':'core_helpers'};exec(Path(__file__).with_name('core-update.py').read_text(encoding='utf-8'),n)
+r='anthropics/skills';p='skills/claude-api/shared/prompt-caching.md';src=n['src']
+for c in n['DATA']['candidates']:
+ if 171 in c['suggested_existing_ids']:
+  c['sources']=[s for s in c['sources'] if not(s['repo']==r and s['path']=='skills/claude-api/shared/agent-design.md')]
+k=n['add']('anthro-typed-controlpoint','Promote opaque actions to typed control points','把不透明动作提升为类型化控制点','tools',[(r,'skills/claude-api/shared/agent-design.md',20,35,'Action-specific harness control')],
+ ['Expose an action as a typed tool when the harness needs to gate, render, audit or schedule that action specifically.','An invoice assistant can use a shell, but sending an invoice requires a recipient-specific approval check.','Define a send-invoice operation with typed recipient and invoice identity; let the harness validate scope and perform its approval and audit checks before executing the effect.','Hide invoice sending in a shell string that the harness classifies only as generic command execution.','Call the typed send-invoice tool; the harness shows the exact recipient and invoice and applies its documented approval rule.','The harness can reason about a declared action and its arguments without inferring intent from arbitrary command text.','The action schema, approval check and executed effect can be inspected.','A typed tool is not authorization by itself. A shell-aware harness may also enforce effects; the source claim that bash cannot enforce invariants is too broad. This differs from portable host-adapter capability verbs.'],
+ ['当宿主需要专门控制、展示、审计或调度某个动作时，把它暴露为类型化工具。','发票助手可用Shell，但发送发票须按收件人审批。','定义包含收件人与发票身份的发送操作；副作用执行前由宿主验证范围并执行审批和审计。','把发送藏在Shell字符串里，宿主只能按通用命令执行分类。','调用类型化发送工具，宿主展示确切收件人与发票，并应用已记录审批规则。','宿主可处理声明动作与参数，无需从任意命令文本推断意图。','可以检查动作模式、审批检查与实际副作用。','类型化工具本身不是授权。感知Shell效果的宿主也能强制约束，源中“bash不能强制不变量”过于绝对。此方法区别于可移植宿主适配能力动词。'])
+k2=n['add']('anthro-stability-ordered-prefix','Assemble cached prefixes by stability','按稳定性组装缓存前缀','context',[(r,p,21,29,'Assembly input stability'),(r,p,194,208,'Measured cache regression and overlap diff')],
+ ['For a host with a verified prefix-cache contract, place stable inputs before volatile inputs and check the rendered overlapping prefix when reuse regresses.','Repeated analysis requests share a policy and document, but a request ID is inserted ahead of both.','Trace every assembly input; order stable global, session and turn content according to the host contract, place the cache boundary before the unique tail, and compare real payloads plus cache metrics.','Put a fresh UUID at the beginning of every request and assume adding a cache marker guarantees reuse.','Keep the shared policy and document byte-stable, put the UUID and question after them, then check whether a second eligible request actually reads the shared prefix.','The reusable region is defined by actual rendered inputs rather than semantic similarity or marker presence.','Rendered overlap, scope/eligibility and recorded cache reads can be checked.','Cache key, ordering, eligibility, TTL and readiness are provider-specific. Preserve authority, freshness, privacy and reviewer independence before optimizing reuse; a zero read has causes beyond byte drift. No fixed idle window or pricing promise is implied.'],
+ ['宿主前缀缓存契约已核实时，把稳定输入放在易变输入之前；复用下降时检查实际重叠前缀。','重复分析共享政策与文档，却在两者前插入请求ID。','追踪每项组装输入，按宿主契约排序全局、会话和轮次内容，在唯一尾部前设置边界，并比较真实载荷与缓存指标。','每次请求开头写新UUID，认为加缓存标记就必然复用。','共享政策与文档保持字节稳定，UUID与问题放其后，再核对第二次合格请求是否实际读取共享前缀。','可复用区域取决于实际渲染输入，而非语义相似或标记存在。','可以检查重叠载荷、作用域与资格以及缓存读取记录。','缓存键、顺序、资格、有效期与就绪时机依提供方而异。优化前先保留权限、新鲜度、隐私与评审独立性；零读取不只由字节变化造成。不暗示固定空闲窗口或价格保证。'])
+for c in n['DATA']['candidates']:
+ if c['key']=='core-counter-semantics-before-totals':c['sources'].append(src(r,p,184,194,'Uncached remainder versus total'))
+ledger_path=n['OUT']/'core-anthro-api-blocks.json';d=json.loads(ledger_path.read_text(encoding='utf-8'))
+for b in d['blocks']:
+ if 3433<=b['id']<=3465:b['status']='read'
+ids={o['block_id'] for o in d['occurrences'] if o['path']==p};assert all(d['blocks'][i]['status']=='read' for i in ids)
+ledger_path.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+n['review'](r,p,'Full298-line guide and all exact block occurrences read. Stability-classified assembly and static prefix/session/turn boundaries; deterministic actual-byte serialization; breakpoint at last shared block, not unique suffix; eligible workspace/model identity; measured read/write/remainder semantics and recurring regression checks; compare overlapping payload excluding non-key markers before inference, rule out server transforms/lookback/TTL eligibility; inherited prefix reuse versus fresh judgment tradeoff; prewarm/fanout producer-readiness and actual-hit check. Every pricing multiplier, TTL/minimum/lookback number, readiness timing, dynamic system/clear/tool beta and current capability claim remains unverified. Plain JSON dict serialization is not intrinsically nondeterministic. Zero cache reads can reflect eligibility/TTL/readiness/scope, not only byte drift. Full raw payload logs can expose secrets/private context; cache optimization must not override tool authorization, independent review or prompt freshness.',[k2,'core-counter-semantics-before-totals'])
+row=next(x for rr in n['DATA']['repositories'] if rr['repo']==r for x in rr['coverage'] if x['path']==p);row['exact_block_review']={'ledger':'core-anthro-api-blocks.json','unique_block_ids':sorted(ids),'all_occurrences_closed':True}
+row=next(x for rr in n['DATA']['repositories'] if rr['repo']==r for x in rr['coverage'] if x['path']=='skills/claude-api/shared/agent-design.md');row['candidate_keys'].append(k)
+for c in n['DATA']['candidates']:
+ seen=set();unique=[]
+ for s in c['sources']:
+  ident=(s['repo'],s['commit'],s['path'],s['line_start'],s['line_end'],s['section'])
+  if ident not in seen:seen.add(ident);unique.append(s)
+ c['sources']=unique
+n['save']();print(n['DATA']['summary']['candidate_counts'])

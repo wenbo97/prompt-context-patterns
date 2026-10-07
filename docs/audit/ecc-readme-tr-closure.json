@@ -1,0 +1,2067 @@
+{
+  "repo": "affaan-m/ECC",
+  "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "coverage_updates": [
+    {
+      "path": "docs/tr/CHANGELOG.md",
+      "hash": "8744f850be7b1d31df9d64e77beaf01ab3765dea94186b0e969b810c76b26380",
+      "disposition": "analyzed",
+      "reason": "Historical release log stops at 2.0.0-rc.1 (2026-04-28), while canonical CHANGELOG.md continues through 2.2.3 (2026-10-01). This is a stale translated history snapshot, not current release guidance; version/count claims require the canonical log.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/CHANGELOG.md",
+          "blob": "98333d617b33f6bab90a1645079b2664a57e8abb",
+          "hash": "8744f850be7b1d31df9d64e77beaf01ab3765dea94186b0e969b810c76b26380"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            189
+          ]
+        ],
+        "canonical_path": "CHANGELOG.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "CHANGELOG.md",
+          "blob": "c8c5686dfcc9fefd589b04635bb90db136bdc3d6"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            307
+          ]
+        ],
+        "inspected_delta_conclusion": "Historical release log stops at 2.0.0-rc.1 (2026-04-28), while canonical CHANGELOG.md continues through 2.2.3 (2026-10-01). This is a stale translated history snapshot, not current release guidance; version/count claims require the canonical log.",
+        "content_role_and_conclusion": "Translated supporting documentation; documentation only, no runtime consumer.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 0,
+          "canonical_fenced_blocks": 0,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/tr/CONTRIBUTING.md",
+      "hash": "b0b9dd2a4e6a2324b86e9d37489f51b9477f240ddbf5cedc246c1cba55181cac",
+      "disposition": "analyzed",
+      "reason": "Mirrors contribution workflows for agents, skills, hooks, commands, MCP/docs, cross-harness translations and PRs. Some conventions (500-line skill limit, Claude-only testing and component shapes) lag the canonical guide; confirm current contribution rules there.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/CONTRIBUTING.md",
+          "blob": "be349a67bc45d44b95206352d36f793eb53ff861",
+          "hash": "b0b9dd2a4e6a2324b86e9d37489f51b9477f240ddbf5cedc246c1cba55181cac"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            461
+          ]
+        ],
+        "canonical_path": "CONTRIBUTING.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "CONTRIBUTING.md",
+          "blob": "5576d46999d61535038d3943be74f0d39e333fe4"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            541
+          ]
+        ],
+        "inspected_delta_conclusion": "Mirrors contribution workflows for agents, skills, hooks, commands, MCP/docs, cross-harness translations and PRs. Some conventions (500-line skill limit, Claude-only testing and component shapes) lag the canonical guide; confirm current contribution rules there.",
+        "content_role_and_conclusion": "Translated supporting documentation; documentation only, no runtime consumer.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 13,
+          "canonical_fenced_blocks": 13,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/tr/README.md",
+      "hash": "3f5ef6fd4edef28c23e975d4069850901b74b38b558bed73e0c77ed3bbbf9f33",
+      "disposition": "analyzed",
+      "reason": "Condensed current Turkish overview (v2.2.3) covering guided/plugin and manual installs, package-manager/hook controls, host selection, FAQ, tests and contribution links. At 478 lines versus 2,048 canonical lines it omits detailed install/platform walkthroughs and newer host sections; it is a summary, not a full method-equivalent translation.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/README.md",
+          "blob": "3f480127b4684870576084c78c3a7fa245c568e0",
+          "hash": "3f5ef6fd4edef28c23e975d4069850901b74b38b558bed73e0c77ed3bbbf9f33"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            478
+          ]
+        ],
+        "canonical_path": "README.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "README.md",
+          "blob": "95673de4bb5a8471507fc2c396243cd20395ee58"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            2048
+          ]
+        ],
+        "inspected_delta_conclusion": "Condensed current Turkish overview (v2.2.3) covering guided/plugin and manual installs, package-manager/hook controls, host selection, FAQ, tests and contribution links. At 478 lines versus 2,048 canonical lines it omits detailed install/platform walkthroughs and newer host sections; it is a summary, not a full method-equivalent translation.",
+        "content_role_and_conclusion": "Localized user guide; no runtime consumer. Canonical user guide is README.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 14,
+          "canonical_fenced_blocks": 79,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/tr/SECURITY.md",
+      "hash": "c907229a4daf0a12450cec83b81471f7d33aaf162dac1f752f366a95b2215dc0",
+      "disposition": "analyzed",
+      "reason": "The 53-line translation lists 1.9.x/1.8.x support plus reporting/scope/resources. The 156-line canonical policy adds current distribution surfaces, out-of-scope rules, supply-chain and operational/secrets guidance. Version support/report deadlines here are historical; use the canonical policy for current handling.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/SECURITY.md",
+          "blob": "8cc66a9ecdc54813e0c88c41d1608ed62f77822c",
+          "hash": "c907229a4daf0a12450cec83b81471f7d33aaf162dac1f752f366a95b2215dc0"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            53
+          ]
+        ],
+        "canonical_path": "SECURITY.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "SECURITY.md",
+          "blob": "38c6702f238fbb6b86e991e0d984f6d649a7fd82"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            156
+          ]
+        ],
+        "inspected_delta_conclusion": "The 53-line translation lists 1.9.x/1.8.x support plus reporting/scope/resources. The 156-line canonical policy adds current distribution surfaces, out-of-scope rules, supply-chain and operational/secrets guidance. Version support/report deadlines here are historical; use the canonical policy for current handling.",
+        "content_role_and_conclusion": "Translated supporting documentation; documentation only, no runtime consumer.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 0,
+          "canonical_fenced_blocks": 2,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/tr/TROUBLESHOOTING.md",
+      "hash": "9a360bc2c2914ad59775c0ea180edffcc4dfc44f781e405c40bef1959978ec89",
+      "disposition": "analyzed",
+      "reason": "Translates context/memory, harness, hook, install, performance and common-error recovery procedures, including Windows spawn/line-ending advice. Canonical TROUBLESHOOTING.md has further current procedure detail; retain its caution to inspect/back up caches and lockfiles. Examples were not executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/TROUBLESHOOTING.md",
+          "blob": "695fc5f611a3a5435198b35d2b61c1124d232d10",
+          "hash": "9a360bc2c2914ad59775c0ea180edffcc4dfc44f781e405c40bef1959978ec89"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            422
+          ]
+        ],
+        "canonical_path": "TROUBLESHOOTING.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "TROUBLESHOOTING.md",
+          "blob": "75eb9df638797c7f58fce2de43b38ee70b59e288"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            470
+          ]
+        ],
+        "inspected_delta_conclusion": "Translates context/memory, harness, hook, install, performance and common-error recovery procedures, including Windows spawn/line-ending advice. Canonical TROUBLESHOOTING.md has further current procedure detail; retain its caution to inspect/back up caches and lockfiles. Examples were not executed.",
+        "content_role_and_conclusion": "Translated supporting documentation; documentation only, no runtime consumer.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 15,
+          "canonical_fenced_blocks": 17,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/tr/commands/build-fix.md",
+      "hash": "e28a44ae39b15bc9cc3a59abed8e36604a9fa9ccad0aa0027f7161a9fa1d224e",
+      "disposition": "analyzed",
+      "reason": "Retains build-tool detection, grouped diagnostics, one-error-at-a-time repair, guardrails, recovery and summary; near-structure match to canonical. Build actions are host instructions and were not run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/build-fix.md",
+          "blob": "24849cecda7ccb44b8bcb7d671a4c0159a0ce94d",
+          "hash": "e28a44ae39b15bc9cc3a59abed8e36604a9fa9ccad0aa0027f7161a9fa1d224e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            62
+          ]
+        ],
+        "canonical_path": "commands/build-fix.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/build-fix.md",
+          "blob": "568351bbc710009acba3e4c32282c436291a34c8"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains build-tool detection, grouped diagnostics, one-error-at-a-time repair, guardrails, recovery and summary; near-structure match to canonical. Build actions are host instructions and were not run.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/build-fix.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 0,
+          "canonical_fenced_blocks": 0,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/build-fix.md",
+            "ranges": [
+              [
+                1,
+                66
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/checkpoint.md",
+      "hash": "30afc6b220fdc18bc3e23d46512bdf5274c1fc27031766c4f86bded9ef3d482f",
+      "disposition": "analyzed",
+      "reason": "Retains quick verification, checkpoint create/verify/list and workflow. Canonical counterpart is the slash command; no stash, commit, test or cleanup command was executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/checkpoint.md",
+          "blob": "e34a9538a832c2999d84b94ed8a48080bf551b85",
+          "hash": "30afc6b220fdc18bc3e23d46512bdf5274c1fc27031766c4f86bded9ef3d482f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            74
+          ]
+        ],
+        "canonical_path": "commands/checkpoint.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/checkpoint.md",
+          "blob": "68166cba10afa94d4c62efa97da939fd18dbf738"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains quick verification, checkpoint create/verify/list and workflow. Canonical counterpart is the slash command; no stash, commit, test or cleanup command was executed.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/checkpoint.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 3,
+          "canonical_fenced_blocks": 3,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/checkpoint.md",
+            "ranges": [
+              [
+                1,
+                78
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/code-review.md",
+      "hash": "fe70c7a704b6ea8b771434be39aa1d08936fcd8490b3e17a97280fb27178a297",
+      "disposition": "analyzed",
+      "reason": "The 40-line Turkish page covers local uncommitted-diff review only. Canonical commands/code-review.md is 289 lines and adds PR-number/URL mode with fetch/context/review/validation/report phases. Thresholds (50-line functions, 800-line files, nesting 4) are source preferences, not universal gates.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/code-review.md",
+          "blob": "d455541d987bdcbdc682b0285c745f86774e4c15",
+          "hash": "fe70c7a704b6ea8b771434be39aa1d08936fcd8490b3e17a97280fb27178a297"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            40
+          ]
+        ],
+        "canonical_path": "commands/code-review.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/code-review.md",
+          "blob": "3e5e8ee61386c372a4ecaf8ec5a603825e94ea0a"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            289
+          ]
+        ],
+        "inspected_delta_conclusion": "The 40-line Turkish page covers local uncommitted-diff review only. Canonical commands/code-review.md is 289 lines and adds PR-number/URL mode with fetch/context/review/validation/report phases. Thresholds (50-line functions, 800-line files, nesting 4) are source preferences, not universal gates.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/code-review.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 0,
+          "canonical_fenced_blocks": 12,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/code-review.md",
+            "ranges": [
+              [
+                1,
+                289
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/evolve.md",
+      "hash": "8a9857bfabb0f5f5bb2e435cbdde66ec1195ac44b9c148616f4c556f995cdca4",
+      "disposition": "analyzed",
+      "reason": "Retains continuous-learning-v2 root selection, instinct clustering into commands/skills/agents and optional project/global generation. Translation of the same operator method; paths and flags were not executed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/evolve.md",
+          "blob": "59a0e626e9d18b29789770dbd269d64709825b19",
+          "hash": "8a9857bfabb0f5f5bb2e435cbdde66ec1195ac44b9c148616f4c556f995cdca4"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ],
+        "canonical_path": "commands/evolve.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/evolve.md",
+          "blob": "467458e76b392a2b46747e926465ab781da64aca"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains continuous-learning-v2 root selection, instinct clustering into commands/skills/agents and optional project/global generation. Translation of the same operator method; paths and flags were not executed.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/evolve.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 7,
+          "canonical_fenced_blocks": 7,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/evolve.md",
+            "ranges": [
+              [
+                1,
+                178
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/go-build.md",
+      "hash": "06f13939bd36245cacd10b3166221b01401a832cc0a12ae7d61d469eeb162132",
+      "disposition": "analyzed",
+      "reason": "Mirrors serial Go build, vet/static analysis and optional lint/module diagnostics with an illustrative session. Commands and outputs were not run or verified.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/go-build.md",
+          "blob": "28b205c0c8821357221d5570064843198010b804",
+          "hash": "06f13939bd36245cacd10b3166221b01401a832cc0a12ae7d61d469eeb162132"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            183
+          ]
+        ],
+        "canonical_path": "commands/go-build.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/go-build.md",
+          "blob": "189b3d9ac2973a5e02087444cd7001a27909c75c"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            183
+          ]
+        ],
+        "inspected_delta_conclusion": "Mirrors serial Go build, vet/static analysis and optional lint/module diagnostics with an illustrative session. Commands and outputs were not run or verified.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/go-build.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 10,
+          "canonical_fenced_blocks": 10,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/go-build.md",
+            "ranges": [
+              [
+                1,
+                183
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/go-review.md",
+      "hash": "c073aa7ed2a8246bac4f6c0f8e0dbcaabb56ecd2981685ac0be7adc7b684c433",
+      "disposition": "analyzed",
+      "reason": "Retains Go security, correctness, concurrency and idiomatic review categories plus optional checks. go vet/staticcheck/race checks were not run; severity rules are guidance, not proof of code status.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/go-review.md",
+          "blob": "f24a427684eae916dc803431a45c6dc7b4c2b9d9",
+          "hash": "c073aa7ed2a8246bac4f6c0f8e0dbcaabb56ecd2981685ac0be7adc7b684c433"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            148
+          ]
+        ],
+        "canonical_path": "commands/go-review.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/go-review.md",
+          "blob": "4dde854af1ca512310fcd95ceba019541a07aa21"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            148
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains Go security, correctness, concurrency and idiomatic review categories plus optional checks. go vet/staticcheck/race checks were not run; severity rules are guidance, not proof of code status.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/go-review.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 6,
+          "canonical_fenced_blocks": 6,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/go-review.md",
+            "ranges": [
+              [
+                1,
+                148
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/go-test.md",
+      "hash": "15079a7b1caa27276ceb2008ad1f22594ce1b16d568eece996a669d88632a559",
+      "disposition": "analyzed",
+      "reason": "Retains Go red/green TDD, table tests, coverage guidance and illustrative email-validator session. The 80% target/examples are source policy, not validated outcomes; no Go tests ran.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/go-test.md",
+          "blob": "391350db8133ff570d858c520a76f973e3f7afeb",
+          "hash": "15079a7b1caa27276ceb2008ad1f22594ce1b16d568eece996a669d88632a559"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            268
+          ]
+        ],
+        "canonical_path": "commands/go-test.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/go-test.md",
+          "blob": "8f592fb20cdff53f0732eeebad3a3532a2c7477d"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            268
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains Go red/green TDD, table tests, coverage guidance and illustrative email-validator session. The 80% target/examples are source policy, not validated outcomes; no Go tests ran.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/go-test.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 12,
+          "canonical_fenced_blocks": 12,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/go-test.md",
+            "ranges": [
+              [
+                1,
+                268
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/instinct-export.md",
+      "hash": "610f7c40c50af5a5580d46412b26ca04b9c9db49cef665e70898cfeaf19de81e",
+      "disposition": "analyzed",
+      "reason": "Preserves export filters for scope/domain/confidence and YAML examples. The canonical command has the same mechanism; no real store was exported.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/instinct-export.md",
+          "blob": "19c588b42dd96421cd6940aa83ded3d48de996e1",
+          "hash": "610f7c40c50af5a5580d46412b26ca04b9c9db49cef665e70898cfeaf19de81e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "canonical_path": "commands/instinct-export.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/instinct-export.md",
+          "blob": "6a47fa44cd31eba8768d0036816bc657b8016518"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            66
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves export filters for scope/domain/confidence and YAML examples. The canonical command has the same mechanism; no real store was exported.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/instinct-export.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 2,
+          "canonical_fenced_blocks": 2,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/instinct-export.md",
+            "ranges": [
+              [
+                1,
+                66
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/instinct-import.md",
+      "hash": "4c061c3f02b233471d6c52e0e95153e28c8df3514c07a69d4331bb8d390c7754",
+      "disposition": "analyzed",
+      "reason": "Preserves file/URL import, dry-run/force/confidence/scope options and duplicate/confidence merge behavior. Output blocks are examples, not an actual import.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/instinct-import.md",
+          "blob": "b24910954851fb8f3ae027b1c1fb84cfac16452a",
+          "hash": "4c061c3f02b233471d6c52e0e95153e28c8df3514c07a69d4331bb8d390c7754"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            114
+          ]
+        ],
+        "canonical_path": "commands/instinct-import.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/instinct-import.md",
+          "blob": "e1a5684f019117af43f5f2c228cd3b88ae96d2eb"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            114
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves file/URL import, dry-run/force/confidence/scope options and duplicate/confidence merge behavior. Output blocks are examples, not an actual import.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/instinct-import.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 6,
+          "canonical_fenced_blocks": 6,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/instinct-import.md",
+            "ranges": [
+              [
+                1,
+                114
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/instinct-status.md",
+      "hash": "76508f79415f63a007571b221c088af154195746d02797fabde1855bdb131d5b",
+      "disposition": "analyzed",
+      "reason": "Executable resolver snippet matches the English command: env, standard install, known plugin roots/cache, then fallback before status invocation. Displayed project/global records are format examples, not live data; code was not run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/instinct-status.md",
+          "blob": "c7c811eb05a1e806ff063bfb7170b36ff2d0aaad",
+          "hash": "76508f79415f63a007571b221c088af154195746d02797fabde1855bdb131d5b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "canonical_path": "commands/instinct-status.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/instinct-status.md",
+          "blob": "b8c7cfc3955d91d54433f6594a4071dadd8d2824"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "inspected_delta_conclusion": "Executable resolver snippet matches the English command: env, standard install, known plugin roots/cache, then fallback before status invocation. Displayed project/global records are format examples, not live data; code was not run.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/instinct-status.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 3,
+          "canonical_fenced_blocks": 3,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/instinct-status.md",
+            "ranges": [
+              [
+                1,
+                59
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/learn-eval.md",
+      "hash": "2db19e8b1bf4003f71c61413e94d132737ad15d6d6e1eeb09324f3ae86bdc03b",
+      "disposition": "analyzed",
+      "reason": "Retains reusable-pattern extraction, scope choice, draft template, overlap/MEMORY checks, holistic Save/Improve/Absorb/Drop and approval-before-write. Canonical adds guarded-write requirements (untrusted-input handling, slug/path containment, existing-target handling and discoverable <name>/SKILL.md); Turkish says uncertain scope defaults Global while canonical says ask. Frontier-model efficacy claims are unvalidated.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/learn-eval.md",
+          "blob": "52b95c1abc840ef82c85e2957fc48fb6ca313bb8",
+          "hash": "2db19e8b1bf4003f71c61413e94d132737ad15d6d6e1eeb09324f3ae86bdc03b"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            116
+          ]
+        ],
+        "canonical_path": "commands/learn-eval.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/learn-eval.md",
+          "blob": "c936efdbbcbe8ebc61859f6e605232304505e0e4"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            153
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains reusable-pattern extraction, scope choice, draft template, overlap/MEMORY checks, holistic Save/Improve/Absorb/Drop and approval-before-write. Canonical adds guarded-write requirements (untrusted-input handling, slug/path containment, existing-target handling and discoverable <name>/SKILL.md); Turkish says uncertain scope defaults Global while canonical says ask. Frontier-model efficacy claims are unvalidated.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/learn-eval.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 2,
+          "canonical_fenced_blocks": 2,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/learn-eval.md",
+            "ranges": [
+              [
+                1,
+                153
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/learn.md",
+      "hash": "9a1bb743107fe74ffa99e90cc7c8f7cbfb893dbe9cfccec7531ca776ad51738e",
+      "disposition": "analyzed",
+      "reason": "Simple session-to-skill extraction path with approval and project/global template; canonical /learn has additional process/guard details. Treat as legacy short form and use /learn-eval for richer quality/placement gate; no skill was written.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/learn.md",
+          "blob": "b744171659e317dbb0b4303c8a4ca03e6007a51b",
+          "hash": "9a1bb743107fe74ffa99e90cc7c8f7cbfb893dbe9cfccec7531ca776ad51738e"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            70
+          ]
+        ],
+        "canonical_path": "commands/learn.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/learn.md",
+          "blob": "3ab6990c22ffb4fdb11c149d5b37ebf28bc30cd9"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            107
+          ]
+        ],
+        "inspected_delta_conclusion": "Simple session-to-skill extraction path with approval and project/global template; canonical /learn has additional process/guard details. Treat as legacy short form and use /learn-eval for richer quality/placement gate; no skill was written.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/learn.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 1,
+          "canonical_fenced_blocks": 1,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/learn.md",
+            "ranges": [
+              [
+                1,
+                107
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/multi-backend.md",
+      "hash": "7f684d8bae7303ebe74511f872200623e9af81e71806b96d1eebb08ae91d0363",
+      "disposition": "analyzed",
+      "reason": "Describes Claude orchestration with Codex/Gemini roles, staged workflow and CCG wrapper/prompt paths under ~/.claude. Separate CCG dependencies were not invoked; model roles/routing are source-specific, not universal.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/multi-backend.md",
+          "blob": "e551576e0983cac5a2d3da5f8cf0fd6b95b9e8b2",
+          "hash": "7f684d8bae7303ebe74511f872200623e9af81e71806b96d1eebb08ae91d0363"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            160
+          ]
+        ],
+        "canonical_path": "commands/multi-backend.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/multi-backend.md",
+          "blob": "95cc95d831d65779d86203f446b043cbee0af66a"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "inspected_delta_conclusion": "Describes Claude orchestration with Codex/Gemini roles, staged workflow and CCG wrapper/prompt paths under ~/.claude. Separate CCG dependencies were not invoked; model roles/routing are source-specific, not universal.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/multi-backend.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 2,
+          "canonical_fenced_blocks": 2,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/multi-backend.md",
+            "ranges": [
+              [
+                1,
+                164
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/multi-execute.md",
+      "hash": "6dc2435e3d9a03503a3309296bc1959fb8fee6a6f1fd73ad7910fbb172f15dcd",
+      "disposition": "analyzed",
+      "reason": "Preserves plan-confirmation, context retrieval, Codex/Gemini routing, external-model no-write boundary, unified-diff handoff and audit/delivery confirmation. Depends on external CCG wrappers/models; none were run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/multi-execute.md",
+          "blob": "a9490efb7a13713441708058f44912fa12437546",
+          "hash": "6dc2435e3d9a03503a3309296bc1959fb8fee6a6f1fd73ad7910fbb172f15dcd"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            317
+          ]
+        ],
+        "canonical_path": "commands/multi-execute.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/multi-execute.md",
+          "blob": "2c0ac1c452828eb40b8dfe258c98aad560a4dd83"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            321
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves plan-confirmation, context retrieval, Codex/Gemini routing, external-model no-write boundary, unified-diff handoff and audit/delivery confirmation. Depends on external CCG wrappers/models; none were run.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/multi-execute.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 6,
+          "canonical_fenced_blocks": 6,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/multi-execute.md",
+            "ranges": [
+              [
+                1,
+                321
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/multi-frontend.md",
+      "hash": "58a9abd2fc2d47674ac0c64bdbd76429872494bcb634856663e8e902c17c32b1",
+      "disposition": "analyzed",
+      "reason": "Mirrors frontend-focused multi-model route and session-wrapper protocol with CCG paths. External wrapper/models are unverified; model assignment is source guidance only.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/multi-frontend.md",
+          "blob": "babf3cf516c410a9a748d0c2c8a3b6cfca670143",
+          "hash": "58a9abd2fc2d47674ac0c64bdbd76429872494bcb634856663e8e902c17c32b1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            160
+          ]
+        ],
+        "canonical_path": "commands/multi-frontend.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/multi-frontend.md",
+          "blob": "939dc5afe5c05db9f659e1ad874dcd259f2aeaeb"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "inspected_delta_conclusion": "Mirrors frontend-focused multi-model route and session-wrapper protocol with CCG paths. External wrapper/models are unverified; model assignment is source guidance only.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/multi-frontend.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 2,
+          "canonical_fenced_blocks": 2,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/multi-frontend.md",
+            "ranges": [
+              [
+                1,
+                164
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/multi-plan.md",
+      "hash": "4341dff03f54e19074ef55a56fc35d42ab075bfdb90ae7da744080e8d68962b1",
+      "disposition": "analyzed",
+      "reason": "Retains full-context retrieval, multi-model analysis, optional dual-model drafts, final plan format and handoff without execution. Requires external CCG wrappers/prompts; no model call or plan file was produced.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/multi-plan.md",
+          "blob": "30e9d1017a0f50bf05e2882d6c3d80776fd1c423",
+          "hash": "4341dff03f54e19074ef55a56fc35d42ab075bfdb90ae7da744080e8d68962b1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            270
+          ]
+        ],
+        "canonical_path": "commands/multi-plan.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/multi-plan.md",
+          "blob": "3b4920761403a2bf4dd0f023ab4f73946a17a85f"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            274
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains full-context retrieval, multi-model analysis, optional dual-model drafts, final plan format and handoff without execution. Requires external CCG wrappers/prompts; no model call or plan file was produced.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/multi-plan.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 6,
+          "canonical_fenced_blocks": 7,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/multi-plan.md",
+            "ranges": [
+              [
+                1,
+                274
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/multi-workflow.md",
+      "hash": "c2fda85abe86953b136261a2adeb831a7c6f8a7bba67cb129c49551df6106b87",
+      "disposition": "analyzed",
+      "reason": "Preserves staged multi-model workflow and phase confirmations, distinguishing in-process subagents from external CCG worktree orchestration. External tools were not invoked.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/multi-workflow.md",
+          "blob": "0e94a2c7595be2e578f9d386961f21ac9ea707db",
+          "hash": "c2fda85abe86953b136261a2adeb831a7c6f8a7bba67cb129c49551df6106b87"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            193
+          ]
+        ],
+        "canonical_path": "commands/multi-workflow.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/multi-workflow.md",
+          "blob": "5aad6cb4fa579cc377cbb7352e66af35fc9d39d0"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            197
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves staged multi-model workflow and phase confirmations, distinguishing in-process subagents from external CCG worktree orchestration. External tools were not invoked.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/multi-workflow.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 4,
+          "canonical_fenced_blocks": 4,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/multi-workflow.md",
+            "ranges": [
+              [
+                1,
+                197
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/plan.md",
+      "hash": "fe1fd50e9463fd7ccca7ffb41433489fd235422a99b25cddb07bc5460264baa1",
+      "disposition": "analyzed",
+      "reason": "The 115-line Turkish version is a short plan-only workflow with one illustrative market-alert architecture. Canonical commands/plan.md is 206 lines and adds input modes, pattern grounding and PRD-artifact output; sample estimates are not evidence or an implementation.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/plan.md",
+          "blob": "f2dee61d7fbed2ba624acd220b4eea5821a6037d",
+          "hash": "fe1fd50e9463fd7ccca7ffb41433489fd235422a99b25cddb07bc5460264baa1"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            115
+          ]
+        ],
+        "canonical_path": "commands/plan.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/plan.md",
+          "blob": "f9ac7db6ecbb573d4e56fbd6cc7c7ef2e9ba7fa7"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            206
+          ]
+        ],
+        "inspected_delta_conclusion": "The 115-line Turkish version is a short plan-only workflow with one illustrative market-alert architecture. Canonical commands/plan.md is 206 lines and adds input modes, pattern grounding and PRD-artifact output; sample estimates are not evidence or an implementation.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/plan.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 1,
+          "canonical_fenced_blocks": 3,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/plan.md",
+            "ranges": [
+              [
+                1,
+                206
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/pm2.md",
+      "hash": "226eed202b02dd779ce6f565fd4e7fd5d90679293b77ef22770a3b510edb01e7",
+      "disposition": "analyzed",
+      "reason": "Retains service/port detection, ecosystem.config.cjs generation, PM2 commands, Windows command-file templates and CLAUDE.md update. Samples are generated-template guidance; no files or services were created.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/pm2.md",
+          "blob": "1b2dd7cea510f281f5168e3597b9e2fc2221b074",
+          "hash": "226eed202b02dd779ce6f565fd4e7fd5d90679293b77ef22770a3b510edb01e7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            272
+          ]
+        ],
+        "canonical_path": "commands/pm2.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/pm2.md",
+          "blob": "5a9c35d7e2f223b3dca36a26f13f2fa035fdb34d"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            276
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains service/port detection, ecosystem.config.cjs generation, PM2 commands, Windows command-file templates and CLAUDE.md update. Samples are generated-template guidance; no files or services were created.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/pm2.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 24,
+          "canonical_fenced_blocks": 24,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/pm2.md",
+            "ranges": [
+              [
+                1,
+                276
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/refactor-clean.md",
+      "hash": "d8d791e319486a4ab6472c9b724d1de179320bb05a21c3f6d628eda356920506",
+      "disposition": "analyzed",
+      "reason": "Preserves dead-code detection, SAFE/CAUTION/DANGER grouping, tests around atomic removals and duplicate consolidation. Rollback documents `git checkout -- <file>`, destructive to local edits if copied blindly; it was not run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/refactor-clean.md",
+          "blob": "cdebb83f7aed69d5bbb0b086a49e7035d929600b",
+          "hash": "d8d791e319486a4ab6472c9b724d1de179320bb05a21c3f6d628eda356920506"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "canonical_path": "commands/refactor-clean.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/refactor-clean.md",
+          "blob": "781a57853df2a12d0bb627e0948de7d802d94ea0"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves dead-code detection, SAFE/CAUTION/DANGER grouping, tests around atomic removals and duplicate consolidation. Rollback documents `git checkout -- <file>`, destructive to local edits if copied blindly; it was not run.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/refactor-clean.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 2,
+          "canonical_fenced_blocks": 2,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/refactor-clean.md",
+            "ranges": [
+              [
+                1,
+                84
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/sessions.md",
+      "hash": "c89defcc1da118ef07e8e20742c979ecbbd8093dffe4c4e5d8768c93278243ec",
+      "disposition": "analyzed",
+      "reason": "Documents list/load/alias/remove/info operations and repeated Node resolver for ECC/plugin roots; metadata examples include project/worktree/branch. Commands were not run; canonical command has a longer operation/example set.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/sessions.md",
+          "blob": "6794d5c81b69adcf870fb16f400b06d19df7f7f7",
+          "hash": "c89defcc1da118ef07e8e20742c979ecbbd8093dffe4c4e5d8768c93278243ec"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            293
+          ]
+        ],
+        "canonical_path": "commands/sessions.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/sessions.md",
+          "blob": "2b0c3c97ed3b03cc9fb0dab6cd230a5b5aaab94b"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            339
+          ]
+        ],
+        "inspected_delta_conclusion": "Documents list/load/alias/remove/info operations and repeated Node resolver for ECC/plugin roots; metadata examples include project/worktree/branch. Commands were not run; canonical command has a longer operation/example set.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/sessions.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 12,
+          "canonical_fenced_blocks": 13,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/sessions.md",
+            "ranges": [
+              [
+                1,
+                339
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/setup-pm.md",
+      "hash": "8bbedadfcdd5a6ac865cbe3567636d44538dbce04212a3dacd440e8ae7eb45d7",
+      "disposition": "analyzed",
+      "reason": "Preserves package-manager preference order (env, project config/manifest, lockfile, global config, fallback) and setup/list commands. Config/code fences match canonical examples; no local preference was changed.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/setup-pm.md",
+          "blob": "0e925ac664f7255cac1c240176664e14c6fd1499",
+          "hash": "8bbedadfcdd5a6ac865cbe3567636d44538dbce04212a3dacd440e8ae7eb45d7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "canonical_path": "commands/setup-pm.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/setup-pm.md",
+          "blob": "87224b9cd12ef626398ff99d5aa624c122e4a686"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves package-manager preference order (env, project config/manifest, lockfile, global config, fallback) and setup/list commands. Config/code fences match canonical examples; no local preference was changed.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/setup-pm.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 6,
+          "canonical_fenced_blocks": 6,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/setup-pm.md",
+            "ranges": [
+              [
+                1,
+                80
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/skill-create.md",
+      "hash": "65b54fe0b5dd37398d1ab9f9cfaff2056b13797c510dd431b8960abc61935edc",
+      "disposition": "analyzed",
+      "reason": "Describes local Git commit/file-history analysis, workflow detection and SKILL.md/instinct generation. Git commands are examples only; no repository history was analyzed or skill written.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/skill-create.md",
+          "blob": "998a9902d77fe0b50d02e03c924487767655cdc4",
+          "hash": "65b54fe0b5dd37398d1ab9f9cfaff2056b13797c510dd431b8960abc61935edc"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            174
+          ]
+        ],
+        "canonical_path": "commands/skill-create.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/skill-create.md",
+          "blob": "8ef6846e44614aceb2ebb68ea8d9cb1d860ff6a2"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            178
+          ]
+        ],
+        "inspected_delta_conclusion": "Describes local Git commit/file-history analysis, workflow detection and SKILL.md/instinct generation. Git commands are examples only; no repository history was analyzed or skill written.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/skill-create.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 6,
+          "canonical_fenced_blocks": 4,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/skill-create.md",
+            "ranges": [
+              [
+                1,
+                178
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/test-coverage.md",
+      "hash": "c44835e29427e73cba02990e2be882fbc99a1d8bb3fac5fccb16735af684d083",
+      "disposition": "analyzed",
+      "reason": "Retains framework detection, report analysis, test-generation priorities, verification and reporting; coverage target/ranking is guidance, not a tested threshold. No tests or report were run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/test-coverage.md",
+          "blob": "d639562526b03beb585b5d71dba10aca970ff2d6",
+          "hash": "c44835e29427e73cba02990e2be882fbc99a1d8bb3fac5fccb16735af684d083"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            69
+          ]
+        ],
+        "canonical_path": "commands/test-coverage.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/test-coverage.md",
+          "blob": "0af60e88b6a8627ad7d5fc45f900296f9b35a88d"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "inspected_delta_conclusion": "Retains framework detection, report analysis, test-generation priorities, verification and reporting; coverage target/ranking is guidance, not a tested threshold. No tests or report were run.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/test-coverage.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 1,
+          "canonical_fenced_blocks": 1,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/test-coverage.md",
+            "ranges": [
+              [
+                1,
+                73
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/tr/commands/update-docs.md",
+      "hash": "2253280dc546667d8e658f07c5ac239724f7f3cb0c3c7e3959953f977c7cc6ab",
+      "disposition": "analyzed",
+      "reason": "Preserves source-of-truth discovery, script/environment/API references, contributor/runbook updates and staleness review. No generated documentation was produced.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/update-docs.md",
+          "blob": "d98e8d13f74cd8f55a2e3f76b2ca7f874185a23f",
+          "hash": "2253280dc546667d8e658f07c5ac239724f7f3cb0c3c7e3959953f977c7cc6ab"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            84
+          ]
+        ],
+        "canonical_path": "commands/update-docs.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "commands/update-docs.md",
+          "blob": "a75f2332c38767f9339caa8ff93810949fbd41f8"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            88
+          ]
+        ],
+        "inspected_delta_conclusion": "Preserves source-of-truth discovery, script/environment/API references, contributor/runbook updates and staleness review. No generated documentation was produced.",
+        "content_role_and_conclusion": "Translated mirror of a host command; canonical host resource is commands/update-docs.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 3,
+          "canonical_fenced_blocks": 3,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed.",
+        "consumer_evidence": [
+          {
+            "path": ".claude-plugin/plugin.json",
+            "ranges": [
+              [
+                43,
+                45
+              ]
+            ],
+            "conclusion": "Plugin manifest exposes ./commands/ as a host command root; the localized docs path is a documentation mirror and is not itself in that root."
+          },
+          {
+            "path": "commands/update-docs.md",
+            "ranges": [
+              [
+                1,
+                88
+              ]
+            ],
+            "conclusion": "Named canonical command resource under the manifest-declared commands root; this is the counterpart compared with the translated documentation."
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/de-DE/README.md",
+      "hash": "1f59b7e0e1285d07233cdbd8addcc3c093ba5d56c76e65244ba2dfae74274de7",
+      "disposition": "analyzed",
+      "reason": "Older 1,763-line German overview/install/cross-host reference; history ends at v2.0.0-rc.1 while canonical README is v2.2.3. Retains plugin/manual install, manager/hook and Codex/Cursor/Zed/OpenCode/Copilot summaries but lacks newer detailed guided install; examples were not run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/de-DE/README.md",
+          "blob": "c520a611ce0d10fffc83e2abba33ba473a3e721d",
+          "hash": "1f59b7e0e1285d07233cdbd8addcc3c093ba5d56c76e65244ba2dfae74274de7"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            1763
+          ]
+        ],
+        "canonical_path": "README.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "README.md",
+          "blob": "95673de4bb5a8471507fc2c396243cd20395ee58"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            2048
+          ]
+        ],
+        "inspected_delta_conclusion": "Older 1,763-line German overview/install/cross-host reference; history ends at v2.0.0-rc.1 while canonical README is v2.2.3. Retains plugin/manual install, manager/hook and Codex/Cursor/Zed/OpenCode/Copilot summaries but lacks newer detailed guided install; examples were not run.",
+        "content_role_and_conclusion": "Localized user guide; no runtime consumer. Canonical user guide is README.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 57,
+          "canonical_fenced_blocks": 79,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/ru/README.md",
+      "hash": "3416bff85624bf859e41915abe2e4367e8b88cb41278e41adbc09bb907cdf52f",
+      "disposition": "analyzed",
+      "reason": "Older 1,615-line Russian overview/install/cross-host reference; history ends at v2.0.0-rc.1 versus canonical v2.2.3. Retains plugin/manual setup, manager/hook and Codex/Cursor/Zed/OpenCode/Copilot summaries but not newer walkthroughs; examples were not run.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/ru/README.md",
+          "blob": "beeb4e59e2858328100664202f2182e620b77b45",
+          "hash": "3416bff85624bf859e41915abe2e4367e8b88cb41278e41adbc09bb907cdf52f"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            1615
+          ]
+        ],
+        "canonical_path": "README.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "README.md",
+          "blob": "95673de4bb5a8471507fc2c396243cd20395ee58"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            2048
+          ]
+        ],
+        "inspected_delta_conclusion": "Older 1,615-line Russian overview/install/cross-host reference; history ends at v2.0.0-rc.1 versus canonical v2.2.3. Retains plugin/manual setup, manager/hook and Codex/Cursor/Zed/OpenCode/Copilot summaries but not newer walkthroughs; examples were not run.",
+        "content_role_and_conclusion": "Localized user guide; no runtime consumer. Canonical user guide is README.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 53,
+          "canonical_fenced_blocks": 79,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    },
+    {
+      "path": "docs/uk-UA/README.md",
+      "hash": "ddde21f190272e0019de37402e850ce332ad55e711ca03d51be0a922e9f606c0",
+      "disposition": "analyzed",
+      "reason": "Newer 1,897-line Ukrainian guide includes v2.1 unified-memory lifecycle and Cursor data isolation (init/handoff/search/read/doctor, untrusted memory, restricted optional MCP, ECC_AGENT_DATA_HOME), but trails root README v2.2.3 and has install/Codex framing deltas including unpinned global npm install. No installer or memory operation ran.",
+      "candidate_keys": [],
+      "review_kind": "difference-review",
+      "review_evidence": {
+        "frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/uk-UA/README.md",
+          "blob": "f76959dc6076c48808b58c8f20484563999a8597",
+          "hash": "ddde21f190272e0019de37402e850ce332ad55e711ca03d51be0a922e9f606c0"
+        },
+        "actual_read_ranges": [
+          [
+            1,
+            1897
+          ]
+        ],
+        "canonical_path": "README.md",
+        "canonical_frozen_source": {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "README.md",
+          "blob": "95673de4bb5a8471507fc2c396243cd20395ee58"
+        },
+        "canonical_actual_read_ranges": [
+          [
+            1,
+            2048
+          ]
+        ],
+        "inspected_delta_conclusion": "Newer 1,897-line Ukrainian guide includes v2.1 unified-memory lifecycle and Cursor data isolation (init/handoff/search/read/doctor, untrusted memory, restricted optional MCP, ECC_AGENT_DATA_HOME), but trails root README v2.2.3 and has install/Codex framing deltas including unpinned global npm install. No installer or memory operation ran.",
+        "content_role_and_conclusion": "Localized user guide; no runtime consumer. Canonical user guide is README.md.",
+        "static_method_inventory": {
+          "source_fenced_blocks": 73,
+          "canonical_fenced_blocks": 79,
+          "scope": "Method/procedure sections and embedded examples compared statically; source commands/examples were not executed."
+        },
+        "review_record": "docs/audit/ecc-readme-tr-closure.json",
+        "execution": "Static frozen checkout reading only; no source command, installer, script, test, model call, service, or browser action was executed."
+      }
+    }
+  ],
+  "candidate_additions": [],
+  "candidate_update_suggestions": [
+    {
+      "candidate_key": "ecc-variants-localization-symbol-integrity",
+      "recommendation": "Optionally add this Turkish resolver-method passage as corroborating evidence to the existing localization candidate after parent curation/source-cap review. Do not create a locale-specific candidate; the passage translates prose while retaining host-resolved identifiers and adds no new mechanism.",
+      "sources": [
+        {
+          "repo": "affaan-m/ECC",
+          "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "path": "docs/tr/commands/instinct-status.md",
+          "start_line": 13,
+          "end_line": 22,
+          "blob": "c7c811eb05a1e806ff063bfb7170b36ff2d0aaad",
+          "hash": "76508f79415f63a007571b221c088af154195746d02797fabde1855bdb131d5b",
+          "section": "Translated method prose preserves resolver identifiers and executable path/env literals"
+        }
+      ]
+    }
+  ],
+  "editorial_note": "This merge fragment closes only 33 assigned rows: 25 docs/tr/commands files plus docs/tr/README.md, docs/tr/CHANGELOG.md, docs/tr/CONTRIBUTING.md, docs/tr/SECURITY.md, docs/tr/TROUBLESHOOTING.md, docs/de-DE/README.md, docs/ru/README.md, and docs/uk-UA/README.md. docs/tr/the-shortform-guide.md is excluded because ecc-root-guide-closure.json already closes it. The 34 docs/tr/skills/**/SKILL.md rows have been removed from terminal coverage because this review had only heading/fence inventory and targeted discrepancy reads; see .tools/ecc-tr-remainder.json for exact paths and withdrawn full-range claims. Translation omissions are localization completeness findings, not new reusable mechanisms. Existing candidate IDs are preserved; candidate_update_suggestions is advisory. Numeric thresholds, historical versions, examples and operational outputs remain unverified source assertions. Merge only these 33 coverage_updates by exact path, preserving all other rows and candidate IDs. No shared harvest or partition file was modified.",
+  "evidence_repair": {
+    "skill_rows_removed_from_terminal_fragment": 34,
+    "terminal_rows_retained": 33,
+    "reason": "Source and canonical actual_read_ranges for the removed skill rows were withdrawn because prior inspection was inventory plus targeted snippets, not complete method/example reading.",
+    "remainder_manifest": ".tools/ecc-tr-remainder.json"
+  }
+}

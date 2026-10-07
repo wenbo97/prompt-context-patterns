@@ -1,0 +1,51 @@
+name: Verify reviewed catalog
+
+on:
+  workflow_call:
+  pull_request:
+  push:
+    branches: [master, 'rebuild/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - run: npm ci
+      - run: npm --prefix eval/patternfoo ci --legacy-peer-deps --omit=peer
+      - run: npm test
+      - run: npm run sources:restore
+      - run: npm run check
+      - run: npm run check:sources
+      - run: npm run check:generated
+      - run: bundle exec ruby tests/liquid-literals.rb
+      - run: npm --prefix eval/patternfoo test
+      - run: npm --prefix eval/patternfoo run build
+      - run: bundle exec jekyll build
+      - run: npm run check:links
+      - run: npm run check:site
+      - run: npm run check:dates
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-evidence
+          path: |
+            docs/audit/catalog-validation.json
+            docs/audit/rendered-links.json
+            test-results/

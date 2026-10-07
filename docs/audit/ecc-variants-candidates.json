@@ -1,0 +1,240 @@
+[
+  {
+    "key": "ecc-variants-invocation-literal-boundary",
+    "name_en": "Preserve Literal Examples Across Invocation Templates",
+    "name_zh": "跨调用模板保留示例字面值",
+    "category": "skill-authoring",
+    "tags": [
+      "ecc",
+      "harness-adaptation",
+      "template-boundary"
+    ],
+    "summary_en": "Check that host argument interpolation leaves instructional code examples semantically intact.",
+    "summary_zh": "检查宿主参数插值是否保持教学代码示例的语义。",
+    "status": "active",
+    "content": {
+      "en": {
+        "description": "Keep example-language syntax separate from the host's invocation-template syntax.",
+        "scenario": "A review skill demonstrates PostgreSQL parameter binding, while its host expands positional argument markers in the skill body.",
+        "mechanism": "Inspect the rendered invocation with representative arguments. Protect colliding literals with a documented non-expanding reference or escape mechanism; if neither exists, explain binding in prose rather than corrupt the driver syntax.",
+        "bad": "Put SELECT * FROM users WHERE id = $1 in the expanding skill body and assume the example survives /review alice unchanged.",
+        "good": "Keep the PostgreSQL example in a verified non-expanding reference, or use the host's documented escaping. Render /review alice and a no-argument invocation; compare the query placeholder and parameter array with the source. If protection is unavailable, describe PostgreSQL binding in prose.",
+        "why": "The same characters can be meaningful to two interpreters; a valid SQL example may be transformed before the model sees it.",
+        "expected": "Both rendered invocations retain the intended parameter-binding semantics, or the skill explicitly uses a prose fallback.",
+        "boundaries": "Host preprocessing is a source-observed warning, not a universal behavior. Preserve the actual driver's syntax; '?' is not a universal PostgreSQL replacement. Do not assume a reference file is exempt without testing the host's expansion boundary."
+      },
+      "zh": {
+        "description": "把示例语言语法与宿主调用模板语法分开。",
+        "scenario": "评审技能演示 PostgreSQL 参数绑定，而宿主会展开技能正文中的位置参数标记。",
+        "mechanism": "用代表性参数检查实际渲染的调用。通过已记录的不展开引用或转义机制保护冲突字面值；若都不可用，改用文字解释绑定，不破坏驱动语法。",
+        "bad": "在会插值的技能正文写 SELECT * FROM users WHERE id = $1，假定 /review alice 后示例仍原样存在。",
+        "good": "把 PostgreSQL 示例放在已核查的不展开引用，或用宿主已记录的转义。渲染 /review alice 和无参数调用，核对查询占位符及参数数组。无保护机制时用文字说明 PostgreSQL 参数绑定。",
+        "why": "同一字符可能被两个解释器赋予含义；合法 SQL 示例可能在模型看到前就被转换。",
+        "expected": "两种调用都保留预期参数绑定语义，或技能明确使用文字回退。",
+        "boundaries": "预处理行为只是来源中的观察警告，不是通用事实。保持实际驱动语法；问号不是 PostgreSQL 的通用替代。未测试展开边界前，不能假定引用文件不被处理。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 2,
+      "boundaries": 2
+    },
+    "suggested_existing_ids": [],
+    "related_existing_ids": [
+      4,
+      23,
+      171,
+      183
+    ],
+    "example_origin": "editorial-teaching-example",
+    "validation_status": "editorial-review-only",
+    "origin_status": "unknown",
+    "sources": [
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": "skills/security-review/SKILL.md",
+        "start_line": 128,
+        "end_line": 142,
+        "section": "Parameterized query example and invocation-substitution warning",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/skills/security-review/SKILL.md#L128-L142"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": ".agents/skills/security-review/SKILL.md",
+        "start_line": 119,
+        "end_line": 135,
+        "section": "Mirror retains a positional literal without the canonical warning",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/.agents/skills/security-review/SKILL.md#L119-L135"
+      }
+    ]
+  },
+  {
+    "key": "ecc-variants-optional-capability-fault-isolation",
+    "name_en": "Isolate Optional Capability Loading Failures",
+    "name_zh": "隔离可选能力加载故障",
+    "category": "tools",
+    "tags": [
+      "ecc",
+      "capability-loading",
+      "fault-isolation"
+    ],
+    "summary_en": "Keep a missing optional tool dependency from preventing unrelated capabilities from starting.",
+    "summary_zh": "避免可选工具依赖缺失使无关能力无法启动。",
+    "status": "active",
+    "content": {
+      "en": {
+        "description": "Load optional infrastructure behind the capability boundary and expose its failure honestly.",
+        "scenario": "A partially installed toolkit has its source-reader but lacks the changed-file tracker module.",
+        "mechanism": "Defer the optional import to its tool or contain startup failure in that subsystem. Keep unrelated registration alive, name the unavailable capability, contain diagnostic failures and permit a verified retry after repair.",
+        "bad": "Import the tracker at the top of the shared tool barrel. A missing tracker prevents every tool from loading; alternatively catch it and return an empty changed-file list as if tracking worked.",
+        "good": "Register the independent reader. Load the tracker inside changed-files or its isolated initialization boundary. If missing, return tracker-unavailable with repair guidance, not no-changes. Catch diagnostic logging failures too; invalidate a failed import promise so a repaired dependency can be retried.",
+        "why": "The failure is confined before an unrelated tool is taken down, and absence remains different from a valid empty result.",
+        "expected": "With the tracker removed in a controlled fixture, reader startup remains usable while changed-files reports unavailable; after repair, a new load can succeed.",
+        "boundaries": "Only optional capabilities may degrade this way; required security/checker dependencies must fail according to their own policy. Registration is not proof of usability. The actual loader and host behavior still need runtime tests."
+      },
+      "zh": {
+        "description": "在能力边界后加载可选基础设施，并诚实展示加载失败。",
+        "scenario": "工具包部分安装，源码读取器存在，但改动文件追踪模块缺失。",
+        "mechanism": "将可选 import 延迟到对应工具，或在该子系统初始化边界捕获失败。无关工具继续注册，明确不可用能力，隔离诊断失败，修复后允许经核查的重试。",
+        "bad": "在共享工具入口顶层 import 追踪模块，缺模块便使所有工具无法加载；或捕获后返回空改动列表，假装追踪正常。",
+        "good": "注册独立读取器，在 changed-files 或其隔离初始化边界加载追踪器。缺失时返回 tracker-unavailable 与修复说明，不返回 no-changes；诊断日志失败也捕获，失败 import promise 清除，让修复后可重试。",
+        "why": "无关工具被拖垮前，故障已被局部隔离；缺失仍与有效空结果不同。",
+        "expected": "受控夹具移除追踪器时，读取器仍可启动，changed-files 明确不可用；修复后新的加载可成功。",
+        "boundaries": "只有可选能力可以这样降级；必需安全或检查器依赖按自身策略失败。已注册不证明可用，实际加载器与宿主行为仍需运行测试。"
+      }
+    },
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 2,
+      "boundaries": 2
+    },
+    "suggested_existing_ids": [],
+    "related_candidate_keys": [
+      "ecc-typed-tool-recovery",
+      "ecc-incomplete-recall-state"
+    ],
+    "related_existing_ids": [
+      15,
+      173,
+      177
+    ],
+    "example_origin": "editorial-teaching-example",
+    "validation_status": "editorial-review-only",
+    "origin_status": "unknown",
+    "sources": [
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": ".opencode/tools/changed-files.ts",
+        "start_line": 23,
+        "end_line": 46,
+        "section": "Lazy store import with reset-on-failure repair hint",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/.opencode/tools/changed-files.ts#L23-L46"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": ".opencode/plugins/ecc-hooks.ts",
+        "start_line": 107,
+        "end_line": 136,
+        "section": "Optional tracker initialization and contained diagnostic failure",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/.opencode/plugins/ecc-hooks.ts#L107-L136"
+      }
+    ]
+  },
+  {
+    "key": "ecc-variants-localization-symbol-integrity",
+    "name_en": "Preserve Executable Identifiers Across Localization",
+    "name_zh": "本地化时保留可执行标识符",
+    "category": "skill-authoring",
+    "tags": [
+      "localization",
+      "literal-identifiers",
+      "adapter-metadata",
+      "reference-integrity"
+    ],
+    "summary_en": "Translate narrative while retaining the literal skill names, command invocations, paths and schema keys that the consuming harness resolves.",
+    "summary_zh": "翻译说明文字，同时保留宿主实际解析的技能名、调用命令、路径和元数据字段名。",
+    "status": "active",
+    "origin_status": "unknown",
+    "example_origin": "teaching-construction",
+    "validation_status": "editorial-review-only",
+    "scores": {
+      "scenario": 2,
+      "mechanism": 2,
+      "contrast": 2,
+      "observable": 2,
+      "boundaries": 2
+    },
+    "suggested_existing_ids": [],
+    "related_existing_ids": [
+      166,
+      171,
+      172,
+      190
+    ],
+    "related_candidate_keys": [
+      "ecc-variants-invocation-literal-boundary"
+    ],
+    "content": {
+      "en": {
+        "description": "Separate translated explanation from literal symbols used by an instruction loader or reference resolver.",
+        "scenario": "Localize a skill whose known identity is name: release-check, invocation is $release-check, and reference is references/checklist.md. The task authorizes translation, not renaming.",
+        "mechanism": "List the executable identifiers and schema keys first; translate prose around that literal set. Compare the localized parsed identity, invocation and reference target against the original.",
+        "bad": "Translate this release-check skill into Chinese, including name: release-check as 名称: 发布检查 and references/checklist.md as 参考/检查表.md. Keep the existing files and launcher unchanged.",
+        "good": "Translate this release-check skill into Chinese. Keep name: release-check, $release-check, references/checklist.md and YAML field keys literal. Translate description and narrative. Report whether parsed name and reference target still equal the originals.",
+        "why": "A translated label is readable to people, but changing a machine-resolved key or path can redirect or break discovery despite an otherwise accurate translation.",
+        "expected": "The narrative is Chinese, the loader still sees release-check, and the existing reference resolves. These comparisons are inspectable acceptance checks; the example was not executed.",
+        "boundaries": "Protect actual machine-resolved identifiers, not every English technical word. An authorized rename needs a separate migration of consumers and references. Do not infer runtime activation solely from a syntactically valid document."
+      },
+      "zh": {
+        "description": "将可翻译的说明与加载器、引用解析器实际使用的字面标识符分开。",
+        "scenario": "将技能翻译成中文：已知身份为 name: release-check，调用为 $release-check，引用为 references/checklist.md；任务只授权翻译，没有授权改名。",
+        "mechanism": "先列出可执行标识符和元数据字段名，再翻译该集合之外的说明。将本地化后的解析身份、调用名和引用目标与原文逐项比较。",
+        "bad": "将 release-check 技能全部翻译成中文，把 name: release-check 改为 名称: 发布检查，把 references/checklist.md 改为 参考/检查表.md。保留现有文件和启动器。",
+        "good": "将 release-check 技能说明翻译成中文。保留 name: release-check、$release-check、references/checklist.md 和 YAML 字段名。翻译 description 的值和正文说明，报告解析名称及引用目标是否仍与原文一致。",
+        "why": "翻译后的名称适合阅读，但机器解析的字段或路径变化可能改变发现行为，即使其他说明翻译准确。",
+        "expected": "说明是中文，加载器仍读取 release-check，现有引用仍可解析。这些是可检查的验收条件，教学样例尚未执行。",
+        "boundaries": "只保护机器实际解析的标识符，不要求所有技术名词保持英文。明确授权的改名应另行迁移调用方和引用；文档语法有效不能单独证明技能已激活。"
+      }
+    },
+    "sources": [
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": "docs/de-DE/GLOSSARY.md",
+        "start_line": 5,
+        "end_line": 24,
+        "section": "Preserve ECC surface names and YAML field names",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/docs/de-DE/GLOSSARY.md#L5-L24"
+      },
+      {
+        "repo": "affaan-m/ECC",
+        "commit": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+        "path": "docs/pl/GLOSSARY.md",
+        "start_line": 5,
+        "end_line": 22,
+        "section": "Keep technical surface identity distinguishable from translated prose",
+        "license": "MIT",
+        "role": "observed-example",
+        "url": "https://github.com/affaan-m/ECC/blob/ef648e01899ba3e8dc6371642deaaf64b4477775/docs/pl/GLOSSARY.md#L5-L22"
+      }
+    ]
+  }
+]

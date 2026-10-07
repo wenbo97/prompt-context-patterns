@@ -1,0 +1,122 @@
+[
+  {
+    "path": "docs/ja-JP/rules/php/coding-style.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same PHP/Composer scope, PSR/strict types/immutable DTO policy, validated domain input and versioned same-local/CI scripts; backend-patterns router preserved. Domain language conventions excluded; no extra prompt mechanism. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/php/hooks.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same PHP/config path predicates, after-edit format/static/behavior-change targeted tests and debug/rawSQL/session-protection warnings. Warning is not a block and configuration prose is not a registered callback. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/php/patterns.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same thin-controller/domain-service/DTO/adapter/constructor-contract recipes and API/Laravel routers. Application architecture examples not treated as new prompt/context methods. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/php/security.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same boundary input/output escape and rawHTML exception, uploaded-metadata distrust, writable-field allowlist, dependency/secret/session safeguards and Laravel router. These are domain policies, not complete security proof. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/php/testing.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same configured-Pest-over-default-PHPUnit selection, checked CI coverage settings, factory fixtures, transport-versus-business tests, conditional Inertia assertions and two skill pointers. Runner selection is a domain instance of capability-aware routing. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/perl/coding-style.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same five Perl path predicates, v5.36/signatures, readonly Moo attribute conditional exception, formatting options/lint theme and Perl router. Language/OO rules are domain examples, not new prompt instructions. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/perl/hooks.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same after-edit perltidy/perlcritic and non-script print warning; exact common reference retained. Config prose does not prove registration or block behavior. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/perl/patterns.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same DBI repository/typed DTO/safe-file/module export/reproducible-carton recipes and Perl router. Domain API examples excluded; shell example remains read, not executed. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/perl/security.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same taint/environment/allowlist/list-form-process/SQL-placeholder and scanner rules. Shell-free argument principle already exists; realpath alone is not a root-containment proof. Domain snippets not endorsed as complete security. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/perl/testing.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same Test2/prove lib-path requirement, repeated runner options, coverage/mocks/done_testing and Perl router. Fixed80% and eight jobs are source defaults, not adequacy or speed evidence. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/swift/coding-style.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same Swift/package scope, value semantics, role naming, typed errors and actor/Sendable/structured-concurrency domain choices. Vendor link retained; no current API facts inferred beyond frozen source. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/swift/hooks.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same after-edit formatter/linter/build and production-print reminder. Callback prose is not actual execution; build result not inferred. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      69,
+      177
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/swift/patterns.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same protocols/associated-state/value/actor and dependency-injected mocks, actor-persistence/DI-test routers. Domain code details excluded from new prompt-method authoring. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/swift/security.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same Keychain/build-secret/ATS/certificate/input-boundary advice. Application security policy is conditional domain guidance, not proof of complete protection or suitable pinning on every endpoint. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  },
+  {
+    "path": "docs/ja-JP/rules/swift/testing.md",
+    "reason": "Complete Japanese semantic comparison to the previously fully read same canonical counterpart: Complete translated and corresponding canonical method prose/predicates/pointers/shell text read; semantically equivalent for these fields. Same testing framework/isolation/parameterization/coverage command and DI-mock router. Fresh-instance statement is a source recipe, not guaranteed isolation of static/global/shared external state. All Japanese method prose/path predicates/common and skill pointers/shell examples read; no material control/pointer delta. Programming-language application code excluded as domain detail, not assumed body duplication.",
+    "existing_ids": [
+      23,
+      53
+    ]
+  }
+]

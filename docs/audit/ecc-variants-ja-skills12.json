@@ -1,0 +1,50 @@
+[
+  {
+    "path": "docs/ja-JP/skills/dart-flutter-patterns/SKILL.md",
+    "reason": "Read all53line actualpurpose/activation/concernrouting/source list. Domain Dartnull/state/widget/navigation/HTTP/test cookbook, no independent agentmethod beyond standardtasktrigger. Shortvariant promises detailedcode elsewhere but stopsafteroneexample; framework/runtimecorrectness and productionclaims scoped out, no codeaction.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/dashboard-builder/SKILL.md",
+    "reason": "Full58line actual operator-question-first health/bottleneck/change/action goal→inspectexisting platformschema→selectdecision-relevantmetrics→groupbyquestion read. Same observablegoal/golden-source context method; endsbeforecanonical actual queryvalidation/oracle/delivery/gates, no dashboard-runtime proof. Domainplatform/libraryrendering scoped and no dashboard generated.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/data-scraper-agent/SKILL.md",
+    "reason": "Read full57line actual COLLECT→ENRICH→STORE context/targetsource/LLMscore/store/schedule/userfeedbackworkflow. Endsmid-example, omits current canonical fetched/deriveddata trust boundary and essential actual prompts/schema/failure contracts.100%free/production/autolearning claims unverified; source runtime/deployment/collector implementation scoped, no scraping/scheduling/modelrun.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/database-migrations/SKILL.md",
+    "reason": "Read all54line domain-purpose/forwardimmutable migration/schema-vs-data/realdata-sizedcheck/rollback checklist and shortexample. Database deployment recipe, no distinct agentpromptmethod beyond known boundedcontract/verification; completecanonical ORM/expandcontract details absent. DatabaseAPI/runtime/zero-downtime assurance scoped, no migration executed.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/deep-research/SKILL.md",
+    "reason": "Read complete33line actualquestionaxes→multiplesources→theme/synthesize/tradeoffs→citedrecommendation workflow. Shortvariant omits canonical fetched/toolresult taint boundary32–40, sourcegrade/coverage/version/evidence controls. Same evidence-oriented research skeleton, citationslist not proof facts read or exhaustivecoverage; no external claims/tools/research executed here.",
+    "disposition": "analyzed",
+    "depth": "full-method-difference-domain-scoped"
+  },
+  {
+    "path": "docs/ja-JP/skills/defi-amm-security/SKILL.md",
+    "reason": "Read complete46line actual DeFiAMMscope/threatcategories/oracle/slippage/reentrancy/accesscontrolchecklist. Specialized blockchain/economic-security reference with no independentagentmethod; shortversion lacks currentfundamentaltransaction/artifact/evidence clauses. Legal/financial/API/security correctness scoped not audited or advised, no funds/contracts operations.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/deployment-patterns/SKILL.md",
+    "reason": "Read all50line domainpurpose/rolling-bluegreen-canary/YAMLhealthlogging/metrics/rollbackchecklist. Deployment infrastructure strategy, no independent prompting/controlmethod beyond known acceptancereadback; source defaultsafe/zero-downtime claims not validated. Platform/runtime configs scoped under userrevisedtask, no deploy or processaction.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  },
+  {
+    "path": "docs/ja-JP/skills/design-system/SKILL.md",
+    "reason": "Read all53line purpose/components/tokens/layout/icons/tools/adoption/a11y checklist. UI/design-system domainreference, no independent prompt/contextmethod beyondcommon role and taskactivation; shortbody lacks actualcurrenttemplates/essentialverification. Tool/standards/runtime claims scoped out, no Figma/browser/UIactions.",
+    "disposition": "excluded",
+    "depth": "scoped-purpose-and-method-prose"
+  }
+]
