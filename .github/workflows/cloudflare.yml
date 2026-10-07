@@ -1,6 +1,8 @@
 name: Deploy blog to Cloudflare
 
 on:
+  push:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
